@@ -29,6 +29,8 @@ about the development of Mercury and the Mercury implementation and related
 matters of interest to the developers of Mercury.<br>
 It is <A HREF="mercury-developers/list.html">archived</A> and
 <A HREF="search.html">searchable</A>.
+Note that recent times, most the actual development discussion seems to be
+done on the mercury-reviews list, rather than mercury-developers.<br>
 
 <li>
 The <code>mercury-reviews</code> list is intended for use by the developers of
