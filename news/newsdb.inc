@@ -17,6 +17,19 @@
 */
 
 $newsdb = array(
+"16 Sep 1999" => array("Exception handling",
+
+"Exception handling support is now part of the standard library.
+
+The module `exception', which was previously part of the \"extras\"
+distribution, has been moved into the standard library.
+The predicate error/1 now throws an exception rather than just
+terminating execution.
+
+However, many of the operations in the standard library still handle
+errors by aborting execution rather than by throwing exceptions.
+"),
+
 "13 Aug 1999" => array("New papers",
 
 "Two new papers on Mercury are now available from our
@@ -28,8 +41,8 @@ to make Mercury programs tail recursive.
 
 "13 Jul 1999" => array("Operators",
 
-"Terms in the form of x `fun` y are transformed into fun(x, y),
-allowing a limited form of user defined operators.
+"We now support a simple form of user-defined infix operators.
+Terms in the form of x `fun` y are transformed into fun(x, y).
 The transformation is available in our latest
 <A HREF=\"download/rotd.html\">release of the day</A>.
 "),
