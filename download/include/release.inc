@@ -237,8 +237,30 @@ installed all the binary distributions.)
 
 <dl>
     <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, XP, or 2000.
-	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
-<? links_to_file("mercury-0.11.0.i686-pc-windows-cygwin.tar.gz", "no"); ?>
+	<dd> 
+	<em> <strong>WARNING:</strong> 
+	These binary distributions for Windows are still BETA releases.
+	They have not been tested and may not work.
+	Please <a href="mailto:mercury@cs.mu.oz.au">let us know</a>
+	whether they work for you.
+	</em>
+	<p>
+	Cygwin version: compiler + Extras + Tests (about 29 Mb): <br>
+<? links_to_file("beta-releases/0.11.0/mercury-0.11.0.i686-pc-windows-cygwin.tar.gz", "no"); ?> <br>
+	To install, open a Cygwin bash shell, and type in the commands
+	"tar zxf mercury-0.11.0.i686-pc-windows-cygwin.tar.gz",
+	"cd mercury-0.11.0-i686-pc-windows-cygwin",
+	"CC=gcc sh configure",
+	and then "make install.<br>
+	<strong> You need to invoke configure with "CC=gcc sh configure".</strong>
+	<p>
+	Mingw version: compiler only (about 25 Mb): <br>
+<? links_to_file("beta-releases/0.11.0/mercury-compiler-0.11.0-mingw.zip", "no"); ?> <br>
+	The Mingw version still requires Cygwin,
+	but the executables that it generates do not require Cygwin. 
+	(That is, it's a cross-compiler from Cygwin to native Windows.)
+	To install, open a Cygwin bash shell, and do
+	<pre>unzip -d / mercury-compiler-0.11.0-mingw.zip</pre>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.2)
