@@ -31,10 +31,7 @@ The main features of Mercury are:
 	Mercury handles dynamic data structures not through Prolog's
 	assert/retract but by providing several abstract data types in
 	the standard Mercury library that manage collections of items
-	with different operations and tradeoffs. Being a compiled
-	language, Mercury does not have any means for altering the
-	program at runtime, although we may later provide facilities
-	for adding code to a running program.
+	with different operations and tradeoffs.
 	<p>
 
 
