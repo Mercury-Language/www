@@ -31,7 +31,7 @@ MCORBA is distributed under the GNU GPL for the translator,
 and GNU LGPL for the runtime library.
 <p>
 You will need a copy of omniORB2, which you can freely download
-from the <a href="http://www.orl.co.uk/omniORB/omniORB.html">
+from the <a href="http://omniorb.sourceforge.net">
 omniORB</a> web site.
 
 <h3> Why use MCORBA? </h3>

@@ -86,10 +86,10 @@ The main "mercury-compiler" source distribution is about 10 Mb.
 This includes the compiler, standard library,
 debugger, profiler, and other tools.
 (Note that this does <em>not</em> include all the sources needed to build
-the <a href="<?echo $root?>/download/gcc_backend.html">
+the <a href="<?echo $root?>/download/gcc-backend.html">
 native-code back-end</a>; for that you also need the
 "mercury-gcc" and "gcc" distributions.
-See <a href="<?echo $root?>/download/gcc_backend.html">here</a>
+See <a href="<?echo $root?>/download/gcc-backend.html">here</a>
 for details.)
 
 <p>

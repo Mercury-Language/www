@@ -461,7 +461,7 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href="paper.html#sas_talk">
+<a href="papers.html#sas_talk">
 Termination analysis for Mercury
 </a>
 </strong>

@@ -22,14 +22,4 @@ systems.
 <li> <a href = "http://www.cs.kun.nl/~clean">Clean</a>
 </ul>
 
-Haskell is a general purpose, higher order, pure and lazy functional
-programming language.
-This link reports on a project to translate a subset of Mercury
-into Haskell.
-
-<ul>
-<li> <a href = "http://www.dcs.gla.ac.uk/~reidrm/project/root.html">Mercury to
-Haskell</a>
-</ul>
-
 <p>
