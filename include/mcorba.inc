@@ -23,7 +23,7 @@ see how IDL is transformed into Mercury.
 <ul>
 <li> <A HREF="<? echo $root; ?>/download/files/mcorba/">
 Mercury web site</A><br>
-<li> <A HREF="ftp://turiel.cs.mu.OZ.AU/pub/mercury/mcorba//">
+<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mcorba//">
 Mercury ftp site</A>
 </ul>
 

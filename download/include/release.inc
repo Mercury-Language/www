@@ -12,8 +12,8 @@ are available at the following site(s):
 
 <dl>
 <dt> Australia 
-<dd> <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
-     ftp://turiel.cs.mu.OZ.AU/pub/mercury</a><br>
+<dd> <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
+     ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury</a><br>
      The Mercury ftp site in Melbourne, Australia.
 <dt> Greece
 <dd> <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/">
@@ -135,15 +135,15 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (6M)
 <dd> 
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.8.1.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.8.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-compiler-0.8.1.tar.gz">Greece</a>
 <dt> Extras (377k)
 <dd>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-extras-0.8.1.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-extras-0.8.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-extras-0.8.1.tar.gz">Greece</a>
 <dt> Tests (233k)
 <dd>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-tests-0.8.1.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-tests-0.8.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-tests-0.8.1.tar.gz">Greece</a>
 </dl>
 
@@ -159,7 +159,7 @@ installed all the binary distributions.)
     <dt>x86 machines running Linux (ELF executable format, libc 6)
 	<dd> Debian Package (*.deb) <br>
 	     Compiler only (about 11.6 Mb): <br>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury_0.8.1-1.deb">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.8.1-1.deb">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.8.1-1.deb">Greece</a>
 	     <br>
 	     If you get this package, we suggest that you also download
@@ -167,14 +167,14 @@ installed all the binary distributions.)
              <p>
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 14.5 Mb): <br>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Greece</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">USA</a>
 	<p>
 
     <dt>x86 machines running FreeBSD 3.0
 	<dd> Compiler only, minus sample programs (about 14.5 Mb): <br>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Greece</a> <br>
 	If you get this distribution, we suggest you also download
 	the "compiler" and "extras" source distributions,
@@ -183,7 +183,7 @@ installed all the binary distributions.)
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 17.9 Mb): <br>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Greece</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">USA</a><br>
 	<em> <strong>WARNING:</strong> 
@@ -195,14 +195,14 @@ and (2) use GNU tar. </em>
 	<p>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 36 Mb): <br>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Greece</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">USA</a>
 
 	<p>
     <dt>x86 machines running Windows 95 or Windows NT
 	<dd> Compiler + Extras + Tests (about 14 Mb): <br>
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Australia</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Greece</a>
 
 </dl>
@@ -211,8 +211,8 @@ and (2) use GNU tar. </em>
 <dl>
 	<dt> Australia: 
 	<dd>
-	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
-	ftp://turiel.cs.mu.OZ.AU/pub/mercury/</a>
+	<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
+	ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/</a>
 
 	<dt> Greece
 	<dd>
