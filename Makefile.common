@@ -16,9 +16,27 @@ $(HTML): %.html: %.php3 %.inc menubar.inc template.inc functions.inc
 
 #-----------------------------------------------------------------------------#
 
+#-----------------------------------------------------------------------------#
+
+
+.PHONY: html
+html: $(HTML)
+ifdef DIRS
+	for dir in $(DIRS); 				\
+	do 						\
+		(cd $$dir; $(MAKE) html); 		\
+	done
+endif
 
 .PHONY: all
-all: subdirs $(HTML)
+all: $(HTML)
+ifdef DIRS
+	for dir in $(DIRS); 				\
+	do 						\
+		(cd $$dir; $(MAKE) all); 		\
+	done
+endif
+
 
 .PHONY: install
 install: $(HTML)
@@ -46,15 +64,6 @@ endif
 .PHONY: touch
 touch:
 	touch *.php3
-
-.PHONY: subdirs
-subdirs:
-ifdef DIRS
-	for dir in $(DIRS); 		\
-	do 				\
-		(cd $$dir; $(MAKE)); 	\
-	done
-endif
 
 #-----------------------------------------------------------------------------#
 

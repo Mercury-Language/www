@@ -15,7 +15,8 @@ ROOT=.
 
 #-----------------------------------------------------------------------------#
 
-target: all
+target: html
+
 index.html: latest_news.inc newsdb.inc
 news.html: latest_news.inc newsdb.inc
 

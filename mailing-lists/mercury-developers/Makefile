@@ -1,4 +1,4 @@
-target: all
+target: html
 
 HTML=	list.html 
 DIRS=
@@ -8,7 +8,7 @@ list.html: touch
 
 install: local_install
 
-local_install:
+local_install: html
 	for dir in `ls`;					\
 	do							\
 		if [ -d $$dir -a $$dir != "include" ];		\

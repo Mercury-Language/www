@@ -1,4 +1,4 @@
-target: all
+target: html
 
 ROOT=..
 HTML= 	current-release-bugs.html	\

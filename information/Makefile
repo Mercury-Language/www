@@ -1,4 +1,4 @@
-target: all local
+target: html
 
 ROOT=..
 HTML= 	benchmarks.html 	\
@@ -9,6 +9,7 @@ HTML= 	benchmarks.html 	\
 	papers.html		\
 	related.html
 
+all:     local
 install: local_install
 clean:   local_clean
 
@@ -27,7 +28,7 @@ local:
 	cp -a mercury-doc/*.ps doc
 	(cd doc; gzip -f -9 *.ps)
 
-local_install: target
+local_install: all
 	for dir in bench developers doc papers;		\
 	do						\
 		cp -a $$dir $(INSTALL_WEBDIR);		\

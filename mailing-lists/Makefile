@@ -1,4 +1,4 @@
-target: all
+target: html
 
 HTML= 	mailing-lists.html
 DIRS=mercury-users mercury-developers

@@ -1,4 +1,4 @@
-target: all
+target: html
 
 HTML=	list.html 
 DIRS=
