@@ -18,6 +18,13 @@
 
 $newsdb = array(
 
+"18 Jan 1999" => array("Coding Challenge - Battleships",
+
+"Download the
+<A HREF=\"http://www.cs.mu.oz.au/research/mercury/download/files/battleships/battleships.tar.gz\">spec</A>
+for battleships and maybe have your solution added to the samples directory."
+),
+
 "21 Dec 1998" => array("MCORBA 0.2 released",
 
 "The second release of MCORBA is finally available.
