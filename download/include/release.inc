@@ -49,6 +49,8 @@ function links_to_file ($filename, $Sunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
+Mercury 0.10.1 was released on April 4, 2001.
+<p>
 Mercury 0.10 was released on February 25, 2001.
 <p>
 The NEWS file, detailing differences since the release of 0.9.1,
@@ -59,13 +61,13 @@ is available <a href="release-0.10.html">here</a>.
 
 <ul>
 <li> <a href = "release-0.10.html">
-     Release notes for 0.10
+     Release notes for 0.10.1 and 0.10
      </a>
 <li> <a href = "release-0.10-contents.html">
-     Contents of release 0.10 distribution
+     Contents of release 0.10.1 distribution
      </a>
 <li> <a href = "release-0.10-bugs.html">
-     Known problems with release 0.10
+     Known problems with release 0.10.1
      </a>
 <li> <a href = "limitations.html">
      Limitations of the current release.
@@ -197,7 +199,7 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (10 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.10.tar.gz", "yes") ?>
+<? links_to_file("mercury-compiler-0.10.1.tar.gz", "yes") ?>
 <p>
 Sunsite also has many 
 <a href="http://sunsite.unc.edu/pub/Linux/MIRRORS.html">mirrors</a>.<br>
@@ -208,17 +210,17 @@ or its equivalent place on the mirrors.
 
 <dt> Extras (580 kb)
 <dd>
-<? links_to_file("mercury-extras-0.10.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-0.10.1.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (381 kb)
 <dd>
-<? links_to_file("mercury-tests-0.10.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-0.10.1.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distribution</a></h3>
 
-Binary distributions of Mercury 0.10:
+Binary distributions of Mercury 0.10.1:
 <br>
 (Note that some of these URLs will be dangling links until we have
 installed all the binary distributions.)
@@ -227,7 +229,7 @@ installed all the binary distributions.)
 <dl>
     <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, or 2000.
 	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
-<? links_to_file("mercury-0.10.i686-pc-windows-cygwin.tar.gz", "no"); ?>
+<? links_to_file("mercury-0.10.1.i686-pc-windows-cygwin.tar.gz", "no"); ?>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.1)
@@ -239,7 +241,7 @@ installed all the binary distributions.)
 
 	     Debian Package (*.deb) <br>
 	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury-0.10-1.deb", "no"); ?>
+<? links_to_file("mercury-0.10.1-1.deb", "no"); ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution.
@@ -247,7 +249,7 @@ installed all the binary distributions.)
 
 	     RedHat Package (*.rpm) <br>
 	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury-0.10-1.rpm", "no"); ?>
+<? links_to_file("mercury-0.10.1-1.rpm", "no"); ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
@@ -255,12 +257,12 @@ installed all the binary distributions.)
 
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 30 Mb): <br>
-<? links_to_file("mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz", "no"); ?>
+<? links_to_file("mercury-0.10.1.i686-pc-linux-libc2.1-gnu-O5.tar.gz", "no"); ?>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
-<? links_to_file("mercury-0.10.sparc-sun-solaris2.7.tar.gz", "no"); ?>
+<? links_to_file("mercury-0.10.1.sparc-sun-solaris2.7.tar.gz", "no"); ?>
 	<br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
@@ -272,7 +274,7 @@ and (2) use GNU tar. </em>
 
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 66 Mb): <br>
-<? links_to_file("mercury-0.10.alpha-dec-osf3.2.tar.gz", "no"); ?>
+<? links_to_file("mercury-0.10.1.alpha-dec-osf3.2.tar.gz", "no"); ?>
 
 </dl>
 

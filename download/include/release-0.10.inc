@@ -1,5 +1,15 @@
+<h2>New in release 0.10.1 of the Mercury distribution</h2>
 
-<h2>New in release 0.10.0 of the Mercury distribution</h2>
+This is mainly a bug-fix release.
+<p>
+
+There are however some new packages in the mercury-extras distribution:
+<ul>
+<li> lex: a lexical analyzer library for Mercury.
+<li> curs: a simplified binding to the ncurses/panel libraries for terminal I/O.
+</ul>
+
+<h2>New in release 0.10 of the Mercury distribution</h2>
 
 <h3>HIGHLIGHTS</h3>
 
@@ -41,7 +51,14 @@ Changes to the Mercury implementation:
 <li> There's a version of the new back-end which compiles directly
   to assembler, using the GCC back-end.
 <li> Various improvements to `mtags'.
+</ul>
 
+Additional packages in the mercury-extras distribution:
+<ul>
+<li> Moose: a parser generator for Mercury.
+<li> concurrency: support for multi-threading/concurrency.
+<li> stream: an implementation of generic I/O streams, using type classes.
+<li> xml: a library for parsing XML.
 </ul>
 
 <h3>DETAILED LISTING</h3>
