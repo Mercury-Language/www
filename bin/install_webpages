@@ -56,4 +56,4 @@ umask 002
 
     # Index the web-site for searching.
 htdig -c /etc/htdig/htdig-mercury.conf -a
-htmerge -c /etc/htdig/htdig-mlists.conf -a
+htmerge -c /etc/htdig/htdig-mercury.conf -a
