@@ -22,6 +22,15 @@
 
 $newsdb = array(
 
+"13 August 2001" => array("Smart recompilation",
+
+"The Mercury compiler can now perform smart recompilation. With smart
+recompilation, when the interface of a module changes, only modules
+which use the changed declarations are recompiled. The latest
+<A HREF=\"download/rotd.html\">release of the day</A>
+includes support for smart recompilation."
+),
+
 "04 August 2001" => array("ICFP 2001 programming contest entry",
 
 "See our <A HREF=\"./information/events/icfp2001.html\">report</A> on our
