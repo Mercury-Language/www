@@ -6,7 +6,7 @@ If you are using Mercury in your project, please contact us at
 <UL>
 <LI> <A HREF="http://www.cs.mu.oz.au/~winikoff/pipe/animate.html">Animating Z
         specifications using Mercury</A>
-<LI> <A HREF="http://www.cs.mu.oz.au/research/groups/clp/hal.html">The
+<LI> <A HREF="http://www.cs.mu.oz.au/research/groups/dl/hal.html">The
         Hal Project</A>
 <LI> <A HREF="http://svrc.it.uq.edu.au/Possum/">Possum, an animator for Z
 specifications with a Tk GUI</A>
