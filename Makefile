@@ -10,6 +10,7 @@ HTML=	index.html 		\
 	information.html 	\
 	download.html 		\
 	contact.html 		\
+	dotnet.html 		\
 	applications.html	\
 	contributions.html	\
 	search.html

@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>
+Mercury and Microsoft's .NET : ObjectWorld 2000 Flyer
+</title>
+</head>
+<body>
+<h1>
+Mercury and Microsoft's .NET : ObjectWorld 2000 Flyer
+</h1>
+
+<small>Please note: minor corrections have been made to this online
+version of the flyer</small>
+
+<h3>
+The Mercury Language
+</h3>
+
+Mercury is a new logic programming language, designed and implemented by a
+research group at the Department of Computer Science and Software Engineering
+at the University of Melbourne.  Mercury programs look quite similar to
+programs written in previous logic programming languages such as Prolog.
+However, Mercury's objective is very different from Prolog's; whereas Prolog is
+oriented towards exploratory programming in fields such as AI, Mercury is
+intended for the production of large scale, reliable software systems by teams
+of programmers.
+<p>
+Mercury programs closely resemble mathematically logic.
+Programmers write programs as a set of relations augmented with declarations
+that say how the programmer intends these relations to be used. 
+<p>
+
+<pre>
+:- pred hello(string, postcode, string).
+:- mode hello(in, in, out) is semidet.
+hello(Name, PostCode, Greeting) :-
+        suburb_codes(PostCode, Suburb),
+        Greeting = "Hello " ++ Name ++ " of " ++ Suburb.
+
+:- pred suburb_codes(postcode, string).
+:- mode suburb_codes(in, out) is semidet.
+suburb_codes(2000, "Sydney").
+suburb_codes(3000, "Melbourne").
+</pre>
+<p>
+A call to <tt>hello("Mary", 2000, X)</tt> will mean 
+<tt>X = "Hello Mary of Sydney"</tt>.
+<p>
+Mercury is a very expressive, high-level programming language.  It automates
+several common programming tasks such as giving the types of local variables,
+allocating and deallocating memory, and caching previously computed results.
+<p>
+Mercury has a strong type system, and a mode system that does dataflow
+checking.  These checks ensure that a large class of programming errors such as
+missing cases in switches and uninitialized variables are guaranteed to be
+caught by the compiler.  It is a common experience to hear from Mercury
+programmers 
+<em>"Once I got my program past the compiler, it worked first time!"</em>
+The compiler also simplifies maintenance tasks such as adding a new field to a
+structure by pointing out all the places where the code must be modified to
+accommodate the new field.  Mercury's type system is very advanced, and
+provides powerful programming abstractions such as parametric polymorphism
+(similar to generics and templates), type-classes (similar to interfaces in
+Java) and user-controlled dynamic typing while still retaining complete safety.
+Type classes can be used to interoperate with component-based systems
+such as COM and CORBA.
+<p>
+Mercury has been used in a wide variety of applications, which include
+intelligent planning systems, a process flow web-server, formal specification
+animation systems and neural net implementations. It is well suited to creating
+complex, flexible, highly reliable applications.  Some of these applications
+have already been deployed commercially.
+<h3>
+Declarative Programming
+</h3>
+Unlike imperative programming languages such as C++, Java or Basic, Mercury
+doesn't have concepts such as global variables or pass-by-reference.  Instead,
+if a procedure needs access to a variable, that variable must be one of its
+parameters.  If it calculates a value that is needed elsewhere, it returns that
+value (it doesn't overwrite a location or modify a global variable).  Explicit
+parameters make any complexity immediately visible and encourage programmers to
+eliminate (or at least manage) complexity rather than sweep it under the rug.
+Programming without side effects (such as updating global variables) is called
+<em>purely declarative programming</em>.
+<p>
+In declarative programming languages programmers clearly and cleanly specify
+<em>what is to be computed</em>, and leaving the question of 
+<em>how to compute it</em> to the compiler and runtime system.
+Programmers are relieved of the burden of allocating memory, specifying
+the order of operations (except where the order is visible in the
+output), or defining data-structures down to the bit level.  The
+intention is to allow the programmer to devote their time to <em>solving
+problems</em>, rather than <em>programming machines</em>.
+<p>
+Since the burden of deciding how to implement the program has been shifted to
+the compiler, declarative language compilers are pretty smart.  Declarative
+languages are simple and state directly what the result of the program is
+supposed to be; the compiler is free to re-arrange the program in any way it
+desires so long as the result of the program remains the same.  Declarative
+language compilers routinely automate optimisations that are usually considered
+too difficult to implement in imperative language compilers, and too time
+consuming and error prone to do by hand.  
+<p>
+The Mercury implementation can already optimise programs to remove intermediate
+data structures, omit unnecessary sub-computations and redundant tests, turn
+structure traversals into loops, perform cross-module inlining, eliminate
+unused arguments or procedures and specialize code to operate on specific
+types, and more optimisations are being added all the time. The upshot of all
+this optimisation is that programmers can write more complex programs more
+quickly, and still get competitive performance.
+<p>
+Another important benefit of the absence of side-effects is that one can
+use <em>declarative debugging</em> to debug programs written in
+declarative programming languages.  With traditional debuggers, all of
+the grunt work of finding the bug has to be done by the programmer.
+Declarative debugging automates much of this grunt work.  Declarative
+debuggers ask the programmer a series of questions about the intended
+behaviour of the program.  By comparing the intended behaviour of the
+program with its actual behaviour, they can find the point in the
+program where the results of several correct sub-computations are
+combined into an incorrect result; in other words, they find a place where the
+program starts to go wrong.  Having the debugger direct the search for the bug
+is particularly useful for novice programmers, who often don't know where to
+start.  However it often helps experienced programmers as well, by preventing
+them from spending too much effort searching blind alleys.  Searching blind
+alleys can be very time consuming as well as frustrating; avoiding such
+searches should make debugging more enjoyable, productive and predictable.
+<h3>
+Mercury on .NET
+</h3>
+The main component of Microsoft's .NET framework is the Common Language Runtime
+or CLR, a new multi-language execution platform.  Microsoft has C++, C#,
+Visual Basic and JScript compilers that generate code for the CLR. Code
+running on the CLR can be executed on standard PCs, inside web servers
+or database engines, on PDAs, or wherever else the .NET framework runs.
+Because all the languages running on the CLR use the same code and data
+representation, it is significantly easier for different programming
+languages to co-exist and communicate seamlessly than on other
+platforms. 
+<p>
+The .NET CLR has been designed with languages such as C++, C# and Visual Basic
+in mind. Therefore the language constructs that can appear in the interfaces
+between .NET components are limited to those found in imperative languages and
+their object-oriented extensions.  Fortunately Microsoft realized that
+non-mainstream languages have strengths that some developers will want to
+exploit.  Accordingly they decided to consult with the implementors of several
+emerging languages, both in academia and industry, on the best ways to extend
+the CLR to avoid such problems.  Since such problems can only be found by
+experience with real implementations, Microsoft funded several research groups
+(including ours) to modify their language implementations to target the CLR and
+provide feedback and suggestions.  For example, some features in Mercury are
+not represented directly in the CLR, and so cannot be exposed to other
+components (although they can of course continue to be used inside Mercury
+components).  These kinds of mismatches provide suggestions for extensions of
+both Mercury and the CLR.  Some of these suggestions have already been acted
+upon, and will be included in the first public release of the CLR, while others
+will be incorporated in future releases.  Support for parametric polymorphism
+is likely to fall into the second category; it is already being prototyped by
+Microsoft Research.
+<p>
+We have completed a prototype backend in the Mercury implementation that
+generates code for the CLR.  This code can interoperate 
+<!--- seamlessly XXX but we aren't quite seamless yet. -->
+with code generated by any other compiler on the .NET platform.  If
+developers want to enjoy the benefits of Mercury, they can start small
+by writing a few .NET components in Mercury while the rest of the
+project is implemented in more traditional languages.  The .NET
+component model allows a company to evaluate and roll out advanced
+programming languages without introducing critical project risks. 
+<p>
+To demonstrate the possibilities of interoperation in this environment,
+we extended the Mercury implementation of <tt>eliza</tt>, a classic AI
+program that pretends to be a psychotherapist.  Using the CLR COM
+interface, we used a standard COM object (Microsoft Agent) to give
+<tt>eliza</tt> a voice and an animated character.  We used the WinForms
+class library in .NET and some C# code to give <tt>eliza</tt> a very
+simple graphical front end, where users could enter text and view
+eliza's previous responses.  This shows the strength of multi-language
+development: unlike C#, Mercury has features that make writing an AI
+engine easier, whereas existing GUI builders generate C# code, not
+Mercury code.  The .NET platform allows programmers to use the right
+tool for the right job.
+
+<h3>Further Information</h3>
+
+The Mercury implementation is open source software.  The system includes a
+compiler (written in Mercury, of course!), debugger, profiler, libraries
+and documentation, and is available on Windows, Linux and on major Unix
+platforms.
+<p>
+Links:<br>
+<a href="http://www.cs.mu.oz.au/research/mercury/">The Mercury
+homepage</a><br>
+<a href="http://www.cs.mu.oz.au/research/mercury/dotnet.html">
+Mercury and .NET</a><br>
+<p>
+Written by <a href="mailto:trd@cs.mu.oz.au">Tyson Dowd</a> on behalf of the 
+<a href="mailto:mercury@cs.mu.oz.au">Mercury team</a>.
+</body>
+</html>
