@@ -241,7 +241,7 @@ installed all the binary distributions.)
 
 	     Debian Package (*.deb) <br>
 	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury-0.10.1-1.deb", "no"); ?>
+<? links_to_file("mercury_0.10.1-1_i386.deb", "no"); ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution.
@@ -249,7 +249,7 @@ installed all the binary distributions.)
 
 	     RedHat Package (*.rpm) <br>
 	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury-0.10.1-1.rpm", "no"); ?>
+<? links_to_file("mercury-compiler-0.10.1-1.i386.rpm", "no"); ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
