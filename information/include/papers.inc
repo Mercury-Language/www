@@ -82,13 +82,13 @@ allows the programmer to annotate predicates and
 functions to mark impure predicates, allowing
 impure code to be safely integrated into a
 declarative language.
-
+<p>
 By using purity declarations with the foreign language
 interface, programmers can take advantage of many of the
 features of a high level programming language while
 writing imperative code to interface with existing
 imperative libraries.
-
+<p>
 This paper outlines the purity system in Mercury and
 how it affects operational semantics,
 compares this purity system with other approaches to declaring
