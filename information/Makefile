@@ -13,6 +13,16 @@ HTML= 	benchmarks.html 	\
 	reports.html		\
 	related.html
 
+SUBDIRS =			\
+	bench			\
+	deep_demo		\
+	developers		\
+	doc			\
+	dotnet			\
+	events			\
+	papers			\
+	reports
+
 all:     local
 install: local_install
 clean:   local_clean
@@ -24,8 +34,7 @@ local:
 	[ ! -d mercury ] || (cvs update mercury-doc)
 	[ -d mercury-doc ] || (cvs checkout -d mercury-doc mercury/doc)
 	[ -d library ] || (cvs checkout -d library mercury/library)
-	[ -d notes ] || \
-		(cvs checkout -d notes mercury/compiler/notes)
+	[ -d notes ] || (cvs checkout -d notes mercury/compiler/notes)
 	echo "LIBRARY_DIR=`pwd`/library"  > Mmake.common
 	echo "PERL=perl"  >> Mmake.common
 	echo "INFO=info"  >> Mmake.common
@@ -38,7 +47,7 @@ local:
 	(cd doc; gzip -f -9 *.ps)
 
 local_install: all
-	for dir in bench developers events reports doc dotnet papers;	\
+	for dir in $SUBDIRS ;					\
 	do							\
 		$(CP) $$dir $(INSTALL_WEBDIR);			\
 		chmod -R a+r,g+w $(INSTALL_WEBDIR)/$$dir;	\

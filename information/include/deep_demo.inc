@@ -108,21 +108,21 @@ from one of these data files.
 
 <ul>
 <li>
-<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?/home/mercury5/w3/information/deep_demo/make_hlds.data">mmc -O2 make_hlds.m</a>:
+<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?<? echo $installed_path ?>/information/deep_demo/make_hlds.data">mmc -O2 make_hlds.m</a>:
 the profiled executable is the Mercury compiler,
-and during the profiling run, it task was to compile make_hlds.m,
+and during the profiling run, its task was to compile make_hlds.m,
 the largest module (about 8300 lines) in its own source code.
 Though large, this module is straightforward to compile.
 <li>
-<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?/home/mercury5/w3/information/deep_demo/eliza.data">mmc -O2 eliza.m</a>:
+<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?<? echo $installed_path ?>/information/deep_demo/eliza.data">mmc -O2 eliza.m</a>:
 the profiled executable is the Mercury compiler,
 and during the profiling run, it task was to compile eliza.m,
 the Mercury implementation of the classic "AI" program,
 which is available in the samples directory in the Mercury distribution.
 Though small (625 lines), this module contains some constructs
-that stress the Mercury compiler.
+that stress the Mercury compiler, particularly its mode analysis pass.
 <li>
-<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?/home/mercury5/w3/information/deep_demo/monte.data">monte</a>:
+<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?<? echo $installed_path ?>/information/deep_demo/monte.data">monte</a>:
 the profiled executable is a program that
 calculates the volume of a 3D shape using Monte Carlo methods.
 This program uses higher order constructs quite intensively.
