@@ -1,0 +1,141 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri March 30, 2001,
+from 3.15pm to 4.35pm.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	Fergus Henderson (trd)
+	Simon Taylor (stayl)
+	David Overton (dmo)
+	Kevin Glynn (keving)
+
+Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Zoltan Somogyi (zs)
+		- Working on cleaning up deep profiling.
+		  It now bootstraps and passes all the test cases except for
+		  - split_c_files
+		  - the debugger tests that use `retry'
+		  - exception handling tests that catch exceptions
+		    (just throwing without catching works, though)
+		  There are also some issues with the UI and documentation
+		  that need to be resolved.
+		  Plans to merge the the deep profiling branch changes back
+		  onto the main branch soon.
+
+		- Mentioned a `cvdd' script for doing diffs on two Mercury
+		  repository; fjh suggested that it might be a good idea
+		  to put that in the `tools' directory in our repository
+		
+	Simon Taylor (stayl)
+		- Has continued working on a system to keep track of compilation
+		  dependencies in a fairly fine-grained way.
+		- Agreed to put support for `--make' option (see below)
+		  on his long-term TODO list.
+
+	David Overton (dmo)
+		- Has implemented, in Mercury, the extensions to ROBDDs that
+		  Peter Schache describes in his thesis.
+		  (This is built on top of Peter's C implementation of basic
+		  ROBDDs and a thin Mercury interface to this which dmo
+		  wrote about a year ago.)
+		- Continued working on the new mode checker.
+		  New mode checker is still looping on `deriv' test case
+		- We suggested that it would be good for dmo to commit his
+		  stuff on a branch, and probably also to put the extended
+		  ROBDDs package in the extras distribution on the main branch.
+		  The issue of needing this in both the compiler and
+		  the extras should be handled the same way as for dl.m,
+		  putting it in the `compiler' directory in the CVS repository
+		  and copying it to the extras directory when we build the
+		  extras distribution.
+
+	Fergus Henderson (fjh)
+		- Has been helping people to port Mercury to Mac OS X (Darwin).
+		  zs suggested asking about the possibility of getting a
+		  guest account.
+
+		- Has been working on solving abstract equivalence types
+		  problem for .NET/Java back-ends.
+
+		  zs said he didn't like tying this to
+		  `--intermodule-optimization'.
+		  After some discussion, fjh agreed.  zs suggested instead
+		  keeping a database of all equivalence types.
+		  fjh said this is similar to the approach of using `.typ'
+		  files; will look more at that approach.
+		  `--intermodule-optimization' will be used as an interim
+		  solution.
+
+		- Has been working on porting Mercury to Mingw.
+		  We discussed some of the issues here.
+
+		  dmo asked why dependency on Cygwin is a problem;
+		  answers were cultural issues, use of Unix pathnames,
+		  and extra download.  fjh will investigate the possibility
+		  of a minimal solution which fixes the pathname issues
+		  without bothering to eliminate all the dependencies on
+		  Cygwin.
+
+		  Dependencies on Cygwin are:
+		  - scripts: mmc, c2init, ml
+		  - mmake
+		  	Some of this functionality could migrate into the
+			the Mercury compiler:
+				- basic functionality would be to have
+				  an option (`--build'?) to do all the
+				  steps of compilation (mmc --make-short-int,
+				  mmc --make-int, mmc --compile, link)
+				- next level is having an option (`--make')
+				  to only build things if they are out-of-date
+				- last level is the stuff you can do using
+				  non-trivial Mmakefiles: having different
+				  sets of options for different modules,
+				  extra targets, etc.; we probably *don't* want
+				  to put that kind of functionality in the
+				  compiler
+		  - use of shell commands in the compiler, e.g. `mkdir'
+		    Possible alternative would be to do that directly,
+		    using system calls, rather than using shell commands.
+
+General discussion
+
+	- zs brought up the point that the Posix library (and others in
+	  the extras distribution) lack visibility; could we put in the
+	  main compiler distribution?
+	  Perhaps there should be a second class of standard libraries
+	  for non-portable libraries which are nevertheless always installed
+	  on systems which support them.
+	  fjh said that portability is not the only problem; the current Posix
+	  library is also not complete enough or well-documented enough to meet
+	  our quality standards for the standard library.
+
+	- we discussed changing (reducing) the set of grades installed by
+	  default.  zs suggested the possibility of an interactive choice.
+	  fjh said that `configure' can't be interactive, since that would
+	  violate GNU standards, but we could have an interactive "install"
+	  script that asked the user which grades they wanted (minimal,
+	  complete, or custom; then if custom, do you want debugging,
+	  profiling, trailing, etc.) and then invoked "configure", "make",
+	  and "make install".
+
+	- We discussed making `--use-subdirs' enabled by default.
+	  Not a big issue on Linux, because of sufficiently efficient
+	  file system access even with large numbers of files in a single
+	  directory, but may be useful on other systems.
+	  This would make it trivial to migrate `mmake clean'
+	  functionality into the compiler.
+	  It might also be particularly useful if we also change mmake
+	  to support building multiple grades in a single directory
+	  simultaneously.
+
+Minutes taken by Fergus Henderson (fjh@cs.mu.oz.au).
+</pre>
+</html>
