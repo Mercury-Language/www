@@ -16,29 +16,6 @@ if($menu == "Information") {
   &nbsp;&nbsp;<a href="<?echo $root?>/information/features.html">Features</a>
     <BR>
   &nbsp;
-    <a href="<?echo $root?>/information/documentation.html">Documentation</a>
-    <BR>
-    <?
-    if($submenu == "Documentation") { 
-    ?>
-	&nbsp;&nbsp;&nbsp;
-	<a href="<?echo $root?>/tutorial/index.html">Tutorial</a><BR>
-	&nbsp;&nbsp;&nbsp;
-	<a href="<?echo $root?>/information/doc/reference_manual_toc.html">Reference Manual</a><BR>
-	&nbsp;&nbsp;&nbsp;
-	<a href="<?echo $root?>/information/doc/user_guide_toc.html">User Guide</a><BR>
-	&nbsp;&nbsp;&nbsp;
-	<a href="<?echo $root?>/information/doc/library_toc.html">Library Reference</a><BR>
-	&nbsp;&nbsp;&nbsp;
-	<a href="<?echo $root?>/information/doc/transition_guide_toc.html">cf. Prolog</a><BR>
-	&nbsp;&nbsp;&nbsp;
-	<a href="<?echo $root?>/information/comparison_with_haskell.html">cf. Haskell</a><BR>
-	&nbsp;&nbsp;&nbsp;
-	<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a><BR>
-    <?
-    }
-    ?>
-  &nbsp;
     <a href="<?echo $root?>/information/benchmarks.html">Benchmarks</a>
     <BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/information/papers.html">Papers</a>
@@ -49,6 +26,26 @@ if($menu == "Information") {
     <BR>
   &nbsp;&nbsp<a href="<?echo $root?>/information/reports.html">Reports</a>
     <BR>
+</SMALL>
+<?
+}
+?>
+
+<P>
+
+<B><a href="<?echo $root?>/information/documentation.html">Documentation</a>
+</B><BR>
+<?
+if($menu == "Documentation") { 
+?>
+<SMALL>
+  &nbsp;&nbsp;<a href="<?echo $root?>/tutorial/index.html">Tutorial</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/reference_manual_toc.html">Reference Manual</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/user_guide_toc.html">User Guide</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/library_toc.html">Library Reference</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/transition_guide_toc.html">cf. Prolog</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/comparison_with_haskell.html">cf. Haskell</a><BR>
+  &nbsp;&nbsp;<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a><BR>
 </SMALL>
 <?
 }

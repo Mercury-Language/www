@@ -1,7 +1,6 @@
 <HTML>
 <?
-    $menu="Information";
-    $submenu="Documentation";
+    $menu="Documentation";
     $title="Documentation";
     $dir="information";
     $root="..";
