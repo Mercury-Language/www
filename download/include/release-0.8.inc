@@ -148,8 +148,11 @@
   in this version, so any use of it will now result in a warning, and
   the predicate will be removed entirely in some future version. <p>
 
+</ul>
+
 <h3>Changes to the Mercury implementation:</h3>
 
+<ul>
 <li> We've added a new source-to-source transformation - deforestation. <p>
 
   Deforestation transforms conjunctions to avoid the construction
