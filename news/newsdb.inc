@@ -17,6 +17,17 @@
 */
 
 $newsdb = array(
+"18 Mar 1999" => array("Linux RPM format binary distribution",
+
+"We have provided a new binary distribution of Mercury 0.8.1
+for Linux in RPM (RedHat Package Manager) format.
+
+Note that the binary distributions that we provide for Linux work
+with libc 6.0 only.  Unfotauntely they do NOT work with libc 6.1. 
+This is due to incompatibilities between libc versions 6.0 and 6.1
+(i.e. glibc 2.0 and 2.1).
+"),
+
 "15 Mar 1999" => array("Lazy evaluation",
 
 "The latest development version of the Mercury extras distribution
@@ -26,10 +37,10 @@ a type \`lazy(T)' for lazily-evaluated data structures,
 with \`delay' and \`force' operations.
 There is also a module \`lazy_list', which defines a lazy list
 data type using the \`lazy' module.
-See the files in extras/dynamic_linking for details."
+See the files in extras/dynamic_linking for details.
 This will soon be available for
 <A HREF=\"download/rotd.html\">download</A>.
-),
+"),
 
 "11 Mar 1999" => array("Prolog debuggers no longer supported",
 

@@ -19,6 +19,10 @@ are available at the following site(s):
 <dd> <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/">
      ftp://ftp.ntua.gr/pub/lang/mercury/</a><br>
      National Technical University of Athens, Greece.
+<dt> Sweden
+<dd> <a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
+     ftp://ftp.csd.uu.se/pub/Mercury/</a><br>
+     Uppsula University, Sweden.
 </dl>
 
 Mercury 0.8 was released on November 18, 1998.
@@ -137,14 +141,17 @@ or porting it to a new system.
 <dd> 
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.8.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-compiler-0.8.1.tar.gz">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-compiler-0.8.1.tar.gz">Sweden</a>
 <dt> Extras (377k)
 <dd>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-extras-0.8.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-extras-0.8.1.tar.gz">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-extras-0.8.1.tar.gz">Sweden</a>
 <dt> Tests (233k)
 <dd>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-tests-0.8.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-tests-0.8.1.tar.gz">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.8.1.tar.gz">Sweden</a>
 </dl>
 
 <h3>Binary Distribution</h3>
@@ -156,11 +163,26 @@ installed all the binary distributions.)
 <p>
 
 <dl>
-    <dt>x86 machines running Linux (ELF executable format, libc 6)
-	<dd> Debian Package (*.deb) <br>
+    <dt>x86 machines running Linux (ELF executable format, libc 6.0)
+	<dd> Note that these binary distributions work ONLY with libc 6.0.x.
+	     Unfortunately they do NOT work with libc 6.1. This is due
+	     to incompatibilities between libc versions 6.0 and 6.1
+	     (i.e. glibc 2.0 and 2.1).
+	     <p>
+	     Debian Package (*.deb) <br>
 	     Compiler only (about 11.6 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.8.1-1.deb">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.8.1-1.deb">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.8.1-1.deb">Sweden</a>
+	     <br>
+	     If you get this package, we suggest that you also download
+	     the "extras" source distribution.
+	     <p>
+	     RedHat Package (*.rpm) <br>
+	     Compiler only (about 11.6 Mb): <br>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.8.1-1.deb">Australia</a>
+<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.8.1-1.deb">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.8.1-1.deb">Sweden</a>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
@@ -170,12 +192,15 @@ installed all the binary distributions.)
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Greece</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Sweden</a>
 	<p>
 
     <dt>x86 machines running FreeBSD 3.0
 	<dd> Compiler only, minus sample programs (about 14.5 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Greece</a> <br>
+<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Greece</a> 
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-compiler-0.8.i386-pc-freebsd3.0.tar.gz">Sweden</a>
+<br>
 	If you get this distribution, we suggest you also download
 	the "compiler" and "extras" source distributions,
 	so that you can look at some sample programs.
@@ -185,6 +210,7 @@ installed all the binary distributions.)
 	<dd> Compiler + Extras + Tests (about 17.9 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Sweden</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">USA</a><br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
@@ -197,6 +223,7 @@ and (2) use GNU tar. </em>
 	<dd> Compiler + Extras + Tests (about 36 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Sweden</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">USA</a>
 
 	<p>
@@ -204,30 +231,29 @@ and (2) use GNU tar. </em>
 	<dd> Compiler + Extras + Tests (about 14 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Greece</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Sweden</a>
 
 </dl>
 
 <h3>FTP Sites</h3>
 <dl>
-	<dt> Australia: 
+	<dt> Australia (primary site)
 	<dd>
 	<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
 	ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/</a>
 
-	<dt> Greece
+	<dt> Greece (automatically updated mirror)
 	<dd>
 	<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/">
         ftp://ftp.ntua.gr/pub/lang/mercury/</a>
 
-	<dt> USA:
-	<dd>
-	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
-	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
-
-<!--
-	<dt> Europe:
+	<dt> Europe (automatically updated mirror)
 	<dd>
 	<a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
 	ftp://ftp.csd.uu.se/pub/Mercury/</a>
--->
+
+	<dt> USA (manually updated mirror)
+	<dd>
+	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
+	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
 </dl>
