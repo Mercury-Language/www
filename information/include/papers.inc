@@ -57,7 +57,7 @@ Constraint-based mode analysis of Mercury
 </strong>
 <br>
 David Overton, Zoltan Somogyi and Peter Stuckey.
-To appear in <em>PPDP'02</em>, Pittsburgh.
+<em>PPDP'02</em>, Pittsburgh.
 <p>
 
 <li>
@@ -68,7 +68,7 @@ Using the heap to eliminate stack accesses
 </strong>
 <br>
 Zoltan Somogyi and Peter Stuckey.
-To appear in <em>PPDP'02</em>, Pittsburgh.
+<em>PPDP'02</em>, Pittsburgh.
 <p>
 
 <li>
@@ -736,10 +736,10 @@ Constraint-based mode analysis of Mercury
 David Overton, Zoltan Somogyi and Peter Stuckey
 <br>
 <em>
-to appear in the Proceedings of the Fourth International Conference on
+Proceedings of the Fourth International Conference on
 Principles and Practice of Declarative Programming,
 </em>
-Pittsburgh, Pennsylvania, October 2002.
+Pittsburgh, Pennsylvania, October 2002, pages 109-120.
 <a href = "papers/p33-overton.ps.gz">
 Available here (188K).
 </a>
@@ -774,10 +774,10 @@ Using the heap to eliminate stack accesses
 Zoltan Somogyi and Peter Stuckey
 <br>
 <em>
-to appear in the Proceedings of the Fourth International Conference on
+Proceedings of the Fourth International Conference on
 Principles and Practice of Declarative Programming,
 </em>
-Pittsburgh, Pennsylvania, October 2002.
+Pittsburgh, Pennsylvania, October 2002, pages 121-132.
 <a href = "papers/p81-somogyi.ps.gz">
 Available here (190K).
 </a>
