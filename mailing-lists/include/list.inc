@@ -31,7 +31,7 @@ while ($yr >= $year)
 
     while ($mo <= 12)
     {
-        if ($yr == $current_year && $mo > $current_month)
+        if ($yr == date("Y") && $mo > $current_month)
         {
             break;
         }
