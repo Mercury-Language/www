@@ -7,8 +7,9 @@
     </TD>
 
     <TD width="10%">
+    <? $size = GetImageSize("$root/images/merclogo_small.jpg"); ?>
     <IMG SRC="<?echo $root?>/images/merclogo_small.jpg" border="2"
-        hspace="10">
+        hspace="10" <? echo $size[3]; ?> >
     </TD>
 </TABLE>
 
