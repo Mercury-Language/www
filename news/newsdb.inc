@@ -161,7 +161,7 @@ Java."
 "18 Jul 1995" => array("Mercury 0.3 released.",
 
 "Release information can be found
-<A HREF=\"download/release-0.4.html\">here</A>."
+<A HREF=\"download/release-0.3.html\">here</A>."
 )
 
 );
