@@ -25,7 +25,7 @@ anyone were to infer the wrong thing from it.
 <hr>
 <p>
 Subject: Mercury 0.10 on RH Linux 7.0
-<p>
+<br>
 Date: Sun, 18 Mar 2001
 <p>
 Hi,<p>
@@ -52,27 +52,6 @@ See <URL:http://www.gnu.org/software/gcc/bugs.html> for instructions.
 	binary distribution rather than the source distribution.
 	We'd appreciate feedback on whether that work-around works.]
 </i>
-
-<hr>
-<br>
-Date: Wed, 4 Oct 1995
-<p>
-The following module causes an "undefined variable Inf" error in the
-generated C code, because 1E400 == Infinity, which gets printed as `Inf'.
-<p>
-<pre>
-:- module hello.
-:- interface.
-:- import_module io.
-
-:- pred main(io__state::di, io__state::uo) is det.
-
-:- implementation.
-
-main -->
-	io__write_float(1E400),
-	io__write_string("\n").
-</pre>
 <p>
 <hr>
 <p>
