@@ -80,13 +80,14 @@ The latest release is known to work on the following platforms:
     <li> Sun SPARC machines running Solaris 2.x and SunOS 5.x
     <li> DEC Alpha machines running OSF/1 (Digital Unix)
     <li> SGI Mips machines running IRIX 5.x
+    <li> x86 machines running Windows 95
 </ul>
 <p>
 Mercury has also worked on the following platforms, although we have
 not tested the latest release on these:
 <p>
 <ul>
-    <li> x86 machines running Windows 95 or Windows NT
+    <li> x86 machines running Windows NT
     <li> x86 machines running BSD Unix
     <li> PowerPC machines running Linux
     <li> DEC Alpha machines running Linux
@@ -148,13 +149,10 @@ installed all the binary distributions.)
 <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Australia</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">USA</a>
 
-<!--
 	<p>
-    <dt>x86 machines running Windows 95 or Windows NT (size unknown):
+    <dt>x86 machines running Windows 95 or Windows NT (about 14 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.i386-windows.tar.gz">Australia</a>
-
--->
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.pc-windows-cygwin-b20.1.tar.gz">Australia</a>
 
 </dl>
 
