@@ -2,7 +2,7 @@
 
 Mercury can have up to three different releases at any given point.
 <p>
-The most stable release will is a <em>numbered</em> release, such as 0.6 or
+The most stable release will be a <em>numbered</em> release, such as 0.6 or
 0.7.3.   These releases have been extensively tested, and often have 
 pre-compiled binary packages for easy installation.
 <p>
