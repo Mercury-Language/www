@@ -165,7 +165,8 @@
   Type specialization removes the overhead of polymorphic code, including
   code which uses type classes. The disadvantage is increased code size.
   Currently we do not perform inter-module type specialization.
-  Type specialization is enabled by using the `--type-specialization' option. <p>
+  Type specialization is enabled by using the `--type-specialization' option.
+  <p>
 
 <li> We've added support for "transitive" inter-module analysis. <p>
 
@@ -186,9 +187,10 @@
   `--intermodule-optimization' enabled and you must also
   define the C macro ML_OMIT_ARRAY_BOUNDS_CHECKS (e.g. by using
   `MGNUCFLAGS=-DML_OMIT_ARRAY_BOUNDS_CHECKS' in your Mmakefile). 
-  [XXX we also need to fix problems with intermodule inlining heuristics.] <p>
+  <p>
 
-<li> Domain checking for higher mathematical operations can now be disabled. <p>
+<li> Domain checking for higher mathematical operations can now be disabled.
+     <p>
 
   To disable domain  checking, you must compile with
   `--intermodule-optimization' enabled and you must also
@@ -273,7 +275,8 @@
 
 <li> Mmake now runs a bit faster, particularly on Windows. <p>
 
-<li> We've made a few small improvements to the efficiency of the generated code. <p>
+<li> We've made a few small improvements to the efficiency of the generated
+     code. <p>
 
 <li> The system has been ported to Linux/PPC. <p>
 
@@ -283,7 +286,8 @@
 
 <li> We've updated to version 4.13alpha2 of the Boehm garbage collector. <p>
 
-<li> We've made the MERCURY_OPTIONS environment variable somewhat easier to use. <p>
+<li> We've made the MERCURY_OPTIONS environment variable somewhat easier to
+     use. <p>
 
 <li> Mtags is now able to produce tags for typeclass declarations.  It is
   also able to produce tags files in the extended format supported by
