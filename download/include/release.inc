@@ -185,8 +185,13 @@ installed all the binary distributions.)
 	<dd> Compiler + Extras + Tests (about 17.9 Mb): <br>
 <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Australia</a>
 <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Greece</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">USA</a>
-
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">USA</a><br>
+	<em> <strong>WARNING:</strong> 
+We've had reports that some users have had trouble untarring some of
+the binary distributions for Solaris, with tar reporting
+"directory checksum error".  This appears to be due to a bug in
+Sun tar.  If you encounter this problem, then (1) let us know
+and (2) use GNU tar. </em>
 	<p>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 36 Mb): <br>
