@@ -7,7 +7,6 @@
 
 <h2>An introduction to the Mercury source code and tools</h2>
 
-Author: Tyson Dowd -- trd@cs.mu.oz.au 
 <p>
 
 The source code to Mercury is freely available and may be modified by
@@ -26,8 +25,8 @@ Other useful documents are in the
 of the web site.  In particular you may wish to see how to access the
 Mercury CVS repository and read about the design of the Mercury compiler. 
 <p>
-This document is a work-in-progress, if there is particular information
-you feels is useful, please let me know and I will write something about
+This document is a work-in-progress; if there is particular information
+you feel is useful, please let us know and we will write something about
 it.
 
 <h2>About grades</h2>
@@ -121,6 +120,18 @@ See the tools/lmc file for further documentation on this tool -- it can
 also run the compiler under gdb or compile programs suitable for C level
 debugging.
 
+<p>
+There is also a script in the tools directory called `lml',
+which is similar to `lmc' except that it runs `ml' rather than `mmc'.
+You can use these with mmake:
+<pre>
+mmake MC=lmc ML=lml ...
+</pre>
+However, this will still use the installed version of `mmake',
+`c2init'/`mkinit', `mgnuc', etc.  So it isn't entirely foolproof.
+If you've made changes to the scripts, it may be best to install
+rather than trying to use the local build directory.
+
 <h2>Bootchecking</h2>
 
 If you've made changes to the compiler or library that you think are
@@ -168,13 +179,20 @@ to a file.  For example:
 tail -f bootchecklog.Jan21
 </pre>
 
+There is also a script tools/submit_patch, which can be used for
+testing and/or committing patches.  It takes as input a file containing
+a CVS log message and a patch file.  It checks out the Mercury sources,
+applies the patch file, and then tests the patch by running a couple of
+bootchecks in different grades.  If you specified the `--commit' option,
+and the tests pass, it then goes ahead and commits the patch.
+
 <p>
 <hr>
 <p>
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../email.html" >contact</a> page.<br>
 
-Last update was $Date: 2001-01-17 00:49:47 $ by $Author: trd $@cs.mu.oz.au
+Last update was $Date: 2002-09-22 22:15:43 $ by $Author: fjh $@cs.mu.oz.au
 </body>
 </html>
 
