@@ -43,11 +43,16 @@ MCORBA: A CORBA Binding for Mercury
 <br>
 David Jeffery, Tyson Dowd and Zoltan Somogyi.
 <br>
-<em>
-Practical Aspects of Declarative Languages: First International Workshop.
-</em>
+In <em>
+Proceedings of the First International Workshop
+on Practical Aspects of Declarative Languages
+</em>,
+PADL '99, San Antonio, Texas, USA,
+January 1999, 
+Volume 1551, 
 Lecture Notes in Computer Science,
-Springer Verlag, January 1999, 15 pages.
+Springer Verlag, 
+Pages 211-227,
 &copy; 
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/mcorba_padl99.ps.gz">Available here (65K)</a>.
@@ -291,7 +296,7 @@ Available here (96K).
 </a>
 <p>
 
-The first paper on Mercury. It is superseded by the paper to appear
+The first paper on Mercury. It is superseded by the paper
 in the Journal of Logic Programming.
 <p>
 
