@@ -57,6 +57,14 @@ in a4 format.
 	<a href="doc/transition_guide.ps.gz">Postscript</a>
 	<p>
 
+	<li> <strong>Comparing Mercury and Haskell</strong><br>
+	A point-by-point comparison of some of the differences
+	between Mercury and Haskell 98, in particular with
+	regard to their type systems.<p>
+
+	Available in 
+	<a href="comparison_with_haskell.html">HTML</a> only.<p>
+
 	<li> <strong>Frequently Asked Questions</strong><br>
 	Information on common programming errors, problems caused by
 	unimplemented Mercury features and where to turn for help.<p>
