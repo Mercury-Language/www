@@ -135,31 +135,35 @@ for Mercury
 Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe
 <br>
 <em>
-Technical Report CW310
+Proceedings of ICLP 2001 - Seventeenth International Conference on 
+Logic Programming
 </em>,
-Departement Computerwetenschappen,
-Katholieke Universiteit Leuven, 18 pages.
-<a href = "papers/CW310_ctgc.ps.gz">
-Available here (135K).
+Paphos, Cyprus, November 2001. Lecture Notes in Computer Science 2237, 
+Springer Verlag, 
+Pages 105-119
+&copy;
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<a href = "papers/iclp2001_ctgc.ps.gz">
+Available here (84K).
 </a>
 <p>
-Compile-time garbage collection is still a very uncommon feature within
+Compile-time garbage collection (CTGC) 
+is still a very uncommon feature within
 compilers. 
 In previous work we have developed a compile-time structure
 reuse system for Mercury, a logic programming language. 
-This system derives so called reuse information. This information
+This system 
 indicates which datastructures can safely be reused at run-time. 
-<p>
 As preliminary experiments were promising, we 
 have continued this work and have now a 
 working and well performing near-to-ship
-compile-time garbage collection system built into the Melbourne Mercury
-Compiler. 
-<p>
+CTGC-system built into the Melbourne Mercury
+Compiler (MMC). 
+<br>
 In this paper we present the multiple design decisions leading to this
-system, we report the results of using compile time garbage
-collection for a set of benchmarks, including 
-real-world programs, and finally we discuss further
+system, we report the results of using CTGC 
+for a set of benchmarks, including a
+real-world program, and finally we discuss further
 possible improvements. 
 Benchmarks show substantial memory savings and a noticeable reduction
 in execution time. 
