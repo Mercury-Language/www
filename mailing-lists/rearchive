@@ -9,7 +9,7 @@ dir=/home/mercury/public/mailing_lists/
 
 day=`date '+%d'`
 month=`date '+%m'`
-year=`date '+%y'`
+year=`date '+%Y'`
 
 if [ $day = "01" ]
 then

@@ -3,14 +3,14 @@ $mo=1;
 $yr=date("Y");
 
 $current_month=date("m");
-$current_year=date("y");
+$current_year=date("Y");
 
-$year=1997;
+$first_year=1997;
 
 $cols=3;
 $width=(int)(100/$cols);
 
-$yrmo=sprintf("%02d%02d", $current_year, $current_month);
+$yrmo=sprintf("%04d%02d", $current_year, $current_month);
 $dir="$list.$yrmo/index.html";
 
 if (file_exists($dir))
@@ -22,7 +22,7 @@ else
     echo "Current Month (no mail messages)";
 }
 
-while ($yr >= $year)
+while ($yr >= $first_year)
 {
     echo "<H3>$yr</H3>";
     echo "<TABLE width=\"100%\">";
@@ -36,8 +36,14 @@ while ($yr >= $year)
             break;
         }
 
-        $year_2digits=date("y", mktime(0,0,0,$mo,1,$yr));
-        $yrmo=sprintf("%02d%02d", $year_2digits, $mo);
+        $yrmo=sprintf("%04d%02d", $yr, $mo);
+        $dir="$list.$yrmo/index.html";
+	/* prior to Jan 2004, the file names use two-digit years */
+        $yr_2digits=date("y", mktime(0,0,0,$mo,1,$yr));
+        $yrmo_2digits=sprintf("%02d%02d", $yr_2digits, $mo);
+        if (!file_exists($dir) && file_exists("$list.$yrmo_2digits/index.html")) {
+	    $dir="$list.$yrmo_2digits/index.html";
+	}
         $month_string=date("F", mktime(0,0,0,$mo,1,$yr));
 
         if ($i == 1)
@@ -46,7 +52,6 @@ while ($yr >= $year)
         }
         echo("\t<TD width=\"$width%\">");
 
-        $dir="$list.$yrmo/index.html";
         if (file_exists($dir))
         {
             echo "<A HREF=\"$dir\">";
