@@ -23,7 +23,6 @@ $newsdb = array(
 it describes the technology we use to implement the Mercury debugger.
 "),
 
-$newsdb = array(
 "28 Oct 1999" => array("Time module",
 
 "The standard library now includes a module `time'
