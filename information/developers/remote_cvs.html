@@ -28,18 +28,19 @@ You need:
 
 Anonymous Access:
 <ul>
-	<li> The CVS server is running on <b>hydra.cs.mu.oz.au</b>, and the
+	<li> The CVS server is running on <b>cvs.mercury.cs.mu.oz.au</b>,
+	and the
 	repository is in the directory <b>/home/mercury1/repository</b>
 	<li> The anonymous access account is called <i>guest</i> with a
 		password of <i>guest</i>
 	<li> To login (you need to do this just once)
 <pre>
-	cvs -d :pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository login
+	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury1/repository login
 </pre>
 	<li> The password is <i>guest</i>
 	<li> To checkout a module 
 <pre>
-	cvs -d :pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository checkout mercury
+	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury1/repository checkout mercury
 </pre>
 	<li> There is a list of modules later in this page.
 
@@ -73,79 +74,79 @@ Anonymous Access:
 
 Getting Write Access:
 <ul>
-	<li> The CVS server uses password authentication. You need to
-	  have a password installed in CVS's password file on
-	  the server end.  CVS stores your password (only very lightly
-	  encrypted) on your machine, so you won't have to remember your
-	  password or use it very often after you have logged in the
-	  first time.
+	<li> The preferred method for remote write access to the CVS repository
+	is through ssh (using version 2 of the ssh protocol) using public key
+	authentication.
+	You will need to install an ssh client on your machine if you do not
+	already have one.
 
-	<li> Generate a password using standard UNIX /etc/passwd style
-	  passwords.  *Do not* use your normal password.  A good way to
-	  do this is change your password to something, copy the line
-	  from /etc/passwd, then change it back.  If you have htpasswd
-	  installed using it is even easier.  Only the username and
-	  encrypted password are needed.<p>
+	<li> If you do not have an ssh version 2 key pair on your machine you
+	will need to generate one using
+	<pre>
+	ssh-keygen -t
+	</pre>
 
-	  e.g. myusername:s9FOR1a8DOxDs<p>
+	<li> Send your public key <tt>.ssh/id_rsa.pub</tt> to a member of the
+	Mercury team and get them to do the following steps:
+	
+	<ol>
+		<li>
+			Create an account for the new user on
+			cvs.mercury.cs.mu.oz.au (a.k.a venus).
+			The password field in <tt>/etc/passwd</tt> should
+			contain only an asterisk (<tt>*</tt>)
+			to prevent the user logging in.
+			A good place for the user's home directory
+			is <tt>/home/venus/<i>username</i></tt>.
+		</li>
+		<li> Create a file <tt>.ssh/authorized_keys</tt> in the
+			user's home directory and add the user's public key to
+			that file.  The key should be all on one line, and at
+			the start of the line you should add the string
+			<pre>
+	command="cvs server",no-port-forwarding
+			</pre>
+			This prevents the user from doing anything with their
+			account except using the CVS server.
+	</ol>
 
-	  (If your system uses shadow password files, the password field
-	  of /etc/passwd will not be meaningful; mail us if there is a problem).
-	  <p>
-
-	  If your encrypted passwd after you change it back looks different 
-	  from what it looked like originally, do not worry. The encrypted
-	  form of your password depends not only on your password but also
-	  on a 16-bit value known as the "salt" that is generated randomly
-	  every time you change your password, and which is recorded in
-	  the encrypted password field itself.
-
-	<li> Send the line with the username and encrypted password to the
-	  Mercury team, who will install it for you. If you have access to
-	  the CVS repository at the University of Melbourne, you can just
-	  add it to the file /home/mercury1/repository/CVSROOT/passwd.
-
-	<li> Also, tell us what domain you're going to be accessing the
-	  repository from, so we can adjust our security setup to allow
-	  you access. If you don't say, we'll assume it is the same as your
-	  email address. (Mercury team - modify /etc/hosts.allow to
-	  allow that domain).
-
-	<li> Access via Windows works just fine.  Most firewalls are
-	  setup to allow CVS access through.  You can get a free
+	<li> 
+	Access via Windows should work just fine.  Most firewalls are
+	  setup to allow ssh access through.  You can get a free
 	  binary (and source) CVS for Windows from 
 	  <a href="http://www.cyclic.com/">www.cyclic.com</a>.
 	  Also there is a product called 
 	  <a href="http://www.wincvs.com/">WinCVS</a> that should
 	  work (although we haven't tried it ourselves).
-
-	<li> There are some checks that are done via questions.  In
-	particular, our CVS repository does checks for up-to-date
-	copyright messages on all files.  These checks don't work very
-	well using the CVS `pserver' as mentioned here -- when you check
-	in it will complain that it doesn't know how to interact with
-	you.  Contact us if this is a big problem -- we know some
-	workarounds.
+	  CVS and OpenSSH are also both included in
+	  <a href="http://cygwin.com/">Cygwin</a>.
 </ul>
 
-Then (once you've been added to the passwd file):
+Then (once your account is set up):
 <ul>
 
-	<li> Set your CVSROOT environment variable to <p>
-	<ul>
-	  <li>:pserver:username@hydra.cs.mu.oz.au:/home/mercury1/repository
-	</ul>
-
-	  <p>
+	<li> Set your CVSROOT environment variable to
+	<pre>
+	:ext:username@cvs.mercury.cs.mu.oz.au:/home/mercury1/repository
+	</pre>
 	  Make sure this environment variable is exported (in sh
 	  based shells, "export CVSROOT", in csh based shells, use
 	  "setenv" to set the environment variable in the first place).
 
-	<li> Run "cvs login" to login to the server for the first time.
+	<li>  Set your CVS_RSH environment variable to "ssh".
 
-	<li> CVS will remember your password from now on (it is rather
-	  insecurely stored in a slightly jumbled manner in ~/.cvspass),
-	  so you rarely have to login again.
+	<li> There are some checks that are done via questions.
+	In particular, our CVS repository does checks for up-to-date copyright
+	messages on all files.
+	For remote users this requires an X connection so you will probably want
+	to turn on X forwarding by adding the following to your
+	<tt>~/.ssh/config</tt> file:
+	<pre>
+	Host cvs.mercury.cs.mu.oz.au
+	ForwardX11 yes
+	</pre>
+	If you are not running an X server and you are having problems
+	committing changes because of this, please contact us.
 
 	<li> You can do "cvs co mercury" to check out the main mercury
 	  module. This can take a while over a slow connection, but you
@@ -217,7 +218,7 @@ NOTE:
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../email.html" >contact</a> page.<br>
 
-Last update was $Date: 2001-10-19 05:24:33 $ by $Author: stayl $@cs.mu.oz.au
+Last update was $Date: 2002-03-04 06:04:25 $ by $Author: dmo $@cs.mu.oz.au
 </body>
 </html>
 
