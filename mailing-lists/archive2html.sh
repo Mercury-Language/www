@@ -9,6 +9,9 @@ usage="archive2html.sh -y <year> -m <month> -f <filename> -d <directory>"
     # formatting.
 export HM_SHOWHTML=0
 
+    # How many thread levels all the replies should be indented.
+export HM_THRDLEVELS=10
+
 while getopts ad:f:m:uy: flag ; do
     case $flag in
         a)  archive=true ;;

@@ -6,10 +6,11 @@ There are three Mercury mailing lists.
 The mercury-announce list is a very low-volume list used for
 announcements about new releases and such-like.
 <li>
-The mercury-developers list is intended for people actively working on
-the Melbourne Mercury compiler.  This list contains diffs of work in
+The mercury-developers list is the main communication device between the
+different developers of Mercury.  This list contains diffs of work in
 progress and discussions of implementation details of the compiler.
-It is <A HREF="mercury-developers/list.html">archived</A>.
+If you are interested in what has been added to the compiler lately,
+please look in this <A HREF="mercury-developers/list.html">archive</A>.
 <li>
 The mercury-users list is intended for general discussion
 about Mercury.  It is <A HREF="mercury-users/list.html">
