@@ -12,7 +12,11 @@
 
 www_host=venus
 
-export PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:$PATH
+export PATH
+
+CVSROOT=/home/mercury1/repository
+export CVSROOT
 
 echo Install started at `date`
 
