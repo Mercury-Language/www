@@ -19,8 +19,10 @@ We have written two general purpose articles, talking about Mercury and the
 
 <ul>
 	<li>
-	Mercury and Microsoft's .NET</a>
+	<a href="<? echo $root ?>/information/dotnet/mercury_and_dotnet.html">
+		Mercury and Microsoft's .NET</a>
 
 	<li>
+	<a href="<? echo $root ?>/information/dotnet/objectworld_flyer.html">
 	Mercury and .NET: flyer for ObjectWorld 2000</a>
 </ul>
