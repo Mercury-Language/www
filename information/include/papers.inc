@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#aadebug03-paper">
+Idempotent I/O for safe time travel
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<em>
+Proceedings of the Fifth International Workshop on Automated Debugging,
+</em>
+Ghent, Belgium, September 2003.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#juliensf-hons">
 Termination analysis for Mercury using convex constraints
 </a>
@@ -471,7 +485,21 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 </ul>
 
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
+
 <ul>
+
+<li>
+<strong>
+<a href = "papers.html#aadebug03-talk">
+Idempotent I/O for safe time travel
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+Invited talk presented at
+the Fifth International Workshop on Automated Debugging,
+Ghent, Belgium, September 2003.
+<p>
 
 <li>
 <strong>
@@ -595,6 +623,48 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name = "papers.html#aadebug03-paper">
+Idempotent I/O for safe time travel
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<em>
+Proceedings of the Fifth International Workshop on Automated Debugging,
+</em>
+Ghent, Belgium, September 2003.
+<a href = "papers/aadebug03_paper.pdf">
+Available here (143K).
+</a>
+<p>
+Debuggers for logic programming languages have traditionally had
+a capability most other debuggers did not:
+the ability to jump back to a previous state of the program,
+effectively travelling back in time in the history of the computation.
+This ``retry'' capability is very useful,
+allowing programmers to examine in detail
+a part of the computation that they previously stepped over.
+Unfortunately, it also creates a problem:
+while the debugger may be able to restore the previous values of variables,
+it cannot restore the part of the program's state
+that is affected by I/O operations.
+If the part of the computation being jumped back over performs I/O,
+then the program will perform these I/O operations twice,
+which will result in unwanted effects ranging
+from the benign (e.g. output appearing twice)
+to the fatal (e.g. trying to close an already closed file).
+<p>
+We present a simple mechanism for ensuring that
+every I/O action called for by the program is executed at most once,
+even if the programmer asks the debugger to travel back in time
+from after the action to before the action.
+The overhead of this mechanism is low enough and can be controlled well enough
+to make it practical to use it to debug
+computations that do significant amounts of I/O.
+<p>
 
 <li>
 <strong>
@@ -1810,6 +1880,24 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name = "papers.html#aadebug03-talk">
+Idempotent I/O for safe time travel
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<em>
+Invited talk presented at
+the Fifth International Workshop on Automated Debugging,
+</em>
+Ghent, Belgium, September 2003.
+<a href = "papers/aadebug03_talk.pdf">
+Available here (20K).
+</a>
+<p>
 
 <li>
 <strong>
