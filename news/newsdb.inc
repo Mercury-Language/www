@@ -21,6 +21,12 @@
 */
 
 $newsdb = array(
+"24 Dec 2002" => array("Mercury 0.11.0 released",
+
+"Release information is available
+<A HREF=\"./download/release.html\">here</A>."
+),
+
 "12 November 2002" => array("New Paper,",
 
 "We have a new paper available from our 
@@ -149,7 +155,7 @@ system in the Melbourne Mercury compiler."
 "04 Apr 2001" => array("Mercury 0.10.1 released",
 
 "Release information is available
-<A HREF=\"./download/release.html\">here</A>."
+<A HREF=\"./download/old-release.html\">here</A>."
 ),
 
 "25 Feb 2001" => array("Mercury 0.10 released",
