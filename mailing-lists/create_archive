@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# Shell script to create all the Mailing List archives up to the current
+# month.
+# This command must be run in the current directory.
+#
+
+dir=/home/mercury/public/mailing_lists/
+
+day=`date '+%d'`
+month=`date '+%m'`
+year=`date '+%y'`
+
+if [ $day = "01" ]
+then
+    month=`expr $month - 1`
+    month=`printf "%02d\n" $month`
+fi
+
+archive2html.sh -d $dir -f mercury-users -m 01 -y 97
+
+m=02
+y=97
+
+while [ $y -le $year ]
+do
+    while [ $m -le 12 ]
+    do
+        if [ $y -eq $year -a $m -gt $month ]
+        then
+            break
+        fi
+
+        for mail in mercury-users mercury-developers
+        do
+            echo ./archive2html.sh -d $dir -f $mail -m $m -y $y
+            ./archive2html.sh -d $dir -f $mail -m $m -y $y
+        done
+
+        m=`expr $m + 1`
+        m=`printf "%02d" $m`
+    done
+    m=01
+    y=`expr $y + 1`
+done

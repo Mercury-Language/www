@@ -1,6 +1,13 @@
 #!/bin/sh
 # 
+# Create one hypermail archive for the month and mailing list specified.
+# This command must be run in the directory this script is located in.
+#
 usage="archive2html.sh -y <year> -m <month> -f <filename> -d <directory>"
+
+    # Shows the messages inside <pre> </pre> tags so we don't lose
+    # formatting.
+export HM_SHOWHTML=0
 
 while getopts ad:f:m:uy: flag ; do
     case $flag in
@@ -44,7 +51,3 @@ case $month in
 esac
 
 hypermail -x -m $filename -a "../../mailing-lists.html" -l "$file $month $year"
-
-# if [ $archive = "true" ]
-# then
-# fi

@@ -1,5 +1,10 @@
 #!/bin/sh
+#
+# Update the mailing list archive.  Should be run every day.
+# This command must be run in the current directory.
+#
 
+set -x
 dir=/home/mercury/public/mailing_lists/
 
 day=`date '+%d'`

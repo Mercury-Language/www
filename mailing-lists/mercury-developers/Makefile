@@ -16,5 +16,6 @@ local_install:
 			cp -a $$dir $(INSTALL_WEBDIR);		\
 		fi						\
 	done
+	chmod -R a+r $(INSTALL_WEBDIR)*
 
 include ../../Makefile.common

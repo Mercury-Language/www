@@ -21,15 +21,18 @@ local:
 		cvs checkout mercury/library;		\
 		cvs checkout mercury/compiler/notes)
 	echo "LIBRARY_DIR=`pwd`/mercury/library"  > mercury/Mmake.common
+	(cd mercury/compiler/notes; mmake)
 	(cd mercury/doc; mmake library-chapters.texi split_html ps)
+	cp -a mercury/compiler/notes/*.text doc
 	cp -a mercury/doc/*.html mercury/compiler/notes/*.html doc
 	cp -a mercury/doc/*.ps doc
 	(cd doc; gzip -f -9 *.ps)
 
 local_install: target
-	for dir in bench doc papers;		\
-	do					\
-		cp -a $$dir $(INSTALL_WEBDIR);	\
+	for dir in bench developers doc papers;		\
+	do						\
+		cp -a $$dir $(INSTALL_WEBDIR);		\
+		chmod -R a+r $(INSTALL_WEBDIR)/$$dir;	\
 	done
 
 local_clean:
