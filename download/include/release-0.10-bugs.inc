@@ -9,7 +9,7 @@ on SourceForge.
 <p>
 In addition to the bugs mentioned here, some bugs related
 to the implementation of particular languages features
-(existential types, nested modules, tabling)
+(nested modules, tabling)
 are also mentioned in the language reference manual, and some
 problems related to using Mercury on specific operating systems
 are described in the README.* files in the distribution.
