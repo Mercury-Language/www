@@ -12,10 +12,14 @@
 */
 
 $reportsdb = array(
+	"4 May 2001" =>
+		array("minutes_04_05_01.html", "Mercury Meeting Minutes"),
 	"27 April 2001" => 
 		array("minutes_27_04_01.html", "Mercury Meeting Minutes"),
 	"20 April 2001" => 
 		array("minutes_20_04_01.html", "Mercury Meeting Minutes"),
+	"7 April 2001" => 
+		array("minutes_07_04_01.html", "Mercury Meeting Minutes"),
 	"30 March 2001" => 
 		array("minutes_30_03_01.html", "Mercury Meeting Minutes"),
 	"16 March 2001" => 

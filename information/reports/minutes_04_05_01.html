@@ -1,0 +1,71 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri May 4, 2001,
+from 3.15pm to 4.15.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	Mark Brown (dougl)
+	Simon Taylor (stayl)
+	David Overton (dmo)
+	Fergus Henderson (fjh)
+
+Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Zoltan Somogyi (zs):
+		- Has posted a diff of the deep profiler for review.
+		  Tom Conway and Simon Taylor will review it.
+
+		- Asked about how to check for the existence of a web
+		  server and how to determine installation directory
+		  for CGI programs during installation.
+		  	- For Linux we should follow the FSH standard
+			  for directories.
+			- For Red Hat and Debian packages we should
+			  add dependencies on a web browser.  For
+			  Debian this should be "recommended" rather
+			  than "required".  It was unknown whether RPM
+			  supports "recommended" dependencies or
+			  something similar.
+
+	Mark Brown (dougl):
+		- Has been doing more work on the search strategy in
+		  the declarative debugger.
+		- Has been trying to compile the Mercury compiler
+		  using MSVC.  Ran into some problems with '-l' flag
+		  not supported by MSVC.  Will update the relevant
+		  README file to describe how to get it working.
+		- Has started writing up a report on using the
+		  declarative debugger to debug the ICFP competition
+		  entry.
+
+	Simon Taylor (stayl):
+		- Has been working on smart recompilation.
+		- Has fixed a few bugs.
+
+	David Overton (dmo):
+		- Has been working on factoring implication
+		  constraints out of ROBDDs.  This will remove all
+		  2-sat constraints from the ROBDDs which are most of
+		  the constraints needed for mode checking.  This
+		  should greatly reduce the size of the ROBDDs which
+		  have been suffering from an exponential explosion,
+		  thus reducing the overall time and memory use for
+		  mode checking.
+
+	Fergus Henderson (fjh):
+		- Has been doing bug squishing in the RTTI for
+		  existential types.
+
+		- Has been looking at the .net namespace question.
+
+
+Minutes taken by David Overton (dmo@cs.mu.oz.au).
+</pre>
+</html>

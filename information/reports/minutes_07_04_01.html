@@ -1,0 +1,78 @@
+<html>
+<pre>
+We had a meeting of the Mercury group on Fri April 7, 2001, at 3.15pm.
+
+Attendees:
+       David Jeffery (dgj)
+       David Overton (dmo)
+       Fergus Henderson (trd)
+       Mark Brown (dougl)
+       Simon Taylor (stayl)
+       Tyson Dowd (trd)
+       Zoltan Somogyi (zs)
+
+Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Tyson Dowd (trd):
+		Has been working on misc fixes on the IL backend.
+		Will be leaving for Europe the day after the meeting.
+
+	Mark Brown (dougl)
+		Has spent most of his time getting up to speed on .NET.
+
+	David Jeffery (dgj)
+		Has been working mostly on HAL stuff.
+
+	David Overton (dmo)
+		Has continued work on the constraint based mode analysis
+		system. It now handles iota, the classic predicate for
+		filling in a partially instantiated data structure.
+		It also handles most of the test cases in the benchmark
+		directory, but it has performance problems with the relatively
+		large number of function symbols in the main type used in the
+		deriv test case.
+
+	Zoltan Somogyi (zs)
+		Has started performance testing the deep profiler. At the
+		moment, turning on deep profiling slows a program does by a
+		factor of about 2.6, compared to about a a factor of 2.1 for
+		using the debug grade. The overhead is due to instrumentation
+		code added to the program and lost optimizations, including
+		tail recursion.
+
+		In an effort to reduce the overhead and account for it better,
+		Zoltan has refactored the instrumentation predicates, in order
+		to avoid redundant entries/exits to instrumentation code. Since
+		some of the instrumentation predicates are pragma foreign code
+		with determinism failure, he has also improved the code
+		generation for such predicates.
+
+		We also discussed ways to manage sessions of user interaction
+		with the deep profiling tool.
+
+	Fergus Henderson (fjh)
+		Finished the 0.10.1 release. Congratulations!
+
+	Simon Taylor (stayl)
+		Has been working on a system that allows the compiler to avoid
+		unnecessary recompilations. The idea is to effectively
+		associate a time stamp not only with each interface file,
+		which we already do, but with each item in interface files.
+		This allows the compiler to avoid recompiling a module if
+		if none of the items that a module depends have changed since
+		the module was last recompiled, even if other items in the
+		interface file have changed or been added. This should reduce
+		the cost adding a new predicate e.g. to module `list'.
+
+		We discussed ways of checking whether an item has changed or
+		not. While comparing cryptographically secure hashes (e.g. MD5)
+		may be somewhat faster, psychologically a full comparison
+		is more acceptable to most people.
+
+Minutes taken by Zoltan Somogyi (zs@cs.mu.oz.au).
+</pre>
+</html>
