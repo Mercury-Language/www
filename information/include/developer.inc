@@ -88,6 +88,13 @@ in a4 format.
 	<a href="doc/todo.text">Plain text</a>
 	<p>
 
+<li>	<strong>Bootstrapping</strong> <br>
+	What to do when a change requires bootstrapping. <p>
+
+	Available in
+	<a href="doc/bootstrapping.html">HTML</a>
+	<p>
+
 <!---------
 %% Take this out of comments when the bytecode docs have settled down a bit.
 <li>	<strong>Bytecode</strong> <br>
