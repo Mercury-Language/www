@@ -21,6 +21,18 @@
 */
 
 $newsdb = array(
+"23 October 2002" => array("New build system",
+
+"The compiler now accepts a `--make' option, which performs most
+of the functions of Mmake.  The advantages of `mmc --make' are
+that no `mmake depend' step is necessary and the dependencies are
+more accurate.  Parallel builds are not yet supported.  See the
+\"Using Mmake\" chapter of the
+<A HREF=\"$user_guide_latest\">Mercury User's Guide</A>.
+`mmc --make' is available in the latest
+<A HREF=\"download/rotd.html\">release of the day</A>."
+),
+
 "17 August 2002" => array("Two PhD theses",
 
 "Two PhD theses on Mercury are now available from our
