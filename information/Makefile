@@ -52,16 +52,27 @@ local:
 	for branch in release latest; do \
 		info_dir=`pwd`; \
 		doc_dir=$$info_dir/doc-$$branch; \
-		cd mercury-$$branch/mercury; \
-		echo "LIBRARY_DIR=`pwd`/library"  > Mmake.common; \
-		echo "PERL=perl"  >> Mmake.common; \
-		echo "INFO=info"  >> Mmake.common; \
-		echo "DVIPS=dvips"  >> Mmake.common; \
-		echo 'include $$(MERCURY_DIR)/VERSION'  >> Mmake.common; \
-		(cd doc; mmake split_html ps); \
-		$(CP) doc/*.html doc/*.ps $$doc_dir; \
-		(cd $$doc_dir; gzip -f -9 *.ps); \
-		cd $$info_dir; \
+		cd mercury-$$branch/mercury && \
+		echo "LIBRARY_DIR=`pwd`/library"  > Mmake.common && \
+		echo "PERL=perl"  >> Mmake.common && \
+		echo "INFO=info"  >> Mmake.common && \
+		echo "DVIPS=dvips"  >> Mmake.common && \
+		echo 'include $$(MERCURY_DIR)/VERSION'  >> Mmake.common && \
+		(cd doc && mmake split_html ps) && \
+		$(CP) doc/*.html doc/*.ps $$doc_dir && \
+		if [ -d doc/mercury_ref ]; then \
+		    	$(CP) doc/mercury_ref doc/mercury_user_guide \
+				doc/mercury_library doc/mercury_faq \
+				doc/mercury_trans_guide \
+				$$doc_dir; \
+		else \
+			true; \
+		fi && \
+		(cd $$doc_dir && gzip -f -9 *.ps) && \
+		cd $$info_dir || { \
+			echo "*** copying documentation failed" 1>&2; \
+			exit 1; \
+		} \
 	done
 	# It's not worth installing the release branch versions of
 	# these files. Developers should normally be working with
