@@ -127,7 +127,7 @@ However, the mechanisms contributed by the two systems combine synergistically;
 the resulting type system is extremely expressive.
 <p>
 We then show how the type system we have designed allows the programmer
-to take advantage of many object oriented esign techniques.
+to take advantage of many object oriented design techniques.
 We give an in depth analysis of object oriented design
 and isolate the mechanisms which are likely to result
 in reusable and maintainable software systems.

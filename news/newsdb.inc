@@ -21,9 +21,9 @@
 */
 
 $newsdb = array(
-"17 August 2001" => array("Two theses",
+"17 August 2001" => array("Two PhD theses",
 
-"Two theses on Mercury are now available from our
+"Two PhD theses on Mercury are now available from our
 <A HREF=\"information/papers.html\">papers page</A>.
 They are:
 <em>Expressive type systems for logic programming languages</em>
