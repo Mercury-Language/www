@@ -144,8 +144,8 @@ Wim Vanhoof.
 <strong>
 <a href="papers.html#memory_reuse_analysis">
 A module based analysis for memory reuse in Mercury
-</strong>
 </a>
+</strong>
 <br>
 Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
 <em>ICCL'00</em>, London.  <em>LNAI</em>.
@@ -155,8 +155,8 @@ Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
 <strong>
 <a href="papers.html#tail_lopstr_lncs">
 Making Mercury programs tail recursive
-</strong>
 </a>
+</strong>
 <br>
 Peter Ross, David Overton and Zoltan Somogyi.
 <em>LOPSTR'99</em>, Venice, Italy.  <em>LNCS</em>.
@@ -287,8 +287,8 @@ Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 <strong>
 <a href = "papers.html#jicslpw">
 Status of the Mercury system
-</strong>
 </a>
+</strong>
 <br>
 Zoltan Somogyi, Fergus Henderson, Thomas Conway, Andrew Bromage,
 Tyson Dowd, David Jeffery, Peter Ross, Peter Schachte and Simon Taylor.
@@ -444,9 +444,11 @@ Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 </ul>
 
-<!---------- The Aditi interface is not useful yet
---------------------------------------------------
-
+<?
+/*---------------------------------------------------------------------------*/
+/* The aditi interface is not useful yet.  */
+if (0) {
+?>
 <li>
 <strong>
 <a href = "papers.html#tr90-2">
@@ -458,9 +460,10 @@ context information
 David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi. 
 <br>
 <em>Tech Report 90/2</em>, Melbourne, 1997.
-
---------------------------------------------------
--------------------------------------------------->
+<?
+}
+/*---------------------------------------------------------------------------*/
+?>
  
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
 <ul>
@@ -874,7 +877,6 @@ Grenoble, France, April 2002.
 &copy; 
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href = "papers/hlc_cc.ps.gz">Available here (67K)</a>.
-</a>
 <p>
 Many logic programming implementations compile to C,
 but they compile to very low-level C, and thus discard many
@@ -1707,15 +1709,21 @@ The following paper describes the method used to express database
 transactions and updates that is used in the Mercury ODBC database
 interface.
 </a>
-<!---------- The Aditi interface is not useful yet
---------------------------------------------------
+
+<?
+/*---------------------------------------------------------------------------*/
+/* The aditi interface is not useful yet.  */
+if (0) {
+?>
 The same kind of approach is also used in
 the Mercury interface to the Aditi deductive
 database system (see the "Aditi deductive database interface"
 section in Mercury Language Reference Manual listed under 
 "Implementation dependent pragmas" in the "Pragmas" chapter).
---------------------------------------------------
--------------------------------------------------->
+<?
+}
+/*---------------------------------------------------------------------------*/
+?>
 
 <p>
 <ul>
@@ -1739,10 +1747,11 @@ Available here (58K)
 with cover page.
 </a>
 
-</ul>
-
-<!---------- The Aditi interface is not useful yet
---------------------------------------------------
+<?
+/*---------------------------------------------------------------------------*/
+/* The aditi interface is not useful yet.  */
+if (0) {
+?>
 
 <a name="tr90-2">
 The following paper is also relevant to the Aditi interface mentioned above.
@@ -1774,14 +1783,16 @@ It is corrected in David Kemp's thesis,
 available here (560K).
 </a>
 
+<?
+}
+/*---------------------------------------------------------------------------*/
+?>
+ 
 </ul>
 
---------------------------------------------------
--------------------------------------------------->
- 
 <hr>
 
-<h2><a name="presentations">Presentations on Mercury<a></h2>
+<h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
 
