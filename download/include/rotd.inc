@@ -17,7 +17,7 @@ is put into the beta-releases directory.
 <ul>
 <li> <A HREF="<? echo $root; ?>/download/files/beta-releases/">
 Mercury web site</A><br>
-<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/">
+<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/rotd/">
 Mercury ftp site</A>
 </ul>
 
@@ -33,7 +33,7 @@ all its tests.  It is marked with a version number
 <ul>
 <li> <A HREF="<? echo $root; ?>/download/files/beta-releases/">
 Mercury web site</A><br>
-<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/">
+<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/rotd/">
 Mercury ftp site</A>
 </ul>
 
