@@ -7,8 +7,8 @@
 <body bgcolor="#ffffff" text="#000000" >
 <h1>Adding a new user.</h1>
 
-hydra is our master NIS server, with ender being our secondary
-slave server; for more details on how NIS was setup, see the file
+Our NIS servers are listed near the end of /home/mercury/public/hosts.
+For more details on how NIS was setup, see the file
 <A HREF="http://hydra.cs.mu.oz.au/doc/nis/nis.debian.howto.gz">
 nis.debian.howto</A> in
 <A HREF="http://hydra.cs.mu.oz.au/doc/nis">/usr/doc/nis</A> on hydra.
@@ -16,16 +16,16 @@ nis.debian.howto</A> in
 <P>
 
 Get the new users /etc/passwd entry from mundook and then add it to /etc/passwd
-on hydra (using vipw to be safe).
+on the NIS master server (using vipw to be safe).
 
 <P>
 
-Add the new user to group mercury in /etc/group on hydra (using vigr to
-be safe).
+Add the new user to group mercury in /etc/group on the NIS master server
+(using vigr to be safe).
 
 <P>
 
-Then execute the following commands as root on hydra to
+Then execute the following commands as root on the NIS master server to
 update the NIS database.
 
 <P>
@@ -47,7 +47,7 @@ by modifying the file mulga:/etc/conf/mail/lists/mercury-local.
 
 <P>
 
-Last update was $Date: 2002-10-08 06:44:57 $ by $Author: fjh $@cs.mu.oz.au.
+Last update was $Date: 2003-12-15 16:05:57 $ by $Author: fjh $@cs.mu.oz.au.
 </body>
 
 </html>
