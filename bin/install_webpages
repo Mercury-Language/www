@@ -59,6 +59,7 @@ htdig -c /etc/htdig/htdig-mercury.conf -a
 htmerge -c /etc/htdig/htdig-mercury.conf -a
 
     # Replace the work files with their alternate versions.
+cd /home/mercury5/htdig
 for file in `ls *.work`
 do
     mv $file `basename $file .work`
