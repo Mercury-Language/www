@@ -228,7 +228,8 @@ Changes to the Mercury implementation:
 <h4>Changes to the Mercury implementation</h4>
 
 <ul>
-<li> We've implemented a new back-end for the Mercury compiler.<p>
+<li> We've implemented a
+  <a name="hlc">new back-end for the Mercury compiler.</a><p>
 
   The new back-end, which is enabled by using the `--high-level-code'
   (or `-H') option or the `hlc.gc' grade, generates much higher-level

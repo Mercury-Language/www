@@ -69,7 +69,28 @@ if($menu == "Mailing Lists") {
 <?
 }
 ?>
+
 <P>
+
+<B><a href="<?echo $root?>/backends.html">Back-ends</a></B><BR>
+<?
+if($menu == "Back-ends") {
+?>
+<SMALL>
+  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#low_level_c">Low-level&nbsp;C</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/download/release-0.10.html#hlc">High-level&nbsp;C</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/dotnet.html">Microsoft .NET</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/download/gcc-backend.html">Native code</a><BR>
+  &nbsp;&nbsp;<a href="http://www.cs.mu.oz.au/research/aditi/">Aditi</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#java">Java</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#bytecode">Mercury&nbsp;Bytecode</a><BR>
+</SMALL>
+<?
+}
+?>
+
+<P>
+
 <B><a href="<?echo $root?>/download.html">Download</a></B><BR>
 <?
 if($menu == "Download") {
@@ -84,7 +105,9 @@ if($menu == "Download") {
 <?
 }
 ?>
+
 <P>
+
 <B><a href="<?echo $root?>/information/related.html">Related</a></B><BR>
 <?
 if($menu == "Related") {
@@ -97,7 +120,11 @@ if($menu == "Related") {
 <?
 }
 ?>
+
 <P>
+
 <B><a href="<?echo $root?>/contact.html">Contact</a></B>
+
 <P>
+
 <B><a href="<?echo $root?>/search.html">Search</a></B><BR>

@@ -8,6 +8,7 @@ HTML=	index.html 		\
 	mcorba.html		\
 	news.html 		\
 	information.html 	\
+	backends.html 		\
 	download.html 		\
 	contact.html 		\
 	dotnet.html 		\
