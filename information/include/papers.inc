@@ -17,6 +17,35 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+The implementation technology of the Mercury debugger
+</strong>
+<br>
+Zoltan Somogyi and Fergus Henderson.
+<br>
+<em>
+To appear in the Proceedings of the Tenth Workshop
+on Logic Programming Environments
+</em>,
+Las Cruces, New Mexico, November 1999.
+<a href="papers/debugger_wlpe99.ps.gz">Available here (66K)</a>.
+<p>
+
+Every programming language needs a debugger.
+Mercury now has three debuggers:
+a simple procedural debugger
+similar to the tracing systems of Prolog implementations,
+a prototype declarative debugger,
+and a debugger based on the idea of automatic trace analysis.
+In this paper, we present the shared infrastructure
+that underlies the three debuggers,
+and describe the implementation of the procedural debugger.
+We give our reasons for each of our main design decisions,
+and show how several of these decisions are rooted in our experience
+with the debugging of large programs working with large data structures.
+<p>
+
+<li>
+<strong>
 Making Mercury programs tail recursive (extended abstract)
 </strong>
 <br>
@@ -323,7 +352,6 @@ These algorithms include lazy code generation
 and a novel way of handling nested disjunctions.
 <p>
 
-
 <li>
 <strong>
 Compiling logic programs to C
@@ -477,7 +505,6 @@ Melbourne, Australia, May 1987, pages 769-787.
 Available here (40K).
 </a>
 <p>
-
 
 <li>
 <strong>
@@ -657,6 +684,20 @@ Presented at the Eighteenth Australasian Computer Science Conference,
 Adelaide, South Australia, February 1995.
 <a href = "papers/acsc95_slides.ps.gz">
 Available here (33K).
+</a>
+<p>
+
+<li>
+<strong>
+Lecture notes for the expanded Mercury segment of the subject
+433-257 Frontiers of Computer Science, given in 1999.
+(Whereas the segment in 1997 had four lectures, in 1999 it had six.)
+</strong>
+<br>
+Zoltan Somogyi.
+<br>
+<a href = "papers/257_1999.ps.gz">
+Available here (40K).
 </a>
 <p>
 
