@@ -17,7 +17,7 @@
 */
 
 $newsdb = array(
-"18 Dec 1998" => array("Mercury 0.9 released",
+"18 Dec 1999" => array("Mercury 0.9 released",
 
 "We've just released the long-awaited version 0.9.
 Release information can be found
