@@ -1,3 +1,7 @@
+<!--
+WHEN UPDATING THIS FILE, REMEMBER TO UPDATE THE TABLE OF CONTENTS!
+-->
+
 <h2>Papers and Presentations</h2>
 
 The Mercury team have written quite a few papers about the Mercury
@@ -11,13 +15,583 @@ Below the papers, the notes from a number of <a
 href="papers.html#presentations">presentations</a> given on
 Mercury, at a variety of levels, are also available.
 
-<h2>Papers on Mercury</h2>
+<h2>Contents</h2>
+<h3><a href = "papers.html#mercury">Papers on Mercury</a></h3>
 
 <ul>
 
 <li>
 <strong>
+<a href = "papers.html#conway-thesis">
 Towards parallel Mercury
+</a>
+</strong>
+<br>
+Thomas Conway.
+<em>
+Ph.D. thesis,
+</em>
+Melbourne, 2002.
+<p>
+
+<li>
+<strong>
+<a href = "#dgj-thesis-final">
+Expressive type systems for logic programming languages
+</a>
+</strong>
+<br>
+David Jeffery.
+<em>
+Ph.D. thesis,
+</em>
+Melbourne,
+2002.
+<p>
+
+<li>
+<strong>
+<a href = "#p33-overton">
+Constraint-based mode analysis of Mercury
+</a>
+</strong>
+<br>
+David Overton, Zoltan Somogyi and Peter Stuckey.
+To appear in <em>PPDP'02</em>, Pittsburgh.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#p81-somogyi">
+Using the heap to eliminate stack accesses
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Peter Stuckey.
+To appear in <em>PPDP'02</em>, Pittsburgh.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#high_level_gc">
+Accurate garbage collection in an uncooperative environment
+</a>
+</strong>
+<br>
+Fergus Henderson.
+<em>ISMM'02</em>, Berlin.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#mercury_to_clr">
+Compiling Mercury to the .NET Common Language Runtime
+</a>
+</strong>
+<br>
+Tyson Dowd, Fergus Henderson, and Peter Ross.
+<em>BABEL'01</em>, Firenze, Italy.  To appear in <em>ENTCS 59.1</em>.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#hlc_cc">
+Compiling Mercury to high-level C code
+</a>
+</strong>
+<br>
+Fergus Henderson and Zoltan Somogyi.
+<em>CC'02</em>, Grenoble, France.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#mu_01_24">
+Deep profiling:
+engineering a profiler for a declarative programming language
+</a>
+</strong>
+<br>
+Thomas C. Conway and Zoltan Somogyi.
+<em>Tech Report 2001/24</em>, Melbourne.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#iclp2001_ctgc">
+Practical aspects for a working compile time garbage collection system
+for Mercury
+</a>
+</strong>
+<br>
+Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe.
+<em>ICLP'01</em>, Paphos, Cyprus. <em>LNCS 2237</em>.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#bta_higher_order">
+Binding-time analysis by constraint solving: a modular and
+higher-order approach for Mercury
+</a>
+</strong>
+<br>
+Wim Vanhoof.
+<em>LPAR'00</em>, Reunion Island, France. <em>LNCS 1955</em>.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#memory_reuse_analysis">
+A module based analysis for memory reuse in Mercury
+</strong>
+</a>
+<br>
+Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
+<em>ICCL'00</em>, London.  <em>LNAI</em>.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#tail_lopstr_lncs">
+Making Mercury programs tail recursive
+</strong>
+</a>
+<br>
+Peter Ross, David Overton and Zoltan Somogyi.
+<em>LOPSTR'99</em>, Venice, Italy.  <em>LNCS</em>.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#update">
+State update transformation
+</a>
+</strong>
+<br>
+Peter Ross and Zoltan Somogyi.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#purity">
+Using impurity to create declarative interfaces in Mercury
+</a>
+</strong>
+<br>
+Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#liveness">
+Towards memory reuse for Mercury
+</a>
+</strong>
+<br>
+Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
+<em>IDL'99</em>, Paris.
+<p>
+
+<li>
+<strong>
+<a href="papers/bta_higher_order.ps.gz">
+Binding-time analysis for Mercury
+</a>
+</strong>
+<br>
+Wim Vanhoof and Maurice Bruynooghe.
+<em>ICLP'99</em>, Las Cruces, New Mexico
+<p>
+
+<li>
+<strong>
+<a href="papers.html#debugger_wlpe99">
+The implementation technology of the Mercury debugger
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Fergus Henderson.
+<em>WLPE'99</em>, Las Cruces, New Mexico.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#tail_lopstr">
+Making Mercury programs tail recursive (extended abstract)
+</a>
+</strong>
+<br>
+Peter Ross, David Overton and Zoltan Somogyi.
+<em>LOPSTR'99</em>, Venice, Italy.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#rtti_ppdp">
+Run time type information in Mercury
+</a>
+</strong>
+<br>
+Tyson Dowd, Zoltan Somogyi, Fergus Henderson, Thomas Conway and David Jeffery.
+<br>
+<em>PPDP'99</em>, Paris. <em>LNCS 1702</em>.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#stayl_hons">
+Optimization of Mercury programs
+</a>
+</strong>
+<br>
+Simon Taylor.
+<em>Honours report</em>, Melbourne, 1998.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#mcorba_padl99">
+MCORBA: A CORBA Binding for Mercury
+</a>
+</strong>
+<br>
+David Jeffery, Tyson Dowd and Zoltan Somogyi.
+<em>PADL'99</em>, San Antonio, Texas.  <em>LNCS 1551</em>.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#mu_98_13">
+Type classes in Mercury
+</a>
+</strong>
+<br>
+David Jeffery, Fergus Henderson and Zoltan Somogyi.
+<em>Tech Report 98/13</em>, Melbourne, 1998.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#sas97">
+Termination analysis for Mercury
+</a>
+</strong>
+<br>
+Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
+<em>SAS'97</em>, Paris.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#jicslpw">
+Status of the Mercury system
+</strong>
+</a>
+<br>
+Zoltan Somogyi, Fergus Henderson, Thomas Conway, Andrew Bromage,
+Tyson Dowd, David Jeffery, Peter Ross, Peter Schachte and Simon Taylor.
+<em>JICSLP'96 implementation workshop</em>, Bonn, Germany.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#jlp">
+The execution algorithm of Mercury:
+an efficient purely declarative logic programming language
+</a>
+</strong>
+<br>
+Zoltan Somogyi, Fergus Henderson and Thomas Conway.
+<em>JLP</em>, 1996.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#acsc96">
+Determinism analysis in the Mercury compiler
+</a>
+</strong>
+<br>
+Fergus Henderson, Zoltan Somogyi and Thomas Conway.
+<br>
+<em>ACSC'96</em>, Melbourne.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#code_gen_mit">
+Code generation for Mercury
+</a>
+</strong>
+<br>
+Thomas Conway, Fergus Henderson, and Zoltan Somogyi.
+<br>
+<em>ILPS'95</em>, Portland, Oregon.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#mercury_to_c">
+Compiling logic programs to C
+using GNU C as a portable assembler
+</a>
+</strong>
+<br>
+Fergus Henderson, Zoltan Somogyi and Thomas Conway.
+<em>ILPS'95 implementation workshop</em>,
+Portland, Oregon.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#acsc95">
+Mercury: an efficient purely declarative logic programming language
+</a>
+</strong>
+<br>
+Zoltan Somogyi, Fergus Henderson and Thomas Conway.
+<em>ASCS'95</em>, Glenelg, Australia.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#ilps94w">
+The implementation of Mercury:
+an efficient purely declarative logic programming language
+</a>
+</strong>
+<br>
+Zoltan Somogyi, Fergus Henderson and Thomas Conway.
+<em>
+ILPS'94 Postconference Workshop on
+Implementation Techniques for Logic Programming Languages,
+</em>
+Syracuse, New York.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#conway_hons">
+Code generation for Mercury
+</a>
+</strong>
+<br>
+Thomas Conway.
+<em>Honours report</em>, Melbourne, 1994.
+<p>
+
+</ul>
+
+<h3><a href = "papers.html#related">Related papers</a></h3>
+
+<ul>
+<li>
+<strong>
+<a href = "papers.html#mu_97_23">
+Termination analysis for logic programs
+</a>
+</strong>
+<br>
+Chris Speirs.
+<em>Technical Report 97/23</em>, Melbourne, 1997.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#vision">
+Logic programming for the real world
+</a>
+</strong>
+<br>
+Zoltan Somogyi, Fergus Henderson, Thomas Conway and Richard O'Keefe.
+<em>ILPS'95 ``visions'' workshop</em>, Portland, Oregon.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#iclp87">
+A system of precise modes for logic programs
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<em>ICLP'87</em>, Melbourne.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#fjh_hons_thesis">
+Strong modes can change the world!
+</a>
+</strong>
+Fergus Henderson.
+<br>
+<em>Honours Report</em>, Melbourne, 1992.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#mu_96_45">
+Database transactions in a purely declarative logic programming language
+</a>
+</strong>
+<br>
+David B. Kemp, Thomas Conway, Evan Harris, Fergus Henderson,
+Kotagiri Ramamohanarao and Zoltan Somogyi.
+<em>Tech Report 96/45</em>, Melbourne, 1996.
+
+</ul>
+
+<!---------- The Aditi interface is not useful yet
+--------------------------------------------------
+
+<li>
+<strong>
+<a href = "papers.html#tr90-2">
+Right-, left-, and multi-linear rule transformations that maintain
+context information
+</a>
+</strong>
+<br>
+David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi. 
+<br>
+<em>Technical Report 90/2</em>, Melbourne, 1997.
+
+--------------------------------------------------
+-------------------------------------------------->
+ 
+<h3><a href = "papers.html#presentations">Presentations</a></h3>
+<ul>
+
+<li>
+<strong>
+<a href="paper.html#sas_talk">
+Termination analysis for Mercury
+</a>
+</strong>
+<br>
+Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
+Talk presented at <em>SAS'97</em>, Paris.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#unif">
+Unification in Mercury
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<em>
+Invited talk presented at the Eighth Benelux Workshop on Logic Programming,
+</em>
+Louvain-la-Neuve, Belgium, 1996.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#jicslp_talk">
+The design and implementation of Mercury
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Fergus Henderson.
+Tutorial presented at <em>JICSLP'96</em>, Bonn, Germany.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#jicslpw_talk">
+Status of the Mercury system
+</a>
+</strong>
+<br>
+Zoltan Somogyi, Fergus Henderson, Thomas Conway, Andrew Bromage,
+Tyson Dowd, David Jeffery, Peter Ross, Peter Schachte and Simon Taylor.
+<br>
+Presented at <em>the JICSLP '96 Workshop on Parallelism and
+Implementation Technology for (Constraint) Logic Programming Languages,
+</em>
+Bonn, Germany.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#acsc95_slides">
+Mercury:
+an efficient purely declarative logic programming language
+</a>
+</strong>
+<br>
+Zoltan Somogyi, Fergus Henderson and Thomas Conway.
+Presented at <em>ACSC'95</em>, Adelaide, South Australia.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#257_1999">
+Mercury lecture notes for 433-257 (expanded)
+</a>
+</strong>
+<br>
+Zoltan Somogyi, 1999.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#257">
+Mercury lecture notes for 433-257
+</a>
+</strong>
+<br>
+Zoltan Somogyi, 1997.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#247">
+Mercury lecture notes for 433-247
+</a>
+</strong>
+<br>
+Zoltan Somogyi, 1995.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#dgj-talk">
+Type classes for logic programming languages
+</a>
+</strong>
+<br>
+David Jeffery, 1998.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#rtti_talk_98">
+Runtime type information in Mercury
+</a>
+</strong>
+<br>
+Tyson Dowd, 1998.
+<p>
+
+</ul>
+
+
+<hr>
+
+<h2><a name="mercury">Papers on Mercury</a></h2>
+
+<ul>
+
+<li>
+<strong>
+<a name="conway-thesis">
+Towards parallel Mercury
+</a>
 </strong>
 <br>
 Thomas Conway.
@@ -80,7 +654,9 @@ the Melbourne Mercury compiler.
 
 <li>
 <strong>
+<a name="dgj-thesis-final">
 Expressive type systems for logic programming languages
+</a>
 </strong>
 <br>
 David Jeffery.
@@ -148,7 +724,9 @@ and to use existing CORBA components from within Mercury programs.
 
 <li>
 <strong>
+<a name="p33-overton">
 Constraint-based mode analysis of Mercury
+</a>
 </strong>
 <br>
 David Overton, Zoltan Somogyi and Peter Stuckey
@@ -184,7 +762,9 @@ This allows us handle programs that are not supported by the existing system.
 
 <li>
 <strong>
+<a name="p81-somogyi">
 Using the heap to eliminate stack accesses
+</a>
 </strong>
 <br>
 Zoltan Somogyi and Peter Stuckey
@@ -219,7 +799,9 @@ would require the compiler to perform mutability analysis.
 
 <li>
 <strong>
+<a name="high_level_gc">
 Accurate garbage collection in an uncooperative environment
+</a>
 </strong>
 <br>
 Fergus Henderson
@@ -246,7 +828,9 @@ applications.
 
 <li>
 <strong>
+<a name="mercury_to_clr">
 Compiling Mercury to the .NET Common Language Runtime
+</a>
 </strong>
 <br>
 Tyson Dowd, Fergus Henderson, and Peter Ross
@@ -275,7 +859,9 @@ regarding separate compilation, verifiability, tail calls, and efficiency.
 
 <li>
 <strong>
+<a name="hlc_cc">
 Compiling Mercury to high-level C code
+</a>
 </strong>
 <br>
 Fergus Henderson and Zoltan Somogyi
@@ -316,8 +902,10 @@ is based is
 
 <li>
 <strong>
+<a name="mu_01_24">
 Deep profiling:
 engineering a profiler for a declarative programming language
+</a>
 </strong>
 <br>
 Thomas C. Conway and Zoltan Somogyi
@@ -357,8 +945,10 @@ including imperative, object-oriented, and functional languages.
 
 <li>
 <strong>
+<a name="iclp2001_ctgc">
 Practical aspects for a working compile time garbage collection system
 for Mercury
+</a>
 </strong>
 <br>
 Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe
@@ -400,8 +990,10 @@ in execution time.
 
 <li>
 <strong>
+<a name="bta_higher_order">
 Binding-time analysis by constraint solving: a modular and
 higher-order approach for Mercury
+</a>
 </strong>
 <br>
 Wim Vanhoof
@@ -428,7 +1020,9 @@ be performed on a modular basis.
 
 <li>
 <strong>
+<a name="memory_reuse_analysis">
 A module based analysis for memory reuse in Mercury
+</a>
 </strong>
 <br>
 Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
@@ -456,7 +1050,9 @@ results obtained with a first prototype of the module based analysis.
 
 <li>
 <strong>
+<a name="tail_lopstr_lncs">
 Making Mercury programs tail recursive
+</a>
 </strong>
 <br>
 Peter Ross, David Overton and Zoltan Somogyi
@@ -489,7 +1085,9 @@ is available as a <a href = "papers/tail_data.tar.gz">5 Kb tar file</a>.
 
 <li>
 <strong>
+<a name="update">
 State update transformation
+</a>
 </strong>
 <br>
 Peter Ross and Zoltan Somogyi
@@ -508,7 +1106,9 @@ and report on its implementation in the Mercury compiler.
 
 <li>
 <strong>
+<a name="purity">
 Using impurity to create declarative interfaces in Mercury
+</a>
 </strong>
 <br>
 Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi
@@ -540,7 +1140,9 @@ declarative interfaces to libraries.
 
 <li>
 <strong>
+<a name="liveness">
 Towards memory reuse for Mercury
+</a>
 </strong>
 <br>
 Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
@@ -570,7 +1172,9 @@ modules.
 
 <li>
 <strong>
+<a name="bta">
 Binding-time analysis for Mercury
+</a>
 </strong>
 <br>
 Wim Vanhoof and Maurice Bruynooghe
@@ -594,7 +1198,9 @@ BTA dealing with partially static binding-times.
 
 <li>
 <strong>
+<a name="debugger_wlpe99">
 The implementation technology of the Mercury debugger
+</a>
 </strong>
 <br>
 Zoltan Somogyi and Fergus Henderson.
@@ -622,7 +1228,9 @@ with the debugging of large programs working with large data structures.
 
 <li>
 <strong>
+<a name="tail_lopstr">
 Making Mercury programs tail recursive (extended abstract)
+</a>
 </strong>
 <br>
 Peter Ross, David Overton and Zoltan Somogyi.
@@ -640,7 +1248,9 @@ This paper has been superceded by the LNCS version.
 
 <li>
 <strong>
+<a name="rtti_ppdp">
 Run time type information in Mercury
+</a>
 </strong>
 <br>
 Tyson Dowd, Zoltan Somogyi, Fergus Henderson, Thomas Conway and David Jeffery.
@@ -682,7 +1292,9 @@ is available as a <a href = "papers/rtti_data.tar.gz">70 Kb tar file</a>
 
 <li>
 <strong>
+<a name="stayl_hons">
 Optimization of Mercury programs
+</a>
 </strong>
 <br>
 Simon Taylor.
@@ -703,7 +1315,9 @@ type specialization, constraint propagation and structure reuse.
 
 <li>
 <strong>
+<a name="mcorba_padl99">
 MCORBA: A CORBA Binding for Mercury
+</a>
 </strong>
 <br>
 David Jeffery, Tyson Dowd and Zoltan Somogyi.
@@ -744,7 +1358,9 @@ but whose representation is unknown.
 
 <li>
 <strong>
+<a name="mu_98_13">
 Type classes in Mercury
+</a>
 </strong>
 <br>
 David Jeffery, Fergus Henderson and Zoltan Somogyi.
@@ -771,7 +1387,9 @@ and describe how our implementation works.
 
 <li>
 <strong>
+<a name="sas97">
 Termination analysis for Mercury
+</a>
 </strong>
 <br>
 Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
@@ -801,7 +1419,9 @@ as a <a href = "papers/termination_data.tar.gz">5.2 Mb tar file</a>.
 
 <li>
 <strong>
+<a name="jicslpw">
 Status of the Mercury system
+</a>
 </strong>
 <br>
 Zoltan Somogyi, Fergus Henderson, Thomas Conway, Andrew Bromage,
@@ -817,8 +1437,10 @@ Bonn, Germany, September 1996, pages 207-218.
 
 <li>
 <strong>
+<a name="jlp">
 The execution algorithm of Mercury:
 an efficient purely declarative logic programming language
+</a>
 </strong>
 <br>
 Zoltan Somogyi, Fergus Henderson and Thomas Conway.
@@ -846,7 +1468,9 @@ is available on our <a href = "./benchmarks.html">benchmarking page</a>.
 
 <li>
 <strong>
+<a name="acsc96">
 Determinism analysis in the Mercury compiler
+</a>
 </strong>
 <br>
 Fergus Henderson, Zoltan Somogyi and Thomas Conway.
@@ -867,7 +1491,9 @@ inference, and determinism checking.
 
 <li>
 <strong>
+<a name="code_gen_mit">
 Code generation for Mercury
+</a>
 </strong>
 <br>
 Thomas Conway, Fergus Henderson, and Zoltan Somogyi.
@@ -888,8 +1514,10 @@ and a novel way of handling nested disjunctions.
 
 <li>
 <strong>
+<a name="mercury_to_c">
 Compiling logic programs to C
 using GNU C as a portable assembler
+</a>
 </strong>
 <br>
 Fergus Henderson, Zoltan Somogyi and Thomas Conway.
@@ -909,7 +1537,9 @@ and describes the approach we have taken in the implementation of Mercury.
 
 <li>
 <strong>
+<a name="acsc95">
 Mercury: an efficient purely declarative logic programming language
+</a>
 </strong>
 <br>
 Zoltan Somogyi, Fergus Henderson and Thomas Conway.
@@ -926,8 +1556,10 @@ An overview paper.
 
 <li>
 <strong>
+<a name="ilps94w">
 The implementation of Mercury:
 an efficient purely declarative logic programming language
+</a>
 </strong>
 <br>
 Zoltan Somogyi, Fergus Henderson and Thomas Conway.
@@ -946,7 +1578,9 @@ in the Journal of Logic Programming.
 
 <li>
 <strong>
+<a name="conway_hons">
 Code generation for Mercury
+</a>
 </strong>
 <br>
 Thomas Conway.
@@ -969,10 +1603,12 @@ Some of these are documented in the version in the ILPS 95 proceedings.
 
 <h2><a name="related">Related Papers</a></h2>
 
+<a name="mu_97_23">
 This paper gives an introduction to automatic termination analysis.
 It surveys termination analysis of logic programs and provides an
 overview of the important concepts involved in automatic termination
-analysis.  
+analysis.
+</a>
 <p>
 
 <ul>
@@ -994,8 +1630,10 @@ Available here (67K).
 </ul>
 
 <p>
+<a name="vision">
 This paper outlines the features that we believe to be important
 in a modern logic programming language:
+</a>
 <p>
 
 <ul>
@@ -1018,8 +1656,10 @@ Available here (59K).
 
 </ul>
 
+<a name="iclp87">
 The mode system and the uniqueness system of Mercury
 are based on the following papers:
+</a>
 <p>
 
 <ul>
@@ -1042,7 +1682,9 @@ Available here (40K).
 
 <li>
 <strong>
+<a name="fjh_hons_thesis">
 Strong modes can change the world!
+</a>
 </strong>
 <br>
 Fergus Henderson.
@@ -1058,9 +1700,11 @@ Available here (114K).
 
 </ul>
 
+<a name="mu_96_45">
 The following paper describes the method used to express database 
 transactions and updates that is used in the Mercury ODBC database
 interface.
+</a>
 <!---------- The Aditi interface is not useful yet
 --------------------------------------------------
 The same kind of approach is also used in
@@ -1098,9 +1742,11 @@ with cover page.
 <!---------- The Aditi interface is not useful yet
 --------------------------------------------------
 
+<a name="tr90-2">
 The following paper is also relevant to the Aditi interface mentioned above.
 It describes a source-to-source transformation implemented in the
 Mercury compiler.
+</a>
 
 <li>
 <strong>
@@ -1139,7 +1785,9 @@ available here (560K).
 
 <li>
 <strong>
+<a name="sas_talk">
 Termination analysis for Mercury
+</a>
 </strong>
 <br>
 Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
@@ -1155,7 +1803,9 @@ Available here (6K).
 
 <li>
 <strong>
+<a name="unif">
 Unification in Mercury
+</a>
 </strong>
 <br>
 Zoltan Somogyi.
@@ -1171,7 +1821,9 @@ Available here (12K).
 
 <li>
 <strong>
+<a name="jicslp_talk">
 The design and implementation of Mercury
+</a>
 </strong>
 <br>
 Zoltan Somogyi and Fergus Henderson.
@@ -1188,7 +1840,9 @@ Available here (18K).
 
 <li>
 <strong>
+<a name="jicslpw_talk">
 Status of the Mercury system
+</a>
 </strong>
 <br>
 Zoltan Somogyi, Fergus Henderson, Thomas Conway, Andrew Bromage,
@@ -1206,8 +1860,10 @@ Available here (5K).
 
 <li>
 <strong>
+<a name="acsc95_slides">
 Mercury:
 an efficient purely declarative logic programming language
+</a>
 </strong>
 <br>
 Zoltan Somogyi, Fergus Henderson and Thomas Conway.
@@ -1223,9 +1879,11 @@ Available here (33K).
 
 <li>
 <strong>
+<a name="257_1999">
 Lecture notes for the expanded Mercury segment of the subject
 433-257 Frontiers of Computer Science, given in 1999
 (whereas the segment in 1997 had four lectures, in 1999 it had six)
+</a>
 </strong>
 <br>
 Zoltan Somogyi.
@@ -1237,8 +1895,10 @@ Available here (40K).
 
 <li>
 <strong>
+<a name="257">
 Lecture notes for the Mercury segment of the subject
 433-257 Frontiers of Computer Science, given in 1997
+</a>
 </strong>
 <br>
 Zoltan Somogyi.
@@ -1250,8 +1910,10 @@ Available here (21K).
 
 <li>
 <strong>
+<a name="247">
 Lecture notes for the Mercury segment of the subject
 433-247 Frontiers of Computer Science, given in 1995
+</a>
 </strong>
 <br>
 Zoltan Somogyi.
@@ -1263,7 +1925,9 @@ Available here (21K).
 
 <li>
 <strong>
+<a name="dgj-talk">
 Type classes for logic programming languages, given in March 1998
+</a>
 </strong>
 <br>
 David Jeffery.
@@ -1275,7 +1939,9 @@ Available here (30K).
 
 <li>
 <strong>
+<a name="rtti_talk_98">
 Runtime type information in Mercury, given in March 1998
+</a>
 </strong>
 <br>
 Tyson Dowd.
