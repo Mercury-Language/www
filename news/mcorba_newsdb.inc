@@ -16,7 +16,7 @@
 
 $mcorba_newsdb = array(
 
-"9 Sep 1998" => array("MCORBA web page added.",
+"21 Sep 1998" => array("MCORBA web page added.",
 
 "We've just added this page to the Mercury web pages."
 )
