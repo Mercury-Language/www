@@ -14,7 +14,8 @@ local_install:
 			cp -a $$dir $(INSTALL_WEBDIR);		\
 		fi						\
 	done
-	chmod -R a+r $(INSTALL_WEBDIR)/*
+	chmod -R a+r,g+w $(INSTALL_WEBDIR)/*
+	chgrp -R mercury $(INSTALL_WEBDIR)/*
 
 list.html: touch
 

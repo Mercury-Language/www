@@ -27,4 +27,14 @@ HTML= 	current-release-bugs.html	\
 
 current-release-bugs.html: release-0.7-bugs.inc
 
+install: local_install
+
+local_install: all
+	for dir in patches;					\
+	do							\
+		cp -a $$dir $(INSTALL_WEBDIR);			\
+		chmod -R a+r,g+w $(INSTALL_WEBDIR)/$$dir;	\
+		chgrp -R mercury $(INSTALL_WEBDIR)/$$dir;	\
+	done
+
 include ../Makefile.common

@@ -24,6 +24,8 @@ install: local_install
 
 local_install:
 	cp -a images $(INSTALL_WEBDIR)
+	chgrp -R mercury $(INSTALL_WEBDIR)/images
+	chmod -R g+w,a+r $(INSTALL_WEBDIR)/images
 
 
 #-----------------------------------------------------------------------------#
