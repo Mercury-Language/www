@@ -93,9 +93,11 @@ Changes to the Mercury implementation:
   the lambda expression. <p>
 
 <li> The old-style syntax for predicate lambda expressions,
-  `lambda([<Args>] is <Det>, <Goal>)', is now officially deprecated. <p>
+  `lambda([<var>Args</var>] is <var>Det</var>, <var>Goal</var>)',
+  is now officially deprecated. <p>
 
-  Please use the new syntax-style `(pred([<Args>]) is <Det> :- <Goal>)'
+  Please use the new syntax-style
+  `(pred(<var>Args</var>) is <var>Det</var> :- <var>Goal</var>)'
   instead.  The compiler still supports the old-style syntax, but
   we plan to eventually drop this support in some future release. <p>
 
@@ -168,13 +170,13 @@ Changes to the Mercury implementation:
 	float__min_exponent/1,
 	float__max_exponent/1.
  <p>
-<li> The implementations of `int:>>/2' and `int:<</2' have been changed to
+<li> The implementations of `int:&gt;&gt;/2' and `int:&lt;&lt;/2' have been changed to
   define the results for negative shift counts and shift counts greater than
   the word size. <p>
 
   For efficiency, we also provide the functions `int:unchecked_left_shift/2'
   and `int:unchecked_right_shift/2' that, like the previous implementations
-  of `int:>>/2' and `int:<</2', do not check for these cases. <p>
+  of `int:&gt;&gt;/2' and `int:&lt;&lt;/2', do not check for these cases. <p>
 
 <li> `int:^/2' and `integer:^/2' have been replaced by `int__xor/2' and
   `integer__xor/2', and will be removed in a future release.
