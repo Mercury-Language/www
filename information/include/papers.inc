@@ -25,7 +25,7 @@ Tyson Dowd, Fergus Henderson, and Peter Ross
 <em>
 BABEL'01 First International Workshop on
 Multi-Language Infrastructure and Interoperability,
-Department of Computer Science, University of Melbourne,
+</em>
 Firenze, Italy, September 2001.  Preliminary Proceedings pages 70-85.
 To appear in Electronic Notes in Theoretical Computer Science 59.1.
 <a href = "papers/mercury_to_clr.ps.gz">
