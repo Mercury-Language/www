@@ -6,8 +6,6 @@ at the University of Melbourne:
 <ul>
 <li> Ralph Becket, rafe@cs.mu.oz.au, research assistant
 <li> Mark Brown, dougl@cs.mu.OZ.AU, MEngSc student
-<li> <a href = "http://www.cs.mu.OZ.AU/~conway/">Thomas Conway</a>,
-conway@cs.mu.OZ.AU, PhD student
 <li> <a href = "http://www.cs.mu.OZ.AU/~trd/">Tyson Dowd</a>,
 trd@cs.mu.OZ.AU, PhD student
 <li> Julien Fischer, juliensf@cs.mu.oz.au, Honours student
@@ -45,6 +43,8 @@ some of whom are still informally associated with the project:
 <li> Levi Cameron, levi@students.cs.mu.oz.au, summer student
 <li> Ina Cheng, inch@students.cs.mu.oz.au, summer student
 <li> Waye-Ian Chiew, wchi@students.cs.mu.OZ.AU, summer student
+<li> <a href = "http://www.mds.rmit.edu.au/~conway/">Thomas Conway</a>,
+conway@mds.rmit.edu.au, PhD
 <li> Michael Day, summer student
 <li> Warwick Harvey, research fellow at Monash University
 <li> Oliver Hutchinson, ohutch@students.cs.mu.OZ.AU, summer student
