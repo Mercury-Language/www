@@ -1,0 +1,83 @@
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Nov 24, 3:15pm to 4:15pm.
+
+Attendees:
+	David Jeffery <dgj>
+	Mark Brown <dougl>
+	Zoltan Somogyi <zs>
+	Tyson Dowd <trd>
+	Simon Taylor <stayl>
+	Kevin Glynn <keving>
+
+1.  General Discussion
+
+	Summer students are starting next week, on Monday.  Tyson and
+	Fergus are giving talks on Mercury (mostly following Zoltans
+	433-257 notes, but unlike last year we will intersperse the
+	talks with "lab classes" to break up the lectures and give
+	students a bit of time to practice).
+	
+	Accounts need to be created for the students on the Mercury
+	machines.  We need to decide where machines will be put for the
+	students in the Mercury office.
+
+	We also discussed the possibility of making the module qualifier
+	`.' in time for this release.  We decided this might be better
+	as a post-release change, and we will backport it to the release
+	and make a point release (Zoltan's pun, not mine).
+
+	One possible project that we would like someone to do in future
+	is a Mercury code reformatter that preservers commenting.  This
+	would help us provide transitional tools for syntax changes.
+
+	The long names of mercury scripts were discussed and everyone
+	was happy enough with the `mercury_*' names that have been
+	suggested on mercury-developers.
+
+2.  Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Tyson Dowd <trd>
+
+		- has been working on getting the IL backend library
+		  working.  All the changes have been made, but there
+		  are some hitches with :- external and the multiple
+		  foreign language interface.
+
+		- zs suggested writing a proposal on the intended goal
+		  and workings of the foreign language system, which
+		  Tyson agreed was a good idea.
+
+	Mark Brown <dougl>:
+	
+		- has been working on his recently submitted change to
+		  do term dependency analysis in the declarative debugger. 
+
+	Simon Taylor <stayl>
+		- Working on getting aditi to call Mercury -- now
+		  list__append works.
+
+	David Jeffery <dgj>:
+		- Has been working HAL
+
+	Zoltan Somogyi <zs>:
+		- Has been working on putting MR_ prefixes on everything
+		  to make Mercury namespace clean (this is a release
+		  goal).
+		- Plans to work on retry across IO, an accurate GC code
+		  generator abort, and a typeclass bug before the
+		  release.
+
+	Kevin Glynn <keving>:
+		- Once again, Kevin has done no Mercury work.
+		  Is this the laziness that functional programmers talk
+		  about?
+
+Minutes taken by Tyson Dowd <trd@cs.mu.oz.au>.
+</pre>
+</html>
