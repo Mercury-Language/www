@@ -1,0 +1,167 @@
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Dec 01, 3:15pm to 4:15pm.
+
+Attendees:
+	David Jeffery <dgj>
+	Mark Brown <dougl>
+	Zoltan Somogyi <zs>
+	Tyson Dowd <trd>
+	Simon Taylor <stayl>
+	Fergus Henderson <fjh>
+	David Overton <dmo>
+	Levi Cameron <lpcam>
+	Ina Cheng <inch>
+	Julien Fischer <juliensf>
+	Simon Mei <xcsm>
+	Sam Thurairatnam <sthur>
+	Adrian Pellas-Rice <apell>
+
+	(Record numbers!)
+
+1.  Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Tyson Dowd <trd>
+
+		- has spent a lot of time this week working with the
+		  summer students.
+
+		- has been working on getting the IL backend library
+		  working.  All the changes have been made, but there
+		  are some hitches with `:- external'.  Tyson says he
+		  is still on track for a December release of this.
+		  The changes will be backported into the release
+		  branch after the code freeze.
+
+	Mark Brown <dougl>:
+	
+		- has been working on redesigning the search strategy
+		  for the declarative debugger.
+
+	Simon Taylor <stayl>
+		  
+		- has been working on Aditi nondet joins and on
+		  calling Mercury code from Aditi.
+
+		- still no estimated release date for Aditi, but will
+		  be released RSN.
+
+		- Fergus asked Simon to post his current code for
+		  calling Mercury from Aditi since it may be
+		  helpful for Levi to look at for his planned work of
+		  calling Mercury from the bytecode debugger.
+
+	David Jeffery <dgj>:
+
+		- Has been working on integrating a new constraint
+		  solver into HAL.
+
+	Zoltan Somogyi <zs>:
+
+		- has just finished his marking.  Congratulations to
+		  him for that and to Adrian for getting the top mark
+		  in 313.
+
+	Fergus Henderson <fjh>:
+
+		- has spent time with the summer students.
+
+		- has been looking at compiling Mercury for the lcc
+		  and cc compilers with both the LLDS and MLDS back
+		  ends.  Targetting lcc seems to be broken even though
+		  Peter Ross got it working a few months ago.  It was
+		  decided to set up a machine to run its nightly tests
+		  using lcc to prevent future software rot.
+		  
+		- has been looking at the new features of GCC:
+			- found 6 bugs which he reported to the GCC
+			  maintainers.
+			- GCC's new integrated CPP should be useful
+			  for reducing compilation times with the LLDS
+			  back end.
+			- GCC's improved tailcall optimisation looks
+			  promising.  Fergus suggested (to the GCC
+			  mailing list) adding an extension to GCC to
+			  tell it when it was safe to do a tailcall.
+			  Some of the GCC developers liked this idea
+			  and some didn't.
+
+		- has added a check to the bootcheck scripts to make
+		  sure `MR_' prefixes occur wherever they should.
+
+	David Overton <dmo>:
+
+		- finished marking exams on Tuesday
+
+		- is looking into problems related to mode checking
+		  and types with user defined equality.  Is planning
+		  to look at the options for what to do about this --
+		  will need to be discussed, probably at the next
+		  meeting.
+
+		- is working on updating and tidying up mtags.
+
+	Levi Cameron <lpcam>:
+
+		- Planning to work on adding bytecode queries to the
+		  Mercury debugger.  Has started looking at Bert
+		  Thompson's work on the bytecode interpreter.
+
+	Ina Cheng <inch>:
+
+		- Planning to develop a SOAP interface for Mercury.
+		  Has been doing background reading and looking at the
+		  current Mercury CGI interface.  Has developed some
+		  XML samples to be added to the repository.
+
+	Julien Fischer <juliensf>:
+
+		- Planning to work on the Java backend.
+
+	Simon Mei <xcsm>:
+	
+		- Planning to work on a ``quickcheck''-style test
+		  generator.
+
+	Sam Thurairatnam <sthur>:
+
+		- Planning to work on the pretty printer.
+
+	Adrian Pellas-Rice <apell>
+
+		- Planning to work on sequence quantification.
+	
+2. Discussions about the release
+
+	There was a discussion about when we will be ready to freeze
+	the compiler (i.e. create a release branch) and what needs to
+	be done before that.
+
+		- Tyson would like to get `:- external' working for
+		  the IL backend.  Will commit all he has done (with
+		  non-working bits commented out) before the freeze
+		  and backport the working version into the release
+		  branch some time before the release.  Zoltan wants
+		  the IL backend to be working for the release.
+
+		- Zoltan has a couple of outstanding bugs, including
+		  one in the new LLDS code generator.
+
+		- Fergus mentioned an outstanding bug with
+		  bootstrapping in grade asm_fast.gc.par.  Cause of
+		  this bug is unknown.  Current workaround is to use
+		  hlc.gc.par instead.
+
+		- Ina would like to get her XML samples commited.
+
+	It was decided we would aim to create the release branch late
+	on Monday afternoon (4 Dec).
+
+Minutes taken by David Overton <dmo@cs.mu.oz.au>.
+</pre>
+</html>
