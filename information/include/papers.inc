@@ -29,10 +29,9 @@ Paris, France, October 1999
 <a href="papers/liveness.ps.gz">Available here (61K)</a>.
 <p>
 While Mercury allows destructive input/unique output modes which direct
-the compiler to reuse memory, use of these modes is very cumbersome for
-the programmer. Moreover it does not fit the declarative programming
-paradigm where the programmer doesn't have to worry about the details of
-memory management.
+the compiler to reuse memory, use of these modes can be cumbersome for
+the programmer.  In most situations, it would be nicer if the programmer
+didn't have to worry about the details of memory management.
 
 The paper briefly reports on some experiments with a prototype analyser
 which aims at detecting memory available for reuse. The prototype is
