@@ -15,6 +15,8 @@ all:     local
 install: local_install
 clean:   local_clean
 
+reports.html: reportsdb.inc
+
 local:
 	[ -d doc ] || mkdir doc
 	[ ! -d mercury ] || (cvs update mercury-doc)
