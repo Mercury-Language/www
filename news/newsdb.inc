@@ -21,6 +21,15 @@
 
 $newsdb = array(
 
+"4 Oct 2000" => array("Two new papers",
+
+"Two new papers on Mercury are now available from our
+<A HREF=\"information/papers.html\">papers page</A>.
+One describes a binding-time analysis for higher order code,
+while the other describes an analysis for detecting whether a memory
+cell is available for reuse."
+),
+
 "22 Sep 2000" => array("Tuple types",
 
 "We've added support for tuple types, similar to those in most

@@ -16,6 +16,62 @@ Mercury, at a variety of levels, are also available.
 <ul>
 <li>
 <strong>
+Binding-time analysis by constraint solving: a modular and
+higher-order approach for Mercury
+</strong>
+<br>
+Wim Vanhoof
+<br>
+<em>
+Proceedings of the Seventh International Conference on Logic for
+Programming and Automated Reasoning
+</em>,
+Reunion Island, France, November 2000.
+Lecture Notes in Computer Science 1955,
+Springer Verlag, 
+Pages 399-416
+&copy; 
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<a href="papers/bta_higher_order.ps.gz">Available here (106K)</a>.
+<p>
+In this paper we present a binding-time analysis for the logic
+programming language Mercury. Binding-time analysis is a key analysis
+needed to perform off-line program specialisation.  Our analysis deals
+with the higher-order aspects of Mercury, and is formulated by means of
+constraint normalisation. This allows (at least part of) the analysis to
+be performed on a modular basis.
+<p>
+
+<li>
+<strong>
+A module based analysis for memory reuse in Mercury
+</strong>
+<br>
+Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
+<br>
+<em>
+Proceedings of the First International Conference on Computational Logic 
+</em>,
+London, United Kingdom, July 2000.
+Lecture Notes in Artificial Intelligence,
+Springer Verlag, 
+Pages 1255-1269
+&copy; 
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<a href="papers/memory_reuse_analysis.ps.gz">Available here (93K)</a>.
+<p>
+In previous work Bruynooghe, Janssens and K&aring;gedal developed a
+live-structure analysis for Mercury which detects memory cells available
+for reuse.  Seperate compilation of modules is an essential ingredient
+of a language such as Mercury which supports programming in the large.
+Hence, to be practical, a live-structure analysis also has to be module
+based.  This paper develops a modular live-structure analysis and
+extends it with a modular reuse analysis.  It also describes preliminary
+results obtained with a first prototype of the module based analysis.
+<p>
+
+<li>
+<strong>
 Making Mercury Programs Tail Recursive
 </strong>
 <br>
