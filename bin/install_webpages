@@ -45,7 +45,7 @@ set -x
     #
     # Install the web pages
     #
-cvs update .
+cvs update -d .
 cvs checkout tutorial
 make install
 
