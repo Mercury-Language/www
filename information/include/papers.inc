@@ -17,6 +17,27 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+Optimization of Mercury programs
+</strong>
+<br>
+Simon Taylor.
+<br>
+<em>
+Honours report.
+</em>
+Department of Computer Science, University of Melbourne, November 1998.
+<a href = "papers/stayl_hons.ps.gz">
+Available here (120K).
+</a>
+<p>
+
+This paper describes the implementation of several of the high-level
+optimization passes of the Mercury compiler, including deforestation,
+type specialization, constraint propagation and structure reuse.
+<p>
+
+<li>
+<strong>
 MCORBA: A CORBA Binding for Mercury
 </strong>
 <br>

@@ -18,6 +18,13 @@
 
 $newsdb = array(
 
+"25 Nov 1998" => array("New paper: Optimization of Mercury programs.",
+
+"A paper describing the high-level optimization passes of the Mercury
+compiler is now available from 
+<A HREF=\"information/papers.html\">the Mercury papers page</A>."
+),
+
 "18 Nov 1998" => array("Mercury 0.8 released",
 
 "We've just released the long-awaited version 0.8.
