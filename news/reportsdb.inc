@@ -12,6 +12,8 @@
 */
 
 $reportsdb = array(
+	"10 August 2001" =>
+		array("minutes_10_08_01.html", "Mercury Meeting Minutes"),
 	"3 August 2001" =>
 		array("minutes_03_08_01.html", "Mercury Meeting Minutes"),
 	"20 July 2001" =>
