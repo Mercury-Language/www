@@ -24,7 +24,7 @@ html: $(HTML)
 ifdef DIRS
 	for dir in $(DIRS); 				\
 	do 						\
-		(cd $$dir; $(MAKE) html); 		\
+		(cd $$dir && $(MAKE) html); 		\
 	done
 endif
 
@@ -33,7 +33,7 @@ all: $(HTML)
 ifdef DIRS
 	for dir in $(DIRS); 				\
 	do 						\
-		(cd $$dir; $(MAKE) all); 		\
+		(cd $$dir && $(MAKE) all); 		\
 	done
 endif
 
@@ -43,10 +43,10 @@ install: $(HTML)
 	[ -d $(INSTALL_WEBDIR) ] || mkdir -p $(INSTALL_WEBDIR)
 	cp -af $(HTML) $(INSTALL_WEBDIR)/
 ifdef DIRS
-	for dir in $(DIRS);					\
-	do				        		\
-		(export INSTALL_WEBDIR=$(INSTALL_WEBDIR)/$$dir;	\
-		cd $$dir; $(MAKE) install);			\
+	for dir in $(DIRS);						\
+	do				        			\
+		(export INSTALL_WEBDIR=$(INSTALL_WEBDIR)/$$dir &&	\
+		cd $$dir && $(MAKE) install);				\
 	done
 endif
 	chmod a+r,g+w $(INSTALL_WEBDIR)/*
@@ -58,7 +58,7 @@ clean:
 ifdef DIRS
 	for dir in $(DIRS);			\
 	do				        \
-		(cd $$dir; $(MAKE) clean);	\
+		(cd $$dir && $(MAKE) clean);	\
 	done
 endif
 
