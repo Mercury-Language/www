@@ -60,9 +60,9 @@ in a4 format.
 	<li> <strong>Frequently Asked Questions</strong><br>
 	Information on common programming errors, problems caused by
 	unimplemented Mercury features and where to turn for help.<p>
-
-	Available in
-	<a href="doc/faq_toc.html">HTML</a> or
-	<a href="doc/faq.ps.gz">Postscript</a>
+	Now implemented using FAQ-O-Matic.
+	<p>
+	Enter the 
+	<a href="http://www.mercury.cs.mu.oz.au/cgi-bin/fom">FAQ</a>.
 	<p>
 </ul>
