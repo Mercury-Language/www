@@ -1,11 +1,11 @@
 <?
 $mo=1;
-$yr=date("y");
+$yr=date("Y");
 
 $current_month=date("m");
 $current_year=date("y");
 
-$year=97;
+$year=1997;
 
 $cols=3;
 $width=(int)(100/$cols);
@@ -24,8 +24,7 @@ else
 
 while ($yr >= $year)
 {
-    $year_string=date("Y", mktime(0,0,0,$mo,1,$yr));
-    echo "<H3>$year_string</H3>";
+    echo "<H3>$yr</H3>";
     echo "<TABLE width=\"100%\">";
 
     $i=1;
@@ -37,7 +36,8 @@ while ($yr >= $year)
             break;
         }
 
-        $yrmo=sprintf("%02d%02d", $yr, $mo);
+        $year_2digits=date("y", mktime(0,0,0,$mo,1,$yr));
+        $yrmo=sprintf("%02d%02d", $year_2digits, $mo);
         $month_string=date("F", mktime(0,0,0,$mo,1,$yr));
 
         if ($i == 1)
