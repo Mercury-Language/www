@@ -58,7 +58,7 @@ For Mercury, it is as simple as calling a method of a type class.
 Here is some Mercury code that reads input strings and
 sends it to a CORBA object.
 <pre>
-:- pred sender_loop(T, io:state, io:state) <= chat(T).
+:- pred sender_loop(T, io:state, io:state) &lt;= chat(T).
 :- mode sender_loop(di, di, uo) is det.
 sender_loop(Chat0) -->
     io:read_line(Res),
