@@ -16,9 +16,9 @@
 
 $newsdb = array(
 
-"18 November 1998" => array("Mercury 0.8 to be released",
+"18 Nov 1998" => array("Mercury 0.8 released",
 
-"We're currently in the process of releasing Mercury version 0.8.
+"We've just released the long-awaited version 0.8.
 Release information can be found
 <A HREF=\"download/release-0.8.html\">here</A>."
 ),

@@ -8,9 +8,13 @@ at the following site(s):
 
 <dl>
 <dt> Australia 
-<dd> <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury">
+<dd> <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
      ftp://turiel.cs.mu.OZ.AU/pub/mercury</a><br>
      The Mercury ftp site in Melbourne, Australia.
+<dt> USA
+<dd> <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
+     ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a><br>
+     Stonybrook University in New York, USA. 
 </dl>
 
 We hope to eventually make the source distribution for 0.8
@@ -18,7 +22,7 @@ available at these sites too:
 
 <dl>
 <dt> USA
-<dd> USA <a href = "ftp://sunsite.unc.edu/pub/Linux/devel/lang">
+<dd> USA <a href = "ftp://sunsite.unc.edu/pub/Linux/devel/lang/">
      ftp://sunsite.unc.edu/pub/Linux/devel/lang</a><br>
      Sunsite in the USA. 
 <dt> Elsewhere	
@@ -64,15 +68,17 @@ The latest release is known to work on the following platforms:
     <li> Sun SPARC machines running Solaris 2.x and SunOS 5.x
     <li> DEC Alpha machines running OSF/1 (Digital Unix)
     <li> SGI Mips machines running IRIX 5.x
-    <li> x86 machines running Windows 95 or Windows NT
 </ul>
 <p>
 Mercury has also worked on the following platforms, although we have
 not tested the latest release on these:
 <p>
 <ul>
-    <li> Sun SPARC machines running SunOS 4.x
+    <li> x86 machines running Windows 95 or Windows NT
     <li> x86 machines running BSD Unix
+    <li> PowerPC machines running Linux
+    <li> DEC Alpha machines running Linux
+    <li> Sun SPARC machines running SunOS 4.x
     <li> HP PA machines running HPUX
     <li> IBM RS/6000 machines running AIX
     <li> DEC Mips machines running ULTRIX
@@ -116,16 +122,19 @@ installed all the binary distributions.)
     <dt>x86 machines running Linux (ELF executable format) (about 14.5 Mb):
 	<dd> Distribution:
 <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i586-pc-linux-gnu.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.i586-pc-linux-gnu.tar.gz">USA</a>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (about 17.9 Mb):
 	<dd> Distribution:
 <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.sparc-sun-solaris2.6.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.sparc-sun-solaris2.6.tar.gz">USA</a>
 
 	<p>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix (about 36 Mb):
 	<dd> Distribution:
 <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.alpha-dec-osf3.2.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.alpha-dec-osf3.2.tar.gz">USA</a>
 
 <!--
 	<p>
@@ -141,16 +150,18 @@ installed all the binary distributions.)
 <dl>
 	<dt> Australia: 
 	<dd>
-	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury">
-	ftp://turiel.cs.mu.OZ.AU/pub/mercury</a>
+	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
+	ftp://turiel.cs.mu.OZ.AU/pub/mercury/</a>
 
 	<dt> USA:
 	<dd>
-	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury">
-	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury</a>
+	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
+	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
 
+<!--
 	<dt> Europe:
 	<dd>
-	<a href = "ftp://ftp.csd.uu.se/pub/Mercury">
-	ftp://ftp.csd.uu.se/pub/Mercury</a>
+	<a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
+	ftp://ftp.csd.uu.se/pub/Mercury/</a>
+-->
 </dl>

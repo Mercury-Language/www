@@ -96,18 +96,18 @@ The full source distribution is 4.8Mb.<br>
 	<dt> Australia: 
 
 	<dd>
-	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury">
-	ftp://turiel.cs.mu.OZ.AU/pub/mercury</a>
+	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
+	ftp://turiel.cs.mu.OZ.AU/pub/mercury/</a>
 
 	<dt> USA:
 	<dd>
-	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury">
-	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury</a>
+	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
+	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
 
 	<dt> Europe:
 	<dd>
-	<a href = "ftp://ftp.csd.uu.se/pub/Mercury">
-	ftp://ftp.csd.uu.se/pub/Mercury</a>
+	<a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
+	ftp://ftp.csd.uu.se/pub/Mercury/</a>
 </dl>
 
 <h3>Release 0.6.2-1</h3>
