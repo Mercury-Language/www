@@ -1,0 +1,307 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Dec 15,
+from 3:10pm to about 5:00pm.
+
+Attendees:
+	Adrian Pellas-Rice <apell>
+	Thomas Conway <conway>
+	David Jeffery <dgj>
+	Fergus Henderson <fjh>
+	Ina Cheng <inch>
+	Julien Fischer <juliensf>
+	Kevin Glynn <keving>
+	Levi Cameron <lpcam>
+	Sam Thurairatnam <sthur>
+	Tyson Dowd <trd>
+	Simon Mei <xcsm>
+	Zoltan Somogyi <zs>
+
+1. Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Tyson Down <trd>:
+
+		- Helping summer students.
+
+		- Continuing work on the Managed C++ implementation of the
+		  standard library.  Progress is fairly slow.
+
+		- Got MCORBA working in hlc.par.gc grade.
+		  (This is particularly useful because the asm_fast.gc.par
+		  grade is broken, at least on Linux.)
+
+		- Fix a bug with printing of tuples.
+	
+		- Learnt about XML and SOAP.
+
+	Fergus Henderson <fjh>:
+
+		- Added trail support for the MLDS back-end.
+
+		- Fixed a problem with `:- external' in the MLDS back-end.
+
+		- Set up automated tests for the various MLDS grades
+		  (on the machine `roy').
+		
+		- Spent half a day working on the Java back-end with
+		  Julien Fischer.
+
+		- Spent some time talking with Simon Mei about RTTI
+		  and how to generate arbitrary user-defined data types.
+
+	At this point we digressed into a discussion about the RTTI
+	support.  Zoltan asked if DJ had some outstanding stuff with
+	regard to the RTTI interface, and DJ replied that he didn't.
+	There was some discussion about cleaning up the RTTI interface:
+	- moving the RTTI stuff from std_util.m into a separate module
+	- moving the stuff with a Prolog-like interface into prolog.m
+	- adding type class constraints on some of the RTTI operations
+	- improving the documentation
+	But no-one is currently working on this.  In any case it
+	should not be in the "Rudolph" release.
+
+	Levi Cameron <lpcam>:
+
+		- More work on the bytecode interpreter.
+
+		- Working on if-then-elses, disjunctions, and commits
+
+	Simon Mei <xcsm>:
+
+		- More work on the ``quickcheck''-style test generator.
+
+		- Had previously been using typeclasses and instance
+		  declarations, but was now instead using RTTI and nested
+		  if-then-elses with dynamic type checks (type_to_univ).
+
+		- Fergus mentioned that it would have been nice if
+		  we had dynamic type class casts so that these two
+		  techniques could be combined
+
+	Adrian Pellas-Rice <apell>:
+		
+		- Working on sequence quantification
+
+		Fergus gave a brief explanation of sequence quantification
+		for the rest of the Mercury group:
+
+			The problem that sequence quantification is aimed
+			at addressing is that there is no way of writing
+			loops in Mercury without using explicit recursion
+			or higher-order code, both of which are conceptually
+			somewhat complicated. 
+
+			Sequence quantification adds a new kind of goal:
+
+				forall Var1 in Seq1
+				    as Var2 in Seq2
+				    as Var3 in Seq3
+				    ...
+				    Goal
+
+			This essentially just univiersally quantifies the
+			sequence over all corresponding elements in the
+			given sequences.
+			The declarative semantics of this can be given by
+
+				all [I] (
+				    (Var1 = Seq1 ^ elem(I),
+				     Var2 = Seq2 ^ elem(I),
+				     Var3 = Seq3 ^ elem(I))
+				=>
+				    Goal
+				)
+
+			where `Seq ^ elem(I)' is field accessor syntax
+			for a type class method call; `elem' is a method
+			of some `sequence' type class that gets the `I'th
+			element of the sequence.
+
+			However, operationally, the idea is that the compiler
+			will instead transform this into a call to a
+			recursive predicate.
+
+			That's the simple version; there are also some more
+			complicated extensions possible, including in
+			particular `initially ... finally ...' sequences,
+			which are goals of the form
+
+				forall Var1 in Seq1
+				    as Var2 initially Initial finally Final
+				    ...
+				    Goal
+
+			where Goal can refer to `next Var2'.
+			The declarative semantics of this can be defined as
+
+				forall Var1 in Seq1
+				    as Var2 in [Initial] ++ Accs
+				    as NextVar2 in Accs ++ [Final]
+				    ...
+				    Goal [with `next Var2'
+				    replaced by `NextVar2']
+
+			where `NextVar2' and `Accs' are both fresh variables.
+			i.e.
+
+				all [I] (
+				    (Var1 = Seq1 ^ elem(I),
+				     Var2 = ([Initial] ++ Accs) ^ elem(I),
+				     NextVar2 = (Accs ++ [Final]) ^ elem(I))
+				=>
+				    Goal
+				)
+			
+			For example:
+
+				:- func sum(list(int)) = int.
+				sum(L) = Sum :-
+					forall X in L
+					    as Acc initially 0 finally Sum
+					    next Acc = Acc + X.
+
+			The modes allowed for sequence quantification
+			are more general than what is allowed for
+			universal quantification in Mercury.
+			Universal quantifications can't have any
+			outputs.  But for sequence quantification we
+			can handle the modes by using mode inference
+			for the generated recursive predicate, which
+			will allow `forall' goals to produce outputs.
+
+			Zoltan said it was not good to rely on mode
+			inference, since the modes would then depend
+			on the order of the conjuncts in <Goal>.
+
+			Tyson suggested that we could allow optional
+			explicit mode annotations on forall goals, i.e.
+
+				forall <Var1> in (<Seq1>::in)
+				    as <Var2> in (<Seq2>::in)
+				    as <Var3> in (<Seq3>::out)
+				    ...
+				    <Goal>
+
+		The general consensus was that this proposal for sequence
+		quantification seemed like a good idea.
+
+		- Adrian has been working on adding the new stuff needed
+		  to the parse tree representation (prog_data.m) and
+		  to the HLDS goal representation (hlds_goal.m).
+		  A new HLDS goal type is required because the transformation
+		  needs to know the non-local variables, which are computed
+		  by the quantification pass, which works on the HLDS.
+		  After quantification the transformation can be applied,
+		  so the later passes will not need to handle this goal;
+		  they can just call error/1, like they do for bi_implication.
+
+		  Fergus suggested that if someone adds a third such goal
+		  which gets syntactically expanded away after quantification,
+		  we should combine all three into a single alternative
+		  goal type called e.g. `syntactic_sugar/1', so that number
+		  of clauses calling error/1 remains small.  Someone
+		  (Zoltan?) said that it would be better and also
+		  easier to do this now.  Everyone agreed.
+
+	Thomas Conway <conway>:
+
+		- Back for a two-month "do or die" effort on his thesis.
+
+		- Spent some time chatting with summer students
+
+		- Asked about including the new namespace stuff for the XML
+		  package in the release.  Fergus said the deadline for new
+		  features expired a week ago, so unless it was completely
+		  ready, it should not go in the new release.  Tyson suggested
+		  making a release of the XML stuff as a separate package,
+		  sometime after the compiler release, and just making sure
+		  that it was compatible with the compiler release.
+
+		- Has been working with Zoltan on a paper on deep profiling.
+
+	Ina Cheng <inch>:
+
+		- working on sending SOAP messages through the web server
+
+		- looking at the XML package
+	
+		- started adding support for XML namespaces
+
+	Sam Thurairatnam <sthur>:
+
+		- Has been working on improving the pretty printer.
+
+		- Adding suppport for limiting size of printed terms
+		  based on the number of lines and characters (rather
+		  than the depth, etc.)
+		
+		- Zoltan has written some code which takes a term and
+		  returns a term annotated with size information,
+		  and Sam is writing some code which takes such an
+		  annotated term and produces a `pprint:doc' type.
+
+	Julien Fischer <juliensf>:
+		
+		- Working on the Java back-end
+
+		- Output arguments now work.  We've implemented those
+		  by returning an array of objects.
+
+		- User-defined types are not quite working
+
+		- Tyson asked about other features: exceptions, switches, RTTI?
+		  Julien was not sure whether they work.
+		  Fergus suggested that Julien should start making a list
+		  of which features work and which don't.
+
+	Kevin Glynn <keving>:
+
+		- Has applied for a six-month extension
+
+	David Jeffery <dgj>:
+
+		- Has been working on his thesis
+
+		- Did some work on MCORBA
+
+		- Anthony Senyard <anthls> has been working on a
+		  project involving using CORBA to connect some Mercury
+		  code which produces a graph with a package that does
+		  force feedback graph visualization.  Very cool ;-)
+
+	Zoltan Somogyi <zs>:
+
+		- Fixed four bugs in retry
+
+		- Has been working on a deep profiling paper with Tom.
+
+		- Has been dealing with exam students
+
+2. Hardware issues
+
+We discussed some issues about disk space, nightly bootchecks,
+the new file server, etc.
+
+We should schedule one night on which we don't run any bootchecks
+to ensure we can get a clean backup.
+
+3. Release plans
+
+Tyson's changes to add support for managed C++ version of the
+library will take some time.  Zoltan's retry fixes and changes to the
+configure options should be ready tonight.  There are no other changes
+outstanding (though there are a few bugs that should still be fixed).
+
+Fergus will fork off a release branch in the next day or so, once
+Zoltan's two outstanding changes have been committed.  Tyson will
+commit his stuff onto the release branch when it is ready.
+
+Minutes taken by Fergus Henderson <fjh@cs.mu.oz.au>.
+</pre>
+</html>
