@@ -11,6 +11,7 @@ HTML=	index.html 		\
 	download.html 		\
 	contact.html 		\
 	applications.html	\
+	contributions.html	\
 	search.html
 
 DIRS=contact download information mailing-lists tutorial

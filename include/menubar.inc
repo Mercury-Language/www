@@ -40,6 +40,7 @@
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/applications.html">Applications</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mcorba.html">MCORBA</a> <BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/contributions.html">Contributing Code</a> <BR>
 </SMALL>
 <P>
 <B><a href="<?echo $root?>/contact.html">Contact</a></B>
