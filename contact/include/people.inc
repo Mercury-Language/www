@@ -34,7 +34,7 @@ some of whom are still informally associated with the project:
 <ul>
 <li> Tibor Benyi, honours student
 <li> James Bligh, directed studies student
-<li> Andrew Bromag, MSc student
+<li> Andrew Bromage, MSc student
 <li> Waye-Ian Chiew, wchi@students.cs.mu.OZ.AU, summer student
 <li> <a href = "http://www.csse.monash.edu.au/~wharvey/">Warwick Harvey</A>,
 wharvey@cs.monash.edu.au, research fellow at Monash University
