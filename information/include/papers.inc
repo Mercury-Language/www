@@ -55,7 +55,6 @@ are applicable to most other language styles,
 including imperative, object-oriented, and functional languages.
 <p>
 
-<ul>
 <li>
 <strong>
 Practical aspects for a working compile time garbage collection system
