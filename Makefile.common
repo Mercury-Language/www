@@ -41,7 +41,7 @@ endif
 .PHONY: install
 install: $(HTML)
 	[ -d $(INSTALL_WEBDIR) ] || mkdir -p $(INSTALL_WEBDIR)
-	cp -a $(HTML) $(INSTALL_WEBDIR)/
+	cp -af $(HTML) $(INSTALL_WEBDIR)/
 ifdef DIRS
 	for dir in $(DIRS);					\
 	do				        		\

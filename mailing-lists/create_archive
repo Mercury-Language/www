@@ -17,7 +17,7 @@ then
     month=`printf "%02d\n" $month`
 fi
 
-archive2html.sh -d $dir -f mercury-users -m 01 -y 97
+./archive2html.sh -d $dir -f mercury-users -m 01 -y 97
 
 m=02
 y=97
@@ -33,7 +33,6 @@ do
 
         for mail in mercury-users mercury-developers
         do
-            echo ./archive2html.sh -d $dir -f $mail -m $m -y $y
             ./archive2html.sh -d $dir -f $mail -m $m -y $y
         done
 
