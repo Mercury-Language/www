@@ -74,5 +74,5 @@ various parts of the system.  The implementation is left unspecified.
 The IDL is transformed into a language specific binding, which allows
 each programming language to access things in a natural way for that
 language.  For C++, IDL is transformed into classes with methods.  For
-Mercury IDL is transformed into type classes.
+Mercury, IDL is transformed into type classes.
 
