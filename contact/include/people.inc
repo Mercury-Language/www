@@ -27,7 +27,7 @@ pets@cs.mu.OZ.AU, PhD student
 zs@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~harald/">Harald S&oslash;ndergaard</a>,
 harald@cs.mu.OZ.AU, senior lecturer
-<li> Simon Taylor, stayl@cs.mu.OZ.AU, honours student
+<li> Simon Taylor, stayl@cs.mu.OZ.AU, MEngSc student
 <li> <a href = "http://www.cs.mu.OZ.AU/~aet/">Bert Thompson</a>,
 aet@cs.mu.OZ.AU, research fellow
 </ul>
