@@ -7,7 +7,7 @@ the Mercury web site <B>excluding</B> the mailing lists.
 the mailing list archive.
 <br>
 <p>
-<form method="post" action="http://hydra.cs.mu.oz.au/cgi-bin/htsearch">
+<form method="post" action="http://www.mercury.cs.mu.oz.au/cgi-bin/htsearch">
 <font size=-1>
 Match: <select name=method>
 <option value=and>All
