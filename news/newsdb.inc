@@ -21,6 +21,13 @@
 
 $newsdb = array(
 
+"26 Jul 2000" => array("Mercury and Microsoft's .NET",
+
+"A page outlining the status of Mercury on Microsoft's net .NET
+framework is now available 
+<A HREF=\"information/dotnet/mercury_and_dotnet.html\">here</A>."
+),
+
 "11 Apr 2000" => array("Completed paper",
 
 "The full version of <EM>Making Mercury Programs Tail Recursive</EM> is

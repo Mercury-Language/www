@@ -1,0 +1,298 @@
+<html>
+<body>
+<h2>
+Mercury on Microsoft's .NET framework
+</h2>
+
+<h3>
+Executive Summary:
+</h3>
+
+This page is pretty verbose, so here's a quick overview:
+<ul>
+<li> Mercury now targets Microsoft's .NET platform (alpha-quality).
+  We should have a beta release available soon (next month or two).
+
+<li> You can write components in Mercury and inter-operate with C++, Visual
+  Basic, C#, COM components and many other languages.
+
+<li> It will be interesting to compare the speed, interoperability and
+  implementation techniques of the various languages on top of .NET.
+
+<li> This is just one new back-end, the existing back-end will still be
+supported.
+
+<li> The new back-end is fairly generic, and should make other ports
+  (e.g. a JVM port) relatively easy.
+
+<li> Licensing and distribution of Mercury is unchanged. No intellectual
+  property (or souls, or firstborn children) changed hands. All the
+  support for the .NET platform in the Mercury system will be available
+  on the same terms as the rest of the Mercury system, i.e. open-source
+  under the GPL or LGPL.
+</ul>
+
+Details follow...
+
+<h3>
+The Deal:
+</h3>
+
+Around 18 months ago, Microsoft approached the Mercury researchers at
+the University of Melbourne regarding an opportunity to participate
+in a research and development effort involving a multi-language
+platform, under the banner "Project 7".
+<p>
+
+As well as offering access to early development tools, Microsoft offered
+a substantial grant to fund researchers, an opportunity to stay at
+Microsoft at Redmond for 3 months to learn the technology (alongside
+researchers representing other efforts), visits to other implementors
+working on other languages (e.g. Haskell), and ongoing support, technical
+conferences, and a stream of snapshots of ongoing work.  This work was
+to remain secret (under a Non-Disclosure Agreement) until they were willing
+to announce their new platform and reveal its details.
+<p>
+
+They asked for no special intellectual property rights, and indeed
+except for NDAs no contracts were signed.  
+However, they requested that we provide feedback on what would make the
+platform better for Mercury, and what criticism (or praise) we (as
+language designers and implementors) could give on their work.
+<p>
+
+We decided to accept their offer, for two main reasons.  First, we have always
+tried to make Mercury available to the largest possible number of programmers
+compatible with our means.  Distributing implementations on Unix-family
+platforms reaches large numbers of people, but there are even larger numbers
+whom it does not reach.  The overwhelming majority of these people work on
+Microsoft platforms and need an implementation that works natively on that
+platform (i.e. not via systems such as Cygwin).  By building a backend that
+targets .NET we can reach this audience. Second, we have long planned to
+implement a new backend that generated higher level imperative code than
+the existing backend (which basically generates assembler in C syntax),
+and have had fairly detailed designs for this backend.  Unfortunately,
+we had no money for implementing this design, because this kind of work
+is very hard to get research funding for.  The grant from Microsoft has
+allowed us to build a generic backend that can generate high level C code
+as well as code for the .NET platform.  We expect that in the future
+it will also generate code for the JVM.  (We have received a significant
+number of requests for a JVM backend.)
+<p>
+
+The vast majority of the work for this project was conducted by Tyson Dowd
+and Fergus Henderson.  Several other people at the University of Melbourne
+had signed the NDA, however many of the Mercury researchers did not as
+we saw no point in encumbering the entire group with such legal restrictions.
+<p>
+
+As of the Microsoft Professional Developers Conference last week, this
+NDA has been lifted, and we can now talk about what we have been working
+on and the status of this project.  This doesn't mean Microsoft is going
+to ship a product right now -- the development kits that have been
+distributed are pre-beta releases.  But we can talk about it and people
+using the pre-betas can try out our work.
+
+<h3>
+The Platform:
+</h3>
+
+Microsoft has developed a virtual machine and runtime environment
+intended for hosting more than just a single language.  The VM,
+environment, supports services and tools are together called "Microsoft
+.NET".  Over the last 18 months we have seen each part called a
+number of different things, but this name has been printed so many times
+that it will probably stick around for a while.  Some printed literature
+still refers to it by it's most recent temporary name, NGWS
+(Next-Generation Windows Services).
+<p>
+
+While it remains to be seen for certain whether the platform actually
+achieves the aim in full, there are certainly several improvements that
+are not present in similar systems (e.g. the JVM, COM/CORBA).
+Certainly the platform has been targeted by Visual Basic, Visual C++
+and C# (and probably JScript too).  Other languages that at least
+partially support the platform include COBOL, Smalltalk, Eiffel, 
+Component Pascal, Oberon, Haskell, ML, Scheme and Oz.
+<p>
+
+The .NET platform, like the JVM, provides a virtual environment for
+running programs.  There is a hardware-independent intermediate language,
+a builtin garbage collector, a byte-code verifier, classes, methods, 
+interfaces and so on.  This environment is called the Common Language
+Runtime (sometimes called the CLR).
+<p>
+
+.NET differs from Microsoft's previous efforts in building cross-language
+component architecture (COM/DCOM).  While COM (like CORBA) allows you to
+invoke methods/functions from one language to another, the common
+runtime allows data-level interoperability.  The difference is that with
+COM/CORBA you modify objects through their interfaces, so everything is
+done via function calls (possibly many of them).  In contrast, to modify
+an object in the common runtime you can just change it directly, since
+each language uses the same data representation, same address space and
+same garbage collector (when performing remote function calls the
+situation becomes more similar to DCOM or CORBA).
+<p>
+
+The platform also supports garbage collected objects with normal binary
+code, and you can mix pointers to the standard C heap with garbage
+collected pointers.  Obviously there are some penalties you pay for
+doing this -- verifiability goes out the window pretty quickly, for
+example.  However this does allow full interoperability with any binary
+development using any one of the plethora of calling conventions
+Microsoft has used over the years.  You also get interoperability with
+COM components for free, the runtime does all necessary marshaling and
+initialization, presenting the COM interfaces as if it were a set of
+types implemented in the common language runtime itself.
+<p>
+
+The runtime environment offers a few features not available on the JVM
+which are very useful for non-imperative non-OO languages.
+Probably most critical for us is the "tailcall" instruction, which is an
+very important component for efficiency in a language using recursion.
+This instruction was added as a direct result of feedback from language
+researchers.
+<p>
+
+.NET components are self-describing: type signatures and other
+information is embedded in the components.  This allows a lot of
+reflection on types, and it makes it possible for services such as the
+Visual Studio debugger to work across different languages.  We expect to
+be able to debug Mercury code from within Visual Studio (although the
+advanced features available in "mdb" might not work without significant
+programming effort).
+<p>
+
+This platform is integrated into other Microsoft products too.  You will
+be able to invoke .NET components from Word, Excel, Access, SQL Server, etc.
+And any language that can generate .NET components can be used as a
+scripting language in ASP+ or can be used to program web services (well, in
+theory anyway, but several interfaces need to be implemented to make
+that happen).  Web services are like a remote procedure call mechanism
+marshaled over HTTP using XML.
+
+<h3>
+Status of Mercury on .NET
+</h3>
+
+We can generate code for practically all the language features of
+Mercury.  Some of these features need some work before they will work in
+a multi-module program (for example, type class instances can't be
+declared in a module other than where they are used just now).  
+<p>
+
+The standard library needs to be ported to the new environment --
+currently only some of the io and string modules have been ported.
+Basically all the handwritten C code that is in the library needs to be
+re-written.  Most of the Mercury runtime is unnecessary since the common
+language runtime provides the same services.
+<p>
+
+Implementation specific features such as tabling have not yet been
+started.  A rudimentary foreign language interface to VC++ on the .NET
+platform is available, but it will need to be improved significantly
+before it can be merged with the main compiler.  Some of the work on the
+build environment has been done (e.g. there are grades for compiling to
+this platform), but automatic dependency generation is noticeably
+lacking.  Run-time type information is available, but not all the access
+routines have been implemented (standard library again).
+<p>
+
+Currently the data representation is not yet in it's anticipated final
+form.  Mercury objects are represented as arrays of generic objects
+(low-level data representation).  We plan to switch to the high-level
+data representation which will use class hierarchies to represent each
+type.
+<p>
+
+Programs such as the sample "eliza" work just fine.  In fact we have a
+demo where we have hooked up eliza to the Microsoft Agent COM object,
+which provides speech synthesis and a cute graphical character who
+speaks what eliza says.  This is very easy to do with just a little C++
+code.  Eventually we want to make the interface to other objects cleaner
+(e.g. zero C++ code needs to be written) however this is an area
+requiring some work and some more research.
+
+<h3>
+What Does This All Mean For Mercury?
+</h3>
+
+If you're a Mercury programmer on non-Windows platforms, you can ignore
+all of this.  While we have spent quite a bit of development effort on
+this new backend, much of it is shared with the new high-level C
+backend we were developing anyway.  We feel that it will be
+relatively straightforward now to develop a backend to the JVM, given
+that many of the kinks in our new backend have been ironed out by
+targeting a similar runtime.  We will continue to develop on
+non-Microsoft platforms, we will continue to improve these platforms.
+<p>
+
+If you're a Mercury programmer on Windows platforms, you can soon
+download a beta version of our compiler which targets the .NET platform.
+You can expect in future to be able to write Web Services in Mercury,
+and possibly even write ASP+ web pages in Mercury.
+A part of the project not discussed much is the possibility of
+integrating the Mercury development environment into Visual Studio (as a
+kind of plug-in) -- we want to continue working on this in the near
+future.
+<p>
+
+Either way, this kind of support will allow us to attract a lot more
+users.  We have long felt that allowing developers to piecemeal adopt
+better tools (where Mercury is a better tool) is a good strategy to give
+more users the chance to use Mercury (rather than just admire it from
+afar).  This platform is a very good chance for users to write small
+components in Mercury and test its mettle.
+
+<h3>
+What's Next?
+</h3>
+
+<ul>
+<li>We want to keep working on improving this platform until we can
+bootstrap, we'd then like to do performance comparisons and write some
+papers about it all.  
+<p>
+
+<li>We want to continue to be involved in improving this platform --
+Microsoft is famous for releasing successive versions of their products,
+and any improvements that didn't make it into this release may make it
+into future ones.  
+<p>
+
+<li>We want to improve our interfacing tools so that you can smoothly use
+object oriented environments such as .NET from Mercury.  
+<p>
+
+<li>We want to work with the researchers of other similar advanced languages
+(for example Haskell, ML) to inter-operate at a higher level than "mere"
+object-orientation.  
+<p>
+
+<li>We want to explore integration with Visual Studio.
+</ul>
+
+<h3>
+What Can You Do?
+</h3>
+
+We'll be releasing betas as soon as we can stabilize the work and
+integrate it back into the main development line.  Microsoft hasn't yet
+released a downloadable development kit, however we expect they will
+probably do that sometime in the future.  Once you have both those bits,
+you can start trying out the software.
+<p>
+
+If you would like to be involved in this research, or help with the
+development, please let us know!
+<p>
+
+
+The Mercury Team<br>
+<a href="http://www.cs.mu.oz.au/research/mercury/">
+http://www.cs.mu.oz.au/research/mercury/
+</a><br>
+<a href="mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>
+</body>
+</html>
