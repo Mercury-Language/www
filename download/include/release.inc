@@ -1,9 +1,9 @@
 <h2>Current Release</h2>
 
-We're currently in the process of releasing Mercury 0.8.
+Mercury 0.8 was released on November 18, 1998.
 The NEWS file, detailing differences since the release of 0.7.3,
 is available <a href="release-0.8.html">here</a>.
-When 0.8 is ready for release, it will be available
+Source and binary distributions of release 0.8 are available 
 at the following site(s):
 
 <dl>
@@ -97,12 +97,9 @@ download the source or binary distributions.
 
 <h3>Source Distribution</h3>
 
-(Note that some of these URLs may be dangling links until the mirrors
-are fully updated.)
-
 <dl>
 <dt>
-The full source distribution is about 5Mb.<br>
+The full source distribution is about 6 Mb.<br>
 <dd> Distribution:
 <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.tar.gz">Australia</a>
 </dl>
@@ -111,30 +108,24 @@ The full source distribution is about 5Mb.<br>
 
 Binary distributions of Mercury 0.8:
 <br>
-(Note that these URLs will be dangling links until we have
+(Note that some of these URLs will be dangling links until we have
 installed all the binary distributions.)
 <p>
 
 <dl>
-    <dt>x86 machines running Linux (ELF executable format) (about 14Mb):
+    <dt>x86 machines running Linux (ELF executable format) (about 14.5 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i386-linux-ELF.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.i386-linux-ELF.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.i386-linux-ELF.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i586-pc-linux-gnu.tar.gz">Australia</a>
 	<p>
 
-    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (size unknown):
+    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (about 17.9 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.sparc-sun-solaris.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.sparc-sun-solaris.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.sparc-sun-solaris.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.sparc-sun-solaris2.6.tar.gz">Australia</a>
 
 	<p>
-    <dt>DEC Alpha machines running OSF/1 or Digital Unix (size unknown):
+    <dt>DEC Alpha machines running OSF/1 or Digital Unix (about 36 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.alpha-dec-osf.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.alpha-dec-osf.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.alpha-dec-osf.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.alpha-dec-osf3.2.tar.gz">Australia</a>
 
 <!--
 	<p>
