@@ -17,6 +17,14 @@
 */
 
 $newsdb = array(
+"13 Jul 1999" => array("Operators",
+
+"Terms in the form of x `fun` y are transformed into fun(x, y),
+allowing a limited form of user defined operators.
+The transformation is available in our latest
+<A HREF=\"download/rotd.html\">release of the day</A>.
+"),
+
 "17 Jun 1999" => array("Automatic accumulator introduction",
 
 "A new optimization has been added to the Mercury compiler.
