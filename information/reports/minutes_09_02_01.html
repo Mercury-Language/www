@@ -1,0 +1,102 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Feb 9, 2001,
+from 3:15 to 4:00pm.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	Thomas Conway (conway)
+	Fergus Henderson (fjh)
+	Mark Brown (dougl)
+	Adrian Pellas-Rice (apell)
+	Ina Cheng (inch)
+	Levi Cameron (lpcam)
+	Simon Mei (xcsm)
+	Sam Thurairatnam (sthur)
+	Julien Fischer (juliensf)
+	David Jeffery (dgj)
+	Simon Taylor (stayl)
+
+1. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Zoltan Somogyi (zs)
+		- Mainly been working with Tom on deep profiling. 
+
+	Thomas Conway (conway)
+		- More work on deep profiling (gave a demonstration today)
+
+	Fergus Henderson (fjh):
+		- MLDS backend bugs fixed
+		- Testing lcc builds (some still failing, but most pass)
+		- Working on abstract equivalence types for .NET and Java
+	          back-ends
+
+	Mark Brown (dougl)
+		- Mostly working on administrative matters (eg progess report)
+
+	Adrian Pellas-Rice (apell)
+		- Almost to compile stage
+		- Voiced concerns about need for constructor class to allow
+		  generalisation; consensus was that in the past extension
+		  limitations have been accepted in an imperfect state if they
+		  would prove useful anyway. Future backward compatability
+		  loss would probably not be a great concern in this case.
+
+	Ina Cheng (inch)
+		- Code for web client almost finished
+		- An issue with the problem that the client requires hard
+	          coding to support arbitrary methods
+
+	Levi Cameron (lpcam)
+		- Nondet support finished
+		- Support for type information added
+		- Support for submodules added
+		- Higher order call support added, but still buggy
+		- tests/general pass with the exception of floats, higher
+		  order calls and calls involving builting__compare/unify
+
+	Simon Mei (xcsm)
+		- Finished and posted user's guide for review
+		- Largely finished code; posted for review
+	
+	Sam Thurairatnam (sthur)
+		- Worked on type information database
+		- Has been adding test cases
+
+	Julien Fischer (juliensf)
+		- Worked on runtime system for Java backend
+		- Most features now working, but currently lacks support for
+	       	  nondet/multidet code, foreign code, higher order predicates
+		  and RTTI
+
+	David Jeffery (dgj)
+		- Fixished a bug fix for polymorphism (involving type var
+		  dependency)
+		- Worked on merging HAL branch changes (merge done; still
+		  bugs to fix though)
+
+	Simon Taylor (stayl)
+		- Fixed a  bug in intermodule optimisation
+		- Release date still 'soon'
+
+2. Release
+	- Was decided to scrap old release branch and create a new one from
+	  the main branch.
+	- Still some low level backend bugs
+	- Still issues with variable liveness, Zoltan will try 
+
+3. Housekeeping
+	- NFS mounts are not all consistent; Fergus volunteered to fix them
+	- hydra is somewhat unreliable; David Overton was "volunteered"
+	  to move the webserver to venus
+
+Minutes taken by Levi Cameron (lpcam@cs.mu.oz.au).
+
+</pre>
+</html>
