@@ -39,8 +39,10 @@ local:
 	echo "PERL=perl"  >> Mmake.common
 	echo "INFO=info"  >> Mmake.common
 	echo "DVIPS=dvips"  >> Mmake.common
+	echo 'include $$(MERCURY_DIR)/VERSION'  >> Mmake.common
+	echo "VERSION=rotd-`date '+%Y-%m-%d'`" > VERSION
 	(cd notes; mmake MERCURY_DIR=.. )
-	(cd mercury-doc; mmake library-chapters.texi split_html ps)
+	(cd mercury-doc; mmake split_html ps)
 	$(CP) notes/*.text doc
 	$(CP) mercury-doc/*.html notes/*.html doc
 	$(CP) mercury-doc/*.ps doc
