@@ -1,0 +1,65 @@
+
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri October 26, 2001.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	David Overton (dmo)
+	Simon Taylor (stayl)
+	Ralph Becket (rafe)
+	Fergus Henderson (fjh)
+
+Progress reports
+
+	Zoltan Somogyi (zs):
+		- Has been working on teaching related tasks.
+		- Has collected performance related data for the HLC paper
+		he submitted with Fergus last Friday.
+		- Posted the HLC paper on the web site.
+		- Done some work on the source-source stack-slot
+		optimization he mentioned last week.
+		- Volunteered to write a sanity checking script for the
+		CVS repository to look for corrupted files or files with
+		incorrect permissions.
+		- Will be interviewing potential summer students early
+		next week.
+
+	Fergus Henderson (fjh):
+		- Has been working on optimizing data representation for
+		the HLC back ends (mainly for .Net and Java) whereby
+		nullary constructors can be represented using distinguished
+		pointers (e.g. NULL).
+		- Encountered an amusing error whereby two different 
+		zero-size structures were being malloced at the same address.
+		- Has been working on exploiting nested functions under gcc.
+		- Submitted the HLC paper with Zoltan last Friday.
+
+	Ralph Becket (rafe):
+		- Spent much of Monday and Tuesday setting up the new
+		machine (ceres) with David Overton.  The problem with getting
+		the network card to run under Linux was solved by Tyson,
+		although getting more than 1024x768@60Hz from the video card
+		is proving difficult.  Tech. support have been notified.
+		- Has been working on the pretty printer (pprint).  A
+		performance bug has been fixed (it is now useable on very
+		large terms) and a formatting bug has been identified and
+		fixed.  A check-in with regression test is imminent.
+
+	Simon Taylor (stayl):
+		- Implemented the pragma export declarations.
+		- Fixed some bugs in smart recompilation.
+		- Has continued with integrating mmake functionality
+		into the compiler.
+		- Will be moving onto working on the intermodule
+		optimization framework next.
+
+	David Overton (dmo):
+		- Did a lot of work to get ceres on its feet.
+		- Has been working on a mode constraints paper.
+
+Minutes taken by Ralph Becket (rafe@cs.mu.oz.au)
+</pre>
+</html>
