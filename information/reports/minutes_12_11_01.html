@@ -1,0 +1,82 @@
+
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Monday, 12 November 2001.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	David Overton (dmo)
+	Simon Taylor (stayl)
+	Ralph Becket (rafe)
+	Mark Brown (dougl)
+
+Progress reports
+
+	Ralph Becket (rafe):
+		- Contining to work on the loop invariant hoisting
+		  optimization and learning the necessary compiler
+		  internals.
+		- Started working on the tutorial book.  A new cvs
+		  module `books' has been created with a subdirectory
+		  called `tutorial' which has been populated with a
+		  few draft text files.  Updates to this module will
+		  not be reported on mercury-reviews.
+		- Has been thinking about putting together a more
+		  formal specification than the reference manual of
+		  the core language suitable for compiler writers.
+		  The idea has received support from the group;
+		  hopefully a good deal of the document can be culled
+		  near directly from local dissertations.
+
+	David Overton (dmo):
+		- Has been working on the mode constraints paper.
+		- Has been working on formalizing mode declaration
+		  checking.
+		- Has not had time to work on implementation this
+		  week.
+
+	Mark Brown (dougl):
+		- Has been working on getting the debugger retry
+		  mechanism to work for all IL types with the .NET
+		  back end.
+		- Has set up an automated testing system to support
+		  the above work.
+
+	Zoltan Somogyi (zs):
+		- Has finished debugging the stack slot optimization
+		  and obtained some speed-ups.  Performance tests were
+		  still running during the meeting (seven versions of
+		  the compiler with each of -O2 ... -O5!)  Some
+		  results have shown a 1.3% speed up and others have
+		  shown a 7% reduction in stack frame size.  Zoltan
+		  reported that the optimization was not too costly in
+		  terms of compilation time.
+		- Has been working on the stack slot optimization
+		  paper which is due in this Friday.
+		- Reports that six summer students will be joining the
+		  team, including Simon Mei who was with us last year.
+		  It was suggested that once they are all here
+		  together we give them the one-day introduction to
+		  Mercury including details on how the CVS and build
+		  systems work.
+
+	Simon Taylor (stayl):
+		- Has implemented unification expressions as discussed
+		  in last week's meeting.
+		- Has added the option of supplying user-defined
+		  operator tables to the parser.
+		- Has fixed up the handling of libraries directly from
+		  mmc, adding the option of overriding settings by
+		  command line switch rather than several environment
+		  variables.
+
+		  There was some discussion on this point, the general
+		  concensus being that there needed to be a
+		  simplification of the interface to the build system.
+		  Simon is working on this issue.
+
+Minutes taken by Ralph Becket (rafe@cs.mu.oz.au)
+</pre>
+</html>
