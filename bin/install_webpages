@@ -10,6 +10,8 @@
 # and be run from the top level directory of the w3 module.
 #
 
+export PATH=/usr/local/bin:$PATH
+
 whathost=`hostname | sed -e 's/\..*//'`
 if [ $whathost != "hydra" ]
 then
