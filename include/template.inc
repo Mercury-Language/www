@@ -1,4 +1,5 @@
 <?  include "$root/include/functions.inc" ?>
+<? include "$root/include/globals.inc" ?>
 
 <TITLE>The Mercury Project: <?echo $title?></TITLE>
 <BODY bgcolor="#ABCDEF" text="#000000">

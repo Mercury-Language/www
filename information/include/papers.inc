@@ -16,11 +16,53 @@ Mercury, at a variety of levels, are also available.
 <ul>
 <li>
 <strong>
-Practical Aspects for a working Compile Time Garbage Collection System
+Deep profiling:
+engineering a profiler for a declarative programming language
+</strong>
+<br>
+Thomas C. Conway and Zoltan Somogyi
+<br>
+<em>
+Technical Report 2001/24,
+</em>
+Department of Computer Science, University of Melbourne,
+Melbourne, Australia, July 2001, 61 pages.
+<a href = "papers/mu_01_24.ps.gz">
+Available here (207K).
+</a>
+<p>
+Declarative programs differ from imperative programs in several respects,
+the main ones being their heavy use of recursion,
+of various forms of polymorphism, and of higher order.
+Existing profilers tend not to produce very useful information
+in the presence of these constructs.
+We present a new profiling technique we call \emph{deep profiling}
+that yields detailed and useful information about programs
+even in the presence of these constructs,
+information that is significantly richer
+than the output of other profilers.
+<p>
+The heart of deep profiling is a source-to-source transformation.
+We have implemented this transformation and its associated infrastructure
+in the compiler for Mercury, a purely declarative logic programming language.
+While our measurements of this implementation
+show that deep profiling has slightly greater overhead
+than some other profiling techniques,
+the wealth of information it provides
+makes this extra overhead worthwhile.
+The deep profiling algorithms themselves
+are applicable to most other language styles,
+including imperative, object-oriented, and functional languages.
+<p>
+
+<ul>
+<li>
+<strong>
+Practical aspects for a working compile time garbage collection system
 for Mercury
 </strong>
 <br>
-Nancy Mazur, Peter Ross, Gerda Janssens, Maurice Bruynooghe
+Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe
 <br>
 <em>
 Technical Report CW310
@@ -111,7 +153,7 @@ results obtained with a first prototype of the module based analysis.
 
 <li>
 <strong>
-Making Mercury Programs Tail Recursive
+Making Mercury programs tail recursive
 </strong>
 <br>
 Peter Ross, David Overton and Zoltan Somogyi

@@ -22,6 +22,19 @@
 
 $newsdb = array(
 
+"1 August 2001" => array("New paper and demo",
+
+"We have a new paper available 
+from our <A HREF=\"information/papers.html\">papers page</A>,
+which describes the design and implementation of the Mercury deep profiler.
+This new profiler generates profiling information
+that is significantly more accurate and more detailed
+than the information produced by most other profilers.
+A <A HREF=\"information/deep_demo.html\">
+description and demo of the deep profiler</A>
+is also available."
+),
+
 "18 May 2001" => array("New paper",
 
 "We have a new paper available 

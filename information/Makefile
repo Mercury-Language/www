@@ -3,6 +3,7 @@ target: html
 ROOT=..
 HTML= 	benchmarks.html 	\
 	comparison_with_haskell.html \
+	deep_demo.html		\
 	developer.html 		\
 	documentation.html 	\
 	events.html		\

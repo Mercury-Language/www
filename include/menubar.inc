@@ -20,6 +20,8 @@ if($menu == "Information") {
     <BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/information/papers.html">Papers</a>
     <BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/deep_demo.html">Deep profiler demo</a>
+    <BR>
   &nbsp;&nbsp<a href="<?echo $root?>/information/developer.html">Developers</a>
     <BR>
   &nbsp;&nbsp<a href="<?echo $root?>/information/events.html">Events</a>

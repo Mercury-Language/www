@@ -46,6 +46,10 @@ project.
         Papers and presentations on Mercury</a>
 
         <li>
+        <a href = "information/deep_demo.html">
+        An overview and demo of the Mercury deep profiler</a>
+
+        <li>
         <a href = "information/related.html">
         Related projects</a>
 
