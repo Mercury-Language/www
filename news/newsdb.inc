@@ -17,6 +17,15 @@
 */
 
 $newsdb = array(
+"28 Oct 1999" => array("Time module",
+
+"The standard library now includes a module `time'
+which provides an interface to the ANSI/ISO C <time.h> functions
+and to the POSIX times() function.
+
+Thanks to Tomas By for contributing the original version of this module.
+"),
+
 "16 Sep 1999" => array("Exception handling",
 
 "Exception handling support is now part of the standard library.
