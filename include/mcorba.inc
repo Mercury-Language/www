@@ -13,13 +13,22 @@ or use Mercury to implement part of a component-based system.
 
 <h3> Download MCORBA </h3>
 
-MCORBA is very much a work-in-progress, however we expect to have
+MCORBA is very much a work-in-progress, however we expect to soon have
 enough written so that you can start using it to develop applications.
+For the moment the most important thing missing from the binding is
+some of the generated C++ code.  You can presently use the translator to
+see how IDL is transformed into Mercury.
+<P>
+<B>Download MCORBA:</B>
+<ul>
+<li> <A HREF="<? echo $root; ?>/download/files/mcorba/">
+Mercury web site</A><br>
+<li> <A HREF="ftp://turiel.cs.mu.OZ.AU/pub/mercury/mcorba//">
+Mercury ftp site</A>
+</ul>
 
-We are still cleaning up the MCORBA code to prepare for distribution.
-We expect to make a preliminary release very soon.
-MCORBA will be distributed under the GPL for the translator,
-and LGPL for the runtime library.
+MCORBA is distributed under the GNU GPL for the translator,
+and GNU LGPL for the runtime library.
 <p>
 You will need a copy of omniORB2, which you can freely download
 from the <a href="http://www.orl.co.uk/omniORB/omniORB.html">
