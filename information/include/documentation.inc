@@ -91,12 +91,4 @@ in a4 format.
 	Available in 
 	<a href="comparison_with_haskell.html">HTML</a> only.<p>
 
-	<li> <strong>Frequently Asked Questions</strong><br>
-	Information on common programming errors, problems caused by
-	unimplemented Mercury features and where to turn for help.<p>
-	Now implemented using FAQ-O-Matic.
-	<p>
-	Enter the 
-	<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a>.
-	<p>
 </ul>

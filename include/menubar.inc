@@ -55,7 +55,6 @@ if($menu == "Documentation") {
   &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $trans_guide_release?>">Version <?echo $current_release?></a><BR>
   &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $trans_guide_latest?>">Snapshot</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/information/comparison_with_haskell.html">cf. Haskell</a><BR>
-  &nbsp;&nbsp;<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a><BR>
 </SMALL>
 <?
 }
