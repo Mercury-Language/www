@@ -30,6 +30,7 @@
 <B><a href="<?echo $root?>/mailing-lists/mailing-lists.html">Mailing Lists</a></B><BR>
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-developers/list.html">Developers</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-reviews/list.html">Reviews</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">Users</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/search.html">Search</a><BR>
 </SMALL>
