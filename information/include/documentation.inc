@@ -63,6 +63,6 @@ in a4 format.
 	Now implemented using FAQ-O-Matic.
 	<p>
 	Enter the 
-	<a href="http://www.mercury.cs.mu.oz.au/cgi-bin/fom">FAQ</a>.
+	<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a>.
 	<p>
 </ul>
