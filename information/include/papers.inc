@@ -25,9 +25,9 @@ Thomas Conway.
 <em>
 Ph.D. thesis,
 </em>
-July 2002,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
+July 2002.
 <a href = "papers/conway-thesis.ps.gz">
 Available here (562K).
 </a>
@@ -88,9 +88,9 @@ David Jeffery.
 <em>
 Ph.D. thesis,
 </em>
-February 2002,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
+February 2002.
 <a href = "papers/dgj-thesis-final.ps.gz">
 Available here (370K).
 </a>
