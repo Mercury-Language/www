@@ -1,0 +1,146 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Mar 2, 2001, 
+from 3.15 to 4.00pm. 
+ 
+Attendees: 
+ Fergus Henderson (fjh) 
+ Zoltan Somogyi (zs) 
+ David Jeffery (dgj) 
+ Simon Taylor (stayl) 
+ David Overton (dmo) 
+ Thomas Conway (conway) 
+ Kevin Glynn (keving)
+ Adrian Pellas-Rice (apell) 
+ 
+1. Background
+
+ We have recently acquired two more machines, miles, a laptop, and earth, a
+ workstation.  Simon Taylor (stayl) has returned to the fold. The summer
+ students being supervised by Zoltan (zs) have left the office, although some
+ are continuing their work remotely. 
+
+2. Progress reports 
+ 
+ We went around the table with each person in turn discussing what they had
+ been working on recently and/or what they were planning to work on.  
+
+ Fergus Henderson (fjh) 
+
+	- some further work on the gcc back end.  At present, installing
+	  libraries using mmake with the new back end does not work.
+	- merging in Robert (rejj) Jeschofnik's changes to allow the expansion
+	  of equivalence types to work with the .NET and Java backends.  Fergus
+	  expressed some uncertainty about how best to go about these changes.
+	  He then debated at length with Zoltan (zs) Somogyi about
+	  whether/where equivalence types should occur in .int* files.
+	- plans a similar change for the handling of abstract equivalence
+	  types.  Zoltan suggests that abstract equivalence types should be
+	  expanded no earlier than code generation, however Fergus was
+	  concerned that this would be too hard.  Zoltan offered an additional
+	  about idea using abstract maps for this task.  Zoltan and Fergus
+	  agreed that this proposed change is likely to conflict with Zoltan's
+	  current work.
+
+ David Overton (dmo)
+
+	- has continued work on mode checking.  Is experimenting with different
+	  representations, particularly hash tables and bitsets.  Tom (conway)
+	  Conway mentioned that in David Overton's case, specialisation of the
+	  calls to the library's hash table module are highly desirable.  David
+	  (dgj) Jeffery pointed out that the storage of the hash function in
+	  the hash table data structure makes this a particularly tricky task.
+
+ Zoltan Somogyi (zs)
+
+	- has been fixing deep profiling bugs.  With these changes, deep
+	  profiling now bootchecks.
+	- posted the diff for liveness this week.  It bootchecks in two grades
+	  and has been committed.
+	- Has improved the accurate garbage collector so that it now succeeds
+	  to the second stage of a bootcheck.  (It still bombs out in stage
+	  three, of course.)
+
+ David Jeffery (dgj)
+
+	- has been working on his thesis.  A draft will be ready presently.
+
+ Kevin Glynn (keving)
+
+	- At this point Kevin revealed that he was attending the Mercury
+	  meeting for stress relief.  It may not have killed him yet, but after
+	  that remark, Kevin's thesis is clearly approaching the potency of
+	  ebola.
+
+ Simon Taylor (stayl)
+
+	- has attended to software installation on earth.  (Recall that `earth'
+	  is our new machine.)
+	- part way to fixing a performance bug in deforestation.
+
+ Thomas Conway (conway)
+
+	- has been working on his thesis.
+	- collaborated with Zoltan (zs) Somogyi on deep profiling.
+	- plans to return to MDS within 3 weeks.
+
+ Adrian Pellas-Rice (apell)
+
+	- continued the well-behind-schedule implementation of sequence
+	  quantification.
+	- had some further assistance from Fergus (fjh) Henderson pertaining to
+	  a serious bug.
+
+
+3. Administrative Matters:
+
+	- Zoltan (zs) Somogyi complained about the frequency of the emails
+	  requesting bug fixes.  The present frequency is one email per bug per
+	  day.  After some debate, Fergus (fjh) Henderson agreed to change the
+	  frequency to the compromise position of one email per bug per three
+	  days.
+		- On this note, Fergus also suggested splitting the [mdev]
+		  mailing list into two lists: one for diffs and one for all
+		  other correspondence.  Zoltan advocated an even more radical
+		  split into several topic based lists.  Discussion will resume
+		  at a later date.
+	- Zoltan requested that more file systems be exported to miles (the
+	  laptop), and requested assistance with some of the more concisely
+	  documented software on miles.  Simon (stayl) Taylor agreed to see to
+	  the file systems, David (dmo) Overton agreed to see to the software.
+
+4. General Matters:
+
+	- Fergus and Zoltan discussed a problem with value numbering.  Though a
+	  temporary fix is in place, Zoltan advocates the removal of value
+	  numbering as the long term repair strategy.
+	- There were some exchanges about the grades and modules that are
+	  approaching redundancy.  Fergus wanted to dispose of the transient
+	  register windows soon, but Zoltan would prefer to wait until the high
+	  level back end supports debugging.  There was general agreement that
+	  supporting high performance on the SPARC is no longer a priority, and
+	  possible strategies for reducing the burden of the SPARC legacy were
+	  mentioned.
+	- Zoltan enquired about need to retain the old profiler once the new
+	  (deep) profiler is completed.  Tom (conway) Conway declared that the
+	  old profiler should be kept because a) in some cases it incurs less
+	  overhead than the new profiler and b) it is easier to do time
+	  profiling with the old profiler.  Zoltan observed that retaining both
+	  profilers would be a great hassle, but said he would consider some of
+	  the required changes.  
+
+5. The 0.10 Release:
+
+	- The 0.10 release has proceeded, with an announcement on
+	  mercury-announce.
+	- Fergus expressed his desire to freeze 0.10.1 next week, and reminded
+	  everyone to commit bug fixes on the main branch too.
+	- The release of 0.10.1 will be announced through the major channels as
+	  well as mercury-announce.
+
+
+Minutes taken by Adrian Pellas-Rice (apell@cs.mu.oz.au).
+</pre>
+</html>

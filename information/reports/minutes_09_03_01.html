@@ -1,0 +1,152 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri March 9, 2001.
+
+Attendees:
+	Tyson Dowd (trd)
+	Zoltan Somogyi (zs)
+	Thomas Conway (conway)
+	David Overton (dmo)
+	Fergus Henderson (fjh)
+	Mark Brown (dougl)
+	Adrian Pellas-Rice (apell)
+	Simon Taylor (stayl)
+
+1. General Business
+
+	- Zoltan has submitted the final version of the ARC discovery
+	  project grant application.
+
+	- Zoltan, Fergus and Tyson will be in Seattle from 17-26
+	  March.
+
+	- Zoltan suggested that the pseudoknot benchmark (Fergus has a
+	  Mercury implementation) and the Mercury version of 'error'
+	  should be added to the distribution.
+
+	- There was a discussion of the need for a Windows machine for
+	  testing the Windows and .Net distributions.
+
+	  	- VMWare considered a bit inconvenient because of its
+		  memory usage.
+
+		- Dual booting a machine also inconvenient.
+
+		- Decided that Zoltan's old laptop, Traveller, will be
+		  chained to a desk and run Windows so that anyone who
+		  needs it can use it.
+
+	- Tom asked for a status report on the accurate garbage
+	  collector.  Tyson and Fergus responded:
+
+	  	- It needs a lot of testing.
+
+		- Does not yet handle foreign code which handles
+		  Mercury data structures.
+
+		- Has suffered software rot with respect to changes in
+		  the RTTI data structures.
+
+		- Does not yet handle closures properly.
+
+		- Does not yet handle existential types properly.
+
+		- Will need performance tuning and perhaps even a
+		  redesign of the algorithm.
+
+2. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Tyson Dowd (trd)
+
+		- Arrived home from India without having contracted
+		  cholera.
+
+		- In addition to travelling to Seattle this month, he
+		  will be in Cambridge from 17/4 to 11/5 and may then
+		  spend some time in Belgium visiting Mission
+		  Critical.
+
+		- Built a Debian package of 0.10.0.
+
+	Zoltan Somogyi (zs)
+
+		- Found a bug in deep profiling after 10 days of
+		  debugging.
+
+		- Two new optimisations implemted for the LLDS back
+		  end which will hopefully replace value numbering.
+		  Still needs to benchmark to work out when these
+		  optimisations should be turned on.
+
+	Thomas Conway (conway)
+
+		- Has been tracking down the deep profiling bug with
+		  Zoltan.
+
+		- Has been writing up his thesis.
+
+		- Has been benchmarking independent 'and' parallelism
+		  (&).
+
+		- Produced a histogram of sizes of allocated cells in
+		  the compiler.
+
+		- From next week will be back at MDS Mondays to
+		  Thursdays.  Will be writing up his thesis on Fridays
+		  -- mostly at home, but may come in to the office
+		  occasionally.
+
+	David Overton (dmo)
+
+		- Has been debugging the new mode checker to get a set
+		  of benchmarks working.
+
+	Fergus Henderson (fjh)
+
+		- Has been attempting to move expansion of equivalence
+		  types to a later stage of compilation, but has been
+		  having problems since some phases need to know the
+		  original type and others need to know the expanded
+		  type.  Zoltan suggested doing the expansion early,
+		  but keeping both types around so that different
+		  passes can use whichever they need.
+
+		- Has been fixing a reported bug where the compiler
+		  aborts with a software error if a program contains a
+		  higher-order term without mode and determinism
+		  declarations.  Will change the code to give a nice
+		  error message instead.
+
+		- Found a bug in the Component Pascal type system
+		  which means they will need to do a bit of a redesign
+		  of their language to make it verifiably safe in
+		  .Net.
+
+	Mark Brown (dougl)
+
+		- Has started his new top secret job and has been
+		  reading the CLI spec from Microsoft.
+
+		- Has setup CVS pserver on Venus.
+
+	Adrian Pellas-Rice (apell)
+
+		- Has been debugging his work on sequence
+		  quantification.
+
+	Simon Taylor (stayl)
+
+		- Has been fixing bugs and reading background
+		  material.
+
+
+Minutes taken by David Overton (dmo@cs.mu.oz.au).
+
+</pre>
+</html>
