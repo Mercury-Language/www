@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Related";
     $title="MCORBA";
     $dir=".";
     $root=".";

@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Download";
     $title="GCC back-end / Mercury front-end";
     $dir="download";
     $root="..";

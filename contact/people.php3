@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Contact";
     $title="People";
     $dir="contact";
     $root="..";

@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Related";
     $title="Related Projects";
     $dir="information";
     $root="..";

@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Information";
     $title="Mercury Reports";
     $dir="information";
     $root="..";

@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Mailing Lists";
     $title="Search the Mailing Lists";
     $dir="mailing-lists";
     $root="..";

@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="News";
     $title="News";
     $dir=".";
     $root=".";

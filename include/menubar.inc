@@ -7,6 +7,9 @@
 <P>
 
 <B><a href="<?echo $root?>/information.html">Information</a></B><BR>
+<?
+if($menu == "Information") {
+?>
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/information/motivation.html">Overview</a>
     <BR>
@@ -14,6 +17,29 @@
     <BR>
   &nbsp;
     <a href="<?echo $root?>/information/documentation.html">Documentation</a>
+    <BR>
+    <?
+    if($submenu == "Documentation") { 
+    ?>
+	&nbsp;&nbsp;&nbsp;
+	<a href="<?echo $root?>/tutorial/index.html">Tutorial</a><BR>
+	&nbsp;&nbsp;&nbsp;
+	<a href="<?echo $root?>/information/doc/reference_manual_toc.html">Reference Manual</a><BR>
+	&nbsp;&nbsp;&nbsp;
+	<a href="<?echo $root?>/information/doc/user_guide_toc.html">User Guide</a><BR>
+	&nbsp;&nbsp;&nbsp;
+	<a href="<?echo $root?>/information/doc/library_toc.html">Library Reference</a><BR>
+	&nbsp;&nbsp;&nbsp;
+	<a href="<?echo $root?>/information/doc/transition_guide_toc.html">cf. Prolog</a><BR>
+	&nbsp;&nbsp;&nbsp;
+	<a href="<?echo $root?>/information/comparison_with_haskell.html">cf. Haskell</a><BR>
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a><BR>
+    <?
+    }
+    ?>
+  &nbsp;
+    <a href="<?echo $root?>/information/benchmarks.html">Benchmarks</a>
     <BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/information/papers.html">Papers</a>
     <BR>
@@ -24,18 +50,30 @@
   &nbsp;&nbsp<a href="<?echo $root?>/information/reports.html">Reports</a>
     <BR>
 </SMALL>
+<?
+}
+?>
 
 <P>
 
 <B><a href="<?echo $root?>/mailing-lists/mailing-lists.html">Mailing Lists</a></B><BR>
+<?
+if($menu == "Mailing Lists") {
+?>
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-developers/list.html">Developers</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-reviews/list.html">Reviews</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">Users</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/search.html">Search</a><BR>
 </SMALL>
+<?
+}
+?>
 <P>
 <B><a href="<?echo $root?>/download.html">Download</a></B><BR>
+<?
+if($menu == "Download") {
+?>
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/release.html">Current&nbsp;Release</a>
     <BR>
@@ -43,13 +81,22 @@
   &nbsp;&nbsp;<a href="<?echo $root?>/download/old-release.html">Old&nbsp;Releases
     </a><BR>
 </SMALL>
+<?
+}
+?>
 <P>
 <B><a href="<?echo $root?>/information/related.html">Related</a></B><BR>
+<?
+if($menu == "Related") {
+?>
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/applications.html">Applications</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mcorba.html">MCORBA</a> <BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/contributions.html">Contributing&nbsp;Code</a> <BR>
 </SMALL>
+<?
+}
+?>
 <P>
 <B><a href="<?echo $root?>/contact.html">Contact</a></B>
 <P>

@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Related";
     $title="Applications using Mercury";
     $dir=".";
     $root=".";

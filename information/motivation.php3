@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Information";
     $title="Motivation and Overview";
     $dir="information";
     $root="..";

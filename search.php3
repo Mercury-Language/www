@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Search";
     $title="Search Mercury Web Site";
     $dir=".";
     $root=".";

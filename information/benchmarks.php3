@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Information";
     $title="Benchmarks";
     $dir="information";
     $root="..";

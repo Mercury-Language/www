@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Download";
     $title="Previous Releases";
     $dir="download";
     $root="..";

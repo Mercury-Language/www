@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Download";
     $title="Limitation of the current release";
     $dir="download";
     $root="..";

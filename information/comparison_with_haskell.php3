@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Information";
     $title="Comparing Mercury and Haskell";
     $dir="information";
     $root="..";

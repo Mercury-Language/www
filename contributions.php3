@@ -1,5 +1,6 @@
 <HTML>
 <?
+    $menu="Related";
     $title="Contributing to Mercury";
     $dir=".";
     $root=".";
