@@ -91,4 +91,17 @@ in a4 format.
 	Available in 
 	<a href="comparison_with_haskell.html">HTML</a> only.<p>
 
+	<li> <strong>Frequently Asked Questions</strong><br>
+	Information on common programming errors, problems caused by
+	unimplemented Mercury features and where to turn for help.<p>
+	
+	<dl compact>
+	<dt> Version <? echo $current_release ?>: <dd>
+	<a href="<? echo $faq_release ?>">HTML</a> or
+	<a href="doc-release/faq.ps.gz">Postscript</a>.
+	<dt> Snapshot: <dd>
+	<a href="<? echo $faq_latest ?>">HTML</a> or
+	<a href="doc-latest/faq.ps.gz">Postscript</a>.
+	</dl>
+	<p>
 </ul>
