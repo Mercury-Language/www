@@ -1,5 +1,6 @@
 
-MCORBA is a CORBA binding for Mercury.  It allows you to use CORBA
+MCORBA is a <a href="http://www.omg.org/">CORBA</a> binding for Mercury.
+It allows you to use CORBA
 objects from Mercury, and allows you to implement CORBA objects in
 Mercury.  This means you can write distributed systems in Mercury,
 or use Mercury to implement part of a component-based system.
@@ -20,7 +21,7 @@ We expect to make a preliminary release very soon.
 MCORBA will be distributed under the GPL for the translator,
 and LGPL for the runtime library.
 <p>
-You will need an of omniORB2, which you can freely download
+You will need a copy of omniORB2, which you can freely download
 from the <a href="http://www.orl.co.uk/omniORB/omniORB.html">
 omniORB</a> web site.
 
@@ -73,5 +74,5 @@ various parts of the system.  The implementation is left unspecified.
 The IDL is transformed into a language specific binding, which allows
 each programming language to access things in a natural way for that
 language.  For C++, IDL is transformed into classes with methods.  For
-Mercury IDL is transformed into we use type classes.
+Mercury IDL is transformed into type classes.
 
