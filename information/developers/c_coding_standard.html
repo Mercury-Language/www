@@ -87,7 +87,7 @@ of languages such as Ada and Modula-3.
 <h4>
 1.2.1. Source files</h4>
 
-Items in source files should be in this order:
+Items in source files should in general be in this order:
 <ul>
 <li>	Prologue comment describing the module.
 <li>	#includes of system headers (such as stdio.h and unistd.h)
@@ -104,15 +104,27 @@ Items in source files should be in this order:
 <h4>
 1.2.2. Header files</h4>
 
-Items in headers should be in this order:
+Items in headers should in general be in this order:
 <ul>
-<li>	#defines 
 <li>	typedefs, structs, unions, enums
 <li>	extern variable declarations
 <li>	function prototypes
+<li>	#defines 
 </ul>
 
-Note also that every header should be protected against multiple inclusion
+However, it is probably more important to group items
+which are conceptually related than to follow this
+order strictly.  Also note that #defines which define
+configuration macros used for conditional compilation
+or which define constants that are used for array sizes
+will need to come before the code that uses them.
+But in general configuration macros should be isolated
+in separate files (e.g. runtime/mercury_conf.h.in
+and runtime/mercury_conf_param.h) and fixed-length limits
+should be avoided, so those cases should not arise often.
+<p>
+
+Every header should be protected against multiple inclusion
 using the following idiom:
 <font color="#0000ff">
 <pre>
@@ -147,14 +159,20 @@ data), mention it. If memory should not be deallocated by anyone
 <p>
 Note: memory allocation for C code that must interface
 with Mercury code or the Mercury runtime should be
-done according to the documentation in mercury/runtime/heap.h
-and the Mercury User's Guide and Mercury Language Reference Manual.
-<font color="#ff0000">
-XXX: Currently none of these say anything about it, though.
-<font color="#000000">
+done using the routines defined and documented in
+mercury/runtime/mercury_memory.h and/or mercury/runtime/heap.h,
+according to the documentation in those files,
+in mercury/trace/README, and in the Mercury Language Reference Manual.
 
 <h4>
-2.1.2. Headers</h4>
+2.1.2. Macros</h4>
+
+Each non-trivial macro should be documented just as for functions (see above).
+It is also a good idea to document the types of macro arguments and
+return values, e.g. by including a function declaration in a comment.
+
+<h4>
+2.1.3. Headers</h4>
 
 Such function comments should be present in header files for each function
 exported from a source file. Ideally, a client of the module should 
@@ -163,19 +181,19 @@ In C terminology, the header should suffice for
 working out how an exported function works.
 
 <h4>
-2.1.3. Source files</h4>
+2.1.4. Source files</h4>
 
 Every source file should have a prologue comment which includes:
 <ul>
 <li>	Copyright notice.
-<li>	GNU Public Licence info.
+<li>	Licence info (e.g. GPL or LGPL).
 <li>	Short description of the purpose of the module.
 <li>	Any design information or other details required to understand
 	and maintain the module.
 </ul>
 
 <h4>
-2.1.4. Global variables</h4>
+2.1.5. Global variables</h4>
 
 Any global variable should be excruciatingly documented. This is
 especially true when globals are exported from a module.
@@ -183,7 +201,7 @@ In general, there are very few circumstances that justify use of
 a global. 
 
 <h3>
-2.1. Comment style</h3>
+2.2. Comment style</h3>
 
 Use comments of this form:
 <font color="#0000ff">
@@ -202,10 +220,10 @@ For annotations to a single line of code:
 <font color="#000000">
 
 <h3>
-2.2. Guidelines for comments</h3>
+2.3. Guidelines for comments</h3>
 
-<h3>
-2.3. Revisits</h3>
+<h4>
+2.3.1. Revisits</h4>
 
 Any code that needs to be revisited because it is a temporary hack
 (or some other expediency) must have a comment of the form:
@@ -221,8 +239,8 @@ The &lt;reason for revisit&gt; should explain the problem in a way
 that can be understood by developers other than the author of the
 comment.
 
-<h3>
-2.4. Comments on preprocessor statements</h3>
+<h4>
+2.3.2. Comments on preprocessor statements</h4>
 
 The <tt>#ifdef</tt> constructs should 
 be commented like so if they extend for more than a few lines of code:
@@ -290,26 +308,46 @@ useful on structs, unions, and enums.
 4. Naming conventions</h2>
 
 <h3>
-4.1. Function and variable names</h3>
+4.1. Functions, function-like macros, and variables</h3>
 
 Use all lowercase with underscores to separate words.
-For instance, <tt>soul_machine</tt>.
+For instance, <tt>MR_soul_machine</tt>.
 
 <h3>
-4.2. Enums, macros and #define constants</h3>
+4.2. Enumeration constants, #define constants, and non-function-like macros</h3>
 
 Use all uppercase with underscores to separate words.
-For instance, <tt>MAX_HEADROOM</tt>.
+For instance, <tt>ML_MAX_HEADROOM</tt>.
 
 <h3>
 4.3. Typedefs</h3>
 
 Use first letter uppercase for each word, other letters lowercase and
 underscores to separate words.
-For instance, <tt>Directory_Entry</tt>.
+For instance, <tt>MR_Directory_Entry</tt>.
 
 <h3>
-4.4. Mercury specifics </h3>
+4.4. Structs and unions</h3>
+
+If something is both a struct and a typedef, the
+name for the struct should be formed by appending `_Struct'
+to the typedef name:
+<font color="#0000ff">
+<pre>
+	typedef struct MR_Directory_Entry_Struct {
+		...
+	} MR_DirectoryEntry;
+</pre>
+<font color="#000000">
+
+For unions, append `_Union' to the typedef name.
+
+<h3>
+4.5. Mercury specifics </h3>
+
+Every symbol that is externally visible (i.e. declared in a header
+file) should be prefixed with a prefix that is specific to the
+package that it comes from.
 
 For anything exported from mercury/runtime, prefix it with MR_.
 For anything exported from mercury/library, prefix it with ML_.
@@ -668,7 +706,7 @@ it from the above list.
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../email.html" >contact</a> page.<br>
 
-Last update was $Date: 1998-09-04 05:01:54 $ by $Author: petdr $@cs.mu.oz.au. <br>
+Last update was $Date: 2000-02-12 14:44:38 $ by $Author: fjh $@cs.mu.oz.au. <br>
 Note: This coding standard is an amalgam of suggestions from the
 entire Mercury team, not ncessarily the opinion of any single author.
 </body>
