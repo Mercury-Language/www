@@ -1,5 +1,9 @@
 # A descriptive name for the release. See mercury/VERSION
-RELEASE_VERSION=0.10.1
+RELEASE_VERSION=0.11.0
 
-# The CVS tag of the release.
-RELEASE_TAG=version-0_10_y
+# The CVS tag of the release branch.
+# This is used to check out the documentation sources.
+# We use the release *branch* tag, rather than the release tag,
+# so that it will pick up any fixes to the documentation
+# that have occurred after the release was made.
+RELEASE_TAG=version-0_11-branch
