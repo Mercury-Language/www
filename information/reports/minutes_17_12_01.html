@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title>Mercury Group Meeting Minutes - Monday 17 December 2001
+	</title>
+</head>
+<body>
+
+We had a meeting of the Mercury group on Monday, 17 December 2001.
+
+<h1>Attendees</h1>
+<ul>
+	<li> Fergus Henderson (fjh) </li>
+	<li> Michael Wybrow (mjwybrow) </li>
+	<li> Lars Yencken (lljy) </li>
+	<li> Paul Incani (paulai) </li>
+	<li> Julian Grady (julianpg) </li>
+	<li> David Overton (dmo) </li>
+	<li> Simon Taylor (stayl) </li>
+	<li> Zoltan Somogyi (zs) </li>
+	<li> Julien Fischer (juliensf) </li>
+</ul>
+
+<h1>Apologies</h1>
+<ul>
+	<li> Ralph Becket (rafe) </li>
+</ul>
+
+<h1>Progress reports</h1>
+<ul>
+	<li> Fergus Henderson (fjh)
+	<ul>
+		<li>
+			Announced that his paper with Zoltan on Mercury to
+			high-level C compilation has been accepted by Compiler
+			Construction.
+		</li>
+		<li>
+			Has been working on accurate garbage collection for the
+			high-level C backend.
+		</li>
+		<li>
+			Has re-installed SUSE on hg after it was cracked
+			yesterday.
+		</li>
+	</ul>
+	</li>
+
+	<li> Michael Wybrow (mjwybrow)
+	<ul>
+		<li> Has class constructors working. </li>
+		<li> Is starting to look at tags. </li>
+	</ul>
+	</li>
+
+	<li> Lars Yencken (lljy)
+	<ul>
+		<li>
+			Has been spending time learning Mercury.
+		</li>
+		<li>
+			Has been thinking about syntax for declaring exclusive
+			and/or exhaustive switches
+		</li>
+	</ul>
+	</li>
+
+	<li> Paul Incani (paulai)
+	<ul>
+		<li> Has been working on <code>string_format</code>. </li>
+	</ul>
+	</li>
+
+	<li> Julian Grady (julianpg)
+	<ul>
+		<li> Has been working on accurate garbage collection </li>
+		<li> Has been looking at how closures are represented in the
+		debugger. </li>
+	</ul>
+	</li>
+
+	<li> David Overton (dmo)
+	<ul>
+		<li> Has been working on HAL </li>
+		<li> Is reading Jan-Georg Smaus's PhD Thesis on Modes in Goedel
+		</li>
+	</ul>
+	</li>
+
+	<li> Simon Taylor (stayl)
+	<ul>
+		<li> Has been tidying up the new <code>mmake</code> feature in
+		the compiler. </li>
+		<li> Has been reading about the HAL optimisation framework.
+		</li>
+	</ul>
+	</li>
+
+	<li> Zoltan Somogyi (zs)
+	<ul>
+		<li> Has added support for field names to the browser. </li>
+		<li> Has added support for printing closures in the debugger.
+		</li>
+		<li> Has fixed some problem cases in the stack slot
+		optimisation. </li>
+	</ul>
+	</li>
+
+	<li> Julien Fischer (juliensf)
+	<ul>
+		<li> Has been cleaning up and understanding the termination 2
+		analyser. </li>
+	</ul>
+	</li>
+
+	<li> Ralph Becket (rafe) (progress report submitted by email)
+	<ul>
+		<li> Has done some work on the book. </li>
+		<li> Is continuing to work on the loop invariant hoisting
+		optimisation (it works, but is sometimes a little too eager).
+		</li>
+		<li> Done a little more on the formalisation paper. </li>
+		<li> Spent a fair bit of time helping out some of the summer
+		students with various problems. </li>
+	</ul>
+	</li>
+</ul>
+
+<h1>Other Business</h1>
+
+<ul>
+	<li>
+	We spent some time talking about the Windows port.
+	Fergus said that having a good Windows port would be important for the
+	Mercury language.
+	The following tasks were assigned.
+	<ul>
+		<li> Simon will work on getting reading of transitive
+		intermodule optimisation files to work. </li>
+		<li> Fergus will work on removing cygwin dependencies and
+		porting to mingwin.
+		<li> Paul may be interested in working on the Visual Studio
+		integration, but this is still to be confirmed.
+	</ul>
+	</li>
+</ul>
+
+<address>
+Minutes taken by David Overton (dmo@cs.mu.oz.au)
+</address>
+</body>
+</html>
