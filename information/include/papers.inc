@@ -17,6 +17,33 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+Type classes in Mercury.
+</strong>
+<br>
+David Jeffery, Fergus Henderson and Zoltan Somogyi.
+<br>
+<em>
+Technical Report 98/13,
+</em>
+Department of Computer Science, University of Melbourne,
+Melbourne, Australia, September 1998, 22 pages.
+<a href = "papers/mu_98_13.ps.gz">
+Available here (82K).
+</a>
+<p>
+
+In this paper, we explain how we have extended Mercury's type system 
+to include support for type classes.
+We give a formal semantics for this extension to our type system,
+adapting the typing rules used in functional languages
+to the differing demands of logic programming languages.
+We show that type classes integrate very nicely
+with Mercury's mode, uniqueness and determinism systems,
+and describe how our implementation works.
+<p>
+
+<li>
+<strong>
 Termination analysis for Mercury.
 </strong>
 <br>
