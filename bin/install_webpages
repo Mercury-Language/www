@@ -55,12 +55,13 @@ make install
 umask 002
 
     # Index the web-site for searching.
-htdig -c /etc/htdig/htdig-mercury.conf -a
+htdig -c /etc/htdig/htdig-mercury.conf -a -i
 htmerge -c /etc/htdig/htdig-mercury.conf -a
 
     # Replace the work files with their alternate versions.
-cd /home/mercury5/htdig
+cd /var/spool/htdig
 for file in `ls *.work`
 do
     mv $file `basename $file .work`
 done
+
