@@ -36,7 +36,7 @@ function links_to_file ($filename, $release, $Sunsite)
 	$aus_http_dir = $aus_http . "old-releases/" . $release . "/";
 
 	link_to ($aus_ftp_dir, $filename, "Australia (FTP)");
-	link_to ($aus_http, $filename, "Australia (HTTP)");
+	link_to ($aus_http_dir, $filename, "Australia (HTTP)");
 	if ($Sunsite == "yes") {
 		link_to ($usa_sunsite_ftp, $filename, "USA (Sunsite FTP)");
 	}
