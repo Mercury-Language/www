@@ -7,8 +7,8 @@
 <body bgcolor="#ffffff" text="#000000" >
 <h1>Adding a new user.</h1>
 
-hydra is our master NIS server, with ender being our secondary slave
-server, for more details on how NIS was setup, see the file
+earth is our master NIS server, with hydra and ender being our secondary
+slave servers, for more details on how NIS was setup, see the file
 <A HREF="http://hydra.cs.mu.oz.au/doc/nis/nis.debian.howto.gz">
 nis.debian.howto</A> in
 <A HREF="http://hydra.cs.mu.oz.au/doc/nis">/usr/doc/nis</A> on hydra.
@@ -16,16 +16,16 @@ nis.debian.howto</A> in
 <P>
 
 Get the new users /etc/passwd entry from mundook and then add it to /etc/passwd
-on hydra (using vipw to be safe).
+on earth (using vipw to be safe).
 
 <P>
 
-Add the new user to group mercury in /etc/group on hydra (using vigr to
+Add the new user to group mercury in /etc/group on earth (using vigr to
 be safe).
 
 <P>
 
-Then execute the following commands as root on hydra to
+Then execute the following commands as root on earth to
 update the NIS database.
 
 <P>
@@ -39,7 +39,7 @@ to.
 
 <P>
 
-Last update was $Date: 2000-01-10 05:38:56 $ by $Author: petdr $@cs.mu.oz.au.
+Last update was $Date: 2001-11-28 06:27:07 $ by $Author: stayl $@cs.mu.oz.au.
 </body>
 
 </html>
