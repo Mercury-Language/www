@@ -1,4 +1,4 @@
-<h2>Benchmaking Information</h2>
+<h2>Benchmarking Information</h2>
 
 <h3>Running the benchmarks</h3>
 We have used a set of ten small logic programming benchmarks to compare

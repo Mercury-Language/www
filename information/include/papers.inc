@@ -179,6 +179,9 @@ compiler generates code for.  (Our other papers listed below go
 into more detail on exactly how the code is generated, and on how
 the abstract machine instructions are implemented as C or GNU C code.)
 <p>
+The raw data on which the evaluation is based
+is <a href = "./benchmarks.html">available here</a>.
+<p>
 
 <li>
 <strong>
