@@ -6,6 +6,17 @@ Please note that the postscript files are compressed using gzip and are
 in a4 format.
 <p>
 <ul>
+	<li> <a href="mailto:rwab1@cam.sri.com">Ralph Becket</a>'s
+	     <strong>Mercury tutorial</strong><br>
+	A beginner's introduction to Mercury.
+	This is still under development. 
+	Feedback would be appreciated.
+	<p>
+
+	Available in
+	<a href="../tutorial/index.html">HTML</a> only.
+	<p>
+
 	<li> <strong>Mercury Language Reference Manual</strong> <br>
 	Information on the Mercury programming language
 	itself, including syntax, types and modes, determinism, 

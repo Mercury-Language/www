@@ -13,10 +13,17 @@
 ** Make sure you put a comma between each item, and an arrow
 ** between the date and the news.
 ** 
-** ALSO the date's must be distinct.
+** ALSO the dates must be distinct.
 */
 
 $newsdb = array(
+
+"16 Mar 1999" => array("Mercury Tutorial",
+"<a href=\"mailto:rwab1@cam.sri.com\">Ralph Becket</a>
+has kindly written a
+<A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.  
+This is still under development.  Feedback would be appreciated."
+),
 
 "18 Jan 1999" => array("Coding Challenge - Battleships",
 

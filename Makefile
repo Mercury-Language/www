@@ -13,7 +13,7 @@ HTML=	index.html 		\
 	applications.html	\
 	search.html
 
-DIRS=contact download information mailing-lists
+DIRS=contact download information mailing-lists tutorial
 ROOT=.
 
 #-----------------------------------------------------------------------------#
