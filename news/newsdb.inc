@@ -17,6 +17,12 @@
 */
 
 $newsdb = array(
+"11 Mar 1999" => array("Prolog debuggers no longer supported",
+
+"We've removed the support for using a Prolog debugger on Mercury programs.
+Now that we have a working Mercury debugger, there's no longer any need to
+use a Prolog debugger for debugging Mercury code.
+"),
 
 "8 Mar 1999" => array("Interactive queries",
 
