@@ -56,3 +56,5 @@ htmerge -c /etc/htdig-mlists.conf
 
 htdig                               # Rest of web site.
 htmerge
+
+chgrp -R mercury /var/spool/htdig*
