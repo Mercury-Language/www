@@ -1,10 +1,40 @@
 <H2>Release of the Day</H2>
 
-Mercury can have up to three different releases at any given point.
-<p>
-The most stable release will be a <em>numbered</em> release, such as 0.6 or
-0.7.3.   These releases have been extensively tested, and often have 
+Mercury can have up to four different releases at any given point.
+
+<H3> Current release </H3>
+
+The most stable release will be a <em>numbered release</em>, such as 0.10.1 or
+0.11.0.   These releases have been extensively tested, and often have 
 pre-compiled binary packages for easy installation.
+<p>
+The <a href="release.html">current stable release</a>
+is version <? echo $current_release ?>.
+
+<H3> Current beta-release </H3>
+
+The next most stable release will be a <em>numbered beta-release</em>,
+such as 0.11.1-beta-2003-01-17.  These releases are snapshots from a
+"release" branch of our CVS repository.
+They may provide additional bug fixes not yet present
+in the previous numbered release.
+However, in general they are not as well tested.
+Generally the only reason to use these versions would be if you need
+one of the additional bug fixes.
+<p>
+The current beta-release series is named <? echo $next_beta_version ?>.
+Individual releases in this series are named with a date stamp, e.g.
+<? echo $next_beta_version ?>-YYYY-MM-DD.
+<p>
+<B>Download <? echo $next_beta_version ?>:</b>
+<ul>
+<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/">
+Mercury web site</A><br>
+<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/<? echo $next_beta_version ?>">
+Mercury ftp site</A>
+</ul>
+
+<H3> Stable ROTD (release-of-the-day) </H3>
 <p>
 To cater for those who need access to the latest cutting edge features
 of Mercury, but would still like some stability, we release a daily

@@ -1,6 +1,7 @@
 <?
 	$installed_path="/home/mercury5/installed_w3";
 	$current_release="<RELEASE_VERSION>";
+	$next_beta_version="<NEXT_BETA_VERSION>";
 	$release_doc_dir="$root/information/doc-release";
 	$latest_doc_dir="$root/information/doc-latest";
 	$ref_man_toc="reference_manual_toc.html";

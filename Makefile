@@ -28,7 +28,9 @@ target: html
 globals.inc: include/globals.inc
 
 include/globals.inc: include/globals.inc.in
-	sed -e "s/<RELEASE_VERSION>/$(RELEASE_VERSION)/" < $< > $@
+	sed -e "s/<RELEASE_VERSION>/$(RELEASE_VERSION)/" \
+	    -e "s/<NEXT_BETA_VERSION>/$(NEXT_BETA_VERSION)/" \
+	     < $< > $@
 
 index.html: latest_news.inc newsdb.inc
 news.html: latest_news.inc newsdb.inc

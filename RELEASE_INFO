@@ -1,6 +1,9 @@
 # A descriptive name for the release. See mercury/VERSION
 RELEASE_VERSION=0.11.0
 
+# A name for the next beta-release.
+NEXT_BETA_VERSION=0.11.1-beta
+
 # The CVS tag of the release branch.
 # This is used to check out the documentation sources.
 # We use the release *branch* tag, rather than the release tag,
