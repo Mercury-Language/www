@@ -35,7 +35,6 @@ The third was presented at ISMM '02 in June:
 by Fergus Henderson."
 ),
 
-$newsdb = array(
 "10 July 2001" => array("State variables",
 
 "We've added some extra syntax to the language to support programming
