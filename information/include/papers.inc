@@ -14,6 +14,60 @@ Mercury, at a variety of levels, are also available.
 <h2>Papers on Mercury</h2>
 
 <ul>
+<li>
+<strong>
+Towards memory reuse for Mercury
+</strong>
+<br>
+Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
+<br>
+<em>
+Proceedings of the International Workshop on Implementation of
+Declarative Languages
+</em>,
+Paris, France, October 1999
+<a href="papers/liveness.ps.gz">Available here (61K)</a>.
+<p>
+While Mercury allows destructive input/unique output modes which direct
+the compiler to reuse memory, use of these modes is very cumbersome for
+the programmer. Moreover it does not fit the declarative programming
+paradigm where the programmer doesn't have to worry about the details of
+memory management.
+
+The paper briefly reports on some experiments with a prototype analyser
+which aims at detecting memory available for reuse. The prototype is
+based on the live-structure analysis developed by us for logic programs
+extended with declarations.
+
+Yet the major contribution of this paper consists of the development of
+the principles of a module based analysis which are essential for the
+analysis of large Mercury programs with code distributed over many
+modules.
+<p>
+
+<li>
+<strong>
+Binding-Time Analysis for Mercury
+</strong>
+<br>
+Wim Vanhoof and Maurice Bruynooghe
+<br>
+<em>
+Proceedings of the Sixteenth International Conference on Logic Programming
+</em>,
+Las Cruces, New Mexico, November 1999, pages 500-514
+<a href="papers/bta.ps.gz">Available here (76K)</a>.
+<p>
+In this paper, we describe a binding-time analysis (BTA) for a
+statically typed and strongly moded pure logic programming language, in
+casu Mercury.  Binding-time analysis is the key concept in achieving
+off-line program specialisation: the analysis starts from a description
+of the program's input available for specialisation, and propagates this
+information throughout the program, deriving directives for when and how
+to perform specialisation.  Exploiting the possibilities offered by
+Mercury's strong type and mode system, we present a completely automatic
+BTA dealing with partially static binding-times.
+<p>
 
 <li>
 <strong>

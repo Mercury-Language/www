@@ -21,6 +21,15 @@
 
 $newsdb = array(
 
+"21 Feb 2000" => array("New papers",
+
+"Two new papers on Mercury are now available from our
+<A HREF=\"information/papers.html\">papers page</A>.
+One describes a binding-time analysis,
+while the other describes an analysis for detecting whether a memory
+cell is available for reuse."
+),
+
 "26 Jan 2000" => array("Mercury 0.9.1 released",
 
 "Mercury 0.9.1 fixes a few bugs in Mercury 0.9, including a few problems
