@@ -83,12 +83,16 @@ released but are still immature, while others are under development.
 	This back-end compiles Mercury to Java.
 	<p>
 	The compiler support is in reasonably good shape,
-	and includes good support for interfacing with Java
+	includes good support for interfacing with Java
 	(see the language reference manual for details),
-	but the standard library support is currently pretty minimal.
+	and the standard library is now fairly reasonable.
+	However, the run-time system as currently implemented
+	lacks support for type classes and Mercury-level
+	debugging and profiling.
 	<p>
 	For more details, see the Mercury source code, in particular
-	compiler/mlds_to_java.m.
+	compiler/mlds_to_java.m.  For a guide to installing and
+	using the Java grade, refer to README.Java.
 	</dd>
 <p>
 	<dt><a name="bytecode"><b>Mercury byte-code.</b></a></dt>
