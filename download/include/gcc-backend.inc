@@ -10,11 +10,18 @@ platforms, and which has front-ends for a variety of languages,
 including C, C++, Ada, Fortran, Java, and now Mercury.
 
 <p>
+<H3>Status</H3>
 
 The current version of the Mercury native code compiler should be
 considered a beta release.  It is based on an unreleased snapshot
 version of the GCC back-end.  Currently it has only been tested on
 i686-pc-linux-gnu (Intel x86 PCs running GNU/Linux).
+
+<p>
+
+The native code compiler bootstraps, and passes all of the tests in
+our test suite, except for those that use nested modules or tabled
+evaluation, which are not yet implemented.
 
 <p>
 
@@ -30,7 +37,7 @@ For more information, see the file gcc/mercury/README
 in the mercury-gcc distribution (see below).
 
 <p>
-<H3>Sources</H2>
+<H3>Sources</H3>
 
 The sources for the Mercury native code compiler come in three parts:
 

@@ -1,7 +1,7 @@
 <HTML>
 <?
     $menu="Download";
-    $title="GCC back-end / Mercury front-end";
+    $title="Mercury front-end for GCC";
     $dir="download";
     $root="..";
     $include="gcc-backend.inc";
