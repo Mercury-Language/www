@@ -17,7 +17,7 @@
 */
 
 $newsdb = array(
-"17 Mar 1999" => array("Automatic accumulator introduction",
+"17 Jun 1999" => array("Automatic accumulator introduction",
 
 "A new optimization has been added to the Mercury compiler.
 The optimization attempts to make procedures tail recursive by
