@@ -1,6 +1,6 @@
 <HTML>
 <?
-    $title="";
+    $title="%s";
     $dir="mailing-lists";
     $root="..";
     $include="blank.inc";
