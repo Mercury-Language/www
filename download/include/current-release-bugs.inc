@@ -1,3 +1,3 @@
 <?
-    include "$root/download/include/release-0.7-bugs.inc";
+    include "$root/download/include/release-0.9-bugs.inc";
 ?>
