@@ -248,11 +248,11 @@ installed all the binary distributions.)
 <? links_to_file("mercury-0.10.1.i686-pc-windows-cygwin.tar.gz", "no"); ?>
 	<p>
 
-    <dt>x86 machines running Linux (ELF executable format, libc 6.1)
-	<dd> Note that these binary distributions work ONLY with libc 6.1.x.
-	     Unfortunately they do NOT work with libc 6.0. This is due
-	     to incompatibilities between libc versions 6.0 and 6.1
-	     (i.e. glibc 2.0 and 2.1).
+    <dt>x86 machines running Linux (ELF executable format, libc 6.2)
+	<dd> Note that these binary distributions work ONLY with libc 6.2.x.
+	     Unfortunately they do NOT work with libc 6.1. This is due
+	     to incompatibilities between libc versions 6.1 and 6.2
+	     (i.e. glibc 2.1 and 2.2).
 	     <p>
 
 	     Debian Package (*.deb) <br>
