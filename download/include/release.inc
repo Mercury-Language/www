@@ -1,3 +1,11 @@
+<?
+#
+# The stuff for the Uppsala ftp site is disabled,
+# since that site is not working at the moment.
+# Change this to "yes" to re-enable it.
+#
+$Uppsala = "no"
+?>
 <h2><a name="info">Current Release</a></h2>
 
 Mercury 0.10 was released on February 25, 2001.
@@ -148,7 +156,9 @@ or porting it to a new system.
 <dt> Compiler (10 Mb)
 <dd> 
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.10.tar.gz">Australia</a>
+<? if ($Uppsala == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-compiler-0.10.tar.gz">Sweden</a>
+<? } ?>
 <a href = "ftp://sunsite.unc.edu/pub/Linux/devel/lang/mercury/mercury-compiler-0.10.tar.gz">USA (Sunsite)</a>
 <br>
 <p>
@@ -162,12 +172,16 @@ or its equivalent place on the mirrors.
 <dt> Extras (580 kb)
 <dd>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-extras-0.10.tar.gz">Australia</a>
+<? if ($Uppsala == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-extras-0.10.tar.gz">Sweden</a>
+<? } ?>
 <p>
 <dt> Tests (381 kb)
 <dd>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-tests-0.10.tar.gz">Australia</a>
+<? if ($Uppsala == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.10.tar.gz">Sweden</a>
+<? } ?>
 </dl>
 
 <h3><a name="binaries">Binary Distribution</a></h3>
@@ -182,7 +196,9 @@ installed all the binary distributions.)
     <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, or 2000.
 	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">Australia</a>
+<? if ($Uppsala == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">Sweden</a>
+<? } ?>
 <a href =
 "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">USA</a>
 	<p>
@@ -196,7 +212,9 @@ installed all the binary distributions.)
 	     Debian Package (*.deb) <br>
 	     Compiler only (about 28 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.10-1.deb">Australia</a>
+<? if ($Uppsala == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10-1.deb">Sweden</a>
+<? } ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution.
@@ -204,7 +222,9 @@ installed all the binary distributions.)
 	     RedHat Package (*.rpm) <br>
 	     Compiler only (about 28 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.10.rpm">Australia</a>
+<? if ($Uppsala == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.rpm">Sweden</a>
+<? } ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
@@ -213,13 +233,17 @@ installed all the binary distributions.)
 	     Compiler + Extras + Tests (about 30 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz">Australia</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz">USA</a>
+<? if ($sweden == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz">Sweden</a>
+<? } ?>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.sparc-sun-solaris2.7.tar.gz">Australia</a>
+<? if ($sweden == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.sparc-sun-solaris2.7.tar.gz">Sweden</a>
+<? } ?>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.sparc-sun-solaris2.7.tar.gz">USA</a><br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
@@ -232,7 +256,9 @@ and (2) use GNU tar. </em>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 66 Mb): <br>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.alpha-dec-osf3.2.tar.gz">Australia</a>
+<? if ($sweden == "yes") { ?>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.alpha-dec-osf3.2.tar.gz">Sweden</a>
+<? } ?>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.alpha-dec-osf3.2.tar.gz">USA</a>
 
 </dl>
@@ -244,10 +270,12 @@ and (2) use GNU tar. </em>
 	<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
 	ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/</a>
 
+<? if ($sweden == "yes") { ?>
 	<dt> Sweden (automatically updated mirror)
 	<dd>
 	<a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
 	ftp://ftp.csd.uu.se/pub/Mercury/</a>
+<? } ?>
 
 	<dt> USA (manually updated mirror)
 	<dd>
