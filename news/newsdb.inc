@@ -16,6 +16,13 @@
 
 $newsdb = array(
 
+"30 Sep 1998" => array("New paper: Type classes in Mercury.",
+
+"A new paper, describing our implementation of type classes in Mercury, 
+has been made available from 
+<A HREF=\"papers.html\">the Mercury papers page</A>."
+),
+
 "21 Sep 1998" => array("MCORBA: CORBA for Mercury.",
 
 "We've done some work on MCORBA, which is a binding to CORBA for
