@@ -17,6 +17,43 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+MCORBA: A CORBA Binding for Mercury
+</strong>
+<br>
+David Jeffery, Tyson Dowd and Zoltan Somogyi.
+<br>
+<em>
+Practical Aspects of Declarative Languages: First International Workshop
+</em>
+To appear:
+Lecture Notes in Computer Science,
+Springer Verlag, January 1999, 15 pages.
+&copy; 
+<a href="http://www.springer.de/comp/lncs/index.html>Springer-Verlag</a>.
+<p>
+
+MCORBA is a binding to the CORBA distributed object framework
+for the purely declarative logic/functional language Mercury.
+The binding preserves the referential transparency of the language,
+and has several advantages
+over similar bindings for other strongly typed declarative languages.
+As far as we know, it is the first such binding to be bidirectional;
+it allows a Mercury program both to operate upon CORBA components
+and to provide services to other CORBA components.
+Whereas the Haskell binding for COM
+maps COM interfaces onto Haskell types,
+MCORBA maps CORBA interfaces onto Mercury type classes.
+Our approach simplifies the mapping,
+makes the implementation of CORBA's interface inheritance straightforward,
+and makes it trivial for programmers to provide
+several different implementations of the same interface.
+It uses existential types to model the operation
+of asking CORBA for an object that satisfies a given interface
+but whose representation is unknown.
+<p>
+
+<li>
+<strong>
 Type classes in Mercury.
 </strong>
 <br>

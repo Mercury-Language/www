@@ -23,6 +23,13 @@ Release information can be found
 <A HREF=\"download/release-0.8.html\">here</A>."
 ),
 
+"18 November 1998" => array("New MCORBA paper available",
+
+"We have made a paper describing the Mercury CORBA interface
+available from
+<A HREF=\"information/papers.html\">the Mercury papers page</A>."
+),
+
 "17 Nov 1998" => array("Web site now searchable",
 
 "You can now search either the mailing lists or the
