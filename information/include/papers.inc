@@ -17,6 +17,35 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+Compiling Mercury to the .NET Common Language Runtime
+</strong>
+<br>
+Tyson Dowd, Fergus Henderson, and Peter Ross
+<br>
+<em>
+BABEL'01 First International Workshop on
+Multi-Language Infrastructure and Interoperability,
+Department of Computer Science, University of Melbourne,
+Firenze, Italy, September 2001.  Preliminary Proceedings pages 70-85.
+To appear in Electronic Notes in Theoretical Computer Science 59.1.
+<a href = "papers/mercury_to_clr.ps.gz">
+Available here (93K).
+</a>
+<p>
+The .NET Common Language Runtime (CLR) offers a new opportunity to
+experiment with multi-language interoperation, and provides a relatively
+rare chance to explore deep interoperation of a wide range of
+programming language paradigms.
+This article describes how Mercury is compiled to the CLR.
+We describe the problems we have
+encountered with generating code for the CLR,
+give some preliminary benchmark results,
+and suggest some possible improvements to the CLR
+regarding separate compilation, verifiability, tail calls, and efficiency.
+<p>
+
+<li>
+<strong>
 Compiling Mercury to high-level C code
 </strong>
 <br>

@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"4 November 2001" => array("New paper",
+
+"Our BABEL'01 paper, on compiling Mercury to the .NET Common Language Runtime,
+is now available from our <A HREF=\"information/papers.html\">papers page</A>.
+"
+),
+
 "26 October 2001" => array("New paper",
 
 "We have a new paper available 
