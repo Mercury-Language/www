@@ -1,19 +1,11 @@
 <h2>Current Release</h2>
 
-Mercury 0.9 was released on December 18, 1999. <p>
-
-There are a couple of serious bugs in the binary distributions
-of Mercury 0.9.  One of them is that you need to type
-`make INSTALL_EMACS_SCRIPTS=scripts/mdb.el install'
-instead of `make install' to install it.
-The other is that installation of the binary distribution
-for Windows will fail.
-These bugs will be fixed in 0.9.1, which we plan to release
-sometime soon. <p>
+Mercury 0.9 was released on December 18, 1999. <br>
+Mercury 0.9.1 was released on January 26, 2000. <p>
 
 The NEWS file, detailing differences since the release of 0.8.1,
 is available <a href="release-0.9.html">here</a>.
-Source distributions of release 0.9 
+Source distributions of release 0.9.1
 are available at the following site(s):
 (note: some of these links may be dangling links for now...)
 
@@ -22,10 +14,6 @@ are available at the following site(s):
 <dd> <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
      ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury</a><br>
      The Mercury ftp site in Melbourne, Australia.
-<dt> Greece
-<dd> <a href = "ftp://ftp.ntua.gr/pub/lang/mercury/">
-     ftp://ftp.ntua.gr/pub/lang/mercury/</a><br>
-     National Technical University of Athens, Greece.
 <dt> Sweden
 <dd> <a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
      ftp://ftp.csd.uu.se/pub/Mercury/</a><br>
@@ -53,17 +41,17 @@ are available at the following site(s):
 <ul>
 	<li>
 	<a href = "release-0.9.html">
-	Release notes for 0.9
+	Release notes for 0.9.1
 	</a>
 
 	<li>
 	<a href = "release-0.9-contents.html">
-	Contents of release 0.9 distribution
+	Contents of release 0.9.1 distribution
 	</a>
 
 	<li>
 	<a href = "release-0.9-bugs.html">
-	Known problems with release 0.9
+	Known problems with release 0.9.1
 	</a>
 
 	<li>
@@ -137,17 +125,14 @@ or porting it to a new system.
 <dt> Compiler (8 Mb)
 <dd> 
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.9.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-compiler-0.9.tar.gz">Greece</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-compiler-0.9.tar.gz">Sweden</a>
 <dt> Extras (387 kb)
 <dd>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-extras-0.9.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-extras-0.9.tar.gz">Greece</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-extras-0.9.tar.gz">Sweden</a>
 <dt> Tests (330 kb)
 <dd>
 <a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-tests-0.9.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-tests-0.9.tar.gz">Greece</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9.tar.gz">Sweden</a>
 </dl>
 
@@ -169,28 +154,25 @@ installed all the binary distributions.)
 	     <p>
 	     Debian Package (*.deb) <br>
 	     Compiler only (about 18 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9-1.deb">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.9-1.deb">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9-1.deb">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9.1-1.deb">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9-1.deb">Sweden</a>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution.
 	     <p>
 	     RedHat Package (*.rpm) <br>
 	     Compiler only (about 18 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9-1.deb">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.9-1.deb">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9-1.deb">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9.1.rpm">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9.1.rpm">Sweden</a>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
              <p>
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 20 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.i686-pc-linux-libc2.0-gnu.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.9.i686-pc-linux-libc2.0-gnu.tar.gz">Greece</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.i686-pc-linux-libc2.0-gnu.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.i686-pc-linux-libc2.0-gnu.tar.gz">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.1.i686-pc-linux-libc2.0-gnu.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9..1i686-pc-linux-libc2.0-gnu.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.1.i686-pc-linux-libc2.0-gnu.tar.gz">Sweden</a>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.1)
@@ -202,36 +184,32 @@ installed all the binary distributions.)
 	     <p>
 	     Debian Package (*.deb) <br>
 	     Compiler only (about 18 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9-1.deb">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.9-1.deb">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9-1.deb">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9.1-1.deb">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.1-1.deb">Sweden</a>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution.
 	     <p>
 	     RedHat Package (*.rpm) <br>
 	     Compiler only (about 18 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9-1.deb">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury_0.9-1.deb">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9-1.deb">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.9.1.rpm">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.9.1.rpm">Sweden</a>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
              <p>
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 20 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.i686-pc-linux-libc2.1-gnu.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.9.i686-pc-linux-libc2.1-gnu.tar.gz">Greece</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.i686-pc-linux-libc2.1-gnu.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.i686-pc-linux-libc2.1-gnu.tar.gz">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.1.i686-pc-linux-libc2.1-gnu.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.1.i686-pc-linux-libc2.1-gnu.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.1.i686-pc-linux-libc2.1-gnu.tar.gz">Sweden</a>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 23 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.sparc-sun-solaris2.6.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.9.sparc-sun-solaris2.6.tar.gz">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.sparc-sun-solaris2.6.tar.gz">Sweden</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.sparc-sun-solaris2.6.tar.gz">USA</a><br>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.1.sparc-sun-solaris2.6.tar.gz">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.1.sparc-sun-solaris2.6.tar.gz">Sweden</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.1.sparc-sun-solaris2.6.tar.gz">USA</a><br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
 the binary distributions for Solaris, with tar reporting
@@ -241,17 +219,17 @@ and (2) use GNU tar. </em>
 	<p>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 44 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.alpha-dec-osf3.2.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.9.alpha-dec-osf3.2.tar.gz">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.alpha-dec-osf3.2.tar.gz">Sweden</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.alpha-dec-osf3.2.tar.gz">USA</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.1.alpha-dec-osf3.2.tar.gz">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.1.alpha-dec-osf3.2.tar.gz">Sweden</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.1.alpha-dec-osf3.2.tar.gz">USA</a>
 
 	<p>
     <dt>x86 machines running Windows 95 or Windows NT
 	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.pc-windows-cygwin-b20.1.tar.gz">Australia</a>
-<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/mercury-0.9.pc-windows-cygwin-b20.1.tar.gz">Greece</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.pc-windows-cygwin-b20.1.tar.gz">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.9.1.pc-windows-cygwin-b20.1.tar.gz">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.9.1.pc-windows-cygwin-b20.1.tar.gz">Sweden</a>
+<a href =
+"ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.1.pc-windows-cygwin-b20.1.tar.gz">USA</a>
 
 </dl>
 
@@ -261,11 +239,6 @@ and (2) use GNU tar. </em>
 	<dd>
 	<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
 	ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/</a>
-
-	<dt> Greece (automatically updated mirror)
-	<dd>
-	<a href = "ftp://ftp.ntua.gr/pub/lang/mercury/">
-        ftp://ftp.ntua.gr/pub/lang/mercury/</a>
 
 	<dt> Sweden (automatically updated mirror)
 	<dd>

@@ -1,3 +1,20 @@
+<h2>New in release 0.9.1 of the Mercury distribution</h2>
+
+This release is primarily a bug-fix release.  
+It fixes some bugs with the binary distribution of 0.9,
+stops the compiler accepting some incorrect inst declarations,
+fixes a bug in exception handling and a problem with the source
+distribution where `configure' did the wrong thing on some architectures
+if you ran it twice.
+<p>
+
+In addition, Morphine has been added to the extras distribution.
+Morphine is a trace analysis system, which allows Mercury programs to be
+debugged and dynamically analyzed using a Prolog interface.  You need
+the ECLiPSe Prolog system to use Morphine.  See the README file in the
+Morpine directory for more details.
+
+
 <h2>New in release 0.9 of the Mercury distribution</h2>
 
 <h3>HIGHLIGHTS</h3>

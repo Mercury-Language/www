@@ -1,6 +1,6 @@
 <HTML>
 <?
-    $title="Release 0.9 Notes";
+    $title="Release 0.9.1 Notes";
     $dir="download";
     $root="..";
     $include="release-0.9.inc";

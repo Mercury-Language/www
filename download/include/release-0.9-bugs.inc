@@ -1,13 +1,12 @@
-<h2>Release 0.9 - Known Problems</h2>
+<h2>Release 0.9.1 - Known Problems</h2>
 
-There are a couple of serious bugs in the binary distributions
-of Mercury 0.9.  One of them is that you need to type
+Release 0.9 had a couple of serious bugs in the binary distributions.
+One of them is that you need to type
 `make INSTALL_EMACS_SCRIPTS=scripts/mdb.el install'
 instead of `make install' to install it.
 The other is that installation of the binary distribution
 for Windows will fail.
-These bugs will be fixed in 0.9.1, which we plan to release
-sometime soon. <p>
+These bugs are fixed in 0.9.1.<p>
 
 The following is collected email of reported problems with release
 0.9 of the Mercury distribution.  Included, where possible, are

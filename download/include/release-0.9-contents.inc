@@ -32,6 +32,7 @@ The "mercury-extras" distribution contains some extra libraries for:
 	<li> POSIX interface
 	<li> backtrackable (trailed) destructive update
 	<li> an ODBC database interface
+	<li> the Morphine trace analysis system
 	<li> a CLP(R) interface, i.e. constraint solving over real numbers
 	</ul>
 <p>

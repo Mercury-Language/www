@@ -21,6 +21,13 @@
 
 $newsdb = array(
 
+"26 Jan 2000" => array("Mercury 0.9.1 released",
+
+"Mercury 0.9.1 fixes a few bugs in Mercury 0.9, including a few problems
+with binary distributions.  Release information can be found
+<A HREF=\"download/release-0.9.html\">here</A>."
+),
+
 "19 Jan 2000" => array("Morphine released",
 
 "<a href=\"http://www.irisa.fr/lande/jahier/download.html\">Morphine</a>,
