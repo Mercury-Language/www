@@ -53,4 +53,7 @@ case $month in
     \*) echo "archive2html: incorrect month"; exit 1 ;;
 esac
 
-hypermail -x -m $filename -a "../../mailing-lists.html" -l "$file $month $year"
+set -x
+
+hypermail -x -m $filename -a "../../mailing-lists.html" \
+    -l "$file $month $year" -t "../header.inc" -e "../footer.inc"
