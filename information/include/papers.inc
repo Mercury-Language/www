@@ -14,6 +14,38 @@ Mercury, at a variety of levels, are also available.
 <h2>Papers on Mercury</h2>
 
 <ul>
+<li>
+<strong>
+Making Mercury Programs Tail Recursive
+</strong>
+<br>
+Peter Ross, David Overton and Zoltan Somogyi
+<br>
+<em>
+Proceedings of the Ninth International Workshop on Logic-based Program
+Synthesis and Transformation</em>,
+Venice, Italy, September 1999.
+To appear in Lecture Notes in Computer Science,
+Springer Verlag, 
+&copy; 
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<a href="papers/tail_lopstr_lncs.ps.gz">Available here (84K)</a>.
+<p>
+We present two optimizations for making Mercury programs tail recursive.
+Both operate by taking computations that occur after a recursive call
+and moving them before the recursive call, modifying them as necessary.
+The first optimization moves calls to associative predicates;
+it is a pure source to source transformation.
+The second optimization moves construction unifications;
+it required extensions to the mode system (to record aliases)
+and to the parameter passing convention
+(to allow arguments to be returned in memory).
+The two optimizations are designed to work together,
+and can make a large class of programs tail recursive.
+<p>
+The raw data on which the evaluation is based
+is available as a <a href = "papers/tail_data.tar.gz">5 Kb tar file</a>
+<p>
 
 <li>
 <strong>
@@ -33,8 +65,6 @@ which can move the state update before the recursive call,
 thus helping to make the predicate tail recursive,
 and report on its implementation in the Mercury compiler.
 <p>
-
-
 
 <li>
 <strong>
@@ -67,7 +97,6 @@ and gives an extended example of how impurity and foreign language
 interfaces can work together to simplify the chore of writing
 declarative interfaces to libraries.
 <p>
-
 
 <li>
 <strong>
@@ -159,56 +188,14 @@ Making Mercury programs tail recursive (extended abstract)
 Peter Ross, David Overton and Zoltan Somogyi.
 <br>
 <em>
-Proceedings of the Ninth International Workshop on Logic-based Program
+Pre-Proceedings of the Ninth International Workshop on Logic-based Program
 Synthesis and Transformation
 </em>,
 Venice, Italy, September 1999, pages 107-118.
 <a href="papers/tail_lopstr.ps.gz">Available here (62K)</a>.
 <p>
 
-Recursive calls are often very close to being the last action in a clause.
-Frequently, however, the recursive call computes a value
-which must be put into a memory cell or used in a simple computation.
-Therefore the generated code will consume stack space for each iteration,
-and will need to execute
-stack frame setup and teardown code in every iteration.
-This paper presents two optimisations that in many common cases
-can transform such code into a tail recursive form
-by moving code from after the recursive call to before the recursive call.
-These optimisations have been implemented in the Melbourne Mercury compiler.
-<p>
-The first optimisation is a pure source to source transformation.
-It looks for recursive calls followed by associative computations
-which depend on the outputs of the recursive call.
-The optimisation then creates a specialised version of the predicate
-in which the associative computation is done before the recursive call.
-This specialised predicate will have
-extra arguments that act as accumulators:
-they hold the cumulative results of the associative computations so far.
-<p>
-The second optimisation looks for
-recursive calls followed by construction unifications
-that put some of the results of that call into memory cells,
-and moves those construction unifications before the call.
-This required extending the Mercury mode system
-to allow a restricted form of partially instantiated data structures
-and to record aliases,
-since in the transformed program the cell is not ground when it is created,
-but will become ground when the recursive call returns.
-To allow this to happen, we also had to extend
-the parameter passing conventions of the Mercury abstract machine
-to allow predicates to return selected output arguments in memory,
-not in registers.
-<p>
-Some predicates contain both
-associative computations and construction unifications
-after the recursive call.
-To allow us to make such predicates tail recursive,
-the accumulator introduction optimisation will perform its transformation
-even when the recursive call is followed by construction unifications
-as well as associative computations,
-knowing that the other optimisation
-will move the construction unifications before the call.
+This paper has been superceded by the LNCS version.
 <p>
 
 <li>

@@ -21,9 +21,17 @@
 
 $newsdb = array(
 
+"11 Apr 2000" => array("Completed paper",
+
+"The full version of <EM>Making Mercury Programs Tail Recursive</EM> is
+now available from our <A HREF=\"information/papers.html\">papers page</A>.
+The paper describes two optimizations, implemented in the Mercury
+compiler, which make predicates tail recursive."
+),
+
 "5 Apr 2000" => array("More new papers",
 
-"Another two papers on Mercury are now available from our
+"Another two new papers on Mercury are now available from our
 <A HREF=\"information/papers.html\">papers page</A>.
 One describes using purity declarations for building foreign language
 interfaces, while the other details the update transformation, an
