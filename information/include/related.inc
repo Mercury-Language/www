@@ -10,7 +10,7 @@ and meta-programming facilities.
 Sisal is a high-performance portable parallel functional programming language.
 
 <ul>
-<li> <a href = "http://sisal.sorceforge.net/">Sisal</a>
+<li> <a href = "http://sisal.sourceforge.net/">Sisal</a>
 </ul>
 
 Clean is a general purpose, higher order, pure and lazy functional
