@@ -32,6 +32,7 @@ harald@cs.mu.OZ.AU, senior lecturer
 <li> Simon Taylor, stayl@cs.mu.OZ.AU, research assistant
 <li> Nicolas Watmough, ndw@students.cs.mu.OZ.AU, summer student
 <li> Michael Wybrow, mjwybrow@students.cs.mu.OZ.AU, summer student
+<li> Lars Yencken, lljy@students.cs.mu.OZ.AU, summer student
 </ul>
 
 People who have worked on the project in the past,
