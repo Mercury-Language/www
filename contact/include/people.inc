@@ -43,6 +43,7 @@ some of whom are still informally associated with the project:
 <li> Michael Day, summer student
 <li> <a href = "http://www.csse.monash.edu.au/~wharvey/">Warwick Harvey</A>,
 wharvey@cs.monash.edu.au, research fellow at Monash University
+<li> Julian Grady, summer student julianpg@students.cs.mu.oz.au
 <li> Oliver Hutchinson, ohutch@students.cs.mu.OZ.AU, summer student
 <li> Robert Hutton, summer student
 <li> Erwan Jahier, jahier@imag.fr, research assistant at Verimag in Grenoble, France
