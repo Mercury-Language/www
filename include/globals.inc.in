@@ -18,4 +18,6 @@
 	$library_man_latest="$latest_doc_dir/mercury_library/index.html";
 	$trans_guide_release="$release_doc_dir/transition_guide_toc.html";
 	$trans_guide_latest="$latest_doc_dir/mercury_trans_guide/index.html";
+	$faq_release="$release_doc_dir/faq_toc.html";
+	$faq_latest="$latest_doc_dir/mercury_faq/index.html";
 ?>
