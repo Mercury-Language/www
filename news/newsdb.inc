@@ -31,7 +31,7 @@ suite, MCORBA, and even these web pages are available via CVS."
 
 "26 Jul 2000" => array("Mercury and Microsoft's .NET",
 
-"A page outlining the status of Mercury on Microsoft's net .NET
+"A page outlining the status of Mercury on Microsoft's new .NET
 framework is now available 
 <A HREF=\"information/dotnet/mercury_and_dotnet.html\">here</A>."
 ),
