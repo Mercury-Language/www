@@ -32,10 +32,10 @@
 <P>
 <B><a href="<?echo $root?>/download.html">Download</a></B><BR>
 <SMALL>
-  &nbsp;&nbsp;<a href="<?echo $root?>/download/release.html">Current Release</a>
+  &nbsp;&nbsp;<a href="<?echo $root?>/download/release.html">Current&nbsp;Release</a>
     <BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/rotd.html">Snapshot</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/download/old-release.html">Old Releases
+  &nbsp;&nbsp;<a href="<?echo $root?>/download/old-release.html">Old&nbsp;Releases
     </a><BR>
 </SMALL>
 <P>
@@ -43,7 +43,7 @@
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/applications.html">Applications</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mcorba.html">MCORBA</a> <BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/contributions.html">Contributing Code</a> <BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/contributions.html">Contributing&nbsp;Code</a> <BR>
 </SMALL>
 <P>
 <B><a href="<?echo $root?>/contact.html">Contact</a></B>
