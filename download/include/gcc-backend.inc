@@ -18,8 +18,11 @@ i686-pc-linux-gnu (Intel x86 PCs running GNU/Linux).
 
 <p>
 
-One <b>very important</b> caveat is that at the moment it only works
-reliably if you pass the `-O0' option to mmc.
+The version of the GCC back-end interface included in Mercury 0.10
+had a bug that often caused the compiler to abort.  The work-around
+for that is to compile with `--no-optimize-initializations'.
+This is fixed in our CVS repository and in recent release-of-the-day
+snapshots.
 
 <p>
 
