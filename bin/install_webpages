@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# install_webpages
+#
+# Responsible for updating the hypermail archive, updating the
+# search database and installing the web pages.
+#
+# Note this script must be run on hydra, have the INSTALL_WEBDIR
+# environment variable set and be run from the top level directory of
+# the w3 module.
+#
+
+whathost=`hostname | sed -e 's/\..*//'`
+if [ $whathost != "hydra" ]
+then
+    echo "install_webpages: must be run on hydra."
+    exit 1
+fi
+
+DIR=${INSTALL_WEBDIR=spec_unknown_value}
+if [ $DIR == "spec_unknown_value" ]
+then
+    echo "install_webpages: INSTALL_WEBDIR not set."
+    exit 1
+fi
+
+if [ ! -e "news.php3" ]
+then
+    echo "install_webpages: must be run from the top level of w3 module."
+    exit 1
+fi
+
+set -x
+
+    #
+    # Rearchive the mailing list.
+    #
+(
+    cd mailing-lists;
+    ./rearchive
+)
+
+    #
+    # Install the web pages
+    #
+cvs update .
+make install
+
+    #
+    # Reindex the web site for searching.
+    #
+umask 002
+
+htdig -c /etc/htdig-mlists.conf     # Mailing list
+htmerge -c /etc/htdig-mlists.conf
+
+htdig                               # Rest of web site.
+htmerge
