@@ -21,6 +21,23 @@
 */
 
 $newsdb = array(
+"10 July 2001" => array("State Variables",
+
+"We've added some extra syntax to the language to support programming
+with `state variables'.  State variables are intended to make it easier
+to deal with sequences of values.  For example, where previously one
+would have to name each value in a sequence X0, X1, X2, ..., X, now it
+is possible to use a state variable !X, which will be translated into 
+ordinary, non-state variable Mercury, automatically naming the sequence
+values.  !X stands for two arguments, !.X and !:X, where !.X is
+interpreted as the \"current\" sequence value under consideration and !:X
+is taken as the \"next\" sequence value.  State variable syntax should be
+used in preference to DCG notation for threading the IO state in future.
+See the \"State variables\" section of the \"Syntax\" chapter of the
+<A HREF=\"$ref_man_latest\">Mercury Language Reference Manual</A> for
+more details."
+),
+
 "13 November 2001" => array("Unification expressions",
 
 "We've added a new kind of expression to the language.
