@@ -7,16 +7,14 @@
 <body bgcolor="#ffffff" text="#000000" >
 <h1>Adding a new user.</h1>
 
-Our NIS servers are listed near the end of /home/mercury/public/hosts.
-For more details on how NIS was setup, see the file
-<A HREF="http://hydra.cs.mu.oz.au/doc/nis/nis.debian.howto.gz">
-nis.debian.howto</A> in
-<A HREF="http://hydra.cs.mu.oz.au/doc/nis">/usr/doc/nis</A> on hydra.
-
-<P>
-
 If the new user doesn't already have an account on our departmental machines,
 get the departmental sysadmins to add an account for him/her.
+
+Create a directory for the new user on /home/mercury.  (You need to
+be root on ceres to do this).  
+
+Our NIS servers are listed in the hosts file, which is in the CVS module
+local.
 
 Get the new user's existing /etc/passwd entry from a departmental machine,
 and then add it to /etc/passwd
@@ -25,6 +23,9 @@ If the NIS master has an /etc/shadow file,
 add the user to that file as well.
 Make sure that the numerical user ids
 are identical to the ones on departmental machines.
+
+Make sure that the new user's home directory on our machines is the one
+you created on /home/mercury.
 
 <P>
 
@@ -54,7 +55,7 @@ by modifying the file mulga:/etc/conf/mail/lists/mercury-local.
 
 <P>
 
-Last update was $Date: 2004-12-01 00:10:41 $ by $Author: zs $@cs.mu.oz.au.
+Last update was $Date: 2004-12-22 06:48:29 $ by $Author: juliensf $@cs.mu.oz.au.
 </body>
 
 </html>
