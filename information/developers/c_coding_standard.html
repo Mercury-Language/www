@@ -101,6 +101,10 @@ Items in source files should in general be in this order:
 <li>	Definitions of functions.
 </ul>
 
+Within each section, items should generally be listed in top-down order,
+not bottom-up.  That is, if foo() calls bar(), then the definition of
+foo() should precede the definition of bar().
+
 <h4>
 1.2.2. Header files</h4>
 
@@ -706,7 +710,7 @@ it from the above list.
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../../contact.html" >contact</a> page.<br>
 
-Last update was $Date: 2002-11-04 13:12:30 $ by $Author: stayl $@cs.mu.oz.au. <br>
+Last update was $Date: 2003-11-13 13:06:11 $ by $Author: fjh $@cs.mu.oz.au. <br>
 Note: This coding standard is an amalgam of suggestions from the
 entire Mercury team, not ncessarily the opinion of any single author.
 </body>
