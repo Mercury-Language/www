@@ -42,6 +42,7 @@ some of whom are still informally associated with the project:
 <li> <a href = "http://www.csse.monash.edu.au/~wharvey/">Warwick Harvey</A>,
 wharvey@cs.monash.edu.au, research fellow at Monash University
 <li> Oliver Hutchinson, ohutch@students.cs.mu.OZ.AU, summer student
+<li> Erwan Jahier, jahier@irisa.fr, PhD student
 <li> Jane Langley, summer student
 <li> Peter Malkin, pnmalk@students.cs.mu.OZ.AU, summer student
 <li> Bill Peden, honours student
