@@ -1,5 +1,8 @@
 <?
 function newsitem($date, $item) {
+
+	list($title, $news) = $item;
+
 	echo "<tr>";
 	list($day, $month, $year) = split(" ",$date);
 
@@ -8,7 +11,9 @@ function newsitem($date, $item) {
 	echo "]</tt></td>";
 
 	echo "<td><strong>";
-	echo $item;
-	echo "</strong></td></tr>";
+	echo $title;
+	echo "</strong><br>\n";
+	echo $news;
+	echo "</td></tr>";
 }
 ?>
