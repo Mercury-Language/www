@@ -35,7 +35,7 @@ HTML= 	current-release-bugs.html	\
 	release-0.10-contents.html	\
 	rotd.html
 
-current-release-bugs.html: release-0.9-bugs.inc
+current-release-bugs.html: release-0.10-bugs.inc
 
 install: local_install
 
