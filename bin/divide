@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+#
+# divide <string> <filenames>
+#
+# Every time <string> is encountered on stdin, the next lines read in
+# will be output to the next file in <filenames>
+
+$divide_string = $ARGV[0];
+$i = 1;
+
+open(OUTPUT, ">$ARGV[$i]") or die "Can't open file: $!";
+
+while (<STDIN>) {
+	if (/$divide_string/) {
+		$i = $i + 1;
+		open(OUTPUT, ">$ARGV[$i]") or die "Can't open file: $!";
+	}
+	else {
+		print OUTPUT
+	}
+}

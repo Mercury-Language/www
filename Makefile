@@ -14,7 +14,7 @@ HTML=	index.html 		\
 	contributions.html	\
 	search.html
 
-DIRS=contact download information mailing-lists tutorial
+DIRS=contact download htdig information mailing-lists tutorial
 ROOT=.
 
 #-----------------------------------------------------------------------------#
