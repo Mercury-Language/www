@@ -8,15 +8,20 @@ html: local_html
 
 local_html: msglist_header.inc msg_header.inc msglist_footer.inc msg_footer.inc
 
+	# When generating the header and footers for the mail messages,
+	# we need to escape percentage signs and add one more level of
+	# indirection to the relative paths.
+SED= sed -e 's/\%\"/\%\%\"/g' | sed -e 's/\.\./\.\.\/\.\.\/\.\./g'
+
 msglist_header.inc msglist_footer.inc: message_list.html
 	echo "May need to rearchive the hypermail archive"
-	$(ROOT)/bin/divide "--- Cut here ---" msglist_header.inc \
-			msglist_footer.inc < message_list.html
+	cat message_list.html | $(SED) | $(ROOT)/bin/divide 	\
+		"--- Cut here ---" msglist_header.inc msglist_footer.inc
 
 msg_header.inc msg_footer.inc: message.html
 	echo "May need to rearchive the hypermail archive"
-	$(ROOT)/bin/divide "--- Cut here ---" msg_header.inc \
-			msg_footer.inc < message.html
+	cat message.html | $(SED) | $(ROOT)/bin/divide 	\
+		"--- Cut here ---" msg_header.inc msg_footer.inc
 
 clean: local_clean
 
