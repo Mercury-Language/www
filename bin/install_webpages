@@ -86,7 +86,6 @@ do
 	echo "*** mv failed" 1>&2
 	exit 1
     }
-}
 done
 
 echo Install finished at `date`
