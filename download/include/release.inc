@@ -1,10 +1,51 @@
 <?
+
 #
-# The stuff for the Uppsala ftp site is disabled,
-# since that site is not working at the moment.
-# Change this to "yes" to re-enable it.
+# This is PHP3 code.  On Debian systems (e.g. venus.cs.mu.oz.au),
+# see /usr/share/doc/php3-doc/html/index.html for documentation on PHP3.
 #
-$Uppsala = "no"
+
+$aus_ftp = "ftp://ftp.mercury.cs.mu.oz.au/pub/mercury/";
+$aus_http = "http://www.cs.mu.oz.au/mercury/download/files/";
+$usa_sourceforge_http = "http://prdownloads.sourceforge.net/mercury/";
+$usa_sunsite_ftp = "ftp://sunsite.unc.edu/pub/Linux/devel/lang/mercury/";
+$usa_sunysb_ftp = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/";
+$sweden_ftp = "ftp://ftp.csd.uu.se/pub/Mercury/";
+
+#
+# XXX The stuff for the Uppsala and Stonybrook ftp sites is disabled,
+# since those sites are not working/updated at the moment.
+#
+$Uppsala = "no";
+$Stonybrook = "no";
+
+function link_to ($directory, $filename, $description)
+{
+	echo "<a href = \"" . $directory . $filename .
+		"\">" . $description . "</a>\n";
+	echo "&nbsp;&nbsp;&nbsp;\n";
+}
+
+function links_to_file ($filename, $Sunsite)
+{
+	global $aus_ftp, $aus_http, $usa_sourceforge_http, $usa_sunsite_ftp,
+		$usa_sunysb_ftp, $sweden_ftp;
+	global $Uppsala, $Stonybrook;
+
+	link_to ($aus_ftp, $filename, "Australia (FTP)");
+	link_to ($aus_http, $filename, "Australia (HTTP)");
+	if ($Sunsite == "yes") {
+		link_to ($usa_sunsite_ftp, $filename, "USA (Sunsite FTP)");
+	}
+	link_to ($usa_sourceforge_http, $filename, "USA (SourceForge HTTP)");
+	if ($Uppsala == "yes") {
+		link_to ($usa_sunysb_ftp, $filename, "USA (Stonybrook FTP)");
+	}
+	if ($Stonybrook == "yes") {
+		link_to ($sweden_ftp, $filename, "Sweden (FTP)");
+	}
+}
+
 ?>
 <h2><a name="info">Current Release</a></h2>
 
@@ -89,20 +130,21 @@ It should be pretty easy to port to any sufficiently Unix-like system.
 	 It is also possible to use other C compilers, such as
          <a href="http://www.cs.princeton.edu/software/lcc/">lcc</a>,
 	 but we don't recommend that.
+	 <p>
     <li> GNU make (version 3.69 or higher).
     </ol>
 
     <p>
 
-<li> For Windows,
+<li> For Windows,<p>
      <ol>
      <li> You will need <a href=http://sources.redhat.com/cygwin/>Cygwin</a>,
           which you can download
           <a href=http://sources.redhat.com/cygwin/setup.exe>here</a>.
-          Cygwin includes GNU C and GNU Make.
+          Cygwin includes GNU C and GNU Make.<p>
      <li> You can optionally use
           <a href="http://msdn.microsoft.com/visualc/default.asp">
-          Microsoft Visual C</a> rather than GNU C.
+          Microsoft Visual C</a> rather than GNU C.<p>
      <li> If you want to take a look at our preliminary support for .NET,
           you also need 
 	  <ol>
@@ -155,12 +197,7 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (10 Mb)
 <dd> 
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-compiler-0.10.tar.gz">Australia</a>
-<? if ($Uppsala == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-compiler-0.10.tar.gz">Sweden</a>
-<? } ?>
-<a href = "ftp://sunsite.unc.edu/pub/Linux/devel/lang/mercury/mercury-compiler-0.10.tar.gz">USA (Sunsite)</a>
-<br>
+<? links_to_file("mercury-compiler-0.10.tar.gz", "yes") ?>
 <p>
 Sunsite also has many 
 <a href="http://sunsite.unc.edu/pub/Linux/MIRRORS.html">mirrors</a>.<br>
@@ -171,17 +208,12 @@ or its equivalent place on the mirrors.
 
 <dt> Extras (580 kb)
 <dd>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-extras-0.10.tar.gz">Australia</a>
-<? if ($Uppsala == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-extras-0.10.tar.gz">Sweden</a>
-<? } ?>
+<? links_to_file("mercury-extras-0.10.tar.gz", "no") ?>
 <p>
+
 <dt> Tests (381 kb)
 <dd>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-tests-0.10.tar.gz">Australia</a>
-<? if ($Uppsala == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-tests-0.10.tar.gz">Sweden</a>
-<? } ?>
+<? links_to_file("mercury-tests-0.10.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distribution</a></h3>
@@ -195,12 +227,7 @@ installed all the binary distributions.)
 <dl>
     <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, or 2000.
 	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">Australia</a>
-<? if ($Uppsala == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">Sweden</a>
-<? } ?>
-<a href =
-"ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">USA</a>
+<? links_to_file("mercury-0.10.i686-pc-windows-cygwin.tar.gz", "no"); ?>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.1)
@@ -209,42 +236,32 @@ installed all the binary distributions.)
 	     to incompatibilities between libc versions 6.0 and 6.1
 	     (i.e. glibc 2.0 and 2.1).
 	     <p>
+
 	     Debian Package (*.deb) <br>
 	     Compiler only (about 28 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.10-1.deb">Australia</a>
-<? if ($Uppsala == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10-1.deb">Sweden</a>
-<? } ?>
+<? links_to_file("mercury-0.10-1.deb", "no"); ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution.
 	     <p>
+
 	     RedHat Package (*.rpm) <br>
 	     Compiler only (about 28 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury_0.10.rpm">Australia</a>
-<? if ($Uppsala == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.rpm">Sweden</a>
-<? } ?>
+<? links_to_file("mercury-0.10-1.rpm", "no"); ?>
 	     <br>
 	     If you get this package, we suggest that you also download
 	     the "extras" source distribution. 
              <p>
+
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 30 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz">USA</a>
-<? if ($sweden == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz">Sweden</a>
-<? } ?>
+<? links_to_file("mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz", "no"); ?>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.sparc-sun-solaris2.7.tar.gz">Australia</a>
-<? if ($sweden == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.sparc-sun-solaris2.7.tar.gz">Sweden</a>
-<? } ?>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.sparc-sun-solaris2.7.tar.gz">USA</a><br>
+<? links_to_file("mercury-0.10.sparc-sun-solaris2.7.tar.gz", "no"); ?>
+	<br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
 the binary distributions for Solaris, with tar reporting
@@ -255,30 +272,41 @@ and (2) use GNU tar. </em>
 
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 66 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.alpha-dec-osf3.2.tar.gz">Australia</a>
-<? if ($sweden == "yes") { ?>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.alpha-dec-osf3.2.tar.gz">Sweden</a>
-<? } ?>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.alpha-dec-osf3.2.tar.gz">USA</a>
+<? links_to_file("mercury-0.10.alpha-dec-osf3.2.tar.gz", "no"); ?>
 
 </dl>
 
-<h3>FTP Sites</h3>
+<h3>FTP Download Sites</h3>
 <dl>
 	<dt> Australia (primary site)
 	<dd>
-	<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
-	ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/</a>
+	<a href = "<?echo $aus_ftp?>">
+	<?echo $aus_ftp?></a>
 
-<? if ($sweden == "yes") { ?>
+<? if ($Uppsala == "yes") { ?>
 	<dt> Sweden (automatically updated mirror)
 	<dd>
-	<a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
-	ftp://ftp.csd.uu.se/pub/Mercury/</a>
+	<a href = "<?echo $sweden_ftp?>">
+	<?echo $sweden_ftp?></a>
 <? } ?>
 
-	<dt> USA (manually updated mirror)
+<? if ($Stonybrook == "yes") { ?>
+	<dt> USA (Stonybrook; manually updated mirror)
 	<dd>
 	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
 	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
+<? } ?>
+
+</dl>
+
+<h3>HTTP Download Sites</h3>
+<dl>
+	<dt> Australia (primary site)
+	<dd>
+	<a href = "<?echo $aus_http?>">
+	<?echo $aus_http?></a>
+
+	<dt> USA (SourceForge)
+	<dd> <a href = "http://sourceforge.net/projects/mercury/">
+	http://sourceforge.net/projects/mercury/</a>
 </dl>
