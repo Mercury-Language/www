@@ -16,6 +16,17 @@
 
 $newsdb = array(
 
+"21 Sep 1998" => array("MCORBA: CORBA for Mercury.",
+
+"We've done some work on MCORBA, which is a binding to CORBA for
+Mercury.  CORBA is a distributed object framework, that allows local
+and remote objects to communicate.  MCORBA allows you to use
+Mercury to talk to other CORBA objects, and to implement CORBA
+objects.  It's still preliminary, if you are interested see the
+<A HREF=\"mcorba.html\">MCORBA page</A> for more information."
+),
+
+
 "18 Sep 1998" => array("New unstable daily releases.",
 
 "The Mercury daily snapshot, called the release-of-the-day (ROTD) scheme
