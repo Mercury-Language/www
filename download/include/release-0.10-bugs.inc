@@ -24,34 +24,48 @@ anyone were to infer the wrong thing from it.
 <p>
 <hr>
 <p>
-Subject: Mercury 0.10 on RH Linux 7.0
+Subject: GCC internal error
 <br>
-Date: Sun, 18 Mar 2001
-<p>
-Hi,<p>
-    Not really a Mercury bug, but the new version of Mercury causes a gcc
-internal compiler error. Any workarounds?
-<p>
-gcc version 2.96 20000731 (Red Hat Linux 7.0)
+Date: Tue, 26 June 2001
 <p>
 <pre>
-Here's the error
-...
-mercury_trace_alias.c: In function `MR_trace_remove_alias':
-mercury_trace_alias.c:95: Unable to find a register to spill in class
-`SIREG'.
-...
-mercury_trace_alias.c:95: Internal compiler error in spill_failure, at
-reload1.c:1826
-Please submit a full bug report.
-See <URL:http://www.gnu.org/software/gcc/bugs.html> for instructions.
+random.c: In function `random_module6':
+random.c:412: fixed or forbidden register 3 (bx) was spilled for class
+GENERAL_REGS.
+This may be due to a compiler bug or to impossible asm
+statements or clauses.
 </pre>
 <p>
-<i>
-	[Suggested work-around is to install from the
-	binary distribution rather than the source distribution.
-	We'd appreciate feedback on whether that work-around works.]
-</i>
+This problem occurs with several different combinations of
+GCC version and C source file.
+<p>
+This seems to be a bug in GCC's handling of global register variables.
+The GCC maintainers have shown no interest in fixing it. They appear
+to consider global register variables to be a deprecated feature,
+even though it isn't documented as such in the GCC manual.
+<p>
+If this problem occurs when compiling the source distribution, install
+from the binary distribution instead.
+<p>
+If a similar problem occurs when compiling your program, there are a
+few possible work-arounds:
+<ul>
+<li>
+	Use a lower level of C compiler optimization for the affected
+	C files (add `CFLAGS-foo = -O1' or `CFLAGS-foo = -O0' to your
+	Mmakefile for each affected C file).
+<li>
+	Use a high-level C code compilation grade (add `GRADE = hlc.gc'
+	to your Mmakefile). These grades do not use the GCC extensions
+	which trigger this problem. Unfortunately, mdb does not yet work
+	with the high-level C back-end.
+<li>
+	Use `asm_jump.*' compilation grades instead of `asm_fast.*' grades.
+	Note that `asm_jump.*' grades are not usually installed.
+<li>
+	Try a newer version of GCC. Avoid GCC version 2.96 (distributed by
+	Red Hat) and any other unofficial releases of GCC.
+<ul>
 <p>
 <hr>
 <p>
