@@ -109,7 +109,7 @@ on the implementation and uses of the Mercury RTTI system
 as well as measurements of the space costs of the system.
 <p>
 The raw data on which the evaluation is based
-is available as a<a href = "papers/rtti_data.tar.gz">70 Kb tar file</a>
+is available as a <a href = "papers/rtti_data.tar.gz">70 Kb tar file</a>
 <p>
 
 <li>
