@@ -27,7 +27,7 @@ Compile-time garbage collection for the declarative language Mercury
 </a>
 </strong>
 <br>
-Nancy Mazur
+Nancy Mazur.
 <em>
 Ph.D. thesis,
 </em>
