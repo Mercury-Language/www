@@ -18,6 +18,11 @@ i686-pc-linux-gnu (Intel x86 PCs running GNU/Linux).
 
 <p>
 
+One <b>very important</b> caveat is that at the moment it only works
+reliably if you pass the `-O0' option to mmc.
+
+<p>
+
 For more information, see the file gcc/mercury/README
 in the mercury-gcc distribution (see below).
 
