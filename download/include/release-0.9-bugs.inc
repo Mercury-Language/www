@@ -9,7 +9,7 @@ for Windows will fail.
 These bugs are fixed in 0.9.1.<p>
 
 The following is collected email of reported problems with release
-0.9 of the Mercury distribution.  Included, where possible, are
+0.9.x of the Mercury distribution.  Included, where possible, are
 patches or work-arounds.
 <p>
 In addition to the bugs mentioned here, some bugs related
@@ -191,5 +191,20 @@ According to the language reference manual:
 But if you try to compile modules containing cyclic typeclasses,
 the compiler goes into an infinite loop and eventually gets a
 stack overflow, rather than reporting a proper error message.
+<p>
+<hr>
+<p>
+Date: Mon, 31 Jan 2000
+<br>
+Subject: installation problem on Suse 6.3 Linux with gcc 2.7.2.3
+<p>
+When running make, the error message:<br>
+<pre>cc1: Invalid option `-fno-gcse'</pre>
+is given.
+<p>
+A work-around for this bug is to (after running configure, but before
+running make) delete the `-fno-gcse' from scripts/mmc and scripts/mgnuc.
+<p>
+Strangely, this bug doesn't seem to affect all versions of gcc 2.7.2.3.
 <p>
 <hr>
