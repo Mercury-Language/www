@@ -14,18 +14,17 @@ clean:   local_clean
 
 local:
 	[ -d doc ] || mkdir doc
-	[ ! -d mercury ] || (cvs update mercury/doc;	\
-		cvs update mercury/library;		\
-		cvs update mercury/compiler/notes)
-	[ -d mercury ] || (cvs checkout mercury/doc;	\
-		cvs checkout mercury/library;		\
-		cvs checkout mercury/compiler/notes)
-	echo "LIBRARY_DIR=`pwd`/mercury/library"  > mercury/Mmake.common
-	(cd mercury/compiler/notes; mmake)
-	(cd mercury/doc; mmake library-chapters.texi split_html ps)
-	cp -a mercury/compiler/notes/*.text doc
-	cp -a mercury/doc/*.html mercury/compiler/notes/*.html doc
-	cp -a mercury/doc/*.ps doc
+	[ ! -d mercury ] || (cvs update mercury-doc)
+	[ -d mercury-doc ] || (cvs checkout -d mercury-doc mercury/doc)
+	[ -d library ] || (cvs checkout -d library mercury/library)
+	[ -d notes ] || \
+		(cvs checkout -d notes mercury/compiler/notes)
+	echo "LIBRARY_DIR=`pwd`/library"  > Mmake.common
+	(cd notes; mmake MERCURY_DIR=.. )
+	(cd mercury-doc; mmake library-chapters.texi split_html ps)
+	cp -a notes/*.text doc
+	cp -a mercury-doc/*.html notes/*.html doc
+	cp -a mercury-doc/*.ps doc
 	(cd doc; gzip -f -9 *.ps)
 
 local_install: target
@@ -37,6 +36,5 @@ local_install: target
 
 local_clean:
 	-rm -rf doc
-	-rm -rf mercury
 
 include ../Makefile.common

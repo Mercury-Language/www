@@ -21,14 +21,8 @@ documentation, and programming environment support tools.
         Old releases of the Mercury system</a>
 </ul>
 
-If you are using Debian GNU/Linux on an x86 processor, the previous
-release of Mercury, namely Mercury 0.6.2, is available
-as a Debian package as part of Debian 1.3.  Thanks to Milan Zamazal
-(pdm@fi.muni.cz) for preparing this package.  You can download it from
-any of the Debian mirrors - see the <a
-href="http://www.debian.org">Debian
-Web Site</a> for more information on Debian.  Some technical information
-on this package is available with the <a href="download/old-release.html">
-old releases</a> information. 
-If you have a libc6 based system, Mercury 0.7.3 is now available as a
-Debian package.
+Mercury 0.7.3 shipped with Debian GNU/Linux 2.0 for the x86
+architecture.  You can download it from any of the Debian mirrors -
+see the <a href="http://www.debian.org">Debian Web Site</a> for more
+information on Debian.
+

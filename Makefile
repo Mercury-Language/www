@@ -16,8 +16,8 @@ ROOT=.
 #-----------------------------------------------------------------------------#
 
 target: all
-index.html: latest_news.inc
-news.html: latest_news.inc old_news.inc
+index.html: latest_news.inc newsdb.inc
+news.html: latest_news.inc newsdb.inc
 
 install: local_install
 

@@ -10,8 +10,9 @@ PHP3=/usr/lib/cgi-bin/php3
 
 vpath %.inc ./include
 vpath %.inc $(ROOT)/include
+vpath %.inc $(ROOT)/news
 
-$(HTML): %.html: %.php3 %.inc menubar.inc template.inc
+$(HTML): %.html: %.php3 %.inc menubar.inc template.inc functions.inc
 
 #-----------------------------------------------------------------------------#
 

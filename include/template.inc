@@ -1,3 +1,5 @@
+<?  include "$root/include/functions.inc" ?>
+
 <TITLE>The Mercury Project: <?echo $title?></TITLE>
 <BODY bgcolor="#ABCDEF" text="#000000">
 
