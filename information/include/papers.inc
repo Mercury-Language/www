@@ -51,10 +51,13 @@ Compiling Mercury to high-level C code
 <br>
 Fergus Henderson and Zoltan Somogyi
 <br>
-Department of Computer Science, University of Melbourne,
-Melbourne, Australia, October 2001, 17 pages.
-<a href = "papers/hlc1.ps.gz">
-Available here (75K).
+<em>
+Proceedings of the 2002 International Conference on Compiler Construction
+</em>
+Grenoble, France, April 2002.
+&copy; 
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<a href = "papers/hlc_cc.ps.gz">Available here (67K)</a>.
 </a>
 <p>
 Many logic programming implementations compile to C,
@@ -69,15 +72,17 @@ can be considerably simpler.
 <p>
 We present a formal schema for the transformation,
 and give benchmark results which show that this approach delivers
-performance about equal to the fastest previous implementation,
+performance that is more than competitive
+with the fastest previous implementation,
 with greater simplicity and better portability and interoperability.
 <p>
-The approach we describe can also be used for compiling
-to other target languages, such as IL
-(the Microsoft .NET intermediate language).
+The approach we describe can also be used
+for compiling to other target languages,
+such as IL (the Microsoft .NET intermediate language).
 <p>
-The raw data that the performance evaluation section is based on
-is available as a <a href = "papers/hlc1_perf_data.tar.gz">31 Mb tar file</a>.
+The benchmark data on which the performance evaluation section of this paper
+is based is
+<a href = "papers/hlc_cc_perf.tar.gz">available here (9.7M)</a>.
 <p>
 
 <li>
