@@ -19,7 +19,7 @@
 $newsdb = array(
 "13 Aug 1999" => array("New papers",
 
-Two new papers on Mercury are now available from our
+"Two new papers on Mercury are now available from our
 <A HREF=\"information/papers.html\">papers page</A>.
 One describes how Mercury handles run time type information,
 while the other describes the optimizations we use
