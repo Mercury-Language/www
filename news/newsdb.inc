@@ -21,6 +21,24 @@
 */
 
 $newsdb = array(
+"25 Sep 2003" => array("Accurate garbage collection",
+
+"The high-level C back-end now supports accurate garbage collection,
+as an alternative to using the Boehm (et al) conservative collector.
+There is a <A HREF=\"information/papers.html#high_level_gc\">paper</A>
+that describes the new garbage collector.  For more details, see
+the files compiler/ml_elim_nested.m and runtime/mercury_accurate_gc.c
+in the latest Mercury source distribution."
+),
+
+"21 Feb 2003" => array(".NET back-end bootstraps",
+
+"We reached a major milestone for the .NET back-end:
+the Mercury compiler successfully bootstrapped with '--grade il'.
+See <A HREF=\"dotnet.html\">this link</A> for details on the
+current status of the .NET back-end."
+),
+
 "24 Dec 2002" => array("Mercury 0.11.0 released",
 
 "Release information is available
