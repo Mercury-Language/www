@@ -11,7 +11,10 @@
 **	    description
 **	),
 ** Make sure you put a comma between each item, and an arrow
-** between the date and the news.
+** between the date and the news.  You must test the entry before you
+** commit.  Simply run `make' at the top level w3 directory, and use a
+** web browser (lynx is fine) to see that the news.html file formats
+** correctly.
 ** 
 ** ALSO the dates must be distinct.
 */
@@ -143,7 +146,7 @@ section of the \"Debugging\" chapter of the
 
 
 "5 Mar 1999" => array("Mercury Tutorial",
-"<a href=\"mailto:rwab1@cam.sri.com\">Ralph Becket</a>
+"<a href=\"mailto:rwab1@cl.cam.ac.uk\">Ralph Becket</a>
 has kindly written a
 <A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.  
 This is still under development.  Feedback would be appreciated."
