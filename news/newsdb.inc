@@ -23,11 +23,10 @@ Release information can be found
 <A HREF=\"download/release-0.8.html\">here</A>."
 ),
 
-"18 Nov 1998" => array("Web site now searchable",
+"17 Nov 1998" => array("Web site now searchable",
 
-"You can now search either the mailing lists or the rest of the web
-site."
-
+"You can now search either the mailing lists or the
+rest of the web site."
 ),
 
 "30 Sep 1998" => array("New paper: Type classes in Mercury.",
