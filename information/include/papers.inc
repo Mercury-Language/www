@@ -180,6 +180,7 @@ Using impurity to create declarative interfaces in Mercury
 </strong>
 <br>
 Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi.
+<em>Tech Report 2000/17</em>, Melbourne, 2000.
 <p>
 
 <li>
@@ -394,7 +395,7 @@ Termination analysis for logic programs
 </strong>
 <br>
 Chris Speirs.
-<em>Technical Report 97/23</em>, Melbourne, 1997.
+<em>Tech Report 97/23</em>, Melbourne, 1997.
 <p>
 
 <li>
@@ -456,7 +457,7 @@ context information
 <br>
 David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi. 
 <br>
-<em>Technical Report 90/2</em>, Melbourne, 1997.
+<em>Tech Report 90/2</em>, Melbourne, 1997.
 
 --------------------------------------------------
 -------------------------------------------------->
@@ -1113,8 +1114,9 @@ Using impurity to create declarative interfaces in Mercury
 <br>
 Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi
 <br>
-<em>
-</em>
+<em>Technical Report 2000/17</em>,
+Department of Computer Science, University of Melbourne,
+Melbourne, Australia, April 2000, 10 pages.
 <a href="papers/purity.ps.gz">Available here (52K)</a>.
 <p>
 The logic/functional language Mercury
