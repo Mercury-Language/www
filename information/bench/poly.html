@@ -1,0 +1,537 @@
+<html>
+<head>
+<title>poly.cpp</title>
+</head>
+<body>
+<pre>
+%   poly_10
+%
+%   Ralph Haygood (based on Prolog version by Rick McGeer
+%                  based on Lisp version by R. P. Gabriel)
+%
+%   raise a polynomial (1+x+y+z) to the 10th power (symbolically)
+
+#ifndef	MERCURY
+#include "harness.cpp"
+
+data(Data) :-
+	test_poly(Data).
+
+benchmark(Data, Out) :-
+	poly_exp(10, Data, Out).
+
+#define	const(n)	n
+
+#else
+
+:- module poly.
+
+:- interface.
+
+:- import_module int, io.
+
+:- type var --->	x ; y ; z.
+:- type pterm --->	term(int, poly).
+:- type poly --->	poly(var, list(pterm)) ; const(int).
+
+:- pred main(io__state, io__state).
+:- mode main(di, uo) is det.
+
+:- pred benchmark(poly).
+:- mode benchmark(out) is det.
+
+:- implementation.
+
+main -->
+	{ benchmark(Out) },
+	print_poly(Out),
+	io__write_string("\n").
+
+benchmark(Out) :-
+	test_poly(P),
+	poly_exp(10, P, Out).
+
+:- pred test_poly1(poly).
+:- mode test_poly1(out) is det.
+
+:- pred test_poly2(poly).
+:- mode test_poly2(out) is det.
+
+:- pred test_poly3(poly).
+:- mode test_poly3(out) is det.
+
+:- pred test_poly(poly).
+:- mode test_poly(out) is det.
+
+:- pred poly_add(poly, poly, poly).
+:- mode poly_add(in, in, out) is det.
+
+:- pred term_add(list(pterm), list(pterm), list(pterm)).
+:- mode term_add(in, in, out) is det.
+
+:- pred add_to_order_zero_term(list(pterm), poly, list(pterm)).
+:- mode add_to_order_zero_term(in, in, out) is det.
+
+:- pred poly_exp(int, poly, poly).
+:- mode poly_exp(in, in, out) is det.
+
+:- pred poly_mul(poly, poly, poly).
+:- mode poly_mul(in, in, out) is det.
+
+:- pred term_mul(list(pterm), list(pterm), list(pterm)).
+:- mode term_mul(in, in, out) is det.
+
+:- pred single_term_mul(list(pterm), pterm, list(pterm)).
+:- mode single_term_mul(in, in, out) is det.
+
+:- pred mul_through(list(pterm), poly, list(pterm)).
+:- mode mul_through(in, in, out) is det.
+
+:- pred lt(var, var).
+:- mode lt(in, in) is semidet.
+
+:- pred even(int).
+:- mode even(in) is semidet.
+
+:- pred print_poly(poly, io__state, io__state).
+:- mode print_poly(in, di, uo) is det.
+
+:- pred print_var(var, io__state, io__state).
+:- mode print_var(in, di, uo) is det.
+
+:- pred print_terms(list(pterm), io__state, io__state).
+:- mode print_terms(in, di, uo) is det.
+
+:- pred print_terms_2(list(pterm), io__state, io__state).
+:- mode print_terms_2(in, di, uo) is det.
+
+:- pred print_term(pterm, io__state, io__state).
+:- mode print_term(in, di, uo) is det.
+
+print_poly(const(N)) -->
+	io__write_string("const("),
+	io__write_int(N),
+	io__write_string(")").
+print_poly(poly(Var, Terms)) -->
+	io__write_string("poly("),
+	print_var(Var),
+	io__write_string(", "),
+	print_terms(Terms),
+	io__write_string(")").
+
+print_var(x) -->
+	io__write_string("x").
+print_var(y) -->
+	io__write_string("y").
+print_var(z) -->
+	io__write_string("z").
+
+print_terms(Terms) -->
+	( { Terms = [] } ->
+		io__write_string("[]\n")
+	;
+		io__write_string("["),
+		print_terms_2(Terms),
+		io__write_string("]")
+	).
+
+print_terms_2([]) --> [].
+print_terms_2([Term|Terms]) --> 
+	print_term(Term),
+	( { Terms = [] } ->
+		[]
+	;
+		io__write_string(", "),
+		print_terms_2(Terms)
+	).
+
+print_term(term(N, Poly)) -->
+	io__write_string("term("),
+	io__write_int(N),
+	io__write_string(", "),
+	print_poly(Poly),
+	io__write_string(")").
+
+#endif
+
+#ifdef	AQUARIUS_DECLS
+:- mode((poly_add(P1, P2, R) :-
+		ground(P1),
+		rderef(P1),
+		ground(P2),
+		rderef(P2)
+	)).
+:- mode((term_add(L1, L2, R) :-
+		ground(L1),
+		rderef(L1),
+		list(L1),
+		ground(L2),
+		rderef(L2),
+		list(L2)
+	)).
+:- mode((add_to_order_zero_term(L, P, R) :-
+		ground(L),
+		rderef(L),
+		list(L),
+		ground(P),
+		rderef(P)
+	)).
+:- mode((poly_exp(I, P, R) :-
+		ground(I),
+		rderef(I),
+		integer(I),
+		ground(P),
+		rderef(P)
+	)).
+:- mode((poly_mul(P1, P2, R) :-
+		ground(P1),
+		rderef(P1),
+		ground(P2),
+		rderef(P2)
+	)).
+:- mode((term_mul(L1, L2, R) :-
+		ground(L1),
+		rderef(L1),
+		list(L1),
+		ground(L2),
+		rderef(L2),
+		list(L2)
+	)).
+:- mode((single_term_mul(L, T, R) :-
+		ground(L),
+		rderef(L),
+		list(L),
+		ground(T),
+		rderef(T)
+	)).
+:- mode((mul_through(L, P, R) :-
+		ground(L),
+		rderef(L),
+		list(L),
+		ground(P),
+		rderef(P)
+	)).
+:- mode((lt(V1, V2) :-
+		ground(V1),
+		rderef(V1),
+		ground(V2),
+		rderef(V2)
+	)).
+:- mode((even(N) :-
+		ground(N),
+		rderef(N),
+		integer(N)
+	)).
+#endif
+
+test_poly1(P) :-
+	P = poly(x, [term(0,const(1)), term(1,const(1))]).
+
+test_poly2(P) :-
+	P = poly(y, [term(1,const(1))]).
+
+test_poly3(P) :-
+	P = poly(z, [term(1,const(1))]).
+
+test_poly(P) :-
+	poly_add(poly(x, [term(0,const(1)), term(1,const(1))]), poly(y, [term(1, const(1))]), Q),
+	poly_add(poly(z, [term(1,const(1))]), Q, P).
+
+#ifdef	MERCURY
+
+poly_add(poly(Var1, Terms1), poly(Var2, Terms2), Result) :-
+	( Var1 = Var2 ->
+		term_add(Terms1, Terms2, Terms),
+		Result = poly(Var1, Terms)
+	; lt(Var1, Var2) ->
+		add_to_order_zero_term(Terms1, poly(Var2, Terms2), Terms),
+		Result = poly(Var1, Terms)
+	;
+		add_to_order_zero_term(Terms2, poly(Var1, Terms1), Terms),
+		Result = poly(Var2, Terms)
+	).
+poly_add(poly(Var1, Terms1), const(C2), poly(Var1, Terms)) :-
+	add_to_order_zero_term(Terms1, const(C2), Terms).
+poly_add(const(C1), poly(Var2, Terms2), poly(Var2, Terms)) :-
+	add_to_order_zero_term(Terms2, const(C1), Terms).
+poly_add(const(C1), const(C2), const(C)) :-
+	C is C1 + C2.
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- poly_add(P1, P2, R) when P1 and P2.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block poly_add(-, ?, ?), poly_add(?, -, ?).
+#endif
+
+poly_add(poly(Var,Terms1), poly(Var,Terms2), poly(Var,Terms)) :- !,
+	term_add(Terms1, Terms2, Terms).
+poly_add(poly(Var1,Terms1), poly(Var2,Terms2), poly(Var1,Terms)) :-
+	lt(Var1, Var2), !,
+	add_to_order_zero_term(Terms1, poly(Var2,Terms2), Terms).
+poly_add(Poly, poly(Var,Terms2), poly(Var,Terms)) :- !,
+	add_to_order_zero_term(Terms2, Poly, Terms).
+poly_add(poly(Var,Terms1), C, poly(Var,Terms)) :- !,
+	add_to_order_zero_term(Terms1, C, Terms).
+poly_add(C1, C2, C) :-
+	C is C1 + C2.
+
+#endif
+
+#ifdef	MERCURY
+
+term_add([], List2, List2).
+term_add([term(E1,C1)|Terms1], [], [term(E1,C1)|Terms1]).
+term_add([term(E1,C1)|Terms1], [term(E2,C2)|Terms2], Result) :-
+	( E1 = E2 ->
+		poly_add(C1, C2, C),
+		term_add(Terms1, Terms2, Terms),
+		Result = [term(E1,C)|Terms]
+	; E1 &lt; E2 ->
+		term_add(Terms1, [term(E2,C2)|Terms2], Terms),
+		Result = [term(E1,C1)|Terms]
+	;
+		term_add([term(E1,C1)|Terms1], Terms2, Terms),
+		Result = [term(E2,C2)|Terms]
+	).
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- term_add(L1, L2, R) when L1 and L2.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block term_add(-, ?, ?), term_add(?, -, ?).
+#endif
+
+term_add([], X, X) :- !.
+term_add(X, [], X) :- !.
+term_add([term(E,C1)|Terms1], [term(E,C2)|Terms2], [term(E,C)|Terms]) :- !,
+	poly_add(C1, C2, C),
+	term_add(Terms1, Terms2, Terms).
+term_add([term(E1,C1)|Terms1], [term(E2,C2)|Terms2], [term(E1,C1)|Terms]) :-
+	E1 &lt; E2, !,
+	term_add(Terms1, [term(E2,C2)|Terms2], Terms).
+term_add(Terms1, [term(E2,C2)|Terms2], [term(E2,C2)|Terms]) :-
+	term_add(Terms1, Terms2, Terms).
+
+#endif
+
+#ifdef	MERCURY
+
+add_to_order_zero_term(List, C2, Result) :-
+	( List = [term(0,C1)|Terms] ->
+		poly_add(C1, C2, C),
+		Result = [term(0,C)|Terms]
+	;
+		Result = [term(0,C2)|List]
+	).
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- add_to_order_zero_term(L1, L2, R) when L1 and L2.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block add_to_order_zero_term(-, ?, ?), add_to_order_zero_term(?, -, ?).
+#endif
+
+add_to_order_zero_term([term(0,C1)|Terms], C2, [term(0,C)|Terms]) :- !,
+	poly_add(C1, C2, C).
+add_to_order_zero_term(Terms, C, [term(0,C)|Terms]).
+
+#endif
+
+#ifdef	MERCURY
+
+poly_exp(N, Poly, Result) :-
+	( N = 0 ->
+		Result = const(1)
+	; even(N) ->
+		M is N // 2,
+		poly_exp(M, Poly, Part),
+		poly_mul(Part, Part, Result)
+	;
+		M is N - 1,
+		poly_exp(M, Poly, Part),
+		poly_mul(Poly, Part, Result)
+	).
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- poly_exp(N, P, R) when N.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block poly_exp(-, ?, ?).
+#endif
+
+poly_exp(0, _, 1) :- !.
+poly_exp(N, Poly, Result) :-
+	M is N>>1,
+	N is M&lt;&lt;1, !,
+	poly_exp(M, Poly, Part),
+	poly_mul(Part, Part, Result).
+poly_exp(N, Poly, Result) :-
+	M is N - 1,
+	poly_exp(M, Poly, Part),
+	poly_mul(Poly, Part, Result).
+
+#endif
+
+#ifdef	MERCURY
+
+poly_mul(poly(Var1, Terms1), poly(Var2, Terms2), Result) :-
+	( Var1 = Var2 ->
+		term_mul(Terms1, Terms2, Terms),
+		Result = poly(Var1, Terms)
+	; lt(Var1, Var2) ->
+		mul_through(Terms1, poly(Var2, Terms2), Terms),
+		Result = poly(Var1, Terms)
+	;
+		mul_through(Terms2, poly(Var1, Terms1), Terms),
+		Result = poly(Var2, Terms)
+	).
+poly_mul(poly(Var1, Terms1), const(C2), poly(Var1, Terms)) :-
+	mul_through(Terms1, const(C2), Terms).
+poly_mul(const(C1), poly(Var2, Terms2), poly(Var2, Terms)) :-
+	mul_through(Terms2, const(C1), Terms).
+poly_mul(const(C1), const(C2), const(C)) :-
+	C is C1 * C2.
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- poly_mul(P1, P2, R) when P1 and P2.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block poly_mul(-, ?, ?), poly_mul(?, -, ?).
+#endif
+
+poly_mul(poly(Var,Terms1), poly(Var,Terms2), poly(Var,Terms)) :- !,
+	term_mul(Terms1, Terms2, Terms).
+poly_mul(poly(Var1,Terms1), poly(Var2,Terms2), poly(Var1,Terms)) :-
+	lt(Var1, Var2), !,
+	mul_through(Terms1, poly(Var2,Terms2), Terms).
+poly_mul(P, poly(Var,Terms2), poly(Var,Terms)) :- !,
+	mul_through(Terms2, P, Terms).
+poly_mul(poly(Var,Terms1), C, poly(Var,Terms)) :- !,
+	mul_through(Terms1, C, Terms).
+poly_mul(C1, C2, C) :-
+	C is C1 * C2.
+
+#endif
+
+#ifdef	MERCURY
+
+term_mul([], _List2, []).
+term_mul([_Term1|_Terms1], [], []).
+term_mul([Term1|Terms1], [Term2|Terms2], Result) :-
+	single_term_mul([Term2|Terms2], Term1, PartA),
+	term_mul(Terms1, [Term2|Terms2], PartB),
+	term_add(PartA, PartB, Result).
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- term_mul(L1, L2, R) when L1 and L2.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block term_mul(-, ?, ?), term_mul(?, -, ?).
+#endif
+
+term_mul([], _, []) :- !.
+term_mul(_, [], []) :- !.
+term_mul([Term|Terms1], Terms2, Terms) :-
+	single_term_mul(Terms2, Term, PartA),
+	term_mul(Terms1, Terms2, PartB),
+	term_add(PartA, PartB, Terms).
+
+#endif
+
+#ifdef	MERCURY
+
+single_term_mul([], _Term, []).
+single_term_mul([term(E1,C1)|Terms1], term(E2,C2), [term(E,C)|Terms]) :-
+	E is E1 + E2,
+	poly_mul(C1, C2, C),
+	single_term_mul(Terms1, term(E2,C2), Terms).
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- single_term_mul(L, T, R) when L and T.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block single_term_mul(-, ?, ?), single_term_mul(?, -, ?).
+#endif
+
+single_term_mul([], _, []) :- !.
+single_term_mul([term(E1,C1)|Terms1], term(E2,C2),
+		[term(E,C)|Terms]) :-
+	E is E1 + E2,
+	poly_mul(C1, C2, C),
+	single_term_mul(Terms1, term(E2,C2), Terms).
+
+#endif
+
+#ifdef	MERCURY
+
+mul_through([], _Poly, []).
+mul_through([term(E,Term)|Terms], Poly, [term(E,NewTerm)|NewTerms]) :-
+	poly_mul(Term, Poly, NewTerm),
+	mul_through(Terms, Poly, NewTerms).
+
+#else
+
+#ifdef	NUPROLOG_DECLS
+:- mul_through(L, P, R) when L and P.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block mul_through(-, ?, ?), mul_through(?, -, ?).
+#endif
+
+mul_through([], _, []) :- !.
+mul_through([term(E,Term)|Terms], Poly, [term(E,NewTerm)|NewTerms]) :-
+	poly_mul(Term, Poly, NewTerm),
+	mul_through(Terms, Poly, NewTerms).
+
+#endif
+
+#ifdef	NUPROLOG_DECLS
+:- lt(V1, V2) when V1 and V2.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block lt(-, ?), lt(?, -).
+#endif
+
+lt(x, y).
+lt(y, z).
+lt(x, z).
+
+#ifdef	NUPROLOG_DECLS
+:- even(N) when N.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block even(-).
+#endif
+
+even(N) :-
+	M is N // 2,
+	N1 is M * 2,
+	N = N1.
+</pre>
+</body>
+</html>

@@ -1,0 +1,15 @@
+RCS file: /home/staff/zs/imp/mercury/scripts/Mmake.rules,v
+retrieving revision 1.21
+retrieving revision 1.22
+diff -u -r1.21 -r1.22
+--- 1.21	1995/07/15 04:52:12
++++ 1.22	1995/07/18 13:10:29
+@@ -48,7 +48,7 @@
+ # (Is that a bug in unix? In bash?)
+ 
+ .m.err:
+-	$(MC) $(MCFLAGS) $< > $@ 2>&1
++	$(MC) $(MCFLAGS) -e $< > $@ 2>&1
+ 	@touch $@
+ 
+ .m.date:

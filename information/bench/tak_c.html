@@ -1,0 +1,355 @@
+<html>
+<head>
+<title>tak.c</title>
+</head>
+<body>
+<pre>
+/*
+** Automatically generated from `tak.m' by the
+** Mercury compiler, version 0.5-beta.  Do not edit.
+*/
+/*
+INIT mercury__tak__init
+ENDINIT
+*/
+
+#include "imp.h"
+
+Define_extern_entry(mercury__benchmark_1_0);
+Declare_label(mercury__benchmark_1_0_i3);
+Define_extern_entry(mercury__main_2_0);
+Declare_label(mercury__main_2_0_i3);
+Declare_label(mercury__main_2_0_i4);
+Declare_label(mercury__main_2_0_i5);
+Declare_local(mercury__tak_4_0_l);
+Declare_label(mercury__tak_4_0_i1000);
+Declare_label(mercury__tak_4_0_i5);
+Declare_label(mercury__tak_4_0_i6);
+Declare_label(mercury__tak_4_0_i7);
+
+BEGIN_MODULE(mercury__tak_module)
+	init_entry(mercury__benchmark_1_0);
+	init_label(mercury__benchmark_1_0_i3);
+	init_entry(mercury__main_2_0);
+	init_label(mercury__main_2_0_i3);
+	init_label(mercury__main_2_0_i4);
+	init_label(mercury__main_2_0_i5);
+	init_local(mercury__tak_4_0_l);
+	init_label(mercury__tak_4_0_i1000);
+	init_label(mercury__tak_4_0_i5);
+	init_label(mercury__tak_4_0_i6);
+	init_label(mercury__tak_4_0_i7);
+BEGIN_CODE
+
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate benchmark/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_entry(mercury__benchmark_1_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r1 = 18; }
+		/* Assigning from variable number 3 */
+	{ r2 = 12; }
+		/* Assigning from variable number 4 */
+	{ r3 = 6; }
+		/* Assigning from variable number 5 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__tak_4_0_l,
+		LABEL(mercury__benchmark_1_0_i3),
+		LABEL(mercury__benchmark_1_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r4	num(2)
+ */
+		/* branch to det procedure */
+Define_label(mercury__benchmark_1_0_i3);
+	update_prof_current_proc(LABEL(mercury__benchmark_1_0));
+		/* Continuation label */
+	{ r1 = (Integer) r4; }
+		/* Assigning from HeadVar__1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate main/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+DCG_0	 ->	stackvar(1)
+ */
+Define_entry(mercury__main_2_0);
+	incr_sp(2);
+		/* late setup */
+	{ detstackvar(2) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r1; }
+		/* vn flush */
+	{ r1 = 18; }
+		/* vn flush */
+	{ r2 = 12; }
+		/* vn flush */
+	{ r3 = 6; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__tak_4_0_l,
+		LABEL(mercury__main_2_0_i3),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r4	num(2)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__main_2_0_i3);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r1 = (Integer) r4; }
+		/* Assigning from Out */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__io__write_int_3_0);
+	  call(ENTRY(mercury__io__write_int_3_0),
+		LABEL(mercury__main_2_0_i4),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i4);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r1 = string_const("\n", 1); }
+		/* Assigning from variable number 7 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__main_2_0_i5),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i5);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) r3; }
+		/* Assigning from HeadVar__2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(2); }
+		/* restore the success ip */
+	decr_sp(2);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate tak/4 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+A2	 ->	stackvar(1)
+A1	 ->	stackvar(2)
+Y	 ->	stackvar(1)
+X	 ->	stackvar(3)
+Z	 ->	stackvar(4)
+ */
+Define_local(mercury__tak_4_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r4 = (Integer) r3; }
+		/* Assigning from HeadVar__4 */
+	{ if (((Integer) r1 &lt;= (Integer) r2))
+		proceed(); }
+		/* shortcircuit */
+Define_label(mercury__tak_4_0_i1000);
+		/* label for late setup code */
+	incr_sp(5);
+		/* late setup */
+	{ detstackvar(5) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(3) = (Integer) r1; }
+		/* vn flush */
+	{ r1 = ((Integer) r1 - 1); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r2; }
+		/* vn flush */
+	{ detstackvar(4) = (Integer) r3; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__tak_4_0_l,
+		LABEL(mercury__tak_4_0_i5),
+		LABEL(mercury__tak_4_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r4	num(2)
+ *	detstackvar(1)	num(2)
+ *	detstackvar(3)	num(2)
+ *	detstackvar(4)	num(2)
+ */
+Define_label(mercury__tak_4_0_i5);
+	update_prof_current_proc(LABEL(mercury__tak_4_0_l));
+		/* Continuation label */
+	{ detstackvar(2) = (Integer) r4; }
+		/* Assigning from A1 */
+	{ r1 = ((Integer) detstackvar(1) - 1); }
+		/* Assigning from Y1 */
+	{ r2 = (Integer) detstackvar(4); }
+		/* Assigning from Z */
+	{ r3 = (Integer) detstackvar(3); }
+		/* Assigning from X */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__tak_4_0_l,
+		LABEL(mercury__tak_4_0_i6),
+		LABEL(mercury__tak_4_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r4	num(2)
+ *	detstackvar(1)	num(2)
+ *	detstackvar(2)	num(2)
+ *	detstackvar(3)	num(2)
+ *	detstackvar(4)	num(2)
+ */
+		/* branch to det procedure */
+Define_label(mercury__tak_4_0_i6);
+	update_prof_current_proc(LABEL(mercury__tak_4_0_l));
+	{ r3 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ r1 = ((Integer) detstackvar(4) - 1); }
+		/* vn flush */
+	{ r2 = (Integer) detstackvar(3); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r4; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__tak_4_0_l,
+		LABEL(mercury__tak_4_0_i7),
+		LABEL(mercury__tak_4_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r4	num(2)
+ *	detstackvar(1)	num(2)
+ *	detstackvar(2)	num(2)
+ */
+Define_label(mercury__tak_4_0_i7);
+	update_prof_current_proc(LABEL(mercury__tak_4_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(2); }
+		/* Assigning from A1 */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from A2 */
+	{ r3 = (Integer) r4; }
+		/* Assigning from A3 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+	{ r4 = (Integer) r3; }
+		/* Assigning from HeadVar__4 */
+	{ if (((Integer) r1 > (Integer) r2))
+		GOTO_LABEL(mercury__tak_4_0_i1000); }
+		/* jump to setup */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* shortcircuit */
+END_MODULE
+
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+static void mercury__tak_bunch_0(void)
+{
+	mercury__tak_module();
+}
+
+#endif
+
+void mercury__tak__init(void); /* suppress gcc warning */
+void mercury__tak__init(void)
+{
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+	mercury__tak_bunch_0();
+#endif
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>primes.cpp</title>
+</head>
+<body>
+<pre>
+%	pri2
+
+#ifndef	MERCURY
+
+#include "harness.cpp"
+
+benchmark(Data, Out) :-
+	primes(Data, Out).
+
+#else
+
+:- module primes.
+
+:- interface.
+
+:- import_module list, int, io, printlist.
+
+:- pred benchmark(list(int)).
+:- mode benchmark(out) is det.
+
+:- pred main(io__state, io__state).
+:- mode main(di, uo) is det.
+
+:- implementation.
+
+benchmark(Out) :-	
+	data(Data),
+	primes(Data, Out).
+
+main -->
+	{ benchmark(Out) },
+	print_list(Out).
+
+:- pred data(int).
+:- mode data(out) is det.
+
+:- pred primes(int, list(int)).
+:- mode primes(in, out) is det.
+
+:- pred integers(int, int, list(int)).
+:- mode integers(in, in, out) is det.
+
+:- pred sift(list(int), list(int)).
+:- mode sift(in, out) is det.
+
+:- pred remove(int, list(int), list(int)).
+:- mode remove(in, in, out) is det.
+
+#endif
+
+#ifdef	AQUARIUS_DECLS
+:- mode((primes(L, P) :-
+		ground(L),
+		rderef(L),
+		integer(L)
+	)).
+:- mode((integers(L, H, R) :-
+		ground(L),
+		rderef(L),
+		integer(L),
+		ground(H),
+		rderef(H),
+		integer(H)
+	)).
+:- mode((sift(I, P) :-
+		ground(L),
+		rderef(L),
+		list(L)
+	)).
+:- mode((remove(I, L, P) :-
+		ground(I),
+		rderef(I),
+		integer(I),
+		ground(L),
+		rderef(L),
+		list(L)
+	)).
+#endif
+
+data(98).
+
+#ifdef	NUPROLOG_DECLS
+:- primes(L, P) when L.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block primes(-, ?).
+#endif
+
+primes(Limit, Ps) :-
+	integers(2, Limit, Is),
+	sift(Is, Ps).
+
+#ifdef	NUPROLOG_DECLS
+:- integers(L, H, R) when L and H.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block integers(-, ?, ?), integers(?, -, ?).
+#endif
+
+#ifdef	MERCURY
+
+integers(Low, High, Result) :- 
+	( Low =&lt; High ->
+		M is Low + 1,
+		Result = [Low | Rest],
+		integers(M, High, Rest)
+	;
+		Result = []
+	).
+
+#else
+
+integers(Low, High, [Low | Rest]) :- 
+	Low =&lt; High,
+	!,
+	M is Low + 1,
+	integers(M, High, Rest).
+integers(_,_,[]).
+
+#endif
+
+#ifdef	NUPROLOG_DECLS
+:- sift(I, P) when I.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block sift(-, ?).
+#endif
+
+sift([], []).
+sift([I | Is], [I | Ps]) :-
+	remove(I, Is, New),
+	sift(New, Ps).
+
+#ifdef	NUPROLOG_DECLS
+:- remove(I, L, R) when I and L.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block remove(-, ?, ?), remove(?, -, ?).
+#endif
+
+#ifdef	MERCURY
+
+remove(_P, [], []).
+remove(P, [I | Is], Result) :-
+	M is I mod P,
+	( M = 0 ->
+		Result = Nis,
+		remove(P, Is, Nis)
+	;
+		Result = [I | Nis],
+		remove(P, Is, Nis)
+	).
+
+#else
+
+remove(_P,[],[]).
+remove(P,[I | Is], [I | Nis]) :-
+	0 =\= I mod P,
+	!,
+	remove(P,Is,Nis).
+remove(P,[I | Is], Nis) :-
+	0 =:= I mod P,
+	!,
+	remove(P,Is,Nis).
+
+#endif
+</pre>
+</body>
+</html>

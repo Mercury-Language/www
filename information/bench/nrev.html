@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>nrev.cpp</title>
+</head>
+<body>
+<pre>
+%   nreverse
+%
+%   David H. D. Warren
+%
+%   "naive"-reverse a list of 30 integers
+
+#ifndef	MERCURY
+
+#include "harness.cpp"
+
+benchmark(Data, Out) :-
+	nreverse(Data, Out).
+
+#ifdef AQUARIUS_DECLS
+
+:- mode((nreverse(L1, L2) :-
+		ground(L1),
+		rderef(L1),
+		list(L1)
+	)).
+
+:- mode((concatenate(L1, L2, L3) :-
+ 		ground(L1),
+		rderef(L1),
+		list(L1),
+		ground(L2),
+		rderef(L2),
+		list(L2)
+	)).
+#endif
+
+#else
+
+:- module nrev.
+
+:- interface.
+
+:- import_module list, int, io, printlist.
+
+:- pred benchmark(list(int)).
+:- mode benchmark(out) is det.
+
+:- pred main(io__state, io__state).
+:- mode main(di, uo) is det.
+
+:- implementation.
+
+benchmark(Out) :-	
+	data(Data),
+	nreverse(Data, Out).
+
+main -->
+	{ benchmark(Out) },
+	print_list(Out).
+
+:- pred data(list(int)).
+:- mode data(out) is det.
+
+#ifdef	POLYMORPHISM
+:- pred nreverse(list(T), list(T)).
+:- mode nreverse(in, out) is det.
+
+:- pred concatenate(list(T), list(T), list(T)).
+:- mode concatenate(in, in, out) is det.
+#else
+:- pred nreverse(list(int), list(int)).
+:- mode nreverse(in, out) is det.
+
+:- pred concatenate(list(int), list(int), list(int)).
+:- mode concatenate(in, in, out) is det.
+#endif
+
+#endif
+
+data([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
+	16,17,18,19,20,21,22,23, 24,25,26,27,28,29,30]).
+
+#ifdef	NUPROLOG_DECLS
+:- nreverse(L0, L1) when L0.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block nreverse(-, ?).
+#endif
+
+nreverse([X|L0], L) :-
+	nreverse(L0, L1), concatenate(L1, [X], L).
+nreverse([], []).
+
+#ifdef	NUPROLOG_DECLS
+:- concatenate(L1, L2, L3) when L1.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block concatenate(-, ?, ?).
+#endif
+
+concatenate([X|L1], L2, [X|L3]) :-	
+	concatenate(L1, L2, L3).
+concatenate([], L, L).
+</pre>
+</body>
+</html>

@@ -1,0 +1,4678 @@
+<html>
+<head>
+<title>deriv.c</title>
+</head>
+<body>
+<pre>
+/*
+** Automatically generated from `deriv.m' by the
+** Mercury compiler, version 0.5-beta.  Do not edit.
+*/
+/*
+INIT mercury__deriv__init
+ENDINIT
+*/
+
+#include "imp.h"
+
+Define_extern_entry(mercury__benchmark_1_0);
+Declare_label(mercury__benchmark_1_0_i3);
+Declare_label(mercury__benchmark_1_0_i4);
+Declare_label(mercury__benchmark_1_0_i5);
+Declare_label(mercury__benchmark_1_0_i6);
+Define_extern_entry(mercury__main_2_0);
+Declare_label(mercury__main_2_0_i3);
+Declare_label(mercury__main_2_0_i4);
+Declare_label(mercury__main_2_0_i5);
+Declare_label(mercury__main_2_0_i6);
+Declare_label(mercury__main_2_0_i7);
+Declare_label(mercury__main_2_0_i8);
+Declare_label(mercury__main_2_0_i9);
+Declare_label(mercury__main_2_0_i10);
+Declare_label(mercury__main_2_0_i11);
+Declare_label(mercury__main_2_0_i12);
+Declare_label(mercury__main_2_0_i13);
+Declare_label(mercury__main_2_0_i14);
+Declare_local(mercury__times10_1_0_l);
+Declare_label(mercury__times10_1_0_i12);
+Declare_local(mercury__log10_1_0_l);
+Declare_label(mercury__log10_1_0_i13);
+Declare_local(mercury__ops8_1_0_l);
+Declare_label(mercury__ops8_1_0_i13);
+Declare_local(mercury__divide10_1_0_l);
+Declare_label(mercury__divide10_1_0_i12);
+Declare_local(mercury__d_3_0_l);
+Declare_label(mercury__d_3_0_i1008);
+Declare_label(mercury__d_3_0_i1007);
+Declare_label(mercury__d_3_0_i1006);
+Declare_label(mercury__d_3_0_i1005);
+Declare_label(mercury__d_3_0_i1004);
+Declare_label(mercury__d_3_0_i1003);
+Declare_label(mercury__d_3_0_i8);
+Declare_label(mercury__d_3_0_i10);
+Declare_label(mercury__d_3_0_i17);
+Declare_label(mercury__d_3_0_i18);
+Declare_label(mercury__d_3_0_i21);
+Declare_label(mercury__d_3_0_i22);
+Declare_label(mercury__d_3_0_i25);
+Declare_label(mercury__d_3_0_i30);
+Declare_label(mercury__d_3_0_i34);
+Declare_label(mercury__d_3_0_i1002);
+Declare_label(mercury__d_3_0_i41);
+Declare_label(mercury__d_3_0_i42);
+Declare_label(mercury__d_3_0_i36);
+Declare_label(mercury__d_3_0_i45);
+Declare_label(mercury__d_3_0_i44);
+Declare_label(mercury__d_3_0_i47);
+Declare_label(mercury__d_3_0_i49);
+Declare_label(mercury__d_3_0_i1000);
+Declare_local(mercury__print_expr_3_0_l);
+Declare_label(mercury__print_expr_3_0_i1015);
+Declare_label(mercury__print_expr_3_0_i1014);
+Declare_label(mercury__print_expr_3_0_i1013);
+Declare_label(mercury__print_expr_3_0_i1012);
+Declare_label(mercury__print_expr_3_0_i1011);
+Declare_label(mercury__print_expr_3_0_i1010);
+Declare_label(mercury__print_expr_3_0_i7);
+Declare_label(mercury__print_expr_3_0_i8);
+Declare_label(mercury__print_expr_3_0_i9);
+Declare_label(mercury__print_expr_3_0_i10);
+Declare_label(mercury__print_expr_3_0_i15);
+Declare_label(mercury__print_expr_3_0_i16);
+Declare_label(mercury__print_expr_3_0_i17);
+Declare_label(mercury__print_expr_3_0_i18);
+Declare_label(mercury__print_expr_3_0_i21);
+Declare_label(mercury__print_expr_3_0_i22);
+Declare_label(mercury__print_expr_3_0_i23);
+Declare_label(mercury__print_expr_3_0_i24);
+Declare_label(mercury__print_expr_3_0_i27);
+Declare_label(mercury__print_expr_3_0_i28);
+Declare_label(mercury__print_expr_3_0_i31);
+Declare_label(mercury__print_expr_3_0_i32);
+Declare_label(mercury__print_expr_3_0_i33);
+Declare_label(mercury__print_expr_3_0_i34);
+Declare_label(mercury__print_expr_3_0_i37);
+Declare_label(mercury__print_expr_3_0_i38);
+Declare_label(mercury__print_expr_3_0_i1009);
+Declare_label(mercury__print_expr_3_0_i40);
+Declare_label(mercury__print_expr_3_0_i43);
+Declare_label(mercury__print_expr_3_0_i44);
+Declare_label(mercury__print_expr_3_0_i42);
+Declare_label(mercury__print_expr_3_0_i46);
+Declare_label(mercury__print_expr_3_0_i47);
+Declare_label(mercury__print_expr_3_0_i48);
+Declare_label(mercury__print_expr_3_0_i49);
+Declare_label(mercury__print_expr_3_0_i1001);
+Define_extern_entry(mercury____Unify___expr_0_0);
+Declare_label(mercury____Unify___expr_0_0_i1012);
+Declare_label(mercury____Unify___expr_0_0_i1011);
+Declare_label(mercury____Unify___expr_0_0_i1010);
+Declare_label(mercury____Unify___expr_0_0_i1009);
+Declare_label(mercury____Unify___expr_0_0_i1008);
+Declare_label(mercury____Unify___expr_0_0_i1007);
+Declare_label(mercury____Unify___expr_0_0_i1006);
+Declare_label(mercury____Unify___expr_0_0_i8);
+Declare_label(mercury____Unify___expr_0_0_i9);
+Declare_label(mercury____Unify___expr_0_0_i15);
+Declare_label(mercury____Unify___expr_0_0_i18);
+Declare_label(mercury____Unify___expr_0_0_i19);
+Declare_label(mercury____Unify___expr_0_0_i25);
+Declare_label(mercury____Unify___expr_0_0_i26);
+Declare_label(mercury____Unify___expr_0_0_i37);
+Declare_label(mercury____Unify___expr_0_0_i38);
+Declare_label(mercury____Unify___expr_0_0_i1005);
+Declare_label(mercury____Unify___expr_0_0_i45);
+Declare_label(mercury____Unify___expr_0_0_i48);
+Declare_label(mercury____Unify___expr_0_0_i54);
+Declare_label(mercury____Unify___expr_0_0_i55);
+Declare_label(mercury____Unify___expr_0_0_i1);
+Declare_label(mercury____Unify___expr_0_0_i1000);
+Declare_label(mercury____Unify___expr_0_0_i1001);
+Declare_label(mercury____Unify___expr_0_0_i1002);
+Declare_label(mercury____Unify___expr_0_0_i1003);
+Declare_label(mercury____Unify___expr_0_0_i1004);
+Define_extern_entry(mercury____Index___expr_0_0);
+Declare_label(mercury____Index___expr_0_0_i6);
+Declare_label(mercury____Index___expr_0_0_i7);
+Declare_label(mercury____Index___expr_0_0_i8);
+Declare_label(mercury____Index___expr_0_0_i9);
+Declare_label(mercury____Index___expr_0_0_i10);
+Declare_label(mercury____Index___expr_0_0_i11);
+Declare_label(mercury____Index___expr_0_0_i12);
+Declare_label(mercury____Index___expr_0_0_i5);
+Declare_label(mercury____Index___expr_0_0_i13);
+Declare_label(mercury____Index___expr_0_0_i14);
+Define_extern_entry(mercury____Compare___expr_0_0);
+Declare_label(mercury____Compare___expr_0_0_i3);
+Declare_label(mercury____Compare___expr_0_0_i4);
+Declare_label(mercury____Compare___expr_0_0_i5);
+Declare_label(mercury____Compare___expr_0_0_i7);
+Declare_label(mercury____Compare___expr_0_0_i14);
+Declare_label(mercury____Compare___expr_0_0_i16);
+Declare_label(mercury____Compare___expr_0_0_i19);
+Declare_label(mercury____Compare___expr_0_0_i26);
+Declare_label(mercury____Compare___expr_0_0_i28);
+Declare_label(mercury____Compare___expr_0_0_i30);
+Declare_label(mercury____Compare___expr_0_0_i32);
+Declare_label(mercury____Compare___expr_0_0_i35);
+Declare_label(mercury____Compare___expr_0_0_i42);
+Declare_label(mercury____Compare___expr_0_0_i44);
+Declare_label(mercury____Compare___expr_0_0_i47);
+Declare_label(mercury____Compare___expr_0_0_i54);
+Declare_label(mercury____Compare___expr_0_0_i56);
+Declare_label(mercury____Compare___expr_0_0_i58);
+Declare_label(mercury____Compare___expr_0_0_i60);
+Declare_label(mercury____Compare___expr_0_0_i63);
+Declare_label(mercury____Compare___expr_0_0_i70);
+Declare_label(mercury____Compare___expr_0_0_i72);
+Declare_label(mercury____Compare___expr_0_0_i13);
+Declare_label(mercury____Compare___expr_0_0_i76);
+Declare_label(mercury____Compare___expr_0_0_i74);
+Declare_label(mercury____Compare___expr_0_0_i79);
+Declare_label(mercury____Compare___expr_0_0_i77);
+Declare_label(mercury____Compare___expr_0_0_i82);
+Declare_label(mercury____Compare___expr_0_0_i85);
+Declare_label(mercury____Compare___expr_0_0_i89);
+Declare_label(mercury____Compare___expr_0_0_i93);
+Define_extern_entry(mercury____Unify___quad_0_0);
+Declare_label(mercury____Unify___quad_0_0_i3);
+Declare_label(mercury____Unify___quad_0_0_i5);
+Declare_label(mercury____Unify___quad_0_0_i7);
+Declare_label(mercury____Unify___quad_0_0_i1);
+Define_extern_entry(mercury____Index___quad_0_0);
+Define_extern_entry(mercury____Compare___quad_0_0);
+Declare_label(mercury____Compare___quad_0_0_i5);
+Declare_label(mercury____Compare___quad_0_0_i9);
+Declare_label(mercury____Compare___quad_0_0_i12);
+Declare_label(mercury____Compare___quad_0_0_i16);
+Declare_label(mercury____Compare___quad_0_0_i19);
+Declare_label(mercury____Compare___quad_0_0_i23);
+
+BEGIN_MODULE(mercury__deriv_module)
+	init_entry(mercury__benchmark_1_0);
+	init_label(mercury__benchmark_1_0_i3);
+	init_label(mercury__benchmark_1_0_i4);
+	init_label(mercury__benchmark_1_0_i5);
+	init_label(mercury__benchmark_1_0_i6);
+	init_entry(mercury__main_2_0);
+	init_label(mercury__main_2_0_i3);
+	init_label(mercury__main_2_0_i4);
+	init_label(mercury__main_2_0_i5);
+	init_label(mercury__main_2_0_i6);
+	init_label(mercury__main_2_0_i7);
+	init_label(mercury__main_2_0_i8);
+	init_label(mercury__main_2_0_i9);
+	init_label(mercury__main_2_0_i10);
+	init_label(mercury__main_2_0_i11);
+	init_label(mercury__main_2_0_i12);
+	init_label(mercury__main_2_0_i13);
+	init_label(mercury__main_2_0_i14);
+	init_local(mercury__times10_1_0_l);
+	init_label(mercury__times10_1_0_i12);
+	init_local(mercury__log10_1_0_l);
+	init_label(mercury__log10_1_0_i13);
+	init_local(mercury__ops8_1_0_l);
+	init_label(mercury__ops8_1_0_i13);
+	init_local(mercury__divide10_1_0_l);
+	init_label(mercury__divide10_1_0_i12);
+	init_local(mercury__d_3_0_l);
+	init_label(mercury__d_3_0_i1008);
+	init_label(mercury__d_3_0_i1007);
+	init_label(mercury__d_3_0_i1006);
+	init_label(mercury__d_3_0_i1005);
+	init_label(mercury__d_3_0_i1004);
+	init_label(mercury__d_3_0_i1003);
+	init_label(mercury__d_3_0_i8);
+	init_label(mercury__d_3_0_i10);
+	init_label(mercury__d_3_0_i17);
+	init_label(mercury__d_3_0_i18);
+	init_label(mercury__d_3_0_i21);
+	init_label(mercury__d_3_0_i22);
+	init_label(mercury__d_3_0_i25);
+	init_label(mercury__d_3_0_i30);
+	init_label(mercury__d_3_0_i34);
+	init_label(mercury__d_3_0_i1002);
+	init_label(mercury__d_3_0_i41);
+	init_label(mercury__d_3_0_i42);
+	init_label(mercury__d_3_0_i36);
+	init_label(mercury__d_3_0_i45);
+	init_label(mercury__d_3_0_i44);
+	init_label(mercury__d_3_0_i47);
+	init_label(mercury__d_3_0_i49);
+	init_label(mercury__d_3_0_i1000);
+	init_local(mercury__print_expr_3_0_l);
+	init_label(mercury__print_expr_3_0_i1015);
+	init_label(mercury__print_expr_3_0_i1014);
+	init_label(mercury__print_expr_3_0_i1013);
+	init_label(mercury__print_expr_3_0_i1012);
+	init_label(mercury__print_expr_3_0_i1011);
+	init_label(mercury__print_expr_3_0_i1010);
+	init_label(mercury__print_expr_3_0_i7);
+	init_label(mercury__print_expr_3_0_i8);
+	init_label(mercury__print_expr_3_0_i9);
+	init_label(mercury__print_expr_3_0_i10);
+	init_label(mercury__print_expr_3_0_i15);
+	init_label(mercury__print_expr_3_0_i16);
+	init_label(mercury__print_expr_3_0_i17);
+	init_label(mercury__print_expr_3_0_i18);
+	init_label(mercury__print_expr_3_0_i21);
+	init_label(mercury__print_expr_3_0_i22);
+	init_label(mercury__print_expr_3_0_i23);
+	init_label(mercury__print_expr_3_0_i24);
+	init_label(mercury__print_expr_3_0_i27);
+	init_label(mercury__print_expr_3_0_i28);
+	init_label(mercury__print_expr_3_0_i31);
+	init_label(mercury__print_expr_3_0_i32);
+	init_label(mercury__print_expr_3_0_i33);
+	init_label(mercury__print_expr_3_0_i34);
+	init_label(mercury__print_expr_3_0_i37);
+	init_label(mercury__print_expr_3_0_i38);
+	init_label(mercury__print_expr_3_0_i1009);
+	init_label(mercury__print_expr_3_0_i40);
+	init_label(mercury__print_expr_3_0_i43);
+	init_label(mercury__print_expr_3_0_i44);
+	init_label(mercury__print_expr_3_0_i42);
+	init_label(mercury__print_expr_3_0_i46);
+	init_label(mercury__print_expr_3_0_i47);
+	init_label(mercury__print_expr_3_0_i48);
+	init_label(mercury__print_expr_3_0_i49);
+	init_label(mercury__print_expr_3_0_i1001);
+	init_entry(mercury____Unify___expr_0_0);
+	init_label(mercury____Unify___expr_0_0_i1012);
+	init_label(mercury____Unify___expr_0_0_i1011);
+	init_label(mercury____Unify___expr_0_0_i1010);
+	init_label(mercury____Unify___expr_0_0_i1009);
+	init_label(mercury____Unify___expr_0_0_i1008);
+	init_label(mercury____Unify___expr_0_0_i1007);
+	init_label(mercury____Unify___expr_0_0_i1006);
+	init_label(mercury____Unify___expr_0_0_i8);
+	init_label(mercury____Unify___expr_0_0_i9);
+	init_label(mercury____Unify___expr_0_0_i15);
+	init_label(mercury____Unify___expr_0_0_i18);
+	init_label(mercury____Unify___expr_0_0_i19);
+	init_label(mercury____Unify___expr_0_0_i25);
+	init_label(mercury____Unify___expr_0_0_i26);
+	init_label(mercury____Unify___expr_0_0_i37);
+	init_label(mercury____Unify___expr_0_0_i38);
+	init_label(mercury____Unify___expr_0_0_i1005);
+	init_label(mercury____Unify___expr_0_0_i45);
+	init_label(mercury____Unify___expr_0_0_i48);
+	init_label(mercury____Unify___expr_0_0_i54);
+	init_label(mercury____Unify___expr_0_0_i55);
+	init_label(mercury____Unify___expr_0_0_i1);
+	init_label(mercury____Unify___expr_0_0_i1000);
+	init_label(mercury____Unify___expr_0_0_i1001);
+	init_label(mercury____Unify___expr_0_0_i1002);
+	init_label(mercury____Unify___expr_0_0_i1003);
+	init_label(mercury____Unify___expr_0_0_i1004);
+	init_entry(mercury____Index___expr_0_0);
+	init_label(mercury____Index___expr_0_0_i6);
+	init_label(mercury____Index___expr_0_0_i7);
+	init_label(mercury____Index___expr_0_0_i8);
+	init_label(mercury____Index___expr_0_0_i9);
+	init_label(mercury____Index___expr_0_0_i10);
+	init_label(mercury____Index___expr_0_0_i11);
+	init_label(mercury____Index___expr_0_0_i12);
+	init_label(mercury____Index___expr_0_0_i5);
+	init_label(mercury____Index___expr_0_0_i13);
+	init_label(mercury____Index___expr_0_0_i14);
+	init_entry(mercury____Compare___expr_0_0);
+	init_label(mercury____Compare___expr_0_0_i3);
+	init_label(mercury____Compare___expr_0_0_i4);
+	init_label(mercury____Compare___expr_0_0_i5);
+	init_label(mercury____Compare___expr_0_0_i7);
+	init_label(mercury____Compare___expr_0_0_i14);
+	init_label(mercury____Compare___expr_0_0_i16);
+	init_label(mercury____Compare___expr_0_0_i19);
+	init_label(mercury____Compare___expr_0_0_i26);
+	init_label(mercury____Compare___expr_0_0_i28);
+	init_label(mercury____Compare___expr_0_0_i30);
+	init_label(mercury____Compare___expr_0_0_i32);
+	init_label(mercury____Compare___expr_0_0_i35);
+	init_label(mercury____Compare___expr_0_0_i42);
+	init_label(mercury____Compare___expr_0_0_i44);
+	init_label(mercury____Compare___expr_0_0_i47);
+	init_label(mercury____Compare___expr_0_0_i54);
+	init_label(mercury____Compare___expr_0_0_i56);
+	init_label(mercury____Compare___expr_0_0_i58);
+	init_label(mercury____Compare___expr_0_0_i60);
+	init_label(mercury____Compare___expr_0_0_i63);
+	init_label(mercury____Compare___expr_0_0_i70);
+	init_label(mercury____Compare___expr_0_0_i72);
+	init_label(mercury____Compare___expr_0_0_i13);
+	init_label(mercury____Compare___expr_0_0_i76);
+	init_label(mercury____Compare___expr_0_0_i74);
+	init_label(mercury____Compare___expr_0_0_i79);
+	init_label(mercury____Compare___expr_0_0_i77);
+	init_label(mercury____Compare___expr_0_0_i82);
+	init_label(mercury____Compare___expr_0_0_i85);
+	init_label(mercury____Compare___expr_0_0_i89);
+	init_label(mercury____Compare___expr_0_0_i93);
+	init_entry(mercury____Unify___quad_0_0);
+	init_label(mercury____Unify___quad_0_0_i3);
+	init_label(mercury____Unify___quad_0_0_i5);
+	init_label(mercury____Unify___quad_0_0_i7);
+	init_label(mercury____Unify___quad_0_0_i1);
+	init_entry(mercury____Index___quad_0_0);
+	init_entry(mercury____Compare___quad_0_0);
+	init_label(mercury____Compare___quad_0_0_i5);
+	init_label(mercury____Compare___quad_0_0_i9);
+	init_label(mercury____Compare___quad_0_0_i12);
+	init_label(mercury____Compare___quad_0_0_i16);
+	init_label(mercury____Compare___quad_0_0_i19);
+	init_label(mercury____Compare___quad_0_0_i23);
+BEGIN_CODE
+
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate benchmark/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+E3	 ->	stackvar(1)
+E1	 ->	stackvar(2)
+E2	 ->	stackvar(3)
+ */
+Define_entry(mercury__benchmark_1_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	incr_sp(4);
+		/* late setup */
+	{ detstackvar(4) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__ops8_1_0_l,
+		LABEL(mercury__benchmark_1_0_i3),
+		LABEL(mercury__benchmark_1_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(4)	succip
+ *	r1	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__benchmark_1_0_i3);
+	update_prof_current_proc(LABEL(mercury__benchmark_1_0));
+		/* Continuation label */
+	{ detstackvar(2) = (Integer) r1; }
+		/* Assigning from E1 */
+/*
+ * Live lvalues:
+ *	detstackvar(2)
+ *	detstackvar(4)
+ */
+	{ localcall(mercury__divide10_1_0_l,
+		LABEL(mercury__benchmark_1_0_i4),
+		LABEL(mercury__benchmark_1_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(4)	succip
+ *	r1	num(7)
+ *	detstackvar(2)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__benchmark_1_0_i4);
+	update_prof_current_proc(LABEL(mercury__benchmark_1_0));
+		/* Continuation label */
+	{ detstackvar(3) = (Integer) r1; }
+		/* Assigning from E2 */
+/*
+ * Live lvalues:
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(4)
+ */
+	{ localcall(mercury__log10_1_0_l,
+		LABEL(mercury__benchmark_1_0_i5),
+		LABEL(mercury__benchmark_1_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(4)	succip
+ *	r1	num(7)
+ *	detstackvar(2)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__benchmark_1_0_i5);
+	update_prof_current_proc(LABEL(mercury__benchmark_1_0));
+		/* Continuation label */
+	{ detstackvar(1) = (Integer) r1; }
+		/* Assigning from E3 */
+/*
+ * Live lvalues:
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(4)
+ */
+	{ localcall(mercury__times10_1_0_l,
+		LABEL(mercury__benchmark_1_0_i6),
+		LABEL(mercury__benchmark_1_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(4)	succip
+ *	r1	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__benchmark_1_0_i6);
+	update_prof_current_proc(LABEL(mercury__benchmark_1_0));
+		/* Continuation label */
+/* Start of procedure epilogue */
+	{ r2 = (Integer) r1; }
+		/* shuffle lval */
+	{ tag_incr_hp(r1, mktag(0), 4); }
+		/* Allocating heap for HeadVar__1 */
+	{ field(mktag(0), (Integer) r1, 0) = (Integer) detstackvar(2); }
+		/* Assigning from  */
+	{ field(mktag(0), (Integer) r1, 1) = (Integer) detstackvar(3); }
+		/* Assigning from  */
+	{ field(mktag(0), (Integer) r1, 2) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(0), (Integer) r1, 3) = (Integer) r2; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(4); }
+		/* restore the success ip */
+	decr_sp(4);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate main/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+DCG_2	 ->	stackvar(1)
+DCG_6	 ->	stackvar(1)
+DCG_4	 ->	stackvar(1)
+DCG_0	 ->	stackvar(1)
+ */
+Define_entry(mercury__main_2_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	incr_sp(2);
+		/* late setup */
+	{ detstackvar(2) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r1; }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__ops8_1_0_l,
+		LABEL(mercury__main_2_0_i3),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r1	num(7)
+ *	detstackvar(1)	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i3);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__main_2_0_i4),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i4);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r1 = string_const("\n\n", 2); }
+		/* Assigning from variable number 19 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__main_2_0_i5),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i5);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ detstackvar(1) = (Integer) r3; }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__divide10_1_0_l,
+		LABEL(mercury__main_2_0_i6),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r1	num(7)
+ *	detstackvar(1)	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i6);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__main_2_0_i7),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i7);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r1 = string_const("\n\n", 2); }
+		/* Assigning from variable number 18 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__main_2_0_i8),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i8);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ detstackvar(1) = (Integer) r3; }
+		/* Assigning from DCG_4 */
+/*
+ * Live lvalues:
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__log10_1_0_l,
+		LABEL(mercury__main_2_0_i9),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r1	num(7)
+ *	detstackvar(1)	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i9);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from DCG_4 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__main_2_0_i10),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i10);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r1 = string_const("\n\n", 2); }
+		/* Assigning from variable number 17 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_5 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__main_2_0_i11),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i11);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ detstackvar(1) = (Integer) r3; }
+		/* Assigning from DCG_6 */
+/*
+ * Live lvalues:
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__times10_1_0_l,
+		LABEL(mercury__main_2_0_i12),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r1	num(7)
+ *	detstackvar(1)	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i12);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from DCG_6 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__main_2_0_i13),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i13);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r1 = string_const("\n", 1); }
+		/* Assigning from variable number 16 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_7 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__main_2_0_i14),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i14);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) r3; }
+		/* Assigning from HeadVar__2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(2); }
+		/* restore the success ip */
+	decr_sp(2);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate times10/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__times10_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ static const Word mercury_const_3[] = {
+		(Integer) mkword(mktag(0), mkbody(0)),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_4[] = {
+		mkword(mktag(2), mercury_const_3),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_5[] = {
+		mkword(mktag(2), mercury_const_4),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_6[] = {
+		mkword(mktag(2), mercury_const_5),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_7[] = {
+		mkword(mktag(2), mercury_const_6),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_8[] = {
+		mkword(mktag(2), mercury_const_7),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_9[] = {
+		mkword(mktag(2), mercury_const_8),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_10[] = {
+		mkword(mktag(2), mercury_const_9),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_11[] = {
+		mkword(mktag(2), mercury_const_10),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  r1 = mkword(mktag(2), mercury_const_11); }
+		/* Assigning from variable number 3 */
+	{ r2 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from variable number 4 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__times10_1_0_i12),
+		LABEL(mercury__times10_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__times10_1_0_i12);
+	update_prof_current_proc(LABEL(mercury__times10_1_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* Assigning from HeadVar__1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate log10/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__log10_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ static const Word mercury_const_3[] = {
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_4[] = {
+		mkword(mktag(1), mercury_const_3)
+	  };
+	  static const Word mercury_const_5[] = {
+		mkword(mktag(1), mercury_const_4)
+	  };
+	  static const Word mercury_const_6[] = {
+		mkword(mktag(1), mercury_const_5)
+	  };
+	  static const Word mercury_const_7[] = {
+		mkword(mktag(1), mercury_const_6)
+	  };
+	  static const Word mercury_const_8[] = {
+		mkword(mktag(1), mercury_const_7)
+	  };
+	  static const Word mercury_const_9[] = {
+		mkword(mktag(1), mercury_const_8)
+	  };
+	  static const Word mercury_const_10[] = {
+		mkword(mktag(1), mercury_const_9)
+	  };
+	  static const Word mercury_const_11[] = {
+		mkword(mktag(1), mercury_const_10)
+	  };
+	  static const Word mercury_const_12[] = {
+		mkword(mktag(1), mercury_const_11)
+	  };
+	  r1 = mkword(mktag(1), mercury_const_12); }
+		/* Assigning from variable number 3 */
+	{ r2 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from variable number 4 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__log10_1_0_i13),
+		LABEL(mercury__log10_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__log10_1_0_i13);
+	update_prof_current_proc(LABEL(mercury__log10_1_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* Assigning from HeadVar__1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate ops8/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__ops8_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ static const Word mercury_const_3[] = {
+		1,
+		1
+	  };
+	  static const Word mercury_const_4[] = {
+		2,
+		(Integer) mkword(mktag(0), mkbody(0)),
+		mkword(mktag(3), mercury_const_3)
+	  };
+	  static const Word mercury_const_5[] = {
+		5,
+		(Integer) mkword(mktag(0), mkbody(0)),
+		2
+	  };
+	  static const Word mercury_const_6[] = {
+		1,
+		2
+	  };
+	  static const Word mercury_const_7[] = {
+		2,
+		mkword(mktag(3), mercury_const_5),
+		mkword(mktag(3), mercury_const_6)
+	  };
+	  static const Word mercury_const_8[] = {
+		5,
+		(Integer) mkword(mktag(0), mkbody(0)),
+		3
+	  };
+	  static const Word mercury_const_9[] = {
+		1,
+		3
+	  };
+	  static const Word mercury_const_10[] = {
+		2,
+		mkword(mktag(3), mercury_const_8),
+		mkword(mktag(3), mercury_const_9)
+	  };
+	  static const Word mercury_const_11[] = {
+		mkword(mktag(3), mercury_const_7),
+		mkword(mktag(3), mercury_const_10)
+	  };
+	  static const Word mercury_const_12[] = {
+		mkword(mktag(3), mercury_const_4),
+		mkword(mktag(2), mercury_const_11)
+	  };
+	  r1 = mkword(mktag(2), mercury_const_12); }
+		/* Assigning from variable number 3 */
+	{ r2 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from variable number 4 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__ops8_1_0_i13),
+		LABEL(mercury__ops8_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__ops8_1_0_i13);
+	update_prof_current_proc(LABEL(mercury__ops8_1_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* Assigning from HeadVar__1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate divide10/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__divide10_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ static const Word mercury_const_3[] = {
+		0,
+		(Integer) mkword(mktag(0), mkbody(0)),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_4[] = {
+		0,
+		mkword(mktag(3), mercury_const_3),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_5[] = {
+		0,
+		mkword(mktag(3), mercury_const_4),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_6[] = {
+		0,
+		mkword(mktag(3), mercury_const_5),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_7[] = {
+		0,
+		mkword(mktag(3), mercury_const_6),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_8[] = {
+		0,
+		mkword(mktag(3), mercury_const_7),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_9[] = {
+		0,
+		mkword(mktag(3), mercury_const_8),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_10[] = {
+		0,
+		mkword(mktag(3), mercury_const_9),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_11[] = {
+		0,
+		mkword(mktag(3), mercury_const_10),
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  r1 = mkword(mktag(3), mercury_const_11); }
+		/* Assigning from variable number 3 */
+	{ r2 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from variable number 4 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__divide10_1_0_i12),
+		LABEL(mercury__divide10_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__divide10_1_0_i12);
+	update_prof_current_proc(LABEL(mercury__divide10_1_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* Assigning from HeadVar__1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate d/3 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+X	 ->	stackvar(1)
+DU	 ->	stackvar(1)
+variable number 28	 ->	stackvar(1)
+X	 ->	stackvar(1)
+V	 ->	stackvar(1)
+X	 ->	stackvar(1)
+variable number 38	 ->	stackvar(1)
+V	 ->	stackvar(1)
+U	 ->	stackvar(2)
+variable number 46	 ->	stackvar(1)
+V	 ->	stackvar(2)
+U	 ->	stackvar(2)
+HeadVar__3	 ->	stackvar(2)
+variable number 19	 ->	stackvar(1)
+X	 ->	stackvar(2)
+variable number 27	 ->	stackvar(3)
+DU	 ->	stackvar(1)
+variable number 39	 ->	stackvar(2)
+X	 ->	stackvar(4)
+V	 ->	stackvar(3)
+U	 ->	stackvar(1)
+ */
+Define_local(mercury__d_3_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r3 = tag((Integer) r1); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r3 != mktag(3)))
+		GOTO_LABEL(mercury__d_3_0_i1002); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r1, 0),
+		LABEL(mercury__d_3_0_i1008) AND
+		LABEL(mercury__d_3_0_i1000) AND
+		LABEL(mercury__d_3_0_i1007) AND
+		LABEL(mercury__d_3_0_i1006) AND
+		LABEL(mercury__d_3_0_i1005) AND
+		LABEL(mercury__d_3_0_i1004) AND
+		LABEL(mercury__d_3_0_i1003)); }
+		/* switch on secondary tag */
+Define_label(mercury__d_3_0_i1008);
+		/* setup bridging label */
+	incr_sp(5);
+		/* late setup after succip */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ tag_incr_hp(r4, mktag(3), 3); }
+	{ detstackvar(1) = (Integer) r3; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 1) = (Integer) r3; }
+		/* vn flush */
+	{ detstackvar(3) = (Integer) r4; }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) r1; }
+		/* vn flush */
+	{ detstackvar(4) = (Integer) r2; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 0) = 5; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 2) = 2; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i8),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ *	detstackvar(3)	num(7)
+ *	detstackvar(4)	num(7)
+ */
+Define_label(mercury__d_3_0_i1007);
+		/* setup bridging label */
+	incr_sp(5);
+		/* late setup after succip */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r2; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i17),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__d_3_0_i1006);
+		/* setup bridging label */
+	incr_sp(5);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) r2; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i21),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__d_3_0_i1005);
+		/* setup bridging label */
+	incr_sp(5);
+		/* late setup after succip */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i25),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ */
+Define_label(mercury__d_3_0_i1004);
+		/* setup bridging label */
+	incr_sp(5);
+		/* late setup after succip */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ incr_hp(r5, 5); }
+	{ r4 = (Integer) mkword(mktag(3), ((Integer) r5 + 12)); }
+		/* vn flush */
+	{ Word temp1;
+	{ temp1 = (Integer) mkword(mktag(3), (Integer) r5); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 1) = (Integer) r3; }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) temp1; }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) r4; }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 0) = 1; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) temp1, 2) = ((Integer) r3 - 1); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) temp1, 1) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) temp1, 0) = 5; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i30),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+	}
+
+	incr_sp(5);
+		/* late setup */
+	{ detstackvar(5) = (Integer) succip; }
+		/* late save */
+	{ incr_hp(r2, 4); }
+	{ r1 = (Integer) mkword(mktag(2), ((Integer) r2 + 8)); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 0) = (Integer) r3; }
+		/* vn flush */
+	{ r3 = (Integer) mkword(mktag(2), (Integer) r2); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r3, 0) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 1) = (Integer) detstackvar(2); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r3, 1) = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* vn flush */
+	decr_sp(5);
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+Define_label(mercury__d_3_0_i1003);
+		/* setup bridging label */
+	incr_sp(5);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) r1; }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i34),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__d_3_0_i8);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+	{ r1 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ tag_incr_hp(r4, mktag(2), 2); }
+	{ field(mktag(2), (Integer) r4, 1) = (Integer) r1; }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r4; }
+		/* vn flush */
+	{ r2 = (Integer) detstackvar(4); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r4, 0) = (Integer) r3; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i10),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+Define_label(mercury__d_3_0_i10);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+	{ incr_hp(r2, 8); }
+	{ r1 = (Integer) mkword(mktag(2), ((Integer) r2 + 24)); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 1) = (Integer) r3; }
+		/* vn flush */
+	{ r4 = (Integer) mkword(mktag(3), ((Integer) r2 + 12)); }
+		/* vn flush */
+	{ r3 = (Integer) mkword(mktag(3), (Integer) r2); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 2) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r3, 1) = (Integer) r4; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 1) = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r4, 0) = 3; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r3, 2) = (Integer) detstackvar(3); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r3, 0) = 0; }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 0) = (Integer) detstackvar(2); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* vn flush */
+	decr_sp(5);
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+Define_label(mercury__d_3_0_i17);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+	{ r2 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ r1 = (Integer) detstackvar(2); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r3; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i18),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__d_3_0_i18);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* shuffle lval */
+	{ tag_incr_hp(r3, mktag(3), 3); }
+		/* Allocating heap for HeadVar__3 */
+	{ field(mktag(3), (Integer) r3, 0) = 2; }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 1) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 2) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__d_3_0_i21);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* shuffle lval */
+	{ detstackvar(1) = (Integer) r3; }
+		/* Assigning from DU */
+	{ r2 = (Integer) detstackvar(2); }
+		/* Assigning from X */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i22),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__d_3_0_i22);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* shuffle lval */
+	{ tag_incr_hp(r3, mktag(3), 3); }
+		/* Allocating heap for HeadVar__3 */
+	{ field(mktag(3), (Integer) r3, 0) = 3; }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 1) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 2) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__d_3_0_i25);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* shuffle lval */
+	{ tag_incr_hp(r3, mktag(3), 2); }
+		/* Allocating heap for HeadVar__3 */
+	{ field(mktag(3), (Integer) r3, 0) = 4; }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 1) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__d_3_0_i30);
+	{ incr_hp(r2, 4); }
+	{ r1 = (Integer) mkword(mktag(2), ((Integer) r2 + 8)); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 0) = (Integer) r3; }
+		/* vn flush */
+	{ r3 = (Integer) mkword(mktag(2), (Integer) r2); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r3, 0) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 1) = (Integer) detstackvar(2); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r3, 1) = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* vn flush */
+	decr_sp(5);
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+Define_label(mercury__d_3_0_i34);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* shuffle lval */
+	{ tag_incr_hp(r3, mktag(2), 2); }
+		/* Allocating heap for HeadVar__3 */
+	{ field(mktag(2), (Integer) r3, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(2), (Integer) r3, 1) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__d_3_0_i1002);
+		/* label for late setup code */
+	incr_sp(5);
+		/* late setup after succip */
+	{ if (((Integer) r3 != mktag(0)))
+		GOTO_LABEL(mercury__d_3_0_i36); }
+		/* test primary tag only */
+	{ r3 = unmkbody((Integer) r1); }
+		/* compute remote sec tag to switch on */
+	{ static const Word mercury_const_37[] = {
+		1,
+		1
+	  };
+	  r1 = mkword(mktag(3), mercury_const_37); }
+		/* Assigning from HeadVar__3 */
+/* checking that X has functor 'x'/0 */
+	{ if (((Integer) r2 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__d_3_0_i41); }
+		/* branch over failure */
+	{ detstackvar(2) = (Integer) r1; }
+		/* vn flush */
+	{ r1 = string_const("differentiating wrt nonvariable", 31); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(2)
+ *	detstackvar(5)
+ */
+	{ Declare_entry(mercury__error_1_0);
+	  call(ENTRY(mercury__error_1_0),
+		LABEL(mercury__d_3_0_i42),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__d_3_0_i41);
+	{ r3 = (Integer) r1; }
+		/* Assigning from HeadVar__3 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__d_3_0_i42);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r3 = (Integer) detstackvar(2); }
+		/* Assigning from HeadVar__3 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__d_3_0_i36);
+		/* handle next primary tag */
+	{ if (((Integer) r3 != mktag(1)))
+		GOTO_LABEL(mercury__d_3_0_i44); }
+		/* test primary tag only */
+	{ r1 = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r1; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i45),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__d_3_0_i45);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r3; }
+		/* shuffle lval */
+	{ tag_incr_hp(r3, mktag(3), 3); }
+		/* Allocating heap for HeadVar__3 */
+	{ field(mktag(3), (Integer) r3, 0) = 0; }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 1) = (Integer) r1; }
+		/* Assigning from  */
+	{ field(mktag(3), (Integer) r3, 2) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__d_3_0_i44);
+	{ detstackvar(3) = (Integer) field(mktag(2), (Integer) r1, 1); }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(2), (Integer) r1, 0); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r2; }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) r1; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i47),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+Define_label(mercury__d_3_0_i47);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+	{ r2 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ tag_incr_hp(r4, mktag(2), 2); }
+	{ detstackvar(1) = (Integer) r4; }
+		/* vn flush */
+	{ r1 = (Integer) detstackvar(3); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r4, 1) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r4, 0) = (Integer) r3; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__d_3_0_l,
+		LABEL(mercury__d_3_0_i49),
+		LABEL(mercury__d_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r3	num(7)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__d_3_0_i49);
+	update_prof_current_proc(LABEL(mercury__d_3_0_l));
+	{ incr_hp(r2, 5); }
+	{ r1 = (Integer) mkword(mktag(2), ((Integer) r2 + 12)); }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 1) = (Integer) r3; }
+		/* vn flush */
+	{ r3 = (Integer) mkword(mktag(3), (Integer) r2); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r3, 2) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r3, 1) = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ field(mktag(3), (Integer) r3, 0) = 2; }
+		/* vn flush */
+	{ field(mktag(2), (Integer) r1, 0) = (Integer) detstackvar(2); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* vn flush */
+	decr_sp(5);
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+Define_label(mercury__d_3_0_i1000);
+		/* non-teardown parallel label */
+	{ static const Word mercury_const_15[] = {
+		1,
+		0
+	  };
+	  r3 = mkword(mktag(3), mercury_const_15); }
+		/* Assigning from HeadVar__3 */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* shortcircuit */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate print_expr/3 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+E	 ->	stackvar(1)
+E1	 ->	stackvar(1)
+E2	 ->	stackvar(1)
+E	 ->	stackvar(1)
+E2	 ->	stackvar(1)
+E1	 ->	stackvar(1)
+E	 ->	stackvar(1)
+N	 ->	stackvar(2)
+E1	 ->	stackvar(2)
+E2	 ->	stackvar(2)
+E1	 ->	stackvar(2)
+E	 ->	stackvar(1)
+E2	 ->	stackvar(2)
+ */
+Define_local(mercury__print_expr_3_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r3 = tag((Integer) r1); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r3 != mktag(3)))
+		GOTO_LABEL(mercury__print_expr_3_0_i1009); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r1, 0),
+		LABEL(mercury__print_expr_3_0_i1015) AND
+		LABEL(mercury__print_expr_3_0_i1001) AND
+		LABEL(mercury__print_expr_3_0_i1014) AND
+		LABEL(mercury__print_expr_3_0_i1013) AND
+		LABEL(mercury__print_expr_3_0_i1012) AND
+		LABEL(mercury__print_expr_3_0_i1011) AND
+		LABEL(mercury__print_expr_3_0_i1010)); }
+		/* switch on secondary tag */
+Define_label(mercury__print_expr_3_0_i1015);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ r1 = string_const("(", 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i7),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i1014);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r1 = string_const("(", 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i15),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i1013);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ r1 = string_const("(", 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i21),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i1012);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r1 = string_const("- (", 3); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i27),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i1011);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ r1 = string_const("^(", 2); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i31),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(2)
+ */
+Define_label(mercury__print_expr_3_0_i1010);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r1 = string_const("exp(", 4); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i37),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i7);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E1 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i8),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(2)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i8);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(" / ", 3); }
+		/* Assigning from variable number 77 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i9),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(2)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i9);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(2); }
+		/* Assigning from E2 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i10),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i10);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 76 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i15);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(2); }
+		/* Assigning from E1 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i16),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i16);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(" + ", 3); }
+		/* Assigning from variable number 44 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i17),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i17);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E2 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i18),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i18);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 43 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i21);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E1 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i22),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(2)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i22);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(" - ", 3); }
+		/* Assigning from variable number 55 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i23),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(2)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i23);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(2); }
+		/* Assigning from E2 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i24),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i24);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 54 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i27);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i28),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i28);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 84 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i31);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i32),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(2)	num(2)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i32);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(", ", 2); }
+		/* Assigning from variable number 33 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i33),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(2)	num(2)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i33);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(2); }
+		/* Assigning from N */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_int_3_0);
+	  call(ENTRY(mercury__io__write_int_3_0),
+		LABEL(mercury__print_expr_3_0_i34),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i34);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 32 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i37);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i38),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i38);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 22 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i1009);
+		/* label for late setup code */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((Integer) r3 != mktag(0)))
+		GOTO_LABEL(mercury__print_expr_3_0_i40); }
+		/* test primary tag only */
+	{ r1 = string_const("x", 1); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* vn flush */
+	decr_sp(3);
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+Define_label(mercury__print_expr_3_0_i40);
+		/* handle next primary tag */
+	{ if (((Integer) r3 != mktag(1)))
+		GOTO_LABEL(mercury__print_expr_3_0_i42); }
+		/* test primary tag only */
+	{ detstackvar(1) = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* vn flush */
+	{ r1 = string_const("log(", 4); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i43),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i43);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i44),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i44);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 15 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) (redirected return) */
+Define_label(mercury__print_expr_3_0_i42);
+	{ detstackvar(1) = (Integer) field(mktag(2), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(2), (Integer) r1, 0); }
+		/* vn flush */
+	{ r1 = string_const("(", 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i46),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury__print_expr_3_0_i46);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(2); }
+		/* Assigning from E1 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_1 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i47),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i47);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(" * ", 3); }
+		/* Assigning from variable number 66 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(1)
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_i48),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ *	detstackvar(1)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i48);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(1); }
+		/* Assigning from E2 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ localcall(mercury__print_expr_3_0_l,
+		LABEL(mercury__print_expr_3_0_i49),
+		LABEL(mercury__print_expr_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__print_expr_3_0_i49);
+	update_prof_current_proc(LABEL(mercury__print_expr_3_0_l));
+		/* Continuation label */
+	{ r1 = string_const(")", 1); }
+		/* Assigning from variable number 65 */
+	{ r2 = (Integer) r3; }
+		/* Assigning from DCG_4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  tailcall(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury__print_expr_3_0_i1001);
+		/* non-teardown parallel label */
+	{ r1 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(3)
+ */
+	{ Declare_entry(mercury__io__write_int_3_0);
+	  tailcall(ENTRY(mercury__io__write_int_3_0),
+		LABEL(mercury__print_expr_3_0_l)); }
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate __Unify__/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+variable number 16	 ->	stackvar(1)
+variable number 8	 ->	stackvar(1)
+variable number 20	 ->	stackvar(1)
+variable number 12	 ->	stackvar(1)
+variable number 28	 ->	stackvar(1)
+variable number 18	 ->	stackvar(2)
+variable number 10	 ->	stackvar(2)
+variable number 26	 ->	stackvar(2)
+variable number 6	 ->	stackvar(2)
+variable number 22	 ->	stackvar(2)
+ */
+Define_entry(mercury____Unify___expr_0_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i1012);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 0)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i8); }
+		/* branch over failure */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1011);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 1)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i15); }
+		/* branch over failure */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1010);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 2)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i18); }
+		/* branch over failure */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1009);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i25); }
+		/* branch over failure */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1008);
+		/* setup bridging label */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 4)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1000); }
+		/* branch over failure (teardown redirect) */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1007);
+		/* setup bridging label */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 5)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i37); }
+		/* branch over failure */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1006);
+		/* setup bridging label */
+	{ if (((tag((Integer) r2) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r2, 0) == 6)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1001); }
+		/* branch over failure (teardown redirect) */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i8);
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r2, 2); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(3), (Integer) r2, 1); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___expr_0_0_i9),
+		LABEL(mercury____Unify___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury____Unify___expr_0_0_i9);
+	update_prof_current_proc(LABEL(mercury____Unify___expr_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(2); }
+		/* Assigning from variable number 10 */
+	{ r3 = (Integer) detstackvar(1); }
+		/* Assigning from variable number 12 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i15);
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+	{ if (((Integer) field(mktag(3), (Integer) r2, 1) != (Integer) field(mktag(3), (Integer) r3, 1)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1004); }
+		/* Test for failure (teardown redirect) */
+	{ r1 = TRUE; }
+		/* Succeed */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i18);
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r2, 2); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(3), (Integer) r2, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___expr_0_0_i19),
+		LABEL(mercury____Unify___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury____Unify___expr_0_0_i19);
+	update_prof_current_proc(LABEL(mercury____Unify___expr_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from variable number 16 */
+	{ r3 = (Integer) detstackvar(2); }
+		/* Assigning from variable number 18 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i25);
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r2, 2); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(3), (Integer) r2, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___expr_0_0_i26),
+		LABEL(mercury____Unify___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury____Unify___expr_0_0_i26);
+	update_prof_current_proc(LABEL(mercury____Unify___expr_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from variable number 20 */
+	{ r3 = (Integer) detstackvar(2); }
+		/* Assigning from variable number 22 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i37);
+	{ detstackvar(1) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(3), (Integer) r2, 2); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(3), (Integer) r2, 1); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___expr_0_0_i38),
+		LABEL(mercury____Unify___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	detstackvar(1)	num(2)
+ *	detstackvar(2)	num(2)
+ */
+Define_label(mercury____Unify___expr_0_0_i38);
+	update_prof_current_proc(LABEL(mercury____Unify___expr_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1); }
+		/* fail */
+	{ if (((Integer) detstackvar(2) != (Integer) detstackvar(1)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1); }
+		/* Test for failure */
+	{ r1 = TRUE; }
+		/* Succeed */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1005);
+		/* label for late setup code */
+	incr_sp(3);
+		/* late setup after succip */
+	{ if (((Integer) r1 != mktag(0)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i45); }
+		/* test primary tag only */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* vn flush */
+	decr_sp(3);
+	{ if (((Integer) r2 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1002); }
+		/*  (teardown redirect) */
+	{ r1 = FALSE; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury____Unify___expr_0_0_i45);
+		/* handle next primary tag */
+	{ if (((Integer) r1 != mktag(1)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i48); }
+		/* test primary tag only */
+/* checking that variable number 1 has functor 'log'/1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+	{ if ((tag((Integer) r2) == mktag(1)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1003); }
+		/* branch over failure (teardown redirect) */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i48);
+		/* handle next primary tag */
+/* checking that variable number 1 has functor '*'/2 */
+	{ if ((tag((Integer) r2) == mktag(2)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i54); }
+		/* branch over failure */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i54);
+	{ detstackvar(1) = (Integer) field(mktag(2), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(2), (Integer) r2, 1); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(2), (Integer) r2, 0); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(2), (Integer) r3, 0); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___expr_0_0_i55),
+		LABEL(mercury____Unify___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(3)	succip
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ */
+Define_label(mercury____Unify___expr_0_0_i55);
+	update_prof_current_proc(LABEL(mercury____Unify___expr_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(2); }
+		/* Assigning from variable number 6 */
+	{ r3 = (Integer) detstackvar(1); }
+		/* Assigning from variable number 8 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i1);
+		/* End of failure continuation */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(3); }
+		/* restore the success ip */
+	decr_sp(3);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury____Unify___expr_0_0_i1000);
+		/* non-teardown parallel label */
+	{ r3 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(3), (Integer) r2, 1); }
+		/* vn flush */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i1001);
+		/* non-teardown parallel label */
+	{ r3 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(3), (Integer) r2, 1); }
+		/* vn flush */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i1002);
+		/* non-teardown parallel label */
+	{ r1 = TRUE; }
+		/* Succeed */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Unify___expr_0_0_i1003);
+		/* non-teardown parallel label */
+	{ r3 = (Integer) field(mktag(1), (Integer) r3, 0); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(1), (Integer) r2, 0); }
+		/* vn flush */
+	{ r1 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 != mktag(3)))
+		GOTO_LABEL(mercury____Unify___expr_0_0_i1005); }
+		/* jump to setup */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Unify___expr_0_0_i1012) AND
+		LABEL(mercury____Unify___expr_0_0_i1011) AND
+		LABEL(mercury____Unify___expr_0_0_i1010) AND
+		LABEL(mercury____Unify___expr_0_0_i1009) AND
+		LABEL(mercury____Unify___expr_0_0_i1008) AND
+		LABEL(mercury____Unify___expr_0_0_i1007) AND
+		LABEL(mercury____Unify___expr_0_0_i1006)); }
+		/* switch on secondary tag */
+Define_label(mercury____Unify___expr_0_0_i1004);
+		/* non-teardown parallel label */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate __Index__/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_entry(mercury____Index___expr_0_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r2 = tag((Integer) r1); }
+		/* compute tag to switch on */
+	{ if (((Integer) r2 != mktag(3)))
+		GOTO_LABEL(mercury____Index___expr_0_0_i5); }
+		/* test primary tag only */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r1, 0),
+		LABEL(mercury____Index___expr_0_0_i6) AND
+		LABEL(mercury____Index___expr_0_0_i7) AND
+		LABEL(mercury____Index___expr_0_0_i8) AND
+		LABEL(mercury____Index___expr_0_0_i9) AND
+		LABEL(mercury____Index___expr_0_0_i10) AND
+		LABEL(mercury____Index___expr_0_0_i11) AND
+		LABEL(mercury____Index___expr_0_0_i12)); }
+		/* switch on secondary tag */
+Define_label(mercury____Index___expr_0_0_i6);
+		/* start of a case in tag switch */
+	{ r2 = 2; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i7);
+		/* start of a case in tag switch */
+	{ r2 = 4; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i8);
+		/* start of a case in tag switch */
+	{ r2 = 5; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i9);
+		/* start of a case in tag switch */
+	{ r2 = 6; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i10);
+		/* start of a case in tag switch */
+	{ r2 = 7; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i11);
+		/* start of a case in tag switch */
+	{ r2 = 8; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i12);
+		/* start of a case in tag switch */
+	{ r2 = 9; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i5);
+		/* handle next primary tag */
+	{ if (((Integer) r2 != mktag(0)))
+		GOTO_LABEL(mercury____Index___expr_0_0_i13); }
+		/* test primary tag only */
+	{ r2 = 3; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+Define_label(mercury____Index___expr_0_0_i13);
+		/* handle next primary tag */
+	{ if (((Integer) r2 != mktag(1)))
+		GOTO_LABEL(mercury____Index___expr_0_0_i14); }
+		/* test primary tag only */
+	{ r2 = 0; }
+		/* Assigning from variable number 2 */
+/* no succip restoration */
+/* no sp restoration */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Index___expr_0_0_i14);
+		/* handle next primary tag */
+	{ r2 = 1; }
+		/* Assigning from variable number 2 */
+/* Start of procedure epilogue */
+/* End of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate __Compare__/3 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+variable number 16	 ->	stackvar(1)
+variable number 24	 ->	stackvar(1)
+variable number 4	 ->	stackvar(2)
+variable number 36	 ->	stackvar(1)
+variable number 12	 ->	stackvar(1)
+variable number 28	 ->	stackvar(1)
+variable number 2	 ->	stackvar(1)
+variable number 34	 ->	stackvar(3)
+variable number 18	 ->	stackvar(1)
+variable number 10	 ->	stackvar(3)
+variable number 26	 ->	stackvar(3)
+variable number 22	 ->	stackvar(3)
+variable number 14	 ->	stackvar(3)
+variable number 30	 ->	stackvar(1)
+variable number 33	 ->	stackvar(4)
+variable number 17	 ->	stackvar(4)
+variable number 9	 ->	stackvar(4)
+variable number 25	 ->	stackvar(4)
+variable number 5	 ->	stackvar(5)
+variable number 37	 ->	stackvar(4)
+variable number 21	 ->	stackvar(4)
+variable number 13	 ->	stackvar(4)
+variable number 29	 ->	stackvar(4)
+variable number 3	 ->	stackvar(3)
+variable number 35	 ->	stackvar(6)
+variable number 11	 ->	stackvar(6)
+variable number 27	 ->	stackvar(6)
+variable number 23	 ->	stackvar(6)
+variable number 15	 ->	stackvar(6)
+ */
+Define_entry(mercury____Compare___expr_0_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	incr_sp(9);
+		/* late setup */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i3);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+		/* Continuation label */
+	{ detstackvar(2) = (Integer) r2; }
+		/* Assigning from variable number 4 */
+	{ r1 = (Integer) detstackvar(3); }
+		/* Assigning from variable number 3 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i4),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(2)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i4);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+		/* Continuation label */
+	{ r1 = (Integer) detstackvar(3); }
+		/* Assigning from variable number 3 */
+	{ r3 = (Integer) detstackvar(1); }
+		/* Assigning from variable number 2 */
+	{ r4 = (Integer) detstackvar(2); }
+		/* Assigning from variable number 4 */
+	{ if (((Integer) r4 >= (Integer) r2))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i5); }
+		/* Test for failure */
+	{ r1 = 1; }
+		/* Assigning from variable number 1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Compare___expr_0_0_i5);
+		/* End of failure continuation */
+	{ if (((Integer) r4 &lt;= (Integer) r2))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i7); }
+		/* Test for failure */
+	{ r1 = 2; }
+		/* Assigning from variable number 1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury____Compare___expr_0_0_i7);
+		/* End of failure continuation */
+	{ mark_hp(detstackvar(7)); }
+		/* Save heap pointer */
+	{ r2 = tag((Integer) r3); }
+		/* compute tag to switch on */
+	{ if (((Integer) r2 != mktag(3)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i13); }
+		/* test primary tag only */
+	{ COMPUTED_GOTO((Integer) field(mktag(3), (Integer) r3, 0),
+		LABEL(mercury____Compare___expr_0_0_i14) AND
+		LABEL(mercury____Compare___expr_0_0_i26) AND
+		LABEL(mercury____Compare___expr_0_0_i30) AND
+		LABEL(mercury____Compare___expr_0_0_i42) AND
+		LABEL(mercury____Compare___expr_0_0_i54) AND
+		LABEL(mercury____Compare___expr_0_0_i58) AND
+		LABEL(mercury____Compare___expr_0_0_i70)); }
+		/* switch on secondary tag */
+Define_label(mercury____Compare___expr_0_0_i14);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor '/'/2 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 0)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i16); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i16);
+	{ mark_hp(detstackvar(8)); }
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(6) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r4 = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ detstackvar(4) = (Integer) r4; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(4)
+ *	detstackvar(6)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i19),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r1	num(9)
+ *	detstackvar(8)	hp
+ *	detstackvar(7)	hp
+ *	detstackvar(4)	num(7)
+ *	detstackvar(6)	num(7)
+ */
+Define_label(mercury____Compare___expr_0_0_i19);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+	{ if (((Integer) r1 != 0))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i93); }
+	{ restore_hp((Integer) detstackvar(8)); }
+	{ r2 = (Integer) detstackvar(6); }
+		/* vn flush */
+	{ r3 = (Integer) detstackvar(4); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i26);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor 'num'/1 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 1)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i28); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i28);
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* Assigning from variable number 19 */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* Assigning from variable number 20 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	decr_sp(9);
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(7)
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__builtin_compare_int_3_0);
+	  tailcall(ENTRY(mercury__builtin_compare_int_3_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i30);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor '+'/2 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 2)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i32); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i32);
+	{ mark_hp(detstackvar(8)); }
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(3) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r4 = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r4; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i35),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r1	num(9)
+ *	detstackvar(8)	hp
+ *	detstackvar(7)	hp
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+Define_label(mercury____Compare___expr_0_0_i35);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+	{ if (((Integer) r1 != 0))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i93); }
+	{ restore_hp((Integer) detstackvar(8)); }
+	{ r2 = (Integer) detstackvar(3); }
+		/* vn flush */
+	{ r3 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i42);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor '-'/2 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 3)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i44); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i44);
+	{ mark_hp(detstackvar(8)); }
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(6) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r4 = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ detstackvar(4) = (Integer) r4; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(4)
+ *	detstackvar(6)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i47),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r1	num(9)
+ *	detstackvar(8)	hp
+ *	detstackvar(7)	hp
+ *	detstackvar(4)	num(7)
+ *	detstackvar(6)	num(7)
+ */
+Define_label(mercury____Compare___expr_0_0_i47);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+	{ if (((Integer) r1 != 0))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i93); }
+	{ restore_hp((Integer) detstackvar(8)); }
+	{ r2 = (Integer) detstackvar(6); }
+		/* vn flush */
+	{ r3 = (Integer) detstackvar(4); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i54);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor '-'/1 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 4)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i56); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i56);
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* Assigning from variable number 31 */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* Assigning from variable number 32 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i58);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor '^'/2 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 5)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i60); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i60);
+	{ mark_hp(detstackvar(8)); }
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(3) = (Integer) field(mktag(3), (Integer) r3, 2); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* vn flush */
+	{ r4 = (Integer) field(mktag(3), (Integer) r1, 2); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r4; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i63),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r1	num(9)
+ *	detstackvar(8)	hp
+ *	detstackvar(7)	hp
+ *	detstackvar(1)	num(2)
+ *	detstackvar(3)	num(2)
+ */
+Define_label(mercury____Compare___expr_0_0_i63);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+	{ if (((Integer) r1 != 0))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i93); }
+	{ restore_hp((Integer) detstackvar(8)); }
+	{ r2 = (Integer) detstackvar(3); }
+		/* vn flush */
+	{ r3 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	decr_sp(9);
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(7)
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__builtin_compare_int_3_0);
+	  tailcall(ENTRY(mercury__builtin_compare_int_3_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/*  (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i70);
+		/* start of a case in tag switch */
+/* checking that variable number 3 has functor 'exp'/1 */
+	{ if (((tag((Integer) r1) == mktag(3)) &amp;&amp; ((Integer) field(mktag(3), (Integer) r1, 0) == 6)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i72); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i72);
+	{ r2 = (Integer) field(mktag(3), (Integer) r3, 1); }
+		/* Assigning from variable number 38 */
+	{ r3 = (Integer) field(mktag(3), (Integer) r1, 1); }
+		/* Assigning from variable number 39 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i13);
+		/* handle next primary tag */
+	{ if (((Integer) r2 != mktag(0)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i74); }
+		/* test primary tag only */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i76); }
+	{ restore_hp((Integer) detstackvar(7)); }
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	decr_sp(9);
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+Define_label(mercury____Compare___expr_0_0_i76);
+	{ r1 = 0; }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	decr_sp(9);
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury____Compare___expr_0_0_i74);
+		/* handle next primary tag */
+	{ if (((Integer) r2 != mktag(1)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i77); }
+		/* test primary tag only */
+/* checking that variable number 3 has functor 'log'/1 */
+	{ if ((tag((Integer) r1) == mktag(1)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i79); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i79);
+	{ r2 = (Integer) field(mktag(1), (Integer) r3, 0); }
+		/* Assigning from variable number 7 */
+	{ r3 = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* Assigning from variable number 8 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i77);
+		/* handle next primary tag */
+/* checking that variable number 3 has functor '*'/2 */
+	{ if ((tag((Integer) r1) == mktag(2)))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i82); }
+		/* branch over failure */
+	{ restore_hp((Integer) detstackvar(7)); }
+		/* Restore heap pointer */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	detstackvar(9)
+ */
+	{ Declare_entry(mercury__compare_error_0_0);
+	  tailcall(ENTRY(mercury__compare_error_0_0),
+		LABEL(mercury____Compare___expr_0_0)); }
+		/* branch to det procedure (redirected return) */
+Define_label(mercury____Compare___expr_0_0_i82);
+	{ mark_hp(detstackvar(8)); }
+	{ r2 = (Integer) field(mktag(2), (Integer) r3, 0); }
+		/* vn flush */
+	{ detstackvar(3) = (Integer) field(mktag(2), (Integer) r3, 1); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(2), (Integer) r1, 0); }
+		/* vn flush */
+	{ r4 = (Integer) field(mktag(2), (Integer) r1, 1); }
+		/* vn flush */
+	{ detstackvar(1) = (Integer) r4; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i85),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r1	num(9)
+ *	detstackvar(8)	hp
+ *	detstackvar(7)	hp
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+Define_label(mercury____Compare___expr_0_0_i85);
+	update_prof_current_proc(LABEL(mercury____Compare___expr_0_0));
+	{ if (((Integer) r1 == 0))
+		GOTO_LABEL(mercury____Compare___expr_0_0_i89); }
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	decr_sp(9);
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury____Compare___expr_0_0_i89);
+	{ restore_hp((Integer) detstackvar(8)); }
+	{ r2 = (Integer) detstackvar(3); }
+		/* vn flush */
+	{ r3 = (Integer) detstackvar(1); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* vn flush */
+	{ detstackvar(9) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r2; }
+		/* Assigning from variable number 2 */
+	{ detstackvar(3) = (Integer) r3; }
+		/* Assigning from variable number 3 */
+	{ r1 = (Integer) r2; }
+		/* Assigning from variable number 2 */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(3)
+ *	detstackvar(9)
+ */
+	{ localcall(mercury____Index___expr_0_0,
+		LABEL(mercury____Compare___expr_0_0_i3),
+		LABEL(mercury____Compare___expr_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(9)	succip
+ *	r2	num(2)
+ *	detstackvar(1)	num(7)
+ *	detstackvar(3)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___expr_0_0_i93);
+		/* end of if-then-else */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(9); }
+		/* restore the success ip */
+	decr_sp(9);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate __Unify__/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+variable number 8	 ->	stackvar(1)
+variable number 4	 ->	stackvar(2)
+variable number 10	 ->	stackvar(3)
+variable number 6	 ->	stackvar(4)
+variable number 9	 ->	stackvar(5)
+variable number 5	 ->	stackvar(6)
+ */
+Define_entry(mercury____Unify___quad_0_0);
+	incr_sp(7);
+		/* late setup */
+	{ detstackvar(7) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) field(mktag(0), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(2) = (Integer) field(mktag(0), (Integer) r2, 1); }
+		/* vn flush */
+	{ detstackvar(3) = (Integer) field(mktag(0), (Integer) r3, 3); }
+		/* vn flush */
+	{ detstackvar(4) = (Integer) field(mktag(0), (Integer) r2, 3); }
+		/* vn flush */
+	{ detstackvar(5) = (Integer) field(mktag(0), (Integer) r3, 2); }
+		/* vn flush */
+	{ detstackvar(6) = (Integer) field(mktag(0), (Integer) r2, 2); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(0), (Integer) r2, 0); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(0), (Integer) r3, 0); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(2)
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(5)
+ *	detstackvar(6)
+ *	detstackvar(7)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___quad_0_0_i3),
+		LABEL(mercury____Unify___quad_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(7)	succip
+ *	detstackvar(1)	num(7)
+ *	detstackvar(2)	num(7)
+ *	detstackvar(3)	num(7)
+ *	detstackvar(4)	num(7)
+ *	detstackvar(5)	num(7)
+ *	detstackvar(6)	num(7)
+ */
+Define_label(mercury____Unify___quad_0_0_i3);
+	update_prof_current_proc(LABEL(mercury____Unify___quad_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___quad_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(2); }
+		/* Assigning from variable number 4 */
+	{ r3 = (Integer) detstackvar(1); }
+		/* Assigning from variable number 8 */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(5)
+ *	detstackvar(6)
+ *	detstackvar(7)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___quad_0_0_i5),
+		LABEL(mercury____Unify___quad_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(7)	succip
+ *	detstackvar(3)	num(7)
+ *	detstackvar(4)	num(7)
+ *	detstackvar(5)	num(7)
+ *	detstackvar(6)	num(7)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury____Unify___quad_0_0_i5);
+	update_prof_current_proc(LABEL(mercury____Unify___quad_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___quad_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(6); }
+		/* Assigning from variable number 5 */
+	{ r3 = (Integer) detstackvar(5); }
+		/* Assigning from variable number 9 */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(7)
+ */
+	{ localcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___quad_0_0_i7),
+		LABEL(mercury____Unify___quad_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(7)	succip
+ *	detstackvar(3)	num(7)
+ *	detstackvar(4)	num(7)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury____Unify___quad_0_0_i7);
+	update_prof_current_proc(LABEL(mercury____Unify___quad_0_0));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		GOTO_LABEL(mercury____Unify___quad_0_0_i1); }
+		/* fail */
+	{ r2 = (Integer) detstackvar(4); }
+		/* Assigning from variable number 6 */
+	{ r3 = (Integer) detstackvar(3); }
+		/* Assigning from variable number 10 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(7); }
+		/* restore the success ip */
+	decr_sp(7);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(7)
+ */
+	{ localtailcall(mercury____Unify___expr_0_0,
+		LABEL(mercury____Unify___quad_0_0)); }
+		/* branch to semidet procedure (redirected return) */
+Define_label(mercury____Unify___quad_0_0_i1);
+		/* End of failure continuation */
+	{ r1 = FALSE; }
+		/* Fail */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(7); }
+		/* restore the success ip */
+	decr_sp(7);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate __Index__/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_entry(mercury____Index___quad_0_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+/* Start of procedure epilogue */
+	{ r2 = 0; }
+		/* Assigning from variable number 2 */
+/* End of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate __Compare__/3 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+variable number 8	 ->	stackvar(1)
+variable number 4	 ->	stackvar(2)
+variable number 12	 ->	stackvar(1)
+variable number 10	 ->	stackvar(3)
+variable number 6	 ->	stackvar(4)
+variable number 14	 ->	stackvar(3)
+variable number 9	 ->	stackvar(5)
+variable number 5	 ->	stackvar(6)
+variable number 13	 ->	stackvar(5)
+variable number 11	 ->	stackvar(7)
+variable number 7	 ->	stackvar(8)
+ */
+Define_entry(mercury____Compare___quad_0_0);
+	incr_sp(10);
+		/* late setup */
+	{ detstackvar(10) = (Integer) succip; }
+		/* late save */
+	{ mark_hp(detstackvar(9)); }
+	{ detstackvar(3) = (Integer) field(mktag(0), (Integer) r3, 2); }
+		/* vn flush */
+	{ detstackvar(4) = (Integer) field(mktag(0), (Integer) r2, 2); }
+		/* vn flush */
+	{ detstackvar(5) = (Integer) field(mktag(0), (Integer) r3, 1); }
+		/* vn flush */
+	{ detstackvar(6) = (Integer) field(mktag(0), (Integer) r2, 1); }
+		/* vn flush */
+	{ detstackvar(7) = (Integer) field(mktag(0), (Integer) r3, 3); }
+		/* vn flush */
+	{ detstackvar(8) = (Integer) field(mktag(0), (Integer) r2, 3); }
+		/* vn flush */
+	{ r3 = (Integer) field(mktag(0), (Integer) r3, 0); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(0), (Integer) r2, 0); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(5)
+ *	detstackvar(6)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ *	detstackvar(10)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___quad_0_0_i5),
+		LABEL(mercury____Compare___quad_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(10)	succip
+ *	r1	num(9)
+ *	detstackvar(9)	hp
+ *	detstackvar(3)	num(7)
+ *	detstackvar(4)	num(7)
+ *	detstackvar(5)	num(7)
+ *	detstackvar(6)	num(7)
+ *	detstackvar(7)	num(7)
+ *	detstackvar(8)	num(7)
+ */
+Define_label(mercury____Compare___quad_0_0_i5);
+	update_prof_current_proc(LABEL(mercury____Compare___quad_0_0));
+	{ if (((Integer) r1 == 0))
+		GOTO_LABEL(mercury____Compare___quad_0_0_i9); }
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(10); }
+		/* vn flush */
+	decr_sp(10);
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury____Compare___quad_0_0_i9);
+	{ r8 = (Integer) detstackvar(3); }
+	{ r7 = (Integer) detstackvar(4); }
+	{ r6 = (Integer) detstackvar(5); }
+	{ r5 = (Integer) detstackvar(6); }
+	{ r4 = (Integer) detstackvar(7); }
+	{ r1 = (Integer) detstackvar(8); }
+	{ restore_hp((Integer) detstackvar(9)); }
+		/* Restore heap pointer */
+	{ mark_hp(detstackvar(9)); }
+		/* Save heap pointer */
+	{ detstackvar(3) = (Integer) r8; }
+		/* Assigning from variable number 10 */
+	{ detstackvar(4) = (Integer) r7; }
+		/* Assigning from variable number 6 */
+	{ detstackvar(7) = (Integer) r4; }
+		/* Assigning from variable number 11 */
+	{ detstackvar(8) = (Integer) r1; }
+		/* Assigning from variable number 7 */
+	{ r2 = (Integer) r5; }
+		/* Assigning from variable number 5 */
+	{ r3 = (Integer) r6; }
+		/* Assigning from variable number 9 */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(3)
+ *	detstackvar(4)
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ *	detstackvar(10)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___quad_0_0_i12),
+		LABEL(mercury____Compare___quad_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(10)	succip
+ *	r1	num(9)
+ *	detstackvar(9)	hp
+ *	detstackvar(3)	num(7)
+ *	detstackvar(4)	num(7)
+ *	detstackvar(7)	num(7)
+ *	detstackvar(8)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___quad_0_0_i12);
+	update_prof_current_proc(LABEL(mercury____Compare___quad_0_0));
+	{ if (((Integer) r1 == 0))
+		GOTO_LABEL(mercury____Compare___quad_0_0_i16); }
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(10); }
+		/* vn flush */
+	decr_sp(10);
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury____Compare___quad_0_0_i16);
+	{ r8 = (Integer) detstackvar(3); }
+	{ r7 = (Integer) detstackvar(4); }
+	{ r4 = (Integer) detstackvar(7); }
+	{ r1 = (Integer) detstackvar(8); }
+	{ restore_hp((Integer) detstackvar(9)); }
+		/* Restore heap pointer */
+	{ mark_hp(detstackvar(9)); }
+		/* Save heap pointer */
+	{ detstackvar(7) = (Integer) r4; }
+		/* Assigning from variable number 11 */
+	{ detstackvar(8) = (Integer) r1; }
+		/* Assigning from variable number 7 */
+	{ r2 = (Integer) r7; }
+		/* Assigning from variable number 6 */
+	{ r3 = (Integer) r8; }
+		/* Assigning from variable number 10 */
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(7)
+ *	detstackvar(8)
+ *	detstackvar(9)
+ *	detstackvar(10)
+ */
+	{ localcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___quad_0_0_i19),
+		LABEL(mercury____Compare___quad_0_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(10)	succip
+ *	r1	num(9)
+ *	detstackvar(9)	hp
+ *	detstackvar(7)	num(7)
+ *	detstackvar(8)	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury____Compare___quad_0_0_i19);
+	update_prof_current_proc(LABEL(mercury____Compare___quad_0_0));
+	{ if (((Integer) r1 == 0))
+		GOTO_LABEL(mercury____Compare___quad_0_0_i23); }
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(10); }
+		/* vn flush */
+	decr_sp(10);
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury____Compare___quad_0_0_i23);
+	{ restore_hp((Integer) detstackvar(9)); }
+	{ r2 = (Integer) detstackvar(8); }
+		/* vn flush */
+	{ r3 = (Integer) detstackvar(7); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(10); }
+		/* vn flush */
+	decr_sp(10);
+/*
+ * Live lvalues:
+ *	r2
+ *	r3
+ *	detstackvar(10)
+ */
+	{ localtailcall(mercury____Compare___expr_0_0,
+		LABEL(mercury____Compare___quad_0_0)); }
+END_MODULE
+
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+static void mercury__deriv_bunch_0(void)
+{
+	mercury__deriv_module();
+}
+
+#endif
+
+void mercury__deriv__init(void); /* suppress gcc warning */
+void mercury__deriv__init(void)
+{
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+	mercury__deriv_bunch_0();
+#endif
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,117 @@
+Date: Mon, 16 Oct 95 14:20 MET
+From: szeredi@iqsoft.hu (Peter Szeredi)
+
+In-reply-to: <199510060255.5816@munta.cs.mu.OZ.AU> (fjh@cs.mu.OZ.AU)
+
+> We don't have sicstus3, but we'll support it if it's not hard to do so.
+> So far, I've heard that sicstus3 doesn't support the unix/1 predicate;
+> are there any other incompatibilities?
+
+The only other "incompatibility" I noticed is that SICStus3 got character
+escape sequences, but one can switch them off.
+
+As far as I see, Mercury uses unix/1 for accessing the command line
+arguments and for emulating the system/2 built-in of NU-Prolog. The problem
+with the latter is that unix(system(A,B)) of SICStus2.1 is replaced by a
+system(A, B) call of a library module 'system' in SICStus3. I didn't
+attempt to resolve this problem, as this requires a bit of renaming:
+SICStus3 system/2 takes only atoms as first argument, and Mercury seems to
+supply strings to system/2.  Fortunately this doesn't cause any problems in
+Mercury programs, which don't happen to use io__call_system.
+
+Regarding unix(argv(Args)), replacing this by
+
+	  (prolog_flag(argv,Args)->true;unix(argv(Args))),
+
+seems to work in both SICStus 2.1 and 3.
+
+Re character escape sequences, rather than changing the sed script in msc
+for SICStus3, I simply switched the char escapes off by further expanding
+the above to:
+
+	  ( prolog_flag(argv,Args)->
+		prolog_flag(character_escapes, _, off)
+	  ; unix(argv(Args))),
+
+Below is a diff for this, which seems to do the job for the Mercury library
+itself and some simple test programs.
+
+Cheers,
+
+Peter
+------------------------------------------------------------------
+
+diff -rc mercury-0.4//library/Mmake /home1/szeredi/mercury-0.4//library/Mmake
+*** mercury-0.4//library/Mmake	Tue Oct  3 19:59:03 1995
+--- /home1/szeredi/mercury-0.4//library/Mmake	Mon Oct 16 12:29:47 1995
+***************
+*** 141,147 ****
+  	  echo "  compile(sp_builtin),				"; \
+  	  echo "  garbage_collect,				"; \
+  	  echo "  save('$@', 1),				"; \
+! 	  echo "  unix(argv(Args)),				"; \
+  	  echo "  ( Args = [CompileMode|Files] ->		"; \
+  	  echo "      (prolog_flag(compiling, _, CompileMode)->true;true),"; \
+  	  echo "      fcompile(Files)				"; \
+--- 141,149 ----
+  	  echo "  compile(sp_builtin),				"; \
+  	  echo "  garbage_collect,				"; \
+  	  echo "  save('$@', 1),				"; \
+! 	  echo "  (prolog_flag(argv,Args)->                     "; \
+! 	  echo "         prolog_flag(character_escapes, _, off) "; \
+! 	  echo "  ;unix(argv(Args))),                           "; \
+  	  echo "  ( Args = [CompileMode|Files] ->		"; \
+  	  echo "      (prolog_flag(compiling, _, CompileMode)->true;true),"; \
+  	  echo "      fcompile(Files)				"; \
+diff -rc mercury-0.4//scripts/msl.in /home1/szeredi/mercury-0.4//scripts/msl.in
+*** mercury-0.4//scripts/msl.in	Tue Oct  3 19:59:04 1995
+--- /home1/szeredi/mercury-0.4//scripts/msl.in	Mon Oct 16 11:52:52 1995
+***************
+*** 83,89 ****
+  	assert((mercury_do_save :-
+  		on_exception(Error, (
+  		  (prolog_flag(compiling, _, fastcode)->true;true),
+! 		  unix(argv(Files)), load(Files),
+  		  abolish(mercury_do_save),
+  		  garbage_collect,
+  		  save('$target', _),
+--- 83,92 ----
+  	assert((mercury_do_save :-
+  		on_exception(Error, (
+  		  (prolog_flag(compiling, _, fastcode)->true;true),
+! 		  (prolog_flag(argv,Files)->
+! 			prolog_flag(character_escapes, _, off);
+! 		   unix(argv(Files))),
+! 		  load(Files),
+  		  abolish(mercury_do_save),
+  		  garbage_collect,
+  		  save('$target', _),
+***************
+*** 98,107 ****
+  	cat > $tmp << EOF
+  	on_exception(Error, (
+  	  (prolog_flag(compiling, _, fastcode)->true;true),
+! 	  unix(argv(Files)), load(Files),
+  	  garbage_collect,
+  	  save('$target', 1),
+! 	  unix(argv(Args)), run([mc|Args])
+  	), print_message(error, Error)), halt ; halt.
+  	e
+  	e
+--- 101,114 ----
+  	cat > $tmp << EOF
+  	on_exception(Error, (
+  	  (prolog_flag(compiling, _, fastcode)->true;true),
+! 	  (prolog_flag(argv,Files)->
+! 		prolog_flag(character_escapes, _, off);
+! 	   unix(argv(Files))),
+! 	  load(Files),
+  	  garbage_collect,
+  	  save('$target', 1),
+! 	  (prolog_flag(argv,Args)->true;unix(argv(Args))),
+! 	  run([mc|Args])
+  	), print_message(error, Error)), halt ; halt.
+  	e
+  	e
+
+

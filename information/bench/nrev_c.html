@@ -1,0 +1,594 @@
+<html>
+<head>
+<title>nrev.c</title>
+</head>
+<body>
+<pre>
+/*
+** Automatically generated from `nrev.m' by the
+** Mercury compiler, version 0.5-beta.  Do not edit.
+*/
+/*
+INIT mercury__nrev__init
+ENDINIT
+*/
+
+#include "imp.h"
+
+Define_extern_entry(mercury__benchmark_1_0);
+Declare_label(mercury__benchmark_1_0_i33);
+Define_extern_entry(mercury__main_2_0);
+Declare_label(mercury__main_2_0_i3);
+Declare_label(mercury__main_2_0_i4);
+Declare_local(mercury__data_1_0_l);
+Declare_local(mercury__nreverse_2_0_l);
+Declare_label(mercury__nreverse_2_0_i5);
+Declare_label(mercury__nreverse_2_0_i7);
+Declare_label(mercury__nreverse_2_0_i1001);
+Declare_local(mercury__concatenate_3_0_l);
+Declare_label(mercury__concatenate_3_0_i4);
+Declare_label(mercury__concatenate_3_0_i5);
+Declare_label(mercury__concatenate_3_0_i1);
+
+BEGIN_MODULE(mercury__nrev_module)
+	init_entry(mercury__benchmark_1_0);
+	init_label(mercury__benchmark_1_0_i33);
+	init_entry(mercury__main_2_0);
+	init_label(mercury__main_2_0_i3);
+	init_label(mercury__main_2_0_i4);
+	init_local(mercury__data_1_0_l);
+	init_local(mercury__nreverse_2_0_l);
+	init_label(mercury__nreverse_2_0_i5);
+	init_label(mercury__nreverse_2_0_i7);
+	init_label(mercury__nreverse_2_0_i1001);
+	init_local(mercury__concatenate_3_0_l);
+	init_label(mercury__concatenate_3_0_i4);
+	init_label(mercury__concatenate_3_0_i5);
+	init_label(mercury__concatenate_3_0_i1);
+BEGIN_CODE
+
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate benchmark/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_entry(mercury__benchmark_1_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ static const Word mercury_const_3[] = {
+		30,
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_4[] = {
+		29,
+		mkword(mktag(1), mercury_const_3)
+	  };
+	  static const Word mercury_const_5[] = {
+		28,
+		mkword(mktag(1), mercury_const_4)
+	  };
+	  static const Word mercury_const_6[] = {
+		27,
+		mkword(mktag(1), mercury_const_5)
+	  };
+	  static const Word mercury_const_7[] = {
+		26,
+		mkword(mktag(1), mercury_const_6)
+	  };
+	  static const Word mercury_const_8[] = {
+		25,
+		mkword(mktag(1), mercury_const_7)
+	  };
+	  static const Word mercury_const_9[] = {
+		24,
+		mkword(mktag(1), mercury_const_8)
+	  };
+	  static const Word mercury_const_10[] = {
+		23,
+		mkword(mktag(1), mercury_const_9)
+	  };
+	  static const Word mercury_const_11[] = {
+		22,
+		mkword(mktag(1), mercury_const_10)
+	  };
+	  static const Word mercury_const_12[] = {
+		21,
+		mkword(mktag(1), mercury_const_11)
+	  };
+	  static const Word mercury_const_13[] = {
+		20,
+		mkword(mktag(1), mercury_const_12)
+	  };
+	  static const Word mercury_const_14[] = {
+		19,
+		mkword(mktag(1), mercury_const_13)
+	  };
+	  static const Word mercury_const_15[] = {
+		18,
+		mkword(mktag(1), mercury_const_14)
+	  };
+	  static const Word mercury_const_16[] = {
+		17,
+		mkword(mktag(1), mercury_const_15)
+	  };
+	  static const Word mercury_const_17[] = {
+		16,
+		mkword(mktag(1), mercury_const_16)
+	  };
+	  static const Word mercury_const_18[] = {
+		15,
+		mkword(mktag(1), mercury_const_17)
+	  };
+	  static const Word mercury_const_19[] = {
+		14,
+		mkword(mktag(1), mercury_const_18)
+	  };
+	  static const Word mercury_const_20[] = {
+		13,
+		mkword(mktag(1), mercury_const_19)
+	  };
+	  static const Word mercury_const_21[] = {
+		12,
+		mkword(mktag(1), mercury_const_20)
+	  };
+	  static const Word mercury_const_22[] = {
+		11,
+		mkword(mktag(1), mercury_const_21)
+	  };
+	  static const Word mercury_const_23[] = {
+		10,
+		mkword(mktag(1), mercury_const_22)
+	  };
+	  static const Word mercury_const_24[] = {
+		9,
+		mkword(mktag(1), mercury_const_23)
+	  };
+	  static const Word mercury_const_25[] = {
+		8,
+		mkword(mktag(1), mercury_const_24)
+	  };
+	  static const Word mercury_const_26[] = {
+		7,
+		mkword(mktag(1), mercury_const_25)
+	  };
+	  static const Word mercury_const_27[] = {
+		6,
+		mkword(mktag(1), mercury_const_26)
+	  };
+	  static const Word mercury_const_28[] = {
+		5,
+		mkword(mktag(1), mercury_const_27)
+	  };
+	  static const Word mercury_const_29[] = {
+		4,
+		mkword(mktag(1), mercury_const_28)
+	  };
+	  static const Word mercury_const_30[] = {
+		3,
+		mkword(mktag(1), mercury_const_29)
+	  };
+	  static const Word mercury_const_31[] = {
+		2,
+		mkword(mktag(1), mercury_const_30)
+	  };
+	  static const Word mercury_const_32[] = {
+		1,
+		mkword(mktag(1), mercury_const_31)
+	  };
+	  r1 = mkword(mktag(1), mercury_const_32); }
+		/* Assigning from Data */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__nreverse_2_0_l,
+		LABEL(mercury__benchmark_1_0_i33),
+		LABEL(mercury__benchmark_1_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r2	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__benchmark_1_0_i33);
+	update_prof_current_proc(LABEL(mercury__benchmark_1_0));
+		/* Continuation label */
+	{ r1 = (Integer) r2; }
+		/* Assigning from HeadVar__1 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate main/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+DCG_0	 ->	stackvar(1)
+ */
+Define_entry(mercury__main_2_0);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	incr_sp(2);
+		/* late setup */
+	{ detstackvar(2) = (Integer) succip; }
+		/* late save */
+	{ detstackvar(1) = (Integer) r1; }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__benchmark_1_0,
+		LABEL(mercury__main_2_0_i3),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r1	num(7)
+ *	detstackvar(1)	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i3);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) detstackvar(1); }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ Declare_entry(mercury__print_list_3_0);
+	  call(ENTRY(mercury__print_list_3_0),
+		LABEL(mercury__main_2_0_i4),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i4);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) r3; }
+		/* Assigning from HeadVar__2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(2); }
+		/* restore the success ip */
+	decr_sp(2);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate data/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__data_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+/* Start of procedure epilogue */
+	{ static const Word mercury_const_3[] = {
+		30,
+		(Integer) mkword(mktag(0), mkbody(0))
+	  };
+	  static const Word mercury_const_4[] = {
+		29,
+		mkword(mktag(1), mercury_const_3)
+	  };
+	  static const Word mercury_const_5[] = {
+		28,
+		mkword(mktag(1), mercury_const_4)
+	  };
+	  static const Word mercury_const_6[] = {
+		27,
+		mkword(mktag(1), mercury_const_5)
+	  };
+	  static const Word mercury_const_7[] = {
+		26,
+		mkword(mktag(1), mercury_const_6)
+	  };
+	  static const Word mercury_const_8[] = {
+		25,
+		mkword(mktag(1), mercury_const_7)
+	  };
+	  static const Word mercury_const_9[] = {
+		24,
+		mkword(mktag(1), mercury_const_8)
+	  };
+	  static const Word mercury_const_10[] = {
+		23,
+		mkword(mktag(1), mercury_const_9)
+	  };
+	  static const Word mercury_const_11[] = {
+		22,
+		mkword(mktag(1), mercury_const_10)
+	  };
+	  static const Word mercury_const_12[] = {
+		21,
+		mkword(mktag(1), mercury_const_11)
+	  };
+	  static const Word mercury_const_13[] = {
+		20,
+		mkword(mktag(1), mercury_const_12)
+	  };
+	  static const Word mercury_const_14[] = {
+		19,
+		mkword(mktag(1), mercury_const_13)
+	  };
+	  static const Word mercury_const_15[] = {
+		18,
+		mkword(mktag(1), mercury_const_14)
+	  };
+	  static const Word mercury_const_16[] = {
+		17,
+		mkword(mktag(1), mercury_const_15)
+	  };
+	  static const Word mercury_const_17[] = {
+		16,
+		mkword(mktag(1), mercury_const_16)
+	  };
+	  static const Word mercury_const_18[] = {
+		15,
+		mkword(mktag(1), mercury_const_17)
+	  };
+	  static const Word mercury_const_19[] = {
+		14,
+		mkword(mktag(1), mercury_const_18)
+	  };
+	  static const Word mercury_const_20[] = {
+		13,
+		mkword(mktag(1), mercury_const_19)
+	  };
+	  static const Word mercury_const_21[] = {
+		12,
+		mkword(mktag(1), mercury_const_20)
+	  };
+	  static const Word mercury_const_22[] = {
+		11,
+		mkword(mktag(1), mercury_const_21)
+	  };
+	  static const Word mercury_const_23[] = {
+		10,
+		mkword(mktag(1), mercury_const_22)
+	  };
+	  static const Word mercury_const_24[] = {
+		9,
+		mkword(mktag(1), mercury_const_23)
+	  };
+	  static const Word mercury_const_25[] = {
+		8,
+		mkword(mktag(1), mercury_const_24)
+	  };
+	  static const Word mercury_const_26[] = {
+		7,
+		mkword(mktag(1), mercury_const_25)
+	  };
+	  static const Word mercury_const_27[] = {
+		6,
+		mkword(mktag(1), mercury_const_26)
+	  };
+	  static const Word mercury_const_28[] = {
+		5,
+		mkword(mktag(1), mercury_const_27)
+	  };
+	  static const Word mercury_const_29[] = {
+		4,
+		mkword(mktag(1), mercury_const_28)
+	  };
+	  static const Word mercury_const_30[] = {
+		3,
+		mkword(mktag(1), mercury_const_29)
+	  };
+	  static const Word mercury_const_31[] = {
+		2,
+		mkword(mktag(1), mercury_const_30)
+	  };
+	  static const Word mercury_const_32[] = {
+		1,
+		mkword(mktag(1), mercury_const_31)
+	  };
+	  r1 = mkword(mktag(1), mercury_const_32); }
+		/* Assigning from HeadVar__1 */
+/* End of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate nreverse/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+X	 ->	stackvar(1)
+ */
+Define_local(mercury__nreverse_2_0_l);
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__nreverse_2_0_i1001); }
+		/*  (teardown redirect) */
+	incr_sp(2);
+		/* late setup after succip */
+	{ detstackvar(1) = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	detstackvar(1)
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__nreverse_2_0_l,
+		LABEL(mercury__nreverse_2_0_i5),
+		LABEL(mercury__nreverse_2_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r2	num(7)
+ *	detstackvar(1)	num(2)
+ */
+Define_label(mercury__nreverse_2_0_i5);
+	update_prof_current_proc(LABEL(mercury__nreverse_2_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r2; }
+		/* Assigning from L1 */
+	{ tag_incr_hp(r2, mktag(1), 2); }
+		/* Allocating heap for variable number 7 */
+	{ field(mktag(1), (Integer) r2, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r2, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from  */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	detstackvar(2)
+ */
+	{ localcall(mercury__concatenate_3_0_l,
+		LABEL(mercury__nreverse_2_0_i7),
+		LABEL(mercury__nreverse_2_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(2)	succip
+ *	r3	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__nreverse_2_0_i7);
+	update_prof_current_proc(LABEL(mercury__nreverse_2_0_l));
+		/* Continuation label */
+	{ r2 = (Integer) r3; }
+		/* Assigning from HeadVar__2 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(2); }
+		/* restore the success ip */
+	decr_sp(2);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__nreverse_2_0_i1001);
+		/* non-teardown parallel label */
+	{ r2 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from HeadVar__2 */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate concatenate/3 in mode 0 */
+Define_local(mercury__concatenate_3_0_l);
+		/* Procedure entry point */
+/* 
+Stack slot assignments (if any):
+X	 ->	stackvar(1)
+ */
+/* checking that HeadVar__1 has functor '[]'/0 */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__concatenate_3_0_i1); }
+		/* tag test */
+	{ r4 = (Integer) sp; }
+		/* initialize counter register */
+Define_label(mercury__concatenate_3_0_i4);
+	while (1) {
+	incr_sp(1);
+	{ detstackvar(1) = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r4
+ *	detstackvar(1)
+ */
+	{ if (((Integer) r1 != (Integer) mkword(mktag(0), mkbody(0))))
+		continue; }
+	{ r3 = (Integer) r2; }
+		/* vn flush */
+	break; } /* end while */
+Define_label(mercury__concatenate_3_0_i5);
+	while (1) {
+	{ r1 = (Integer) r3; }
+		/* shuffle lval */
+	{ tag_incr_hp(r3, mktag(1), 2); }
+		/* Allocating heap for HeadVar__3 */
+	{ field(mktag(1), (Integer) r3, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r3, 1) = (Integer) r1; }
+		/* Assigning from  */
+	decr_sp(1);
+	{ if (((Integer) sp > (Integer) r4))
+		continue; }
+		/* test on upward loop */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* exit from recursive case */
+	break; } /* end while */
+Define_label(mercury__concatenate_3_0_i1);
+		/* start of base case */
+	{ r3 = (Integer) r2; }
+		/* Assigning from HeadVar__3 */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* exit from base case */
+END_MODULE
+
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+static void mercury__nrev_bunch_0(void)
+{
+	mercury__nrev_module();
+}
+
+#endif
+
+void mercury__nrev__init(void); /* suppress gcc warning */
+void mercury__nrev__init(void)
+{
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+	mercury__nrev_bunch_0();
+#endif
+}
+</pre>
+</body>
+</html>

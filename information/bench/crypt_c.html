@@ -1,0 +1,2284 @@
+<html>
+<head>
+<title>crypt.c</title>
+</head>
+<body>
+<pre>
+/*
+** Automatically generated from `crypt.m' by the
+** Mercury compiler, version 0.5-beta.  Do not edit.
+*/
+/*
+INIT mercury__crypt__init
+ENDINIT
+*/
+
+#include "imp.h"
+
+Define_extern_entry(mercury__benchmark_1_0);
+Define_extern_entry(mercury__main_2_0);
+Declare_label(mercury__main_2_0_i3);
+Declare_label(mercury__main_2_0_i4);
+Declare_label(mercury__main_2_0_i2);
+Declare_label(mercury__main_2_0_i5);
+Declare_local(mercury__crypt_1_0_l);
+Declare_label(mercury__crypt_1_0_i1);
+Declare_label(mercury__crypt_1_0_i2);
+Declare_label(mercury__crypt_1_0_i3);
+Declare_label(mercury__crypt_1_0_i4);
+Declare_label(mercury__crypt_1_0_i8);
+Declare_label(mercury__crypt_1_0_i17);
+Declare_label(mercury__crypt_1_0_i19);
+Declare_label(mercury__crypt_1_0_i21);
+Declare_label(mercury__crypt_1_0_i23);
+Declare_label(mercury__crypt_1_0_i25);
+Declare_label(mercury__crypt_1_0_i27);
+Declare_label(mercury__crypt_1_0_i31);
+Declare_label(mercury__crypt_1_0_i38);
+Declare_label(mercury__crypt_1_0_i40);
+Declare_label(mercury__crypt_1_0_i42);
+Declare_label(mercury__crypt_1_0_i44);
+Declare_label(mercury__crypt_1_0_i54);
+Declare_label(mercury__crypt_1_0_i79);
+Declare_label(mercury__crypt_1_0_i81);
+Declare_label(mercury__crypt_1_0_i83);
+Declare_label(mercury__crypt_1_0_i85);
+Declare_label(mercury__crypt_1_0_i87);
+Declare_local(mercury__sum2_3_0_l);
+Declare_label(mercury__sum2_3_0_i3);
+Declare_local(mercury__sum2_4_0_l);
+Declare_label(mercury__sum2_4_0_i29);
+Declare_label(mercury__sum2_4_0_i21);
+Declare_label(mercury__sum2_4_0_i25);
+Declare_label(mercury__sum2_4_0_i26);
+Declare_label(mercury__sum2_4_0_i1003);
+Declare_label(mercury__sum2_4_0_i16);
+Declare_label(mercury__sum2_4_0_i17);
+Declare_label(mercury__sum2_4_0_i6);
+Declare_label(mercury__sum2_4_0_i10);
+Declare_local(mercury__mult_3_0_l);
+Declare_label(mercury__mult_3_0_i3);
+Declare_local(mercury__mult_4_0_l);
+Declare_label(mercury__mult_4_0_i6);
+Declare_label(mercury__mult_4_0_i7);
+Declare_label(mercury__mult_4_0_i1);
+Declare_local(mercury__zero_1_0_l);
+Declare_label(mercury__zero_1_0_i1000);
+Declare_label(mercury__zero_1_0_i1001);
+Declare_local(mercury__odd_1_0_l);
+Declare_label(mercury__odd_1_0_i3);
+Declare_label(mercury__odd_1_0_i1);
+Declare_local(mercury__odd_1_1_l);
+Declare_label(mercury__odd_1_1_i2);
+Declare_label(mercury__odd_1_1_i5);
+Declare_label(mercury__odd_1_1_i7);
+Declare_label(mercury__odd_1_1_i9);
+Declare_local(mercury__even_1_0_l);
+Declare_label(mercury__even_1_0_i3);
+Declare_label(mercury__even_1_0_i1);
+Declare_local(mercury__even_1_1_l);
+Declare_label(mercury__even_1_1_i2);
+Declare_label(mercury__even_1_1_i5);
+Declare_label(mercury__even_1_1_i7);
+Declare_label(mercury__even_1_1_i9);
+Declare_local(mercury__lefteven_1_0_l);
+Declare_label(mercury__lefteven_1_0_i3);
+Declare_label(mercury__lefteven_1_0_i1);
+Declare_local(mercury__lefteven_1_1_l);
+Declare_label(mercury__lefteven_1_1_i2);
+Declare_label(mercury__lefteven_1_1_i5);
+Declare_label(mercury__lefteven_1_1_i7);
+
+BEGIN_MODULE(mercury__crypt_module)
+	init_entry(mercury__benchmark_1_0);
+	init_entry(mercury__main_2_0);
+	init_label(mercury__main_2_0_i3);
+	init_label(mercury__main_2_0_i4);
+	init_label(mercury__main_2_0_i2);
+	init_label(mercury__main_2_0_i5);
+	init_local(mercury__crypt_1_0_l);
+	init_label(mercury__crypt_1_0_i1);
+	init_label(mercury__crypt_1_0_i2);
+	init_label(mercury__crypt_1_0_i3);
+	init_label(mercury__crypt_1_0_i4);
+	init_label(mercury__crypt_1_0_i8);
+	init_label(mercury__crypt_1_0_i17);
+	init_label(mercury__crypt_1_0_i19);
+	init_label(mercury__crypt_1_0_i21);
+	init_label(mercury__crypt_1_0_i23);
+	init_label(mercury__crypt_1_0_i25);
+	init_label(mercury__crypt_1_0_i27);
+	init_label(mercury__crypt_1_0_i31);
+	init_label(mercury__crypt_1_0_i38);
+	init_label(mercury__crypt_1_0_i40);
+	init_label(mercury__crypt_1_0_i42);
+	init_label(mercury__crypt_1_0_i44);
+	init_label(mercury__crypt_1_0_i54);
+	init_label(mercury__crypt_1_0_i79);
+	init_label(mercury__crypt_1_0_i81);
+	init_label(mercury__crypt_1_0_i83);
+	init_label(mercury__crypt_1_0_i85);
+	init_label(mercury__crypt_1_0_i87);
+	init_local(mercury__sum2_3_0_l);
+	init_label(mercury__sum2_3_0_i3);
+	init_local(mercury__sum2_4_0_l);
+	init_label(mercury__sum2_4_0_i29);
+	init_label(mercury__sum2_4_0_i21);
+	init_label(mercury__sum2_4_0_i25);
+	init_label(mercury__sum2_4_0_i26);
+	init_label(mercury__sum2_4_0_i1003);
+	init_label(mercury__sum2_4_0_i16);
+	init_label(mercury__sum2_4_0_i17);
+	init_label(mercury__sum2_4_0_i6);
+	init_label(mercury__sum2_4_0_i10);
+	init_local(mercury__mult_3_0_l);
+	init_label(mercury__mult_3_0_i3);
+	init_local(mercury__mult_4_0_l);
+	init_label(mercury__mult_4_0_i6);
+	init_label(mercury__mult_4_0_i7);
+	init_label(mercury__mult_4_0_i1);
+	init_local(mercury__zero_1_0_l);
+	init_label(mercury__zero_1_0_i1000);
+	init_label(mercury__zero_1_0_i1001);
+	init_local(mercury__odd_1_0_l);
+	init_label(mercury__odd_1_0_i3);
+	init_label(mercury__odd_1_0_i1);
+	init_local(mercury__odd_1_1_l);
+	init_label(mercury__odd_1_1_i2);
+	init_label(mercury__odd_1_1_i5);
+	init_label(mercury__odd_1_1_i7);
+	init_label(mercury__odd_1_1_i9);
+	init_local(mercury__even_1_0_l);
+	init_label(mercury__even_1_0_i3);
+	init_label(mercury__even_1_0_i1);
+	init_local(mercury__even_1_1_l);
+	init_label(mercury__even_1_1_i2);
+	init_label(mercury__even_1_1_i5);
+	init_label(mercury__even_1_1_i7);
+	init_label(mercury__even_1_1_i9);
+	init_local(mercury__lefteven_1_0_l);
+	init_label(mercury__lefteven_1_0_i3);
+	init_label(mercury__lefteven_1_0_i1);
+	init_local(mercury__lefteven_1_1_l);
+	init_label(mercury__lefteven_1_1_i2);
+	init_label(mercury__lefteven_1_1_i5);
+	init_label(mercury__lefteven_1_1_i7);
+BEGIN_CODE
+
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate benchmark/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_entry(mercury__benchmark_1_0);
+		/* Procedure entry point */
+	{ mkframe("benchmark/1", 1, ENTRY(do_fail)); }
+		/* Nondet stackframe */
+/* End of procedure prologue */
+	{ LVALUE_CAST(Word,maxfr) = (Integer) bt_prevfr((Integer) curfr); }
+		/* discard this frame */
+	{ LVALUE_CAST(Word,succip) = (Integer) bt_succip((Integer) curfr); }
+		/* setup PC on return from tailcall */
+	{ LVALUE_CAST(Word,curfr) = (Integer) bt_succfr((Integer) curfr); }
+		/* setup curfr on return from tailcall */
+/*
+ * Live lvalues:
+ */
+	{ localtailcall(mercury__crypt_1_0_l,
+		LABEL(mercury__benchmark_1_0)); }
+		/* branch to nondet procedure (redirected return) */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate main/2 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+DCG_0	 ->	framevar(0)
+ */
+Define_entry(mercury__main_2_0);
+		/* Procedure entry point */
+	{ mkframe("main/2", 3, LABEL(mercury__main_2_0_i2)); }
+		/* Nondet stackframe */
+	{ framevar(1) = (Integer) maxfr; }
+		/* Save maxfr */
+	{ mark_hp(framevar(2)); }
+		/* Save heap pointer */
+	{ framevar(0) = (Integer) r1; }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ */
+	{ localcall(mercury__crypt_1_0_l,
+		LABEL(mercury__main_2_0_i3),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	r1	num(7)
+ *	framevar(2)	hp
+ *	framevar(1)	maxfr
+ *	framevar(0)	num(8)
+ */
+		/* branch to nondet procedure */
+Define_label(mercury__main_2_0_i3);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) framevar(1))) = (Integer) ENTRY(do_fail); }
+		/* prune away the `else' case of the if-then-else */
+	{ r2 = (Integer) framevar(0); }
+		/* Assigning from DCG_0 */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ */
+	{ Declare_entry(mercury__print_list_3_0);
+	  call(ENTRY(mercury__print_list_3_0),
+		LABEL(mercury__main_2_0_i4),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	r3	num(8)
+ *	framevar(1)	maxfr
+ *	framevar(0)	num(8)
+ */
+		/* branch to det procedure */
+Define_label(mercury__main_2_0_i4);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+	{ r2 = (Integer) r3; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ succeed(); }
+Define_label(mercury__main_2_0_i2);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+	{ restore_hp((Integer) framevar(2)); }
+	{ r1 = string_const("no solution\n", 12); }
+		/* vn flush */
+	{ r2 = (Integer) framevar(0); }
+		/* vn flush */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) ENTRY(do_fail); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	framevar(1)
+ */
+	{ Declare_entry(mercury__io__write_string_3_0);
+	  call(ENTRY(mercury__io__write_string_3_0),
+		LABEL(mercury__main_2_0_i5),
+		LABEL(mercury__main_2_0)); }
+/*
+ * Garbage collection livevals info
+ *	r3	num(8)
+ *	framevar(1)	maxfr
+ */
+Define_label(mercury__main_2_0_i5);
+	update_prof_current_proc(LABEL(mercury__main_2_0));
+		/* Continuation label */
+	{ r2 = (Integer) r3; }
+		/* Assigning from HeadVar__2 */
+/* Start of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r2
+ */
+	{ succeed(); }
+		/* Succeed */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate crypt/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+O	 ->	framevar(0)
+G	 ->	framevar(1)
+C	 ->	framevar(2)
+Z	 ->	framevar(3)
+K	 ->	framevar(0)
+A	 ->	framevar(4)
+variable number 66	 ->	framevar(5)
+X	 ->	framevar(0)
+I	 ->	framevar(6)
+E	 ->	framevar(7)
+HeadVar__1	 ->	framevar(8)
+P	 ->	framevar(9)
+H	 ->	framevar(10)
+D	 ->	framevar(3)
+L	 ->	framevar(8)
+B	 ->	framevar(11)
+Y	 ->	framevar(9)
+J	 ->	framevar(12)
+F	 ->	framevar(13)
+N	 ->	framevar(12)
+ */
+Define_local(mercury__crypt_1_0_l);
+		/* Procedure entry point */
+	{ mkframe("crypt/1", 14, ENTRY(do_fail)); }
+		/* Nondet stackframe */
+/* End of procedure prologue */
+	{ framevar(5) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from variable number 66 */
+/*
+ * Live lvalues:
+ *	framevar(5)
+ */
+	{ localcall(mercury__odd_1_1_l,
+		LABEL(mercury__crypt_1_0_i1),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r1	num(2)
+ *	framevar(5)	num(7)
+ */
+		/* branch to nondet procedure */
+Define_label(mercury__crypt_1_0_i1);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ framevar(4) = (Integer) r1; }
+		/* Assigning from A */
+/*
+ * Live lvalues:
+ *	framevar(4)
+ *	framevar(5)
+ */
+	{ localcall(mercury__even_1_1_l,
+		LABEL(mercury__crypt_1_0_i2),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r1	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ */
+		/* branch to nondet procedure */
+Define_label(mercury__crypt_1_0_i2);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ framevar(11) = (Integer) r1; }
+		/* Assigning from B */
+/*
+ * Live lvalues:
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(11)
+ */
+	{ localcall(mercury__even_1_1_l,
+		LABEL(mercury__crypt_1_0_i3),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r1	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(11)	num(2)
+ */
+		/* branch to nondet procedure */
+Define_label(mercury__crypt_1_0_i3);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ framevar(2) = (Integer) r1; }
+		/* Assigning from C */
+/*
+ * Live lvalues:
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(11)
+ */
+	{ localcall(mercury__even_1_1_l,
+		LABEL(mercury__crypt_1_0_i4),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r1	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(11)	num(2)
+ */
+		/* branch to nondet procedure */
+Define_label(mercury__crypt_1_0_i4);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+	{ incr_hp(r4, 6); }
+	{ r3 = (Integer) mkword(mktag(1), ((Integer) r4 + 16)); }
+		/* vn flush */
+	{ r5 = (Integer) mkword(mktag(1), ((Integer) r4 + 8)); }
+		/* vn flush */
+	{ r2 = (Integer) r1; }
+		/* vn flush */
+	{ framevar(7) = (Integer) r1; }
+		/* vn flush */
+	{ r1 = (Integer) mkword(mktag(1), (Integer) r4); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r5, 1) = (Integer) r3; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 1) = (Integer) r5; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r3, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r3, 0) = (Integer) framevar(4); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r5, 0) = (Integer) framevar(11); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 0) = (Integer) framevar(2); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(7)
+ *	framevar(11)
+ */
+	{ localcall(mercury__mult_3_0_l,
+		LABEL(mercury__crypt_1_0_i8),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r3	num(7)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(7)	num(2)
+ *	framevar(11)	num(2)
+ */
+Define_label(mercury__crypt_1_0_i8);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+	{ if (((Integer) r3 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r1 = (Integer) field(mktag(1), (Integer) r3, 1); }
+		/* vn flush */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r4 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* vn flush */
+	{ if (((Integer) r4 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r5 = (Integer) field(mktag(1), (Integer) r4, 1); }
+		/* vn flush */
+	{ if (((Integer) r5 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r2 = (Integer) field(mktag(1), (Integer) r5, 0); }
+		/* vn flush */
+	{ Word temp1, temp2, temp3, temp4;
+	{ temp1 = (Integer) field(mktag(1), (Integer) r5, 1); }
+		/* vn flush */
+	{ temp2 = (Integer) field(mktag(1), (Integer) r4, 0); }
+		/* vn flush */
+	{ temp3 = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* vn flush */
+	{ temp4 = (Integer) field(mktag(1), (Integer) r3, 0); }
+		/* vn flush */
+	{ framevar(0) = (Integer) temp1; }
+		/* vn flush */
+	{ framevar(1) = (Integer) temp2; }
+		/* vn flush */
+	{ framevar(6) = (Integer) temp4; }
+		/* vn flush */
+	{ framevar(10) = (Integer) temp3; }
+		/* vn flush */
+	{ framevar(13) = (Integer) r2; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__lefteven_1_0_l,
+		LABEL(mercury__crypt_1_0_i17),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(7)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+	}
+
+Define_label(mercury__crypt_1_0_i17);
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(1); }
+		/* Assigning from G */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__odd_1_0_l,
+		LABEL(mercury__crypt_1_0_i19),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(7)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i19);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(10); }
+		/* Assigning from H */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__even_1_0_l,
+		LABEL(mercury__crypt_1_0_i21),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(7)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i21);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(6); }
+		/* Assigning from I */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__even_1_0_l,
+		LABEL(mercury__crypt_1_0_i23),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(7)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i23);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(0); }
+		/* Assigning from X */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__zero_1_0_l,
+		LABEL(mercury__crypt_1_0_i25),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i25);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+/*
+ * Live lvalues:
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__lefteven_1_1_l,
+		LABEL(mercury__crypt_1_0_i27),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r1	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to nondet procedure */
+Define_label(mercury__crypt_1_0_i27);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+	{ incr_hp(r4, 6); }
+	{ r3 = (Integer) mkword(mktag(1), ((Integer) r4 + 16)); }
+		/* vn flush */
+	{ r5 = (Integer) mkword(mktag(1), ((Integer) r4 + 8)); }
+		/* vn flush */
+	{ r2 = (Integer) r1; }
+		/* vn flush */
+	{ framevar(3) = (Integer) r1; }
+		/* vn flush */
+	{ r1 = (Integer) mkword(mktag(1), (Integer) r4); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r5, 1) = (Integer) r3; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 1) = (Integer) r5; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r3, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r3, 0) = (Integer) framevar(4); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r5, 0) = (Integer) framevar(11); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 0) = (Integer) framevar(2); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__mult_3_0_l,
+		LABEL(mercury__crypt_1_0_i31),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r3	num(7)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+Define_label(mercury__crypt_1_0_i31);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+	{ if (((Integer) r3 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r1 = (Integer) field(mktag(1), (Integer) r3, 1); }
+		/* vn flush */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r4 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* vn flush */
+	{ if (((Integer) r4 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+	{ r2 = (Integer) field(mktag(1), (Integer) r4, 0); }
+		/* vn flush */
+	{ r5 = (Integer) field(mktag(1), (Integer) r4, 1); }
+		/* vn flush */
+	{ Word temp1, temp2;
+	{ temp1 = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* vn flush */
+	{ temp2 = (Integer) field(mktag(1), (Integer) r3, 0); }
+		/* vn flush */
+	{ framevar(0) = (Integer) temp1; }
+		/* vn flush */
+	{ framevar(8) = (Integer) temp2; }
+		/* vn flush */
+	{ framevar(9) = (Integer) r5; }
+		/* vn flush */
+	{ framevar(12) = (Integer) r2; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(9)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(12)
+ *	framevar(13)
+ */
+	{ localcall(mercury__lefteven_1_0_l,
+		LABEL(mercury__crypt_1_0_i38),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(2)
+ *	framevar(9)	num(7)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(12)	num(2)
+ *	framevar(13)	num(2)
+ */
+	}
+
+Define_label(mercury__crypt_1_0_i38);
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(0); }
+		/* Assigning from K */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(9)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(12)
+ *	framevar(13)
+ */
+	{ localcall(mercury__odd_1_0_l,
+		LABEL(mercury__crypt_1_0_i40),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(2)
+ *	framevar(9)	num(7)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(12)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i40);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(8); }
+		/* Assigning from L */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(9)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(12)
+ *	framevar(13)
+ */
+	{ localcall(mercury__even_1_0_l,
+		LABEL(mercury__crypt_1_0_i42),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(2)
+ *	framevar(9)	num(7)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(12)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i42);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(9); }
+		/* Assigning from Y */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(12)
+ *	framevar(13)
+ */
+	{ localcall(mercury__zero_1_0_l,
+		LABEL(mercury__crypt_1_0_i44),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(12)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i44);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+	{ if (!((Integer) r1))
+		redo(); }
+	{ incr_hp(r4, 16); }
+	{ r3 = (Integer) mkword(mktag(1), ((Integer) r4 + 56)); }
+		/* vn flush */
+	{ r5 = (Integer) mkword(mktag(1), ((Integer) r4 + 48)); }
+		/* vn flush */
+	{ Word temp1, temp2, temp3, temp4;
+	{ temp1 = (Integer) mkword(mktag(1), ((Integer) r4 + 40)); }
+		/* vn flush */
+	{ r2 = (Integer) mkword(mktag(1), ((Integer) r4 + 32)); }
+		/* vn flush */
+	{ temp2 = (Integer) mkword(mktag(1), ((Integer) r4 + 24)); }
+		/* vn flush */
+	{ temp3 = (Integer) mkword(mktag(1), ((Integer) r4 + 16)); }
+		/* vn flush */
+	{ temp4 = (Integer) mkword(mktag(1), ((Integer) r4 + 8)); }
+		/* vn flush */
+	{ r1 = (Integer) mkword(mktag(1), (Integer) r4); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r5, 1) = (Integer) r3; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp1, 1) = (Integer) r5; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r2, 1) = (Integer) temp1; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp3, 1) = (Integer) temp2; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp4, 1) = (Integer) temp3; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 1) = (Integer) temp4; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r3, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r3, 0) = (Integer) framevar(12); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r5, 0) = (Integer) framevar(0); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp1, 0) = (Integer) framevar(8); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r2, 0) = 0; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp2, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp2, 0) = (Integer) framevar(13); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp3, 0) = (Integer) framevar(1); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp4, 0) = (Integer) framevar(10); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 0) = (Integer) framevar(6); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(12)
+ *	framevar(13)
+ */
+	{ localcall(mercury__sum2_3_0_l,
+		LABEL(mercury__crypt_1_0_i54),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	r3	num(7)
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(12)	num(2)
+ *	framevar(13)	num(2)
+ */
+	}
+
+Define_label(mercury__crypt_1_0_i54);
+		/* Continuation label */
+/* checking that variable number 23 has functor '.'/2 (inverted test) */
+	{ if (((Integer) r3 == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+		/* fail */
+/* checking that variable number 33 has functor '.'/2 (inverted test) */
+	{ if (((Integer) field(mktag(1), (Integer) r3, 1) == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+		/* fail */
+/* checking that variable number 34 has functor '.'/2 (inverted test) */
+	{ if (((Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1) == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+		/* fail */
+/* checking that variable number 35 has functor '.'/2 (inverted test) */
+	{ if (((Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1), 1) == (Integer) mkword(mktag(0), mkbody(0))))
+		redo(); }
+		/* fail */
+	{ r1 = (Integer) framevar(0); }
+		/* shuffle lval */
+	{ framevar(0) = (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 0); }
+		/* Assigning from O */
+	{ r2 = (Integer) framevar(3); }
+		/* shuffle lval */
+	{ framevar(3) = (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1), 1), 1); }
+		/* Assigning from Z */
+	{ r4 = (Integer) framevar(8); }
+		/* shuffle lval */
+	{ r5 = (Integer) framevar(5); }
+		/* Assigning from variable number 66 */
+	{ tag_incr_hp(framevar(8), mktag(1), 2); }
+		/* Allocating heap for HeadVar__1 */
+	{ field(mktag(1), (Integer) framevar(8), 0) = (Integer) framevar(4); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) framevar(8), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 0) = (Integer) framevar(11); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 0) = (Integer) framevar(2); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 0) = (Integer) r2; }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 0) = (Integer) framevar(7); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 0) = (Integer) framevar(13); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 0) = (Integer) framevar(1); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) framevar(10); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) framevar(6); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) framevar(12); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) r1; }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) r4; }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1), 1), 0); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1), 0); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) framevar(0); }
+		/* Assigning from  */
+	{ tag_incr_hp(field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), mktag(1), 2); }
+		/* Allocating heap for  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 0) = (Integer) field(mktag(1), (Integer) r3, 0); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) framevar(8), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1), 1) = (Integer) r5; }
+		/* Assigning from  */
+	{ framevar(9) = (Integer) field(mktag(1), (Integer) r3, 0); }
+		/* Assigning from P */
+	{ r6 = (Integer) framevar(12); }
+		/* shuffle lval */
+	{ framevar(12) = (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1), 0); }
+		/* Assigning from N */
+	{ r7 = (Integer) r2; }
+		/* shuffle lval */
+	{ r2 = (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) field(mktag(1), (Integer) r3, 1), 1), 1), 0); }
+		/* Assigning from M */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(9)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(12)
+ *	framevar(13)
+ */
+	{ localcall(mercury__odd_1_0_l,
+		LABEL(mercury__crypt_1_0_i79),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(7)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(7)
+ *	framevar(9)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(12)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i79);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(12); }
+		/* Assigning from N */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(0)
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(9)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__odd_1_0_l,
+		LABEL(mercury__crypt_1_0_i81),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(0)	num(2)
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(7)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(7)
+ *	framevar(9)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i81);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(0); }
+		/* Assigning from O */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(9)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__even_1_0_l,
+		LABEL(mercury__crypt_1_0_i83),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(7)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(7)
+ *	framevar(9)	num(2)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i83);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(9); }
+		/* Assigning from P */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(3)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__even_1_0_l,
+		LABEL(mercury__crypt_1_0_i85),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(3)	num(7)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(7)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i85);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+	{ r2 = (Integer) framevar(3); }
+		/* Assigning from Z */
+/*
+ * Live lvalues:
+ *	r2
+ *	framevar(1)
+ *	framevar(2)
+ *	framevar(4)
+ *	framevar(5)
+ *	framevar(6)
+ *	framevar(7)
+ *	framevar(8)
+ *	framevar(10)
+ *	framevar(11)
+ *	framevar(13)
+ */
+	{ localcall(mercury__zero_1_0_l,
+		LABEL(mercury__crypt_1_0_i87),
+		LABEL(mercury__crypt_1_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	framevar(1)	num(2)
+ *	framevar(2)	num(2)
+ *	framevar(4)	num(2)
+ *	framevar(5)	num(7)
+ *	framevar(6)	num(2)
+ *	framevar(7)	num(2)
+ *	framevar(8)	num(7)
+ *	framevar(10)	num(2)
+ *	framevar(11)	num(2)
+ *	framevar(13)	num(2)
+ */
+		/* branch to semidet procedure */
+Define_label(mercury__crypt_1_0_i87);
+	update_prof_current_proc(LABEL(mercury__crypt_1_0_l));
+		/* Continuation label */
+	{ if (!((Integer) r1))
+		redo(); }
+		/* fail */
+/* Start of procedure epilogue */
+	{ r1 = (Integer) framevar(8); }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate sum2/3 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__sum2_3_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r3 = 0; }
+		/* Assigning from variable number 7 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__sum2_4_0_l,
+		LABEL(mercury__sum2_3_0_i3),
+		LABEL(mercury__sum2_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r4	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__sum2_3_0_i3);
+	update_prof_current_proc(LABEL(mercury__sum2_3_0_l));
+		/* Continuation label */
+	{ r3 = (Integer) r4; }
+		/* Assigning from HeadVar__3 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate sum2/4 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+B	 ->	stackvar(1)
+AL	 ->	stackvar(1)
+HeadVar__2	 ->	stackvar(2)
+Carry	 ->	stackvar(3)
+C	 ->	stackvar(1)
+HeadVar__1	 ->	stackvar(2)
+BL	 ->	stackvar(4)
+C	 ->	stackvar(1)
+Carry	 ->	stackvar(1)
+C	 ->	stackvar(1)
+Carry	 ->	stackvar(3)
+A	 ->	stackvar(4)
+ */
+Define_local(mercury__sum2_4_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+/* checking that HeadVar__2 has functor '[]'/0 */
+	{ detstackvar(0) = (Integer) succip; }
+		/* late save */
+	{ if (((Integer) r2 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__sum2_4_0_i1003); }
+		/* jump to setup */
+/* checking that HeadVar__1 has functor '[]'/0 */
+	incr_sp(5);
+		/* late setup after succip */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__sum2_4_0_i21); }
+		/* tag test */
+	{ r4 = (((Integer) field(mktag(1), (Integer) r1, 0) + (Integer) field(mktag(1), (Integer) r2, 0)) + (Integer) r3); }
+		/* vn flush */
+	{ r2 = (Integer) field(mktag(1), (Integer) r2, 1); }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* vn flush */
+	{ r3 = ((Integer) r4 / 10); }
+		/* vn flush */
+	{ detstackvar(1) = ((Integer) r4 % 10); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__sum2_4_0_l,
+		LABEL(mercury__sum2_4_0_i29),
+		LABEL(mercury__sum2_4_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r4	num(7)
+ *	detstackvar(1)	num(2)
+ */
+Define_label(mercury__sum2_4_0_i29);
+	update_prof_current_proc(LABEL(mercury__sum2_4_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r4; }
+		/* shuffle lval */
+	{ tag_incr_hp(r4, mktag(1), 2); }
+		/* Allocating heap for HeadVar__4 */
+	{ field(mktag(1), (Integer) r4, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__sum2_4_0_i21);
+		/* next case */
+	{ r1 = (Integer) field(mktag(1), (Integer) r2, 1); }
+		/* Assigning from BL */
+	{ r4 = (Integer) field(mktag(1), (Integer) r2, 0); }
+		/* Assigning from B */
+/* checking that Carry has functor 0 */
+	{ if (((Integer) r3 == 0))
+		GOTO_LABEL(mercury__sum2_4_0_i25); }
+		/* branch over failure */
+	{ r2 = (Integer) r1; }
+		/* vn flush */
+	{ r5 = ((Integer) r4 + (Integer) r3); }
+		/* vn flush */
+	{ r1 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ r3 = ((Integer) r5 / 10); }
+		/* vn flush */
+	{ detstackvar(1) = ((Integer) r5 % 10); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__sum2_4_0_l,
+		LABEL(mercury__sum2_4_0_i26),
+		LABEL(mercury__sum2_4_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r4	num(7)
+ *	detstackvar(1)	num(2)
+ */
+Define_label(mercury__sum2_4_0_i25);
+	{ r4 = (Integer) r2; }
+		/* Assigning from HeadVar__4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__sum2_4_0_i26);
+	update_prof_current_proc(LABEL(mercury__sum2_4_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r4; }
+		/* shuffle lval */
+	{ tag_incr_hp(r4, mktag(1), 2); }
+		/* Allocating heap for HeadVar__4 */
+	{ field(mktag(1), (Integer) r4, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__sum2_4_0_i1003);
+		/* label for late setup code */
+	incr_sp(5);
+		/* late setup after succip */
+/* checking that HeadVar__1 has functor '[]'/0 */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__sum2_4_0_i6); }
+		/* tag test */
+	{ r2 = (Integer) field(mktag(1), (Integer) r1, 0); }
+		/* Assigning from A */
+	{ r4 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* Assigning from AL */
+/* checking that Carry has functor 0 */
+	{ if (((Integer) r3 == 0))
+		GOTO_LABEL(mercury__sum2_4_0_i16); }
+		/* branch over failure */
+	{ r5 = ((Integer) r2 + (Integer) r3); }
+		/* vn flush */
+	{ r1 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ r2 = (Integer) r4; }
+		/* vn flush */
+	{ r3 = ((Integer) r5 / 10); }
+		/* vn flush */
+	{ detstackvar(1) = ((Integer) r5 % 10); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	detstackvar(1)
+ *	detstackvar(5)
+ */
+	{ localcall(mercury__sum2_4_0_l,
+		LABEL(mercury__sum2_4_0_i17),
+		LABEL(mercury__sum2_4_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(5)	succip
+ *	r4	num(7)
+ *	detstackvar(1)	num(2)
+ */
+Define_label(mercury__sum2_4_0_i16);
+	{ r4 = (Integer) r1; }
+		/* Assigning from HeadVar__4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__sum2_4_0_i17);
+	update_prof_current_proc(LABEL(mercury__sum2_4_0_l));
+		/* Continuation label */
+	{ r1 = (Integer) r4; }
+		/* shuffle lval */
+	{ tag_incr_hp(r4, mktag(1), 2); }
+		/* Allocating heap for HeadVar__4 */
+	{ field(mktag(1), (Integer) r4, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) r1; }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* shortcircuit */
+Define_label(mercury__sum2_4_0_i6);
+		/* next case */
+/* checking that Carry has functor 0 */
+	{ if (((Integer) r3 == 0))
+		GOTO_LABEL(mercury__sum2_4_0_i10); }
+		/* branch over failure */
+	{ tag_incr_hp(r4, mktag(1), 2); }
+		/* Allocating heap for HeadVar__4 */
+	{ field(mktag(1), (Integer) r4, 0) = (Integer) r3; }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from  */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__sum2_4_0_i10);
+	{ r4 = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* Assigning from HeadVar__4 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(5); }
+		/* restore the success ip */
+	decr_sp(5);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* shortcircuit */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate mult/3 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__mult_3_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ r3 = 0; }
+		/* Assigning from variable number 7 */
+	incr_sp(1);
+		/* late setup */
+	{ detstackvar(1) = (Integer) succip; }
+		/* late save */
+	{ localcall(mercury__mult_4_0_l,
+		LABEL(mercury__mult_3_0_i3),
+		LABEL(mercury__mult_3_0_l)); }
+/*
+ * Garbage collection livevals info
+ *	detstackvar(1)	succip
+ *	r4	num(7)
+ */
+		/* branch to det procedure */
+Define_label(mercury__mult_3_0_i3);
+	update_prof_current_proc(LABEL(mercury__mult_3_0_l));
+		/* Continuation label */
+	{ r3 = (Integer) r4; }
+		/* Assigning from HeadVar__3 */
+	{ LVALUE_CAST(Word,succip) = (Integer) detstackvar(1); }
+		/* restore the success ip */
+	decr_sp(1);
+		/* Deallocate stack frame */
+/*
+ * Live lvalues:
+ *	r3
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate mult/4 in mode 0 */
+Define_local(mercury__mult_4_0_l);
+		/* Procedure entry point */
+/* 
+Stack slot assignments (if any):
+B	 ->	stackvar(1)
+ */
+/* checking that HeadVar__1 has functor '[]'/0 */
+	{ if (((Integer) r1 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__mult_4_0_i1); }
+		/* tag test */
+	{ r6 = (Integer) sp; }
+		/* initialize counter register */
+Define_label(mercury__mult_4_0_i6);
+	incr_sp(1);
+/* src_access(vn_field(1, 0, 1)), src_access(vn_field(1, 0, 1)),  */
+	{ r5 = (Integer) r1; }
+		/* vn flush */
+	{ r1 = (Integer) field(mktag(1), (Integer) r1, 1); }
+		/* vn flush */
+	{ Word temp1, temp2, temp3, temp4;
+	{ temp1 = (Integer) field(mktag(1), (Integer) r5, 0); }
+		/* vn flush */
+	{ temp2 = (((Integer) temp1 * (Integer) r2) + (Integer) r3); }
+		/* vn flush */
+	{ detstackvar(1) = ((Integer) temp2 % 10); }
+		/* vn flush */
+	{ r3 = ((Integer) temp2 / 10); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ *	r2
+ *	r3
+ *	r6
+ *	detstackvar(1)
+ */
+	{ if (((Integer) r1 != (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__mult_4_0_i6); }
+	{ incr_hp(temp4, 4); }
+	{ temp3 = (Integer) mkword(mktag(1), ((Integer) temp4 + 8)); }
+		/* vn flush */
+	{ r4 = (Integer) mkword(mktag(1), (Integer) temp4); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp3, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) temp3, 0) = ((Integer) r3 / 10); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) temp3; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r4, 0) = ((Integer) r3 % 10); }
+		/* vn flush */
+	}
+
+Define_label(mercury__mult_4_0_i7);
+	while (1) {
+	{ r1 = (Integer) r4; }
+		/* shuffle lval */
+	{ tag_incr_hp(r4, mktag(1), 2); }
+		/* Allocating heap for HeadVar__4 */
+	{ field(mktag(1), (Integer) r4, 0) = (Integer) detstackvar(1); }
+		/* Assigning from  */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) r1; }
+		/* Assigning from  */
+	decr_sp(1);
+	{ if (((Integer) sp > (Integer) r6))
+		continue; }
+		/* test on upward loop */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+		/* exit from recursive case */
+	break; } /* end while */
+Define_label(mercury__mult_4_0_i1);
+	{ incr_hp(r2, 4); }
+	{ r1 = (Integer) mkword(mktag(1), ((Integer) r2 + 8)); }
+		/* vn flush */
+	{ r4 = (Integer) mkword(mktag(1), (Integer) r2); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r4, 1) = (Integer) r1; }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 1) = (Integer) mkword(mktag(0), mkbody(0)); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r1, 0) = ((Integer) r3 / 10); }
+		/* vn flush */
+	{ field(mktag(1), (Integer) r4, 0) = ((Integer) r3 % 10); }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r4
+ */
+	{ proceed(); }
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate zero/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__zero_1_0_l);
+	{ if (((Integer) r2 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__zero_1_0_i1001); }
+		/*  (teardown redirect) */
+	{ r3 = (Integer) field(mktag(1), (Integer) r2, 0); }
+		/* vn flush */
+	{ if (((Integer) r3 == 0))
+		GOTO_LABEL(mercury__zero_1_0_i1000); }
+		/*  (teardown redirect) */
+	{ r1 = FALSE; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+Define_label(mercury__zero_1_0_i1000);
+		/* non-teardown parallel label */
+	while (1) {
+	{ r2 = (Integer) field(mktag(1), (Integer) r2, 1); }
+		/* vn flush */
+	{ if (((Integer) r2 == (Integer) mkword(mktag(0), mkbody(0))))
+		GOTO_LABEL(mercury__zero_1_0_i1001); }
+		/*  (teardown redirect) */
+	{ r3 = (Integer) field(mktag(1), (Integer) r2, 0); }
+		/* vn flush */
+	{ if (((Integer) r3 == 0))
+		continue; }
+		/*  (teardown redirect) */
+	{ r1 = FALSE; }
+		/* vn flush */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+	break; } /* end while */
+Define_label(mercury__zero_1_0_i1001);
+		/* non-teardown parallel label */
+	{ r1 = TRUE; }
+		/* Succeed */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate odd/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__odd_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ if (((unsigned)(((Integer) r2 - 1)) > 8))
+		GOTO_LABEL(mercury__odd_1_0_i1); }
+		/* Test for failure */
+	{ COMPUTED_GOTO(((Integer) r2 - 1),
+		LABEL(mercury__odd_1_0_i3) AND
+		LABEL(mercury__odd_1_0_i1) AND
+		LABEL(mercury__odd_1_0_i3) AND
+		LABEL(mercury__odd_1_0_i1) AND
+		LABEL(mercury__odd_1_0_i3) AND
+		LABEL(mercury__odd_1_0_i1) AND
+		LABEL(mercury__odd_1_0_i3) AND
+		LABEL(mercury__odd_1_0_i1) AND
+		LABEL(mercury__odd_1_0_i3)); }
+		/* switch (using dense jump table) (some shortcircuits) */
+Define_label(mercury__odd_1_0_i3);
+		/* End of dense switch */
+/* Start of procedure epilogue */
+	{ r1 = TRUE; }
+		/* Succeed */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__odd_1_0_i1);
+		/* End of failure continuation */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate odd/1 in mode 1 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__odd_1_1_l);
+		/* Procedure entry point */
+	{ mkframe("odd/1", 2, LABEL(mercury__odd_1_1_i2)); }
+		/* Nondet stackframe */
+	{ mark_hp(framevar(1)); }
+		/* Save heap pointer */
+	{ r1 = 1; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__odd_1_1_i2);
+	update_prof_current_proc(LABEL(mercury__odd_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__odd_1_1_i5); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 3; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__odd_1_1_i5);
+	update_prof_current_proc(LABEL(mercury__odd_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__odd_1_1_i7); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 5; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__odd_1_1_i7);
+	update_prof_current_proc(LABEL(mercury__odd_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__odd_1_1_i9); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 7; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__odd_1_1_i9);
+	update_prof_current_proc(LABEL(mercury__odd_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) ENTRY(do_fail); }
+		/* restore failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 9; }
+		/* Assigning from HeadVar__1 */
+/* Start of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate even/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__even_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ if (((unsigned)((Integer) r2) > 8))
+		GOTO_LABEL(mercury__even_1_0_i1); }
+		/* Test for failure */
+	{ COMPUTED_GOTO((Integer) r2,
+		LABEL(mercury__even_1_0_i3) AND
+		LABEL(mercury__even_1_0_i1) AND
+		LABEL(mercury__even_1_0_i3) AND
+		LABEL(mercury__even_1_0_i1) AND
+		LABEL(mercury__even_1_0_i3) AND
+		LABEL(mercury__even_1_0_i1) AND
+		LABEL(mercury__even_1_0_i3) AND
+		LABEL(mercury__even_1_0_i1) AND
+		LABEL(mercury__even_1_0_i3)); }
+		/* switch (using dense jump table) (some shortcircuits) */
+Define_label(mercury__even_1_0_i3);
+		/* End of dense switch */
+/* Start of procedure epilogue */
+	{ r1 = TRUE; }
+		/* Succeed */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__even_1_0_i1);
+		/* End of failure continuation */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate even/1 in mode 1 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__even_1_1_l);
+		/* Procedure entry point */
+	{ mkframe("even/1", 2, LABEL(mercury__even_1_1_i2)); }
+		/* Nondet stackframe */
+	{ mark_hp(framevar(1)); }
+		/* Save heap pointer */
+	{ r1 = 0; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__even_1_1_i2);
+	update_prof_current_proc(LABEL(mercury__even_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__even_1_1_i5); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 2; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__even_1_1_i5);
+	update_prof_current_proc(LABEL(mercury__even_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__even_1_1_i7); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 4; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__even_1_1_i7);
+	update_prof_current_proc(LABEL(mercury__even_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__even_1_1_i9); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 6; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__even_1_1_i9);
+	update_prof_current_proc(LABEL(mercury__even_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) ENTRY(do_fail); }
+		/* restore failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 8; }
+		/* Assigning from HeadVar__1 */
+/* Start of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate lefteven/1 in mode 0 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__lefteven_1_0_l);
+		/* Procedure entry point */
+/* End of procedure prologue */
+	{ if (((unsigned)(((Integer) r2 - 2)) > 6))
+		GOTO_LABEL(mercury__lefteven_1_0_i1); }
+		/* Test for failure */
+	{ COMPUTED_GOTO(((Integer) r2 - 2),
+		LABEL(mercury__lefteven_1_0_i3) AND
+		LABEL(mercury__lefteven_1_0_i1) AND
+		LABEL(mercury__lefteven_1_0_i3) AND
+		LABEL(mercury__lefteven_1_0_i1) AND
+		LABEL(mercury__lefteven_1_0_i3) AND
+		LABEL(mercury__lefteven_1_0_i1) AND
+		LABEL(mercury__lefteven_1_0_i3)); }
+		/* switch (using dense jump table) (some shortcircuits) */
+Define_label(mercury__lefteven_1_0_i3);
+		/* End of dense switch */
+/* Start of procedure epilogue */
+	{ r1 = TRUE; }
+		/* Succeed */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+Define_label(mercury__lefteven_1_0_i1);
+		/* End of failure continuation */
+	{ r1 = FALSE; }
+		/* Fail */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ proceed(); }
+		/* Return from procedure call */
+
+/*-------------------------------------------------------------------------*/
+/* code for predicate lefteven/1 in mode 1 */
+/* Start of procedure prologue */
+/* 
+Stack slot assignments (if any):
+ */
+Define_local(mercury__lefteven_1_1_l);
+		/* Procedure entry point */
+	{ mkframe("lefteven/1", 2, LABEL(mercury__lefteven_1_1_i2)); }
+		/* Nondet stackframe */
+	{ mark_hp(framevar(1)); }
+		/* Save heap pointer */
+	{ r1 = 2; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__lefteven_1_1_i2);
+	update_prof_current_proc(LABEL(mercury__lefteven_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__lefteven_1_1_i5); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 4; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__lefteven_1_1_i5);
+	update_prof_current_proc(LABEL(mercury__lefteven_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) LABEL(mercury__lefteven_1_1_i7); }
+		/* modify failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 6; }
+		/* Assigning from HeadVar__1 */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+Define_label(mercury__lefteven_1_1_i7);
+	update_prof_current_proc(LABEL(mercury__lefteven_1_1_l));
+		/* Part of the failure continuation */
+	{ LVALUE_CAST(Word,bt_redoip((Integer) maxfr)) = (Integer) ENTRY(do_fail); }
+		/* restore failure cont */
+	{ restore_hp((Integer) framevar(1)); }
+		/* Reset heap pointer */
+	{ r1 = 8; }
+		/* Assigning from HeadVar__1 */
+/* Start of procedure epilogue */
+/*
+ * Live lvalues:
+ *	r1
+ */
+	{ succeed(); }
+		/* Succeed */
+END_MODULE
+
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+static void mercury__crypt_bunch_0(void)
+{
+	mercury__crypt_module();
+}
+
+#endif
+
+void mercury__crypt__init(void); /* suppress gcc warning */
+void mercury__crypt__init(void)
+{
+#if (defined(USE_GCC_NONLOCAL_GOTOS) &amp;&amp; !defined(USE_ASM_LABELS)) \
+	|| defined(PROFILE_CALLS) || defined(DEBUG_GOTOS) \
+	|| defined(DEBUG_LABELS) || !defined(SPEED)
+
+	mercury__crypt_bunch_0();
+#endif
+}
+</pre>
+</body>
+</html>

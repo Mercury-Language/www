@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>harness.cpp</title>
+</head>
+<body>
+<pre>
+% A generic benchmark harness
+
+#ifdef	WAMCC
+:- main.
+#endif
+
+#ifdef	AQUARIUS_ANALYZE
+:- option(analyze).
+#endif
+
+#ifdef	QUINTUS
+runtime_entry(_) :-
+	bench(REPEAT_COUNT).
+#else
+% NB Aquarius requires that main/0 be the first predicate in the file
+main :-
+	bench(REPEAT_COUNT).
+
+main(_) :- main.
+#endif
+
+bench(Count) :-
+	cputime(T1),
+	dobench(Count),
+	cputime(T2),
+	report(Count, T1, T2).
+
+dobench(Count) :-
+	data(Data),
+#ifndef	PRINT_RESULT
+	repeat(Count),
+#else
+	write(Count),
+	nl,
+#endif
+#ifdef	PRINT_RESULT
+	benchmark(Data, Result),
+	printresult(Result),
+#else
+	benchmark(Data, _Result),
+#endif
+	fail.
+dobench(_).
+
+#ifdef	PRINT_RESULT
+printresult(Result) :-
+	write(Result),
+	nl,
+	!.
+#endif
+
+repeat(_N).
+repeat(N) :-
+	N > 1,
+	N1 is N - 1,
+	repeat(N1).
+
+#ifdef	WAMCC
+
+report(Count, T1, T2) :-
+	RawTime is T2 - T1,
+	RTime is RawTime // 1000,
+	RTimeMod is RawTime mod 1000,
+	system_name(SYSTEM, Sysname),
+	variant_name(SYSTEM, VARIANT, Varname),
+	write(Sysname), write(' '),
+	write(Varname), write(' '),
+	write(Count), write(' '),
+	write(RTime), write('.'), format("%03d", [RTimeMod]),
+	write(u), write(' ').
+
+#else
+
+report(Count, T1, T2) :-
+	RawTime is T2 - T1,
+	RTime is RawTime / 1000,
+	system_name(SYSTEM, Sysname),
+	variant_name(SYSTEM, VARIANT, Varname),
+	write(Sysname), write(' '),
+	write(Varname), write(' '),
+	write(Count), write(' '),
+	write(RTime), write(u), write(' ').
+
+#endif
+
+% get runtime so far in milliseconds.
+
+#if	defined(NUPROLOG)
+
+cputime(T) :-
+	statistics(L),
+	member(utime = [T, _], L),
+	!.
+
+#elif	defined(SICSTUS) || defined(AQUARIUS) || defined(QUINTUS)
+
+cputime(T) :-
+	statistics(runtime, [T, _]).
+
+#elif	defined(SWIPROLOG)
+
+cputime(T) :-
+	statistics(cputime, T1),
+	T is T1 * 1000.
+
+#elif	defined(WAMCC)
+
+% cputime/1 is a builtin
+
+#else
+#error Must define NUPROLOG, SICSTUS, AQUARIUS, SWIPROLOG, QUINTUS or WAMCC
+#endif
+
+system_name(0, mercury).
+system_name(1, nuprolog).
+system_name(2, sicstus).
+system_name(3, aquarius).
+system_name(4, swiprolog).
+system_name(5, quintus).
+system_name(6, wamcc).
+
+variant_name(0, 0, asm_fast).
+variant_name(0, 1, fast).
+variant_name(0, 2, reg).
+variant_name(0, 3, jump).
+variant_name(0, 4, none).
+variant_name(0, 5, asm_fast_gc).
+variant_name(0, 6, fast_gc).
+variant_name(0, 7, reg_gc).
+variant_name(0, 8, jump_gc).
+variant_name(0, 9, none_gc).
+variant_name(1, 1, seq).
+variant_name(1, 2, co).
+variant_name(2, 1, compseq).
+variant_name(2, 2, compco).
+variant_name(2, 3, fastseq).
+variant_name(2, 4, fastco).
+variant_name(3, 1, none).
+variant_name(3, 2, anal).
+variant_name(3, 3, decl).
+variant_name(3, 4, both).
+variant_name(4, 1, seq).
+variant_name(5, 1, seq).
+variant_name(6, 1, seq).
+
+#ifdef	WAMCC
+:- main(_), halt(0).
+#endif
+</pre>
+</body>
+</html>

@@ -1,0 +1,63 @@
+#-----------------------------------------------------------------------------#
+# Copyright (C) 1995 University of Melbourne.
+# This file may only be copied under the terms of the GNU General
+# Public License - see the file COPYING in the Mercury distribution.
+#-----------------------------------------------------------------------------#
+
+PHP3=/usr/lib/cgi-bin/php3
+
+#-----------------------------------------------------------------------------#
+
+vpath %.inc ./include
+vpath %.inc $(ROOT)/include
+
+$(HTML): %.html: %.php3 %.inc menubar.inc template.inc
+
+#-----------------------------------------------------------------------------#
+
+
+.PHONY: all
+all: subdirs $(HTML)
+
+.PHONY: install
+install: $(HTML)
+	[ -d $(INSTALL_WEBDIR) ] || mkdir -p $(INSTALL_WEBDIR)
+	cp -a $(HTML) $(INSTALL_WEBDIR)/
+ifdef DIRS
+	for dir in $(DIRS);					\
+	do				        		\
+		(export INSTALL_WEBDIR=$(INSTALL_WEBDIR)/$$dir;	\
+		cd $$dir; $(MAKE) install);			\
+	done
+endif
+
+.PHONY: clean
+clean:
+	-rm -f $(HTML)
+ifdef DIRS
+	for dir in $(DIRS);			\
+	do				        \
+		(cd $$dir; $(MAKE) clean);	\
+	done
+endif
+
+.PHONY: touch
+touch:
+	touch *.php3
+
+.PHONY: subdirs
+subdirs:
+ifdef DIRS
+	for dir in $(DIRS); 		\
+	do 				\
+		(cd $$dir; $(MAKE)); 	\
+	done
+endif
+
+#-----------------------------------------------------------------------------#
+
+%.html: %.php3
+	$(PHP3) $< | sed 's/Content-type:.*//g'> $@
+
+#-----------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------#

@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>qsort.cpp</title>
+</head>
+<body>
+<pre>
+%   qsort
+%
+%   David H. D. Warren
+%
+%   quicksort a list of 50 integers
+
+#ifndef	MERCURY
+
+#include "harness.cpp"
+
+benchmark(Data, Out) :-
+	qsort(Data, Out, []).
+
+#ifdef AQUARIUS_DECLS
+
+#endif
+
+#else
+
+:- module qsort.
+
+:- interface.
+
+:- import_module list, int, printlist.
+
+:- pred benchmark(list(int)).
+:- mode benchmark(out) is det.
+
+:- pred main(io__state, io__state).
+:- mode main(di, uo) is det.
+
+:- implementation.
+
+benchmark(Out) :-
+	data(Data),
+	qsort(Data, Out, []).
+
+main -->
+	{ benchmark(Out) },
+	print_list(Out).
+
+:- pred data(list(int)).
+:- mode data(out) is det.
+
+#ifdef	POLYMORPHISMPLUS
+:- pred qsort(list(T), list(T), list(T)).
+:- mode qsort(in, out, in) is det.
+
+:- pred partition(list(T), T, list(T), list(T)).
+:- mode partition(in, in, out, out) is det.
+#else
+:- pred qsort(list(int), list(int), list(int)).
+:- mode qsort(in, out, in) is det.
+
+:- pred partition(list(int), int, list(int), list(int)).
+:- mode partition(in, in, out, out) is det.
+#endif
+
+#endif
+
+#ifdef	AQUARIUS_DECLS
+:- mode((qsort(D, R, I) :-
+		ground(D),
+		rderef(D),
+		list(D),
+		ground(I),
+		rderef(I),
+		list(I)
+	)).
+:- mode((partition(L, P, Lo, Hi) :-
+		ground(L),
+		rderef(L),
+		list(L),
+		ground(P),
+		rderef(P),
+		integer(P)
+	)).
+#endif
+
+data([27,74,17,33,94,18,46,83,65,2,32,53,28,85,99,47,28,82,6,11,55,29,39,81,
+90,37,10,0,66,51,7,21,85,27,31,63,75,4,95,99,11,28,61,74,18, 92,40,53,59,8]).
+
+#ifdef	NUPROLOG_DECLS
+:- qsort(D, R, I) when D.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block qsort(-, ?, ?).
+#endif
+
+qsort([X|L], R, R0) :-
+	partition(L, X, L1, L2),
+	qsort(L2, R1, R0),
+	qsort(L1, R, [X|R1]).
+qsort([], R, R).
+
+#ifdef	NUPROLOG_DECLS
+:- partition(L, P, Lo, Hi) when L and P.
+#endif
+
+#ifdef	SICSTUS_DECLS
+:- block partition(-, ?, ?, ?), partition(?, -, ?, ?).
+#endif
+
+#ifdef	MERCURY
+
+#ifdef	POLYMORPHISMPLUS
+
+partition([], _P, [], []).
+partition([H|T], P, Lo, Hi) :-
+	compare(Result, H, P),
+	( Result \= (>) ->
+		partition(T, P, Lo1, Hi),
+		Lo = [H|Lo1]
+	;
+		partition(T, P, Lo, Hi1),
+		Hi = [H|Hi1]
+	).
+#else
+
+partition([], _P, [], []).
+partition([H|T], P, Lo, Hi) :-
+	( H =&lt; P ->
+		partition(T, P, Lo1, Hi),
+		Lo = [H|Lo1]
+	;
+		partition(T, P, Lo, Hi1),
+		Hi = [H|Hi1]
+	).
+
+#endif
+
+#else
+
+partition([X|L],Y,[X|L1],L2) :-
+	X =&lt; Y, !,
+	partition(L,Y,L1,L2).
+partition([X|L],Y,L1,[X|L2]) :-
+	partition(L,Y,L1,L2).
+partition([],_,[],[]).
+
+#endif
+</pre>
+</body>
+</html>

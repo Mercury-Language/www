@@ -1,0 +1,20 @@
+--- old/int.int	Mon Aug 26 19:21:34 1996
++++ int.int	Mon Aug 26 19:22:18 1996
+@@ -27,8 +27,6 @@
+ :- mode int:'+'(mercury_builtin:in, mercury_builtin:uo) = mercury_builtin:in is det.
+ :- func int:'*'(int, int) = int.
+ :- mode int:'*'(mercury_builtin:in, mercury_builtin:in) = mercury_builtin:uo is det.
+-:- mode int:'*'(mercury_builtin:uo, mercury_builtin:in) = mercury_builtin:in is det.
+-:- mode int:'*'(mercury_builtin:in, mercury_builtin:uo) = mercury_builtin:in is det.
+ :- func int:'-'(int, int) = int.
+ :- mode int:'-'(mercury_builtin:in, mercury_builtin:in) = mercury_builtin:uo is det.
+ :- mode int:'-'(mercury_builtin:uo, mercury_builtin:in) = mercury_builtin:in is det.
+@@ -37,8 +35,6 @@
+ :- mode int:mod(mercury_builtin:in, mercury_builtin:in) = mercury_builtin:uo is det.
+ :- func int:'//'(int, int) = int.
+ :- mode int:'//'(mercury_builtin:in, mercury_builtin:in) = mercury_builtin:uo is det.
+-:- mode int:'//'(mercury_builtin:uo, mercury_builtin:in) = mercury_builtin:in is det.
+-:- mode int:'//'(mercury_builtin:in, mercury_builtin:uo) = mercury_builtin:in is det.
+ :- func int:'<<'(int, int) = int.
+ :- mode int:'<<'(mercury_builtin:in, mercury_builtin:in) = mercury_builtin:uo is det.
+ :- func int:'>>'(int, int) = int.
