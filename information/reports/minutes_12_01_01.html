@@ -1,0 +1,216 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Jan 12, 2001,
+from 3:20pm to 4:15pm.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	David Jeffery (dgj)
+	Mark Brown (dougl)
+	Simon Taylor (stayl)
+	Ina Cheng (inch)
+	Levi Cameron (lpcam)
+	Sam Thurairatnam (sthur)
+	Simon Mei (xcsm)
+	Julien Fischer (juliensf)
+	Tyson Dowd (trd)
+	Fergus Henderson (fjh)
+	Thomas Conway (conway)
+	David Overton (dmo)
+	Nick Nethercote (njn)
+	Adrian Pellas-Rice (apell)
+	Kostis Sagonas (kostis@csd.uu.se)
+
+1. Release
+
+	- Fergus said he didn't want to do all the work himself.
+	- Tyson suggested we use sourceforge to assign tasks.
+		- Anyone interested in helping should create an
+		  account on sourceforge.
+		- Fergus will then assign the tasks using sourceforge.
+
+	- Stuff still to be done before release:
+		- Go through release checklist.
+		- Fix a couple of outstanding bugs.
+		- Fix a few test cases which have incorrect expected
+		  output.
+
+2. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Fergus Henderson (fjh):
+		- Wrote a new backend for Mercury last week,
+		  interfacing directly to the GCC backend.
+			- GCC team are interested in advertising the
+			  new Mercury frontend for GCC on their web
+			  site and including Fergus's changes to GCC
+			  in their distribution.  This would involve
+			  Fergus assigning copyright on his changes to
+			  GCC to the FSF.  Zoltan will confirm that
+			  the University is happy with this when
+			  Alistair gets back next week.
+			- There was talk about the idea of including
+			  the Mercury compiler in the GCC distribution
+			  (some GCC people have shown interest in
+			  this) however the concensus was that this
+			  was probably not a good idea for two
+			  reasons:
+			  	1. The Mercury compiler is way too big
+				   for this.
+				2. We would have to assign copyright
+				   on the compiler to the FSF which we
+				   are unwilling to do, since it might
+				   cause problems if we want to change
+				   licenses or integrate ``non-free''
+				   code into our distribtion.
+		- Has been working on a fix for the dynamic linking
+		  bug in the MLDS backend.
+		- Will look into the current bootstrapping problems
+		  thought to be caused by Tom's changes to the `univ'
+		  type.
+
+	Kostis Sagonas (kostis@csd.uu.se)
+		- Is currently visiting the department from the
+		  University of Uppsala, Sweden, where he is head of
+		  department.
+		- His current research includes a native code compiler
+		  for Erlang, on which he will present a seminar next
+		  week.  Summer students are strongly encouraged to
+		  attend and promised it won't be too boring.
+
+	Thomas Conway (conway)
+		- Is working on the deep profiling paper with Zoltan.
+		- Changed the implementation of the `univ' type.
+		- Has produced a cool (but rather geeky) Mercury
+		  t-shirt -- copies can be made available to those
+		  interested.
+
+	David Overton (dmo)
+		- Is working on integrating stage one and stage two of
+		  the new mode checker.
+		- Has been thinking about how to handle uniqueness
+		  analysis in the new framework.
+		- Plans to start writing a paper on what he has done
+		  so far (need to talk to Zoltan and Peter Stuckey
+		  about this).
+
+	Nick Nethercote (njn)
+		- Started his Masters Degree with the HAL team on
+		  Monday.
+		- Last semester started work on a general framework
+		  for program analyses and implemented determinism
+		  analysis in the framework.
+		- Is now looking at other possible analysis domains
+		  for this framework.
+
+	David Jeffery (dgj)
+		- Has spent most of the week working on HAL.
+		- Fixed a couple of bugs.
+
+	Julien Fischer (juliensf)
+		- Has been working on an mlds -> mlds transformation
+		  to simulate function pointers using derived classes.
+		  This is needed for the Java backend and probably the
+		  IL backend also.  Has been focussing on its use for
+		  compare and unify predicates, but it will also be
+		  required for closures and nondet continuations.
+
+	Ina Cheng (inch)
+		- Has got XML format responses working (in the web
+		  server?)
+		- Has discovered problems with using dynamic linking
+		  with the MLDS backend.
+
+	Levi Cameron (lpcam)
+		- Has modified the bytecode system to differentiate
+		  between preds and funcs.
+		- Is working on integrating native code and bytecode
+		  (with the ability to call both ways between them).
+
+	Sam Thurairatnam (sthur)
+		- Spent the week testing and commenting his code.
+		- Submitted for review yesterday.
+		- Work is currently being reviewed by Mark.
+
+	Adrian Pellas-Rice (apell)
+		- Has been adding a new functor to `hlds_goal_expr' to
+		  use as a wrapper around all goals that are expanded
+		  away after the first few stages of compilation (e.g.
+		  bi-implication and, presumably, the new sequence
+		  quantifiction?).
+		- Has been talking with Peter Schachte and looking at
+		  his Prolog code to do sequence quantification.
+		- We discussed what name the new quantifier should
+		  have.  Options were `all', `for',
+		  `forall', `foreach'.  A consensus was reached that
+		  `forall' is the generally preferred name -- it makes
+		  it clear that it is a kind of universal quantification
+		  whilst syntactically differentiatiing it from the
+		  operationally different `all' quantifier.  (Fergus
+		  thought `foreach' could be confused for existential
+		  quantification.  Tom thought `for' would be much
+		  better used for `for' loops rather than Ralph's
+		  proposed `iterate'.
+
+	Simon Mei (xcsm)
+		- Added more functionality to quickcheck.
+		- Discussed whether Mercury quickcheck would need its
+		  own `main'.  Fergus said this is a seperate issue
+		  (debugger support) and he should not worry about it.
+	
+	Tyson Dowd (trd)
+		- Fixed some IL backend bugs after feedback from our
+		  first user -- Peter Ross.
+		- Has been working on the dynamic linking bug.
+		- Plans to add a new `pragma foreign_proc' to replace
+		  `pragma foreign_code' when defining procedures in
+		  other languages.  This is to reduce confusion over
+		  overloading of the latter pragma.
+
+	Simon Taylor (stayl)
+		- Still working towards an Aditi release some time in
+		  the future.
+	
+	Mark Brown (dougl)
+		- Reviewing Sam's work.
+		- Has been writing his annual progress report (he will
+		  be joining the 3 year club on Sunday).
+
+	Zoltan Somogyi (zs)
+		- Attempting to modify the C backends so that they
+		  work with lcc.
+		- New delay death pass has been done.
+		- Working on deep profiling paper with Tom.
+			  
+3. Other items
+
+	- It was agreed that the summer students should each write a
+	  progress report, including a current TODO list and an
+	  estimation of how much of their given task they will
+	  complete within the next six weeks.
+
+	- Fergus reminded us that all bugfixes should go on both the
+	  release branch and the main branch.  People should note in
+	  the log message when something is to be comitted on both
+	  branches.  Reviewers should look out for cases where this is
+	  required but hasn't been mentioned.
+
+	- Zoltan made sure that everyone knew about his lmc script for
+	  executing uninstalled copies of the compiler.  Tyson
+	  volunteered to document the procedure on the web site.
+	  Zoltan agreed to add his lmc script to the mercury/tools
+	  directory in the cvs repository.
+
+4. Agenda for next week
+
+	- Discuss Unicode syntax for Mercury :-)
+
+
+Minutes taken by David Overton (dmo@cs.mu.oz.au).
+</pre>
+</html>
