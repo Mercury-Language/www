@@ -442,13 +442,6 @@ David B. Kemp, Thomas Conway, Evan Harris, Fergus Henderson,
 Kotagiri Ramamohanarao and Zoltan Somogyi.
 <em>Tech Report 96/45</em>, Melbourne, 1996.
 
-</ul>
-
-<?
-/*---------------------------------------------------------------------------*/
-/* The aditi interface is not useful yet.  */
-if (0) {
-?>
 <li>
 <strong>
 <a href = "papers.html#tr90-2">
@@ -460,11 +453,9 @@ context information
 David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi. 
 <br>
 <em>Tech Report 90/2</em>, Melbourne, 1997.
-<?
-}
-/*---------------------------------------------------------------------------*/
-?>
  
+</ul>
+
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
 <ul>
 
@@ -1710,20 +1701,11 @@ transactions and updates that is used in the Mercury ODBC database
 interface.
 </a>
 
-<?
-/*---------------------------------------------------------------------------*/
-/* The aditi interface is not useful yet.  */
-if (0) {
-?>
 The same kind of approach is also used in
 the Mercury interface to the Aditi deductive
 database system (see the "Aditi deductive database interface"
 section in Mercury Language Reference Manual listed under 
 "Implementation dependent pragmas" in the "Pragmas" chapter).
-<?
-}
-/*---------------------------------------------------------------------------*/
-?>
 
 <p>
 <ul>
@@ -1746,12 +1728,6 @@ Available here (58K)
 <a href = "http://www.cs.mu.OZ.AU/publications/tr_db/mu_96_45_cover.ps.gz">
 with cover page.
 </a>
-
-<?
-/*---------------------------------------------------------------------------*/
-/* The aditi interface is not useful yet.  */
-if (0) {
-?>
 
 <a name="tr90-2">
 The following paper is also relevant to the Aditi interface mentioned above.
@@ -1783,11 +1759,6 @@ It is corrected in David Kemp's thesis,
 available here (560K).
 </a>
 
-<?
-}
-/*---------------------------------------------------------------------------*/
-?>
- 
 </ul>
 
 <hr>
