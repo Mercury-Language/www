@@ -255,12 +255,12 @@ installed all the binary distributions.)
 	<strong> You need to invoke configure with "CC=gcc sh configure".</strong>
 	<p>
 	Mingw version: compiler only (about 25 Mb): <br>
-<? links_to_file("beta-releases/0.11.0/mercury-compiler-0.11.0-mingw.zip", "no"); ?> <br>
+<? links_to_file("beta-releases/0.11.0/mercury-compiler-0.11.0.i686-pc-mingw.zip", "no"); ?> <br>
 	The Mingw version still requires Cygwin,
 	but the executables that it generates do not require Cygwin. 
 	(That is, it's a cross-compiler from Cygwin to native Windows.)
 	To install, open a Cygwin bash shell, and do
-	<pre>unzip -d / mercury-compiler-0.11.0-mingw.zip</pre>
+	<pre>unzip -d / mercury-compiler-0.11.0.i686-pc-mingw.zip</pre>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.2)
@@ -307,7 +307,7 @@ and (2) use GNU tar. </em>
 
     <dt>Apple Mac Power/PC machines running MacOS X
 	<dd> Compiler only (about 35 Mb): <br>
-<? links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5", "no"); ?>
+<? links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5.tar.gz", "no"); ?>
 	<br>
 	If you get this package, we suggest that you also download
 	the "extras" source distribution. 
