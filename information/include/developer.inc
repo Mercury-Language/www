@@ -9,6 +9,14 @@ in a4 format.
 -------->
 <p>
 <ul>
+<li> 	<strong>Developer Introduction</strong> <br>
+	Tips and tricks for developers just starting to work with
+	the Mercury source code.<p>
+
+	Available in 
+	<a href="developers/developer_intro.html">HTML</a>
+	<p>
+
 <li> 	<strong>Remote CVS Access</strong> <br>
 	How to access the CVS repository from your machine.<p>
 
