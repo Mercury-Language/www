@@ -23,10 +23,9 @@ The implementation technology of the Mercury debugger
 Zoltan Somogyi and Fergus Henderson.
 <br>
 <em>
-To appear in the Proceedings of the Tenth Workshop
-on Logic Programming Environments
+Proceedings of the Tenth Workshop on Logic Programming Environments
 </em>,
-Las Cruces, New Mexico, November 1999.
+Las Cruces, New Mexico, November 1999, pages 35-49.
 <a href="papers/debugger_wlpe99.ps.gz">Available here (66K)</a>.
 <p>
 
@@ -49,7 +48,7 @@ with the debugging of large programs working with large data structures.
 Making Mercury programs tail recursive (extended abstract)
 </strong>
 <br>
-Peter Ross, David Overton and Zoltan Somogyi
+Peter Ross, David Overton and Zoltan Somogyi.
 <br>
 <em>
 Proceedings of the Ninth International Workshop on Logic-based Program
