@@ -1,0 +1,130 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Dec 08, 3:25pm to 4:15pm.
+
+Attendees:
+	Zoltan Somogyi <zs>
+	David Overton <dmo>
+	Julien Fischer <juliensf>
+	Simon Mei <xcsm>
+	Ina Cheng <inch>
+	Sam Thurairatnam <sthur>
+	Fergus Henderson <fjh>
+	Levi Cameron <lpcam>
+	Simon Taylor <stayl>
+	Mark Brown <dougl>
+	David Jeffery <dgj>
+	Kevin Glynn <keving>
+	Tyson Dowd <trd>
+
+1. Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Zoltan Somogyi <zs>:
+
+		- Now bootchecking a fix for compiler/cse_detection.m.
+
+		- Working on a change to specify at configure time which
+		grades to install.
+
+	David Overton <dmo>:
+
+		- Has returned to working on the alias tracking mode checker.
+
+	Julien Fischer <juliensf>:
+
+		- Working on the Java backend, which is now almost
+		to the point where hello_world.m runs.
+
+		- Working on implementing parts of library/io.m in Java.
+
+	Simon Mei <xcsm>:
+
+		- More work on the ``quickcheck''-style test generator.
+
+		- Wrote some code which generates test cases for
+		predicates which take up to 5 arguments of type
+		int, char or list(char).
+
+	Ina Cheng <inch>:
+
+		- More work towards a SOAP interface.
+
+		- Worked on handling HTTP GET requests, now working on POST.
+			
+		- Some work on extras/xml.
+
+	Sam Thurairatnam <sthur>:
+
+		- More work on improving pretty printing.
+
+		- Wrote code to find out how much space a term should take
+		when pretty printed.
+
+	Fergus Henderson <fjh>:
+
+		- Working on the release.
+
+		- Assisting summer students.
+
+		- Had a long discussion about sequence quantification with
+		Peter Schachte <schachte> and Adrian Pellas-Rice <apell>.
+
+	Levi Cameron <lpcam>:
+
+		- More work on the bytecode interpreter.
+
+		- Deterministic predicates which take inputs of type `int' 
+		and have no outputs now work.
+
+		- Discussed handling of RTTI in the bytecode interpreter.
+
+	Simon Taylor <stayl>:
+
+		- More work on Aditi. 
+
+		- Improving record syntax. The changes which were posted
+		to mercury-developers earlier this week have now been
+		approved for inclusion in the release.
+
+	Mark Brown <dougl>:
+
+		- Design of declarative debugger search strategy.
+
+		- More thinking about the interaction between
+		exceptions and the declarative debugger.
+
+	David Jeffery <dgj>:
+
+		- No work on Mercury.
+
+		- Planning to work on PhD thesis real soon now.
+
+	Kevin Glynn <keving>:
+
+		- Did not sabotage the Mercury project this week.
+
+	Tyson Down <trd>:
+
+		- Paperwork.
+	
+		- Cleaning up Managed C++ implementation of the
+		standard library.
+
+		- Working on PhD thesis.
+
+
+2. Release
+
+Fergus suggested we should have a code freeze starting now, with
+a CVS fork for the release in a week or so if all the tests pass.
+
+
+Minutes taken by Simon Taylor <stayl@cs.mu.oz.au>.
+</pre>
+</html>
