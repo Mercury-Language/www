@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"19 October 2004" => array("Shared Library Support for Mac OS X",
+
+"Shared Mercury libraries now work on Mac OS X.  The standard Mercury libraries
+are also now dynamically linked by default, greatly reducing the size of
+executables."
+),
+
 "10 June 2004" => array("The 2004 ICFP Programming Contest",
 
 "A team of Mercury developers submitted an <A
