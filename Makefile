@@ -4,6 +4,8 @@
 # Public License - see the file COPYING in the Mercury distribution.
 #-----------------------------------------------------------------------------#
 
+include RELEASE_INFO
+
 HTML=	index.html 		\
 	mcorba.html		\
 	news.html 		\
@@ -23,6 +25,11 @@ ROOT=.
 
 target: html
 
+globals.inc: include/globals.inc
+
+include/globals.inc: include/globals.inc.in
+	sed -e "s/<RELEASE_VERSION>/$(RELEASE_VERSION)/" < $< > $@
+
 index.html: latest_news.inc newsdb.inc
 news.html: latest_news.inc newsdb.inc
 mcorba.html: mcorba_newsdb.inc
@@ -34,6 +41,10 @@ local_install:
 	chgrp -R mercury $(INSTALL_WEBDIR)/images
 	chmod -R g+w,a+r $(INSTALL_WEBDIR)/images
 
+clean: local_clean
+
+local_clean:
+	rm -f include/globals.inc
 
 #-----------------------------------------------------------------------------#
 

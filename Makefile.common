@@ -13,7 +13,7 @@ vpath %.inc ./include
 vpath %.inc $(ROOT)/include
 vpath %.inc $(ROOT)/news
 
-$(HTML): %.html: %.php3 %.inc menubar.inc template.inc functions.inc
+$(HTML): %.html: %.php3 %.inc globals.inc menubar.inc template.inc functions.inc
 
 #-----------------------------------------------------------------------------#
 

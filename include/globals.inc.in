@@ -1,0 +1,18 @@
+<?
+	$installed_path="/home/mercury5/installed_w3";
+	$current_release="<RELEASE_VERSION>";
+	$release_doc_dir="$root/information/doc-release";
+	$latest_doc_dir="$root/information/doc-latest";
+	$ref_man_toc="reference_manual_toc.html";
+	$user_guide_toc="user_guide_toc.html";
+	$library_man_toc="library_toc.html";
+	$trans_guide_toc="transition_guide_toc.html";
+	$ref_man_release="$release_doc_dir/$ref_man_toc";
+	$ref_man_latest="$latest_doc_dir/$ref_man_toc";
+	$user_guide_release="$release_doc_dir/$user_guide_toc";
+	$user_guide_latest="$latest_doc_dir/$user_guide_toc";
+	$library_man_release="$release_doc_dir/$library_man_toc";
+	$library_man_latest="$latest_doc_dir/$library_man_toc";
+	$trans_guide_release="$release_doc_dir/$trans_guide_toc";
+	$trans_guide_latest="$latest_doc_dir/$trans_guide_toc";
+?>

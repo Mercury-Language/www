@@ -1,4 +1,10 @@
-<h2>Mercury Documentation</h2>
+<h2><? echo $subtitle ?></h2>
+
+This page contains documentation for 
+<a href=<? echo $root ?>/download/release.html>Mercury version <? echo $current_release ?></a>,
+and for the latest
+<a href=<? echo $root ?>/download/rotd.html>development snapshot</a>.
+<p>
 
 The HTML versions are set up for browsing, however, if you'd prefer a
 copy of the entire document, links to postscript copies are provided.
@@ -6,7 +12,7 @@ Please note that the postscript files are compressed using gzip and are
 in a4 format.
 <p>
 <ul>
-	<li> <a href="mailto:rwab1@cam.sri.com">Ralph Becket</a>'s
+	<li> <a href="mailto:rafe@cs.mu.oz.au">Ralph Becket</a>'s
 	     <strong>Mercury tutorial</strong><br>
 	A beginner's introduction to Mercury.
 	This is still under development. 
@@ -23,9 +29,14 @@ in a4 format.
 	the module system, foreign language interface and higher-order
 	programming.<p>
 
-	Available in 
-	<a href="doc/reference_manual_toc.html">HTML</a> or
-	<a href="doc/reference_manual.ps.gz">Postscript</a>
+	<dl compact>
+	<dt> Version <? echo $current_release ?>: <dd>
+	<a href="<? echo $ref_man_release ?>">HTML</a> or
+	<a href="doc-release/reference_manual.ps.gz">Postscript</a>.
+	<dt> Snapshot: <dd>
+	<a href="<? echo $ref_man_latest ?>">HTML</a> or
+	<a href="doc-latest/reference_manual.ps.gz">Postscript</a>.
+	</dl>
 	<p>
 
 	<li> <strong>Mercury User's Guide</strong><br>
@@ -33,18 +44,28 @@ in a4 format.
 	how to compile, using multiple modules, profiling, debugging,
 	and compilation options. <p>
 
-	Available in 
-	<a href="doc/user_guide_toc.html">HTML</a> or
-	<a href="doc/user_guide.ps.gz">Postscript</a>
+	<dl compact>
+	<dt> Version <? echo $current_release ?>: <dd>
+	<a href="<? echo $user_guide_release ?>">HTML</a> or
+	<a href="doc-release/user_guide.ps.gz">Postscript</a>.
+	<dt> Snapshot: <dd>
+	<a href="<? echo $user_guide_latest ?>">HTML</a> or
+	<a href="doc-latest/user_guide.ps.gz">Postscript</a>.
+	</dl>
 	<p>
 
 	<li> <strong>Mercury Library Reference Manual</strong><br>
 	Descriptions of the interfaces to the library
 	which comes with the Mercury distribution.<p>
 
-	Available in 
-	<a href="doc/library_toc.html">HTML</a> or
-	<a href="doc/library.ps.gz">Postscript</a>
+	<dl compact>
+	<dt> Version <? echo $current_release ?>: <dd>
+	<a href="<? echo $library_man_release ?>">HTML</a> or
+	<a href="doc-release/library.ps.gz">Postscript</a>.
+	<dt> Snapshot: <dd>
+	<a href="<? echo $library_man_latest ?>">HTML</a> or
+	<a href="doc-latest/library.ps.gz">Postscript</a>.
+	</dl>
 	<p>
 
 	<li> <strong>Prolog to Mercury Transition Guide</strong><br>
@@ -52,9 +73,14 @@ in a4 format.
 	programs to Mercury. Includes information on differences in
 	the languages and common programming styles.<p>
 
-	Available in 
-	<a href="doc/transition_guide_toc.html">HTML</a> or
-	<a href="doc/transition_guide.ps.gz">Postscript</a>
+	<dl compact>
+	<dt> Version <? echo $current_release ?>: <dd>
+	<a href="<? echo $trans_guide_release ?>">HTML</a> or
+	<a href="doc-release/transition_guide.ps.gz">Postscript</a>.
+	<dt> Snapshot: <dd>
+	<a href="<? echo $trans_guide_latest ?>">HTML</a> or
+	<a href="doc-latest/transition_guide.ps.gz">Postscript</a>.
+	</dl>
 	<p>
 
 	<li> <strong>Comparing Mercury and Haskell</strong><br>

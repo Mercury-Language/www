@@ -42,10 +42,18 @@ if($menu == "Documentation") {
 ?>
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/tutorial/index.html">Tutorial</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/reference_manual_toc.html">Reference Manual</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/user_guide_toc.html">User Guide</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/library_toc.html">Library Reference</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/information/doc/transition_guide_toc.html">cf. Prolog</a><BR>
+  &nbsp;&nbsp;Reference Manual<BR>
+  &nbsp;&nbsp;&nbsp&nbsp<a href="<?echo $ref_man_release?>">Version <?echo $current_release?></a><BR>
+  &nbsp;&nbsp;&nbsp&nbsp<a href="<?echo $ref_man_latest?>">Snapshot</a><BR>
+  &nbsp;&nbsp;User's Guide<BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $user_guide_release?>">Version <?echo $current_release?></a><BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $user_guide_latest?>">Snapshot</a><BR>
+  &nbsp;&nbsp;Library Reference<BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $library_man_release?>">Version <?echo $current_release?></a><BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $library_man_latest?>">Snapshot</a><BR>
+  &nbsp;&nbsp;cf. Prolog<BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $trans_guide_release?>">Version <?echo $current_release?></a><BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $trans_guide_latest?>">Snapshot</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/information/comparison_with_haskell.html">cf. Haskell</a><BR>
   &nbsp;&nbsp;<a href="http://hydra.cs.mu.oz.au/cgi-bin/fom">FAQ</a><BR>
 </SMALL>

@@ -35,84 +35,84 @@ in a4 format.
 	Outlines reviewing procedure. <p>
 
 	Available in
-	<a href="doc/reviews.html">HTML</a> and 
-	<a href="doc/reviews.text">Plain text</a>
+	<a href="doc-latest/reviews.html">HTML</a> and 
+	<a href="doc-latest/reviews.text">Plain text</a>
 	<p>
 
 <li>	<strong>Mercury Coding Standards</strong> <br>
 	Standard for Mercury code. <p>
 
 	Available in
-	<a href="doc/coding_standards.html">HTML</a> and 
-	<a href="doc/coding_standards.text">Plain text</a>
+	<a href="doc-latest/coding_standards.html">HTML</a> and 
+	<a href="doc-latest/coding_standards.text">Plain text</a>
 	<p>
 
 <li>	<strong>Compiler Design</strong> <br>
 	Details of the compiler design. <p>
 
 	Available in
-	<a href="doc/compiler_design.html">HTML</a> and
-	<a href="doc/compiler_design.text">Plain text</a>
+	<a href="doc-latest/compiler_design.html">HTML</a> and
+	<a href="doc-latest/compiler_design.text">Plain text</a>
 	<p>
 
 <li>	<strong>Allocation</strong> <br>
 	Details of the allocation scheme currently being implemented. <p>
 
 	Available in
-	<a href="doc/allocation.html">HTML</a> and
-	<a href="doc/allocation.text">Plain text</a>
+	<a href="doc-latest/allocation.html">HTML</a> and
+	<a href="doc-latest/allocation.text">Plain text</a>
 	<p>
 
 <li>	<strong>Module system</strong> <br>
 	Details of the module system. <p>
 
 	Available in
-	<a href="doc/module_system.html">HTML</a> and
-	<a href="doc/module_system.text">Plain text</a>
+	<a href="doc-latest/module_system.html">HTML</a> and
+	<a href="doc-latest/module_system.text">Plain text</a>
 	<p>
 
 <li>	<strong>Release checklist</strong> <br>
 	The release procedure. <p>
 
 	Available in
-	<a href="doc/release_checklist.html">HTML</a> and
-	<a href="doc/release_checklist.text">Plain text</a>
+	<a href="doc-latest/release_checklist.html">HTML</a> and
+	<a href="doc-latest/release_checklist.text">Plain text</a>
 	<p>
 
 <li>	<strong>Garbage collection and C code</strong> <br>
 	<p>
 
 	Available in
-	<a href="doc/gc_and_c_code.html">HTML</a> and
-	<a href="doc/gc_and_c_code.text">Plain text</a>
+	<a href="doc-latest/gc_and_c_code.html">HTML</a> and
+	<a href="doc-latest/gc_and_c_code.text">Plain text</a>
 	<p>
 
 <li>	<strong>Glossary</strong> <br>
 	Terms used in the Mercury implementation.  <p>
 
 	Available in
-	<a href="doc/glossary.html">HTML</a> and
-	<a href="doc/glossary.text">Plain text</a>
+	<a href="doc-latest/glossary.html">HTML</a> and
+	<a href="doc-latest/glossary.text">Plain text</a>
 	<p>
 
 <li>	<strong>To do list</strong> <br>
 	Things still to do in the Mercury project.  <p>
 
 	Available in
-	<a href="doc/todo.html">HTML</a> and
-	<a href="doc/todo.text">Plain text</a>
+	<a href="doc-latest/todo.html">HTML</a> and
+	<a href="doc-latest/todo.text">Plain text</a>
 	<p>
 
 <li>	<strong>Bootstrapping</strong> <br>
 	What to do when a change requires bootstrapping. <p>
 
 	Available in
-	<a href="doc/bootstrapping.html">HTML</a>
+	<a href="doc-latest/bootstrapping.html">HTML</a>
 	<p>
 
 <li>	<strong>HOWTO add a new user.</strong> <br>
 	Information on what needs to be done when a new person joins the
-    mercury project.  <p>
+	Mercury project.  <p>
 
 	Available in
 	<a href="developers/add_new_user.html">HTML</a>

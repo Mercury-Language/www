@@ -282,12 +282,12 @@ use a Prolog debugger for debugging Mercury code.
 "The Mercury debugger now includes support for interactive queries.
 See the \"Interactive query commands\" subsection of the \"Debugger commands\"
 section of the \"Debugging\" chapter of the
-<A HREF=\"http://www.cs.mu.oz.au/research/mercury/information/doc/user_guide_toc.html\">Mercury User's Guide</A>.  
+<A HREF=\"$user_guide_latest\">Mercury User's Guide</A>.  
 "),
 
 
 "5 Mar 1999" => array("Mercury Tutorial",
-"<a href=\"mailto:rwab1@cl.cam.ac.uk\">Ralph Becket</a>
+"<a href=\"mailto:rafe@cs.mu.oz.au\">Ralph Becket</a>
 has kindly written a
 <A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.  
 This is still under development.  Feedback would be appreciated."
