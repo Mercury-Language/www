@@ -1,5 +1,9 @@
 <H2>Contributed Programs and Libraries</H2>
 
+<H3>Developer Documentation</H3>
+There is some developer documentation at the Mercury
+<a href="<? echo $root ?>/information/developer.html">developer information page</a>.
+
 <H3>Mercury Libraries and Programs</H3>
 If you've written some code using Mercury we'd love to find out about
 it.  If you think it might be in any way useful to other people, you

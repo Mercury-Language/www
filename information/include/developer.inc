@@ -9,6 +9,13 @@ in a4 format.
 -------->
 <p>
 <ul>
+<li> 	<strong>Remote CVS Access</strong> <br>
+	How to access the CVS repository from your machine.<p>
+
+	Available in 
+	<a href="developers/remote_cvs.html">HTML</a>
+	<p>
+
 <li> 	<strong>C Coding Standard For The Mercury Project</strong> <br>
 	The standard used for the C source in the Mercury compiler. <p>
 

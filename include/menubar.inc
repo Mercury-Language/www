@@ -15,7 +15,10 @@
   &nbsp;
     <a href="<?echo $root?>/information/documentation.html">Documentation</a>
     <BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/information/papers.html">Papers</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/information/papers.html">Papers</a>
+    <BR>
+  &nbsp;&nbsp<a href="<?echo $root?>/information/developer.html">Developers</a>
+    <BR>
 </SMALL>
 
 <P>

@@ -21,6 +21,14 @@
 
 $newsdb = array(
 
+"9 Aug 2000" => array("Remote CVS access",
+
+"We've made anonymous remote CVS access available to the Mercury CVS
+archive.  A page describing how to use remote CVS is available
+<A HREF=\"information/developers/remote_cvs.html\">here</A>.  Mercury, the test
+suite, MCORBA, and even these web pages are available via CVS."
+),
+
 "26 Jul 2000" => array("Mercury and Microsoft's .NET",
 
 "A page outlining the status of Mercury on Microsoft's net .NET

@@ -26,19 +26,68 @@ You need:
 	<li> A TCP/IP connection to the Internet.
 </ul>
 
-Preliminaries:
+Anonymous Access:
+<ul>
+	<li> The CVS server is running on <b>hydra.cs.mu.oz.au</b>, and the
+	repository is in the directory <b>/home/mercury1/repository</b>
+	<li> The anonymous access account is called <i>guest</i> with a
+		password of <i>guest</i>
+	<li> To login (you need to do this just once)
+<pre>
+	cvs -d :pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository login
+</pre>
+	<li> The password is <i>guest</i>
+	<li> To checkout a module 
+<pre>
+	cvs -d :pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository checkout mercury
+</pre>
+	<li> There is a list of modules later in this page.
+
+	<li> You will have read-only access to the repository.  If you
+	want to commit something you will need to get someone with
+	read-write access to do it for you.  If you send your patch to
+	the mercury-developers mailing list you should be able to get
+	this done.
+
+	<li> You almost certainly want to add the following lines to
+	your .cvsrc (in your home directory).
+
+<pre>
+	cvs -z6
+	diff -u -N
+	update -Pd
+</pre>
+
+	<li> This turns on compression in client/server transfers, uses
+	the preferred Mercury diff format (unified diff with new files
+	shown as diffs), prunes empty directories and picks up new
+	directories.
+
+	<li> Please remember that if you want to track the latest
+	releases, you may run into incompatibility problems unless you
+	update very regularly.  The Mercury compiler often relies on a
+	very recent version of the Mercury compiler to build from
+	scratch.  If you get out of date, it might be worth downloading
+	the latest release-of-the-day and installing it.
+</ul>
+
+Getting Write Access:
 <ul>
 	<li> The CVS server uses password authentication. You need to
 	  have a password installed in CVS's password file on
-	  the server end.
+	  the server end.  CVS stores your password (only very lightly
+	  encrypted) on your machine, so you won't have to remember your
+	  password or use it very often after you have logged in the
+	  first time.
 
 	<li> Generate a password using standard UNIX /etc/passwd style
-	  passwords. *Do not* use your normal password. A good way to
+	  passwords.  *Do not* use your normal password.  A good way to
 	  do this is change your password to something, copy the line
-	  from /etc/password, then change it back. Only the username and
+	  from /etc/passwd, then change it back.  If you have htpasswd
+	  installed using it is even easier.  Only the username and
 	  encrypted password are needed.<p>
 
-	  e.g. trd:s9FOR1a8DOxDs<p>
+	  e.g. myusername:s9FOR1a8DOxDs<p>
 
 	  (If your system uses shadow password files, the password field
 	  of /etc/passwd will not be meaningful; mail us if there is a problem).
@@ -55,13 +104,6 @@ Preliminaries:
 	  Mercury team, who will install it for you. If you have access to
 	  the CVS repository at the University of Melbourne, you can just
 	  add it to the file /home/mercury1/repository/CVSROOT/passwd.
-	  You also need an account on the machines where the cvs server
-	  is running which is in group mercury (the account doesn't need
-	  to be able to rlogin). If you can't create one yourself,
-	  you'll need to ask someone in the Mercury team to create one
-	  for you. (Mercury team - add a line to the CVS passwd file,
-	  and an account with * in the password field, /dev/null as
-	  its shell, and in group mercury, on hydra and mercury).
 
 	<li> Also, tell us what domain you're going to be accessing the
 	  repository from, so we can adjust our security setup to allow
@@ -69,8 +111,21 @@ Preliminaries:
 	  email address. (Mercury team - modify /etc/hosts.allow to
 	  allow that domain).
 
-	<li> Access via Windows or other non-UNIX platforms is untested,
-	  but theoretically possible.
+	<li> Access via Windows works just fine.  Most firewalls are
+	  setup to allow CVS access through.  You can get a free
+	  binary (and source) CVS for Windows from 
+	  <a href="http://www.cyclic.com/">www.cyclic.com</a>.
+	  Also there is a product called 
+	  <a href="http://www.wincvs.com/">WinCVS</a> that should
+	  work (although we haven't tried it ourselves).
+
+	<li> There are some checks that are done via questions.  In
+	particular, our CVS repository does checks for up-to-date
+	copyright messages on all files.  These checks don't work very
+	well using the CVS `pserver' as mentioned here -- when you check
+	in it will complain that it doesn't know how to interact with
+	you.  Contact us if this is a big problem -- we know some
+	workarounds.
 </ul>
 
 Then (once you've been added to the passwd file):
@@ -78,15 +133,9 @@ Then (once you've been added to the passwd file):
 
 	<li> Set your CVSROOT environment variable to <p>
 	<ul>
-	  <li>:pserver:username@mercury.cs.mu.oz.au:/home/mercury1/repository
-	</ul>
-          or
-	<ul>
 	  <li>:pserver:username@hydra.cs.mu.oz.au:/home/mercury1/repository
 	</ul>
 
-	  (we have two because sometimes one of the machines is down - 
-	  it doesn't matter much which one you use). 
 	  <p>
 	  Make sure this environment variable is exported (in sh
 	  based shells, "export CVSROOT", in csh based shells, use
@@ -117,7 +166,7 @@ Then (once you've been added to the passwd file):
 				  extras and documentation. (8.9Mb)
 	  	<dt>tests	<dd> test cases for the compiler (0.72Mb)
 		<dt>clpr	<dd> the CLP(R) interface (0.88Mb)
-		<dt>www		<dd> the www page (7.5Mb - lots of papers)
+		<dt>w3		<dd> the www page (7.5Mb - lots of papers)
 		</dl>
 
 	  CVS should compress most of this stuff while sending it.
@@ -132,8 +181,8 @@ NOTE:
 	  to change something, discuss design trade-offs, and report
 	  on any development that you suspect will influence others.
 	  (Traffic is moderately high in this mailing list - between
-	  100 and 300 messages per month, so you should filter it if
-	  possible).
+	  100 and 300 messages per month, so you should filter into
+	  a separate folder if possible).
 
 	<li> Before committing any code, read the policy on reviews for the
 	  Mercury system. This can be found in the mercury CVS
@@ -148,15 +197,13 @@ NOTE:
 	  Basically, we don't commit broken code into the repository,
 	  and we don't commit un-reviewed code.
 
-	<li> We may decide to limit access to read-only at first, which
-	  makes it much harder for a remote user to make a mistake. 
-	  In this case, you'll need to contact us if you need to commit
-	  something to the repository.
-
 	<li> You'll need to be familiar with CVS to keep up to date with
 	  the development tree. If you haven't used it before, read the
 	  info pages on CVS and the documentation that comes with it.
-	  If you have any questions, just ask.
+	  There is a free book on CVS at 
+	  <a href="http://cvsbook.red-bean.com/">cvsbook.red-bean.com</a>
+
+	<li> If you have any questions, just ask.
 </ul>
 
 
@@ -166,7 +213,7 @@ NOTE:
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../email.html" >contact</a> page.<br>
 
-Last update was $Date: 1998-09-04 05:01:56 $ by $Author: petdr $@cs.mu.oz.au
+Last update was $Date: 2000-08-09 07:46:51 $ by $Author: trd $@cs.mu.oz.au
 </body>
 </html>
 
