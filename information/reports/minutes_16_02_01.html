@@ -1,0 +1,103 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Feb 16, 2001.
+
+Attendees:
+	Fergus Henderson (fjh)
+	Simon Taylor (stayl)
+	Mark Brown (dougl)
+	David Overton (dmo)
+	Adrian Pellas-Rice (apell)
+	Ina Cheng (inch)
+	Simon Mei (xcsm)
+	Sam Thurairatnam (sthur)
+	Julien Fischer (juliensf)
+	David Jeffery (dgj)
+	Zoltan Somogyi (zs)
+
+1. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Fergus Henderson (fjh)
+		- Has been doing code reviews.
+		- Has been fixing several bugs.
+		- Working on abstract equivalence types for the .NET and
+		  Java back-ends.
+		- Working on getting the gcc back end installed on hg.
+
+	Simon Taylor (stayl)
+		- Starting work on the new build framework supporting
+		  intermodule optimization.
+
+	Mark Brown (dougl)
+		- Has been doing code reviews.
+
+	David Overton (dmo)
+		- Working on an extension to ROBDD's described in a paper
+		  by Peter Schachte.
+		- Setting up a web server on venus.
+
+	Adrian Pellas-Rice (apell)
+		- Has completed a working subset of sequence quantification.
+		- Is currently working on expanding on that.
+
+	Ina Cheng (inch)
+		- Writing samples and documentation.
+		- Server/client interface is finished.
+
+	Simon Mei (xcsm)
+		- Addressing review comments.
+		- Sent a bug report for get_functor.
+
+	Sam Thurairatnam (sthur)
+		- Has been working on saving formatting data to a file
+		  and loading it in to the debugger.
+
+	Julien Fischer (juliensf)
+		- Addressing review comments.
+		- Working on runtime system for the Java backend.
+
+	David Jeffery (dgj)
+		- Working on merging changes from the HAL branch to the
+		  main branch.
+		- There are still some issues to fix before this will be
+		  committed.
+
+	Zoltan Somogyi (zs)
+		- Has been working with Thomas Conway on the deep profiler.
+			- Optimization to preserve tail recursion in common
+			  cases.
+			- Improved reporting where different code is called
+			  from the same location (e.g. higher order calls).
+		- Has fixed a bug which was causing the erroneous_liveness
+		  test case to fail.
+
+2. New machine
+
+	David Overton has been setting up venus to act as the web server,
+	but we also need some other services set up.  Fergus Henderson has
+	volunteered to set up FTP, and Mark Brown has volunteered to set up
+	CVS.  We will be asking Peter Ross if he would set up NIS.
+
+3. Release
+
+	- Most bugs have been fixed by now.
+	- There has been a recent problem with groups and permissions in
+	  the CVS repository.  Anyone making any changes to the repository
+	  should check the permissions afterward and note any strange
+	  behaviour, so we can narrow down what is causing this problem.
+
+4. Configure script
+
+	The configure script will check for a more recent compiler,
+	following Simon Taylor's suggestion.
+
+Minutes taken by Mark Brown (dougl@cs.mu.oz.au).
+
+</pre>
+</html>
