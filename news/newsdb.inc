@@ -21,7 +21,7 @@
 
 $newsdb = array(
 
-"22 September 2000" => array("Tuple types",
+"22 Sep 2000" => array("Tuple types",
 
 "We've added support for tuple types, similar to those in most
 other functional languages. Tuples use the syntax `{A, B, ...}'.
