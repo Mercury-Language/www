@@ -21,8 +21,8 @@ dmo@cs.mu.OZ.AU, MEngSc student
 lee@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~petdr">Peter Ross</a>,
 petdr@cs.mu.OZ.AU, MEngSc student
-<li> <a href = "http://www.cs.mu.OZ.AU/~pets/">Peter Schachte</a>,
-pets@cs.mu.OZ.AU, PhD student
+<li> <a href = "http://www.cs.mu.OZ.AU/~schachte/">Peter Schachte</a>,
+schachte@cs.mu.OZ.AU, Lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~zs/">Zoltan Somogyi</a>,
 zs@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~harald/">Harald S&oslash;ndergaard</a>,
