@@ -2013,6 +2013,42 @@ Available here (20K).
 
 <li>
 <strong>
+<a name = "papers.html#ppdp02mode-talk">
+Constraint-based mode analysis of Mercury
+</a>
+</strong>
+<br>
+David Overton, Zoltan Somogyi and Peter J. Stuckey.
+<em>
+Talk presented at Fourth International Conference
+on Principles and Practice of Declarative Programming.
+</em>
+Pittsburgh, Pennsylvania, October 2002.
+<a href = "papers/ppdp02_mode.pdf">
+Available here (117K).
+</a>
+<p>
+
+<li>
+<strong>
+<a name = "papers.html#ppdp02stack-talk">
+Using the heap to eliminate stack accesses
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Peter J. Stuckey.
+<em>
+Talk presented at Fourth International Conference
+on Principles and Practice of Declarative Programming.
+</em>
+Pittsburgh, Pennsylvania, October 2002.
+<a href = "papers/ppdp02_stack.ps">
+Available here (26K).
+</a>
+<p>
+
+<li>
+<strong>
 <a name="sas_talk">
 Termination analysis for Mercury
 </a>
