@@ -261,6 +261,8 @@ installed all the binary distributions.)
 	(That is, it's a cross-compiler from Cygwin to native Windows.)
 	To install, open a Cygwin bash shell, and do
 	<pre>unzip -d / mercury-compiler-0.11.0.i686-pc-mingw.zip</pre>
+	Note that you <strong>must</strong> use the Cygwin unzip program,
+	not WinZip.  "WinZip" doesn't handle Cygwin's symbolic links properly.
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.2)
