@@ -4,6 +4,7 @@
 <BODY bgcolor="#ABCDEF" text="#000000">
 
 <TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
+<TR>
     <TD>
     <CENTER><H1>The Mercury Project<br>
     <? echo $title ?>
@@ -13,8 +14,10 @@
     <TD width="10%">
     <? $size = GetImageSize("$root/images/merclogo_small.jpg"); ?>
     <IMG SRC="<?echo $root?>/images/merclogo_small.jpg" border="2"
-        hspace="10" <? echo $size[3]; ?> >
+        hspace="10" <? echo $size[3]; ?>
+	ALT="[Mercury Logo]">
     </TD>
+</TR>
 </TABLE>
 
 <TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
