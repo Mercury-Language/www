@@ -1,0 +1,221 @@
+<html>
+
+<pre>
+Minutes of the Mercury meeting Fri Nov 17th, 3:15pm to 4:10pm.
+
+Attendees:
+	Fergus Henderson <fjh>
+	Zoltan Somogyi <zs>
+	David Jeffery <dgj>
+	Mark Brown <dougl>
+	David Overton <dmo>
+	Simon Taylor <stayl>
+	Kevin Glynn <keving>
+
+Apologies:
+	Tyson Dowd <trd> (overseas)
+
+1.  Sourceforge:
+
+	The discussion on what we should do with respect to putting Mercury
+	on Sourceforge was left until the next meeting, when Tyson Dowd should
+	be back from overseas.
+
+1.  Release plans:
+
+	We discussed a series of issues that have come up on mercury-developers
+	concerning the upcoming release.
+
+	- streams interface
+		It was generally agreed that the streams interface that Peter
+		Ross has been developing should go in the extras directory
+		for this release. This will give users some chance to 
+		experiment with it before we think about what should go in
+		the standard library.
+	- `enum' type class
+		Simon Taylor has proposed an `enum' type class (which he has
+		used as part of the sparse_bitset implementation). Some
+		discussion ensued about whether the name and structure of this
+		class is appropriate (given that it will be visible in the
+		standard library). The issues raised were:
+		- Given that the proposed class only has methods for conversion
+		to and from integers (with `from' being a semidet operation),
+		there is really no requirement that the integers mapped onto
+		be contiguous. In that case `enum' is perhaps not a good name.
+		- Perhaps we should have a class for `dense' enumerations, that
+		has for example methods to indicate the upper and lower bounds
+		that the enumeration maps onto.
+		- Perhaps we should use the same classes as Haskell as some
+		people may be used to that hierarchy. It was pointed out that
+		the Haskell class hierarchy is likely to undergo quite some
+		change on the way to Haskell 2.
+
+		It was decided to just go with Simon's original proposal ---
+		there is no real problem with using the `enum' name, and
+		no-one could think of a better one.
+
+	- sparse_bitset
+		Has been implemented and will be included for the release.
+
+	- type specialisation for the library
+		Has been implemented and will be included for the release.
+
+	- Tag switches for the MLDS back ends
+		Has been implemented for the hlc grades but not for the IL
+		backend. It will be included as is for the release.
+
+	- Foreign code mechanism
+		Tyson has posted a diff, and this should be included for the
+		release.
+
+	- .NET `tech preview'
+		This relies on the foreign code mechanism to implement some
+		parts of the library for the IL backend.
+
+		This can probably go in the release, but Tyson wasn't there
+		to comment.
+
+	- extended record syntax (allowing arguments to field names)
+		Simon will implement this before the release.
+
+		There was some discussion of whether we should allow field
+		names to be overloaded within a module. It was decided that
+		this is too much work to get done before the release.
+
+	- @ syntax 
+		Will not be done for the release (still needs thought, and
+		possibly isn't a good idea at all).
+
+	- Mmake rules for the IL backend
+		These will be done for the release.
+
+		If possible, these rules will only be generated when the
+		IL back end is actually being used. There was some discussion
+		about whether it would be worth it, given that `mmake depend'
+		would then need to examine grade options or other flags. Fergus
+		pointed out that the hlc back end has special dependencies
+		generated for it, so it shouldn't be too difficult.
+
+	- Tabled I/O for debugging
+		There has been quite a lot done on this, but it won't get
+		worked on for at least another week (as Zoltan will be busy
+		marking exams until then). This should make it into the
+		release.
+
+		Practical experience is needed with the feature before we can
+		decide whether or not it is advisable to turn it on by
+		default.
+
+	- `program representation' in the declarative debugger
+		Mark Brown reported that his change to use the program
+		representation data structure in the declarative debugger
+		would be at least partly complete in time for the release, 
+		but there is unlikely to be any user features added by then
+
+3.  Release process:
+
+	In about two weeks (ie. in early December), a CVS branch will be
+	created for the release version. The intention is that after this
+	time, only bug fixes will be checked onto the branch.
+
+	The release (codename: Rudolph) is to be made before Christmas.
+
+	- testing
+		Fergus pointed at that with the release on a separate branch, 
+		we will need to change our nightly testing scripts to do at
+		least some of the testing on the release branch.
+
+		It was decided that some of the linux machines should run the
+		release branch and some the main branch. The alpha and
+		sparc can just run the release branch (until a little while
+		after the release).
+
+	- outstanding bugs that need to be fixed before the release
+		- hlc doesn't work properly on the alpha. Fergus will
+		  investigate.
+		- there is a bug that has been discussed on mercury-developers
+		  to do with cse and existential types. Zoltan and David 
+		  Jeffery will investigate
+		- there is a bug to do with existential typing recently 
+		  reported by Peter Ross. David Jeffery has a partial solution,
+		  and will investigate further with Fergus.
+		- there is a long outstanding bug to do with type classes
+		  whereby do_call_class_method inserts the type infos and
+		  type class infos in the wrong order. David Jeffery to
+		  investigate.
+
+4.  Testing on extras and samples:
+
+	Zoltan suggested that we need a standard way of testing the
+	extras and samples. Fergus suggested that we enforce a rule that
+	each Mmakefile contain a `check' target. It was pointed out that
+	it can be quite difficult to test some of the things in extras
+	such as the Tcl/Tk interface. Zoltan suggested that we just test them
+	by compiling to C code.
+
+5.  Summer students:
+	
+	The summer students are starting on November 27th, and we intend to
+	give them a couple of days of talks about Mercury and the compiler
+	(and our SE processes). Zoltan will not be available on Monday the 27th
+	or Tuesday the 28th, so someone else will need to give the talks.
+	Fergus should be around, as will Tyson (we expect). This needs to be
+	sorted out in the next week.
+
+	David Overton mentioned that there may not be enough keys to the
+	Mercury office (and that the door that there are keys to doesn't
+	seem to work properly). David and Zoltan will sort this out with the
+	office.
+
+	After giving the summer students the introductory talks for a couple
+	of days, Zoltan suggested that we set them a programming exercise for
+	the rest of their first week. The battleships task that was a 433-257
+	project (and was posted on mercury-users a while back) was suggested.
+
+	Zoltan needs to organise the theatre in which we will give the
+	presentations on the Monday and Tuesday, and needs to get the slides
+	to those who will present.
+
+5.  Progress reports:
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on (other than the matters already discussed with respect
+	to features to be put into the release).
+
+	David Jeffery <dgj>:
+		- Has been fixing various type class bugs, but mainly working 
+		on HAL.
+
+	Zoltan Somogyi <zs>:
+		- Has been marking exam papers, and will be doing so for the
+		next week or so.
+
+	Fergus Henderson <fjh>:
+		- Various little things, tag switches for MLDS
+
+	Kevin Glynn <keving>:
+		- By his own admission doesn't do anything
+
+	Simon Taylor <stayl>
+		- Working on getting aditi to call Mercury
+
+		- Has been working on speeding up the compiler in various
+		ways (these have been posted to mercury-developers). He
+		reported that the overall speedup when compiling make_hlds.m
+		is around 25%! Everyone agreed to buy him a beer.
+
+		Zoltan suggested that this may be worth mentioning in the
+		NEWS file (depending on how it shapes up compared to version
+		0.9.1).
+
+	David Overton <dmo>:
+		- Has been marking SE projects. 
+
+	Mark Brown <dougl>:
+		- Has been working on using the program representation in
+		  the declarative debugger.
+
+
+Minutes taken by David Jeffery <dgj@cs.mu.oz.au>.
+</pre>
+</html>
