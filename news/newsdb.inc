@@ -37,6 +37,13 @@ Keep watching here for further information."
 and will now warn about variables which are defined but not used."
 ),
 
+"13 Jul 1998" => array("Enhancements to mtags.",
+
+"Mtags is now able to produce tags for typeclass declarations.  It is
+also able to produce tags files in the extended format supported by
+recent versions of Vim and Elvis."
+),
+
 "9 Jul 1998" => array("Existential types.",
 
 "Preliminary support for existential types has been added to Mercury.
