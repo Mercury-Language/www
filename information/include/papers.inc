@@ -17,6 +17,104 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+Constraint-Based mode analysis of Mercury
+</strong>
+<br>
+David Overton, Zoltan Somogyi and Peter Stuckey
+<br>
+<em>
+to appear in the Proceedings of the Fourth International Conference on
+Principles and Practice of Declarative Programming,
+</em>
+Pittsburgh, Pennsylvania, October 2002.
+<a href = "papers/p33-overton.ps.gz">
+Available here (188K).
+</a>
+<p>
+Recent logic programming languages, such as Mercury and HAL,
+require type, mode and determinism
+declarations for predicates. This information allows the generation of
+efficient target code and the detection of many errors at compile-time.
+Unfortunately, mode checking in such languages is difficult. One of the main
+reasons is that, for each predicate mode declaration,
+the compiler is required to decide
+which parts of the procedure bind which variables,
+and how conjuncts in the predicate definition should be re-ordered
+to enforce this behaviour.
+Current mode checking systems limit the possible modes that may be used
+because they do not keep track of aliasing information,
+and have only a limited ability to infer modes,
+since inference does not perform reordering.
+In this paper we develop a mode inference system for Mercury
+based on mapping each predicate to a system of Boolean constraints
+that describe where its variables can be produced.
+This allows us handle programs that are not supported by the existing system.
+<p>
+
+<li>
+<strong>
+Using the heap to eliminate stack accesses
+</strong>
+<br>
+Zoltan Somogyi and Peter Stuckey
+<br>
+<em>
+to appear in the Proceedings of the Fourth International Conference on
+Principles and Practice of Declarative Programming,
+</em>
+Pittsburgh, Pennsylvania, October 2002.
+<a href = "papers/p81-somogyi.ps.gz">
+Available here (190K).
+</a>
+<p>
+The value of a variable is often given by a field of a heap cell,
+and frequently the program will pick up the values of several variables
+from different fields of the same heap cell.
+By keeping some of these variables out of the stack frame,
+and accessing them in their original locations on the heap instead,
+we can reduce the number of loads from and stores to the stack
+at the cost of introducing a smaller number of loads from the heap.
+We present an algorithm that finds the optimal set of variables
+to access via a heap cell instead of a stack slot,
+and transforms the code of the program accordingly.
+We have implemented this optimization in the Mercury compiler,
+and our measurements show that it can reduce program runtimes by up to 12%
+while at the same time reducing program size.
+The optimization is straightforward to apply to Mercury
+and to other languages with immutable data structures;
+its adaptation to languages with destructive assignment
+would require the compiler to perform mutability analysis.
+<p>
+
+<li>
+<strong>
+Accurate garbage collection in an uncooperative environment
+</strong>
+<br>
+Fergus Henderson
+<br>
+<em>
+Proceedings of the 2002 International Symposium on Memory Management
+</em>
+Berlin, Germany, June 2002, pages 150-156.
+<a href = "papers/high_level_gc.ps.gz">
+Available here (83K).
+</a>
+<p>
+Previous attempts at garbage collection in uncooperative environments
+have generally used conservative or mostly-conservative approaches.
+We describe a technique for doing fully type-accurate
+garbage collection in an uncooperative environment,
+using a ``shadow stack'' to link structs of pointer-containing variables,
+together with the data or code needed to trace them.
+We have implemented this in the Mercury compiler, which generates C code,
+and present preliminary performance data on the overheads of this technique.
+We also show how this technique can be extended to handle multithreaded
+applications.
+<p>
+
+<li>
+<strong>
 Compiling Mercury to the .NET Common Language Runtime
 </strong>
 <br>

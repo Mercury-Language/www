@@ -21,7 +21,22 @@
 */
 
 $newsdb = array(
-"10 July 2001" => array("State Variables",
+"15 July 2001" => array("Three papers",
+
+"Three papers on Mercury are now available from our
+<A HREF=\"information/papers.html\">papers page</A>.
+Two will be presented at PPDP '02 in October:
+<em>Constraint-Based Mode Analysis of Mercury</em>
+by David Overton, Zoltan Somogyi and Peter Stuckey, and
+<em>Using the Heap to Eliminate Stack Accesses</em>
+by Zoltan Somogyi and Peter Stuckey.
+The third was presented at ISMM '02 in June:
+<em>Accurate garbage collection in an uncooperative environment</em>
+by Fergus Henderson."
+),
+
+$newsdb = array(
+"10 July 2001" => array("State variables",
 
 "We've added some extra syntax to the language to support programming
 with `state variables'.  State variables are intended to make it easier
