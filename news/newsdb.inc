@@ -22,6 +22,16 @@
 
 $newsdb = array(
 
+"19 Feb 2001" => array("Native code back-end",
+
+"There's a <A HREF=\"download/gcc-backend.html\">new back-end</A>
+for the Mercury compiler that compiles directly to assembler,
+rather than than going via C.
+The new back-end is implemented by linking the Mercury compiler with the
+(relatively) language independent GNU Compiler Collection back-end. 
+In other words, there is now a Mercury front-end for GCC!"
+),
+
 "05 Oct 2000" => array("Events and Reports",
 
 "Two new sections have been added to the web site.  The events section

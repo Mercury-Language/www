@@ -2,6 +2,7 @@ target: html
 
 ROOT=..
 HTML= 	current-release-bugs.html	\
+	gcc-backend.html		\
 	limitations.html		\
 	old-release.html		\
 	release.html			\
