@@ -14,6 +14,43 @@ Mercury, at a variety of levels, are also available.
 <h2>Papers on Mercury</h2>
 
 <ul>
+
+<li>
+<strong>
+Compiling Mercury to high-level C code
+</strong>
+<br>
+Fergus Henderson and Zoltan Somogyi
+<br>
+Department of Computer Science, University of Melbourne,
+Melbourne, Australia, October 2001, 17 pages.
+<a href = "papers/hlc1.ps.gz">
+Available here (75K).
+</a>
+<p>
+Many logic programming implementations compile to C,
+but they compile to very low-level C, and thus discard many
+of the advantages of compiling to a high-level language.
+We describe an alternative approach to compiling logic
+programs to C, based on continuation passing, that we have used
+in a new back-end for the Mercury compiler.
+The new approach compiles to much higher-level C code,
+which means the compiler back-end and run-time system
+can be considerably simpler.
+<p>
+We present a formal schema for the transformation,
+and give benchmark results which show that this approach delivers
+performance about equal to the fastest previous implementation,
+with greater simplicity and better portability and interoperability.
+<p>
+The approach we describe can also be used for compiling
+to other target languages, such as IL
+(the Microsoft .NET intermediate language).
+<p>
+The raw data that the performance evaluation section is based on
+is available as a <a href = "papers/hlc1_perf_data.tar.gz">31 Mb tar file</a>.
+<p>
+
 <li>
 <strong>
 Deep profiling:
@@ -180,7 +217,7 @@ The two optimizations are designed to work together,
 and can make a large class of programs tail recursive.
 <p>
 The raw data on which the evaluation is based
-is available as a <a href = "papers/tail_data.tar.gz">5 Kb tar file</a>
+is available as a <a href = "papers/tail_data.tar.gz">5 Kb tar file</a>.
 <p>
 
 <li>

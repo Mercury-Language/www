@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"26 October 2001" => array("New paper",
+
+"We have a new paper available 
+from our <A HREF=\"information/papers.html\">papers page</A>,
+which outlines the design of the back end that generates high level C.".
+),
+
 "13 August 2001" => array("Smart recompilation",
 
 "The Mercury compiler can now perform smart recompilation. With smart
