@@ -12,6 +12,8 @@
 
 export PATH=/usr/local/bin:$PATH
 
+echo Install started at `date`
+
 whathost=`hostname | sed -e 's/\..*//'`
 if [ $whathost != "hydra" ]
 then
@@ -52,6 +54,7 @@ make install
     #
     # Reindex the web site for searching.
     #
+echo Reindex of website started at `date`
 umask 002
 
     # Index the web-site for searching.
@@ -65,3 +68,4 @@ do
     mv $file `basename $file .work`
 done
 
+echo Install finished at `date`
