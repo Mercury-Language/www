@@ -21,6 +21,17 @@
 */
 
 $newsdb = array(
+"13 November 2001" => array("Unification expressions",
+
+"We've added a new kind of expression to the language.
+A unification expression, written `X @ Y', unifies X and Y and returns
+the result. Unification expressions are most useful when writing switches.
+See the \"Data-terms\" section of the \"Syntax\" chapter of the
+<A HREF=\"$ref_man_latest\">Mercury Language Reference Manual</A>
+for more details. The latest
+<A HREF=\"download/rotd.html\">release of the day</A>
+includes support for unification expressions."
+),
 
 "4 November 2001" => array("New paper",
 
