@@ -44,9 +44,8 @@ MCORBA: A CORBA Binding for Mercury
 David Jeffery, Tyson Dowd and Zoltan Somogyi.
 <br>
 <em>
-Practical Aspects of Declarative Languages: First International Workshop
+Practical Aspects of Declarative Languages: First International Workshop.
 </em>
-To appear:
 Lecture Notes in Computer Science,
 Springer Verlag, January 1999, 15 pages.
 &copy; 
