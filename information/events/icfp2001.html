@@ -1,0 +1,243 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META NAME="generator" CONTENT="txt2html v1.28">
+</HEAD>
+<BODY>
+<H1><A NAME="section-1.">Heavy Metal: the Mercury Entry for the ICFP 2001 Programming Contest</A></H1>
+
+<P>
+Ralph Becket &lt;<A HREF="mailto:rbeck@microsoft.com">rbeck@microsoft.com</A>&gt;, 30 August 2001 
+
+<P>
+This document describes one of the Mercury entries for the ICFP 2001
+programming contest.  We have to wait for the results to be announced
+on 4 September before we can report them here. 
+
+<H1><A NAME="section-2.">The Team</A></H1>
+
+<UL>
+  <LI>UK: Ralph Becket (that's me) wrote the code. 
+  <LI>Belgium: Peter Ross at Mission Critical and Tyson Dowd visiting
+   from Melbourne University. 
+  <LI>Germany: Holger Krug at Rationalizer (Holger offered much useful
+   advice by e-mail). 
+
+</UL>
+<P>
+Before the contest some half dozen people around the world had
+expressed an interest in participating in a Mercury team, although
+many had to pull out at the last minute because of personal
+commitments. 
+
+<H1><A NAME="section-3.">The Problem</A></H1>
+
+<P>
+A complete description of the problem can be found at the contest home
+page <A HREF="http://cristal.inria.fr/ICFP2001/prog-contest/">http://cristal.inria.fr/ICFP2001/prog-contest/</A> 
+
+<P>
+In a nutshell, the problem was to construct a document optimizer for a
+fictitious XML-like text markup language dubbed SML/NG (Simple Markup
+Language/New Generation). The language comprises several tags, each of
+which affects various attributes (bold, emphasis, size, colour etc.)
+applying to the text enclosed by the tags. 
+
+<P>
+This is an instance of a re-bracketing problem which in itself is far
+from trivial. The addition of "real-world" style mark-up semantics
+contrives to make matters even more difficult. 
+
+<P>
+There are some complicated tags such as PL which affects several
+attributes, the EM tag that toggles the emphasis state, and the U tag
+that increases the level of underlining. 
+
+<P>
+Some attributes also interact with one another: the strong emphasis
+attribute hides the ordinary emphasis attribute and only three levels
+of underlining are significant. 
+
+<P>
+There are complicated rules for deciding whether strings of whitespace
+should be rendered as just a single space or not. 
+
+<P>
+Finally, while documents may assume an evaluation context equivalent
+to being placed inside a &lt;PL&gt;...&lt;/PL&gt; block, they cannot assume any
+particular root context colour or size attributes. 
+
+<P>
+Submitted programs had to work within a time limit and produce
+semantically identical output that was no larger than the input
+document. 
+
+<H1><A NAME="section-4.">The Story</A></H1>
+
+<P>
+I managed to communicate with Tyson and Peter by phone while working
+from the office for the first day or so of the project, but after that
+we lost connectivity (they turned the power off at work and I had to
+continue at home over a 33Kbs dialup) and efforts diverged, so Tyson
+and Peter ended up submitting a separate entry (this despite battling
+'flu and hangovers respectively!) 
+
+<P>
+By the end of the first day I'd got the parser working, generating a
+sensible representation, and some code to do space compression and
+simplification. The parser is a hand coded affair and not terribly
+pretty: the right thing to do would have been to knock up a shell
+script in Awk to turn the source document into a form that could be
+handled by the standard Mercury term parser, thereby saving much time,
+typing and generation of boilerplate. 
+
+<P>
+As soon as space compression is complete the program writes out a
+candidate solution file with only that optimization, to ensure that it
+will have at least one solution that is no larger than the input at
+the end of the time limit (there is a small chance that the main
+optimizer will make things worse). The next step transforms the
+tag-based version to a form that discards the source tag nesting
+information. 
+
+<P>
+The internal representation the program uses separates out the
+plaintext from the document, annotated with each successive region
+sharing the same attribute vector. Moving away from any kind of tree
+based representation seemed likely to make the various optimizations
+easier to implement (thanks to Holger for pushing this one.) 
+
+<PRE>
+        Example
+        Input:     &lt;B&gt;&lt;I&gt;bla bla&lt;/I&gt;&lt;/B&gt;&lt;TT&gt;&lt;I&gt;&lt;B&gt;foo bar&lt;/B&gt;&lt;/I&gt; truc&lt;/TT&gt;
+
+        Plaintext: bla blafoo bar truc          }
+                   |      |      |              }     Internal
+        Attrs:     A1     A2     A3             }
+                   |      |      |              }  Representation
+        Extents:   7      7      5              }
+
+        Where A1 = {B, I}
+        and   A2 = {B, I, TT}
+        and   A3 = {TT}
+</PRE>
+
+<P>
+The core of the optimizer takes a "window" of attribute regions and
+searches for the optimal tagging for that region in the context of the
+stack of open tags at the beginning of the window.  The search uses
+iterative deepening over an exhaustive search to guarantee optimality.
+A small extra cost is exacted by the search engine for opening tags
+rather than closing them to discourage it from growing the open tag
+stack too deep. This can be a problem because when a region interface
+specifies returning to the root size and/or colour the only thing that
+can be done is close tags until that goal has been met. 
+
+<PRE>
+        Example with window size 4:
+        +-------------+-------------+-------
+        | A1 A2 A3 A4 | A5 A6 A7 A8 | A9 ...
+        +-------------+-------------+-------
+            Window        Window        Window
+</PRE>
+
+<P>
+The search engine was rather easy to write because Mercury is also a
+logic programming language and hence quite at home with the idea of
+non-determinism. In fact, apart from the tag-opening penalty, there
+are no heuristics in this component of the search engine at all! 
+
+<P>
+The optimizer splits the document up into consecutive windows of
+attribute vectors, each of which is tagged in turn. Since the search
+mechanism makes no references to earlier windows other than the open
+tag stack they leave, the solution for each window is written out as
+it is identified. The final task is to close any remaining open tags. 
+
+<P>
+The optimizer is run repeatedly with window sizes 1, 2, 4, 8, 16, ...
+This may turn out to have been a bad idea because the search space for
+a 16 region window is probably too large for the program to finish
+within the time limit. A better solution would have been to use window
+sizes of 2, 4, 6, 8, ... up to some limit (the optimizer can generate
+a lot of solutions for small files!) 
+
+<P>
+[Note that since the internal representation is a compressed form of
+the semantics of the source document, no benefit could be obtained by
+pipelining this optimizer after any other, although it may be possible
+that having it as a first stage to a different kind of optimizer could
+be useful.] 
+
+<P>
+The Mercury program is run from within a small Bash shell script that
+then goes to sleep until just before the time limit, whereupon it
+selects the smallest complete solution generated by the Mercury
+program. Since the program runs until the time limit expires, there's
+no chance it will beat anyone on time! 
+
+<P>
+I had the bulk of the optimizer finished after the pub on Saturday
+night and spent Sunday morning fixing minor bugs and coding the
+support harness. Pleasingly, the optimizer succeeds at finding all the
+suggested improvements in section 4 of the task specification. It even
+finds the optimal solution to the following posed by Mark Shields here
+at Microsoft Research: 
+
+<PRE>
+        Example Input:
+        &lt;r&gt;-1-&lt;/r&gt;&lt;g&gt;-2-&lt;/g&gt;&lt;b&gt;-3-&lt;/b&gt;&lt;r&gt;-1-&lt;/r&gt;&lt;b&gt;-3-&lt;/b&gt;&lt;g&gt;-2-&lt;/g&gt;
+        |--red---||-green--||--blue--||--red---||--blue--||-green--|
+
+        Optimized Output (window size 2):
+        &lt;r&gt;-1-&lt;g&gt;-2-&lt;b&gt;-3-&lt;r&gt;-1-&lt;/r&gt;-3-&lt;/b&gt;-2-&lt;/g&gt;&lt;/r&gt;
+                          |--red---|
+                    |--------blue---------|
+              |--------------green---------------|
+        |--------------------red---------------------|
+
+        Optimized Output (window size 8):
+        &lt;r&gt;-1-&lt;/r&gt;&lt;g&gt;-2-&lt;b&gt;-3-&lt;r&gt;-1-&lt;/r&gt;-3-&lt;/b&gt;-2-&lt;/g&gt;
+        |--red---|            |--red---|
+                        |--------blue---------|
+                  |--------------green---------------|
+</PRE>
+
+<P>
+The optimality of the window size 2 output was a surprise: we didn't
+see it and thought the window size 8 solution was the unique smallest
+solution!
+
+<H1><A NAME="section-5.">Statistics</A></H1>
+
+<P>
+The program consists of four modules comprising 
+
+<UL>
+  <LI>336 lines of code, 
+  <LI>129 lines of type, mode and compiler declarations, 
+  <LI>223 lines of comment, and 
+  <LI>252 blank lines, giving 
+<HR>
+  <LI>940 lines in total. 
+
+</UL>
+<H1><A NAME="section-6.">Interesting Idea</A></H1>
+
+<P>
+An interesting twist on the search strategy would be to take a leaf
+out of the games AI book: rather than treat each window separately,
+treat each attribute region interface separately and work out the
+optimal tagging looking one window's length ahead. This would slow
+the search process down in proportion to the window size, but might
+produce better results.
+<HR>
+
+<P>
+vim: wm=10 ts=8 sw=8 et<BR>
+:!<A HREF="http://www.aigeek.com/txt2html/">txt2html</A> WRITEUP &gt; WRITEUP.html 
+
+</BODY>
+</HTML>

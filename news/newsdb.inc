@@ -22,7 +22,14 @@
 
 $newsdb = array(
 
-"1 August 2001" => array("New paper and demo",
+"04 August 2001" => array("ICFP 2001 programming contest entry",
+
+"See our <A HREF=\"./information/events/icfp2001.html\">report</A> on our
+<A HREF=\"http://cristal.inria.fr/ICFP2001/prog-contest/\">
+ICFP 2001 programming contest</A> entry."
+),
+
+"01 August 2001" => array("New paper and demo",
 
 "We have a new paper available 
 from our <A HREF=\"information/papers.html\">papers page</A>,
