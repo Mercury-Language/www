@@ -17,6 +17,15 @@
 */
 
 $newsdb = array(
+"13 Aug 1999" => array("New papers",
+
+Two new papers on Mercury are now available from our
+<A HREF=\"information/papers.html\">papers page</A>.
+One describes how Mercury handles run time type information,
+while the other describes the optimizations we use
+to make Mercury programs tail recursive.
+"),
+
 "13 Jul 1999" => array("Operators",
 
 "Terms in the form of x `fun` y are transformed into fun(x, y),
