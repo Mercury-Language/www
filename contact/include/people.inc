@@ -30,6 +30,7 @@ zs@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~harald/">Harald S&oslash;ndergaard</a>,
 harald@cs.mu.OZ.AU, senior lecturer
 <li> Simon Taylor, stayl@cs.mu.OZ.AU, research assistant
+<li> Nicolas Watmough, ndw@students.cs.mu.OZ.AU, summer student
 <li> Michael Wybrow, mjwybrow@students.cs.mu.OZ.AU, summer student
 </ul>
 
