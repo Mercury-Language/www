@@ -22,8 +22,22 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#mazur-thesis">
+Compile-time garbage collection for the declarative language Mercury
+</a>
+</strong>
+<br>
+Nancy Mazur
+<em>
+Ph.D. thesis,
+</em>
+Catholic University of Leuven, Belgium, May 2004.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#dmo-thesis">
-Precise and Expressive Mode Systems for Typed Logic Programming Languages
+Precise and expressive mode systems for typed logic programming languages
 </a>
 </strong>
 <br>
@@ -640,8 +654,88 @@ Tyson Dowd, 1998.
 
 <li>
 <strong>
+<a name="mazur-thesis">
+Compile-time garbage collection for the declarative language Mercury
+</a>
+</strong>
+<br>
+Nancy Mazur
+<br>
+<em>
+Ph.D. thesis,
+</em>
+Department of Computer Science,
+Catholic University of Leuven,
+Belgium,
+May 2004.
+<a href = "papers/CW2004_03_mazur.pdf">
+Available here (1.7M).
+</a>
+<p>
+One of the key advantages of modern programming languages
+is that they free the programmer from the burden of explicit memory management.
+Usualy, this means that memory management is delegated to the runtime system
+by the use of a run-rime garbage collector (RTGC).
+Basically, a RTGC is a dedicated process
+that is run in parallel with the user program.
+Whever the user program needs to store some data,
+the RTGC provides the desired memory space.
+At regular intervals, the RTGC reviews the uses of the allocated memory space,
+and recovers those memory cells that have become garbage,
+i.e. that cannot be accessed any more by the user program.
+</p>
+A complementary form of automatic memory management
+is compile-time garbage collection (CGTC),
+where the decisions form memory management
+are taken at compile time instead of at run-time.
+The compiler determines the lifetime of the variables
+that are created during the execution of the program,
+and thus also the memory that will be associated with these variables.
+Whenever the compiler can guarantee that a variable,
+or more precisely, parts of the memory resources
+that this variable points to at run-time,
+wil never ever be accessed beyond a certain program instruction,
+then the compiler can add instructions to deallocate these resources
+at that particular instruction
+without compromising the correctness of the code.
+If the program instruction is followed by a series of instructions
+that require the allocation of new memory cells, then the compiler
+can replace the sequence of deallocation and allocation instructions,
+by instructions updating the garbage cells, thus reusing these cells.
+<p>
+We study the technique of compile-time garbage collection
+in the context of Mercury, a pure declarative language.
+A key element  of declarative languages is that
+they disallow explicit memory updates
+(which are common operations in most other programming paradigms)
+but they rely instead on term construction and deconstruction
+to manipulate the program data.
+This places a high demand on the memory management
+and makes declarative languages a primary target
+for compile-time garbage collection.
+Moreover, the clear mathematical foundations of Mercury,
+being a pure declarative language,
+makes the development of the program analyses
+that are necessary for CTGC feasible.
+</p>
+In this thesis we define a number of semantics
+for the logic programming language Mercury
+and formally establish the equivalence between them;
+we use these semantics to formalise the different program analysis steps
+that are needed to implement a basic CTGC system for Mercury
+and prove their safeness.
+We extend this basic CGTC system such that it is able to correctly deal
+with programs organised into modules and we implement a complete CTGC system
+within the Melbourne Mercury Compiler.
+To the best of our knowledge,
+this is the first and only complete CTGC system
+that has ever been built for a programming language.
+</p>
+
+<li>
+<strong>
 <a name="dmo-thesis">
-Precise and Expressive Mode Systems for Typed Logic Programming Languages
+Precise and expressive mode systems for typed logic programming languages
 </a>
 </strong>
 <br>
