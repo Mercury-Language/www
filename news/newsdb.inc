@@ -21,7 +21,7 @@
 */
 
 $newsdb = array(
-"17 August 2001" => array("Two PhD theses",
+"17 August 2002" => array("Two PhD theses",
 
 "Two PhD theses on Mercury are now available from our
 <A HREF=\"information/papers.html\">papers page</A>.
@@ -32,7 +32,7 @@ by David Jeffery, and
 by Thomas Conway."
 ),
 
-"15 July 2001" => array("Three papers",
+"15 July 2002" => array("Three papers",
 
 "Three papers on Mercury are now available from our
 <A HREF=\"information/papers.html\">papers page</A>.
@@ -46,7 +46,7 @@ The third was presented at ISMM '02 in June:
 by Fergus Henderson."
 ),
 
-"10 July 2001" => array("State variables",
+"10 July 2002" => array("State variables",
 
 "We've added some extra syntax to the language to support programming
 with `state variables'.  State variables are intended to make it easier
