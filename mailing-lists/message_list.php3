@@ -1,9 +1,9 @@
 <HTML>
 <?
-    $title="%s";
+    $title="%l %s";
     $dir="mailing-lists";
     $root="..";
-    $include="blank.inc";
+    $include="message_list.inc";
     include "$root/include/template.inc"
 ?>
 </HTML>

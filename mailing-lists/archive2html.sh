@@ -15,12 +15,12 @@ export HM_THRDLEVELS=10
     # Header/Footer files for the index pages
     # Well at least the man page says that it should be the file,
     # but for some reason it must be the contents of the file.
-export HM_IHTMLHEADERFILE="`cat header.inc`"
-export HM_IHTMLFOOTERFILE="`cat footer.inc`"
+export HM_IHTMLHEADERFILE="`cat msglist_header.inc`"
+export HM_IHTMLFOOTERFILE="`cat msglist_footer.inc`"
 
     # Header/Footer files for the message pages
-export HM_MHTMLHEADERFILE="`cat header.inc`"
-export HM_MHTMLFOOTERFILE="`cat footer.inc`"
+export HM_MHTMLHEADERFILE="`cat msg_header.inc`"
+export HM_MHTMLFOOTERFILE="`cat msg_footer.inc`"
 
 while getopts ad:f:m:uy: flag ; do
     case $flag in

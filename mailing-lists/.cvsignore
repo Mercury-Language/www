@@ -1,3 +1,5 @@
 *.html
-footer.inc
-header.inc
+msg_footer.inc
+msg_header.inc
+msglist_footer.inc
+msglist_header.inc
