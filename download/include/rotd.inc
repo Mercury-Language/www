@@ -11,28 +11,20 @@ pre-compiled binary packages for easy installation.
 The <a href="release.html">current stable release</a>
 is version <? echo $current_release ?>.
 
-<H3> Current beta-release </H3>
+<H3> Beta release </H3>
 
-The next most stable release will be a <em>numbered beta-release</em>,
-such as 0.11.1-beta-2003-01-17.  These releases are snapshots from a
-"release" branch of our CVS repository.
-They may provide additional bug fixes not yet present
-in the previous numbered release.
-However, in general they are not as well tested.
-Generally the only reason to use these versions would be if you need
-one of the additional bug fixes.
-<p>
-The current beta-release series is named <? echo $next_beta_version ?>.
-Individual releases in this series are named with a date stamp, e.g.
-<? echo $next_beta_version ?>-YYYY-MM-DD.
-<p>
-<B>Download <? echo $next_beta_version ?>:</b>
+A beta version of the upcoming 0.12.0 release is also available.
+The source distribution for this beta release is available for download from:
 <ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/<? echo $next_beta_version ?>/">
-Mercury web site</A><br>
-<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/<? echo $next_beta_version ?>">
-Mercury ftp site</A>
+<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/0.12.0-beta/index.html">
+the Mercury web site</A> or<br>
+<li> <A 
+HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/0.12.0-beta">
+the Mercury ftp site</A>.
 </ul>
+
+Binary distributions will be available for the 0.12.0 release when
+it comes out.
 
 <H3> Stable ROTD (release-of-the-day) </H3>
 <p>

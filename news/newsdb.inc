@@ -22,6 +22,12 @@
 
 $newsdb = array(
 
+"4 April 2005" => array("Mercury 0.12.0-beta available",
+
+"A beta version of the upcoming 0.12.0 release in now available from the
+<A HREF=\"$root/download/rotd.html\">snapshot</A> section."
+),
+
 "21 March 2005" => array("New goal types",
 
 "We've added three new types of goal to the language.
