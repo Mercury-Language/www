@@ -43,11 +43,37 @@ and will now warn about variables which are defined but not used."
 For those of you that aren't theorists, this means you can declare
 polymorphic arguments that are outputs, and their type is also
 an output."
+), 
+
+"15 May 1998" => array("Tabling.",
+
+"Predicates can now be tabled.  Predicates to be tabled are requested by
+the use of a pragma."
+),
+
+"8 Apr 1998" => array("Native Debugger.",
+
+"An alpha version of a native trace-based debugger has been implemented.
+The main features missing are a term browser and the ability to redo
+goals."
+),
+
+"4 Mar 1998" => array("Sub-modules.",
+
+"The module system now includes support for sub-modules."
 ),
 
 "1 Feb 1998" => array("Ported to glibc.",
 
 "Mercury 0.7.3 has been ported to glibc for Debian GNU/Linux."
+),
+
+"19 Dec 1997" => array("Type classes.",
+
+"Type classes support added. Type classes let you specify an interface
+and then provide multiple different implementations of that interface.
+They're similar to abstract base classes in C++ or \"interfaces\" in
+Java."
 ),
 
 "1 Nov 1997" => array("Mercury 0.7.3 released.",
