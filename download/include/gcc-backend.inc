@@ -44,7 +44,7 @@ This was fixed in Mercury 0.10.1.
 
 <p>
 
-For more information, see the file gcc/mercury/README
+For more information, see the file mercury-gcc/README
 in the mercury-gcc distribution (see below).
 
 <p>
@@ -97,8 +97,8 @@ For Mercury 0.10 or 0.10.1, get mercury-gcc-0.10.1.tar.gz.
 For release-of-the-day distributions, get mercury-gcc-rotd-20020911.tar.gz.
 Alternatively, you can also get this using
 <a href="<?echo $root?>/information/developers/remote_cvs.html">CVS</a>;
-it is in the "gcc" directory of the Mercury repository, so it can
-be checked out using "cvs checkout gcc".
+it is in the "mercury-gcc" directory of the Mercury repository, so it can
+be checked out using "cvs checkout mercury-gcc".
 </ul>
 
 <p>
@@ -110,7 +110,7 @@ above.
 <p>
 
 For directions on how to build from these sources, see the file
-gcc/mercury/README in the mercury-gcc distribution.
+mercury-gcc/README in the mercury-gcc distribution.
 
 <H3>Binaries</H3>
 
