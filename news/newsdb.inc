@@ -18,6 +18,14 @@
 
 $newsdb = array(
 
+"13 Dec 1998" => array("Mercury 0.8.1 released",
+
+"This release just fixes some problems with the
+binary distributions for 0.8.
+Release information can be found
+<A HREF=\"download/release.html\">here</A>."
+),
+
 "6 Dec 1998" => array("Dynamic linking support",
 
 "The latest development version of the extras distribution

@@ -1,9 +1,27 @@
 <h2>Current Release</h2>
 
+Mercury 0.8.1 was released on December 13, 1998.
+The only change in this release was that we fixed some
+problems with the scripts for building the binary release;
+apart from that it is identical to 0.8.
+There is no need for users who already have 0.8 to upgrade.
+
+Source and binary distributions of release 0.8.1, and
+a patch file containing the diffs between 0.8 and 0.8.1,
+are available at the following site(s):
+
+<dl>
+<dt> Australia 
+<dd> <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
+     ftp://turiel.cs.mu.OZ.AU/pub/mercury</a><br>
+     The Mercury ftp site in Melbourne, Australia.
+</dl>
+
 Mercury 0.8 was released on November 18, 1998.
+
 The NEWS file, detailing differences since the release of 0.7.3,
 is available <a href="release-0.8.html">here</a>.
-Source and binary distributions of release 0.8 are available 
+Source distributions of release 0.8 are available 
 at the following site(s):
 
 <dl>
@@ -15,21 +33,15 @@ at the following site(s):
 <dd> <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
      ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a><br>
      Stonybrook University in New York, USA. 
-</dl>
-
-We hope to eventually make the source distribution for 0.8
-available at these sites too:
-
-<dl>
 <dt> USA
 <dd> USA <a href = "ftp://sunsite.unc.edu/pub/Linux/devel/lang/">
-     ftp://sunsite.unc.edu/pub/Linux/devel/lang</a><br>
+     ftp://sunsite.unc.edu/pub/Linux/devel/lang/mercury/</a><br>
      Sunsite in the USA. 
 <dt> Elsewhere	
 <dd> Sunsite has many 
      <a href="http://sunsite.unc.edu/pub/Linux/MIRRORS.html">mirrors</a>.
      <br>
-     Mercury is available in the /pub/Linux/devel/lang directory, or
+     Mercury is available in the /pub/Linux/devel/lang/mercury directory, or
      its equivalent place on the mirrors.
 </dl>
 
@@ -107,40 +119,40 @@ download the source or binary distributions.
 <dt>
 The full source distribution is about 6 Mb.<br>
 <dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.tar.gz">Australia</a>
 </dl>
 
 <h3>Binary Distribution</h3>
 
-Binary distributions of Mercury 0.8:
+Binary distributions of Mercury 0.8.1:
 <br>
 (Note that some of these URLs will be dangling links until we have
 installed all the binary distributions.)
 <p>
 
 <dl>
-    <dt>x86 machines running Linux (ELF executable format) (about 14.5 Mb):
+    <dt>x86 machines running Linux (ELF executable format, libc 6) (about 14.5 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i586-pc-linux-gnu.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.i586-pc-linux-gnu.tar.gz">USA</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.i686-pc-linux-gnu.tar.gz">USA</a>
 	<p>
 
-    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (about 17.9 Mb):
+    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6 (about 17.9 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.sparc-sun-solaris2.6.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.sparc-sun-solaris2.6.tar.gz">USA</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.sparc-sun-solaris2.6.tar.gz">USA</a>
 
 	<p>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix (about 36 Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.alpha-dec-osf3.2.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.alpha-dec-osf3.2.tar.gz">USA</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.1.alpha-dec-osf3.2.tar.gz">USA</a>
 
 <!--
 	<p>
     <dt>x86 machines running Windows 95 or Windows NT (size unknown):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i386-windows.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.1.i386-windows.tar.gz">Australia</a>
 
 -->
 

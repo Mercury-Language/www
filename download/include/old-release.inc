@@ -56,7 +56,7 @@ On 15th August, 1997 we released Mercury 0.7.<p>
 <dt>
 The full source distribution is 4.8Mb.<br>
 <dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/mercury-0.7.tar.gz">Australia</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.tar.gz">USA</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.tar.gz">Europe</a>
 </dl>
@@ -66,28 +66,28 @@ The full source distribution is 4.8Mb.<br>
 <dl>
     <dt>x86 machines running Linux (ELF executable format) (4.9Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.i386-linux-ELF.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/mercury-0.7.i386-linux-ELF.tar.gz">Australia</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.i386-linux-ELF.tar.gz">USA</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.i386-linux-ELF.tar.gz">Europe</a>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (5.5Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.sparc-sun-solaris.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/mercury-0.7.sparc-sun-solaris.tar.gz">Australia</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.sparc-sun-solaris.tar.gz">USA</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.sparc-sun-solaris.tar.gz">Europe</a>
 
 	<p>
     <dt>DEC Alpha machines running OSF/1 or Digital Unix (11.2Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.alpha-dec-osf.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/mercury-0.7.alpha-dec-osf.tar.gz">Australia</a>
 <a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.alpha-dec-osf.tar.gz">USA</a>
 <a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.alpha-dec-osf.tar.gz">Europe</a>
 
 	<p>
     <dt>x86 machines running Windows 95 or Windows NT (2.9Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.i386-windows.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/mercury-0.7.i386-windows.tar.gz">Australia</a>
 
 </dl>
 
@@ -96,8 +96,8 @@ The full source distribution is 4.8Mb.<br>
 	<dt> Australia: 
 
 	<dd>
-	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/">
-	ftp://turiel.cs.mu.OZ.AU/pub/mercury/</a>
+	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/">
+	ftp://turiel.cs.mu.OZ.AU/pub/mercury/old-releases/</a>
 
 	<dt> USA:
 	<dd>
