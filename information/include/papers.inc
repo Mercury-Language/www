@@ -225,7 +225,7 @@ Accurate garbage collection in an uncooperative environment
 Fergus Henderson
 <br>
 <em>
-Proceedings of the 2002 International Symposium on Memory Management
+Proceedings of the 2002 International Symposium on Memory Management,
 </em>
 Berlin, Germany, June 2002, pages 150-156.
 <a href = "papers/high_level_gc.ps.gz">
