@@ -18,9 +18,9 @@ Format: <select name=format>
 <option value=builtin-short>Short
 </select>
 </font>
-<input type=hidden name=config value=htdig>
+<input type=hidden name=config value=htdig-mercury>
 <input type=hidden name=restrict value="">
-<input type=hidden name=exclude value="">
+<input type=hidden name=exclude value="mailing-lists">
 <br>
 Search:
 <input type="text" size="30" name="words" value="">

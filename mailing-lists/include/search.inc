@@ -16,8 +16,8 @@ Format: <select name=format>
 <option value=builtin-short>Short
 </select>
 </font>
-<input type=hidden name=config value=htdig-mlists>
-<input type=hidden name=restrict value="">
+<input type=hidden name=config value=htdig-mercury>
+<input type=hidden name=restrict value="mailing-lists">
 <input type=hidden name=exclude value="">
 <br>
 Search:
