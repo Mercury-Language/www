@@ -29,7 +29,7 @@ They are:
 <em>Expressive type systems for logic programming languages</em>
 by David Jeffery, and
 <em>Towards parallel Mercury</em>
-by Thomas Conway.
+by Thomas Conway."
 ),
 
 "15 July 2001" => array("Three papers",
