@@ -1,0 +1,80 @@
+<html>
+
+<pre>
+Hi,
+
+We had a meeting of the Mercury group on Fri Oct 13, 3:15pm to 4:05pm.
+
+Attendees:
+	David Jeffery <dgj>
+	David Overton <dmo>
+	Mark Brown <dougl>
+	Zoltan Somogyi <zs>
+	Tyson Dowd <trd>
+	Fergus Henderson <fjh>
+	Simon Taylor <stayl>
+
+1.  Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	David Jeffery <dgj>:
+		- Has been working on a paper on existential types (with fjh).
+		- Has been debugging the typeclass bug reported by Nancy
+		  Mazur (which is the same bug as was previously
+		  reported by Tom Conway).
+
+	David Overton <dmo>:
+		- Had been finished off the change to support polymorphic modes
+		  (i.e. allowing inst variables which can be instantatied
+		  to any ground inst in mode declarations).
+		  This will be committed soon (although it still suffers
+		  from performance problems which may be an impediment
+		  to using it widely).
+
+		- Has been working on getting higher order working in
+		  the new modechecker.
+
+	Mark Brown <dougl>:
+		- Has been working on extending the debuggers support
+		  for parameter passing to the browser.
+		- Some discussion ensued about how to implement
+		  persistent parameters for browsing preferences.
+		- Decided to implement a system where you could change
+		  preferences inside the main debugger, or inside the 
+		  browser, and such changes would be persistent.  
+		  Later support could be added for making non-persistent
+		  changes.
+
+	Zoltan Somogyi <zs>:
+		Nothing particular to report.
+
+	Tyson Dowd <trd>
+		Has been working on the IL back-end changes which have
+		now all been reviewed.
+
+		Some discussion about how it isn't yet possible to
+		bootstrap because of the missing library components
+		(parts written in C don't run out of the box on .NET)
+
+		Tyson mentioned that Mission Critical was interested in
+		help us port the library to C# (or some backend) for the
+		.NET port.  
+
+	Simon Taylor <stayl>
+		Simon has been working on Aditi, and gave some
+		information on what tasks still need to be completed
+		before Aditi could be released.
+
+	Fergus Henderson <fjh>
+
+		- Has been busy refereeing papers and reviewing
+		  changes.
+
+		- Was interviewed by a journalist recently.
+
+Minutes taken by Tyson Dowd <trd@cs.mu.oz.au>.
+</pre>
+</html>
