@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#dmo-thesis">
+Precise and Expressive Mode Systems for Typed Logic Programming Languages
+</a>
+</strong>
+<br>
+David Overton.
+<em>
+Ph.D. thesis,
+</em>
+Melbourne, 2003.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#aadebug03-paper">
 Idempotent I/O for safe time travel
 </a>
@@ -623,6 +637,104 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="dmo-thesis">
+Precise and Expressive Mode Systems for Typed Logic Programming Languages
+</a>
+</strong>
+<br>
+David Overton.
+<br>
+<em>
+Ph.D. thesis,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+December 2003.
+<a href = "papers/dmo-thesis.ps.gz">
+Available here (602K).
+</a>
+<p>
+In this thesis we look at mode analysis of logic programs.
+Being based on the mathematical formalism of predicate logic,
+logic programs have no <em>a priori</em> notion of data flow&#8212;a 
+single logic program may run in multiple <em>modes</em>
+where each mode describes, or prescribes, a pattern of data flow.
+</p>
+
+<p>
+A <em>mode system</em> provides an abstract domain
+for describing the flow of data in logic programs,
+and an algorithm for analysing programs to <em>infer</em> the
+modes of a program or to <em>check</em> the correctness of
+<em>mode declarations</em> given by the programmer.
+Such an analysis can provide much useful information to the compiler for
+optimising the program.
+In a prescriptive mode system, mode analysis is also an important part of the
+semantic analysis phase of compilation (much like type analysis)
+and can inform the programmer of many errors or potential errors in the
+program at compile time.
+We therefore believe it is an essential component of any industrial strength
+logic programming system.
+</p>
+
+<p>
+Our aim is to develop a strong and prescriptive mode system that is both
+as precise and expressive as possible.
+We believe this requires a strongly typed and purely declarative
+language and so we focus on the language Mercury.
+</p>
+
+
+<p>
+The first contribution of our work is to give a detailed description
+of Mercury's existing mode system, which is based on abstract interpretation.
+Although most of this system has been around for several years,
+this is the first time it has been described in this level of detail.
+This is also the first time the relationship of the mode system to
+the formalism of abstract interpretation has been made clear.
+</p>
+
+<p>
+Following that, we look at ways of extending the mode system to provide further
+precision and expressiveness, and to overcome some of the limitations of the
+current system.
+</p>
+
+<p>
+The first of these extensions is to support a form of constrained parametric
+polymorphism for modes.
+This is analogous to constrained parametric polymorphic type systems such as
+type classes, and adds a somewhat similar degree of expressiveness to the mode
+system.
+</p>
+
+<p>
+Next we look at a method for increasing the precision of the mode analysis by
+keeping track of aliases between variables.
+The increased precision we gain from this allows an increase in expressiveness
+by allowing the use of partially instantiated data structures and more
+complex uniqueness annotations on modes.
+</p>
+
+<p>
+The final area we look at is an alternative approach to mode analysis using
+Boolean constraints.
+This allows us to design a mode system that can capture complex
+mode constraints between variables and
+more clearly separates the various tasks required for mode analysis.
+We believe that this constraint-based system provides a good platform for
+further extension of the Mercury mode system.
+</p>
+
+<p>
+The work we describe has all been
+implemented in the Melbourne Mercury compiler,
+although only constrained parametric polymorphism has so far become part of an
+official compiler release.
+</p>
 
 <li>
 <strong>

@@ -21,6 +21,16 @@
 */
 
 $newsdb = array(
+"21 January 2004" => array("New PhD thesis",
+
+"A new PhD thesis on the Mercury mode system,
+<em>Precise and Expressive Mode Systems for
+Typed Logic Programming Languages</em>
+by David Overton,
+is now available from our
+<A HREF=\"information/papers.html\">papers page</A>."
+),
+
 "25 Sep 2003" => array("Accurate garbage collection",
 
 "The high-level C back-end now supports accurate garbage collection,
