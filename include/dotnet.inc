@@ -2,15 +2,11 @@
 
 <h3> Status </h3>
 
-The most recent daily releases of the Mercury compiler include support
-for generating code for the .NET platform.  The Mercury library and
-runtime have been partially ported to .NET, however these changed have
-not yet been integrated into the Mercury compiler.
-
-<p>
-
-We expect to be able to make a beta-release for the Mercury .NET backend
-available in around December 2000.  
+Recent daily releases of the Mercury compiler include support for
+generating code for the .NET platform.  Since early January 2001, they have
+also included a partial port of the Mercury library and runtime to .NET.
+However, there are still many parts of the standand library which are
+not yet implemented for this port.
 
 <h3> Articles </h3>
 
