@@ -1,0 +1,103 @@
+<html>
+
+<pre>
+Minutes of the Mercury meeting
+Fri Oct 6th, 3:15pm to 4:40pm.
+
+Attendees:
+	David Jeffery <dgj>
+	David Overton <dmo>
+	Mark Brown <dougl>
+	Zoltan Somogyi <zs>
+	Tyson Dowd <trd>
+	Fergus Henderson <fjh>
+	Kevin Glynn <keving>
+	Peter Stuckey <pjs>  (for most of the meeting)
+
+1.  Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	David Jeffery <dgj>:
+		- Has been working on HAL stuff, and on merging the changes
+		  on the HAL branch (`no_alias') of the cvs repository back
+		  into the main branch.
+		- Has been working on a paper on existential types (with fjh).
+
+	Zoltan Somogyi <zs>:
+		Has been working with Tom Conway on a paper on the
+		more accurate version of the profiler.
+
+		Has been working on handling retry from the middle of
+		procedures in mdb.
+
+		Asked whether we should include goal paths in stack traces.
+		The concensus was that since we already have the line number,
+		that is enough in most cases, but the goals paths should be
+		included if you specify the `--detailed' option to the
+		`stack' command.
+
+		Has been working on implementing retry in procedures
+		which do I/O (by tabling the results).
+
+	Fergus Henderson <fjh>:
+		Has been working on solving a GC-related bug with the
+		asm_fast.gc.par grade, and on code reviewing.
+
+	David Overton <dmo>:
+		Has finished coding higher-order support in new mode checker,
+		but hasn't tested it yet.
+
+	Mark Brown <dougl>:
+		Has been working on writing up article on declarative debugging
+		of ICFP programming contest solution.
+
+		Has been fixing a problem that someone reported where
+		if you try to use the declarative debugger on code
+		that wasn't compile with the right options, the
+		declarative debugger throws an exception rather than
+		reporting a decent error message.
+
+		Zoltan suggested that it might be good to add
+		initialization code to link all the module_layouts
+		into a single program_layout table, so that the
+		declarative debugger can tell when the program
+		includes some modules which haven't been compiled with
+		declarative debugging.  Mark responded that he though
+		the declarative debugger could use the program
+		representation instead.  Fergus suggested that having
+		a unified program_layout might be useful for other
+		purposes too.
+
+		There was some discussion about whether the
+		declarative debugger could debug shallowly-traced
+		code.
+
+	Tyson Dowd <trd>:
+		Has been working on responding to fjh's review
+		comments on IL back-end.
+
+		Has been working on the C++ interface.
+
+		Had been working on a .par GC-related bug with MCORBA,
+		now hand-balled that to fjh.
+
+	Kevin Glynn <keving>:
+		Mentioned `hi' interactive Hugs-like Haskell compiler
+		front-end, and asked about Mercury equivalent.  We
+		discussed some potential improvements to mdb.
+
+2. Summer Studentship Projects
+
+	Zoltan had another suggestion for a summer studentship
+	project: improve/extend the pretty printer (library/pprint.m),
+	e.g. to handle depth limits, and possible also get the
+	debugger's term browser to make use of these extensions.
+
+3.  Miscellaneous.
+
+	We discussed RTTI support for field names.
+</pre>
+</html>
