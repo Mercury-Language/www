@@ -24,6 +24,7 @@
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-developers/list.html">Developers</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">Users</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/search.html">Search</a><BR>
 </SMALL>
 <P>
 <B><a href="<?echo $root?>/download.html">Download</a></B><BR>
@@ -42,3 +43,5 @@
 </SMALL>
 <P>
 <B><a href="<?echo $root?>/contact.html">Contact</a></B>
+<P>
+<B><a href="<?echo $root?>/search.html">Search</a></B><BR>

@@ -10,7 +10,8 @@ HTML=	index.html 		\
 	information.html 	\
 	download.html 		\
 	contact.html 		\
-	applications.html
+	applications.html	\
+	search.html
 
 DIRS=contact download information mailing-lists
 ROOT=.

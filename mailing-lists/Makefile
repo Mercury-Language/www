@@ -1,6 +1,6 @@
 target: html
 
-HTML= 	blank.html mailing-lists.html
+HTML= 	blank.html mailing-lists.html search.html
 DIRS=mercury-users mercury-developers
 ROOT=..
 

@@ -10,11 +10,12 @@ The mercury-developers list is the main communication device between the
 different developers of Mercury.  This list contains diffs of work in
 progress and discussions of implementation details of the compiler.
 If you are interested in what has been added to the compiler lately,
-please look in this <A HREF="mercury-developers/list.html">archive</A>.
+please look in this <A HREF="mercury-developers/list.html">archive</A>
+or <A HREF="search.html">search</A> it.
 <li>
 The mercury-users list is intended for general discussion
 about Mercury.  It is <A HREF="mercury-users/list.html">
-archived</A>.
+archived</A> and <A HREF="search.html">searchable</A>.
 </ul>
 These lists are now managed using the "majordomo" mailing list software.
 To subscribe or unsubscribe to either of these mailing lists,
