@@ -1,7 +1,7 @@
-<h2>Release 0.10.0 - Known Problems</h2>
+<h2>Release 0.10 - Known Problems</h2>
 
 The following is collected email of reported problems with release
-0.10.0 of the Mercury distribution.
+0.10 of the Mercury distribution.
 Included, where possible, are patches or work-arounds.
 There is also a
 <a href="http://sourceforge.net/bugs/?group_id=1126">Mercury bugs page</a>
@@ -21,6 +21,58 @@ implementation we have found bugs in gcc, as, ld, the dynamic loader,
 and even the OS kernel.  We hope that by listing the known outstanding bugs
 here we are doing our users a service.  It would be disappointing if
 anyone were to infer the wrong thing from it.
+<p>
+<hr>
+<p>
+Subject: Mercury 0.10 on RH Linux 7.0
+<p>
+Date: Sun, 18 Mar 2001
+<p>
+Hi,<p>
+    Not really a Mercury bug, but the new version of Mercury causes a gcc
+internal compiler error. Any workarounds?
+<p>
+gcc version 2.96 20000731 (Red Hat Linux 7.0)
+<p>
+<pre>
+Here's the error
+...
+mercury_trace_alias.c: In function `MR_trace_remove_alias':
+mercury_trace_alias.c:95: Unable to find a register to spill in class
+`SIREG'.
+...
+mercury_trace_alias.c:95: Internal compiler error in spill_failure, at
+reload1.c:1826
+Please submit a full bug report.
+See <URL:http://www.gnu.org/software/gcc/bugs.html> for instructions.
+</pre>
+<p>
+<i>
+	[Suggested work-around is to install from the
+	binary distribution rather than the source distribution.
+	We'd appreciate feedback on whether that work-around works.]
+</i>
+
+<hr>
+<br>
+Date: Wed, 4 Oct 1995
+<p>
+The following module causes an "undefined variable Inf" error in the
+generated C code, because 1E400 == Infinity, which gets printed as `Inf'.
+<p>
+<pre>
+:- module hello.
+:- interface.
+:- import_module io.
+
+:- pred main(io__state::di, io__state::uo) is det.
+
+:- implementation.
+
+main -->
+	io__write_float(1E400),
+	io__write_string("\n").
+</pre>
 <p>
 <hr>
 <p>
