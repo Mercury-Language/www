@@ -35,7 +35,7 @@ install: local_install
 local_install: all
 	for dir in patches;					\
 	do							\
-		cp -a $$dir $(INSTALL_WEBDIR);			\
+		$(CP) $$dir $(INSTALL_WEBDIR);			\
 		chmod -R a+r,g+w $(INSTALL_WEBDIR)/$$dir;	\
 		chgrp -R mercury $(INSTALL_WEBDIR)/$$dir;	\
 	done

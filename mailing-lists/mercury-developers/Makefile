@@ -13,7 +13,7 @@ local_install: html
 	do							\
 		if [ -d $$dir -a $$dir != "include" ];		\
 		then						\
-			cp -af $$dir $(INSTALL_WEBDIR);		\
+			$(CP) $$dir $(INSTALL_WEBDIR);		\
 		fi						\
 	done
 	chmod -R a+r,g+w $(INSTALL_WEBDIR)/*

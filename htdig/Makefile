@@ -21,7 +21,7 @@ header.inc footer.inc: header_and_footer.html
 		header_and_footer.html
 
 local_install:
-	cp -af header.inc footer.inc $(INSTALL_WEBDIR)/
+	$(CP) header.inc footer.inc $(INSTALL_WEBDIR)/
 
 local_clean:
 	rm -f header.inc footer.inc

@@ -23,15 +23,15 @@ local:
 	echo "LIBRARY_DIR=`pwd`/library"  > Mmake.common
 	(cd notes; mmake MERCURY_DIR=.. )
 	(cd mercury-doc; mmake library-chapters.texi split_html ps)
-	cp -af notes/*.text doc
-	cp -af mercury-doc/*.html notes/*.html doc
-	cp -af mercury-doc/*.ps doc
+	$(CP) notes/*.text doc
+	$(CP) mercury-doc/*.html notes/*.html doc
+	$(CP) mercury-doc/*.ps doc
 	(cd doc; gzip -f -9 *.ps)
 
 local_install: all
 	for dir in bench developers doc papers;			\
 	do							\
-		cp -af $$dir $(INSTALL_WEBDIR);			\
+		$(CP) $$dir $(INSTALL_WEBDIR);			\
 		chmod -R a+r,g+w $(INSTALL_WEBDIR)/$$dir;	\
 		chgrp -R mercury $(INSTALL_WEBDIR)/$$dir;	\
 	done

@@ -5,6 +5,7 @@
 #-----------------------------------------------------------------------------#
 
 PHP3=/usr/lib/cgi-bin/php3 -q
+CP=cp -afu
 
 #-----------------------------------------------------------------------------#
 
@@ -43,12 +44,14 @@ endif
 
 
 .PHONY: install
-install: $(HTML)
+install: html
 	[ -d $(INSTALL_WEBDIR) ] || mkdir -p $(INSTALL_WEBDIR)
-	cp -af $(HTML) $(INSTALL_WEBDIR)/
+	$(CP) $(HTML) $(INSTALL_WEBDIR)/
 ifdef DIRS
 	for dir in $(DIRS);						\
 	do				        			\
+		[ -d $(INSTALL_WEBDIR)/$$dir ] ||			\
+			mkdir -p $(INSTALL_WEBDIR)/$$dir;		\
 		(export INSTALL_WEBDIR=$(INSTALL_WEBDIR)/$$dir &&	\
 		cd $$dir && $(MAKE) install);				\
 	done
