@@ -22,6 +22,15 @@
 
 $newsdb = array(
 
+"18 May 2001" => array("New paper",
+
+"We have a new paper available 
+from our <A HREF=\"information/papers.html\">papers page</A>,
+which describes the design and
+implementation of a compile time garbage collection and memory reuse
+system in the Melbourne Mercury compiler."
+),
+
 "04 Apr 2001" => array("Mercury 0.10.1 released",
 
 "Release information is available

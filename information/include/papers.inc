@@ -16,6 +16,45 @@ Mercury, at a variety of levels, are also available.
 <ul>
 <li>
 <strong>
+Practical Aspects for a working Compile Time Garbage Collection System
+for Mercury
+</strong>
+<br>
+Nancy Mazur, Peter Ross, Gerda Janssens, Maurice Bruynooghe
+<br>
+<em>
+Technical Report CW310
+</em>,
+Departement Computerwetenschappen,
+Katholieke Universiteit Leuven, 18 pages.
+<a href = "papers/CW310_ctgc.ps.gz">
+Available here (135K).
+</a>
+<p>
+Compile-time garbage collection is still a very uncommon feature within
+compilers. 
+In previous work we have developed a compile-time structure
+reuse system for Mercury, a logic programming language. 
+This system derives so called reuse information. This information
+indicates which datastructures can safely be reused at run-time. 
+<p>
+As preliminary experiments were promising, we 
+have continued this work and have now a 
+working and well performing near-to-ship
+compile-time garbage collection system built into the Melbourne Mercury
+Compiler. 
+<p>
+In this paper we present the multiple design decisions leading to this
+system, we report the results of using compile time garbage
+collection for a set of benchmarks, including 
+real-world programs, and finally we discuss further
+possible improvements. 
+Benchmarks show substantial memory savings and a noticeable reduction
+in execution time. 
+<p>
+
+<li>
+<strong>
 Binding-time analysis by constraint solving: a modular and
 higher-order approach for Mercury
 </strong>
