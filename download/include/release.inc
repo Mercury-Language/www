@@ -169,6 +169,13 @@ It should be pretty easy to port to any sufficiently Unix-like system.
 You can go to our FTP sites or mirrors, or directly
 download the source or binary distributions.
 
+<p>
+
+Note that although the source distribution is much smaller than
+the binary distribution, the compilation process will
+almost always take more time than is saved by the smaller
+download.
+
 <h3><a name="source">Source Distribution</a></h3>
 
 The main "mercury-compiler" source distribution is about 10 Mb.
