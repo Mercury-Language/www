@@ -22,6 +22,16 @@
 
 $newsdb = array(
 
+"09 December 2004" => array("New Standard Library to Convert Mercury Terms
+to XML Documents",
+
+"A new module `term_to_xml' has been added to the standard library.  This
+module contains predicates to write arbitrary Mercury terms to an output
+stream as XML.  Automatic generation of DTDs for Mercury types is also 
+supported.  Once a Mercury term is in XML it can be converted to many other
+formats such as HTML or XUL using an appropriate stylesheet."
+),
+
 "19 October 2004" => array("Shared Library Support for Mac OS X",
 
 "Shared Mercury libraries now work on Mac OS X.  The standard Mercury libraries
