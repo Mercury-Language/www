@@ -39,6 +39,8 @@ some of whom are still informally associated with the project:
 <li> Tibor Benyi, honours student
 <li> James Bligh, directed studies student
 <li> Waye-Ian Chiew, wchi@students.cs.mu.OZ.AU, summer student
+<li> <a href = "http://www.csse.monash.edu.au/~wharvey/">Warwick Harvey</A>,
+wharvey@cs.monash.edu.au, research fellow at Monash University
 <li> Oliver Hutchinson, ohutch@students.cs.mu.OZ.AU, summer student
 <li> Jane Langley, summer student
 <li> Peter Malkin, pnmalk@students.cs.mu.OZ.AU, summer student
