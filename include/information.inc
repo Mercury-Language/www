@@ -53,3 +53,11 @@ project.
         <a href = "information/developer.html">
         Information for the developers of Mercury</a>
 </ul>
+
+<h3> Events and Reports </h3>
+
+Want to know more about what's happening with Mercury?
+<p>
+Check out our <a href = "information/events.html">Events</a>
+and <a href = "information/reports.html">Reports</a> web pages.
+

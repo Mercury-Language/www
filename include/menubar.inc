@@ -120,7 +120,18 @@ if($menu == "Related") {
 
 <P>
 
-<B><a href="<?echo $root?>/contact.html">Contact</a></B>
+<B><a href="<?echo $root?>/contact.html">Contact</a></B><BR>
+<?
+if($menu == "Contact") {
+?>
+<SMALL>
+  &nbsp;&nbsp;<a href="<?echo $root?>/contact/email.html">Email Addresses</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/contact/people.html">People</a> <BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mailing-lists.html">Mailing Lists</a> <BR>
+</SMALL>
+<?
+}
+?>
 
 <P>
 
