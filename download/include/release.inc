@@ -1,22 +1,22 @@
 <h2>Current Release</h2>
 
-The current stable release is Mercury 0.7. See below for details
-on this release.<p>
-
-The current development release is Mercury 0.7.3. The NEWS file,
-detailing differences since the release of 0.7 is available <a
-href="release-0.7.3.html">here</a>. We don't provide binary packages for
-development releases, so you will need to compile some C code to use
-this release.
-
-The Mercury 0.7.3 source distribution is available for download from the
-following sites:
+We're currently in the process of releasing Mercury 0.8.
+The NEWS file, detailing differences since the release of 0.7.3,
+is available <a href="release-0.8.html">here</a>.
+When 0.8 is ready for release, it will be available
+at the following site(s):
 
 <dl>
 <dt> Australia 
 <dd> <a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury">
      ftp://turiel.cs.mu.OZ.AU/pub/mercury</a><br>
      The Mercury ftp site in Melbourne, Australia.
+</dl>
+
+We hope to eventually make the source distribution for 0.8
+available at these sites too:
+
+<dl>
 <dt> USA
 <dd> USA <a href = "ftp://sunsite.unc.edu/pub/Linux/devel/lang">
      ftp://sunsite.unc.edu/pub/Linux/devel/lang</a><br>
@@ -29,42 +29,24 @@ following sites:
      its equivalent place on the mirrors.
 </dl>
 
-<h3>Release 0.7.3</h3>
-
-On the 1st November, 1997, we released Mercury 0.7.3. Some installation
-problems with Windows, problems with the profiler and compatibility with
-GNU Make versions >= 3.76 were fixed. A few features have also been
-added.
-
-<h3>Release 0.7.2</h3>
-
-On the 13th October, 1997 we released Mercury 0.7.2. This release fixed
-a few bugs, and added quite a few new features. Support was added
-for user-defined equality predicates and generalized trailing.
-We also split the distribution into "core" and "extras".
-
-<h3>Release 0.7</h3>
-
-On 15th August, 1997 we released Mercury 0.7.<p>
-
 <a name="known">
 <h3>Information</h3>
 </a>
 
 <ul>
 	<li>
-	<a href = "release-0.7.html">
-	Release notes for 0.7
+	<a href = "release-0.8.html">
+	Release notes for 0.8
 	</a>
 
 	<li>
-	<a href = "release-0.7-contents.html">
-	Contents of release 0.7 distribution
+	<a href = "release-0.8-contents.html">
+	Contents of release 0.8 distribution
 	</a>
 
 	<li>
-	<a href = "release-0.7-bugs.html">
-	Known problems with release 0.7
+	<a href = "release-0.8-bugs.html">
+	Known problems with release 0.8
 	</a>
 
 	<li>
@@ -115,49 +97,50 @@ download the source or binary distributions.
 
 <h3>Source Distribution</h3>
 
+(Note that some of these URLs may be dangling links until the mirrors
+are fully updated.)
+
 <dl>
 <dt>
-The full source distribution is 4.8Mb.<br>
+The full source distribution is about 5Mb.<br>
 <dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.tar.gz">Australia</a>
 </dl>
 
 <h3>Binary Distribution</h3>
 
-Binary distributions of Mercury 0.7:
+Binary distributions of Mercury 0.8:
 <br>
-(Note that some of these URLs may be dangling links until the mirrors
-are fully updated.)
+(Note that these URLs will be dangling links until we have
+installed all the binary distributions.)
 <p>
 
 <dl>
-    <dt>x86 machines running Linux (ELF executable format) (4.9Mb):
+    <dt>x86 machines running Linux (ELF executable format) (about 14Mb):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.i386-linux-ELF.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.i386-linux-ELF.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.i386-linux-ELF.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i386-linux-ELF.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.i386-linux-ELF.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.i386-linux-ELF.tar.gz">Europe</a>
 	<p>
 
-    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (5.5Mb):
+    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (size unknown):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.sparc-sun-solaris.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.sparc-sun-solaris.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.sparc-sun-solaris.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.sparc-sun-solaris.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.sparc-sun-solaris.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.sparc-sun-solaris.tar.gz">Europe</a>
 
 	<p>
-    <dt>DEC Alpha machines running OSF/1 or Digital Unix (11.2Mb):
+    <dt>DEC Alpha machines running OSF/1 or Digital Unix (size unknown):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.alpha-dec-osf.tar.gz">Australia</a>
-<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.alpha-dec-osf.tar.gz">USA</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.alpha-dec-osf.tar.gz">Europe</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.alpha-dec-osf.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.8.alpha-dec-osf.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.8.alpha-dec-osf.tar.gz">Europe</a>
 
 <!--
 	<p>
-    <dt>x86 machines running Windows 95 or Windows NT (2.9Mb):
+    <dt>x86 machines running Windows 95 or Windows NT (size unknown):
 	<dd> Distribution:
-<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.i386-windows.tar.gz">Australia</a>
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.8.i386-windows.tar.gz">Australia</a>
 
 -->
 
@@ -166,7 +149,6 @@ are fully updated.)
 <h3>FTP Sites</h3>
 <dl>
 	<dt> Australia: 
-
 	<dd>
 	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury">
 	ftp://turiel.cs.mu.OZ.AU/pub/mercury</a>

@@ -13,11 +13,7 @@ and so are nested unique modes.
 The compiler does not yet use structure reuse or compile-time
 garbage collection to exploit unique modes.
 <li>
-It is not possible to give both `cc_multi' and `multi'
-(or `cc_nondet' and `nondet') determinisms for the same mode of a predicate.
-<li>
-The order of mode declarations is significant:
-unique mode declarations must precede non-unique mode declarations.
+Type and mode inference are a bit imperfect.
 </ul>
 
 In addition, design decisions in this implemenation have imposed

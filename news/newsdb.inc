@@ -16,6 +16,13 @@
 
 $newsdb = array(
 
+"18 November 1998" => array("Mercury 0.8 to be released",
+
+"We're currently in the process of releasing Mercury version 0.8.
+Release information can be found
+<A HREF=\"download/release-0.8.html\">here</A>."
+),
+
 "30 Sep 1998" => array("New paper: Type classes in Mercury.",
 
 "A new paper, describing our implementation of type classes in Mercury, 
@@ -51,12 +58,6 @@ and has full hypermail archives of the <em>mercury-developers</em> and
 <em>mercury-users</em> mailing lists.
 Thanks to <a href=\"mailto:petdr@cs.mu.oz.au\">Peter Ross</a>
 for all his work on it."
-),
-
-"1 Sep 1998" => array("Mercury 0.8 due for release during September.",
-
-"We aim to release the long awaited Mercury 0.8 sometime this month.
-Keep watching here for further information."
 ),
 
 "4 Aug 1998" => array("Mmake extensions.",

@@ -11,6 +11,105 @@ href="release.html">current release</a>
 Please note, however, that the source and binaries for these
 releases are often no longer available from the FTP site.
 
+<h3>Release 0.7.3</h3>
+
+On the 1st November, 1997, we released Mercury 0.7.3. Some installation
+problems with Windows, problems with the profiler and compatibility with
+GNU Make versions >= 3.76 were fixed.  A few features were also added.
+
+<h3>Release 0.7.2</h3>
+
+On the 13th October, 1997 we released Mercury 0.7.2. This release fixed
+a few bugs, and added quite a few new features. Support was added
+for user-defined equality predicates and generalized trailing.
+We also split the distribution into "core" and "extras".
+
+<h3>Release 0.7</h3>
+
+On 15th August, 1997 we released Mercury 0.7.<p>
+
+<ul>
+	<li>
+	<a href = "release-0.7.html">
+	Release notes for 0.7
+	</a>
+
+	<li>
+	<a href = "release-0.7-contents.html">
+	Contents of release 0.7 distribution
+	</a>
+
+	<li>
+	<a href = "release-0.7-bugs.html">
+	Known problems with release 0.7
+	</a>
+
+	<li>
+	<a href = "limitations.html">
+	Limitations of the current release.
+	</a>
+</ul>
+
+<h4>Source Distribution of Mercury 0.7</h4>
+
+<dl>
+<dt>
+The full source distribution is 4.8Mb.<br>
+<dd> Distribution:
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.tar.gz">Europe</a>
+</dl>
+
+<h4>Binary Distribution of Mercury 0.7</h4>
+
+<dl>
+    <dt>x86 machines running Linux (ELF executable format) (4.9Mb):
+	<dd> Distribution:
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.i386-linux-ELF.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.i386-linux-ELF.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.i386-linux-ELF.tar.gz">Europe</a>
+	<p>
+
+    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.x (5.5Mb):
+	<dd> Distribution:
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.sparc-sun-solaris.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.sparc-sun-solaris.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.sparc-sun-solaris.tar.gz">Europe</a>
+
+	<p>
+    <dt>DEC Alpha machines running OSF/1 or Digital Unix (11.2Mb):
+	<dd> Distribution:
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.alpha-dec-osf.tar.gz">Australia</a>
+<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.7.alpha-dec-osf.tar.gz">USA</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.7.alpha-dec-osf.tar.gz">Europe</a>
+
+	<p>
+    <dt>x86 machines running Windows 95 or Windows NT (2.9Mb):
+	<dd> Distribution:
+<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury/mercury-0.7.i386-windows.tar.gz">Australia</a>
+
+</dl>
+
+<h4>FTP Sites for Mercury 0.7</h4>
+<dl>
+	<dt> Australia: 
+
+	<dd>
+	<a href = "ftp://turiel.cs.mu.OZ.AU/pub/mercury">
+	ftp://turiel.cs.mu.OZ.AU/pub/mercury</a>
+
+	<dt> USA:
+	<dd>
+	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury">
+	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury</a>
+
+	<dt> Europe:
+	<dd>
+	<a href = "ftp://ftp.csd.uu.se/pub/Mercury">
+	ftp://ftp.csd.uu.se/pub/Mercury</a>
+</dl>
+
 <h3>Release 0.6.2-1</h3>
 
 On the 2nd of June, 1997, Debian GNU/Linux 1.3 was released, including a
