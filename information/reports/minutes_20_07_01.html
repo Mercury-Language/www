@@ -1,0 +1,96 @@
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri July 20, 2001.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	Simon Taylor (stayl)
+	David Overton (dmo)
+	Mark Brown (dougl)
+	Peter Stuckey (pjs)
+	David Jeffery (dgj)
+
+1. CVS issues
+
+	- It would be better for CVS log messages relating to branch
+	  merges to be placed in a separate log, since they take up a
+	  lot of space but give little information.
+	
+	- Files tend to get put into the papers directory with
+	  permissions set incorrectly.  We should make the permissions
+	  check part of the CVS commit script also apply to the papers
+	  directory.
+
+2. Documenting introduced names
+
+	Any new and existing procedure names that are introduced by the
+	compiler need to be documented.  The suggested place is a single
+	location in the compiler/notes directory.
+
+3. Ignore counts for breakpoints
+
+	Zoltan suggested an improvement to the mdb breakpoint mechanism
+	to allow a breakpoint to be ignored for a certain count of
+	times before it is triggered.  One issue raised by this is that
+	it would be easy for a user to forget that each call to a
+	det/semidet procedure generates two events, so if they want
+	the Nth call then the ignore count would need to be 2N.  Of
+	course, for multi/nondet code the situation is far worse.
+
+	A solution proposed by Zoltan is to allow options which specify,
+	for the purposes of the ignore count, which events should be
+	counted.  For example, the break command could accept the
+	following options:
+
+		-I N		ignore N interface events
+		-E N		ignore N entries into procedures
+
+4. Progress reports
+
+	We went around the table, with each person in turn discussing
+	what they had been working on recently and/or what they were
+	planning to work on.
+
+	Zoltan Somogyi (zs):
+		- Fixed some bugs in the deep profiler relating to the
+		  purity of inserted code.  All inserted code must be
+		  labelled impure and impurity must be propagated
+		  properly.
+
+		- Has discussed with Fergus a change to stack slot
+		  allocation, and has been working on implementing it.
+
+		- Did some work on the deep profiler paper.
+
+		- Has done some work implementing the aforementioned
+		  ignore counts for breakpoints.
+
+	Simon Taylor (stayl):
+		- Worked on mmake in the compiler.
+
+	David Overton (dmo):
+		- Started work on a new paper on mode constraints.
+
+		- Tried out the new deep profiler, for example by
+		  testing it on the compiler itself.
+
+	Mark Brown (dougl):
+		- Investigated the .net profiling API, which looks more
+		  useful for implementing the retry log than the debug
+		  API.  Although the retry mechanism is intended to be
+		  operated from within a debugger, the way the retry log
+		  should be constructed has more in common with how a
+		  profile is constructed than how a debugger operates.
+
+		- Investigated the source code for portable.net.
+
+	David Jeffery (dgj):
+		- Fixing some bugs with removing unused typeclass info
+		  arguments from calls into C code.
+
+		- Fixed a bug in deconstruct.
+
+Minutes taken by Mark Brown (dougl@cs.mu.oz.au)
+</pre>
+</html>
