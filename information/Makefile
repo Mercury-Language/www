@@ -34,7 +34,7 @@ local:
 	(cd doc; gzip -f -9 *.ps)
 
 local_install: all
-	for dir in bench developers doc dotnet papers;		\
+	for dir in bench developers events reports doc dotnet papers;	\
 	do							\
 		$(CP) $$dir $(INSTALL_WEBDIR);			\
 		chmod -R a+r,g+w $(INSTALL_WEBDIR)/$$dir;	\
