@@ -80,8 +80,15 @@ released but are still immature, while others are under development.
 <dl>
         <dt><a name="java"><b>Java.</b></a></dt>
 	<dd>
-	This one still needs a lot of work.
-	For more information, read the source code.
+	This back-end compiles Mercury to Java.
+	<p>
+	The compiler support is in reasonably good shape,
+	and includes good support for interfacing with Java
+	(see the language reference manual for details),
+	but the standard library support is currently pretty minimal.
+	<p>
+	For more details, see the Mercury source code, in particular
+	compiler/mlds_to_java.m.
 	</dd>
 <p>
 	<dt><a name="bytecode"><b>Mercury byte-code.</b></a></dt>
