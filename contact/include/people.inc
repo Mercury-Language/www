@@ -28,6 +28,7 @@ zs@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~harald/">Harald S&oslash;ndergaard</a>,
 harald@cs.mu.OZ.AU, senior lecturer
 <li> Simon Taylor, stayl@cs.mu.OZ.AU, research assistant
+<li> Michael Wybrow, mjwybrow@students.cs.mu.OZ.AU, summer student
 </ul>
 
 People who have worked on the project in the past,
