@@ -5,7 +5,9 @@
 
 <TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
     <TD>
-    <CENTER><H1>The Mercury Project</H1></CENTER>
+    <CENTER><H1>The Mercury Project<br>
+    <? echo $title ?>
+    </H1></CENTER>
     </TD>
 
     <TD width="10%">

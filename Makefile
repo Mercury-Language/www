@@ -1,10 +1,11 @@
 #-----------------------------------------------------------------------------#
-# Copyright (C) 1995 University of Melbourne.
+# Copyright (C) 1998 University of Melbourne.
 # This file may only be copied under the terms of the GNU General
 # Public License - see the file COPYING in the Mercury distribution.
 #-----------------------------------------------------------------------------#
 
 HTML=	index.html 		\
+	mcorba.html		\
 	news.html 		\
 	information.html 	\
 	download.html 		\
@@ -19,6 +20,7 @@ target: html
 
 index.html: latest_news.inc newsdb.inc
 news.html: latest_news.inc newsdb.inc
+mcorba.html: mcorba_newsdb.inc
 
 install: local_install
 

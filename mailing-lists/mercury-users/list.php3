@@ -1,6 +1,6 @@
 <HTML>
 <?
-    $title="Contact";
+    $title="Mercury Users Mailing List";
     $dir="mailing-lists/mercury-users/";
     $root="../..";
     $include="list.inc";
