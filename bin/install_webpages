@@ -58,8 +58,8 @@ echo Reindex of website started at `date`
 umask 002
 
     # Index the web-site for searching.
-htdig -c /etc/htdig/htdig-mercury.conf -a -i
-htmerge -c /etc/htdig/htdig-mercury.conf -a
+htdig -c /etc/htdig/htdig-mercury.conf -a -i || exit 1
+htmerge -c /etc/htdig/htdig-mercury.conf -a || exit 1
 
     # Replace the work files with their alternate versions.
 cd /var/spool/htdig
