@@ -410,20 +410,21 @@ Available here (114K).
 
 </ul>
 
+The following paper describes the method used to express database 
+transactions and updates that is used in the Mercury ODBC database
+interface.
 <!---------- The Aditi interface is not useful yet
 --------------------------------------------------
-
-The following papers are relevant to the interface to the Aditi deductive
+The same kind of approach is also used in
+the Mercury interface to the Aditi deductive
 database system (see the "Aditi deductive database interface"
 section in Mercury Language Reference Manual listed under 
 "Implementation dependent pragmas" in the "Pragmas" chapter).
-The first describes the method used to express transactions and
-updates in Mercury. The second describes a source-to-source transformation
-implemented in the Mercury compiler.
+--------------------------------------------------
+-------------------------------------------------->
 
 <p>
 <ul>
-
 
 <li>
 <strong>
@@ -443,6 +444,15 @@ Available here (58K)
 <a href = "http://www.cs.mu.OZ.AU/publications/tr_db/mu_96_45_cover.ps.gz">
 with cover page.
 </a>
+
+</ul>
+
+<!---------- The Aditi interface is not useful yet
+--------------------------------------------------
+
+The following paper is also relevant to the Aditi interface mentioned above.
+It describes a source-to-source transformation implemented in the
+Mercury compiler.
 
 <li>
 <strong>
@@ -594,7 +604,7 @@ Available here (21K).
 Type classes for logic programming languages, given in March 1998
 </strong>
 <br>
-David Jeffery
+David Jeffery.
 <br>
 <a href = "papers/dgj-talk.ps.gz">
 Available here (30K).
@@ -606,7 +616,7 @@ Available here (30K).
 Runtime type information in Mercury, given in March 1998
 </strong>
 <br>
-Tyson Dowd
+Tyson Dowd.
 <br>
 <a href = "papers/rtti_talk_98.ps.gz">
 Available here (48K).
