@@ -7,7 +7,7 @@
     </TD>
 
     <TD width="10%">
-    <IMG SRC="/mercury/images/merclogo_small.jpg" border="2"
+    <IMG SRC="<?echo $root?>/images/merclogo_small.jpg" border="2"
         hspace="10">
     </TD>
 </TABLE>

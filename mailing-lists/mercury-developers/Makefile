@@ -11,7 +11,7 @@ install: local_install
 local_install:
 	for dir in `ls`;					\
 	do							\
-		if [ -d $$dir ];				\
+		if [ -d $$dir -a $$dir != "include" ];		\
 		then						\
 			cp -a $$dir $(INSTALL_WEBDIR);		\
 		fi						\

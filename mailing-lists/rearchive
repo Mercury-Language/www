@@ -1,0 +1,18 @@
+#!/bin/sh
+
+dir=/home/mercury/public/mailing_lists/
+
+day=`date '+%d'`
+month=`date '+%m'`
+year=`date '+%y'`
+
+if [ $day = "01" ]
+then
+    month=`expr $month - 1`
+    month=`printf "%02d\n" $month`
+fi
+
+for mail in mercury-users mercury-developers
+do
+    ./archive2html.sh -d $dir -f $mail -m $month -y $year
+done

@@ -19,6 +19,12 @@ target: all
 index.html: latest_news.inc
 news.html: latest_news.inc old_news.inc
 
+install: local_install
+
+local_install:
+	cp -a images $(INSTALL_WEBDIR)
+
+
 #-----------------------------------------------------------------------------#
 
 include Makefile.common
