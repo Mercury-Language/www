@@ -17,6 +17,13 @@
 */
 
 $newsdb = array(
+"17 Nov 1999" => array("A paper on the Mercury debugger",
+"A new paper on Mercury is now available from our
+<A HREF=\"information/papers.html\">papers page</A>:
+it describes the technology we use to implement the Mercury debugger.
+"),
+
+$newsdb = array(
 "28 Oct 1999" => array("Time module",
 
 "The standard library now includes a module `time'
