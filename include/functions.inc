@@ -7,7 +7,7 @@ function newsitem($date, $item) {
 	list($day, $month, $year) = split(" ",$date);
 
 	echo "<td valign=top><tt>[";
-	printf("%02d $month $year", $day);
+	printf("%02d&nbsp;$month&nbsp;$year", $day);
 	echo "]</tt></td>";
 
 	echo "<td><strong>";
