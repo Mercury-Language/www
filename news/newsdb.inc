@@ -17,6 +17,20 @@
 */
 
 $newsdb = array(
+"15 Mar 1999" => array("Lazy evaluation",
+
+"The latest development version of the Mercury extras distribution
+now includes support for optional lazy evaluation.
+There is a new module \`lazy', which provides
+a type \`lazy(T)' for lazily-evaluated data structures,
+with \`delay' and \`force' operations.
+There is also a module \`lazy_list', which defines a lazy list
+data type using the \`lazy' module.
+See the files in extras/dynamic_linking for details."
+This will soon be available for
+<A HREF=\"download/rotd.html\">download</A>.
+),
+
 "11 Mar 1999" => array("Prolog debuggers no longer supported",
 
 "We've removed the support for using a Prolog debugger on Mercury programs.
@@ -67,7 +81,7 @@ Release information can be found
 
 "The latest development version of the extras distribution
 now includes support for dynamic linking.
-This will soon be available for
+This is now available for
 <A HREF=\"download/rotd.html\">download</A>.
 The interface is based on the C functions dlopen(), dlsym(), and co.,
 which are supported by most modern Unix systems.
