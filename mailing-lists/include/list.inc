@@ -12,7 +12,15 @@ $width=(int)(100/$cols);
 
 $yrmo=sprintf("%02d%02d", $current_year, $current_month);
 $dir="$list.$yrmo/index.html";
-echo "<A HREF=\"$dir\">Current Month</A>";
+
+if (file_exists($dir))
+{
+    echo "<A HREF=\"$dir\">Current Month</A>";
+}
+else
+{
+    echo "Current Month (no mail messages)";
+}
 
 while ($yr >= $year)
 {
