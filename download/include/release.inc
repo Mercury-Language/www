@@ -1,6 +1,15 @@
 <h2>Current Release</h2>
 
-Mercury 0.9 was released on December 18, 1999.
+Mercury 0.9 was released on December 18, 1999. <p>
+
+There are a couple of serious bugs in the binary distributions
+of Mercury 0.9.  One of them is that you need to type
+`make INSTALL_EMACS_SCRIPTS=scripts/mdb.el install'
+instead of `make install' to install it.
+The other is that installation of the binary distribution
+for Windows will fail.
+These bugs will be fixed in 0.9.1, which we plan to release
+sometime soon. <p>
 
 The NEWS file, detailing differences since the release of 0.8.1,
 is available <a href="release-0.9.html">here</a>.
