@@ -266,12 +266,14 @@ installed all the binary distributions.)
 
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 30 Mb): <br>
-<? links_to_file("mercury-0.11.0.i686-pc-linux-libc2.1-gnu-O5.tar.gz", "no"); ?>
+<? links_to_file("mercury-0.11.0.i686-pc-linux-libc2.2-gnu-O5.tar.gz", "no"); ?>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
-<? links_to_file("mercury-0.11.0.sparc-sun-solaris2.7.tar.gz", "no"); ?>
+	(For this platform, we're shipping 0.11.1-beta-2003-01-25
+	in place of 0.11.0.) <br>
+<? links_to_file("mercury-0.11.1-beta-2003-01-25.sparc-sun-solaris2.7.tar.gz", "no"); ?>
 	<br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
@@ -280,6 +282,15 @@ the binary distributions for Solaris, with tar reporting
 Sun tar.  If you encounter this problem, then (1) let us know
 and (2) use GNU tar. </em>
 	<p>
+
+    <dt>Apple Mac Power/PC machines running MacOS X
+	<dd> Compiler only (about 35 Mb): <br>
+<? links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5", "no"); ?>
+	<br>
+	If you get this package, we suggest that you also download
+	the "extras" source distribution. 
+	<p>
+
 
 </dl>
 
