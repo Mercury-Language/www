@@ -18,6 +18,17 @@
 
 $newsdb = array(
 
+"6 Dec 1998" => array("Dynamic linking support",
+
+"The latest development version of the extras distribution
+now includes support for dynamic linking.
+This will soon be available for
+<A HREF=\"download/rotd.html\">download</A>.
+The interface is based on the C functions dlopen(), dlsym(), and co.,
+which are supported by most modern Unix systems.
+See the files in extras/dynamic_linking for details."
+),
+
 "25 Nov 1998" => array("New paper: Optimization of Mercury programs.",
 
 "A paper describing the high-level optimization passes of the Mercury
