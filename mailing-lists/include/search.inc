@@ -5,7 +5,7 @@ This search will allow you to search the contents of
 the Mercury mailing lists.
 <br>
 <p>
-<form method="post" action="http://hydra.cs.mu.oz.au/cgi-bin/htsearch">
+<form method="post" action="http://www.mercury.cs.mu.oz.au/cgi-bin/htsearch">
 <font size=-1>
 Match: <select name=method>
 <option value=and>All
