@@ -29,8 +29,8 @@ We have don't know if it works on other systems.
 <p>
 
 The version of the Mercury native code compiler that was included in
-Mercury 0.10.1 should be considered a beta release.  It does not support
-nested modules or tabled evaluation.  It was based on an
+Mercury 0.10.1 and 0.10.2-beta-* should be considered a beta release.
+It does not support nested modules or tabled evaluation.  It was based on an
 unreleased snapshot version of the GCC back-end, and it does not
 work with any officially released version of GCC.
 
@@ -58,7 +58,7 @@ The first part is the usual <b>mercury-compiler</b> distribution.
 This contains the Mercury compiler front-end (about 225,000 lines
 of Mercury), as well as the Mercury standard library (about 50,000
 lines of Mercury), runtime system (about 30,000 lines of C), etc.
-You'll need version 0.10, version 0.10.1,
+You'll need version 0.10, version 0.10.1, version 0.10.2-beta-*,
 or (preferably) a release-of-the-day version dated 2002-09-11 or later.
 You can get this from the <a href="<?echo
 $root?>/download.html">Download</a> section of the Mercury web site.
@@ -74,7 +74,7 @@ GCC web site</A>.  Or you can get it from the
 <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/">
 Mercury ftp site</A>.
 For current release-of-the-day versions of Mercury, you'll need GCC 3.1 or 3.2.
-For Mercury 0.10 or 0.10.1,
+For Mercury 0.10, 0.10.1, or 0.10.2-beta-*,
 you'll need the 20010129 shapshot of gcc,
 which you can get from the GCC cvs repository
 (use the option `-rgcc_ss_20010129' when checking it out),
@@ -93,8 +93,8 @@ and the GCC back-end.  We hope to eventually make this part of
 the GCC distribution, but currently it is distributed separately,
 via the <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/">
 Mercury ftp site</A>.
-For Mercury 0.10 or 0.10.1, get mercury-gcc-0.10.1.tar.gz.
-For release-of-the-day distributions, get mercury-gcc-rotd-20020911.tar.gz.
+For Mercury 0.10, 0.10.1, or 0.10.2-beta-*, get mercury-gcc-0.10.1.tar.gz.
+For release-of-the-day distributions, get mercury-gcc-rotd-*.tar.gz.
 Alternatively, you can also get this using
 <a href="<?echo $root?>/information/developers/remote_cvs.html">CVS</a>;
 it is in the "mercury-gcc" directory of the Mercury repository, so it can
@@ -104,7 +104,7 @@ be checked out using "cvs checkout mercury-gcc".
 <p>
 
 Unfortunately the interface to the GCC back-end changes quite frequently,
-so you need to be careful that you get matching versions of all of the
+so you need to be very careful that you get matching versions of all of the
 above.
 
 <p>
@@ -115,7 +115,7 @@ mercury-gcc/README in the mercury-gcc distribution.
 <H3>Binaries</H3>
 
 The native-code compiler is included in some of our binary distributions
-for 0.10, 0.10.1, and the release-of-the-day releases.
+for 0.10, 0.10.1, 0.10.2-beta, and the release-of-the-day releases.
 The distributions that include the native-code compiler are
 the ones named "*i686-pc-linux-gnu-O4*"
 (but NOT the ones named "*i686-pc-linux-gnu-O4-hlc").
