@@ -21,6 +21,16 @@
 
 $newsdb = array(
 
+"22 September 2000" => array("Tuple types",
+
+"We've added support for tuple types, similar to those in most
+other functional languages. Tuples use the syntax `{A, B, ...}'.
+See the \"Builtin types\" section of the \"Types\" chapter of the
+Mercury Language Reference Manual for details.
+The latest <A HREF=\"download/rotd.html\">release of the day</A>
+includes support for tuple types."
+),
+
 "9 Aug 2000" => array("Remote CVS access",
 
 "We've made anonymous remote CVS access available to the Mercury CVS
