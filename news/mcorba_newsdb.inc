@@ -16,6 +16,15 @@
 
 $mcorba_newsdb = array(
 
+"11 Sep 2000" => array("MCORBA 0.3 available for download.",
+
+"After a long delay, a new release of MCORBA is now available.
+This release works better with newer versions of omniORB (we are using
+2.8) and supports threads much better.  This version requires a new
+version of the Mercury compiler -- you will need to download a daily
+snapshot to use it."
+),
+
 "21 Dec 1998" => array("MCORBA 0.2 available for download.",
 
 "The second release of MCORBA is finally available.
