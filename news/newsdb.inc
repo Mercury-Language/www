@@ -32,11 +32,11 @@ This is due to incompatibilities between libc versions 6.0 and 6.1
 
 "The latest development version of the Mercury extras distribution
 now includes support for optional lazy evaluation.
-There is a new module \`lazy', which provides
-a type \`lazy(T)' for lazily-evaluated data structures,
-with \`delay' and \`force' operations.
-There is also a module \`lazy_list', which defines a lazy list
-data type using the \`lazy' module.
+There is a new module `lazy', which provides
+a type `lazy(T)' for lazily-evaluated data structures,
+with `delay' and `force' operations.
+There is also a module `lazy_list', which defines a lazy list
+data type using the `lazy' module.
 See the files in extras/dynamic_linking for details.
 This will soon be available for
 <A HREF=\"download/rotd.html\">download</A>.
