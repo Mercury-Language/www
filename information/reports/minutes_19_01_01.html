@@ -1,0 +1,128 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Jan 19, 2001,
+from 3:15 4:05pm.
+
+Attendees:
+	Fergus Henderson (fjh)
+	David Jeffery (dgj)
+	Julien Fischer (juliensf)
+	Ina Cheng (inch)
+	Sam Thurairatnam (sthur)
+	Levi Cameron (lpcam)
+	Zoltan Somogyi (zs)
+	Adrian Pellas-Rice (apell)
+	Simon Mei (xcsm)
+	Tyson Dowd (trd)
+	David Overton (dmo)
+	Mark Brown (dougl)
+	Simon Taylor (stayl)
+
+1. Release
+
+	- There are two outstanding bugs that need to be fixed before the
+	  release (in the the hlc backend, and one in asm_fast). These
+	  bugs have been recorded on sourceforge (as have other release tasks).
+	- Tyson also wants to add a couple of fixes to the IL back end. These
+	  are non-critical (ie. release will go ahead without them, but they'll
+	  be included if there is time).
+
+2. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Fergus Henderson (fjh):
+		- Continued working on the new gcc backend. He has been working
+		  on bug fixes, and integrating the new backend into mmake
+		  and the rest of the build environment. He has not yet tried
+		  bootstrapping or running the tests, but it works for
+		  everything in the samples and samples/diff directories (but
+		  not for all the other subdirectories of samples).
+		- Has helped the summer students a bit.
+
+	David Jeffery (dgj)
+		- Has been working on HAL.
+		- Has worked briefly with Fergus on a bug reported by petdr
+		  which resulted in a compiler abort in polymorphism. The
+		  cause is now clear, and a fix should come soon.
+
+	Julien Fischer (juliensf)
+		- Has been working on discriminated unions for the Java
+		  backend. He got enumerations working earlier in the week.
+		- Fergus encouraged him to post a diff soon so he can get
+		  some decent feedback before the end of the summer.
+
+	Ina Cheng (inch)
+		- Has been working on encoding Mercury types in XML.
+
+	Sam Thurairatnam (sthur)
+		- Spent the week working on addressing dougl's review
+		  comments.
+
+	Levi Cameron (lpcam)
+		- The bytecode interpreter is working for simple deterministic
+		  code. 
+		- Has added support for handling modules to the interpreter.
+		- Is working on getting the compiler to generate the stub
+		  functions that are currently written by hand.
+		- Fergus encouraged him to post a diff of the bytecode
+		  interpreter in the next week. (It might be worth posting
+		  the whole interpreter too if the diff is too large to read).
+
+	Zoltan Somogyi (zs)
+		- Has worked on minimal model tabling with Kostis. The system
+		  now passes all of our test cases (although they aren't
+		  a very complete set). Kostis is going to send him a whole lot
+		  more test cases from XSB which should test things more
+		  thoroughly.
+		- Has been working with Tom on deep profiling. Tom will
+		  run some benchmarks on the different mechanisms that they've
+		  implemented. This should be enough to finish off their 
+		  paper.
+		- Has found a problem with bogus output from the liveness 
+		  pass causing havoc for the delay death transformation.
+		- Needs to work on the bug in var.m for the release.
+
+	Adrian Pellas-Rice (apell)
+		- Has worked on implementing a simple version of sequence
+		  quantification in the compiler. 
+
+	Simon Mei (xcsm)
+		- Added support for user defined generators to quickcheck.
+		- fjh asked about how useful Simon thought this tool would
+		  be, and how it compared to the Haskell version, and 
+		  encouraged him to think about this and maybe write something
+		  about it.
+	
+	Tyson Dowd (trd)
+		- Fixed some IL backend bugs 
+		- Has added a new `developer intro' page to the www site
+		- Has implemented floating point for the IL backend.
+		- Has worked on implementing `foreign_proc'.
+		- Has hacked fjh's `cvdr' script to handle branches. He
+		  should add this script to the `tools' directory.
+
+	David Overton (dmo)
+		- Has been working on the new mode checker.
+	
+	Mark Brown (dougl)
+		- Has been tracking down a bug caused by Tom's changes to the
+		  `univ' implementation. (There was a bug in `compare' for
+		  univs).
+		- Has been tracking down another bug caused by the fact that 
+		  I/O now works differently for univ (as it is no longer 
+		  handled specially). Tyson agreed to work on fixing io__read
+		  and io__write so that they work properly for existentially
+		  quantified types.
+
+	Simon Taylor (stayl)
+		- Still working on Aditi/Mercury integration, and working
+		  towards an Aditi release some time in the future.
+			  
+Minutes taken by David Jeffery (dgj@cs.mu.oz.au).
+</pre>
+</html>
