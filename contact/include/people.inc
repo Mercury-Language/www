@@ -8,9 +8,7 @@ at the University of Melbourne:
 rafe@cs.mu.oz.au, research fellow 
 <li> Mark Brown, mark@cs.mu.oz.au, research assistant 
 <li> Julien Fischer, juliensf@cs.mu.oz.au, masters student
-<li> Richard Fothergill, richardf@student.cs.mu.oz.au, summer student
 <li> Ian MacLarty, maclarty@cs.mu.oz.au, masters student 
-<li> Darko Jankovic, darkoj@cs.mu.oz.au, summer student
 <li> <a href = "http://www.cs.mu.OZ.AU/~lee/">Lee Naish</a>,
 lee@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~schachte/">Peter Schachte</a>,
@@ -19,7 +17,6 @@ schachte@cs.mu.OZ.AU, lecturer
 zs@cs.mu.OZ.AU, senior lecturer
 <li> <a href = "http://www.cs.mu.OZ.AU/~harald/">Harald S&oslash;ndergaard</a>,
 harald@cs.mu.OZ.AU, senior lecturer
-<li> Peter Wang, wangp@students.cs.mu.oz.au, summer student
 
 </ul>
 
@@ -42,12 +39,14 @@ dgj@cs.mu.OZ.AU, PhD student
 <li> Levi Cameron, summer student
 <li> Ina Cheng, summer student
 <li> Waye-Ian Chiew, summer student
+<li> Richard Fothergill, richardf@student.cs.mu.oz.au, summer student
 <li> Warwick Harvey, research fellow at Monash University
 <li> <a href = "http://www.cs.mu.OZ.AU/~fjh/">Fergus Henderson</a>,
 fjh@cs.mu.OZ.AU, research fellow
 <li> Oliver Hutchinson, summer student
 <li> Robert Hutton, summer student
 <li> Erwan Jahier, jahier@imag.fr, research assistant at Verimag in Grenoble, France
+<li> Darko Jankovic, darkoj@cs.mu.oz.au, summer student
 <li> Robert Jeschofnik, directed studies student
 <li> Charles Kemp, summer student
 <li> Jane Langley, summer student
@@ -65,6 +64,7 @@ petdr@cs.mu.OZ.AU, MEngSc student
 <li> Vanessa Teague, summer student
 <li> Bert Thompson, research assistant
 <li> Sam Thurairatnam, summer student
+<li> Peter Wang, wangp@students.cs.mu.oz.au, summer student
 <li> Nicolas Watmough, ndw@students.cs.mu.oz.au, summer student
 <li> Geoff Wilson, summer student
 <li> Michael Wybrow, mjwybrow@cs.mu.oz.au, summer student

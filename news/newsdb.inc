@@ -22,6 +22,28 @@
 
 $newsdb = array(
 
+"21 March 2005" => array("New goal types",
+
+"We've added three new types of goal to the language.
+`promise_equivalent_solutions' goals allow the programmer
+to promise that all the solutions generated be a goal are 
+equivalent.  This makes working with multi- or non-deterministic code
+easier.  `promise_pure' and `promise_semipure' goals allow the programmer
+to make promises about the purity of arbitrary goals.
+See the \"Goals\" section of the \"Syntax\" chapter of the
+<A HREF=\"$ref_man_latest\">Mercury Language Reference Manual</A>
+for more details.  <A HREF=\"download/rotd.html\">release of the day</A>
+includes support for these new goal types."
+),
+
+"25 February 2005" => array("New PhD thesis",
+
+"A new PhD thesis on Mercury,
+<em>Compile-time garbage collection for the declarative language Mercury</em>
+by Nancy Mazur, is now available from our
+<A HREF=\"information/papers.html\">papers page</A>."
+),
+
 "09 December 2004" => array("New Standard Library to Convert Mercury Terms
 to XML Documents",
 
