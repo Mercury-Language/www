@@ -18,7 +18,16 @@
 
 $newsdb = array(
 
-"16 Mar 1999" => array("Mercury Tutorial",
+"8 Mar 1999" => array("Interactive queries",
+
+"The Mercury debugger now includes support for interactive queries.
+See the \"Interactive query commands\" subsection of the \"Debugger commands\"
+section of the \"Debugging\" chapter of the
+<A HREF=\"http://www.cs.mu.oz.au/research/mercury/information/doc/user_guide_toc.html\">Mercury User's Guide</A>.  
+"),
+
+
+"5 Mar 1999" => array("Mercury Tutorial",
 "<a href=\"mailto:rwab1@cam.sri.com\">Ralph Becket</a>
 has kindly written a
 <A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.  
