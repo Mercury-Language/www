@@ -17,6 +17,16 @@
 */
 
 $newsdb = array(
+"16 Jan 2000" => array("Record syntax",
+"We've added support for record syntax, so that fields of
+constructors can be conveniently extracted and updated
+without writing lots of trivial access predicates.
+See the \"Field access functions\" section of the \"Types\" chapter
+of the Mercury Language Reference Manual for details.
+The syntax is available in our latest
+<A HREF=\"download/rotd.html\">release of the day</A>.
+"),
+
 "18 Dec 1999" => array("Mercury 0.9 released",
 
 "We've just released the long-awaited version 0.9.
