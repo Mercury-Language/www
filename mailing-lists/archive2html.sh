@@ -5,22 +5,6 @@
 #
 usage="archive2html.sh -y <year> -m <month> -f <filename> -d <directory>"
 
-    # Shows the messages inside <pre> </pre> tags so we don't lose
-    # formatting.
-export HM_SHOWHTML=0
-
-    # How many thread levels all the replies should be indented.
-export HM_THRDLEVELS=10
-
-    # Header/Footer files for the index pages
-    # Well at least the man page says that it should be the file,
-    # but for some reason it must be the contents of the file.
-export HM_IHTMLHEADERFILE="`cat msglist_header.inc`"
-export HM_IHTMLFOOTERFILE="`cat msglist_footer.inc`"
-
-    # Header/Footer files for the message pages
-export HM_MHTMLHEADERFILE="`cat msg_header.inc`"
-export HM_MHTMLFOOTERFILE="`cat msg_footer.inc`"
 
 while getopts ad:f:m:uy: flag ; do
     case $flag in
@@ -65,4 +49,4 @@ esac
 
 set -x
 
-hypermail -x -m $filename -a "../../mailing-lists.html" -l "$file $month $year"
+hypermail -c ../hypermail.config -x -m $filename -a "../../mailing-lists.html" -l "$file $month $year"
