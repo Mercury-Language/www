@@ -21,6 +21,15 @@
 */
 
 $newsdb = array(
+
+"10 June 2004" => array("The 2004 ICFP Programming Contest",
+
+"A team of Mercury developers submitted an <A
+HREF=\"http://www.cs.mu.oz.au/~rafe/icfp2004.html\">entry</A> for the 2004
+ICFP Programming contest.  We won't know how well we did until the results
+are posted after the ICFP conference, later this year."
+),
+
 "21 January 2004" => array("New PhD thesis",
 
 "A new PhD thesis on the Mercury mode system,
