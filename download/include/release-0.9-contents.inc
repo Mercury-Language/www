@@ -22,20 +22,17 @@ The "mercury-compiler" distribution contains:
 	<li> some sample Mercury programs
 </ul>
 <p>
-The "mercury-extras" distribution contains:
-<ul>
-	<li> some extra libraries for
-	     <ul>
-	     <li> processing HTML forms using the CGI interface
-	     <li> arithmetic on complex and imaginary numbers
-	     <li> graphics using Tk and OpenGL
-	     <li> lazy evaluation
-	     <li> dynamic linking
-	     <li> POSIX interface
-	     <li> backtrackable (trailed) destructive update
-	     <li> an ODBC database interface
-	     <li> a CLP(R) interface, i.e. constraint solving over real numbers
-	     </ul>
-	<li> the OPIUM-M debugger/trace analysis system
-</ul>
+The "mercury-extras" distribution contains some extra libraries for:
+	<ul>
+	<li> processing HTML forms using the CGI interface
+	<li> arithmetic on complex and imaginary numbers
+	<li> graphics using Tk and OpenGL
+	<li> lazy evaluation
+	<li> dynamic linking
+	<li> POSIX interface
+	<li> backtrackable (trailed) destructive update
+	<li> an ODBC database interface
+	<li> a CLP(R) interface, i.e. constraint solving over real numbers
+	</ul>
+<p>
 The "mercury-tests" distribution contains a test suite.
