@@ -24,7 +24,9 @@ html: $(HTML)
 ifdef DIRS
 	for dir in $(DIRS); 				\
 	do 						\
-		(cd $$dir && $(MAKE) html); 		\
+		if [ -d $$dir ]; then			\
+			(cd $$dir && $(MAKE) html);	\
+		fi					\
 	done
 endif
 
@@ -33,7 +35,9 @@ all: $(HTML)
 ifdef DIRS
 	for dir in $(DIRS); 				\
 	do 						\
-		(cd $$dir && $(MAKE) all); 		\
+		if [ -d $$dir ]; then			\
+			(cd $$dir && $(MAKE) all);	\
+		fi					\
 	done
 endif
 
