@@ -1,0 +1,63 @@
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri April 27, 2001,
+from 3.15pm to 3.45pm
+
+Attendees:
+	Zoltan Somogyi (zs)
+	Simon Taylor (stayl)
+	Mark Brown (dougl)
+	David Overton (dmo)
+
+Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Simon Taylor (stayl):
+		- Still working on smart recompilation. 
+
+	Mark Brown (dougl):
+		- Working on the search strategy for the declarative debugger.
+		- Has been using the declarative debugger to debug itself.
+
+	Zoltan Somogyi (zs):
+		- Has been working on making the deep profiler more usable.
+		- Started merging the deep profiling CVS branch back onto
+		  the main branch.
+		- Produced a script (tools/cvdd) to perform a diff between two
+		  workspaces.
+		- Reworked the optimization level handling to avoid invoking
+		  the lazy code generator and value numbering. With some
+		  recently added optimization passes, the eager code generator
+		  produces equally good code with less compilation time.
+
+	David Overton (dmo):
+		- Has been fixing performance problems with ROBBDs.
+
+	Fergus Henderson (fjh):
+		Didn't attend the meeting, but sent a progress report
+		by e-mail:
+
+		- Installed autoconf 2.13 on murlibobo (to fix a problem for
+		  Cygwin in the `configure' that we ship with our source
+		  distributions).
+		- Tested the Mercury compiler on Tru64 5.1 using an Oct 2000
+		  snapshot of gcc, since our sysadmins are planning to
+		  upgrade murlibobo's CPUs and OS. Happily, it worked fine
+		  out-of-the-box.
+		- Sent off page for MS TechEd DVD.
+		- Sent off long letter to MS regarding VSIP license.
+		- Chased up GCC copyright assignment
+		  (still not yet resolved, <sigh>).
+		- Fixed a bug where the compiler was silently accepting some
+		  incorrect code involving typeclasses.
+		- A little more work towards eliminating dependencies on
+		  Cygwin.
+		- Some code reviewing.
+
+Minutes taken by Simon Taylor (stayl@cs.mu.oz.au).
+</pre>
+</html>
