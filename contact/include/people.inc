@@ -11,6 +11,7 @@ conway@cs.mu.OZ.AU, PhD student
 <li> <a href = "http://www.cs.mu.OZ.AU/~trd/">Tyson Dowd</a>,
 trd@cs.mu.OZ.AU, PhD student
 <li> Julien Fischer, juliensf@cs.mu.oz.au, Honours student
+<li> Julian Grady, julianpg@students.cs.mu.oz.au, summer student
 <li> <a href = "http://www.cs.mu.OZ.AU/~fjh/">Fergus Henderson</a>,
 fjh@cs.mu.OZ.AU, research fellow
 <li> Paul Incani, paulai@students.cs.mu.oz.au, summer student
@@ -45,7 +46,6 @@ some of whom are still informally associated with the project:
 <li> Michael Day, summer student
 <li> <a href = "http://www.csse.monash.edu.au/~wharvey/">Warwick Harvey</A>,
 wharvey@cs.monash.edu.au, research fellow at Monash University
-<li> Julian Grady, summer student julianpg@students.cs.mu.oz.au
 <li> Oliver Hutchinson, ohutch@students.cs.mu.OZ.AU, summer student
 <li> Robert Hutton, summer student
 <li> Erwan Jahier, jahier@imag.fr, research assistant at Verimag in Grenoble, France
