@@ -29,7 +29,7 @@ To appear:
 Lecture Notes in Computer Science,
 Springer Verlag, January 1999, 15 pages.
 &copy; 
-<a href="http://www.springer.de/comp/lncs/index.html>Springer-Verlag</a>.
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <p>
 
 MCORBA is a binding to the CORBA distributed object framework
