@@ -97,6 +97,12 @@ The server generates, for each request,
 a web page containing the requested information,
 which will typically contain links that generate other requests.
 
+<?
+/*---------------------------------------------------------------------------*/
+/* XXX The deep profiler demo is currently not working.  */
+if (0) {
+?>
+
 <h3>Demo</h3>
 
 We have made three profiling data files available for you to explore.
@@ -127,6 +133,12 @@ the profiled executable is a program that
 calculates the volume of a 3D shape using Monte Carlo methods.
 This program uses higher order constructs quite intensively.
 </ul>
+
+<?
+}
+/*---------------------------------------------------------------------------*/
+?>
+
 
 <h3>Availability</h3>
 
