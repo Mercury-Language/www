@@ -18,6 +18,14 @@
 
 $newsdb = array(
 
+"21 Dec 1998" => array("MCORBA 0.2 released",
+
+"The second release of MCORBA is finally available.
+We have fixed the generation of the C++ code so that the samples
+now build and work correctly.  See the <A HREF=\"mcorba.html\">
+MCORBA web page</A> for more details on MCORBA."
+),
+
 "13 Dec 1998" => array("Mercury 0.8.1 released",
 
 "This release just fixes some problems with the

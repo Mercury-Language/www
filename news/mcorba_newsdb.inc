@@ -16,6 +16,20 @@
 
 $mcorba_newsdb = array(
 
+"21 Dec 1998" => array("MCORBA 0.2 available for download.",
+
+"The second release of MCORBA is finally available.
+We have fixed the generation of the C++ code so that the samples
+now build and work correctly."
+),
+
+"17 Nov 1998" => array("New MCORBA paper available",
+
+"We have made a paper describing the Mercury CORBA interface
+available from
+<A HREF=\"information/papers.html\">the Mercury papers page</A>."
+),
+
 "23 Sep 1998" => array("MCORBA 0.1 available for download.",
 
 "The first release of MCORBA has been placed on the web site for
