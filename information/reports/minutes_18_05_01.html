@@ -1,0 +1,76 @@
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri 18 May, 2001.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	Fergus Henderson (fjh)
+	Mark Brown (dougl)
+	Simon Taylor (stayl)
+	David Overton (dmo)
+	David Jeffery (dgj)
+
+1. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Zoltan Somogyi (zs):
+		- Has almost finished writing the deep profiling
+		  paper.
+
+	Fergus Henderson (fjh):
+		- Has been working on allowing mode-specific clauses.
+		  There is still a bug with using this in the presence
+		  of intermodule optimisation.
+		- Has been looking at the issues associated with
+		  linking with the dotnet backend.  (The IL assembler
+		  can only produce .dll files not .obj files, and
+		  recompiling every .il file when something changes is
+		  slow.)
+		- Has been looking at a bug with detecting multiple
+		  instance declarations when using split C files or
+		  dynamic linking for the library. The suggested
+		  solution was to use c2init to check for multiple
+		  instance declarations.
+
+	Mark Brown (dougl):
+		- Has been working on a new paper on declarative
+		  debugging.
+		- Has spoken to Simon Mei about finishing quickcheck.
+		  Simon's work has now been reviewed and is ready to
+		  be committed.  Mark will write a news item for the
+		  web site.
+
+	Simon Taylor (stayl):
+		- Has been debugging smart recompilation.
+
+	David Overton (dmo):
+		- Has been debugging the new mode checker and the
+		  boolean constraint solver.
+
+	David Jeffery (dgj):
+		- Has been working on a Hal paper which was submitted
+		  earlier this week.
+		- Has been helping Anthony Senyard with his problems
+		  with using Mercury on Windows.
+
+2. Other matters
+
+	- It was decided that nondet pragma C code should be
+	  deprecated since it does not work in all grades, and can be
+	  replaced by a combination of Mercury code (using
+	  mode-specific clauses) and det/semidet C code.  Zoltan will
+	  document alternatives to using nondet pragma C in the
+	  reference manual.
+
+	- Mark and Zoltan received a rejection for their debugging
+	  paper which was submitted to TOPLAS about a year ago.  The
+	  reviewers suggested some major revisions to the structure of
+	  the paper before it should be resubmitted.
+
+Minutes taken by David Overton (dmo@cs.mu.oz.au).
+</pre>
+</html
