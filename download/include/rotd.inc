@@ -28,7 +28,7 @@ Individual releases in this series are named with a date stamp, e.g.
 <p>
 <B>Download <? echo $next_beta_version ?>:</b>
 <ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/">
+<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/<? echo $next_beta_version ?>/">
 Mercury web site</A><br>
 <li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/<? echo $next_beta_version ?>">
 Mercury ftp site</A>
@@ -45,7 +45,7 @@ is put into the beta-releases directory.
 <p>
 <B>Download releases of the day:</b>
 <ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/">
+<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/rotd/">
 Mercury web site</A><br>
 <li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/rotd/">
 Mercury ftp site</A>
@@ -61,7 +61,7 @@ all its tests.  It is marked with a version number
 <p>
 <B>Download unstable releases of the day:</b>
 <ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/">
+<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/rotd/">
 Mercury web site</A><br>
 <li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/rotd/">
 Mercury ftp site</A>
