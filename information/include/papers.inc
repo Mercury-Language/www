@@ -23,10 +23,10 @@ Making Mercury programs tail recursive (extended abstract)
 Peter Ross, David Overton and Zoltan Somogyi
 <br>
 <em>
-To appear in the Proceedings of the International Workshop on
-Logic-based Program Synthesis and Transformation
+Proceedings of the Ninth International Workshop on Logic-based Program
+Synthesis and Transformation
 </em>,
-Venice, Italy, September 1999.
+Venice, Italy, September 1999, pages 107-118.
 <a href="papers/tail_lopstr.ps.gz">Available here (62K)</a>.
 <p>
 
@@ -83,10 +83,15 @@ Run time type information in Mercury
 Tyson Dowd, Zoltan Somogyi, Fergus Henderson, Thomas Conway and David Jeffery.
 <br>
 <em>
-To appear in the Proceedings of the International Conference
+Proceedings of the International Conference
 on the Principles and Practice of Declarative Programming
 </em>,
-Paris, France, September/October 1999.
+Paris, France, September/October 1999,
+Lecture Notes in Computer Science 1702, 
+Springer Verlag, 
+Pages 224-243,
+&copy; 
+<a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/rtti_ppdp.ps.gz">Available here (75K)</a>.
 <p>
 
