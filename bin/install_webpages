@@ -5,9 +5,9 @@
 # Responsible for updating the hypermail archive, updating the
 # search database and installing the web pages.
 #
-# Note this script must be run on hydra, have the INSTALL_WEBDIR
-# environment variable set and be run from the top level directory of
-# the w3 module.
+# Note this script must be run on a machine with hypermail and htdig
+# installed, ie hydra, have the INSTALL_WEBDIR environment variable set
+# and be run from the top level directory of the w3 module.
 #
 
 whathost=`hostname | sed -e 's/\..*//'`
