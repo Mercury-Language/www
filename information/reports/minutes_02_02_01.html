@@ -1,0 +1,93 @@
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri Feb 2, 2001,
+from 3:15 to 4:00pm.
+
+Attendees:
+	Fergus Henderson (fjh)
+	David Jeffery (dgj)
+	Julien Fischer (juliensf)
+	Ina Cheng (inch)
+	Sam Thurairatnam (sthur)
+	Levi Cameron (lpcam)
+	Zoltan Somogyi (zs)
+	Simon Mei (xcsm)
+	Tyson Dowd (trd)
+	David Overton (dmo)
+	Mark Brown (dougl)
+	Simon Taylor (stayl)
+	Thomas Conway (conway)
+
+1. Release
+
+	- There are still some bugs to be fixed, but the release is
+	  close enough that it's worth starting to test installation
+	  of the distributions.
+
+2. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Zoltan Somogyi (zs)
+		- Fixed a bug in retry in the debugger.
+		- Has been working with Tom on deep profiling. 
+		- Discussed a new approach to tabling with Kostis Sagonas.
+
+	Thomas Conway (conway)
+		- More work on deep profiling, will give a demonstration soon.
+		- To try deep profiling, check out the `deep2' branch.
+
+	Mark Brown (dougl)
+		- Term dependency analysis in the declarative debugger
+		  now works.
+		- Working on documentation.
+
+	Fergus Henderson (fjh):
+		- Reviewed bytecode and MLDS changes from juliensf and lpcam.
+		- Discussed tabling in MLDS backend with Kostis Sagonas.
+		- Finishing GCC backend.
+		- Fixed MLDS bug for release.
+
+	Tyson Dowd (trd):
+		- Fixed floating point in .NET backend.
+		- Did some work on fixing multiple inclusion of
+		  `:- pragma c_header_code(...)'.
+		- Did some writing.
+	
+	David Overton (dmo):
+		- Installed software on the new machine (venus.cs.mu.oz.au).
+		- Working on improving performance of the new mode checker.
+
+	David Jeffery (dgj)
+		- Worked on merging the HAL branch into the main branch.
+
+	Ina Cheng (inch)
+		- Has been working on encoding Mercury types in XML.
+		- Working on web client.
+
+	Sam Thurairatnam (sthur)
+		- Working on a database for browser information.
+
+	Simon Mei (xcsm)
+		- Working on documentation for quickcheck.
+	
+	Julien Fischer (juliensf)
+		- Dealing with review comments for changes to MLDS.
+		- The Java backend now generates code for most things,
+		  RTTI and the standard library still need work.
+
+	Levi Cameron (lpcam)
+		- Working on handling nondet code in the bytecode interpreter.
+		- Improved efficiency of calling native code from bytecode.
+
+	Simon Taylor (stayl)
+		- Calling Mercury code from Aditi now works, but needs
+		  much more testing.
+
+Minutes taken by Simon Taylor (stayl@cs.mu.oz.au).
+</pre>
+</html>
