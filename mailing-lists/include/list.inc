@@ -11,7 +11,7 @@ $cols=3;
 $width=(int)(100/$cols);
 
 $yrmo=sprintf("%02d%02d", $current_year, $current_month);
-$dir="$list.$yrmo";
+$dir="$list.$yrmo/index.html";
 echo "<A HREF=\"$dir\">Current Month</A>";
 
 while ($yr >= $year)
@@ -38,7 +38,7 @@ while ($yr >= $year)
         }
         echo("\t<TD width=\"$width%\">");
 
-        $dir="$list.$yrmo";
+        $dir="$list.$yrmo/index.html";
         if (file_exists($dir))
         {
             echo "<A HREF=\"$dir\">";
