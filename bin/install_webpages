@@ -47,15 +47,17 @@ set -x
     #
 (
     cd mailing-lists;
-    ./rearchive
+    ./rearchive || {
+    	echo "*** rearchive failed" 1>&2
+    }
 )
 
     #
     # Install the web pages
     #
-cvs update -d .
-cvs checkout tutorial
-make install
+cvs update -d . || echo "*** cvs update failed" 1>&2
+cvs checkout tutorial || echo "*** cvs checkout failed" 1>&2
+make install || echo "*** make install failed" 1>&2
 
     #
     # Reindex the web site for searching.
@@ -64,14 +66,27 @@ echo Reindex of website started at `date`
 umask 002
 
     # Index the web-site for searching.
-htdig -c /etc/htdig/htdig-mercury.conf -a -i || exit 1
-htmerge -c /etc/htdig/htdig-mercury.conf -a || exit 1
+htdig -c /etc/htdig/htdig-mercury.conf -a -i || {
+	echo "*** htdig failed" 1>&2
+	exit 1
+}
+htmerge -c /etc/htdig/htdig-mercury.conf -a || {
+	echo "*** htmerge failed" 1>&2
+	exit 1
+}
 
     # Replace the work files with their alternate versions.
-cd /var/spool/htdig
+cd /var/lib/htdig || {
+	echo "*** can't cd to /var/lib/htdig" 1>&2
+	exit 1
+}
 for file in `ls *.work`
 do
-    mv $file `basename $file .work`
+    mv $file `basename $file .work` || {
+	echo "*** mv failed" 1>&2
+	exit 1
+    }
+}
 done
 
 echo Install finished at `date`
