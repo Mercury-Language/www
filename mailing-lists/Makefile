@@ -1,7 +1,7 @@
 target: html
 
 HTML= 	mailing-lists.html message.html message_list.html search.html
-DIRS=mercury-users mercury-developers
+DIRS=mercury-users mercury-ads mercury-developers mercury-reviews
 ROOT=..
 
 html: local_html

@@ -17,7 +17,7 @@ then
     month=`printf "%02d\n" $month`
 fi
 
-for mail in mercury-users mercury-developers
+for mail in mercury-users mercury-ads mercury-developers mercury-reviews
 do
     ./archive2html.sh -d $dir -f $mail -m $month -y $year
 done
