@@ -1,0 +1,79 @@
+
+
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri October 5, 2001.
+
+Attendees:
+	Zoltan Somogyi (zs)
+	David Overton (dmo)
+	Simon Taylor (stayl)
+	Ralph Becket (rafe)
+	Mark Brown (dougl)
+	Tyson Dowd (trd)
+
+1. New team member
+
+	A welcome to Ralph Becket, who recently joined the Mercury team
+	in Melbourne.
+
+2. Progress reports
+
+	Zoltan Somogyi (zs):
+		- Worked on stack slot optimization:
+			- correct code is generated for tree234__search,
+			  the motivating example;
+			- currently fixing a problem in the interaction
+			  with code generation.
+		- Refereeing papers.
+
+	David Overton (dmo):
+		- Worked on the mode constraints paper.
+		- Fixed a bug in mode analysis.
+		- More work on default modes for higher-order code,
+		  responding to Fergus' review comments.
+
+	Simon Taylor (stayl):
+		- More work on moving mmake functionality into the compiler.
+		- Fixed a bug in record syntax.
+		- Added version identifiers to the texinfo files.
+
+	Ralph Becket (rafe):
+		- Has been setting up his working environment on the local
+		  machines.
+		- Spent some time becoming more familiar with the compiler
+		  source.
+		- Has started planning for a Mercury tutorial book.
+
+	Mark Brown (dougl):
+		- Worked on another draft of the declarative debugging paper.
+		- Read several debugging related papers which were presented
+		  at the conferences recently attended by Fergus.
+
+	Tyson Dowd (trd):
+		- Arrived back in Melbourne and started work on Tuesday.
+		- Reported on the work he had done while away, including:
+			- foreign language improvements, with foreign types
+			  (on the foreign branch);
+			- improvements to arrays;
+			- RTTI;
+			- unify and compare in Mercury;
+			- improving the organisation of assemblies and
+			  submodules.
+
+3. System upgrade
+
+	Debian on hydra has been upgraded to 'testing'.
+
+4. Bug installing releases-of-the-day
+
+	Zoltan reported a bug in the automatically built ROTDs, which did
+	not have some required files for the deep profiler.  The problem is
+	that they are built on murlibobo, for which deep profiling is not
+	enabled.  ROTDs will now be built on one of the Debian systems,
+	such as venus or mars.
+
+Minutes taken by Mark Brown (dougl@cs.mu.oz.au)
+</pre>
+</html>
