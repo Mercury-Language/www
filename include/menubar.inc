@@ -20,14 +20,10 @@
 
 <P>
 
-<B><a href="<?echo $root?>/mailing-lists/mailing-lists.html">Mailing Lists</a>
-    </B><BR>
+<B><a href="<?echo $root?>/mailing-lists/mailing-lists.html">Mailing Lists</a></B><BR>
 <SMALL>
-  &nbsp;&nbsp;<a href="
-    <?echo $root?>/mailing-lists/mercury-developers/list.html">
-    Developers</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">
-    Users</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-developers/list.html">Developers</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">Users</a><BR>
 </SMALL>
 <P>
 <B><a href="<?echo $root?>/download.html">Download</a></B><BR>

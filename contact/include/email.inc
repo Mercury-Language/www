@@ -21,4 +21,4 @@ section to see if the bug has already been reported.
 
 <p> 
 You may also be interested in subscribing to the Mercury 
-<a href = "mailinglists.html">mailing lists</a>.
+<a href = "../mailing-lists/mailing-lists.html">mailing lists</a>.
