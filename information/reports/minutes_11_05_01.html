@@ -1,0 +1,95 @@
+<html>
+
+<pre>
+We had a meeting of the Mercury group on Fri 11 May, 2001.
+
+Attendees:
+	Fergus Henderson (fjh)
+	Zoltan Somogyi (zs)
+	Mark Brown (dougl)
+	David Overton (dmo)
+	Simon Taylor (stayl)
+
+1. Progress reports
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	Fergus Henderson (fjh):
+		- Working on the gcc back-end.
+			- Support for nested modules.
+			- Support by mmake.
+			- The test cases are almost passed, but they
+			  still fail when run from the nightly tests
+			  script.
+			- There is a slight interface change when compiling
+			  multiple modules on the one command line, due to the
+			  way gcc works.  These are now compiled into one big
+			  object file, rather than one per module.  One
+			  solution might be to fork mmc before calling
+			  gcc, but it may not be worth the effort.
+		- Has been trying to sort out intellectual property
+		  issues related to changes to the gcc back-end.
+		- Noted that problems have been reported with the MacOS
+		  port.  Has tested under Linux-PPC and it worked out of
+		  the box.
+		- Some bug fixes.
+		- Partially reviewed the EDCG changes.
+
+	Zoltan Somogyi (zs):
+		- Working on removing all nondet pragma C code from the
+		  standard library.  A problem came up writing string__append
+		  in Mercury: the compiler cannot optimize calls to var/1
+		  and nonvar/1 because of impurity.  Two proposed solutions:
+		  	- Make them special impure predicates the
+			  compiler knows about.
+			- Add syntax for multi-moded predicates (Fergus
+			  volunteers to do this).
+		- Cleaning up and optimizing deep profiling.
+		- Finishing the paper on deep profiling.
+		- Has made changes to the deep profiler since it was
+		  posted for review.  Another diff will be posted soon.
+		- Suggested configuration with a conf.m.in.
+			- Fergus pointed out that there would be a
+			  bootstrapping problem, and we should use
+			  conf.c.in instead.
+			- Zoltan responded that this problem would not
+			  apply to the deep profiler.
+		- Disabled value numbering.
+
+	Mark Brown (dougl):
+		- Has been working on a paper on the declarative
+		  debugger.
+
+	David Overton (dmo):
+		- Has been working on the ROBDD implementation.
+			- The complexity has improved.
+			- Now works in reasonable time on 8-node
+			  examples.
+
+	Simon Taylor (stayl):
+		- Has been cleaning up the smart recompilation change.
+		- Constructing test cases for that change.
+		- Reviewing Zoltan's work on deep profiling.
+
+2. Samples/extras on the web pages.
+
+	Anthony Senyard reported that he often searches the web pages
+	for something with no result, then when he asks a developer he is
+	pointed to an example in the samples or extras directories.  We
+	resolved to make the samples and extras accessible from the web
+	site, where they would be indexed by htdig (David Overton
+	volunteered to do this).
+
+3. Warning on compilation times.
+
+	Users may try to save time by downloading the source instead of
+	a binary package, without realising that the compilation time
+	might be longer than the download time.  Simon Taylor
+	volunteered to put a warning about long compilation times on the
+	relevant web page.
+
+Minutes taken by Mark Brown (dougl@cs.mu.oz.au).
+</pre>
+</html>
