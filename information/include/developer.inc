@@ -63,14 +63,6 @@ in a4 format.
 	<a href="doc-latest/allocation.text">Plain text</a>
 	<p>
 
-<li>	<strong>Module system</strong> <br>
-	Details of the module system. <p>
-
-	Available in
-	<a href="doc-latest/module_system.html">HTML</a> and
-	<a href="doc-latest/module_system.text">Plain text</a>
-	<p>
-
 <li>	<strong>Release checklist</strong> <br>
 	The release procedure. <p>
 
