@@ -4,16 +4,18 @@
 	$next_beta_version="<NEXT_BETA_VERSION>";
 	$release_doc_dir="$root/information/doc-release";
 	$latest_doc_dir="$root/information/doc-latest";
-	$ref_man_toc="reference_manual_toc.html";
-	$user_guide_toc="user_guide_toc.html";
-	$library_man_toc="library_toc.html";
-	$trans_guide_toc="transition_guide_toc.html";
-	$ref_man_release="$release_doc_dir/$ref_man_toc";
-	$ref_man_latest="$latest_doc_dir/$ref_man_toc";
-	$user_guide_release="$release_doc_dir/$user_guide_toc";
-	$user_guide_latest="$latest_doc_dir/$user_guide_toc";
-	$library_man_release="$release_doc_dir/$library_man_toc";
-	$library_man_latest="$latest_doc_dir/$library_man_toc";
-	$trans_guide_release="$release_doc_dir/$trans_guide_toc";
-	$trans_guide_latest="$latest_doc_dir/$trans_guide_toc";
+	// The "foo_toc.html" form is used by texi2html, which was used
+	// in Mercury 0.11 and earlier.
+	// The "foo/index.html" form is used by "makeinfo --html", which is
+	// used in our ROTD releases.
+	// XXX The names used for $*_release will need to be updated
+	// when the next version after 0.11 is released.
+	$ref_man_release="$release_doc_dir/reference_manual_toc.html";
+	$ref_man_latest="$latest_doc_dir/mercury_ref/index.html";
+	$user_guide_release="$release_doc_dir/user_guide_toc.html";
+	$user_guide_latest="$latest_doc_dir/mercury_user_guide/index.html";
+	$library_man_release="$release_doc_dir/library_toc.html";
+	$library_man_latest="$latest_doc_dir/mercury_library/index.html";
+	$trans_guide_release="$release_doc_dir/transition_guide_toc.html";
+	$trans_guide_latest="$latest_doc_dir/mercury_trans_guide/index.html";
 ?>
