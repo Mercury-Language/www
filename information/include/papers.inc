@@ -17,6 +17,103 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+Making Mercury programs tail recursive (extended abstract)
+</strong>
+<br>
+Peter Ross, David Overton and Zoltan Somogyi
+<br>
+<em>
+To appear in the Proceedings of the International Workshop on
+Logic-based Program Synthesis and Transformation
+</em>,
+Venice, Italy, September 1999.
+<a href="papers/tail_lopstr.ps.gz">Available here (62K)</a>.
+<p>
+
+Recursive calls are often very close to being the last action in a clause.
+Frequently, however, the recursive call computes a value
+which must be put into a memory cell or used in a simple computation.
+Therefore the generated code will consume stack space for each iteration,
+and will need to execute
+stack frame setup and teardown code in every iteration.
+This paper presents two optimisations that in many common cases
+can transform such code into a tail recursive form
+by moving code from after the recursive call to before the recursive call.
+These optimisations have been implemented in the Melbourne Mercury compiler.
+<p>
+The first optimisation is a pure source to source transformation.
+It looks for recursive calls followed by associative computations
+which depend on the outputs of the recursive call.
+The optimisation then creates a specialised version of the predicate
+in which the associative computation is done before the recursive call.
+This specialised predicate will have
+extra arguments that act as accumulators:
+they hold the cumulative results of the associative computations so far.
+<p>
+The second optimisation looks for
+recursive calls followed by construction unifications
+that put some of the results of that call into memory cells,
+and moves those construction unifications before the call.
+This required extending the Mercury mode system
+to allow a restricted form of partially instantiated data structures
+and to record aliases,
+since in the transformed program the cell is not ground when it is created,
+but will become ground when the recursive call returns.
+To allow this to happen, we also had to extend
+the parameter passing conventions of the Mercury abstract machine
+to allow predicates to return selected output arguments in memory,
+not in registers.
+<p>
+Some predicates contain both
+associative computations and construction unifications
+after the recursive call.
+To allow us to make such predicates tail recursive,
+the accumulator introduction optimisation will perform its transformation
+even when the recursive call is followed by construction unifications
+as well as associative computations,
+knowing that the other optimisation
+will move the construction unifications before the call.
+<p>
+
+<li>
+<strong>
+Run time type information in Mercury
+</strong>
+<br>
+Tyson Dowd, Zoltan Somogyi, Fergus Henderson, Thomas Conway and David Jeffery.
+<br>
+<em>
+To appear in the Proceedings of the International Conference
+on the Principles and Practice of Declarative Programming
+</em>,
+Paris, France, September/October 1999.
+<a href="papers/rtti_ppdp.ps.gz">Available here (75K)</a>.
+<p>
+
+The logic/functional language Mercury
+uses a strong, mostly static type system
+based on polymorphic many-sorted logic.
+For efficiency,
+the Mercury compiler uses type specific representations of terms,
+and implements polymorphic operations such as unifications
+via generic code invoked with descriptions of the actual types of the operands.
+These descriptions, which consist of automatically generated data and code,
+are the main components of the Mercury runtime type information (RTTI) system.
+We have used this system to implement several extensions of the Mercury system,
+including an escape mechanism from static type checking,
+generic input and output facilities, a debugger, and automatic memoization,
+and we are in the process of using it
+for an accurate, native garbage collector.
+We give detailed information
+on the implementation and uses of the Mercury RTTI system
+as well as measurements of the space costs of the system.
+<p>
+The raw data on which the evaluation is based
+is available as a<a href = "papers/rtti_data.tar.gz">70 Kb tar file</a>
+<p>
+
+<li>
+<strong>
 Optimization of Mercury programs
 </strong>
 <br>
@@ -47,10 +144,9 @@ In <em>
 Proceedings of the First International Workshop
 on Practical Aspects of Declarative Languages
 </em>,
-PADL '99, San Antonio, Texas, USA,
+San Antonio, Texas,
 January 1999, 
-Volume 1551, 
-Lecture Notes in Computer Science,
+Lecture Notes in Computer Science 1551, 
 Springer Verlag, 
 Pages 211-227,
 &copy; 
@@ -113,13 +209,15 @@ Termination analysis for Mercury.
 Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 <br>
 <em>
+Proceedings of the Fourth Static Analysis Symposium
+</em>,
+Paris, France, September 1997, pages 157-171.
+<a href = "papers/sas97.ps.gz">available here (75K)</a>.
+A longer version of the paper appeared as
 Technical Report 97/9,
-</em>
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, July 1997, 25 pages.
-<a href = "papers/mu_97_09.ps.gz">
-Available here (99K).
-</a>
+it is <a href = "papers/mu_97_09.ps.gz">available here (99K)</a>.
 <p>
 
 This paper presents the algorithms of the Mercury termination analyser,
@@ -129,13 +227,8 @@ and declarative input/output can be handled,
 and evaluates the performance of the analyser
 both on a set of standard test programs and on the Mercury compiler itself.
 <p>
-A shorter version of this paper will be published
-in the Proceedings of the Fourth International Static Analysis Symposium,
-Paris, France, September 1997.
-<p>
-The raw data on which the evaluation is based
-is <a href = "papers/termination_data.tar.gz">available here</a>
-as a 5.2 Mb tar file.
+The raw data on which the evaluation is based is available
+as a <a href = "papers/termination_data.tar.gz">5.2 Mb tar file</a>.
 <p>
 
 <li>
@@ -151,9 +244,7 @@ Proceedings of the JICSLP '96 Workshop on Parallelism and
 Implementation Technology for (Constraint) Logic Programming Languages,
 </em>
 Bonn, Germany, September 1996, pages 207-218.
-<a href = "papers/jicslpw.ps.gz">
-Available here (46K).
-</a>
+<a href = "papers/jicslpw.ps.gz">Available here (46K)</a>.
 <p>
 
 <li>
@@ -168,9 +259,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 Journal of Logic Programming,
 </em>
 volume 29, number 1-3, October-December 1996, pages 17-64.
-<a href = "papers/jlp.ps.gz">
-Available here (138K).
-</a>
+<a href = "papers/jlp.ps.gz">Available here (138K)</a>.
 <br>
 Elsevier owns the copyright of this paper;
 it is made available here by their permission.
@@ -184,7 +273,7 @@ into more detail on exactly how the code is generated, and on how
 the abstract machine instructions are implemented as C or GNU C code.)
 <p>
 The raw data on which the evaluation is based
-is <a href = "./benchmarks.html">available here</a>.
+is available on our <a href = "./benchmarks.html">benchmarking page</a>.
 <p>
 
 <li>
@@ -198,13 +287,9 @@ Fergus Henderson, Zoltan Somogyi and Thomas Conway.
 Proceedings of the Australian Computer Science Conference,
 </em>
 Melbourne, Australia, January 1996, pages 337-346.
-<a href = "papers/acsc96.ps.gz">
-Available here (78K).
-</a>
+<a href = "papers/acsc96.ps.gz">Available here (78K)</a>.
 A longer version of the paper is
-<a href = "papers/detism.ps.gz">
-available here (76K).
-</a>
+<a href = "papers/detism.ps.gz">available here (76K)</a>.
 <p>
 
 This paper discusses Mercury's determinism system in detail, including
@@ -223,9 +308,7 @@ Thomas Conway, Fergus Henderson, and Zoltan Somogyi.
 Proceedings of the 1995 International Symposium on Logic Programming,
 </em>
 Portland, Oregon, December 1995, pages 242-256.
-<a href = "papers/code_gen_mit.ps.gz">
-Available here (68K).
-</a>
+<a href = "papers/code_gen_mit.ps.gz">Available here (68K)</a>.
 <p>
 
 This paper describes the structure of the Mercury compiler,
@@ -249,9 +332,7 @@ Proceedings of the ILPS '95 Postconference Workshop on
 Sequential Implementation Technologies for Logic Programming Languages.
 </em>
 Portland, Oregon, December 1995.
-<a href = "papers/mercury_to_c.ps.gz">
-Available here (65K).
-</a>
+<a href = "papers/mercury_to_c.ps.gz">Available here (65K)</a>.
 <p>
 
 This paper discusses the merits of using C, and in particular GNU C,
@@ -270,9 +351,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 Proceedings of the Australian Computer Science Conference,
 </em>
 Glenelg, Australia, February 1995, pages 499-512.
-<a href = "papers/acsc95.ps.gz">
-Available here (85K).
-</a>
+<a href = "papers/acsc95.ps.gz">Available here (85K)</a>.
 <p>
 
 An overview paper.
@@ -291,9 +370,7 @@ Proceedings of the ILPS '94 Postconference Workshop on
 Implementation Techniques for Logic Programming Languages,
 </em>
 Syracuse, New York, November 1994.
-<a href = "papers/ilps94w.ps.gz">
-Available here (96K).
-</a>
+<a href = "papers/ilps94w.ps.gz">Available here (96K)</a>.
 <p>
 
 The first paper on Mercury. It is superseded by the paper
@@ -311,9 +388,7 @@ Thomas Conway.
 Honours report.
 </em>
 Department of Computer Science, University of Melbourne, November 1994.
-<a href = "papers/conway_hons.ps.gz">
-Available here (188K).
-</a>
+<a href = "papers/conway_hons.ps.gz">Available here (188K)</a>.
 <p>
 
 This is the first paper on the code generator.
@@ -504,7 +579,7 @@ Termination analysis for Mercury.
 Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 <br>
 <em>
-Talk to be presented at the Fourth Static Analysis Symposium.
+Talk presented at the Fourth Static Analysis Symposium.
 </em>
 Paris, France, September 1997.
 <a href = "papers/sas_talk.ps.gz">
