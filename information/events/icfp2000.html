@@ -1,0 +1,226 @@
+<html>
+<body>
+<h2>
+ICFP 2000: The Merry Mercurians
+</h2>
+
+This page describes the 
+<a href="http://www.cs.mu.oz.au/research/mercury/">Mercury</a>
+entry into the 
+<a href="http://www.cs.cornell.edu/icfp/">ICFP 2000 programming
+contest</a>, and our experience with the contest. 
+<p>
+
+A sample image (<a href="images/mtest7.gml">mtest7.gml</a>).<br><br>
+<img src="images/mtest7.jpg">
+
+
+<H3>The Contest</H3>
+
+The ICFP 2000 programming contest was to implement a ray tracer.
+<p>
+The input to the ray tracer was a scene description written in a simple
+functional language, called GML.  Execution of a GML program produces
+zero, or more, image files, which are in PPM format.  The feature set of
+GML was organized into three tiers, all of which were implemented by the
+Mercury entry.
+<p>
+GML has primitives for defining simple geometric objects (e.g., planes,
+spheres, and cubes) and lighting sources. The surface properties of the
+geometric objects used to render the objects are specified as functions
+in GML itself.  GML also defined operators for combining the simple
+geometric objects to create more complex objects.  In addition to
+supporting scene description, GML also has a render operator that
+renders a scene to an image file. For each pixel in the output image,
+the render command must compute a colour.  Conceptually, this colour is
+computed by tracing the path of the light backwards from the eye of the
+viewer, to where it bounced off an object, and ultimately back to the
+light sources.
+<p>
+
+The contest rules stated that a team had 72 hours to implement a ray
+tracer.  The ray tracer could be implemented in any language, and the  
+team could consist of any size.  The short time frame of the contest
+meant that programming languages that help programmers to build complex
+systems quickly should give an advantage.  (see the 
+<a href="http://www.eecs.harvard.edu/~nr/icfp/results.html">report</a>
+on the 1999 programming contest for more information).
+
+<H3>The Team</H3>
+
+<pre>
+        Ralph Becket &lt;rbeck@microsoft.com&gt;
+        Tyson Dowd &lt;trd@cs.mu.OZ.AU&gt;
+        Fergus Henderson &lt;fjh@cs.mu.OZ.AU&gt;
+        Simon Taylor &lt;stayl@cs.mu.OZ.AU&gt;
+        Peter Ross &lt;peter.ross@miscrit.be&gt;
+        David Glen Jeffery &lt;dgj@cs.mu.OZ.AU&gt;
+        Tennessee Leeuwenburg &lt;tjleeuw@students.cs.mu.OZ.AU&gt;
+        Thomas Conway &lt;conway@cs.mu.OZ.AU&gt;
+        Rob Jeschofnik &lt;rejj@students.cs.mu.OZ.AU&gt;
+        Mark Brown &lt;dougl@cs.mu.OZ.AU&gt;
+        Mike Liddell &lt;mjl@cs.mu.OZ.AU&gt;
+        David Overton &lt;dmo@cs.mu.OZ.AU&gt;
+        Peter Eckersley &lt;pde@cs.mu.OZ.AU&gt;
+</pre>
+
+The Mercury entry was produced by a team of 13 members (at least 10 of
+which contributed code to the ray tracer).  The team was also distributed
+over three countries (Australia (11 members), England (1 member) and  
+Belgium (1 member)).  Both the members of the team in England and
+Belgium contributed significant amounts of code.  Nearly all the
+communication between distrubuted team members took place via email (the
+England and Belgium team members spoke occasionally by phone).
+<p>
+It should be remembered that Europe and Australia are
+nearly 12 hours apart in time-zones, so for nearly the entire 72 hours
+of the contest there was someone, somewhere in the world working on our
+entry.  However, given the preferred working habits of some of the
+Mercury team members, this might have happened regardless of geography.
+<p>
+
+<H3>The entry and results</H3>
+
+Out of a field of 38 entries, we came 4th.  For the first ever entry in 
+Mercury, this is a fine accomplishment.  We were also the largest team
+entry (13 members), nearly double the next largest team (7 members).
+<p>
+The rankings were largely determined by correctness (only 4 teams
+produced approximately the right results for all the images).  After
+that we were ranked on speed, and that's where our entry didn't fare so
+well.  The full contest results are available 
+<a href="http://www.cs.cornell.edu/icfp/contest_results.htm">here</a>.
+<p>
+Unfortunately, we had to turn off one of our key optimizations (bounding
+spheres) because we found it caused a few pixels of error in one of the
+images when we submitted.   On the small sample images this gave us a
+speedup of 50%, however on more complex images it may have been even
+higher.
+<p>
+This was unlikely to have even moved us up a place, however, because the
+Mercury implementation of floating point is fairly slow on the x86
+processor.  At this point in the contest, our competition consisted of
+compilers with very good floating point support.  This is a weakness in
+the Mercury implementation that we'd love to fix.
+<p>
+Between these two efficiency problems, we quickly fell off the pace when
+the contest images became large and complex.
+<p>
+One of the frustrating parts of the competition was that we encountered
+quite a few bugs in the specification and the sample images.  Many hours
+were spent trying to figure out why our correct ray tracer refused to
+produce the wrong image.  This isn't meant to be a criticism of the
+organizers -- they have a tough job, but keeping 13 people around the
+world up to date with task descriptions, image updates, food and caffeine
+was a tough job.
+<p>
+Of our own bugs, two of the most common were
+incorrect signs, and using non-unit vectors when unit-vectors were
+expected.  We recommend using the type system to prevent the unit vector
+error if anyone wants to write a ray-tracer in Mercury in the future.
+
+<H3>Using Mercury</H3>
+
+The distributed nature of the entry and the lack of problems encountered
+due to the distribution of team members is a feather in the cap of the  
+Mercury language.  The strong type and mode system ensured that if an
+interface between distinct parts of the ray tracer changed, the spots  
+which were impacted by the change were reported by the Mercury compiler,
+and could quickly be corrected.  It also meant that different team
+members could work on different solutions to the same problem, as long
+as both solutions agreed on a common interface, and the best one could
+be chosen.  It's interesting to note that all four of the top entries
+used languages with strong static checking, like the type and mode
+system in Mercury.
+
+The statistics for all the source files (including source files which  
+were used to debug individual components of the ray tracer) are as 
+follows:
+
+<pre>
+Number of types:                    64
+Number of insts:                     2
+Number of predicates:              162
+Number of functions:               133
+
+Number of predmodes:               102
+Number of funcmodes:                 0
+Number of separate modes:           66
+Number of implicit function modes:    ?
+Total number of modes:       >=    168
+                             =<    301
+        - det:                     122 ( 72.62%)
+        - semidet:                  40 ( 23.81%)
+        - nondet:                    0 (  0.00%)
+        - multi:                     0 (  0.00%)
+        - cc_nondet:                 0 (  0.00%)
+        - cc_multi:                  2 (  1.19%)
+	- erroneous:                 8 (  4.76%)
+	- failure:                   0 (  0.00%)
+Average modes per predicate: >=  1.037
+                             =<  1.037
+
+Blank lines:                      1263 ( 20.57%)
+Comment lines:                     537 (  8.74%)
+Total whitespace/comment lines:   1800 ( 29.31%)
+
+Function declaration lines:        147 (  2.39%)
+Predicate declaration lines:       260 (  4.23%)
+Mode declaration lines:             67 (  1.09%)
+Type declaration lines:            308 (  5.02%)
+Inst declaration lines:             13 (  0.21%)
+Other declaration lines:           223 (  3.63%)
+Total declaration lines:          1018 ( 16.58%)
+
+Code lines:                       3323 ( 54.11%)
+
+Total number of lines:            6141 (100.00%)
+
+</pre>
+
+Mercury provides an interface to the C language.  This interface was
+used once to do an efficient ray-box intersection test.  The C code for
+this was located from the web, and rather then recoding the algorithm in
+Mercury we used the C code verbatim.  
+<p>
+
+Functional programmers often ask whether any of Mercury's logic features
+were useful in this contest (as many of the other features of Mercury
+are very similar to functional languages).
+We didn't end up using any non-deterministic search in our final entry.
+However, we certainly used them during the early coding of the project.
+Our original implementation of finding the nearest intersection point of
+a ray simply found all the intersections using a call to `solutions' and
+a nondeterministic search through all the available objects.  We
+eventually removed this code as we started using different algorithms to
+find the intersecting objects.
+
+<H3>Show me the code!</H3>
+
+The actual ray tracer source is available from the Mercury CVS archive
+in the module icfp2000.  The CVSROOT environment variable should be set
+to :pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository. The password
+is `guest'.
+<pre>
+cvs -d:pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository login 
+(password is guest)
+cvs -z6 -d:pserver:guest@hydra.cs.mu.oz.au:/home/mercury1/repository co icfp2000
+</pre>
+
+<p>
+You will need a recent daily release of the Mercury system to compile
+and build the code (The current 0.9.1 release lacks a few features that
+we have used in the ray tracer).  You can download Mercury from the
+snapshots section of the
+<a href="http://www.cs.mu.oz.au/research/mercury/">Mercury homepage</a>.
+
+
+<p>
+
+The Mercury Team<br>
+<a href="http://www.cs.mu.oz.au/research/mercury/">
+http://www.cs.mu.oz.au/research/mercury/
+</a><br>
+<a href="mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>
+</body>
+</html>

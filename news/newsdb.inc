@@ -11,15 +11,28 @@
 **	    description
 **	),
 ** Make sure you put a comma between each item, and an arrow
-** between the date and the news.  You must test the entry before you
-** commit.  Simply run `make' at the top level w3 directory, and use a
+** between the date and the news.  Quotation marks must be escaped.
+** You must test the entry before you commit.
+** Simply run `make' at the top level w3 directory, and use a
 ** web browser (lynx is fine) to see that the news.html file formats
-** correctly.
+** correctly.  
 ** 
 ** ALSO the dates must be distinct.
 */
 
 $newsdb = array(
+
+"05 Oct 2000" => array("Events and Reports",
+
+"Two new sections have been added to the web site.  The events section
+will give information about events Mercury has been involved in -- we
+start this section with a <a href=\"information/events/icfp2000.html\">
+page on Mercury coming 4th</a> (of 38 teams) in
+the ICFP 2000 programming contest.  The reports section contains regular
+reports from the developers, such as minutes from Mercury meetings.
+Both are available from the sidebar menu."
+),
+
 
 "4 Oct 2000" => array("Two new papers",
 

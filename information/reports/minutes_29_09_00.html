@@ -1,0 +1,222 @@
+<html>
+
+<pre>
+Hi,
+
+We had a meeting of the Mercury group on Fri Sep 29th, 3:15pm to 5:55pm.
+This is an extract from the minutes (I've omitted stuff like the
+discussion about hardware which is only of local interest).
+
+Attendees:
+	David Jeffery <dgj>
+	David Overton <dmo>
+	Mark Brown <dougl>
+	Zoltan Somogyi <zs>
+	Tyson Dowd <trd>
+	Fergus Henderson <fjh>
+	Peter Stuckey <pjs>  (for part of the meeting)
+
+1.  Progress reports.
+
+	We went around the table, with each person in turn discussing what
+	they had been working on recently and/or what they were planning
+	to work on.
+
+	David Jeffery <dgj>:
+		- Had been mostly working on HAL stuff.
+		- Is planning to merge the changes on the HAL branch
+		  (`no_alias') of the cvs repository back into the
+		  main branch.  These changes were adding three new grade
+		  components, which had the following effects:
+		  	(1) allocating a VAR tag (with value zero) on every
+			    data type
+			(2) filling in a field in the type_ctor_info RTTI
+			    structures with the address of the solver
+			    equality procedure for that type
+			(3) likewise filling in another field with the solver
+			    initialization procedure for that type
+		- Had been working on a paper on existential types (with fjh).
+
+	David Overton <dmo>:
+		- Had been finishing off the change to support polymorphic modes
+		  (i.e. allowing inst variables which can be instantatied
+		  to any ground inst in mode declarations).
+		  The problem with this change was performance --
+		  mode checking for a version of tree234 using polymorphic
+		  modes was 1 minute 45 seconds, as compared to 17 seconds
+		  for the non-polymorphically moded version.
+		  This is getting much too slow.
+		  However, since the changes didn't slow down mode checking
+		  of existing code, we agreed that it was OK to commit this
+		  change, particularly since this would help other people
+		  experiment with it, work on it, and perhaps fix the
+		  performance problem. David Overton speculated that
+		  the performance problem might not be fixable in the
+		  current mode system implementation.
+
+		- Is planning more work on the new mode system implementation
+			- stage 1 (determining producers and consumers)
+			  is nearly complete -- dmo thinks he has
+			  got higher-order support nearly finished
+			- stage 2 (reordering conjunctions appropriately)
+			  not yet done.  There was some discussion about
+			  how to do this -- need to be careful to avoid
+			  exponential complexity.
+
+	Mark Brown <dougl>:
+		Has mainly been working on extending the declarative debugger
+		to allow the user to mark a particular subterm as being
+		the "suspicious" subterm.  The way this works is that
+		the term browser is extended with a new command that
+		marks the current term (or a term with a named path
+		from the current term) as suspicious and then quits
+		the browser.  In particular, Mark has been figuring
+		out what algorithm the declarative debugger needs to
+		apply to support this.
+
+		Has also been working on reorganizing the parameters
+		used for the different browsers/pretty-printers.
+		
+		Currently pretty printer doesn't support a line limit.
+		There was some discussion about limiting lines displayed
+		by the debugger -- this should be handled by a single
+		mechanism for all the different parts of the debugger,
+		including pretty printer, stack traces and printing
+		help messages.
+
+		Mark said he has also been testing the declarative debugger
+		by trying it out on bugs in the Mercury team's ICFP contest
+		entry.  In particular, the variable naming bug in
+		`inside_sphere', and also the unsolved bug with an apparent
+		false shadow in a two-cylinder test case.
+		This bug remained in our final submitted solution, despite
+		a two or more hours search by lots of the team
+		members.  By narrowing the field of focus to the area
+		which was incorrectly rendered, and changing the
+		resolution to 1 pixel by 1 pixel, he was able to come
+		up with a test case that he could use with the
+		declarative debugger, and had managed to find (and fix?)
+		the bug!  (Applause.)  It turned out to be a bug in the
+		cylinder intersection code. 
+
+		Someone suggested that this would be a very good
+		example to write up for a paper on the declarative
+		debugger, and everyone agreed.
+
+	Zoltan Somogyi <zs>:
+		Had been working on extending mdb to allow attaching commands
+		to breakpoints.  This would include attaching multiple
+		commands (by putting multi-command sequences in quotes 
+		with commands separated by semicolons).
+		There was some discussion about what should happen if
+		you attach a movement command to a breakpoint.
+		
+		Had been working on adding an option to selectively supress
+		given event types (except for call events, which can't
+		easily be supressed since some mdb commands depend on them,
+		and which it probably isn't useful to suppress anyway),
+		and also to suppress declarative debugger support (?)
+		and program representations.
+
+		An old change which involved changing retry to use the
+		"fail" command to skip to a
+		`fail' rather than just to an `exit' for nondet tabled
+		predicates (or something along those lines?)
+		was delayed because the reviewer (fjh) objected to it
+		since it didn't handle the situation where there was
+		a commit and thus no `fail' event.
+		Since (a) this problem only affected model_non tabled
+		predicates, which are documented as not working anyway,
+		and (b) the cause of the problem was arguably a problem
+		in the fail command, rather than this change (?),
+		we agreed that it would be OK to go ahead and commit
+		this change.
+
+
+
+	Tyson Dowd <trd>
+		Has been working on the IL back-end.
+		Most of the changes for that were now in the process
+		of being merged back into the main cvs repository,
+		and soon they would all be.
+
+		Planned to work on the IL runtime library support.
+		Since some routines will need to be implemented in
+		different languages, this required extending the foreign
+		language support in two ways: (1) allowing different
+		languages than C and (2) allowing more than one implementation
+		for each procedure, so long as each implementation is in
+		a different language, and then having some mapping from
+		target language to a list of implementation languages
+		in order of preference, so that for a given target language
+		the compiler can determine which implementation it uses
+		for each procedure.
+
+		Tyson said he now plans to implement the library in C# rather
+		than Managed C++, since C# would be a bit neater for this
+		kind of thing, the Managed C++ compiler was not considered
+		very reliable, and anyway Managed C++ is just as non-portable
+		as C#.
+
+		Tyson had also been working on MCORBA (and will
+		continue with this).  Someone on the net has been
+		using it, and had reported some bugs which Tyson has
+		been working on.
+
+	Fergus Henderson <fjh>
+		Had been working on documenting the support for
+		parallelism/multithreading.  Planned to rename the
+		`--parallel' option as `--thread-safe' or `--threads'
+		or `--multi-threaded' or something like that.
+		Concensus was that it should be called `--mt' /
+		`--multi-threaded' and `.mt' as the grade component.
+
+		Had been working on going through the bug list,
+		fixing bugs, and making the compiler pass its test
+		suite again.
+
+		Had been working on MLDS back-end.  Planned to continue
+		this.  Need to fix some bugs and generate better code
+		for switches.
+		
+		Another thing we briefly discussed was using the new
+		high-level C code grade for the ICFP2000 contest and
+		seeing if there is any improvement in speed.
+		Tyson said he checked this out and remembered why we
+		didn't do it -- the contest code uses global.m, which
+		needs a working implementation of compare for univ (it
+		stores a map of string to univs).  Currently that is
+		unimplemented in hlc.gc.
+
+		Planned to continue working on existential types paper
+		with dgj.
+
+2. Summer Studentship Projects
+	Suggestions included
+		- distributed Mmake: distribute work over multiple
+		  machines on local area networks with NFS
+		  (if time permits, same person could also work on
+		  keeping object files in different directories for
+		  different grades/architectures)
+		  This is really a systems project involving Make and
+		  shell scripts rather than a Mercury project.
+
+		- distributed Mercury: provide a Mercury library to
+		  support distributed programming.  This would
+		  probably be a wrapper over one of the existing
+		  libraries for this, e.g. MPI.
+
+		- support for SOAP/XML: provide a Mercury library
+		  for supporting SOAP/XML.
+
+		- COM interface: modify existing MCORBA implementation
+		  to support COM (if not already implemented by Mission
+		  Critical)
+
+		- IIOP server: implement the CORBA IIOP protocol
+		  in Mercury, so that MCORBA can use this rather
+		  than wrapping the C++ CORBA implementation.
+
+Minutes taken by Fergus Henderson <fjh@cs.mu.oz.au>.
+</pre>
+</html>

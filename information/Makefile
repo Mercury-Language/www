@@ -4,9 +4,11 @@ ROOT=..
 HTML= 	benchmarks.html 	\
 	developer.html 		\
 	documentation.html 	\
+	events.html		\
 	features.html 		\
 	motivation.html		\
 	papers.html		\
+	reports.html		\
 	related.html
 
 all:     local
