@@ -21,6 +21,9 @@ local:
 	[ -d notes ] || \
 		(cvs checkout -d notes mercury/compiler/notes)
 	echo "LIBRARY_DIR=`pwd`/library"  > Mmake.common
+	echo "PERL=perl"  >> Mmake.common
+	echo "INFO=info"  >> Mmake.common
+	echo "DVIPS=dvips"  >> Mmake.common
 	(cd notes; mmake MERCURY_DIR=.. )
 	(cd mercury-doc; mmake library-chapters.texi split_html ps)
 	$(CP) notes/*.text doc
