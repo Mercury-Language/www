@@ -103,6 +103,14 @@ in a4 format.
 	<a href="doc-latest/todo.text">Plain text</a>
 	<p>
 
+<li>	<strong>Work in progress</strong> <br>
+	Things currently being done on the Mercury project.  <p>
+
+	Available in
+	<a href="doc-latest/work_in_progress.html">HTML</a> and
+	<a href="doc-latest/work_in_progress.text">Plain text</a>
+	<p>
+
 <li>	<strong>Bootstrapping</strong> <br>
 	What to do when a change requires bootstrapping. <p>
 
