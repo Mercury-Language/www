@@ -17,6 +17,19 @@
 */
 
 $newsdb = array(
+
+"19 Jan 2000" => array("Morphine released",
+
+"<a href=\"http://www.irisa.fr/lande/jahier/download.html\">Morphine</a>,
+a trace analysis system for Mercury, has just been added to
+the Mercury distribution (and will be available in Mercury 0.9.1).  Morphine
+allows dynamic tracing of Mercury programs, allowing scripts to be
+written which interact with the debugger and efficient collection of statistics 
+on running programs.  Many thanks to 
+<a href=\"mailto:Erwan.Jahier@irisa.fr\">Erwan Jahier</a> for his hard work on
+Morphine."
+),
+
 "16 Jan 2000" => array("Record syntax",
 "We've added support for record syntax, so that fields of
 constructors can be conveniently extracted and updated
