@@ -181,10 +181,10 @@ installed all the binary distributions.)
 <dl>
     <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, or 2000.
 	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
-<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.i686-pc-cygwin.tar.gz">Australia</a>
-<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.i686-pc-cygwin.tar.gz">Sweden</a>
+<a href = "ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">Australia</a>
+<a href = "ftp://ftp.csd.uu.se/pub/Mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">Sweden</a>
 <a href =
-"ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.i686-pc-cygwin.tar.gz">USA</a>
+"ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.10.i686-pc-windows-cygwin.tar.gz">USA</a>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.1)
