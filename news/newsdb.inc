@@ -17,6 +17,15 @@
 */
 
 $newsdb = array(
+"17 Mar 1999" => array("Automatic accumulator introduction",
+
+"A new optimization has been added to the Mercury compiler.
+The optimization attempts to make procedures tail recursive by
+the introduction of accumulator variables.
+The optimization is available in our latest
+<A HREF=\"download/rotd.html\">release of the day</A>.
+"),
+
 "18 Mar 1999" => array("Linux RPM format binary distribution",
 
 "We have provided a new binary distribution of Mercury 0.8.1
