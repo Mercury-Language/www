@@ -54,19 +54,6 @@ make install
     #
 umask 002
 
-    # Use the version (3.1) of htdig and htmerge
-    # in /usr/local/bin not the older one (3.0.8b)
-    # in /usr/bin.
-PATH=/usr/local/bin:$PATH
-
-    # Mailing list
-htdig -c /etc/htdig/htdig-mlists.conf
-htmerge -c /etc/htdig/htdig-mlists.conf -d
-htmerge -c /etc/htdig/htdig-mlists.conf -w
-
-    # Rest of web site.
-htdig -c /etc/htdig/htdig.conf
-htmerge -c /etc/htdig/htdig.conf -d
-htmerge -c /etc/htdig/htdig.conf -w
-
-chgrp -R mercury /var/spool/htdig*
+    # Index the web-site for searching.
+htdig -c /etc/htdig/htdig-mercury.conf
+htmerge -c /etc/htdig/htdig-mlists.conf
