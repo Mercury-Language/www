@@ -58,13 +58,13 @@ umask 002
 PATH=/usr/local/bin:$PATH
 
     # Mailing list
-htdig -c /etc/htdig-mlists.conf
-htmerge -c /etc/htdig-mlists.conf -d
-htmerge -c /etc/htdig-mlists.conf -w
+htdig -c /etc/htdig/htdig-mlists.conf
+htmerge -c /etc/htdig/htdig-mlists.conf -d
+htmerge -c /etc/htdig/htdig-mlists.conf -w
 
     # Rest of web site.
-htdig -c /etc/htdig.conf
-htmerge -c /etc/htdig.conf -d
-htmerge -c /etc/htdig.conf -w
+htdig -c /etc/htdig/htdig.conf
+htmerge -c /etc/htdig/htdig.conf -d
+htmerge -c /etc/htdig/htdig.conf -w
 
 chgrp -R mercury /var/spool/htdig*
