@@ -16,6 +16,16 @@
 
 $newsdb = array(
 
+"18 Sep 1998" => array("New unstable daily releases.",
+
+"The Mercury daily snapshot, called the release-of-the-day (ROTD) scheme
+has been modified to add unstable releases, which have not passed the
+all the tests, but may still be useful for developers who need the very
+latest version.  Daily releases are available for
+<A HREF=\"download/rotd.html\">download</A>."
+),
+
+
 "7 Sep 1998" => array("The Mercury Web Site overhauled.",
 
 "The new layout is easier for us to update with news (like this),
