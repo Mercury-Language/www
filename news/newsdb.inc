@@ -21,6 +21,16 @@
 
 $newsdb = array(
 
+"5 Apr 2000" => array("More new papers",
+
+"Another two papers on Mercury are now available from our
+<A HREF=\"information/papers.html\">papers page</A>.
+One describes using purity declarations for building foreign language
+interfaces, while the other details the update transformation, an
+optimization that can help re-order state updates into better positions
+for other optimizations."
+),
+
 "21 Feb 2000" => array("New papers",
 
 "Two new papers on Mercury are now available from our

@@ -14,6 +14,61 @@ Mercury, at a variety of levels, are also available.
 <h2>Papers on Mercury</h2>
 
 <ul>
+
+<li>
+<strong>
+State update transformation
+</strong>
+<br>
+Peter Ross and Zoltan Somogyi
+<br>
+<em>
+</em>
+<a href="papers/update.ps.gz">Available here (57K)</a>.
+<p>
+Recursive predicates frequently generate some state
+which is updated after the recursive call.
+We present a source to source transformation
+which can move the state update before the recursive call,
+thus helping to make the predicate tail recursive,
+and report on its implementation in the Mercury compiler.
+<p>
+
+
+
+<li>
+<strong>
+Using impurity to create declarative interfaces in Mercury
+</strong>
+<br>
+Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi
+<br>
+<em>
+</em>
+<a href="papers/purity.ps.gz">Available here (52K)</a>.
+<p>
+The logic/functional language Mercury
+allows the programmer to annotate predicates and
+functions to mark impure predicates, allowing
+impure code to be safely integrated into a
+declarative language.
+
+By using purity declarations with the foreign language
+interface, programmers can take advantage of many of the
+features of a high level programming language while
+writing imperative code to interface with existing
+imperative libraries.
+
+This paper outlines the purity system in Mercury and
+how it affects operational semantics,
+compares this purity system with other approaches to declaring
+impurity in a pure language,
+and gives an extended example of how impurity and foreign language
+interfaces can work together to simplify the chore of writing
+declarative interfaces to libraries.
+<p>
+
+
 <li>
 <strong>
 Towards memory reuse for Mercury
