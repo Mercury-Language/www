@@ -54,12 +54,14 @@ $root?>/download.html">Download</a> section of the Mercury web site.
 
 <li>
 The second part is the <b>gcc</b> distribution (about 450,000 lines of C).
-You'll need version 3.0 (not yet released at the time of writing),
-or a snapshot version dated February 2001 or later.
 The gcc distribution is available from the <A HREF="http://gcc.gnu.org">
 GCC web site</A>.  Or you can get it from the
 <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/">
 Mercury ftp site</A>.
+Currently you'll need the 20010129 shapshot of gcc,
+which you can get from the GCC cvs repository
+(use the option `-rgcc_ss_20010129' when checking it out),
+or from the Mercury ftp site.
 One small <A HREF="http://gcc.gnu.org/ml/gcc-patches/2001-01/msg00577.html">
 patch</a> must be applied to the GCC sources
 to make them work with the Mercury compiler.
