@@ -56,9 +56,11 @@ endif
 clean:
 	-rm -f $(HTML)
 ifdef DIRS
-	for dir in $(DIRS);			\
-	do				        \
-		(cd $$dir && $(MAKE) clean);	\
+	for dir in $(DIRS);				\
+	do				        	\
+		if [ -d $$dir ]; then			\
+			(cd $$dir && $(MAKE) clean);	\
+		fi					\
 	done
 endif
 
