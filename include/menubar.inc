@@ -41,6 +41,7 @@
 <P>
 <B><a href="<?echo $root?>/information/related.html">Related</a></B><BR>
 <SMALL>
+  &nbsp;&nbsp;<a href="<?echo $root?>/applications.html">Applications</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mcorba.html">MCORBA</a> <BR>
 </SMALL>
 <P>

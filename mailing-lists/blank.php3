@@ -1,6 +1,6 @@
 <HTML>
 <?
-    $title="WARNING: YOU SHOULD NEVER GET TO THIS PAGE";
+    $title="";
     $dir="mailing-lists";
     $root="..";
     $include="blank.inc";
