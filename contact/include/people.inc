@@ -13,6 +13,7 @@ trd@cs.mu.OZ.AU, PhD student
 <li> Julien Fischer, juliensf@cs.mu.oz.au, Honours student
 <li> <a href = "http://www.cs.mu.OZ.AU/~fjh/">Fergus Henderson</a>,
 fjh@cs.mu.OZ.AU, research fellow
+<li> Paul Incani, paulai@students.cs.mu.oz.au, summer student
 <li> <a href = "http://www.cs.mu.OZ.AU/~dgj/">David Jeffery</a>,
 dgj@cs.mu.OZ.AU, PhD student
 <li> <a href = "http://www.cs.mu.OZ.AU/~lee/">Lee Naish</a>,
