@@ -51,10 +51,12 @@ make install
     #
 umask 002
 
-htdig -c /etc/htdig-mlists.conf     # Mailing list
-htmerge -c /etc/htdig-mlists.conf
+    # Mailing list
+#htdig -c /etc/htdig-mlists.conf
+#htmerge -c /etc/htdig-mlists.conf
 
-htdig                               # Rest of web site.
-htmerge
+    # Rest of web site.
+#htdig
+#htmerge
 
-chgrp -R mercury /var/spool/htdig*
+#chgrp -R mercury /var/spool/htdig*
