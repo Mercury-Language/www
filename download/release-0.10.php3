@@ -1,6 +1,7 @@
 <HTML>
 <?
     $menu="Download";
+    $submenu="Current Release";
     $title="Release 0.10.0 Notes";
     $dir="download";
     $root="..";

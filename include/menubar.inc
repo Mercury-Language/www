@@ -95,6 +95,15 @@ if($menu == "Download") {
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/release.html">Current&nbsp;Release</a>
     <BR>
+  <?
+  if ($submenu == "Current Release") {
+  ?>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $root?>/download/release.html#info">Info</a><BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $root?>/download/release.html#source">Source</a><BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?echo $root?>/download/release.html#binaries">Binaries</a><BR>
+  <?
+  }
+  ?>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/rotd.html">Snapshot</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/old-release.html">Old&nbsp;Releases
     </a><BR>
