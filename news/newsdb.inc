@@ -21,6 +21,13 @@
 */
 
 $newsdb = array(
+"12 November 2002" => array("New Paper,",
+
+"We have a new paper available from our 
+<A HREF=\"information/papers.html\">papers page</A> that describes 
+the design and implementation of a new termination analyser for Mercury."
+),
+
 "23 October 2002" => array("New build system",
 
 "The compiler now accepts a `--make' option, which performs most

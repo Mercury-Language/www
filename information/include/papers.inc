@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#juliensf-hons">
+Termination analysis for Mercury using convex constraints
+</a>
+</strong>
+<br>
+Julien Fischer.
+<em>
+Honours report,
+</em>
+Melbourne, 2002.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#conway-thesis">
 Towards parallel Mercury
 </a>
@@ -581,6 +595,36 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="juliensf-hons">
+Termination analysis for Mercury using convex constraints
+</a>
+</strong>
+<br>
+Julien Fischer.
+<br>
+<em>
+Honours report,
+</em>
+Department of Computer Science and Software Engineering, 
+The University of Melbourne, 
+August 2002.
+<a href = "papers/juliensf_hons.ps.gz">
+Available here (143K).
+</a>
+<p>
+This report presents a new termination analysis for Mercury that
+approximates interargument size relationships using convex constraints.
+These relationships are derived using an analysis based upon abstract
+interpretation.
+Although this analysis is more expensive than that of the existing termination
+analyser, it is able to prove the termination of a larger class of predicates.
+We consider how this analysis interacts with aspects of Mercury such as the
+module system, declarative I/O, higher-order code and the foreign language
+interface.
+<p>
 
 <li>
 <strong>
