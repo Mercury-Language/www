@@ -22,7 +22,7 @@ are available at the following site(s):
 <dt> Sweden
 <dd> <a href = "ftp://ftp.csd.uu.se/pub/Mercury/">
      ftp://ftp.csd.uu.se/pub/Mercury/</a><br>
-     Uppsula University, Sweden.
+     Uppsala University, Sweden.
 </dl>
 
 Mercury 0.8 was released on November 18, 1998.

@@ -23,7 +23,7 @@ $newsdb = array(
 for Linux in RPM (RedHat Package Manager) format.
 
 Note that the binary distributions that we provide for Linux work
-with libc 6.0 only.  Unfotauntely they do NOT work with libc 6.1. 
+with libc 6.0 only.  Unfortunately they do NOT work with libc 6.1. 
 This is due to incompatibilities between libc versions 6.0 and 6.1
 (i.e. glibc 2.0 and 2.1).
 "),
