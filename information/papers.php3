@@ -1,6 +1,6 @@
 <HTML>
 <?
-    $title="Papers and Presenations";
+    $title="Papers and Presentations";
     $dir="information";
     $root="..";
     $include="papers.inc";
