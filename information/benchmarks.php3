@@ -1,6 +1,6 @@
 <HTML>
 <?
-    $title="Benchmakrs";
+    $title="Benchmarks";
     $dir="information";
     $root="..";
     $include="benchmarks.inc";
