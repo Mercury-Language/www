@@ -21,6 +21,8 @@ get the departmental sysadmins to add an account for him/her.
 Get the new user's existing /etc/passwd entry from a departmental machine,
 and then add it to /etc/passwd
 on the NIS master server (using adduser or useradd to be safe).
+If the NIS master has an /etc/shadow file,
+add the user to that file as well.
 Make sure that the numerical user ids
 are identical to the ones on departmental machines.
 
@@ -40,8 +42,7 @@ make<BR>
 
 <P>
 
-Now add a directory on all the /home file systems that we have access
-to.
+Now add a directory on all the /home file systems that we have access to.
 
 <P>
 
@@ -53,7 +54,7 @@ by modifying the file mulga:/etc/conf/mail/lists/mercury-local.
 
 <P>
 
-Last update was $Date: 2004-11-24 01:26:42 $ by $Author: zs $@cs.mu.oz.au.
+Last update was $Date: 2004-12-01 00:10:41 $ by $Author: zs $@cs.mu.oz.au.
 </body>
 
 </html>
