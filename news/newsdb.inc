@@ -37,8 +37,8 @@ a type `lazy(T)' for lazily-evaluated data structures,
 with `delay' and `force' operations.
 There is also a module `lazy_list', which defines a lazy list
 data type using the `lazy' module.
-See the files in extras/dynamic_linking for details.
-This will soon be available for
+See the files in extras/lazy_evaluation for details.
+This is now available for
 <A HREF=\"download/rotd.html\">download</A>.
 "),
 
