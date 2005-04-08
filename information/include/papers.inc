@@ -22,6 +22,35 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#dd3">
+Divide-and-query and subterm dependency tracking in the Mercury declarative
+debugger
+</a>
+</strong>
+<br>
+Ian MacLarty, Zoltan Somogyi and Mark Brown
+<em>
+Submission to AADEBUG'05,
+</em>
+Melbourne, March 2005.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#decl_debug">
+Annotated event traces for declarative debugging
+</a>
+</strong>
+<br>
+Mark Brown and Zoltan Somogyi
+<em>
+Unpublished,
+</em>
+Melbourne, 2005.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#mazur-thesis">
 Compile-time garbage collection for the declarative language Mercury
 </a>
@@ -645,12 +674,122 @@ Tyson Dowd, 1998.
 
 </ul>
 
-
 <hr>
 
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="dd3">
+Divide-and-query and subterm dependency tracking in the Mercury declarative
+debugger
+</a>
+</strong>
+<br>
+Ian MacLarty, Zoltan Somogyi and Mark Brown
+<br>
+<em>
+Submission to AADEBUG'05,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+March 2005.
+Available in
+<a href = "papers/dd3.pdf">
+pdf (206k)
+</a>
+or
+<a href = "papers/dd3.ps.gz">
+ps.gz (90k)
+</a>
+formats.
+<p>
+We have implemented a declarative debugger for Mercury
+that is capable of finding bugs in large, long-running programs.
+This debugger implements several search strategies.
+We discuss the implementation of two of these strategies
+and the conditions under which each strategy is useful.
+</p>
+<p>
+The divide and query strategy
+tries to minimize the number of questions asked of the user.
+While divide and query can reduce the number of questions
+to roughly logarithmic in the size of the computation,
+implementing it presents practical difficulties
+for computations whose representations do not fit into memory.
+We discuss how we get around this problem,
+making divide and query practical.
+</p>
+<p>
+Our declarative debugger allows users to specify
+exactly which part of an atom is wrong.
+The subterm dependency tracking strategy
+exploits this extra information to jump directly
+to the part of the program that computed the wrong subterm.
+In many cases, only a few such jumps are required to arrive at the bug.
+Subterm dependency tracking can converge on the bug
+even more quickly than divide and query,
+and it tends to yield question sequences that are easier for users to answer.
+</p>
+
+<li>
+<strong>
+<a name="decl_debug">
+Annotated event traces for declarative debugging
+</a>
+</strong>
+<br>
+Mark Brown and Zoltan Somogyi
+<br>
+<em>
+Unpublished,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+2005.
+Available in
+<a href = "papers/decl_debug.pdf">
+pdf (261k)
+</a>
+or
+<a href = "papers/decl_debug.ps.gz">
+ps.gz (94k)
+</a>
+formats.
+<p>
+Many programmers find debugging a frustrating and unproductive activity.
+Declarative debugging 
+promises to alleviate this problem by automating
+some of the reasoning used in the debugging process.
+We have implemented a declarative debugger for Mercury.
+In the process, we found a problem not addressed
+in the existing literature on declarative debuggers,
+which considers programs to consist of clauses
+(conjunctions of literals):
+how to handle if-then-elses.
+The problem is that the condition of an if-then-else
+should be treated as a negated goal if and only if the condition fails.
+Negated contexts may cause a declarative debugger
+to switch from wrong answer analysis to missing answer analysis and vice versa.
+Since missing answer analysis explores a search space
+that is subtly different from the space explored for wrong answer analysis,
+the two kinds of analysis need different kinds of trees
+to represent the program execution.
+For the conditions of if-then-elses,
+the debugger does not know which kind of tree to build
+until the condition has either succeeded or failed,
+by which time it is too late.
+To solve this problem,
+we have designed a novel data structure, the annotated event trace,
+which is flexible enough to support both wrong and missing answer analysis.
+The advantages of this data structure are that it is quite compact,
+requiring little more space than an ordinary stored event trace,
+and that the algorithms to build this data structure
+and to derive from it the information required for two kinds of diagnosis
+are all simple as well as efficient.
+</p>
 
 <li>
 <strong>
