@@ -14,13 +14,15 @@ in a4 format.
 <ul>
 	<li> <a href="mailto:rafe@cs.mu.oz.au">Ralph Becket</a>'s
 	     <strong>Mercury tutorial</strong><br>
-	A beginner's introduction to Mercury.
+	An introduction to Mercury.
 	This is still under development. 
-	Feedback would be appreciated.
+	Feedback would be greatly appreciated.
 	<p>
 
 	Available in
-	<a href="../tutorial/index.html">HTML</a> only.
+	<a href="../tutorial/book/book.ps">(ps)</a>,
+	<a href="../tutorial/book/book.ps.gz">(ps.gz)</a>, and
+	<a href="../tutorial/book/book.pdf">(pdf)</a>.
 	<p>
 
 	<li> <strong>Mercury Language Reference Manual</strong> <br>

@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"10 April 2005" => array("Updated and expanded tutorial available",
+
+"A much improved tutorial is now available from the 
+<A HREF=\"$root/information/documentation.html\">documentation</A>
+section."
+),
+
 "4 April 2005" => array("Mercury 0.12.0-beta available",
 
 "A beta version of the upcoming 0.12.0 release in now available from the
