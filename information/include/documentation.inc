@@ -20,9 +20,9 @@ in a4 format.
 	<p>
 
 	Available in
-	<a href="../tutorial/book/book.ps">(ps)</a>,
-	<a href="../tutorial/book/book.ps.gz">(ps.gz)</a>, and
-	<a href="../tutorial/book/book.pdf">(pdf)</a>.
+	<a href="../tutorial/book/book.ps">Postscript</a>,
+	<a href="../tutorial/book/book.ps.gz">gzipped Postscript</a>, and
+	<a href="../tutorial/book/book.pdf">PDF</a>.
 	<p>
 
 	<li> <strong>Mercury Language Reference Manual</strong> <br>
