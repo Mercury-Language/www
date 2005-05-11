@@ -22,6 +22,16 @@
 
 $newsdb = array(
 
+"11 May 2005" => array("Functional dependencies",
+
+"We've added support for functional dependencies to the typeclass system.
+See the \"Type classes\" chapter of the
+<A HREF=\"$ref_man_latest\">Mercury Language Reference Manual</A>
+for details.
+The latest <A HREF=\"download/rotd.html\">release of the day</A>
+includes support for this language feature."
+),
+
 "10 April 2005" => array("Updated and expanded tutorial available",
 
 "A much improved tutorial is now available from the 
