@@ -253,7 +253,7 @@ installed all the binary distributions.)
 <? links_to_file("beta-releases/0.11.0/mercury-0.11.0.i686-pc-cygwin.tar.gz", "no"); ?> <br>
 	To install, open a Cygwin bash shell, and type in the commands
 	"tar zxf mercury-0.11.0.i686-pc-cygwin.tar.gz",
-	"cd mercury-0.11.0-i686-pc-cygwin",
+	"cd mercury-0.11.0.i686-pc-cygwin",
 	"CC=gcc sh configure",
 	and then "make install.<br>
 	<strong> You need to invoke configure with "CC=gcc sh configure".</strong>
