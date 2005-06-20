@@ -54,6 +54,7 @@ the following features:
 		<li> polymorphic recursion
 		</ul>
 	<li> type classes
+	<li> functional dependencies
 	<li> type inference
 	<li> a similar set of basic types
 </ul>
@@ -115,8 +116,7 @@ They differ in the following ways:
 	  type classes, Mercury's doesn't (mainly for historical reasons).
 
 	<li> Mercury allows multi-parameter type classes
-	  (however, we don't support functional dependencies,
-	  and there are some restrictions on the forms of
+	  (however, there are some restrictions on the forms of
 	  instance declarations, so this may not be quite as
 	  useful as it might first appear).
 
