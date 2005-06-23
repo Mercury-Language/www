@@ -187,12 +187,38 @@ bootchecks in different grades.  If you specified the `--commit' option,
 and the tests pass, it then goes ahead and commits the patch.
 
 <p>
+
+<h2>Debugging the declarative debugger</h2>
+
+The browser directory contains the source code for the declarative debugger
+as well as the features of the procedural debugger implemented in Mercury.
+<p>
+By default this directory is compiled with no tracing enabled, even
+when a .debug or .decldebug grade is specified.  This allows the declarative
+debugger to take advantage of optimisations such as tail recursion and reduces
+the size of the installed libraries.
+<p>
+In order to debug the code in the browser directory add the following line
+to your Mmake.browser.params file in the browser directory:
+<pre>
+EXTRA_MCFLAGS=--no-force-disable-tracing
+</pre>
+<p>
+The `dd_dd' command can then be used from mdb to start the declarative debugger
+with interactive debugging turned on.
+<p>
+Since tracing turns off the tail recursion optimisation, you may also need
+to increase the size of the stack by setting the --detstack-size runtime
+option:
+<pre>
+export MERCURY_OPTIONS="--detstack-size 8128"
+</pre>
 <hr>
 <p>
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../../contact.html" >contact</a> page.<br>
 
-Last update was $Date: 2002-11-04 13:12:30 $ by $Author: stayl $@cs.mu.oz.au
+Last update was $Date: 2005-06-23 09:20:42 $ by $Author: maclarty $@cs.mu.oz.au
 </body>
 </html>
 
