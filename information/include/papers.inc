@@ -28,11 +28,12 @@ debugger
 </a>
 </strong>
 <br>
-Ian MacLarty, Zoltan Somogyi and Mark Brown
+Ian MacLarty, Zoltan Somogyi and Mark Brown.
 <em>
-Submission to AADEBUG'05,
+Sixth International Symposium on
+Automated and Analysis-driven Debugging,
 </em>
-Melbourne, March 2005.
+Monterey, California, September 2005.
 <p>
 
 <li>
@@ -691,20 +692,19 @@ debugger
 Ian MacLarty, Zoltan Somogyi and Mark Brown
 <br>
 <em>
-Submission to AADEBUG'05,
+Sixth International Symposium on
+Automated and Analysis-driven Debugging.
 </em>
-Department of Computer Science and Software Engineering,
-The University of Melbourne,
-March 2005.
+Monterey, California, September 2005.
 Available in
 <a href = "papers/dd3.pdf">
-pdf (206k)
+pdf (204k)
 </a>
 or
 <a href = "papers/dd3.ps.gz">
-ps.gz (90k)
+ps.gz (161k)
 </a>
-formats.
+formats.  
 <p>
 We have implemented a declarative debugger for Mercury
 that is capable of finding bugs in large, long-running programs.
@@ -733,7 +733,13 @@ Subterm dependency tracking can converge on the bug
 even more quickly than divide and query,
 and it tends to yield question sequences that are easier for users to answer.
 </p>
-
+<p>
+&copy; ACM, (2005). This is the author's version of the work. It is
+posted here by permission of ACM for your personal use. Not for
+redistribution. The definitive version was published in  
+Proceedings of the Sixth International Symposium on
+Automated and Analysis-driven Debugging.
+</p>
 <li>
 <strong>
 <a name="decl_debug">
@@ -971,7 +977,7 @@ official compiler release.
 
 <li>
 <strong>
-<a name = "papers.html#aadebug03-paper">
+<a name = "aadebug03-paper">
 Idempotent I/O for safe time travel
 </a>
 </strong>
