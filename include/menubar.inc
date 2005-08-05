@@ -24,10 +24,6 @@ if($menu == "Information") {
     <BR>
   &nbsp;&nbsp<a href="<?echo $root?>/information/developer.html">Developers</a>
     <BR>
-  &nbsp;&nbsp<a href="<?echo $root?>/information/events.html">Events</a>
-    <BR>
-  &nbsp;&nbsp<a href="<?echo $root?>/information/reports.html">Reports</a>
-    <BR>
 </SMALL>
 <?
 }
