@@ -22,6 +22,17 @@
 
 $newsdb = array(
 
+"8 August 2005" => array("Two new papers",
+
+"Two new papers titled
+\"Divide-and-query and subterm dependency tracking in the Mercury declarative
+debugger\"
+and
+\"The implementation of minimal model tabling in Mercury (extended abstract)\"
+are now available from our
+<A HREF=\"information/papers.html\">papers page</A>."
+)
+
 "11 May 2005" => array("Functional dependencies",
 
 "We've added support for functional dependencies to the typeclass system.

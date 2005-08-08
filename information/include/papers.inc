@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#ciclops05">
+The implementation of minimal model tabling in Mercury (extended abstract)
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Konstantinos Sagonas,
+<em>
+Colloquium on Implementation of Constraint and Logic Programming Systems,
+</em>
+Barcelona, Spain, October 2005.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#dd3">
 Divide-and-query and subterm dependency tracking in the Mercury declarative
 debugger
@@ -680,6 +694,52 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="ciclops05">
+The implementation of minimal model tabling in Mercury (extended abstract)
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Konstantinos Sagonas,
+<em>
+Colloquium on Implementation of Constraint and Logic Programming Systems,
+</em>
+Barcelona, Spain, October 2005.
+Available in
+<a href = "papers/ciclops05.pdf">
+pdf (312k)
+</a>
+or
+<a href = "papers/ciclops05.ps.gz">
+ps.gz (90k)
+</a>
+formats.  
+<p>
+For any LP system, tabling can be quite handy in a variety of tasks,
+especially if it is efficiently implemented
+and fully integrated in the language.
+Implementing tabling in Mercury
+poses special challenges for several reasons.
+First, Mercury is both semantically and culturally quite different from Prolog.
+While decreeing that tabled predicates must not include cuts
+is acceptable in a Prolog system,
+it is not acceptable in Mercury,
+since if-then-elses and existential quantification
+have sound semantics for stratified programs
+and are used very frequently
+both by programmers and by the compiler.
+The Mercury implementation thus has no option
+but to handle interactions of tabling
+with Mercury's language features safely.
+Second, the Mercury implementation is vastly different from the WAM,
+and many of the differences
+(e.g. the absence of a trail)
+have significant impact on the implementation of tabling.
+In this paper, we describe how we adapted the copying approach to tabling
+to implement minimal model tabling in Mercury.
+</p>
 
 <li>
 <strong>
