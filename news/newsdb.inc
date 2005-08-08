@@ -31,7 +31,7 @@ and
 \"The implementation of minimal model tabling in Mercury (extended abstract)\"
 are now available from our
 <A HREF=\"information/papers.html\">papers page</A>."
-)
+),
 
 "11 May 2005" => array("Functional dependencies",
 
