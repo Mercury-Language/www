@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#maclarty-masters">
+Practical Declarative Debugging of Mercury Programs 
+</a>
+</strong>
+<br>
+Ian MacLarty.
+<em>
+Masters thesis,
+</em>
+University of Melbourne, July 2005.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#ciclops05">
 The implementation of minimal model tabling in Mercury (extended abstract)
 </a>
@@ -693,7 +707,110 @@ Tyson Dowd, 1998.
 
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
-<ul>
+<ul> 
+
+<li>
+<strong>
+<a name="maclarty-masters">
+Practical Declarative Debugging of Mercury Programs
+</a>
+</strong>
+<br>
+Ian MacLarty
+<br>
+<em>
+Masters thesis,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+July 2005.
+Available in <a href="papers/maclarty-masters.pdf">pdf</a> (1.9M)
+or <a href="papers/maclarty-masters.ps.gz">ps.gz</a> (1.2M) formats.
+<p>
+Debugging is the most unpredictable and potentially expensive phase of the
+software development life-cycle. Declarative debuggers ask the user questions
+about the correctness of subcomputations in their program. Based on the
+user's answers, subcomputations that cannot be the cause of the buggy
+behaviour are eliminated. Eventually one subcomputation is left which must be
+the cause of the buggy behaviour. Declarative debuggers thus keep track of
+which parts of the computation are still suspect, relieving the user of the
+burden of having to do so. They also direct the bug search, something that many
+users (especially novices) would find difficult to do manually. Even expert
+users often find it hard to explore large search spaces systematically, a
+limitation that does not apply to software systems. Declarative debuggers thus
+have the potential to make the debugging process easier and much more
+predictable. 
+</p>
+<p>
+Despite these expected benefits, declarative debugging is not yet
+widely used in practice to find real bugs. There are three main reasons for
+this: 
+<ol>
+<li>Most previous declarative debuggers only support a subset of the
+features of their target language that is not sufficient to express real
+programs.</li> 
+<li>Previous declarative debuggers do not scale well when applied to
+problems with large search spaces. </li>
+<li>Previous declarative debuggers do not do
+enough to make the questions easier for the user to answer.</li>
+</ol>
+</p>
+<p>
+The declarative
+nature of Mercury makes it relatively easy to implement a declarative debugger
+that can handle the full language. The version of the Mercury declarative
+debugger that was the starting point for this thesis already handled almost all
+of Mercury. By extending it to handle exceptions we made it handle the full
+language. 
+</p>
+<p>
+One problem posed by large search spaces is that they cannot be stored
+in memory all at once. This requires only portions of the search space to be
+stored in memory at any one time, materializing missing pieces when they are
+needed by reexecuting the program. We present the first algorithm for
+controlling this rematerialization process that is practical in the presence of
+multiple search strategies, minimising reexecutions while keeping memory
+consumption within acceptable limits. 
+</p>
+<p>
+Another problem with large search spaces
+is that previous search strategies either asked far too many questions,
+demanded too much in the way of CPU and/or memory resources 
+or were too inflexible to coexist with other search strategies. For example,
+the divide-and-query search strategy is query-optimal in the worst case, however
+previous implementations of it often required more memory than is typically
+available. We have implemented heuristics which enable divide-and-query to be
+used on partially materialized search spaces, making it practical. 
+</p>
+<p>
+We also
+address the third problem, namely the problem of reducing the complexity of the
+debugger's queries. The new declarative debugger allows users to specify
+exactly which part of an atom is wrong. The subterm dependency tracking
+strategy exploits this extra information to jump directly to the part of the
+program that computed the wrong subterm. In many cases, only a few such jumps
+are required to arrive at the bug. Subterm dependency tracking can converge on
+the bug even more quickly than divide-and-query, and it tends to yield
+questions and question sequences that are easier for users to answer. 
+</p>
+<p>
+We also
+support a variety of other methods of making questions easier to answer. By
+trusting some predicates the user can automate answers to all questions about
+those predicates (implementing this capability, especially in the presence of
+higher order code, is trickier than it seems). We also support a novel
+technique that allows custom visualisations of terms to be easily created. If a
+call fails a precondition then neither `yes' or `no' is an
+appropriate answer to a question from the debugger about the validity of an
+answer computed for that call. Our debugger therefore allows users to answer
+`inadmissible' to such questions. If all else fails, users can also
+skip hard questions. 
+</p>
+<p>
+We give evidence that the new declarative debugger can be
+used on complex, real world programs by presenting several case studies of real
+bugs found in real programs with the aid of the debugger.
+</p>
 
 <li>
 <strong>
