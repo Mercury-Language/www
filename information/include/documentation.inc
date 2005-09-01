@@ -33,11 +33,12 @@ in a4 format.
 
 	<dl compact>
 	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $ref_man_release ?>">HTML</a> or
+	<a href="<? echo $ref_man_release ?>">HTML</a>,
+	<a href="doc-release/reference_manual.pdf">PDF</a> or
 	<a href="doc-release/reference_manual.ps.gz">Postscript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $ref_man_latest ?>">HTML</a>,
-	<a href="doc-release/reference_manual.pdf">PDF</a> or
+	<a href="doc-latest/reference_manual.pdf">PDF</a> or
 	<a href="doc-latest/reference_manual.ps.gz">Postscript</a>.
 	</dl>
 	<p>
@@ -49,7 +50,8 @@ in a4 format.
 
 	<dl compact>
 	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $user_guide_release ?>">HTML</a> or
+	<a href="<? echo $user_guide_release ?>">HTML</a>,
+	<a href="doc-release/user_guide.pdf">PDF</a> or
 	<a href="doc-release/user_guide.ps.gz">Postscript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $user_guide_latest ?>">HTML</a>,
@@ -64,7 +66,8 @@ in a4 format.
 
 	<dl compact>
 	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $library_man_release ?>">HTML</a> or
+	<a href="<? echo $library_man_release ?>">HTML</a>,
+	<a href="doc-release/library.pdf">PDF</a> or
 	<a href="doc-release/library.ps.gz">Postscript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $library_man_latest ?>">HTML</a>,
@@ -80,7 +83,8 @@ in a4 format.
 
 	<dl compact>
 	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $trans_guide_release ?>">HTML</a> or
+	<a href="<? echo $trans_guide_release ?>">HTML</a>,
+	<a href="doc-release/transition_guide.pdf">PDF</a> or
 	<a href="doc-release/transition_guide.ps.gz">Postscript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $trans_guide_latest ?>">HTML</a>,
@@ -103,7 +107,8 @@ in a4 format.
 	
 	<dl compact>
 	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $faq_release ?>">HTML</a> or
+	<a href="<? echo $faq_release ?>">HTML</a>,
+	<a href="doc-release/faq.pdf">PDF</a> or
 	<a href="doc-release/faq.ps.gz">Postscript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $faq_latest ?>">HTML</a>,
