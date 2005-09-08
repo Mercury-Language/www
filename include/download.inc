@@ -21,8 +21,3 @@ documentation, and programming environment support tools.
         Old releases of the Mercury system</a>
 </ul>
 
-Mercury 0.7.3 shipped with Debian GNU/Linux 2.0 for the x86
-architecture.  You can download it from any of the Debian mirrors -
-see the <a href="http://www.debian.org">Debian Web Site</a> for more
-information on Debian.
-

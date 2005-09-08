@@ -1,6 +1,11 @@
 <H2>Release of the Day</H2>
 
 Mercury can have up to four different releases at any given point.
+<p>
+Please note that all the currently available versions of Mercury will not work
+with GCC 4.0 because of a 
+<a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=22362">bug</a> in that 
+version of GCC.
 
 <H3> Current release </H3>
 
@@ -32,8 +37,7 @@ To cater for those who need access to the latest cutting edge features
 of Mercury, but would still like some stability, we release a daily
 snapshot of the development system.  This is called a "release of the
 day (ROTD)" and is given a version number "rotd-YYYY-MM-DD" according to
-the date it was built.  When the compiler passes all its tests, a ROTD
-is put into the beta-releases directory.
+the date it was built.
 <p>
 <B>Download releases of the day:</b>
 <ul>
@@ -43,7 +47,7 @@ Mercury web site</A><br>
 Mercury ftp site</A>
 </ul>
 
-<H3> Unstable ROTDS </H3>
+<H3> Unstable ROTD </H3>
 
 For some people, the cutting edge is not enough, and they want the
 bleeding edge.  To help these developers, we have an <em>unstable</em>
@@ -59,7 +63,7 @@ Mercury web site</A><br>
 Mercury ftp site</A>
 </ul>
 
-<H3> Contents of the ROTDS </H3>
+<H3> Contents of the ROTD </H3>
 
 The Mercury compiler is written in Mercury, and compiles Mercury into C
 code.  These releases contain the Mercury code and the generated C code
