@@ -19,6 +19,13 @@ $sweden_ftp = "ftp://ftp.csd.uu.se/pub/Mercury/";
 $Uppsala = "no";
 $Stonybrook = "no";
 
+#
+# XXX These sites should be enabled once the release has been uploaded to
+# them
+#
+$Sunsite = "no";
+$Sourceforge = "no";
+
 function link_to ($directory, $filename, $description)
 {
 	echo "<a href = \"" . $directory . $filename .
@@ -26,18 +33,22 @@ function link_to ($directory, $filename, $description)
 	echo "&nbsp;&nbsp;&nbsp;\n";
 }
 
-function links_to_file ($filename, $Sunsite)
+function links_to_file ($filename, $onSunsite)
 {
 	global $aus_ftp, $aus_http, $usa_sourceforge_http, $usa_sunsite_ftp,
 		$usa_sunysb_ftp, $sweden_ftp;
 	global $Uppsala, $Stonybrook;
+	global $Sunsite, $SourceForge;
 
 	link_to ($aus_ftp, $filename, "Australia (FTP)");
 	link_to ($aus_http, $filename, "Australia (HTTP)");
-	if ($Sunsite == "yes") {
+	if ($onSunsite == "yes" && $Sunsite == "yes") {
 		link_to ($usa_sunsite_ftp, $filename, "USA (Sunsite FTP)");
 	}
-	link_to ($usa_sourceforge_http, $filename, "USA (SourceForge HTTP)");
+	if ($Sourceforge == "yes") {
+		link_to ($usa_sourceforge_http, $filename, 
+			"USA (SourceForge HTTP)");
+	}
 	if ($Uppsala == "yes") {
 		link_to ($usa_sunysb_ftp, $filename, "USA (Stonybrook FTP)");
 	}
@@ -49,23 +60,19 @@ function links_to_file ($filename, $Sunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
-Mercury 0.11.0 was released on Dec 24, 2002.
-<p>
-The NEWS file, detailing differences since the release of 0.10.1,
-is available <a href="release-0.11.html">here</a>.
-<p>
+Mercury 0.12.0 was released on September 9, 2005.
 
 <h3>Information</h3>
 
 <ul>
-<li> <a href = "release-0.11.html">
-     Release notes for 0.11.0
+<li> <a href = "release-0.12.html">
+     Release notes for 0.12.0
      </a>
-<li> <a href = "release-0.11-contents.html">
-     Contents of release 0.11.0 distribution
+<li> <a href = "release-0.12-contents.html">
+     Contents of release 0.12.0 distribution
      </a>
-<li> <a href = "release-0.11-bugs.html">
-     Known problems with release 0.11.0
+<li> <a href = "release-0.12-bugs.html">
+     Known problems with release 0.12.0
      </a>
 <li> <a href = "limitations.html">
      Limitations of the current release.
@@ -81,13 +88,9 @@ The latest release is known to work on the following platforms:
 <ul>
     <li> x86 machines running Debian Linux 
     <li> x86 machines running SuSE Linux 
-    <li> x86 machines running Microsoft Windows 2000
-         (this release also includes
-	 <a href="<?echo $root?>/dotnet.html">preliminary support for .NET</a>)
+    <li> x86 machines running Microsoft Windows XP
     <li> Sun SPARC machines running Solaris 2.x and SunOS 5.x
-    <li> DEC Alpha machines running OSF/1 (Digital Unix)
-    <li> DEC Alpha machines running Linux
-    <li> Apple PowerMac machines running Mac OS 10
+    <li> Apple PowerPC machines running Mac OS 10.3 and above
 </ul>
 
 <p>
@@ -99,7 +102,7 @@ not tested the latest release on these:
 
 <ul>
     <li> x86 machines running other versions of Microsoft Windows
-         (95, 98, 98SE, ME, NT, XP)
+         (95, 98, 98SE, ME, NT, 2000)
     <li> x86 machines running other versions of Linux
          (however, there are some known problems with the version of GNU C
 	 that shipped with Red Hat Linux 7.0)
@@ -110,6 +113,8 @@ not tested the latest release on these:
     <li> HP PA machines running HPUX
     <li> IBM RS/6000 machines running AIX
     <li> DEC Mips machines running ULTRIX
+    <li> DEC Alpha machines running OSF/1 (Digital Unix)
+    <li> DEC Alpha machines running Linux
     <li> SGI Mips machines running IRIX 5.x
 </ul>
 
@@ -124,7 +129,7 @@ It should be pretty easy to port to any sufficiently Unix-like system.
     <ol>
     <li> <a href="http://gcc.gnu.org">GNU C (gcc)</a>
          <p>
-         We recommend GCC 2.95.*, 3.1.*, or 3.2.
+         We recommend GCC 3.4.x.
          <p>
          GCC 3.0, 3.3.1 and 4.0 will NOT work. 
 	 They have bugs which cause 
@@ -146,9 +151,9 @@ It should be pretty easy to port to any sufficiently Unix-like system.
 
 <li> For Windows,<p>
      <ol>
-     <li> You will need <a href=http://sources.redhat.com/cygwin/>Cygwin</a>,
+     <li> You will need <a href=http://www.cygwin.com/>Cygwin</a>,
           which you can download
-          <a href=http://sources.redhat.com/cygwin/setup.exe>here</a>.
+          <a href=http://www.cygwin.com/setup.exe>here</a>.
           Cygwin includes GNU C and GNU Make.<p>
      <li> You can optionally use
           <a href="http://msdn.microsoft.com/visualc/default.asp">
@@ -157,30 +162,25 @@ It should be pretty easy to port to any sufficiently Unix-like system.
           you also need 
 	  <ol>
 	      <li> the Microsoft .NET SDK version 1, available from
-                   <a href="http://msdn.microsoft.com/net/">MSDN</a>.
+                   <a href="http://msdn.microsoft.com/netframework/">
+		   MSDN</a>.
 	           If you are an MSDN Universal subscriber you can
 		   also order CDs as part of your subscription.
-	      <li> A windows system suitable for development with
-	           Microsoft .NET, such as Windows 2000.
+	      <li> A Windows system suitable for development with
+	           Microsoft .NET, such as Windows XP.
 	  </ol>
      </ol>
 </ul>
 
 <h3>How to get the distribution</h3>
 
-You can go to our FTP sites or mirrors, or directly
-download the source or binary distributions.
+You can download the latest release directly from this web page, see below.
 
 <p>
 
-Note that although the source distribution is much smaller than
-the binary distribution, the compilation process will
-almost always take more time than is saved by the smaller
-download.
-
 <h3><a name="source">Source Distribution</a></h3>
 
-The main "mercury-compiler" source distribution is about 10 Mb.
+The main "mercury-compiler" source distribution is about 15 Mb.
 This includes the compiler, standard library,
 debugger, profilers, and other tools.
 (Note that this does <em>not</em> include all the sources needed to build
@@ -192,7 +192,7 @@ for details.)
 
 <p>
 
-There is also a small "mercury-extras" distribution which contains a number
+There is also a "mercury-extras" distribution which contains a number
 of useful additional libraries.  This is distributed separately,
 mainly for copyright reasons (some of the additional libraries do
 not meet the Debian Free Software Guidelines).
@@ -206,149 +206,22 @@ test suite.  This may be useful if you are modifying the compiler,
 or porting it to a new system.
 
 <dl>
-<dt> Compiler (10 Mb)
+<dt> Compiler (15 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.11.0.tar.gz", "yes") ?>
-<p>
-Sunsite also has many 
-<a href="http://sunsite.unc.edu/pub/Linux/MIRRORS.html">mirrors</a>.<br>
-The Mercury compiler source distribution is available in the
-/pub/Linux/devel/lang/mercury directory on Sunsite,
-or its equivalent place on the mirrors.
+<? links_to_file("mercury-compiler-0.12.0.tar.gz", "yes") ?>
 <p>
 
-<dt> Extras (580 kb)
+<dt> Extras (22 Mb)
 <dd>
-<? links_to_file("mercury-extras-0.11.0.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-0.12.0.tar.gz", "no") ?>
 <p>
 
-<dt> Tests (381 kb)
+<dt> Tests (914 kb)
 <dd>
-<? links_to_file("mercury-tests-0.11.0.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-0.12.0.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distribution</a></h3>
 
-Binary distributions of Mercury 0.11.0:
-<br>
-(Note that some of these URLs will be dangling links until we have
-installed all the binary distributions.)
-<p>
-
-<dl>
-    <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, XP, or 2000.
-	<dd> 
-	<em> <strong>WARNING:</strong> 
-	These binary distributions for Windows are still BETA releases.
-	They have not been tested and may not work.
-	Please <a href="mailto:mercury@cs.mu.oz.au">let us know</a>
-	whether they work for you.
-	</em>
-	<p>
-	Cygwin version: compiler + Extras + Tests (about 29 Mb): <br>
-<? links_to_file("beta-releases/0.11.0/mercury-0.11.0.i686-pc-cygwin.tar.gz", "no"); ?> <br>
-	To install, open a Cygwin bash shell, and type in the commands
-	"tar zxf mercury-0.11.0.i686-pc-cygwin.tar.gz",
-	"cd mercury-0.11.0.i686-pc-cygwin",
-	"CC=gcc sh configure",
-	and then "make install.<br>
-	<strong> You need to invoke configure with "CC=gcc sh configure".</strong>
-	<p>
-	Mingw version: compiler only (about 25 Mb): <br>
-<? links_to_file("beta-releases/0.11.0/mercury-compiler-0.11.0.i686-pc-mingw.zip", "no"); ?> <br>
-	The Mingw version still requires Cygwin,
-	but the executables that it generates do not require Cygwin. 
-	(That is, it's a cross-compiler from Cygwin to native Windows.)
-	To install, open a Cygwin bash shell, and do
-	<pre>unzip -d / mercury-compiler-0.11.0.i686-pc-mingw.zip</pre>
-	Note that you <strong>must</strong> use the Cygwin unzip program,
-	not WinZip.  "WinZip" doesn't handle Cygwin's symbolic links properly.
-	<p>
-
-    <dt>x86 machines running Linux (ELF executable format, libc 6.2)
-	<dd> Note that these binary distributions work ONLY with libc 6.2.x.
-	     Unfortunately they do NOT work with libc 6.1. This is due
-	     to incompatibilities between libc versions 6.1 and 6.2
-	     (i.e. glibc 2.1 and 2.2).
-	     <p>
-
-	     Debian Package (*.deb) <br>
-	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury_0.11.0-1_i386.deb", "no"); ?>
-	     <br>
-	     If you get this package, we suggest that you also download
-	     the "extras" source distribution.
-	     <p>
-
-	     RedHat Package (*.rpm) <br>
-	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury-compiler-0.11.0-1.i386.rpm", "no"); ?>
-	     <br>
-	     If you get this package, we suggest that you also download
-	     the "extras" source distribution. 
-             <p>
-
-	     Ordinary package (*.tar.gz) <br>
-	     Compiler + Extras + Tests (about 30 Mb): <br>
-<? links_to_file("mercury-0.11.0.i686-pc-linux-libc2.2-gnu-O5.tar.gz", "no"); ?>
-	<p>
-
-    <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
-	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
-	(For this platform, we're shipping 0.11.1-beta-2003-01-25
-	in place of 0.11.0.) <br>
-<? links_to_file("mercury-0.11.1-beta-2003-01-25.sparc-sun-solaris2.7.tar.gz", "no"); ?>
-	<br>
-	<em> <strong>WARNING:</strong> 
-We've had reports that some users have had trouble untarring some of
-the binary distributions for Solaris, with tar reporting
-"directory checksum error".  This appears to be due to a bug in
-Sun tar.  If you encounter this problem, then (1) let us know
-and (2) use GNU tar. </em>
-	<p>
-
-    <dt>Apple Mac Power/PC machines running MacOS X
-	<dd> Compiler only (about 35 Mb): <br>
-<? links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5.tar.gz", "no"); ?>
-	<br>
-	If you get this package, we suggest that you also download
-	the "extras" source distribution. 
-	<p>
-
-
-</dl>
-
-<h3>FTP Download Sites</h3>
-<dl>
-	<dt> Australia (primary site)
-	<dd>
-	<a href = "<?echo $aus_ftp?>">
-	<?echo $aus_ftp?></a>
-
-<? if ($Uppsala == "yes") { ?>
-	<dt> Sweden (automatically updated mirror)
-	<dd>
-	<a href = "<?echo $sweden_ftp?>">
-	<?echo $sweden_ftp?></a>
-<? } ?>
-
-<? if ($Stonybrook == "yes") { ?>
-	<dt> USA (Stonybrook; manually updated mirror)
-	<dd>
-	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
-	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
-<? } ?>
-
-</dl>
-
-<h3>HTTP Download Sites</h3>
-<dl>
-	<dt> Australia (primary site)
-	<dd>
-	<a href = "<?echo $aus_http?>">
-	<?echo $aus_http?></a>
-
-	<dt> USA (SourceForge)
-	<dd> <a href = "http://sourceforge.net/projects/mercury/">
-	http://sourceforge.net/projects/mercury/</a>
-</dl>
+Binary packages of the 0.12 release for Linux, Mac OS X (10.3 and 10.4) and 
+Windows will be available shortly from this page.
