@@ -89,7 +89,7 @@ The latest release is known to work on the following platforms:
     <li> x86 machines running Debian Linux 
     <li> x86 machines running SuSE Linux 
     <li> x86 machines running Microsoft Windows XP
-    <li> Sun SPARC machines running Solaris 2.x and SunOS 5.x
+    <li> x86 machines running SunOS 5.x
     <li> Apple PowerPC machines running Mac OS 10.3 and above
 </ul>
 
@@ -109,7 +109,7 @@ not tested the latest release on these:
     <li> x86 machines running FreeBSD 3.0
     <li> x86 machines running other BSD Unix systems
     <li> PowerPC machines running Linux
-    <li> Sun SPARC machines running SunOS 4.x
+    <li> Sun SPARC machines running SunOS 4.x and 5.x
     <li> HP PA machines running HPUX
     <li> IBM RS/6000 machines running AIX
     <li> DEC Mips machines running ULTRIX
