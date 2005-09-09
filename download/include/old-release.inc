@@ -261,7 +261,7 @@ installed all the binary distributions.)
 	<p>
 	Cygwin version: compiler + Extras + Tests (about 29 Mb): <br>
 <? 
-links_to_file("beta-releases/0.11.0/mercury-0.11.0.i686-pc-cygwin.tar.gz", 
+links_to_file("mercury-0.11.0.i686-pc-cygwin.tar.gz", 
 	"0.11", "no"); 
 ?> 
 <br>
@@ -274,7 +274,7 @@ links_to_file("beta-releases/0.11.0/mercury-0.11.0.i686-pc-cygwin.tar.gz",
 	<p>
 	Mingw version: compiler only (about 25 Mb): <br>
 <? 
-links_to_file("beta-releases/0.11.0/mercury-compiler-0.11.0.i686-pc-mingw.zip",
+links_to_file("mercury-compiler-0.11.0.i686-pc-mingw.zip",
 	"0.11", "no"); 
 ?> 
 <br>
@@ -293,24 +293,6 @@ links_to_file("beta-releases/0.11.0/mercury-compiler-0.11.0.i686-pc-mingw.zip",
 	     to incompatibilities between libc versions 6.1 and 6.2
 	     (i.e. glibc 2.1 and 2.2).
 	     <p>
-
-	     Debian Package (*.deb) <br>
-	     Compiler only (about 28 Mb): <br>
-<? links_to_file("mercury_0.11.0-1_i386.deb", "0.11", "no"); ?>
-	     <br>
-	     If you get this package, we suggest that you also download
-	     the "extras" source distribution.
-	     <p>
-
-	     RedHat Package (*.rpm) <br>
-	     Compiler only (about 28 Mb): <br>
-<? 
-links_to_file("mercury-compiler-0.11.0-1.i386.rpm", "0.11", "no"); 
-?>
-	     <br>
-	     If you get this package, we suggest that you also download
-	     the "extras" source distribution. 
-             <p>
 
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 30 Mb): <br>
