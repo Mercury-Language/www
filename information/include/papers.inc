@@ -576,6 +576,20 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
+<a href = "papers.html#aadebug05-talk">
+Divide-and-query and subterm dependency tracking the Mercury declarative
+debugger.
+</a>
+</strong>
+<br>
+Ian MacLarty, Zoltan Somogyi and Mark Brown.
+Talk presented at the Sixth International 
+Symposium on Automated and Analysis Driven Debugging,
+Monterey, USA, September 2005.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#aadebug03-talk">
 Idempotent I/O for safe time travel
 </a>
@@ -585,6 +599,32 @@ Zoltan Somogyi.
 Invited talk presented at
 the Fifth International Workshop on Automated Debugging,
 Ghent, Belgium, September 2003.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#ppdp02mode-talk">
+Constraint-based mode analysis of Mercury
+</a>
+</strong>
+<br>
+David Overton, Zoltan Somogyi and Peter J. Stuckey.
+Talk presented at Fourth International Conference
+on Principles and Practice of Declarative Programming.
+Pittsburgh, Pennsylvania, October 2002.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#ppdp02stack-talk">
+Using the heap to eliminate stack accesses
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Peter J. Stuckey.
+Talk presented at Fourth International Conference
+on Principles and Practice of Declarative Programming.
+Pittsburgh, Pennsylvania, October 2002.
 <p>
 
 <li>
@@ -2411,7 +2451,26 @@ available here (560K).
 
 <li>
 <strong>
-<a name = "papers.html#aadebug03-talk">
+<a name = "aadebug05-talk">
+Divide-and-query and subterm dependency tracking the Mercury declarative
+debugger.
+</a>
+</strong>
+<br>
+Ian MacLarty, Zoltan Somogyi and Mark Brown.
+<em>
+Talk presented at the Sixth International 
+Symposium on Automated and Analysis Driven Debugging,
+</em>
+Monterey, USA, September 2005.
+<a href = "papers/aadebug05_talk.pdf">
+Available here (95K).
+</a>
+<p>
+
+<li>
+<strong>
+<a name = "aadebug03-talk">
 Idempotent I/O for safe time travel
 </a>
 </strong>
@@ -2429,7 +2488,7 @@ Available here (20K).
 
 <li>
 <strong>
-<a name = "papers.html#ppdp02mode-talk">
+<a name = "ppdp02mode-talk">
 Constraint-based mode analysis of Mercury
 </a>
 </strong>
@@ -2447,7 +2506,7 @@ Available here (117K).
 
 <li>
 <strong>
-<a name = "papers.html#ppdp02stack-talk">
+<a name = "ppdp02stack-talk">
 Using the heap to eliminate stack accesses
 </a>
 </strong>
