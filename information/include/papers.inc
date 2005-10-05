@@ -577,7 +577,7 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <li>
 <strong>
 <a href = "papers.html#aadebug05-talk">
-Divide-and-query and subterm dependency tracking the Mercury declarative
+Divide-and-query and subterm dependency tracking in the Mercury declarative
 debugger.
 </a>
 </strong>
@@ -2452,7 +2452,7 @@ available here (560K).
 <li>
 <strong>
 <a name = "aadebug05-talk">
-Divide-and-query and subterm dependency tracking the Mercury declarative
+Divide-and-query and subterm dependency tracking in the Mercury declarative
 debugger.
 </a>
 </strong>
