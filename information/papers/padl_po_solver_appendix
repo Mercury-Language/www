@@ -1,0 +1,108 @@
+:- module po_solver.
+
+:- interface.
+
+:- solver type po_vertex.
+:- pred init(po_vertex::no) is det.
+:- pred eq(po_vertex::oo, po_vertex::oo)     is semidet.
+:- pred (po_vertex::oo)  =< (po_vertex::oo)  is semidet.
+:- pred (po_vertex::oo)   < (po_vertex::oo)  is semidet.
+:- impure pred order(list(po_vertex)::oo, list(po_vertex)::no) is semidet.
+
+:- implementation.
+
+:- import_module counter, list, set.
+
+:- solver type po_vertex
+    where
+        representation    is vertex,
+        initialisation    is init,
+        equality          is eq,
+        constraint_store  is cstore
+                          initially cs(0, set.init).
+
+:- type cstore      --->  cs(int, set(constraint)).
+:- type constraint  --->  lt(vertex, vertex) ; le(vertex, vertex).
+:- type vertex      ==    int.
+:- type path_kind   --->  nonstrict ; strict.
+
+init(A) :-
+    promise_pure (
+        semipure  get_po_vertex_store(cs(Ctr, Constraints)),
+        impure    A = to_old_po_vertex(Ctr),
+        impure    set_po_vertex_store(cs(Ctr + 1, Constraints)),
+    ).
+
+eq(A, B) :-
+    A =< B, B =< A.
+
+A =< B :-
+    promise_pure (
+        impure    X = from_old_po_vertex(A),
+        impure    Y = from_old_po_vertex(B),
+        semipure  get_po_vertex_store(cs(Ctr, Constraints0)),
+
+        ( if    path(X, Y, Constraints0, _)
+          then  Constraints = Constraints0
+          else  not path(Y, X, Constraints0, strict),
+                Constraints = Constraints0 `insert` le(X, Y)
+        ),
+
+        impure    set_po_vertex_store(cs(Ctr, Constraints))
+    ).
+
+A < B :-
+    promise_pure (
+        impure    X = from_old_po_vertex(A),
+        impure    Y = from_old_po_vertex(B),
+        semipure  get_po_vertex_store(cs(Ctr, Constraints0)),
+
+        ( if    path(X, Y, Constraints0, strict)
+          then  Constraints = Constraints0
+          else  not path(Y, X, Constraints0, _),
+                Constraints = Constraints0 `delete` le(X, Y) `insert` lt(X, Y)
+        ),
+
+        impure   set_po_vertex_store(cs(Ctr, Constraints))
+    ).
+
+order([], []).
+order([A | As], Bs) :-
+    impure order(As, Bs0),
+    impure insert(A, Bs0, Bs).
+
+:- impure pred insert(po_vertex::oo, list(po_vertex)::oo, list(po_vertex)::no)
+    is det.
+
+insert(_Constraints, A, [], [A]).
+insert(Constraints, A, [B | Bs], [C | Cs]) :-
+    ( if    impure ask_lt(B, A)
+      then  C = B, impure insert(A, Bs, Cs)
+      else  C = A, Cs = [B | Bs]
+    ).
+
+:- impure pred ask_lt(po_vertex::oo, po_vertex::oo) is semidet.
+
+ask_lt(A, B) :-
+    impure X = from_old_po_vertex(A),
+    impure Y = from_old_po_vertex(B),
+    semipure get_po_vertex_store(cs(_Ctr, Constraints)),
+    path(A, B, Constraints, strict).
+
+:- pred  path(vertex::in, vertex::in, set(constraint)::in, 
+         path_kind::out) is semidet.
+
+path(X, Y, Constraints, PathKind) :-
+    path(X, Y, Constraints, [], PathKind).
+
+:- pred path(vertex::in, vertex::in, set(constraint)::in, list(vertex)::in,
+    path_kind::out) is semidet.
+
+path(X, X, _Constraints, _Path, nonstrict).
+path(X, Y,  Constraints,  Path, strict) :-
+    member(lt(X, Z), Constraints),
+    path(Z, Y, Constraints, [X | Path], _).
+path(X, Y,  Constraints,  Path, PathKind) :-
+    member(le(X, Z), Constraints),
+    not member(Z, Path),
+    path(Z, Y, Constraints, [X | Path], PathKind).
