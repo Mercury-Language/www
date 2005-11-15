@@ -1,87 +1,185 @@
-<H2>Release of the Day</H2>
+<?
 
-Mercury can have up to four different releases at any given point.
-<p>
-Please note that all the currently available versions of Mercury will not work
-with GCC 4.0 because of a 
-<a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=22362">bug</a> in that 
-version of GCC.
+#
+# This is PHP3 code.  On Debian systems (e.g. saturn.cs.mu.oz.au),
+# see /usr/share/doc/php3-doc/html/index.html for documentation on PHP3.
+#
 
-<H3> Current release </H3>
+$aus_ftp = "ftp://$ftp_domain/pub/mercury/beta-releases/rotd/";
+$aus_http = "http://$www_domain/download/files/beta-releases/rotd/";
 
-The most stable release will be a <em>numbered release</em>, such as 0.10.1 or
-0.11.0.   These releases have been extensively tested, and often have 
-pre-compiled binary packages for easy installation.
-<p>
-The <a href="release.html">current stable release</a>
-is version <? echo $current_release ?>.
+function link_to ($directory, $filename, $description)
+{
+	echo "<a href = \"" . $directory . $filename .
+		"\">" . $description . "</a>\n";
+	echo "&nbsp;&nbsp;&nbsp;\n";
+}
 
-<H3> Beta release </H3>
+function links_to_file ($filename)
+{
+	global $aus_ftp, $aus_http;
 
-A beta version of the upcoming 0.12.0 release is also available.
-The source distribution for this beta release is available for download from:
-<ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/0.12.0-beta/index.html">
-the Mercury web site</A> or<br>
-<li> <A 
-HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/0.12.0-beta">
-the Mercury ftp site</A>.
-</ul>
+	link_to ($aus_ftp, $filename, "Australia (FTP)");
+	link_to ($aus_http, $filename, "Australia (HTTP)");
+}
 
-Binary distributions will be available for the 0.12.0 release when
-it comes out.
+?>
+<h2><a name="info">Release of the day</a></h2>
 
-<H3> Stable ROTD (release-of-the-day) </H3>
-<p>
-To cater for those who need access to the latest cutting edge features
-of Mercury, but would still like some stability, we release a daily
-snapshot of the development system.  This is called a "release of the
-day (ROTD)" and is given a version number "rotd-YYYY-MM-DD" according to
-the date it was built.
-<p>
-<B>Download releases of the day:</b>
-<ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/rotd/">
-Mercury web site</A><br>
-<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/rotd/">
-Mercury ftp site</A>
-</ul>
-
-<H3> Unstable ROTD </H3>
-
-For some people, the cutting edge is not enough, and they want the
-bleeding edge.  To help these developers, we have an <em>unstable</em>
-release of the day.  This is just like a ROTD, but may not have passed
-all its tests.  It is marked with a version number
-"rotd-YYYY-MM-DD-unstable".
-<p>
-<B>Download unstable releases of the day:</b>
-<ul>
-<li> <A HREF="<? echo $root; ?>/download/files/beta-releases/rotd/">
-Mercury web site</A><br>
-<li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/beta-releases/rotd/">
-Mercury ftp site</A>
-</ul>
-
-<H3> Contents of the ROTD </H3>
-
-The Mercury compiler is written in Mercury, and compiles Mercury into C
-code.  These releases contain the Mercury code and the generated C code
-for the compiler.  You need a C compiler (such as gcc) to build the
-compiler and runtime system.  Once built, the Mercury compiler is
-capable of generating its own C code (the process of getting a compiler
-to compile itself is called <em>bootstrapping</em>, because it is like
-the compiler lifting itself up by its own boot straps).
-<p>
-Numbered releases often have binary packages created, where even the
-C code has been pre-compiled, and you simply need to install the
-libraries and executables.
-If we have enough processing power, we may someday do the same for
-releases of the day, but at the moment you need to do the final step
-of compilation yourself.
+The latest release of the day is version <b><? echo $rotd_version; ?></b>.
 <p>
 Please treat ROTDs with caution -- although they are often very
 useful and reasonably stable, they are not widely tested, and
 may have unfinished features and rough edges.  We are still interested
-in feedback and bug reports on the ROTDs.
+in feedback and bug reports on the ROTDs.  Please send bug reports to 
+<a href="mailto:mercury-bugs@cs.mu.oz.au">mercury-bugs@cs.mu.oz.au</a>.
+
+<h3>Information</h3>
+
+<ul>
+<li> <a href = "<? echo $root; 
+?>/download/files/beta-releases/rotd/mercury-NEWS-<? echo $rotd_version; 
+?>-unstable.txt">
+     Changes since version <? echo $current_release; ?>
+     </a>
+<li> <a href = "<? echo $root; 
+?>/download/files/beta-releases/rotd/mercury-INSTALL-<? echo $rotd_version; 
+?>-unstable.txt">
+     Instructions for installing from the source distribution
+     </a>
+<li> <a href = "<? echo $root; 
+?>/download/files/beta-releases/rotd/mercury-test-failures-<? echo $rotd_version; 
+?>-unstable.txt">
+     Failing test cases for the current ROTD
+     </a>
+</ul>
+
+<h3>Supported Platforms</h3>
+
+The latest release of the day is known to work on the following platforms:
+
+<p>
+
+<ul>
+    <li> x86/x86_64 machines running Debian Linux 
+    <li> x86 machines running SuSE Linux 
+</ul>
+
+<p>
+
+Mercury should also work on the following platforms, although this is not
+tested for every release of the day.
+
+<p>
+
+<ul>
+    <li> x86 machines running Microsoft Windows NT, 2000 or XP.
+    <li> x86/x86_64 machines running other versions of Linux
+         (however, there are some known problems with the version of GNU C
+	 that shipped with Red Hat Linux 7.0)
+    <li> x86 machines running FreeBSD 3.0
+    <li> x86 machines running other BSD Unix systems
+    <li> x86 machines running SunOS 5.x
+    <li> PowerPC machines running Linux
+    <li> PowerPC machines running Mac OS 10.3 and above
+    <li> Sun SPARC machines running SunOS 4.x and 5.x
+    <li> HP PA machines running HPUX
+    <li> IBM RS/6000 machines running AIX
+    <li> DEC Mips machines running ULTRIX
+    <li> DEC Alpha machines running OSF/1 (Digital Unix)
+    <li> DEC Alpha machines running Linux
+    <li> SGI Mips machines running IRIX 5.x
+</ul>
+
+<p>
+
+<h3>What do I need?</h3>
+
+<ul>
+<li> For Unix systems, you will need the following:<p>
+    <ol>
+    <li> <a href="http://gcc.gnu.org">GNU C (gcc)</a>
+         <p>
+         We recommend GCC 3.4.x.
+         <p>
+         GCC 3.0, 3.3.1 and 4.0 will NOT work. 
+	 They have bugs which cause 
+	 internal compiler errors when compiling the C code generated by the 
+	 Mercury compiler.
+         <p>
+         Avoid GCC 2.96 (distributed with Red Hat Linux 7.x) and
+         other unofficial releases of GCC.  Also avoid versions of GCC less 
+	 than GCC 2.95.X.
+         <p>
+         It is also possible to use other C compilers, such as
+         <a href="http://www.cs.princeton.edu/software/lcc/">lcc</a>,
+         but we don't recommend that.
+         <p>
+    <li> GNU make (version 3.69 or higher).
+    </ol>
+
+    <p>
+
+<li> For Windows,<p>
+     <ol>
+     <li> To compiler the source distribution on Windows you 
+          will need <a href=http://www.cygwin.com/>Cygwin</a>,
+          which you can download
+          <a href=http://www.cygwin.com/setup.exe>here</a> or
+	  <a href="http://www.mingw.org">MSYS</a>. 
+          Both Cygwin and MSYS include GNU C and GNU Make.<p>
+     <li> You can optionally use
+          <a href="http://msdn.microsoft.com/visualc/default.asp">
+          Microsoft Visual C</a> rather than GNU C (though Cygwin
+	  or MSYS is still required).<p>
+     <li> If you want to take a look at our preliminary support for .NET,
+          you also need 
+	  <ol>
+	      <li> the Microsoft .NET SDK version 1, available from
+                   <a href="http://msdn.microsoft.com/netframework/">
+		   MSDN</a>.
+	           If you are an MSDN Universal subscriber you can
+		   also order CDs as part of your subscription.
+	      <li> A Windows system suitable for development with
+	           Microsoft .NET, such as Windows XP.
+	  </ol>
+     </ol>
+</ul>
+
+<p>
+
+<h3><a name="source">Source Distribution</a></h3>
+
+The main "mercury-compiler" source distribution includes the compiler, 
+standard library,
+debugger, profilers, and other tools.
+
+<p>
+
+There is also a "mercury-extras" distribution which contains a number
+of useful additional libraries.  This is distributed separately,
+mainly for copyright reasons (some of the additional libraries do
+not meet the Debian Free Software Guidelines).
+
+<p>
+
+Finally there is also a "mercury-tests" distribution which contains our
+test suite.  This may be useful if you are modifying the compiler,
+or porting it to a new system.
+
+<dl>
+<dt> Compiler
+<dd> 
+<? links_to_file("mercury-compiler-$rotd_version-unstable.tar.gz") ?>
+<p>
+
+<dt> Extras
+<dd>
+<? links_to_file("mercury-extras-$rotd_version-unstable.tar.gz") ?>
+<p>
+
+<dt> Tests
+<dd>
+<? links_to_file("mercury-tests-$rotd_version-unstable.tar.gz") ?>
+</dl>
 

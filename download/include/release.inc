@@ -5,8 +5,8 @@
 # see /usr/share/doc/php3-doc/html/index.html for documentation on PHP3.
 #
 
-$aus_ftp = "ftp://ftp.mercury.cs.mu.oz.au/pub/mercury/";
-$aus_http = "http://www.cs.mu.oz.au/mercury/download/files/";
+$aus_ftp = "ftp://$ftp_domain/pub/mercury/";
+$aus_http = "http://$www_domain/download/files/";
 $usa_sourceforge_http = "http://prdownloads.sourceforge.net/mercury/";
 $usa_sunsite_ftp = "ftp://sunsite.unc.edu/pub/Linux/devel/lang/mercury/";
 $usa_sunysb_ftp = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/";
@@ -172,12 +172,6 @@ It should be pretty easy to port to any sufficiently Unix-like system.
      </ol>
 </ul>
 
-<h3>How to get the distribution</h3>
-
-You can download the latest release directly from this web page, see below.
-
-<p>
-
 <h3><a name="source">Source Distribution</a></h3>
 
 The main "mercury-compiler" source distribution is about 15 Mb.
@@ -196,7 +190,7 @@ There is also a "mercury-extras" distribution which contains a number
 of useful additional libraries.  This is distributed separately,
 mainly for copyright reasons (some of the additional libraries do
 not meet the Debian Free Software Guidelines).
-We strongly recommend that everyone who downloads the "compiler"
+We recommend that everyone who downloads the "compiler"
 distribution should also download the "extras" distribution.
 
 <p>

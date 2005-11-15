@@ -1,7 +1,9 @@
 <?
 	$installed_path="/home/mercury5/installed_w3";
+
 	$current_release="<RELEASE_VERSION>";
 	$next_beta_version="<NEXT_BETA_VERSION>";
+
 	$release_doc_dir="$root/information/doc-release";
 	$latest_doc_dir="$root/information/doc-latest";
 	$ref_man_release="$release_doc_dir/mercury_ref/index.html";
@@ -14,4 +16,12 @@
 	$trans_guide_latest="$latest_doc_dir/mercury_trans_guide/index.html";
 	$faq_release="$release_doc_dir/mercury_faq/index.html";
 	$faq_latest="$latest_doc_dir/mercury_faq/index.html";
+
+	$rotd_basedir="download/files/beta-releases/rotd";
+	$rotd_files_path="$installed_path/$rotd_basedir";
+	exec("cat $rotd_files_path/latest-unstable-version", $exec_output);
+	$rotd_version=$exec_output[0];
+	
+ 	$ftp_domain="ftp.mercury.cs.mu.oz.au";
+ 	$www_domain="<WWW_DOMAIN>";
 ?>

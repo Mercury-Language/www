@@ -4,7 +4,16 @@
 # Public License - see the file COPYING in the Mercury distribution.
 #-----------------------------------------------------------------------------#
 
-PHP3=/usr/lib/cgi-bin/php3 -q
+ifndef PHP3
+	PHP3=/usr/lib/cgi-bin/php3 -q
+endif
+ifndef WWW_DOMAIN
+	WWW_DOMAIN="www.mercury.cs.mu.oz.au"
+endif
+BETA_WEBDIR="$(INSTALL_WEBDIR)/download/files/beta-releases/rotd"
+ifndef BETA_FTPDIR
+	BETA_FTPDIR="/home/ftp/pub/mercury/beta-releases/rotd"
+endif
 CP=cp -af
 
 #-----------------------------------------------------------------------------#
@@ -42,16 +51,18 @@ ifdef DIRS
 	done
 endif
 
-
 .PHONY: install
 install: html
 	[ -d $(INSTALL_WEBDIR) ] || mkdir -p $(INSTALL_WEBDIR)
+ifdef HTML
 	$(CP) $(HTML) $(INSTALL_WEBDIR)/
+endif
 ifdef DIRS
 	for dir in $(DIRS);						\
 	do				        			\
 		[ -d $(INSTALL_WEBDIR)/$$dir ] ||			\
 			mkdir -p $(INSTALL_WEBDIR)/$$dir;		\
+		chmod a+rx $(INSTALL_WEBDIR)/$$dir;			\
 		(export INSTALL_WEBDIR=$(INSTALL_WEBDIR)/$$dir &&	\
 		cd $$dir && $(MAKE) install);				\
 	done

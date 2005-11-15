@@ -59,6 +59,7 @@ set -x
 cvs update -d . || echo "*** cvs update failed" 1>&2
 cvs checkout tutorial || echo "*** cvs checkout failed" 1>&2
 make install || echo "*** make install failed" 1>&2
+make delete_old_rotds || echo "*** make delete_old_rotds failed" 1>&2
 
     #
     # Reindex the web site for searching.
