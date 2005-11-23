@@ -122,11 +122,11 @@ tested for every release of the day.
 
 <li> For Windows,<p>
      <ol>
-     <li> To compiler the source distribution on Windows you 
-          will need <a href=http://www.cygwin.com/>Cygwin</a>,
+     <li> To compile the source distribution on Windows you 
+          will need either <a href=http://www.cygwin.com/>Cygwin</a>,
           which you can download
-          <a href=http://www.cygwin.com/setup.exe>here</a> or
-	  <a href="http://www.mingw.org">MSYS</a>. 
+          <a href=http://www.cygwin.com/setup.exe>here</a>,
+	  or <a href="http://www.mingw.org">MSYS</a>. 
           Both Cygwin and MSYS include GNU C and GNU Make.<p>
      <li> You can optionally use
           <a href="http://msdn.microsoft.com/visualc/default.asp">

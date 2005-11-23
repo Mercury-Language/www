@@ -8,8 +8,9 @@ main versions of Mercury available at the moment.
 
 <H3> Current stable release </H3>
 
-The most stable release will be a <em>numbered release</em>, such as 0.10.1 or
-0.11.0.   These releases have been extensively tested, and often have 
+The most stable release will be a <em>numbered release</em>,
+such as 0.10.1, 0.11.0 or 0.12.1.
+These releases have been extensively tested, and often have 
 pre-compiled binary packages for easy installation.
 <p>
 The <a href="download/release.html">current stable release</a>
@@ -38,10 +39,11 @@ is version <? echo $current_release; ?>.
 
 <H3> Release of the day </H3>
 <p>
-To cater for those who need access to the latest cutting edge features
-of Mercury, we release a daily snapshot of the development system.  This is
-called a "release of the day (ROTD)" and is given a version number
-"rotd-YYYY-MM-DD" according to the date it was built.  
+To cater for those who need access to the latest features of Mercury,
+we release a daily snapshot of the development system.
+This is called a "release of the day (ROTD)".
+Each ROTD is given a version number
+"rotd-YYYY-MM-DD" according to the date on which it was built.  
 <p>
 The <a href="download/rotd.html">current release of the day</a>
 is version <? echo $rotd_version; ?>.
