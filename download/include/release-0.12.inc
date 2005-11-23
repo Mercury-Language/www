@@ -1,3 +1,12 @@
+<h2>New in release 0.12.1 of the Mercury distribution</h2>
+
+This release is primarily a bug-fix release.
+It fixes a problem with predicates that have existentially typed
+arguments, makes sure that I/O tabling does not inadvertently
+inline predicates that have a `:- pragma no_inline' declaration
+attached to them, and makes various improvements to the MS-Windows
+ports.
+
 <h2>New in release 0.12 of the Mercury distribution</h2>
 
 <h3>HIGHLIGHTS</h3>
