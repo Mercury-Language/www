@@ -22,6 +22,18 @@
 
 $newsdb = array(
 
+"11 December 2005" => array("Three new papers",
+
+"Three new papers titled
+\"Controlling search space materialization
+in a practical declarative debugger\",
+\"Adding constraint solving to Mercury\"
+and
+\"Tabling in Mercury: design and implementation\"
+are now available from our
+<A HREF=\"information/papers.html\">papers page</A>."
+),
+
 "21 November 2005" => array("Mercury 0.12.1 released",
 
 "Release information is available

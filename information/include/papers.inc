@@ -22,8 +22,55 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#padl06solver">
+Adding constraint solving to Mercury
+</a>
+</strong>
+<br>
+Ralph Becket, Maria Garcia de la Banda, Kim Marriott, Zoltan Somogyi,
+Peter J. Stuckey and Mark Wallace,
+<em>
+Proceedings of the Eighth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+Charleston, South Carolina, January 2006.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#padl06dd">
+Controlling search space materialization
+in a practical declarative debugger
+</a>
+</strong>
+<br>
+Ian MacLarty and Zoltan Somogyi,
+<em>
+Proceedings of the Eighth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+Charleston, South Carolina, January 2006.
+<p>
+
+<li>
+<strong>
+<a href = "papers.html#padl06tabling">
+Tabling in Mercury: design and implementation
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Konstantinos Sagonas,
+<em>
+Proceedings of the Eighth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+Charleston, South Carolina, January 2006.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#maclarty-masters">
-Practical Declarative Debugging of Mercury Programs 
+Practical Declarative Debugging of Mercury Programs
 </a>
 </strong>
 <br>
@@ -564,10 +611,10 @@ context information
 </a>
 </strong>
 <br>
-David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi. 
+David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <br>
 <em>Tech Report 90/2</em>, Melbourne, 1997.
- 
+
 </ul>
 
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
@@ -583,7 +630,7 @@ debugger.
 </strong>
 <br>
 Ian MacLarty, Zoltan Somogyi and Mark Brown.
-Talk presented at the Sixth International 
+Talk presented at the Sixth International
 Symposium on Automated and Analysis Driven Debugging,
 Monterey, USA, September 2005.
 <p>
@@ -747,7 +794,145 @@ Tyson Dowd, 1998.
 
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
-<ul> 
+<ul>
+
+<li>
+<strong>
+<a name = "papers.html#padl06solver">
+Adding constraint solving to Mercury
+</a>
+</strong>
+<br>
+Ralph Becket, Maria Garcia de la Banda, Kim Marriott, Zoltan Somogyi,
+Peter J. Stuckey and Mark Wallace,
+<em>
+Proceedings of the Eighth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+Charleston, South Carolina, January 2006,
+Springer Verlag, &copy;.
+Available in
+<a href = "papers/padl06solver.pdf">
+pdf (166k)
+</a>
+or
+<a href = "papers/padl06solver.ps.gz">
+ps.gz (139k)
+</a>
+formats.
+<p>
+The logic programming language Mercury
+is designed to support programming in the large.
+Programmer declarations in conjunction with
+powerful compile-time analysis and optimization
+allow Mercury programs to be very efficient.
+The original design of Mercury
+did not support constraint logic programming (CLP).
+This paper describes the extensions we added to Mercury to support CLP.
+Unlike similarly motivated extensions to Prolog systems,
+our objectives included
+preserving the purity of Mercury programs as much as possible,
+as well as avoiding any impact
+on the efficiency of non-CLP predicates and functions.
+</p>
+
+<li>
+<strong>
+<a name = "papers.html#padl06dd">
+Controlling search space materialization
+in a practical declarative debugger
+</a>
+</strong>
+<br>
+Ian MacLarty and Zoltan Somogyi,
+<em>
+Proceedings of the Eighth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+Charleston, South Carolina, January 2006,
+Springer Verlag, &copy;.
+Available in
+<a href = "papers/padl06dd.pdf">
+pdf (201k)
+</a>
+or
+<a href = "papers/padl06dd.ps.gz">
+ps.gz (176k)
+</a>
+formats.
+<p>
+While the idea of declarative debugging
+has been around for a quarter of a century,
+the technology still hasn't been adopted by working programmers,
+even by those working in declarative languages.
+The reason is that making declarative debuggers practical
+requires solutions to a whole host of problems.
+In this paper we address one of these problems, which is that
+retaining a complete record of every step of the execution of a program
+is infeasible unless the program's runtime is very short,
+yet this record forms the space searched by the declarative debugger.
+Most parts of this search space
+therefore have to be stored in an implicit form.
+Each time the search algorithm visits
+a previously unexplored region of the search space,
+it must decide how big a part of the search space to rematerialize
+(which it does by reexecuting a call in the program).
+If it materializes too much, the machine may start to thrash
+or even run out of memory and swap space.
+If it materializes too little, then materializing
+all the parts of the search space required by a debugging session
+will require too many reexecutions of (parts of) the program,
+which will take too long.
+We present a simple algorithm, the <em>ideal depth strategy</em>,
+for steering the ideal middle course:
+minimizing reexecutions while limiting memory consumption to what is feasible.
+We show that this algorithm performs well
+even when used on quite long running programs.
+</p>
+
+<li>
+<strong>
+<a name = "papers.html#padl06tabling">
+Tabling in Mercury: design and implementation
+</a>
+</strong>
+<br>
+Zoltan Somogyi and Konstantinos Sagonas,
+<em>
+Proceedings of the Eighth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+Charleston, South Carolina, January 2006,
+Springer Verlag, &copy;.
+Available in
+<a href = "papers/padl06tabling.ps.gz">
+ps.gz (93k)
+</a>
+format.
+<p>
+For any LP system, tabling can be quite handy in a variety of tasks,
+especially if it is efficiently implemented
+and fully integrated in the language.
+Implementing tabling in Mercury
+poses special challenges for several reasons.
+First, Mercury is both semantically and culturally quite different from Prolog.
+While decreeing that tabled predicates must not include cuts
+is acceptable in a Prolog system,
+it is not acceptable in Mercury,
+since if-then-elses and existential quantification
+have sound semantics for stratified programs
+and are used very frequently
+both by programmers and by the compiler.
+The Mercury implementation thus has no option
+but to handle interactions of tabling
+with Mercury's language features safely.
+Second, the Mercury implementation is vastly different from the WAM,
+and many of the differences
+(e.g. the absence of a trail)
+have significant impact on the implementation of tabling.
+In this paper, we describe how we adapted the copying approach to tabling
+to implement tabling in Mercury.
+</p>
 
 <li>
 <strong>
@@ -779,16 +964,16 @@ users (especially novices) would find difficult to do manually. Even expert
 users often find it hard to explore large search spaces systematically, a
 limitation that does not apply to software systems. Declarative debuggers thus
 have the potential to make the debugging process easier and much more
-predictable. 
+predictable.
 </p>
 <p>
 Despite these expected benefits, declarative debugging is not yet
 widely used in practice to find real bugs. There are three main reasons for
-this: 
+this:
 <ol>
 <li>Most previous declarative debuggers only support a subset of the
 features of their target language that is not sufficient to express real
-programs.</li> 
+programs.</li>
 <li>Previous declarative debuggers do not scale well when applied to
 problems with large search spaces. </li>
 <li>Previous declarative debuggers do not do
@@ -801,7 +986,7 @@ nature of Mercury makes it relatively easy to implement a declarative debugger
 that can handle the full language. The version of the Mercury declarative
 debugger that was the starting point for this thesis already handled almost all
 of Mercury. By extending it to handle exceptions we made it handle the full
-language. 
+language.
 </p>
 <p>
 One problem posed by large search spaces is that they cannot be stored
@@ -810,17 +995,17 @@ stored in memory at any one time, materializing missing pieces when they are
 needed by reexecuting the program. We present the first algorithm for
 controlling this rematerialization process that is practical in the presence of
 multiple search strategies, minimising reexecutions while keeping memory
-consumption within acceptable limits. 
+consumption within acceptable limits.
 </p>
 <p>
 Another problem with large search spaces
 is that previous search strategies either asked far too many questions,
-demanded too much in the way of CPU and/or memory resources 
+demanded too much in the way of CPU and/or memory resources
 or were too inflexible to coexist with other search strategies. For example,
 the divide-and-query search strategy is query-optimal in the worst case, however
 previous implementations of it often required more memory than is typically
 available. We have implemented heuristics which enable divide-and-query to be
-used on partially materialized search spaces, making it practical. 
+used on partially materialized search spaces, making it practical.
 </p>
 <p>
 We also
@@ -831,7 +1016,7 @@ strategy exploits this extra information to jump directly to the part of the
 program that computed the wrong subterm. In many cases, only a few such jumps
 are required to arrive at the bug. Subterm dependency tracking can converge on
 the bug even more quickly than divide-and-query, and it tends to yield
-questions and question sequences that are easier for users to answer. 
+questions and question sequences that are easier for users to answer.
 </p>
 <p>
 We also
@@ -844,7 +1029,7 @@ call fails a precondition then neither `yes' or `no' is an
 appropriate answer to a question from the debugger about the validity of an
 answer computed for that call. Our debugger therefore allows users to answer
 `inadmissible' to such questions. If all else fails, users can also
-skip hard questions. 
+skip hard questions.
 </p>
 <p>
 We give evidence that the new declarative debugger can be
@@ -872,7 +1057,7 @@ or
 <a href = "papers/ciclops05.ps.gz">
 ps.gz (90k)
 </a>
-formats.  
+formats.
 <p>
 For any LP system, tabling can be quite handy in a variety of tasks,
 especially if it is efficiently implemented
@@ -921,7 +1106,7 @@ or
 <a href = "papers/dd3.ps.gz">
 ps.gz (161k)
 </a>
-formats.  
+formats.
 <p>
 We have implemented a declarative debugger for Mercury
 that is capable of finding bugs in large, long-running programs.
@@ -953,7 +1138,7 @@ and it tends to yield question sequences that are easier for users to answer.
 <p>
 &copy; ACM, (2005). This is the author's version of the work. It is
 posted here by permission of ACM for your personal use. Not for
-redistribution. The definitive version was published in  
+redistribution. The definitive version was published in
 Proceedings of the Sixth International Symposium on
 Automated and Analysis-driven Debugging.
 </p>
@@ -983,7 +1168,7 @@ ps.gz (94k)
 formats.
 <p>
 Many programmers find debugging a frustrating and unproductive activity.
-Declarative debugging 
+Declarative debugging
 promises to alleviate this problem by automating
 some of the reasoning used in the debugging process.
 We have implemented a declarative debugger for Mercury.
@@ -1115,7 +1300,7 @@ Available here (602K).
 <p>
 In this thesis we look at mode analysis of logic programs.
 Being based on the mathematical formalism of predicate logic,
-logic programs have no <em>a priori</em> notion of data flow&#8212;a 
+logic programs have no <em>a priori</em> notion of data flow&#8212;a
 single logic program may run in multiple <em>modes</em>
 where each mode describes, or prescribes, a pattern of data flow.
 </p>
@@ -1246,8 +1431,8 @@ Julien Fischer.
 <em>
 Honours report,
 </em>
-Department of Computer Science and Software Engineering, 
-The University of Melbourne, 
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
 August 2002.
 <a href = "papers/juliensf_hons.ps.gz">
 Available here (143K).
@@ -1547,7 +1732,7 @@ Fergus Henderson and Zoltan Somogyi
 Proceedings of the 2002 International Conference on Compiler Construction
 </em>
 Grenoble, France, April 2002.
-&copy; 
+&copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href = "papers/hlc_cc.ps.gz">Available here (67K)</a>.
 <p>
@@ -1630,11 +1815,11 @@ for Mercury
 Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe
 <br>
 <em>
-Proceedings of ICLP 2001 - Seventeenth International Conference on 
+Proceedings of ICLP 2001 - Seventeenth International Conference on
 Logic Programming
 </em>,
-Paphos, Cyprus, November 2001. Lecture Notes in Computer Science 2237, 
-Springer Verlag, 
+Paphos, Cyprus, November 2001. Lecture Notes in Computer Science 2237,
+Springer Verlag,
 Pages 105-119
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
@@ -1642,26 +1827,26 @@ Pages 105-119
 Available here (84K).
 </a>
 <p>
-Compile-time garbage collection (CTGC) 
+Compile-time garbage collection (CTGC)
 is still a very uncommon feature within
-compilers. 
+compilers.
 In previous work we have developed a compile-time structure
-reuse system for Mercury, a logic programming language. 
-This system 
-indicates which datastructures can safely be reused at run-time. 
-As preliminary experiments were promising, we 
-have continued this work and have now a 
+reuse system for Mercury, a logic programming language.
+This system
+indicates which datastructures can safely be reused at run-time.
+As preliminary experiments were promising, we
+have continued this work and have now a
 working and well performing near-to-ship
 CTGC-system built into the Melbourne Mercury
-Compiler (MMC). 
+Compiler (MMC).
 <br>
 In this paper we present the multiple design decisions leading to this
-system, we report the results of using CTGC 
+system, we report the results of using CTGC
 for a set of benchmarks, including a
 real-world program, and finally we discuss further
-possible improvements. 
+possible improvements.
 Benchmarks show substantial memory savings and a noticeable reduction
-in execution time. 
+in execution time.
 <p>
 
 <li>
@@ -1680,9 +1865,9 @@ Programming and Automated Reasoning
 </em>,
 Reunion Island, France, November 2000.
 Lecture Notes in Computer Science 1955,
-Springer Verlag, 
+Springer Verlag,
 Pages 399-416
-&copy; 
+&copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/bta_higher_order.ps.gz">Available here (106K)</a>.
 <p>
@@ -1704,13 +1889,13 @@ A module based analysis for memory reuse in Mercury
 Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
 <br>
 <em>
-Proceedings of the First International Conference on Computational Logic 
+Proceedings of the First International Conference on Computational Logic
 </em>,
 London, United Kingdom, July 2000.
 Lecture Notes in Artificial Intelligence,
-Springer Verlag, 
+Springer Verlag,
 Pages 1255-1269
-&copy; 
+&copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/memory_reuse_analysis.ps.gz">Available here (93K)</a>.
 <p>
@@ -1738,8 +1923,8 @@ Proceedings of the Ninth International Workshop on Logic-based Program
 Synthesis and Transformation</em>,
 Venice, Italy, September 1999.
 To appear in Lecture Notes in Computer Science,
-Springer Verlag, 
-&copy; 
+Springer Verlag,
+&copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/tail_lopstr_lncs.ps.gz">Available here (84K)</a>.
 <p>
@@ -1937,10 +2122,10 @@ Proceedings of the International Conference
 on the Principles and Practice of Declarative Programming
 </em>,
 Paris, France, September/October 1999,
-Lecture Notes in Computer Science 1702, 
-Springer Verlag, 
+Lecture Notes in Computer Science 1702,
+Springer Verlag,
 Pages 224-243,
-&copy; 
+&copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/rtti_ppdp.ps.gz">Available here (75K)</a>.
 <p>
@@ -2004,11 +2189,11 @@ Proceedings of the First International Workshop
 on Practical Aspects of Declarative Languages
 </em>,
 San Antonio, Texas,
-January 1999, 
-Lecture Notes in Computer Science 1551, 
-Springer Verlag, 
+January 1999,
+Lecture Notes in Computer Science 1551,
+Springer Verlag,
 Pages 211-227,
-&copy; 
+&copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <a href="papers/mcorba_padl99.ps.gz">Available here (65K)</a>.
 <p>
@@ -2052,7 +2237,7 @@ Available here (82K).
 </a>
 <p>
 
-In this paper, we explain how we have extended Mercury's type system 
+In this paper, we explain how we have extended Mercury's type system
 to include support for type classes.
 We give a formal semantics for this extension to our type system,
 adapting the typing rules used in functional languages
@@ -2303,7 +2488,7 @@ Department of Computer Science, University of Melbourne, October 1997.
 <a href = "papers/mu_97_23.ps.gz">
 Available here (67K).
 </a>
- 
+
 </ul>
 
 <p>
@@ -2378,7 +2563,7 @@ Available here (114K).
 </ul>
 
 <a name="mu_96_45">
-The following paper describes the method used to express database 
+The following paper describes the method used to express database
 transactions and updates that is used in the Mercury ODBC database
 interface.
 </a>
@@ -2386,7 +2571,7 @@ interface.
 The same kind of approach is also used in
 the Mercury interface to the Aditi deductive
 database system (see the "Aditi deductive database interface"
-section in Mercury Language Reference Manual listed under 
+section in Mercury Language Reference Manual listed under
 "Implementation dependent pragmas" in the "Pragmas" chapter).
 
 <p>
@@ -2423,7 +2608,7 @@ Right-, left-, and multi-linear rule transformations that maintain
 context information
 </strong>
 <br>
-David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi. 
+David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <br>
 <em>
 Technical Report 90/2
@@ -2435,7 +2620,7 @@ Available here (48K).
 Note that this paper incorrectly claims that
 the context transformation can be applied to
 mixed-linear predicates containing pseudo-left-linear rules
-as well as other linear rules.  
+as well as other linear rules.
 It is corrected in David Kemp's thesis,
 <a href = "http://www.cs.mu.oz.au/~kemp/papers/thesis.ps.gz">
 available here (560K).
@@ -2459,7 +2644,7 @@ debugger.
 <br>
 Ian MacLarty, Zoltan Somogyi and Mark Brown.
 <em>
-Talk presented at the Sixth International 
+Talk presented at the Sixth International
 Symposium on Automated and Analysis Driven Debugging,
 </em>
 Monterey, USA, September 2005.
