@@ -798,7 +798,7 @@ Tyson Dowd, 1998.
 
 <li>
 <strong>
-<a name = "papers.html#padl06solver">
+<a name = "padl06solver">
 Adding constraint solving to Mercury
 </a>
 </strong>
@@ -812,11 +812,11 @@ on Practical Aspects of Declarative languages,
 Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
 Available in
-<a href = "papers/padl06solver.pdf">
+<a href = "papers/padl_solver.pdf">
 pdf (166k)
 </a>
 or
-<a href = "papers/padl06solver.ps.gz">
+<a href = "papers/padl_solver.ps.gz">
 ps.gz (139k)
 </a>
 formats.
@@ -838,7 +838,7 @@ on the efficiency of non-CLP predicates and functions.
 
 <li>
 <strong>
-<a name = "papers.html#padl06dd">
+<a name = "padl06dd">
 Controlling search space materialization
 in a practical declarative debugger
 </a>
@@ -852,11 +852,11 @@ on Practical Aspects of Declarative languages,
 Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
 Available in
-<a href = "papers/padl06dd.pdf">
+<a href = "papers/padl_dd.pdf">
 pdf (201k)
 </a>
 or
-<a href = "papers/padl06dd.ps.gz">
+<a href = "papers/padl_dd.ps.gz">
 ps.gz (176k)
 </a>
 formats.
@@ -892,7 +892,7 @@ even when used on quite long running programs.
 
 <li>
 <strong>
-<a name = "papers.html#padl06tabling">
+<a name = "padl06tabling">
 Tabling in Mercury: design and implementation
 </a>
 </strong>
@@ -905,10 +905,14 @@ on Practical Aspects of Declarative languages,
 Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
 Available in
-<a href = "papers/padl06tabling.ps.gz">
+<a href = "papers/padl_tabling.pdf">
+pdf (153k)
+</a>
+or
+<a href = "papers/padl_tabling.ps.gz">
 ps.gz (93k)
 </a>
-format.
+formats.
 <p>
 For any LP system, tabling can be quite handy in a variety of tasks,
 especially if it is efficiently implemented
