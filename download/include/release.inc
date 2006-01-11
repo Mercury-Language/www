@@ -217,5 +217,16 @@ or porting it to a new system.
 
 <h3><a name="binaries">Binary Distribution</a></h3>
 
-Binary packages of the 0.12 release for Linux, Mac OS X (10.3 and 10.4) and 
-Windows will be available shortly from this page.
+<dl>
+<dt> Windows installer (30 Mb).  This package includes the compiler and
+debugger, but not mmake (instead use `mmc --make').  It also includes
+the MinGW version of gcc, so you don't need to download anything else to use 
+Mercury &mdash; mmc will work directly from the Windows command prompt.
+The following grades are included: asm_fast.gc, asm_fast.gc.tr,
+asm_fast.gc.tr.debug, asm_fast.gc.tr.decldebug and hlc.gc.
+<dd> 
+<? links_to_file("mercury-compiler-0.12.1.msi", "no") ?>
+<p>
+
+Binary packages for Linux and Mac OS X (10.3 and 10.4)
+are still to come.
