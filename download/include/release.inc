@@ -215,18 +215,24 @@ or porting it to a new system.
 <? links_to_file("mercury-tests-0.12.1.tar.gz", "no") ?>
 </dl>
 
-<h3><a name="binaries">Binary Distribution</a></h3>
+<h3><a name="binaries">Binary Distributions</a></h3>
 
-<dl>
-<dt> Windows installer (30 Mb).  This package includes the compiler and
+<h4>Windows Installer</h4>
+
+The Windows installer package includes the Mercury compiler and
 debugger, but not mmake (instead use `mmc --make').  It also includes
-the MinGW version of gcc, so you don't need to download anything else to use 
+the MinGW version of gcc, so you don't need to download anything else to use
 Mercury &mdash; mmc will work directly from the Windows command prompt.
 The following grades are included: asm_fast.gc, asm_fast.gc.tr,
 asm_fast.gc.tr.debug, asm_fast.gc.tr.decldebug and hlc.gc.
-<dd> 
-<? links_to_file("mercury-compiler-0.12.1.msi", "no") ?>
 <p>
+<dl>
+<dt> Download Windows Installer (30 Mb)
+<dd>
+<? links_to_file("mercury-compiler-0.12.1.msi", "no") ?>
+</dl>
+
+<h4>Other Binary Distributions</h4>
 
 Binary packages for Linux and Mac OS X (10.3 and 10.4)
 are still to come.
