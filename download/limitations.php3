@@ -1,7 +1,7 @@
 <HTML>
 <?
     $menu="Download";
-    $title="Limitation of the current release";
+    $title="Limitations of the current release";
     $dir="download";
     $root="..";
     $include="limitations.inc";

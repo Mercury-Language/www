@@ -1,4 +1,4 @@
-<h2>Release 0.12.1 - Known Problems</h2>
+<h2>Release 0.12.2 - Known Problems</h2>
 
 Bug reports should be sent to mercury-bugs@cs.mu.oz.au.
 If you're reporting more than one bug, please use separate emails

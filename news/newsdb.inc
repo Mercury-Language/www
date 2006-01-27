@@ -22,6 +22,12 @@
 
 $newsdb = array(
 
+"25 January 2006" => array("Mercury 0.12.2 released",
+
+"Release information is available
+<A HREF=\"./download/release.html\">here</A>."
+),
+
 "11 December 2005" => array("Three new papers",
 
 "Three new papers titled

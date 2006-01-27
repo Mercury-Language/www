@@ -1,3 +1,7 @@
+<h2>New in release 0.12.2 of the Mercury distribution</h2>
+
+This release fixes some bugs with `mmc --make' and `--smart-recompilation'.
+
 <h2>New in release 0.12.1 of the Mercury distribution</h2>
 
 This release is primarily a bug-fix release.

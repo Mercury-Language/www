@@ -60,19 +60,19 @@ function links_to_file ($filename, $onSunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
-Mercury 0.12.1 was released on November 21, 2005.
+Mercury 0.12.2 was released on January 25, 2006.
 
 <h3>Information</h3>
 
 <ul>
 <li> <a href = "release-0.12.html">
-     Release notes for 0.12.1
+     Release notes for 0.12.2
      </a>
 <li> <a href = "release-0.12-contents.html">
-     Contents of release 0.12.1 distribution
+     Contents of release 0.12.2 distribution
      </a>
 <li> <a href = "release-0.12-bugs.html">
-     Known problems with release 0.12.1
+     Known problems with release 0.12.2
      </a>
 <li> <a href = "limitations.html">
      Limitations of the current release.
@@ -202,22 +202,22 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (15 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.12.1.tar.gz", "yes") ?>
+<? links_to_file("mercury-compiler-0.12.2.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (22 Mb)
 <dd>
-<? links_to_file("mercury-extras-0.12.1.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-0.12.2.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (914 kb)
 <dd>
-<? links_to_file("mercury-tests-0.12.1.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-0.12.2.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-<h4>Windows Installer</h4>
+<h4>Windows Installer for Mercury 0.12.1</h4>
 
 The Windows installer package includes the Mercury compiler and
 debugger, but not mmake (instead use `mmc --make').  It also includes

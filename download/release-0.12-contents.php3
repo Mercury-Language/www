@@ -2,7 +2,7 @@
 <?
     $menu="Download";
     $submenu="Current Release";
-    $title="Release 0.12.0 Contents";
+    $title="Release 0.12.2 Contents";
     $dir="download";
     $root="..";
     $include="release-0.12-contents.inc";
