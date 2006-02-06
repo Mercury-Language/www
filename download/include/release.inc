@@ -205,7 +205,7 @@ or porting it to a new system.
 <? links_to_file("mercury-compiler-0.12.2.tar.gz", "yes") ?>
 <p>
 
-<dt> Extras (22 Mb)
+<dt> Extras (750 kb)
 <dd>
 <? links_to_file("mercury-extras-0.12.2.tar.gz", "no") ?>
 <p>
@@ -217,19 +217,23 @@ or porting it to a new system.
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-<h4>Windows Installer for Mercury 0.12.1</h4>
+<h4>Windows Installer for Mercury 0.12.2</h4>
 
 The Windows installer package includes the Mercury compiler and
 debugger, but not mmake (instead use `mmc --make').  It also includes
 the MinGW version of gcc, so you don't need to download anything else to use
 Mercury &mdash; mmc will work directly from the Windows command prompt.
-The following grades are included: asm_fast.gc, asm_fast.gc.tr,
-asm_fast.gc.tr.debug, asm_fast.gc.tr.decldebug and hlc.gc.
+The following grades are included in the "big" version: asm_fast.gc, asm_fast.gc.tr,
+asm_fast.gc.tr.debug, asm_fast.gc.tr.decldebug, hlc.gc and hlc.gc.tr, while the
+"small" version includes the grades asm_fast.gc, asm_fast.gc.tr.debug and hlc.gc.
 <p>
 <dl>
-<dt> Download Windows Installer (30 Mb)
+<dt> Download Windows Installer ("big" version, 32 Mb)
 <dd>
-<? links_to_file("mercury-compiler-0.12.1.msi", "no") ?>
+<? links_to_file("mercury-compiler-0.12.2.big.msi", "no") ?>
+<dt> Download Windows Installer ("small" version, 20 Mb)
+<dd>
+<? links_to_file("mercury-compiler-0.12.2.small.msi", "no") ?>
 </dl>
 
 <h4>Other Binary Distributions</h4>
