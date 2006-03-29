@@ -22,6 +22,15 @@
 
 $newsdb = array(
 
+"28 March 2006" => array("New presentation",
+
+"A presentation titled
+\"Unclean!  Unclean!  or  Purity issues in declarative constraint logic
+programming\"
+has been added to the presentations section on our
+<A href=\"information/paper.html\">papers page</A>"
+),
+
 "25 January 2006" => array("Mercury 0.12.2 released",
 
 "Release information is available
