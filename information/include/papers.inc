@@ -623,6 +623,18 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
+<a href = "papers.html#g12_unclean">
+Unclean! Unclean! or Purity Issues in Declarative Constraint Logic
+Programming.
+</a>
+</strong>
+<br>
+Ralph Becket.
+University of Melbourne, 28 March 2006. 
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#aadebug05-talk">
 Divide-and-query and subterm dependency tracking in the Mercury declarative
 debugger.
@@ -2637,6 +2649,24 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name = "g12_unclean">
+Unclean! Unclean! or Purity Issues in Declarative Constraint Logic
+Programming.
+</a>
+</strong>
+<br>
+Ralph Becket.
+<em>
+University of Melbourne.
+</em>
+28 March 2006. 
+<a href = "papers/g12_unclean.pdf.gz">
+Available here (131K).
+</a>
+<p>
 
 <li>
 <strong>
