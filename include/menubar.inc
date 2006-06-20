@@ -86,7 +86,6 @@ if($menu == "Back-ends") {
   &nbsp;&nbsp;<a href="<?echo $root?>/download/release-0.10.html#hlc">High-level&nbsp;C</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/dotnet.html">Microsoft .NET</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/gcc-backend.html">Native code</a><BR>
-  &nbsp;&nbsp;<a href="http://www.cs.mu.oz.au/research/aditi/">Aditi</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#java">Java</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#bytecode">Mercury&nbsp;Bytecode</a><BR>
 </SMALL>

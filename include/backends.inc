@@ -65,14 +65,6 @@ released but are still immature, while others are under development.
 	<dd>
 	This back-end compiles to assembler, using the GCC back-end.
 	</dd>
-<p>
-        <dt><a name="aditi" href="http://www.cs.mu.oz.au/research/aditi/">
-	<b>Aditi.</b></a></dt>
-	<dd>
-	Mercury is the source language for version 2 of the Aditi
-	deductive database system.  The Mercury compiler has a back-end
-	that generates Aditi's RL (Relational Language) bytecodes.
-	</dd>
 </dl>
 <p>
 <li><i>Under development:</i>
