@@ -2605,10 +2605,10 @@ Kotagiri Ramamohanarao and Zoltan Somogyi.
 Technical Report 96/45
 </em>
 Department of Computer Science, University of Melbourne, December 1996.
-<a href = "http://www.cs.mu.OZ.AU/publications/tr_db/mu_96_45.ps.gz">
+<a href = "papers/tr_96_45.ps.gz">
 Available here (58K)
 </a>
-<a href = "http://www.cs.mu.OZ.AU/publications/tr_db/mu_96_45_cover.ps.gz">
+<a href = "papers/tr_96_45_cover.ps.gz">
 with cover page.
 </a>
 
