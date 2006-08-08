@@ -22,6 +22,16 @@
 
 $newsdb = array(
 
+"8 August 2006" => array("Support for Unicode characters in string literals",
+
+"The escape sequences <em>\\uXXXX</em> and <em>\\UXXXXXXXX</em> can now
+be used to encode Unicode characters in string literals, where <em>XXXX</em>
+(or <em>XXXXXXXX</em>) is the code point of the desired character in
+hexidecimal.
+The latest <A HREF=\"download/rotd.html\">release of the day</A>
+includes support for this feature.
+"),
+
 "4 April 2006" => array("Mercury 0.13.0-beta available",
 
 "A beta version of the upcoming 0.13.0 release in now available from the
