@@ -27,7 +27,7 @@ $newsdb = array(
 "The escape sequences <em>\\uXXXX</em> and <em>\\UXXXXXXXX</em> can now
 be used to encode Unicode characters in string literals, where <em>XXXX</em>
 (or <em>XXXXXXXX</em>) is the code point of the desired character in
-hexidecimal.
+hexadecimal.
 The latest <A HREF=\"download/rotd.html\">release of the day</A>
 includes support for this feature.
 "),
