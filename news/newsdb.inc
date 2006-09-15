@@ -22,6 +22,14 @@
 
 $newsdb = array(
 
+"14 September 2006" => array("New release",
+
+"We are pleased to announce the release of version 0.13 of the 
+Mercury system.  The new release can be downloaded 
+<a href=\"download/release.html\">here</a>.  For a list of the changes since
+version 0.12 see the <a href=\"download/release-0.13.html\">release notes</a>."
+),
+
 "8 August 2006" => array("Support for Unicode characters in string literals",
 
 "The escape sequences <em>\\uXXXX</em> and <em>\\UXXXXXXXX</em> can now
