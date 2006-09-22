@@ -25,15 +25,6 @@ problems related to using Mercury on specific operating systems
 are described in the README.* files.
 See also the <a href="limitations.html">limitations</a> of the current release.
 
-<p>
-
-Note: please do not be alarmed by the fact that this software has some bugs.
-ALL useful software has bugs.  During the development of the Mercury
-implementation we have found bugs in gcc, as, ld, the dynamic loader,
-and even the OS kernel.  We hope that by listing the known outstanding bugs
-here we are doing our users a service.  It would be disappointing if
-anyone were to infer the wrong thing from it.
-
 <hr>
 
 <b>Subject: bug report - Inf and NaN  <br>
