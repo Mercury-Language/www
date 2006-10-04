@@ -4,7 +4,7 @@ RELEASE_VERSION=0.13.0
 # A name for the next beta-release, e.g. 0.12.2-beta
 # Note: only set this variable to a non-empty value if a source distribution
 # for the next beta release is being built.
-NEXT_BETA_VERSION=
+NEXT_BETA_VERSION=0.13.1-beta
 
 # The CVS tag of the release branch.
 # This is used to check out the documentation sources.
