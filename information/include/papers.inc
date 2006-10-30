@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#wangp-hons">
+Parallel Mercury
+</a>
+</strong>
+<br>
+Peter Wang.
+<em>
+Honours report,
+</em>
+Melbourne, 2006.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#padl06solver">
 Adding constraint solving to Mercury
 </a>
@@ -807,6 +821,37 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="wangp-hons">
+Parallel Mercury
+</a>
+</strong>
+<br>
+Peter Wang.
+<br>
+<em>
+Honours report,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+October 2006.
+<a href = "papers/wangp_hons.ps.gz">
+Available here (216K).
+</a>
+<p>
+Mercury is a purely declarative programming language that is highly
+suited to parallel execution.
+We present two main contributions towards parallel execution of
+Mercury programs.
+The first is a source-to-source transformation
+that allows goals with dependencies to execute in parallel,
+with no negative impact on code which doesn't make use of it.
+The second is the design and implementation of a new parallel
+execution mechanism that allows parallel code to execute far more
+efficiently than in the existing Mercury implementation.
+<p>
 
 <li>
 <strong>

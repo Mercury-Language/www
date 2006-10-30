@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"30 October 2006" => array("New paper",
+
+"We have a new paper available from our 
+<A HREF=\"information/papers.html\">papers page</A> that describes 
+some recent work on parallelism support in Mercury."
+),
+
 "14 September 2006" => array("New release",
 
 "We are pleased to announce the release of version 0.13 of the 
