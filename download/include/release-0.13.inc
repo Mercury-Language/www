@@ -1,3 +1,32 @@
+<h2> New in release 0.13.1 of the Mercury distribution</h2>
+
+This release is primarily a bug-fix release.
+The problems fixed include:
+
+<ul>
+<li> polymorphic insts and mode-specific clauses did not work together.
+<li> polymorphic insts and export pragmas did not work together.
+<li> the compiler was not correctly enforcing the restriction that type
+     variables in instance declarations should be distinct.
+<li> the compiler sometimes performed superclass reduction incorrectly,
+     causing it to reject valid typeclass constraints.
+<li> installation of static archives on Mac OS X using mmc --make now
+     works correctly.  Previously, static archives caused linking problems
+     because the table of contents was not being updated after installation.
+<li> non-exported typeclasses sometimes resulted in incomplete interface
+     files being generated.
+</ul>
+
+<p>
+
+In addition to the above bug-fixes we have the following addition to the 
+standard library.
+
+<ul>
+<li> We have added a new module `rtree', that provides region trees.  
+     These are a standard data structure for querying spatial information.
+</ul>
+
 <h2>New in release 0.13 of the Mercury distribution</h2>
 
 <h3>HIGHLIGHTS</h3>

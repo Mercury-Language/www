@@ -60,19 +60,19 @@ function links_to_file ($filename, $onSunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
-Mercury 0.13.0 was released on September 14, 2006.
+Mercury 0.13.1 was released on December 1, 2006.
 
 <h3>Information</h3>
 
 <ul>
 <li> <a href = "release-0.13.html">
-     Release notes for 0.13.0
+     Release notes for 0.13.1
      </a>
 <li> <a href = "release-0.13-contents.html">
-     Contents of release 0.13.0 distribution
+     Contents of release 0.13.1 distribution
      </a>
 <li> <a href = "release-0.13-bugs.html">
-     Known problems with release 0.13.0
+     Known problems with release 0.13.1
      </a>
 <li> <a href = "limitations.html">
      Limitations of the current release.
@@ -203,19 +203,19 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (15 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.13.0.tar.gz", "yes") ?>
+<? links_to_file("mercury-compiler-0.13.1.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-0.13.0.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-0.13.1.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (914 kb)
 <dd>
-<? links_to_file("mercury-tests-0.13.0.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-0.13.1.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-Binary distributions for 0.13.0 are not yet available.
+Binary distributions for 0.13.1 are not yet available.
