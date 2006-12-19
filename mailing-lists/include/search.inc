@@ -1,7 +1,11 @@
 <h1>
 Mercury Mailing List Search</H1>
 <hr noshade size=4>
-This search will allow you to search the contents of
+You can use either our
+<a href="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">
+Google custom search engine
+</a>
+or the HtDig interface below to search the contents of
 the Mercury mailing lists.
 <br>
 <p>
