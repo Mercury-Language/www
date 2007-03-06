@@ -22,6 +22,11 @@
 
 $newsdb = array(
 
+"6 March 2007" => array("Remove support for Unicode characters in string literals",
+
+"This feature has been removed because of concerns that it might lead users
+to believe that Mercury offers full Unicode support, which is not the case."),
+
 "1 December 2006" => array("Mercury 0.13.1 released",
 
 "Release information is available
