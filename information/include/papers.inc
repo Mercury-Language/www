@@ -1680,7 +1680,8 @@ since inference does not perform reordering.
 In this paper we develop a mode inference system for Mercury
 based on mapping each predicate to a system of Boolean constraints
 that describe where its variables can be produced.
-This allows us handle programs that are not supported by the existing system.
+This allows us to handle programs that are not supported by the existing
+system.
 <p>
 
 <li>
