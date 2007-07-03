@@ -12,7 +12,7 @@ ifndef WWW_DOMAIN
 endif
 BETA_WEBDIR="$(INSTALL_WEBDIR)/download/files/beta-releases/rotd"
 ifndef BETA_FTPDIR
-	BETA_FTPDIR="/home/ftp/pub/mercury/beta-releases/rotd"
+	BETA_FTPDIR="/home/earth/ftp/pub/mercury/beta-releases/rotd"
 endif
 CP=cp -af
 
