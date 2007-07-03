@@ -59,8 +59,8 @@ local:
 		echo "DVIPS=dvips"  >> Mmake.common && \
 		echo "PDFTEX=pdftex"  >> Mmake.common && \
 		echo 'include $$(MERCURY_DIR)/VERSION'  >> Mmake.common && \
-		(cd doc && mmake split_html ps pdf) && \
-		$(CP) doc/*.html doc/*.ps doc/*.pdf $$doc_dir && \
+		(cd doc && mmake split_html pdf) && \
+		$(CP) doc/*.html doc/*.pdf $$doc_dir && \
 		if [ -d doc/mercury_ref ]; then \
 		    	$(CP) doc/mercury_ref doc/mercury_user_guide \
 				doc/mercury_library doc/mercury_faq \
@@ -69,7 +69,6 @@ local:
 		else \
 			true; \
 		fi && \
-		(cd $$doc_dir && gzip -f -9 *.ps) && \
 		cd $$info_dir || { \
 			echo "*** copying documentation failed" 1>&2; \
 			exit 1; \
