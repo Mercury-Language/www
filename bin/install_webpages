@@ -6,17 +6,16 @@
 # search database and installing the web pages.
 #
 # Note this script must be run on a machine with php3, hypermail and htdig
-# installed, ie ceres, have the INSTALL_WEBDIR environment variable set
+# installed, i.e, earth, have the INSTALL_WEBDIR environment variable set
 # and be run from the top level directory of the w3 module.
 #
 
-# www_host=venus
-www_host=ceres
+www_host=earth
 
 PATH=/usr/local/bin:$PATH
 export PATH
 
-CVSROOT=/home/mercury1/repository
+CVSROOT=/home/mercury/mercury1/repository
 export CVSROOT
 
 echo Install started at `date`
