@@ -30,17 +30,17 @@ Anonymous Access:
 <ul>
 	<li> The CVS server is running on <b>cvs.mercury.cs.mu.oz.au</b>,
 	and the
-	repository is in the directory <b>/home/mercury1/repository</b>
+	repository is in the directory <b>/home/mercury/mercury1/repository</b>
 	<li> The anonymous access account is called <i>guest</i> with a
 		password of <i>guest</i>
 	<li> To login (you need to do this just once)
 <pre>
-	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury1/repository login
+	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury/mercury1/repository login
 </pre>
 	<li> The password is <i>guest</i>
 	<li> To checkout a module 
 <pre>
-	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury1/repository checkout mercury
+	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury/mercury1/repository checkout mercury
 </pre>
 	<li> There is a list of modules later in this page.
 
@@ -83,7 +83,7 @@ Getting Write Access:
 	<li> If you do not have an ssh version 2 key pair on your machine you
 	will need to generate one using
 	<pre>
-	ssh-keygen -t
+	ssh-keygen -t rsa
 	</pre>
 
 	<li> Send your public key <tt>.ssh/id_rsa.pub</tt> to a member of the
@@ -92,12 +92,12 @@ Getting Write Access:
 	<ol>
 		<li>
 			Create an account for the new user on
-			cvs.mercury.cs.mu.oz.au (a.k.a venus).
+			cvs.mercury.cs.mu.oz.au (a.k.a jupiter).
 			The password field in <tt>/etc/passwd</tt> should
 			contain only an asterisk (<tt>*</tt>)
 			to prevent the user logging in.
 			A good place for the user's home directory
-			is <tt>/home/venus/<i>username</i></tt>.
+			is <tt>/home/jupiter/<i>username</i></tt>.
 		</li>
 		<li> Create a file <tt>.ssh/authorized_keys</tt> in the
 			user's home directory and add the user's public key to
@@ -127,7 +127,7 @@ Then (once your account is set up):
 
 	<li> Set your CVSROOT environment variable to
 	<pre>
-	:ext:username@cvs.mercury.cs.mu.oz.au:/home/mercury1/repository
+	:ext:username@cvs.mercury.cs.mu.oz.au:/home/mercury/mercury1/repository
 	</pre>
 	  Make sure this environment variable is exported (in sh
 	  based shells, "export CVSROOT", in csh based shells, use
@@ -164,14 +164,13 @@ Then (once your account is set up):
 	<li> The CVS modules you might need access to are:
 		<dl>
 	  	<dt>mercury	<dd> the mercury compiler, runtime, library,
-				  extras and documentation. (8.9Mb)
+				  extras and documentation (big)
 	  	<dt>mercury-gcc	<dd> the mercury-gcc distribution;
 				  this contains part of the source for the
 				  <a href="http://www.mercury.cs.mu.oz.au/download/gcc-backend.html">native code
 				  back-end</a>
-	  	<dt>tests	<dd> test cases for the compiler (0.72Mb)
-		<dt>clpr	<dd> the CLP(R) interface (0.88Mb)
-		<dt>w3		<dd> the www page (7.5Mb - lots of papers)
+	  	<dt>tests	<dd> test cases for the compiler (big)
+		<dt>w3		<dd> the www page (several Mb - lots of papers)
 		</dl>
 
 	  CVS should compress most of this stuff while sending it.
@@ -223,7 +222,7 @@ NOTE:
 Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
 or see our <a href = "../../contact.html" >contact</a> page.<br>
 
-Last update was $Date: 2002-11-04 13:12:30 $ by $Author: stayl $@cs.mu.oz.au
+Last update was $Date: 2007-07-25 06:59:31 $ by $Author: zs $@cs.mu.oz.au
 </body>
 </html>
 
