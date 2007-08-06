@@ -22,6 +22,15 @@
 
 $newsdb = array(
 
+"6 August 2007" => array("Erlang backend",
+
+"There's a new back-end for the Mercury compiler that compiles to Erlang, so
+that Mercury programs can run on the Erlang runtime system.  The goal is to
+allow Mercury programs to take advantage of the Erlang implementation's support
+for scalable and reliable server programs.  It also allows for interoperability
+between Mercury and Erlang code.  This back-end was implemented by Mission
+Critical IT (Australia)."),
+
 "6 March 2007" => array("Remove support for Unicode characters in string literals",
 
 "This feature has been removed because of concerns that it might lead users
