@@ -9,7 +9,7 @@ programming language, its implementation techniques, design, theoretical
 basis and other topics. In addition, we have written several papers
 on <a href = "papers.html#related">related</a> topics.
 Almost all are available here as postscript
-files, compressed using gzip.
+files, compressed using gzip, or as PDF.
 <p>
 Below the papers, the notes from a number of <a
 href="papers.html#presentations">presentations</a> given on
@@ -564,6 +564,22 @@ Thomas Conway.
 <ul>
 <li>
 <strong>
+<a href = "papers.html#mc_swese_2007">
+Ontology Driven Software Engineering for Real Life Applications
+</a>
+</strong>
+<br>
+Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
+Nikolay Pelov
+<em>
+3rd International Workshop on Semantic Web Enabled
+Software Engineering (SWESE 2007)
+</em>
+Innsbruck, Austria, 2007.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#mu_97_23">
 Termination analysis for logic programs
 </a>
@@ -634,6 +650,20 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
 
 <ul>
+
+<li>
+<strong>
+<a href = "papers.html#mc_owl_mercury_talk_14_08_2007">
+Ontology Driven Software Development with Mercury.
+</a>
+</strong>
+<br>
+Ian MacLarty, Peter Ross,
+<em>
+University of Melbourne,
+</em>
+14 August 2007. 
+<p>
 
 <li>
 <strong>
@@ -821,6 +851,35 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="mc_swese_2007">
+Ontology Driven Software Engineering for Real Life Applications
+</a>
+</strong>
+<br>
+Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
+Nikolay Pelov
+<br>
+<em>
+3rd International Workshop on Semantic Web Enabled
+Software Engineering (SWESE 2007)
+</em>
+Innsbruck, Austria, 2007.
+<a href = "papers/mc_swese_2007.pdf">
+Available here (121K).
+</a>
+<p>
+In this paper we introduce ODASE (Ontology Driven Architecture for Software
+Engineering). We present how we used ODASE to build a 250 person month
+e-insurance project for a multi-national insurance firm, where only 35% of the
+requirements were known at kick- off.  We required one third of the time of the
+next closest quote for the project, and a similar project built classically at
+another insurance firm required also around three times the resources.
+[The ODASE platform uses Mercury as its implementation language.]
+
+<p>
 
 <li>
 <strong>
@@ -2695,6 +2754,23 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name = "mc_owl_mercury_talk_14_08_2007">
+Ontology Driven Software Development with Mercury.
+</a>
+</strong>
+<br>
+Ian MacLarty, Peter Ross
+<em>
+University of Melbourne.
+</em>
+14 August 2007. 
+<a href = "papers/mc_owl_mercury_talk_14_08_2007.pdf">
+Available here (370K).
+</a>
+<p>
 
 <li>
 <strong>

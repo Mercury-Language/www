@@ -22,6 +22,11 @@
 
 $newsdb = array(
 
+"14 August 2007" => array("New Paper and Talk",
+"A paper and a presentation have been added to the
+<A HREF=\"information/papers.html\">papers page</A> describing how
+Mission Critical is using Mercury in the \"real world\"."),
+
 "6 August 2007" => array("Erlang backend",
 
 "There's a new back-end for the Mercury compiler that compiles to Erlang, so
