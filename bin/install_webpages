@@ -66,30 +66,33 @@ make delete_old_rotds || echo "*** make delete_old_rotds failed" 1>&2
     #
     # Reindex the web site for searching.
     #
-echo Reindex of website started at `date`
-umask 002
-
-    # Index the web-site for searching.
-htdig -c /etc/htdig/htdig-mercury.conf -a -i || {
-	echo "*** htdig failed" 1>&2
-	exit 1
-}
-htmerge -c /etc/htdig/htdig-mercury.conf -a || {
-	echo "*** htmerge failed" 1>&2
-	exit 1
-}
-
-    # Replace the work files with their alternate versions.
-cd /var/lib/htdig || {
-	echo "*** can't cd to /var/lib/htdig" 1>&2
-	exit 1
-}
-for file in `ls *.work`
-do
-    mv $file `basename $file .work` || {
-	echo "*** mv failed" 1>&2
-	exit 1
-    }
-done
+# XXX Commented out until htdig-mercury.conf is updated to work with
+#     the current version of htdig.  (Actually, we'll probably just
+#     not use it at all and rely on the google custom search engine instead.)
+#echo Reindex of website started at `date`
+#umask 002
+#
+#    # Index the web-site for searching.
+#htdig -c /etc/htdig/htdig-mercury.conf -a -i || {
+#	echo "*** htdig failed" 1>&2
+#	exit 1
+#}
+#htmerge -c /etc/htdig/htdig-mercury.conf -a || {
+#	echo "*** htmerge failed" 1>&2
+#	exit 1
+#}
+#
+#    # Replace the work files with their alternate versions.
+#cd /var/lib/htdig || {
+#	echo "*** can't cd to /var/lib/htdig" 1>&2
+#	exit 1
+#}
+#for file in `ls *.work`
+#do
+#    mv $file `basename $file .work` || {
+#	echo "*** mv failed" 1>&2
+#	exit 1
+#    }
+#done
 
 echo Install finished at `date`
