@@ -152,3 +152,9 @@ if($menu == "Contact") {
 <P>
 
 <B><a href="<?echo $root?>/search.html">Search</a></B><BR>
+
+<P>
+
+<B><a href="http://bugs.mercury.csse.unimelb.edu.au">Bug Database</a></B>
+
+<P>

@@ -22,6 +22,14 @@
 
 $newsdb = array(
 
+"21 September 2007" => array("Bug Tracking System",
+"The Mercury project now uses the Mantis bug tracking system
+to keep track of bug reports.  The Mercury bug database may
+be accessed via the
+<a href=\"http://bugs.mercury.csse.unimelb.edu.au\">Bug Database</a>
+link in the menu at the side of this page."),
+
+
 "14 August 2007" => array("New Paper and Talk",
 "A paper and a presentation have been added to the
 <A HREF=\"information/papers.html\">papers page</A> describing how
