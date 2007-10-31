@@ -22,6 +22,20 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#lmika-hons">
+Software transactional memory in Mercury
+</a>
+</strong>
+<br>
+Leon Mika.
+<em>
+Honours report,
+</em>
+Melbourne, 2007.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#wangp-hons">
 Parallel Mercury
 </a>
@@ -879,6 +893,38 @@ next closest quote for the project, and a similar project built classically at
 another insurance firm required also around three times the resources.
 [The ODASE platform uses Mercury as its implementation language.]
 
+<p>
+
+<li>
+<strong>
+<a name="lmika-hons">
+Software transactional memory in Mercury
+</a>
+</strong>
+<br>
+Leon Mika
+<br>
+<em>
+Honours report,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+October 2007.
+<a href = "papers/lmika_hons.pdf">
+Available here (220K).
+</a>
+<p>
+Concurrent programming is now becoming more important than ever.
+But for concurrent
+programs to work deterministically, sections of the code must be synchronised.
+The most common method of synchronising code is to protect the code with locks.
+However, code which uses locks is difficult to write and even more difficult
+to debug.
+Locking also makes it difficult to compose large programs from smaller ones.
+A relatively new method of synchronisation, known as Software Transactional
+Memory, is promising to be a much easier method of synchronisation.
+This thesis describes the design and implementation
+of a Software Transactional Memory system in Mercury.
 <p>
 
 <li>
