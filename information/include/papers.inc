@@ -1017,9 +1017,9 @@ Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi,
 Proceedings of the Seventh International Colloquim
 on Implementation of Constraint and Logic Programming Systems,
 </em>
-Porto, Portugal, September 2007,
+Porto, Portugal, September 2007.
 <a href = "papers/ciclops07.ps.gz">
-Available here (156k)
+Available here (156k).
 </a>
 <p>
 Logic programming systems often need to deal with large but otherwise
