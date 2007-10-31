@@ -22,6 +22,21 @@ Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#packrat-padl08">
+DCGs + Memoing = Packrat Parsing; But is it worth it?
+</a>
+</strong>
+<br>
+Ralph Becket and Zoltan Somogyi,
+<em>
+Proceedings of the Tenth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+San Francisco, California, January 2008.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#lmika-hons">
 Software transactional memory in Mercury
 </a>
@@ -32,6 +47,21 @@ Leon Mika.
 Honours report,
 </em>
 Melbourne, 2007.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#exo-ciclops07">
+Dealing with large predicates: exo-compilation in the WAM and in Mercury
+</a>
+</strong>
+<br>
+Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi,
+<em>
+Proceedings of the Seventh International Colloquim
+on Implementation of Constraint and Logic Programming Systems,
+</em>
+Porto, Portugal, September 2007.
 <p>
 
 <li>
@@ -897,12 +927,60 @@ another insurance firm required also around three times the resources.
 
 <li>
 <strong>
+<a name="packrat-padl08">
+DCGs + Memoing = Packrat Parsing; But is it worth it?
+</a>
+</strong>
+<br>
+Ralph Becket and Zoltan Somogyi,
+<em>
+Proceedings of the Tenth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+San Francisco, California, January 2008,
+Springer Verlag, &copy;.
+Available in
+<a href = "papers/packrat.pdf">
+pdf (176k)
+</a>
+or
+<a href = "papers/packrat.ps.gz">
+ps.gz (145k)
+</a>
+formats.
+<p>
+Packrat parsing is a newly popular technique
+for efficiently implementing recursive descent parsers.
+Packrat parsing avoids the potential exponential costs of
+recursive descent parsing with backtracking
+by ensuring that each production rule in the grammar
+is tested at most once against each position in the input stream.
+This paper argues that
+<ul>
+<li> packrat parsers can be trivially implemented
+using a combination of definite clause grammar rules and memoing,
+and that
+<li> packrat parsing may actually be significantly <em>less</em> efficient
+than plain recursive descent with backtracking,
+but
+<li> memoing the recognizers of just one or two nonterminals,
+selected in accordance with Amdahl's law, can sometimes yield speedups.
+</ul>
+We present experimental evidence to support these claims.
+<p>
+The benchmark data on which the performance evaluation section of this paper
+is based is
+<a href = "papers/packrat.package.tar.gz">available here (2.6M)</a>.
+<p>
+
+<li>
+<strong>
 <a name="lmika-hons">
 Software transactional memory in Mercury
 </a>
 </strong>
 <br>
-Leon Mika
+Leon Mika,
 <br>
 <em>
 Honours report,
@@ -925,6 +1003,45 @@ A relatively new method of synchronisation, known as Software Transactional
 Memory, is promising to be a much easier method of synchronisation.
 This thesis describes the design and implementation
 of a Software Transactional Memory system in Mercury.
+<p>
+
+<li>
+<strong>
+<a name="exo-ciclops07">
+Dealing with large predicates: exo-compilation in the WAM and in Mercury
+</a>
+</strong>
+<br>
+Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi,
+<em>
+Proceedings of the Seventh International Colloquim
+on Implementation of Constraint and Logic Programming Systems,
+</em>
+Porto, Portugal, September 2007,
+<a href = "papers/ciclops07.ps.gz">
+Available here (156k)
+</a>
+<p>
+Logic programming systems often need to deal with large but otherwise
+regular predicates, e.g. wide ground facts. Such predicates can be
+treated as any other predicate by the compiler, but there are good
+reasons to treat them specially,
+the most important being that
+separating the code from the data really pays off.
+We call the technique exo-compilation:
+it reduces the memory needed for the code to about one third of the
+normal WAM compilation schema without undue slowdown. As a bonus,
+queries with lots of void variables get a significantly better
+treatment.
+<p>
+We first introduce the idea of exo-compilation by an example
+and present its implementation in hProlog.
+We show
+how other optimisations can be built on top of it,
+and evaluate how it performs in practice.
+We then show that the same ideas can also be applied
+(albeit in a slightly different form)
+to Mercury, whose implementation is based on very different principles.
 <p>
 
 <li>
