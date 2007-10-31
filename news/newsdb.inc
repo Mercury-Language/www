@@ -22,6 +22,15 @@
 
 $newsdb = array(
 
+"1 November 2007" => array("Three new papers",
+"We have three new papers available from our 
+<A HREF=\"information/papers.html\">papers page</A>.
+One is on the handling of large predicates
+by Prolog and Mercury implementations,
+one is on a software transactional memory system for Mercury,
+and one is a comparison of packrat parsing and memoed DCG parsers."
+),
+
 "21 September 2007" => array("Bug Tracking System",
 "The Mercury project now uses the Mantis bug tracking system
 to keep track of bug reports.  The Mercury bug database may
