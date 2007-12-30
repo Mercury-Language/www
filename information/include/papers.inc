@@ -11,9 +11,9 @@ on <a href = "papers.html#related">related</a> topics.
 Almost all are available here as postscript
 files, compressed using gzip, or as PDF.
 <p>
-Below the papers, the notes from a number of <a
-href="papers.html#presentations">presentations</a> given on
-Mercury, at a variety of levels, are also available.
+Below the papers, the notes from a number of
+<a href="papers.html#presentations">presentations</a>
+given on Mercury, at a variety of levels, are also available.
 
 <h2>Contents</h2>
 <h3><a href = "papers.html#mercury">Papers on Mercury</a></h3>
@@ -2917,6 +2917,23 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a href="papers.html#packrat-padl08">
+DCGs + Memoing = Packrat Parsing; But is it worth it?
+</a>
+</strong>
+<br>
+Ralph Becket and Zoltan Somogyi,
+<em>
+Proceedings of the Tenth International Symposium
+on Practical Aspects of Declarative languages,
+</em>
+San Francisco, California, January 2008.
+<a href = "papers/packrat_talk.pdf">
+Available here (140K).
+<p>
 
 <li>
 <strong>
