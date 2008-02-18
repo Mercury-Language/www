@@ -40,6 +40,7 @@ mcorba.html: mcorba_newsdb.inc
 install: local_install
 
 local_install:
+	/bin/rm -rf "$(INSTALL_WEBDIR)/images"
 	$(CP) images $(INSTALL_WEBDIR)
 	chgrp -R mercury $(INSTALL_WEBDIR)/images
 	chmod -R g+w,a+rx $(INSTALL_WEBDIR)/images
