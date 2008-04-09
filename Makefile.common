@@ -14,7 +14,7 @@ BETA_WEBDIR="$(INSTALL_WEBDIR)/download/files/beta-releases/rotd"
 ifndef BETA_FTPDIR
 	BETA_FTPDIR="/home/earth/ftp/pub/mercury/beta-releases/rotd"
 endif
-CP=cp -af
+CP=cp -fdR --preserve=ownership,timestamps
 
 #-----------------------------------------------------------------------------#
 
