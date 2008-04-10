@@ -69,7 +69,7 @@ if($menu == "Mailing Lists") {
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-developers/list.html">Developers</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-reviews/list.html">Reviews</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">Users</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/search.html">Search</a><BR>
+  &nbsp;&nbsp;<a href="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">Search</a><BR>
 </SMALL>
 <?
 }

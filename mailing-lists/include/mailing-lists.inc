@@ -14,21 +14,21 @@ of the Mercury implementation, tools for Mercury programmers
 The <code>mercury-users</code> list is intended for general discussion
 about Mercury and related matters of interest to Mercury users.<br>
 It is <A HREF="mercury-users/list.html">archived</A> and
-<A HREF="search.html">searchable</A>.
+<A HREF="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">searchable</A>.
 
 <li> The <code>mercury-ads</code> list is intended for advertisments of things
 that are not directly related to Mercury but which may be of interest to
 Mercury users, e.g. job ads, conference announcements, calls for
 papers/participation, and the like.<br>
 It is <A HREF="mercury-ads/list.html">archived</A> and
-<A HREF="search.html">searchable</A>.
+<A HREF="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">searchable</A>.
 
 <li>
 The <code>mercury-developers</code> list is intended for general discussion
 about the development of Mercury and the Mercury implementation and related
 matters of interest to the developers of Mercury.<br>
 It is <A HREF="mercury-developers/list.html">archived</A> and
-<A HREF="search.html">searchable</A>.
+<A HREF="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">searchable</A>.
 Note that in recent times, most the actual development discussion seems to be
 done on the mercury-reviews list, rather than mercury-developers.<br>
 
@@ -39,7 +39,7 @@ Mercury, for the purpose of reviewing changes to the Mercury implementation
 list is specifically for posting diffs, reviews of diffs, and discussion of
 issues raised in such reviews.  It tends to be a fairly high-volume list.<br>
 It is <A HREF="mercury-reviews/list.html">archived</A> and
-<A HREF="search.html">searchable</A>.
+<A HREF="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">searchable</A>.
 </ul>
 
 <h3>Subscribing and unsubscribing</h3>
