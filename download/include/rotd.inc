@@ -31,8 +31,8 @@ The latest release of the day is version <b><? echo $rotd_version; ?></b>.
 Please treat ROTDs with caution -- although they are often very
 useful and reasonably stable, they are not widely tested, and
 may have unfinished features and rough edges.  We are still interested
-in feedback and bug reports on the ROTDs.  Please send bug reports to 
-<a href="mailto:mercury-bugs@cs.mu.oz.au">mercury-bugs@cs.mu.oz.au</a>.
+in feedback and bug reports on the ROTDs.  Please file bug reports in our
+<a href="http://bugs.mercury.csse.unimelb.edu.au">bug database</a>.
 
 <h3>Information</h3>
 
