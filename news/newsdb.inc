@@ -22,6 +22,24 @@
 
 $newsdb = array(
 
+"29 April 2008" => array("Currying of multi-moded predicates",
+"We now support currying of multi-moded predicates where the mode to
+use can be determined from the curried arguments.
+For example one can now use expressions such as
+list.foldl(list.foldl(int.plus), [[1, 2], [3, 4]], 0), which were previously
+not supported.
+This feature was added by Mission Critical Australia."
+),
+
+"28 April 2008" => array("Implementation-defined literals",
+"We now support &quot;implementation-defined literals&quot;.  These are
+symbolic names that are replaced by context-dependent values at compile time.
+Examples include \$file, which is replaced by a string containing the name
+of the file in which it appears, and \$line which is replaced by an integer
+representing the current line number.
+This feature was added by Mission Critical Australia."
+),
+
 "1 November 2007" => array("Three new papers",
 "We have three new papers available from our 
 <A HREF=\"information/papers.html\">papers page</A>.
