@@ -26,8 +26,9 @@ $newsdb = array(
 "We now support currying of multi-moded predicates where the mode to
 use can be determined from the curried arguments.
 For example one can now use expressions such as
-list.foldl(list.foldl(int.plus), [[1, 2], [3, 4]], 0), which were previously
-not supported.
+list.foldl(list.foldl(int.plus), [[1, 2], [3, 4]], 0),
+that previously had to be written using explicit lambda
+expressions.
 This feature was added by Mission Critical Australia."
 ),
 
