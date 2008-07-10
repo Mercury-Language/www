@@ -6,6 +6,7 @@ at the University of Melbourne:
 <ul>
 <li> <a href = "http://www.cs.mu.oz.au/~rafe/">Ralph Becket</a>,
 rafe@cs.mu.oz.au, research fellow 
+<li> Paul Bone, pbone@cs.mu.oz.au, honours student
 <li> Mark Brown, mark@cs.mu.oz.au, research assistant 
 <li> Julien Fischer, juliensf@cs.mu.oz.au, masters student
 <li> Ian MacLarty, maclarty@cs.mu.oz.au, masters student 
