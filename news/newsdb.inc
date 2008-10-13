@@ -22,6 +22,17 @@
 
 $newsdb = array(
 
+"13 October 2008" => array("Google protocol buffers for Mercury",
+"Google protocol buffers allows a extensible binary protocol to be
+defined in a programming language independent .proto file.
+The protoc compiler then generates APIs for the protocol in C++, Java
+or Python.
+protoc has recently been extended with basic support for Mercury.
+The extension is available from
+<a href=\"http://code.google.com/p/protobuf-mercury/\">the protobuf-mercury
+project site</a>."
+),
+
 "29 April 2008" => array("Currying of multi-moded predicates",
 "We now support currying of multi-moded predicates where the mode to
 use can be determined from the curried arguments.
