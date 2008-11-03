@@ -22,6 +22,21 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href = "papers.html#pbone-hons">
+Calculating likely Parallelism within Dependant Conjunctions
+for Logic Programs
+</a>
+</strong>
+<br>
+Paul Bone.
+<em>
+Honours report,
+</em>
+Melbourne, 2008.
+<p>
+
+<li>
+<strong>
 <a href="papers.html#packrat-padl08">
 DCGs + Memoing = Packrat Parsing; But is it worth it?
 </a>
@@ -923,6 +938,52 @@ next closest quote for the project, and a similar project built classically at
 another insurance firm required also around three times the resources.
 [The ODASE platform uses Mercury as its implementation language.]
 
+<p>
+
+<li>
+<strong>
+<a name="pbone-hons">
+Calculating likely Parallelism within Dependant Conjunctions
+for Logic Programs
+</a>
+</strong>
+<br>
+Paul Bone.
+<br>
+<em>
+Honours report,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+October 2008.
+<a href = "papers/pbone_hons.pdf">
+Available here (265K).
+</a>
+<p>
+The rate at which computers are becoming faster at sequential execution has
+dropped significantly.  Instead parallel processing power is increasing, and
+multicore computers are becoming more common.  Automatically parallelising
+programs is becoming much more desirable.  Parallelising programs written in
+imperative programming languages is difficult and often leads to unreliable
+software.  Parallelising programs in declarative languages is easy, to the
+extent that compilers are able to do this automatically.  However this often
+leads to cases where the overheads of parallel execution outweigh the speedup
+that might have been available by parallelising the program.
+<p>
+This thesis describes a new implicit parallelism implementation that calculates
+the speedup due to parallelism in dependent conjunctions for Mercury --- a
+purely declarative logic programming language.  This is done by analysing
+profiling data and a representation of the program in order to determine when
+during the execution of a parallel conjunct variables are likely to be produced
+and consumed.  This enables us to calculate how long a conjunct may have to
+wait for a variable to be produced, and how much parallelism is actually
+available in a parallel conjunction.  This information should enable the
+compiler to parallelise a program only in places where doing so is profitable.
+<p>
+We expect that two of the components we implemented for our implicit
+parallelism analysis, coverage profiling and a generic feedback framework, will
+also be quite useful in other applications.  For example this can help the
+compiler select the best calls to inline.
 <p>
 
 <li>
