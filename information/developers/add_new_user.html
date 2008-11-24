@@ -11,7 +11,7 @@ If the new user doesn't already have an account on our departmental machines,
 get the departmental sysadmins to add an account for him/her.
 
 Create a directory for the new user on /home/mercury.  (You need to
-be root on swordfish to do this).  
+be root on uranus to do this).  
 
 Our NIS servers are listed in the hosts file, which is in the CVS module
 local.
@@ -19,18 +19,27 @@ local.
 Get the new user's existing /etc/passwd entry from a departmental machine,
 and then add it to /etc/passwd
 on the NIS master server (using adduser or useradd to be safe).
-If the NIS master has an /etc/shadow file,
+The new entry should be below the "+::0:0:::" entry
+that divides the password file
+into the local users and the NIS users.
+Make sure that the new user's home directory on our machines is the one
+you created on /home/mercury.
+
+If the NIS master machine has an /etc/shadow file,
 add the user to that file as well.
 Make sure that the numerical user ids
 are identical to the ones on departmental machines.
-
-Make sure that the new user's home directory on our machines is the one
-you created on /home/mercury.
 
 <P>
 
 Add the new user to group mercury in /etc/group on the NIS master server
 (using vigr to be safe).
+
+<P>
+
+If you did not copy an existing encrypted password,
+then set the password for the new user
+by executing "passwd <username>" as root.
 
 <P>
 
@@ -40,6 +49,12 @@ update the NIS database.
 <P>
 cd /var/yp<BR>
 make<BR>
+
+<P>
+
+To make sure that the update to the NIS master
+is effective on a particular NIS client,
+restart the NIS daemon on that client.
 
 <P>
 
@@ -55,7 +70,7 @@ by modifying the file mulga:/etc/conf/mail/lists/mercury-local.
 
 <P>
 
-Last update was $Date: 2006-10-26 02:10:12 $ by $Author: zs $@cs.mu.oz.au.
+Last update was $Date: 2008-11-24 04:13:49 $ by $Author: zs $@cs.mu.oz.au.
 </body>
 
 </html>
