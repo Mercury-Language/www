@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"3 November 2008" => array("New paper",
+"We have a new paper available from our 
+<A HREF=\"information/papers.html\">papers page</A> that describes 
+some recent work on automatically introducing parallelism in Mercury programs
+based on profiling data."
+),
+
 "13 October 2008" => array("Google protocol buffers for Mercury",
 "Google protocol buffers allows a extensible binary protocol to be
 defined in a programming language independent .proto file.
