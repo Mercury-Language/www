@@ -10,7 +10,7 @@
 # and be run from the top level directory of the w3 module.
 #
 
-www_host=earth
+www_host=uranus
 
 PATH=/usr/local/bin:$PATH
 export PATH
