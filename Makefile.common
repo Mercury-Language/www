@@ -71,8 +71,8 @@ ifdef DIRS
 		cd $$dir && $(MAKE) install);				\
 	done
 endif
-	chmod a+r,g+w $(INSTALL_WEBDIR)/*
-	chgrp mercury $(INSTALL_WEBDIR)/*
+	-chmod a+r,g+w $(INSTALL_WEBDIR)/*
+	-chgrp mercury $(INSTALL_WEBDIR)/*
 
 .PHONY: clean
 clean:
