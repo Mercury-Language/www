@@ -22,6 +22,15 @@
 
 $newsdb = array(
 
+"5 February 2009" => array("New standard library modules",
+"We have added two new modules to the standard library: parsing_utils and
+calendar.
+parsing_utils is a set of utilities to help with writing recursive
+descent parsers.  calendar contains utilities for working with dates
+in the Gregorian calendar.
+Both modules are available in the latest release of the day."
+),
+
 "3 November 2008" => array("New paper",
 "We have a new paper available from our 
 <A HREF=\"information/papers.html\">papers page</A> that describes 
