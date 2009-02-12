@@ -18,6 +18,8 @@ HTML=	index.html 		\
 	contributions.html	\
 	search.html
 
+XML=    rss.xml
+
 DIRS=contact download htdig information mailing-lists tutorial
 ROOT=.
 

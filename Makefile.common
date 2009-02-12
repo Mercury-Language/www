@@ -27,6 +27,7 @@ vpath %.inc $(ROOT)/include
 vpath %.inc $(ROOT)/news
 
 $(HTML): %.html: %.php3 %.inc globals.inc menubar.inc template.inc functions.inc
+$(XML): %.xml: %.php3 functions.inc
 
 #-----------------------------------------------------------------------------#
 
@@ -34,7 +35,7 @@ $(HTML): %.html: %.php3 %.inc globals.inc menubar.inc template.inc functions.inc
 
 
 .PHONY: html
-html: $(HTML)
+html: $(HTML) $(XML)
 ifdef DIRS
 	for dir in $(DIRS); 				\
 	do 						\
@@ -60,6 +61,9 @@ install: html
 	[ -d $(INSTALL_WEBDIR) ] || mkdir -p $(INSTALL_WEBDIR)
 ifdef HTML
 	$(CP) $(HTML) $(INSTALL_WEBDIR)/
+endif
+ifdef XML
+	$(CP) $(XML) $(INSTALL_WEBDIR)/
 endif
 ifdef DIRS
 	for dir in $(DIRS);						\
@@ -93,6 +97,9 @@ touch:
 #-----------------------------------------------------------------------------#
 
 %.html: %.php3
+	$(PHP3) $< > $@
+
+%.xml: %.php3
 	$(PHP3) $< > $@
 
 #-----------------------------------------------------------------------------#

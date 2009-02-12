@@ -22,6 +22,13 @@
 
 $newsdb = array(
 
+"9 February 2009" => array("RSS Feed",
+"You can now receive Mercury news items via an RSS feed by subscribing
+to the following URL: 
+<a href=\"$root/rss.xml\">http://www.mercury.csse.unimelb.edu.au/rss.xml</a>
+"
+),
+
 "5 February 2009" => array("New standard library modules",
 "We have added two new modules to the standard library: parsing_utils and
 calendar.

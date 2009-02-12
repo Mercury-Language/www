@@ -17,6 +17,20 @@ function newsitem($date, $item) {
 	echo "</td></tr>";
 }
 
+function rssitem($date, $item) {
+
+	list($title, $news) = $item;
+	list($day, $month, $year) = split(" ",$date);
+	$month = substr($month, 0, 3);
+	$news = htmlspecialchars($news);
+
+	echo "<item>\n";
+	echo "<title>$title</title>\n";
+	echo "<description>$news</description>\n";
+	echo "<pubDate>$day $month $year 00:00 +1000</pubDate>\n";
+	echo "</item>\n";
+}
+
 function reportitem($date, $item) {
 	global $root;
 
