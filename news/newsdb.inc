@@ -22,6 +22,14 @@
 
 $newsdb = array(
 
+"27 July 2009" => array("New Presentation",
+"
+The slides for a recent talk entitled &quot;Writing Business Rules Engines in
+Mercury&quot; are now available from the 
+<A HREF=\"information/papers.html#fpu_rules_2009\">papers page</A>.
+"
+),
+
 "9 February 2009" => array("RSS Feed",
 "You can now receive Mercury news items via an RSS feed by subscribing
 to the following URL: 

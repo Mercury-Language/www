@@ -712,6 +712,21 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
+<a href = "papers.html#fpu_rules_2009">
+Writing Business Rules Engines in Mercury.
+</a>
+</strong>
+<br>
+Ian MacLarty
+<em>
+Functional Programming Union,
+University of Melbourne,
+</em>
+24 July 2009. 
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#mc_owl_mercury_talk_14_08_2007">
 Ontology Driven Software Development with Mercury.
 </a>
@@ -2978,6 +2993,23 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name = "fpu_rules_2009">
+Writing Business Rules Engines in Mercury.
+</a>
+</strong>
+<br>
+Ian MacLarty
+<em>
+Functional Programming Union, University of Melbourne,
+</em>
+24 July 2009. 
+<a href = "papers/fpu_rules_2009.pdf">
+Available here (156K).
+</a>
+<p>
 
 <li>
 <strong>
