@@ -27,7 +27,7 @@ vpath %.inc $(ROOT)/include
 vpath %.inc $(ROOT)/news
 
 $(HTML): %.html: %.php3 %.inc globals.inc menubar.inc template.inc functions.inc
-$(XML): %.xml: %.php3 functions.inc
+$(XML): %.xml: %.php3 functions.inc newsdb.inc
 
 #-----------------------------------------------------------------------------#
 
