@@ -26,7 +26,7 @@ function rssitem($date, $item) {
 
 	echo "<item>\n";
 	echo "<guid>http://www.mercury.csse.unimelb.edu.au/rss.xml#".
-		md5($item.$date)."</guid>\n";
+		md5($title.$news.$date)."</guid>\n";
 	echo "<title>$title</title>\n";
 	echo "<description>$news</description>\n";
 	echo "<pubDate>$day $month $year 00:00 +1000</pubDate>\n";
