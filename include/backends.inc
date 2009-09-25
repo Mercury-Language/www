@@ -46,7 +46,39 @@ released but are still immature, while others are under development.
 	</dd>
 </dl>
 <p>
-<li><i>Released, but still alpha- or beta-release quality:</i>
+<li><i>Beta-release quality:</i>
+<p>
+<dl>
+        <dt><a name="java"><b>Java.</b></a></dt>
+	<dd>
+	This back-end compiles Mercury to Java.
+	<p>
+	The compiler support is complete,
+	includes good support for interfacing with Java
+	(see the language reference manual for details),
+	and the standard library is fairly reasonable.
+	There is no support for Mercury-level debugging or profiling.
+	<p>
+	For a guide to installing and using the Java grade, refer to
+	README.Java and the User's Guide. You will need a release-of-the-day.
+	</dd>
+<p>
+        <dt><a name="erlang"><b>Erlang.</b></a></dt>
+	<dd>
+	This back-end compiles Mercury to Erlang.
+	<p>
+	The compiler support is in good shape,
+	includes good support for interfacing with Erlang
+	(see the language reference manual for details),
+	and the standard library is fairly reasonable.
+	There is no support for Mercury-level debugging or profiling.
+	<p>
+	For a guide to installing and using the Erlang grade, refer to
+	README.Erlang and the User's Guide. You will need a release-of-the-day.
+	</dd>
+</dl>
+<p>
+<li><i>Dormant, not currently under development:</i>
 <p>
 <dl>
         <dt>
@@ -64,27 +96,6 @@ released but are still immature, while others are under development.
 	</dt>
 	<dd>
 	This back-end compiles to assembler, using the GCC back-end.
-	</dd>
-</dl>
-<p>
-<li><i>Under development:</i>
-<p>
-<dl>
-        <dt><a name="java"><b>Java.</b></a></dt>
-	<dd>
-	This back-end compiles Mercury to Java.
-	<p>
-	The compiler support is in reasonably good shape,
-	includes good support for interfacing with Java
-	(see the language reference manual for details),
-	and the standard library is now fairly reasonable.
-	However, the run-time system as currently implemented
-	lacks support for type classes and Mercury-level
-	debugging and profiling.
-	<p>
-	For more details, see the Mercury source code, in particular
-	compiler/mlds_to_java.m.  For a guide to installing and
-	using the Java grade, refer to README.Java.
 	</dd>
 <p>
 	<dt><a name="bytecode"><b>Mercury byte-code.</b></a></dt>

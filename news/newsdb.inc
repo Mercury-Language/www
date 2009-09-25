@@ -22,6 +22,12 @@
 
 $newsdb = array(
 
+"25 September 2009" => array("Java backend",
+"The Java backend was restored and improved over the last few months.
+It works well!  You will need a release of the day.
+"
+),
+
 "27 July 2009" => array("New Presentation",
 "
 The slides for a recent talk entitled &quot;Writing Business Rules Engines in
