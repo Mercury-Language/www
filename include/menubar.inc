@@ -69,7 +69,6 @@ if($menu == "Mailing Lists") {
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-developers/list.html">Developers</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-reviews/list.html">Reviews</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/mailing-lists/mercury-users/list.html">Users</a><BR>
-  &nbsp;&nbsp;<a href="http://www.google.com/coop/cse?cx=012477532374267650353%3Aiclg2f0j3-s">Search</a><BR>
 </SMALL>
 <?
 }
@@ -84,9 +83,10 @@ if($menu == "Back-ends") {
 <SMALL>
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#low_level_c">Low-level&nbsp;C</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/release-0.10.html#hlc">High-level&nbsp;C</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#java">Java</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#erlang">Erlang</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/dotnet.html">Microsoft .NET</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/gcc-backend.html">Native code</a><BR>
-  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#java">Java</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#bytecode">Mercury&nbsp;Bytecode</a><BR>
 </SMALL>
 <?

@@ -13,9 +13,9 @@ align=middle></A>
 <INPUT TYPE=text name=q size=31 maxlength=255 value="">
 <INPUT type=submit name=sa VALUE="Google Search">
 <input type=hidden name=domains
-value="www.mercury.cs.mu.oz.au"><br><input type=radio name=sitesearch
+value="www.cs.mu.oz.au/research/mercury"><br><input type=radio name=sitesearch
 value=""> Search WWW <input type=radio name=sitesearch
-value="www.mercury.cs.mu.oz.au" checked> Search www.mercury.cs.mu.oz.au <br>
+value="www.cs.mu.oz.au/research/mercury" checked> Search Mercury web site<br>
 </td></tr></TABLE>
 </FORM>
 </center>

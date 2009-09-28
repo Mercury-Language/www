@@ -2,13 +2,13 @@
 
 <h3> Summary </h3>
 
-The Mercury compiler has a new back-end that targets
+The Mercury compiler has a back-end that targets
 the <a href="http://msdn.microsoft.com/net/">Microsoft .NET platform</a>.
 <p>
 
 Thanks to Microsoft's generous support, both financial
-and otherwise, we've been able to port Mercury to Microsoft's new
-.NET system.  There's a new back-end for the Mercury compiler,
+and otherwise, we've been able to port Mercury to Microsoft's
+.NET system.  There's a back-end for the Mercury compiler,
 based on the `--high-level-code' back-end, that compiles to IL, the
 Microsoft .NET Intermediate Language.
 <p>
@@ -20,6 +20,10 @@ This is still work in progress.
 <p>
 
 <h3> Status </h3>
+
+<em> 2009-09-25: Currently this back-end does not work and is not being
+developed. </em>
+<p>
 
 The <a href="<? echo $root ?>/download/rotd.html">release-of-the-day releases</a>
 of the Mercury compiler include support for generating code for .NET.

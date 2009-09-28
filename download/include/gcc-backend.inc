@@ -12,6 +12,11 @@ including C, C++, Ada, Fortran, Java, and now Mercury.
 <p>
 <H3>Status</H3>
 
+<em> 2009-09-25: This back-end has not been tested in a while and may not work.
+</em>
+
+<p>
+
 The version of the native code compiler in our CVS repository and our
 release-of-the-day distributions (after 2002-09-11) is based on GCC 3.2.
 
