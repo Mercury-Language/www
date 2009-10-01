@@ -130,7 +130,7 @@ It should be pretty easy to port to any sufficiently Unix-like system.
     <ol>
     <li> <a href="http://gcc.gnu.org">GNU C (gcc)</a>
          <p>
-         We recommend GCC 3.4.x or 4.1.x.
+         We recommend GCC 3.4.x.
          <p>
          GCC 3.0, 3.3.1 and 4.0 will NOT work. 
 	 They have bugs that cause 
@@ -138,6 +138,9 @@ It should be pretty easy to port to any sufficiently Unix-like system.
 	 Mercury compiler.
          <p>
 	 GCC 4.2 - 4.4 will NOT work either. We are working on it.
+	 <p>
+	 GCC 4.1 works for the most part, but there is a known problem
+	 so we don't recommend that either.
          <p>
          Avoid GCC 2.96 (distributed with Red Hat Linux 7.x) and
          other unofficial releases of GCC.  Also avoid versions of GCC less 
