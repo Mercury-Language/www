@@ -21,6 +21,11 @@
 */
 
 $newsdb = array(
+"30 November 2009" => array("GCC 4.x supprt",
+"You can now use GCC 4.1 - 4.4 to build Mercury programs in
+low-level C grades, on Linux/x86 and Linux/x86-64.
+You will need a release of the day.
+"),
 
 "25 September 2009" => array("Java backend",
 "The Java backend was restored and improved over the last few months.
