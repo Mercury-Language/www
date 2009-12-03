@@ -22,6 +22,85 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#quan-phd">
+Region-based memory management for the logic programming language Mercury
+</a>
+</strong>
+<br>
+Quan Phan.
+<br>
+<em>
+Ph.D. thesis
+</em>
+Department of Computer Science,
+Catholic University of Leuven (KUL),
+November 2009.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#more-precise-rbmm">
+More precise region-based memory management for Mercury programs
+</a>
+</strong>
+<br>
+Quan Phan and Gerda Janssens.
+<br>
+<em>
+Proceedings of the Ninth International Colloquium on
+Implementation of Constraint and Logic Programming Systems (CICLOPS '09),
+</em>
+Pasadena, California, July 2009.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#path-sensitive-ppdp">
+Path-sensitive region analysis for Mercury programs
+</a>
+</strong>
+<br>
+Quan Phan and Gerda Janssens.
+<br>
+<em>
+Proceedings of 11th International Symposium on
+Principles and Practice of Declarative Programming,
+</em>
+Coimbra, Portugal, September 2009.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#runtime-support-ismm08">
+Runtime support for region-based memory management in Mercury
+</a>
+</strong>
+<br>
+Quan Phan, Zoltan Somogyi and Gerda Janssens.
+<br>
+<em>
+Proceedings of the 2008 International Symposim on Memory Management (ISMM '08),
+</em>
+Tucson, Arizona, June 2008.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#static-region-analysis">
+Static region analysis for Mercury
+</a>
+</strong>
+<br>
+Quan Phan and Gerda Janssens.
+<br>
+<em>
+Proceedings of the 23rd International Conference on Logic Programming,
+</em>
+Porto, Portugal, September 2007.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#pbone-hons">
 Calculating likely Parallelism within Dependant Conjunctions
 for Logic Programs
@@ -722,7 +801,7 @@ Ian MacLarty
 Functional Programming Union,
 University of Melbourne,
 </em>
-24 July 2009. 
+24 July 2009.
 <p>
 
 <li>
@@ -736,7 +815,7 @@ Ian MacLarty, Peter Ross,
 <em>
 University of Melbourne,
 </em>
-14 August 2007. 
+14 August 2007.
 <p>
 
 <li>
@@ -748,7 +827,7 @@ Programming.
 </strong>
 <br>
 Ralph Becket.
-University of Melbourne, 28 March 2006. 
+University of Melbourne, 28 March 2006.
 <p>
 
 <li>
@@ -953,6 +1032,214 @@ next closest quote for the project, and a similar project built classically at
 another insurance firm required also around three times the resources.
 [The ODASE platform uses Mercury as its implementation language.]
 
+<p>
+
+<li>
+<strong>
+<a name="quan-phd">
+Region-based memory management for the logic programming language Mercury
+</a>
+</strong>
+<br>
+Quan Phan.
+<br>
+<em>
+Ph.D. thesis
+</em>
+Department of Computer Science,
+Catholic University of Leuven (KUL),
+November 2009.
+<a href = "papers/quan_thesis.pdf">
+Available here (919K).
+</a>
+<p>
+Region-based memory management (RBMM)
+is a form of compile-time memory management,
+well-known from the functional programming world.
+In this thesis we describe our work of investigating and developing RBMM
+for the logic programming language Mercury.
+Mercury is designed with
+strong type, mode, and determinism systems.
+These systems not only provide Mercury programmers
+with several direct software engineering benefits,
+such as self-documenting code and clear program logic,
+but also give the language developers useful information for optimizations.
+<p>
+The first challenge in realizing RBMM for a programming language
+is to divide program data into regions
+such that the regions can be reclaimed as soon as possible.
+In the thesis we have developed program analyses
+that determine the distribution of data over regions as well as
+their lifetimes in a Mercury program.
+The program then is transformed to a region-annotated program
+containing the necessary region constructs.
+We provide the correctness proofs of the related program analyses and
+transformation, which guarantee the safeness of memory accesses
+in annotated programs.
+<p>
+We have implemented runtime support
+that tackles the special challenge posed by backtracking.
+Backtracking can require regions
+removed during forward execution to be ``resurrected'',
+and any memory allocated during a computation that has been backtracked over
+must be recovered promptly,
+without waiting for the regions involved to come to the end of their life.
+<p>
+We study the effects of RBMM for a selection of benchmark programs
+including well-known difficult cases for RBMM.
+Our RBMM-enabled Mercury system
+obtains clearly faster runtime for two third of the benchmarks compared to
+the Mercury system using the Boehm runtime garbage collector,
+with an average speedup of 20%.
+In terms of memory usage,
+the region system achieves optimal memory consumption in some programs.
+Our in-depth case study reveals the impact of sharing on memory reuse
+in programs in region-based systems.
+<p>
+Finally, we propose region reuse extension to our current region framework.
+Our RBMM system augmented with region reuse
+can automatically improve memory reuse for a popular class of programs
+that otherwise often require non-intuitive manual program-rewriting
+so that RBMM systems can obtain good memory reuse.
+<p>
+
+<li>
+<strong>
+<a name="more-precise-rbmm">
+More precise region-based memory management for Mercury programs
+</a>
+</strong>
+<br>
+Quan Phan and Gerda Janssens.
+<br>
+<em>
+Proceedings of the Ninth International Colloquium on
+Implementation of Constraint and Logic Programming Systems (CICLOPS '09),
+</em>
+Pasadena, California, July 2009, XXX page numbers.
+<a href = "papers/ciclops09.pdf">
+Available here (200K).
+</a>
+<p>
+Dividing the heap memory of programs into regions is
+the starting point of region-based memory management.
+In our existing work of
+enabling region-based memory management for Mercury,
+a program analysis was used to distribute data over the regions.
+An important goal of the analysis is to decide
+which program variables should end up in the same region.
+For a popular class of programs,
+it covetously puts program variables in the same region,
+while more memory could have been reused
+if they had been kept in separate ones.
+In this paper we define a new refined region analysis
+that is keen to keep program variables in separate regions
+by taking into account the different execution paths of a procedure.
+With the more precise, path-sensitive analysis we
+can reduce the memory footprint for several programs.
+<p>
+
+<li>
+<strong>
+<a name="path-sensitive-ppdp">
+Path-sensitive region analysis for Mercury programs
+</a>
+</strong>
+<br>
+Quan Phan and Gerda Janssens.
+<br>
+<em>
+Proceedings of 11th International Symposium on
+Principles and Practice of Declarative Programming,
+</em>
+Coimbra, Portugal, September 2009, XXX page numbers.
+<a href = "papers/ppdp14-phan.pdf">
+Available here (215K).
+</a>
+<p>
+Dividing the heap memory of programs into regions is
+the starting point of region-based memory management.
+In our existing work of
+enabling region-based memory management for Mercury,
+a program analysis was used to distribute data over the regions.
+An important goal of the analysis is to decide
+which program variables should end up in the same region.
+For a popular class of programs,
+it covetously puts program variables in the same region,
+while more memory could have been reused
+if they had been kept in separate ones.
+In this paper we define a new refined region analysis
+that is keen to keep program variables in separate regions
+by taking into account the different execution paths of a procedure.
+With the more precise, path-sensitive analysis we
+can reduce the memory footprint for several programs.
+<p>
+
+<li>
+<strong>
+<a name="runtime-support-ismm08">
+Runtime support for region-based memory management in Mercury
+</a>
+</strong>
+<br>
+Quan Phan, Zoltan Somogyi and Gerda Janssens.
+<br>
+<em>
+Proceedings of the 2008 International Symposim on Memory Management (ISMM '08),
+</em>
+Tucson, Arizona, June 2008, pages 61-70.
+<a href = "papers/ismm115-phan.pdf">
+Available here (148K).
+</a>
+<p>
+Applying region-based memory management (RBMM)
+to logic programming languages poses a special challenge:
+backtracking can require regions
+removed during forward execution to be ``resurrected'',
+and any memory allocated during a computation that has been backtracked over
+must be recovered promptly,
+without waiting for the regions involved to come to the end of their life.
+In this paper, we describe how we implemented runtime support for RBMM
+in the logic programming language Mercury,
+whose specialized implementation
+of the language constructs involved in backtracking
+required equally specialized support.
+Our benchmark Mercury programs run about 25% faster on average
+with RBMM than with the usual Boehm garbage collector,
+and for some programs, RBMM achieves optimal memory consumption.
+<p>
+
+<li>
+<strong>
+<a name="static-region-analysis">
+Static region analysis for Mercury
+</a>
+</strong>
+<br>
+Quan Phan and Gerda Janssens.
+<br>
+<em>
+Proceedings of the 23rd International Conference on Logic Programming,
+</em>
+Porto, Portugal, September 2007, XXX page numbers.
+<a href = "papers/iclp2007.pdf">
+Available here (193K).
+</a>
+<p>
+Region-based memory management is a form of compile-time memory
+management, well-known from the functional programming world.
+This paper describes a static region analysis for the logic
+programming language Mercury. We use region points-to graphs to
+model the partitioning of the memory used by a program into
+separate regions. The algorithm starts with a region points-to
+analysis that determines the different regions in the program. We then
+compute the liveness of the regions by using an extended live
+variable analysis. Finally, a program transformation adds region
+annotations to the program for region support. These annotations generate
+data for a region simulator that generates reports on the memory behaviour of
+region-annotated programs. Our approach obtains good memory consumption
+for several benchmark programs; for some of them it achieves optimal
+memory management.
 <p>
 
 <li>
@@ -2145,7 +2432,7 @@ the main ones being their heavy use of recursion,
 of various forms of polymorphism, and of higher order.
 Existing profilers tend not to produce very useful information
 in the presence of these constructs.
-We present a new profiling technique we call \emph{deep profiling}
+We present a new profiling technique we call deep profiling
 that yields detailed and useful information about programs
 even in the presence of these constructs,
 information that is significantly richer
@@ -3005,7 +3292,7 @@ Ian MacLarty
 <em>
 Functional Programming Union, University of Melbourne,
 </em>
-24 July 2009. 
+24 July 2009.
 <a href = "papers/fpu_rules_2009.pdf">
 Available here (156K).
 </a>
@@ -3039,7 +3326,7 @@ Ian MacLarty, Peter Ross
 <em>
 University of Melbourne.
 </em>
-14 August 2007. 
+14 August 2007.
 <a href = "papers/mc_owl_mercury_talk_14_08_2007.pdf">
 Available here (370K).
 </a>
@@ -3048,8 +3335,7 @@ Available here (370K).
 <li>
 <strong>
 <a name = "g12_unclean">
-Unclean! Unclean! or Purity Issues in Declarative Constraint Logic
-Programming.
+Unclean! Unclean! or Purity Issues in Declarative Constraint Logic Programming.
 </a>
 </strong>
 <br>
@@ -3057,7 +3343,7 @@ Ralph Becket.
 <em>
 University of Melbourne.
 </em>
-28 March 2006. 
+28 March 2006.
 <a href = "papers/g12_unclean.pdf.gz">
 Available here (131K).
 </a>
@@ -3066,8 +3352,8 @@ Available here (131K).
 <li>
 <strong>
 <a name = "aadebug05-talk">
-Divide-and-query and subterm dependency tracking in the Mercury declarative
-debugger.
+Divide-and-query and subterm dependency tracking
+in the Mercury declarative debugger.
 </a>
 </strong>
 <br>

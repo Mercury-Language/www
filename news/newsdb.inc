@@ -21,6 +21,12 @@
 */
 
 $newsdb = array(
+"3 December 2009" => array("New papers",
+"We have several papers available from our 
+<A HREF=\"information/papers.html\">papers page</A> that describe
+region-based memory management in Mercury.
+),
+
 "30 November 2009" => array("GCC 4.x supprt",
 "You can now use GCC 4.1 - 4.4 to build Mercury programs in
 low-level C grades, on Linux/x86 and Linux/x86-64.
