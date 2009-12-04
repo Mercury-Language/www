@@ -27,7 +27,7 @@ $newsdb = array(
 region-based memory management in Mercury.
 "),
 
-"30 November 2009" => array("GCC 4.x supprt",
+"30 November 2009" => array("GCC 4.x support",
 "You can now use GCC 4.1 - 4.4 to build Mercury programs in
 low-level C grades, on Linux/x86 and Linux/x86-64.
 You will need a release of the day.
