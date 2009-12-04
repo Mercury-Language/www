@@ -1152,7 +1152,7 @@ Quan Phan and Gerda Janssens.
 Proceedings of 11th International Symposium on
 Principles and Practice of Declarative Programming,
 </em>
-Coimbra, Portugal, September 2009, pages 61-69.
+Coimbra, Portugal, September 2009, pages 161-169.
 <a href = "papers/ppdp14-phan.pdf">
 Available here (215K).
 </a>
