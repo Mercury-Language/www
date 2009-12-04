@@ -1116,7 +1116,7 @@ Quan Phan and Gerda Janssens.
 Proceedings of the Ninth International Colloquium on
 Implementation of Constraint and Logic Programming Systems (CICLOPS '09),
 </em>
-Pasadena, California, July 2009, XXX page numbers.
+Pasadena, California, July 2009, pages 1-15.
 <a href = "papers/ciclops09.pdf">
 Available here (200K).
 </a>
@@ -1152,7 +1152,7 @@ Quan Phan and Gerda Janssens.
 Proceedings of 11th International Symposium on
 Principles and Practice of Declarative Programming,
 </em>
-Coimbra, Portugal, September 2009, XXX page numbers.
+Coimbra, Portugal, September 2009, pages 61-69.
 <a href = "papers/ppdp14-phan.pdf">
 Available here (215K).
 </a>
@@ -1221,7 +1221,7 @@ Quan Phan and Gerda Janssens.
 <em>
 Proceedings of the 23rd International Conference on Logic Programming,
 </em>
-Porto, Portugal, September 2007, XXX page numbers.
+Porto, Portugal, September 2007, pages 317-332.
 <a href = "papers/iclp2007.pdf">
 Available here (193K).
 </a>
