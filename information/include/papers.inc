@@ -79,7 +79,7 @@ Runtime support for region-based memory management in Mercury
 Quan Phan, Zoltan Somogyi and Gerda Janssens.
 <br>
 <em>
-Proceedings of the 2008 International Symposim on Memory Management (ISMM '08),
+Proceedings of the 2008 International Symposium on Memory Management (ISMM '08),
 </em>
 Tucson, Arizona, June 2008.
 <p>
