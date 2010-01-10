@@ -47,6 +47,7 @@
 <script type="text/javascript">
     try {
         var pageTracker = _gat._getTracker("UA-2808341-16");
+        pageTracker._setDomainName(".csse.unimelb.edu.au");
         pageTracker._trackPageview();
     } catch(err) {
     }
