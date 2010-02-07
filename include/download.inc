@@ -1,4 +1,5 @@
 <H2>How to get Mercury</H2>
+<? $next_beta_version="10.04-beta" ?>
 
 The Mercury compiler is free software, and is distributed under the
 terms of the GNU General Public License.
@@ -9,9 +10,13 @@ main versions of Mercury available at the moment.
 <H3> Current stable release </H3>
 
 The most stable release will be a <em>numbered release</em>,
-such as 0.10.1, 0.11.0 or 0.12.1.
+such as 0.10.1, 0.13.0 or 10.04.
 These releases have been extensively tested, and often have 
 pre-compiled binary packages for easy installation.
+<p>
+The stable release naming scheme was 0.1 up to 0.13 for the first thirteen stable releases.
+In February 2010 the Mercury project decided to name each stable release by using the year and month of the release.
+For example 10.04 is for a release made in April 2010.
 <p>
 The <a href="download/release.html">current stable release</a>
 is version <? echo $current_release; ?>.

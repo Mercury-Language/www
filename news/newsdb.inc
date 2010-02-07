@@ -21,6 +21,16 @@
 */
 
 $newsdb = array(
+"4 February 2010" => array("10.04 beta release available",
+"The first beta of 10.04 is available <A HREF=\"download.html\">here</A>.
+"),
+
+"1 February 2010" => array("New release schedule and naming scheme",
+"The Mercury project has decided to adopt a 6 monthly release schedule
+with each release being named by the year and month of the release.
+The next planned release is 10.04 which is due for release in April 2010.
+"),
+
 "3 December 2009" => array("New papers",
 "We have several papers available from our 
 <A HREF=\"information/papers.html\">papers page</A> that describe
