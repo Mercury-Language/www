@@ -810,7 +810,7 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <li>
 <strong>
 <a href="papers.html#linuxconf_2010_autopar">
-Automatic Parallelisation in Mercury
+Automatic parallelisation in Mercury
 </a>
 </strong>
 <br/>
@@ -824,8 +824,23 @@ January 2010
 
 <li>
 <strong>
+<a href = "papers.html#leuven09">
+Towards automatic parallelization of Mercury programs.
+</a>
+</strong>
+<br>
+Zoltan Somogyi
+<em>
+Catholic University of Leuven,
+Belgium,
+</em>
+17 November 2009.
+<p>
+
+<li>
+<strong>
 <a href = "papers.html#fpu_rules_2009">
-Writing Business Rules Engines in Mercury.
+Writing business rules engines in Mercury.
 </a>
 </strong>
 <br>
@@ -840,7 +855,7 @@ University of Melbourne,
 <li>
 <strong>
 <a href = "papers.html#mc_owl_mercury_talk_14_08_2007">
-Ontology Driven Software Development with Mercury.
+Ontology driven software development with Mercury.
 </a>
 </strong>
 <br>
@@ -854,7 +869,7 @@ University of Melbourne,
 <li>
 <strong>
 <a href = "papers.html#g12_unclean">
-Unclean! Unclean! or Purity Issues in Declarative Constraint Logic
+Unclean! Unclean! or Purity issues in declarative constraint logic
 Programming.
 </a>
 </strong>
@@ -3362,7 +3377,7 @@ available here (560K).
 <li>
 <strong>
 <a name="linuxconf_2010_autopar">
-Automatic Parallelisation in Mercury
+Automatic Parallelisation in Mercury.
 </a>
 </strong>
 <br/>
@@ -3371,9 +3386,27 @@ Paul Bone
 Multicore Mini conference, Linuxconf Australia,
 </em>
 Wellington NZ, 
-January 2010
+January 2010.
 <a href="papers/linuxconf_2010_autopar.pdf">
 Available here (542K).
+</a>
+<p>
+
+<li>
+<strong>
+<a name = "leuven09">
+Towards automatic parallelization of Mercury programs.
+</a>
+</strong>
+<br>
+Zoltan Somogyi
+<em>
+Catholic University of Leuven,
+Belgium,
+</em>
+17 November 2009.
+<a href="papers/leuven_nov09_talk.pdf">
+Available here (168K).
 </a>
 <p>
 
