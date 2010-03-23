@@ -21,6 +21,19 @@
 */
 
 $newsdb = array(
+"23 March 2010" => array("New paper and new slides",
+"<p>A new paper,
+Towards Software Transactional Memory for Real-World Programs, 
+has been added to our 
+<a href=\"information/papers.html\">papers page</a>.
+It describes recent work on Software Transactional Memory in Mercury.</p>
+
+<p>A set of slides from a talk given at LinuxConf in Wellington regarding
+automatic parallelisation are also available from the
+<a href=\"information/papers.html\">papers page</a>.
+</p>
+"),
+
 "4 February 2010" => array("10.04 beta release available",
 "The first beta of 10.04 is available <A HREF=\"download.html\">here</A>.
 "),

@@ -22,6 +22,23 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#bmellor-hons">
+Towards Software Transactional Memory for Real-World Programs
+</a>
+</strong>
+<br/>
+Ben Mellor.
+<br/>
+<em>
+Honours report,
+</em>
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+October 2009.
+<p>
+
+<li>
+<strong>
 <a href="papers.html#quan-phd">
 Region-based memory management for the logic programming language Mercury
 </a>
@@ -770,6 +787,7 @@ Database transactions in a purely declarative logic programming language
 David B. Kemp, Thomas Conway, Evan Harris, Fergus Henderson,
 Kotagiri Ramamohanarao and Zoltan Somogyi.
 <em>Tech Report 96/45</em>, Melbourne, 1996.
+<p>
 
 <li>
 <strong>
@@ -788,6 +806,21 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
 
 <ul>
+
+<li>
+<strong>
+<a href="papers.html#linuxconf_2010_autopar">
+Automatic Parallelisation in Mercury
+</a>
+</strong>
+<br/>
+Paul Bone
+<em>
+Multicore Miniconference, Linuxconf Australia,
+</em>
+Wellington NZ, 
+January 2010
+<p>
 
 <li>
 <strong>
@@ -1007,31 +1040,39 @@ Tyson Dowd, 1998.
 
 <li>
 <strong>
-<a name="mc_swese_2007">
-Ontology Driven Software Engineering for Real Life Applications
+<a name="bmellor-hons">
+Towards Software Transactional Memory for Real-World Programs
 </a>
 </strong>
-<br>
-Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
-Nikolay Pelov
-<br>
+<br/>
+Ben Mellor.
+<br/>
 <em>
-3rd International Workshop on Semantic Web Enabled
-Software Engineering (SWESE 2007)
+Honours report,
 </em>
-Innsbruck, Austria, 2007.
-<a href = "papers/mc_swese_2007.pdf">
-Available here (121K).
+Department of Computer Science and Software Engineering,
+The University of Melbourne,
+October 2009.
+<a href = "papers/bmellor_hons.pdf">
+Available here (533K).
 </a>
 <p>
-In this paper we introduce ODASE (Ontology Driven Architecture for Software
-Engineering). We present how we used ODASE to build a 250 person month
-e-insurance project for a multi-national insurance firm, where only 35% of the
-requirements were known at kick- off.  We required one third of the time of the
-next closest quote for the project, and a similar project built classically at
-another insurance firm required also around three times the resources.
-[The ODASE platform uses Mercury as its implementation language.]
-
+Parallel programming is becoming more and more important as commonly available
+machines begin to grow in their capability for parallel execution. Parallel
+streams of execution that operate on shared data to achieve a common task need
+to be carefully synchronised. The standard way of achieving this
+synchronisation is to use locks, but lock-based programming is difficult and
+error-prone, making parallel programs costly and unreliable.
+<p>
+Another method of providing synchronised access to shared data is the
+transactional memory model. Software Transactional Memory (STM), implementing
+this model purely in software and thus compatible with today's hardware, has
+been an area of much research in the last decade.
+<p>
+This report describes the implementation of a sophisticated STM system using
+recently developed techniques as well as novel innovations. This implementation
+is for the logic programming language Mercury, building on an earlier and
+simpler STM implementation.
 <p>
 
 <li>
@@ -3112,6 +3153,41 @@ Some of these are documented in the version in the ILPS 95 proceedings.
 
 <h2><a name="related">Related Papers</a></h2>
 
+<p>
+<a name="mc_swese_2007">
+This paper covers a case study where Mercury was used as an implementation
+language.
+</a>
+<p>
+
+<ul>
+<li>
+<strong>
+Ontology Driven Software Engineering for Real Life Applications
+</strong>
+<br>
+Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
+Nikolay Pelov
+<br>
+<em>
+3rd International Workshop on Semantic Web Enabled
+Software Engineering (SWESE 2007)
+</em>
+Innsbruck, Austria, 2007.
+<a href = "papers/mc_swese_2007.pdf">
+Available here (121K).
+</a>
+<p>
+In this paper we introduce ODASE (Ontology Driven Architecture for Software
+Engineering). We present how we used ODASE to build a 250 person month
+e-insurance project for a multi-national insurance firm, where only 35% of the
+requirements were known at kick- off.  We required one third of the time of the
+next closest quote for the project, and a similar project built classically at
+another insurance firm required also around three times the resources.
+[The ODASE platform uses Mercury as its implementation language.]
+<p>
+</ul>
+
 <a name="mu_97_23">
 This paper gives an introduction to automatic termination analysis.
 It surveys termination analysis of logic programs and provides an
@@ -3242,6 +3318,7 @@ Available here (58K)
 <a href = "papers/tr_96_45_cover.ps.gz">
 with cover page.
 </a>
+</ul>
 
 <a name="tr90-2">
 The following paper is also relevant to the Aditi interface mentioned above.
@@ -3249,6 +3326,7 @@ It describes a source-to-source transformation implemented in the
 Mercury compiler.
 </a>
 
+<ul>
 <li>
 <strong>
 Right-, left-, and multi-linear rule transformations that maintain
@@ -3280,6 +3358,24 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="linuxconf_2010_autopar">
+Automatic Parallelisation in Mercury
+</a>
+</strong>
+<br/>
+Paul Bone
+<em>
+Multicore Mini conference, Linuxconf Australia,
+</em>
+Wellington NZ, 
+January 2010
+<a href="papers/linuxconf_2010_autopar.pdf">
+Available here (542K).
+</a>
+<p>
 
 <li>
 <strong>
