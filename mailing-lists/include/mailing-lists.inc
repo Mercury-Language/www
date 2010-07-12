@@ -40,13 +40,19 @@ It is <A HREF="mercury-reviews/list.html">archived</A> and searchable.
 
 <h3>Search</h3>
 
+<?php
+/*
+ * NOTE: When updating the URLs here be sure to also update the URLs in
+ * include/search.inc.
+ */
+?>
 <ul>
 <li>
 <form method="get" action="http://www.google.com/search">
 mercury-users:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
-<input type="hidden" name="sitesearch" value="www.cs.mu.oz.au/research/mercury/mailing-lists/mercury-users"/>
+<input type="hidden" name="sitesearch" value="www.mercury.csse.unimelb.edu.au/mailing-lists/mercury-users"/>
 </form>
 
 <li>
@@ -54,7 +60,7 @@ mercury-users:
 mercury-developers:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
-<input type="hidden" name="sitesearch" value="www.cs.mu.oz.au/research/mercury/mailing-lists/mercury-developers"/>
+<input type="hidden" name="sitesearch" value="www.mercury.csse.unimelb.edu.au/mailing-lists/mercury-developers"/>
 </form>
 
 <li>
@@ -62,7 +68,7 @@ mercury-developers:
 mercury-reviews:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
-<input type="hidden" name="sitesearch" value="www.cs.mu.oz.au/research/mercury/mailing-lists/mercury-reviews"/>
+<input type="hidden" name="sitesearch" value="www.mercury.csse.unimelb.edu.au/mailing-lists/mercury-reviews"/>
 </form>
 </ul>
 
@@ -74,16 +80,16 @@ send email with "subscribe" or "unsubscribe" in the body of the mail
 to the corresponding "-request" address:
 
 <ul>
-<li> <a href = "mailto:mercury-announce-request@cs.mu.oz.au">
-mercury-announce-request@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-users-request@cs.mu.oz.au">
-mercury-users-request@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-ads-request@cs.mu.oz.au">
-mercury-ads-request@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-developers-request@cs.mu.oz.au">
-mercury-developers-request@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-reviews-request@cs.mu.oz.au">
-mercury-reviews-request@cs.mu.oz.au</a>
+<li> <a href = "mailto:mercury-announce-request@csse.unimelb.edu.au">
+mercury-announce-request@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-users-request@csse.unimelb.edu.au">
+mercury-users-request@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-ads-request@csse.unimelb.edu.au">
+mercury-ads-request@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-developers-request@csse.unimelb.edu.au">
+mercury-developers-request@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-reviews-request@csse.unimelb.edu.au">
+mercury-reviews-request@csse.unimelb.edu.au</a>
 </ul>
 
 <h3>Posting articles</h3>
@@ -92,12 +98,12 @@ To submit articles to one of these lists, use the address
 without the "-request" part:
 
 <ul>
-<li> <a href = "mailto:mercury-users@cs.mu.oz.au">
-mercury-users@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-ads@cs.mu.oz.au">
-mercury-ads@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-developers@cs.mu.oz.au">
-mercury-developers@cs.mu.oz.au</a>
-<li> <a href = "mailto:mercury-reviews@cs.mu.oz.au">
-mercury-reviews@cs.mu.oz.au</a>
+<li> <a href = "mailto:mercury-users@csse.unimelb.edu.au">
+mercury-users@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-ads@csse.unimelb.edu.au">
+mercury-ads@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-developers@csse.unimelb.edu.au">
+mercury-developers@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:mercury-reviews@csse.unimelb.edu.au">
+mercury-reviews@csse.unimelb.edu.au</a>
 </ul>

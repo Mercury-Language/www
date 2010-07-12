@@ -10,6 +10,12 @@
 align=middle></A>
 </td>
 <td>
+<?php
+/*
+ * NOTE: When updating the URLs here be sure to also update the URLs in
+ * mailing-lists/include/mailing-lists.inc
+ */
+?>
 <INPUT TYPE=text name=q size=31 maxlength=255 value="">
 <INPUT type=submit name=sa VALUE="Google Search">
 <input type=hidden name=domains
