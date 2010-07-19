@@ -22,6 +22,6 @@
 	exec("cat $rotd_files_path/latest-unstable-version", $exec_output);
 	$rotd_version=$exec_output[0];
 	
- 	$ftp_domain="ftp.mercury.cs.mu.oz.au";
+ 	$ftp_domain="ftp.mercury.csse.unimelb.edu.au";
  	$www_domain="<WWW_DOMAIN>";
 ?>
