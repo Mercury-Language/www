@@ -102,7 +102,7 @@ It should be pretty easy to port to any sufficiently Unix-like system.
     <ol>
     <li> <a href="http://gcc.gnu.org">GNU C (gcc)</a>
          <p>
-         Version GCC 3.4.x or later is required.
+         GCC version 3.4.x or later is required.
          <p>
          GCC 4.0 will NOT work. 
 	 It has bugs that cause 
