@@ -19,6 +19,7 @@ HTML= 	current-release-bugs.html	\
 	release-0.11.html		\
 	release-0.12.html		\
 	release-0.13.html		\
+	release-10.04.html		\
 	release-0.3-bugs.html		\
 	release-0.4-bugs.html		\
 	release-0.5-bugs.html		\
@@ -31,6 +32,7 @@ HTML= 	current-release-bugs.html	\
 	release-0.11-bugs.html		\
 	release-0.12-bugs.html		\
 	release-0.13-bugs.html		\
+	release-10.04-bugs.html		\
 	release-0.3-contents.html	\
 	release-0.4-contents.html	\
 	release-0.5-contents.html	\
@@ -42,9 +44,10 @@ HTML= 	current-release-bugs.html	\
 	release-0.11-contents.html	\
 	release-0.12-contents.html	\
 	release-0.13-contents.html	\
+	release-10.04-contents.html	\
 	rotd.html
 
-current-release-bugs.html: release-0.13-bugs.inc
+current-release-bugs.html: release-10.04-bugs.inc
 
 install: local_install
 

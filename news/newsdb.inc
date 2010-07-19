@@ -21,6 +21,14 @@
 */
 
 $newsdb = array(
+"19 July 2010" => array("New release",
+
+"We are pleased to announce the release of version 10.04 of the 
+Mercury system.  The new release can be downloaded 
+<a href=\"download/release.html\">here</a>.  For a list of the changes since
+the last version see the <a href=\"download/release-10.04.html\">release notes</a>."
+),
+
 "23 March 2010" => array("New paper and new slides",
 "A new paper,
 Towards Software Transactional Memory for Real-World Programs, 
@@ -162,7 +170,7 @@ to believe that Mercury offers full Unicode support, which is not the case."),
 "1 December 2006" => array("Mercury 0.13.1 released",
 
 "Release information is available
-<A HREF=\"./download/release.html\">here</A>."
+<A HREF=\"./download/old_release.html\">here</A>."
 ),
 
 "30 October 2006" => array("New paper",

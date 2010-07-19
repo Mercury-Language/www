@@ -1,5 +1,5 @@
 # A descriptive name for the release. See mercury/VERSION
-RELEASE_VERSION=0.13.1
+RELEASE_VERSION=10.04
 
 # A name for the next beta-release, e.g. 0.12.2-beta
 # Note: only set this variable to a non-empty value if a source distribution
@@ -11,4 +11,4 @@ NEXT_BETA_VERSION=
 # We use the release *branch* tag, rather than the release tag,
 # so that it will pick up any fixes to the documentation
 # that have occurred after the release was made.
-RELEASE_TAG=version-0_13-branch
+RELEASE_TAG=version-10_04-branch

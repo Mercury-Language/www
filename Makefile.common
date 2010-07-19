@@ -5,14 +5,14 @@
 #-----------------------------------------------------------------------------#
 
 # NOTE: Even though it says PHP3 all over the place we are actually now using
-# php version 4.  (The original version of this website used 3 and it's
+# php version 5.  (The original version of this website used 3 and it's
 # currently hardcoded all over the place, e.g. the .php3 file extensions.)
 
 ifndef PHP3
-	PHP3=/usr/lib/cgi-bin/php4 -q
+	PHP3=/usr/lib/cgi-bin/php5 -q
 endif
 ifndef WWW_DOMAIN
-	WWW_DOMAIN="www.mercury.cs.mu.oz.au"
+	WWW_DOMAIN="www.mercury.csse.unimelb.edu.au"
 endif
 BETA_WEBDIR="$(INSTALL_WEBDIR)/download/files/beta-releases/rotd"
 ifndef BETA_FTPDIR
