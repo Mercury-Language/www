@@ -2,8 +2,8 @@
 
 <h3>Objective</h3>
 
-The old Mercury profiler, mprof, was a straightforward clone
-of the standard Unix profiling tool, gprof.
+The old Mercury profiler, mprof,
+was a straightforward clone of the standard Unix profiling tool, gprof.
 However, while gprof is quite useful in profiling C programs,
 we found the usefulness of mprof in profiling Mercury programs
 to be severely limited.
@@ -18,7 +18,7 @@ than C programs do.
 
 <p>
 
-For example, the most expensive predicates in the Mercury compiler are
+For example, the most expensive predicates in the Mercury compiler are usually
 the predicates for searching 2-3-4 trees and for inserting into 2-3-4 trees.
 However, these predicates are called (indirectly)
 from many hundreds of places in the Mercury compiler,
@@ -97,15 +97,9 @@ The server generates, for each request,
 a web page containing the requested information,
 which will typically contain links that generate other requests.
 
-<?
-/*---------------------------------------------------------------------------*/
-/* XXX The deep profiler demo is currently not working.  */
-if (0) {
-?>
-
 <h3>Demo</h3>
 
-We have made three profiling data files available for you to explore.
+We have made some profiling data files available for you to explore.
 Each of the links below will take you to pages
 that are dynamically created by the deep profiling tool
 from one of these data files.
@@ -114,31 +108,45 @@ from one of these data files.
 
 <ul>
 <li>
-<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?<? echo $installed_path ?>/information/deep_demo/make_hlds.data">mmc -O2 make_hlds.m</a>:
-the profiled executable is the Mercury compiler,
-and during the profiling run, its task was to compile make_hlds.m,
-the largest module (about 8300 lines) in its own source code.
-Though large, this module is straightforward to compile.
+<a href =
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi/home/taura/zs/www_deep_profiler_demo/monte.data">monte</a>:
+the profiled executable is a program that
+calculates the volume of a 3D shape using Monte Carlo methods.
+This program uses higher order constructs quite intensively.
 <li>
-<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?<? echo $installed_path ?>/information/deep_demo/eliza.data">mmc -O2 eliza.m</a>:
+<a href =
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi/home/taura/zs/www_deep_profiler_demo/icfp2000_par_snowgoon.data">monte</a>:
+the profiled executable is a ray tracer,
+whose task on this run was to generate a picture of a snowman.
+<li>
+<a href =
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi/home/taura/zs/www_deep_profiler_demo/mparsegen_zinc.data">monte</a>:
+the profiled executable is a parser generator,
+whose task on this run was to try and generate an LR(1) parser
+for one version of the grammar of the Zinc constraint programming language.
+<li>
+<a href =
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi?/home/taura/zs/www_deep_profiler_demo/mmc_eliza.data">mmc eliza.m</a>:
 the profiled executable is the Mercury compiler,
 and during the profiling run, it task was to compile eliza.m,
 the Mercury implementation of the classic "AI" program,
 which is available in the samples directory in the Mercury distribution.
-Though small (625 lines), this module contains some constructs
-that stress the Mercury compiler, particularly its mode analysis pass.
+This is an example of the compilation of a small program of about 650 lines.
 <li>
-<a href = "http://venus.cs.mu.oz.au/cgi-bin/mdprof?<? echo $installed_path ?>/information/deep_demo/monte.data">monte</a>:
-the profiled executable is a program that
-calculates the volume of a 3D shape using Monte Carlo methods.
-This program uses higher order constructs quite intensively.
+<a href =
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi?/home/taura/zs/www_deep_profiler_demo/mmc_frameopt_bottleneck.data">mmc mlds_to_java.m, with bottleneck</a>
+and
+<a href =
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi?/home/taura/zs/www_deep_profiler_demo/mmc_no_frameopt_bottleneck.data">without bottleneck</a>.
+For both of these profiles, the profiled executable is the Mercury compiler,
+and its task is compiling one of its own modules,
+mlds_to_java.m, which is about 5200 lines in size.
+In the first profile, more than two thirds
+of the execution time of the compiler is spent
+in the application of just one optimization.
+The second profile was taken after this bottleneck was fixed.
+(The code of mlds_to_java.m has changed a bit in the meantime.)
 </ul>
-
-<?
-}
-/*---------------------------------------------------------------------------*/
-?>
-
 
 <h3>Availability</h3>
 
