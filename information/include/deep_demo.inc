@@ -109,18 +109,18 @@ from one of these data files.
 <ul>
 <li>
 <a href =
-"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi/home/taura/zs/www_deep_profiler_demo/monte.data">monte</a>:
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi?/home/taura/zs/www_deep_profiler_demo/monte.data">monte</a>:
 the profiled executable is a program that
 calculates the volume of a 3D shape using Monte Carlo methods.
 This program uses higher order constructs quite intensively.
 <li>
 <a href =
-"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi/home/taura/zs/www_deep_profiler_demo/icfp2000_par_snowgoon.data">icfp2000</a>:
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi?/home/taura/zs/www_deep_profiler_demo/icfp2000_par_snowgoon.data">icfp2000</a>:
 the profiled executable is a ray tracer,
 whose task on this run was to generate a picture of a snowman.
 <li>
 <a href =
-"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi/home/taura/zs/www_deep_profiler_demo/mparsegen_zinc.data">mparsegen</a>:
+"http://taura.csse.unimelb.edu.au/cgi-bin/mdprof_stable_cgi?/home/taura/zs/www_deep_profiler_demo/mparsegen_zinc.data">mparsegen</a>:
 the profiled executable is a parser generator,
 whose task on this run was to try and generate an LR(1) parser
 for one version of the grammar of the Zinc constraint programming language.
