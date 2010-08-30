@@ -1,4 +1,21 @@
-<h2>New in relase 10.04 of the Mercury distribution</h2>
+<h2>New in release 10.04.1 of the Mercury distribution</h2>
+
+<p>
+This release is primarily a bug-fix release.  It fixes some problems in
+the code generator and the source-to-source debugger.  In addition,
+there are some changes to the standard library.
+
+<p>
+
+Changes to the Mercury standard library:
+
+<ul>
+<li>We have added cc_multi modes for map.foldl2/6 and tree234.foldl2/6.
+<li>We have improved the performance of cords, hash tables and version
+hash tables.
+</ul>
+
+<h2>New in release 10.04 of the Mercury distribution</h2>
 
 <h3>HIGHLIGHTS</h3>
 
