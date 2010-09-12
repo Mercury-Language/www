@@ -54,13 +54,15 @@ released but are still immature, while others are under development.
 	This back-end compiles Mercury to Java.
 	<p>
 	The compiler support is complete,
-	includes good support for interfacing with Java
+	it includes good support for interfacing with Java
 	(see the language reference manual for details),
 	and the standard library is fairly reasonable.
-	There is no support for Mercury-level debugging or profiling.
+	There is support for Mercury-level debugging, but there is
+	not yet support for Mercury-level profiling.
 	<p>
 	For a guide to installing and using the Java grade, refer to
-	README.Java and the User's Guide. You will need a release-of-the-day.
+	README.Java and the User's Guide. You will need Mercury release 10.04
+	or later.
 	</dd>
 <p>
         <dt><a name="erlang"><b>Erlang.</b></a></dt>
@@ -68,13 +70,15 @@ released but are still immature, while others are under development.
 	This back-end compiles Mercury to Erlang.
 	<p>
 	The compiler support is in good shape,
-	includes good support for interfacing with Erlang
+	it includes good support for interfacing with Erlang
 	(see the language reference manual for details),
 	and the standard library is fairly reasonable.
-	There is no support for Mercury-level debugging or profiling.
+	There is support for Mercury-level debugging, but there is not
+	yet support for Mercury-level profiling.
 	<p>
 	For a guide to installing and using the Erlang grade, refer to
-	README.Erlang and the User's Guide. You will need a release-of-the-day.
+	README.Erlang and the User's Guide. You will need Mercury release 10.04
+	or later.
 	</dd>
 </dl>
 <p>

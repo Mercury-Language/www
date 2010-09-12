@@ -41,6 +41,7 @@ some of whom are still informally associated with the project:
 <li> Richard Fothergill, summer student
 <li> Warwick Harvey, research fellow at Monash University
 <li> Fergus Henderson, research fellow
+<li> Fransiska Handoko, summer student
 <li> Oliver Hutchinson, summer student
 <li> Robert Hutton, summer student
 <li> Erwan Jahier, jahier at imag.fr, research assistant at Verimag in Grenoble, France
