@@ -4,7 +4,7 @@ Goedel is a logic programming language, with a strong type system,
 module system, and support for infinite precision numerical calculation
 and meta-programming facilities.
 <ul>
-<li> <a href = "http://www.cs.bris.ac.uk/~bowers/goedel.html">Goedel</a>
+<li> <a href = "http://www.scs.leeds.ac.uk/hill/GOEDEL/expgoedel.html">Goedel</a>
 </ul>
 
 Sisal is a high-performance portable parallel functional programming language.
