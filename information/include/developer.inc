@@ -3,8 +3,8 @@
 <!------
 % Put this back in when there are PostScript version online.
 The HTML versions are set up for browsing, however, if you'd prefer a
-copy of the entire document, links to postscript copies are provided.
-Please note that the postscript files are compressed using gzip and are
+copy of the entire document, links to PostScript copies are provided.
+Please note that the PostScript files are compressed using gzip and are
 in a4 format.
 -------->
 <p>

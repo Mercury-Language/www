@@ -8,7 +8,7 @@ The Mercury team have written quite a few papers about the Mercury
 programming language, its implementation techniques, design, theoretical
 basis and other topics. In addition, we have written several papers
 on <a href = "papers.html#related">related</a> topics.
-Almost all are available here as postscript
+Almost all are available here as PostScript
 files, compressed using gzip, or as PDF.
 <p>
 Below the papers, the notes from a number of

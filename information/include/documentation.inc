@@ -7,8 +7,8 @@ and for the latest
 <p>
 
 The HTML versions are set up for browsing, however, if you'd prefer a
-copy of the entire document, links to PDF and postscript copies are provided.
-Please note that the postscript files are compressed using gzip and are
+copy of the entire document, links to PDF and PostScript copies are provided.
+Please note that the PostScript files are compressed using gzip and are
 in a4 format.
 <p>
 <ul>
@@ -21,7 +21,7 @@ in a4 format.
 
 	Available in
 	<a href="papers/book.pdf">PDF</a> or
-	<a href="papers/book.ps.gz">Postscript</a>.
+	<a href="papers/book.ps.gz">PostScript</a>.
 	<p>
 
 	<li> <strong>Mercury Language Reference Manual</strong> <br>
@@ -34,11 +34,11 @@ in a4 format.
 	<dt> Version <? echo $current_release ?>: <dd>
 	<a href="<? echo $ref_man_release ?>">HTML</a>,
 	<a href="doc-release/reference_manual.pdf">PDF</a> or
-	<a href="doc-release/reference_manual.ps.gz">Postscript</a>.
+	<a href="doc-release/reference_manual.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $ref_man_latest ?>">HTML</a>,
 	<a href="doc-latest/reference_manual.pdf">PDF</a> or
-	<a href="doc-latest/reference_manual.ps.gz">Postscript</a>.
+	<a href="doc-latest/reference_manual.ps.gz">PostScript</a>.
 	</dl>
 	<p>
 
@@ -51,11 +51,11 @@ in a4 format.
 	<dt> Version <? echo $current_release ?>: <dd>
 	<a href="<? echo $user_guide_release ?>">HTML</a>,
 	<a href="doc-release/user_guide.pdf">PDF</a> or
-	<a href="doc-release/user_guide.ps.gz">Postscript</a>.
+	<a href="doc-release/user_guide.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $user_guide_latest ?>">HTML</a>,
 	<a href="doc-latest/user_guide.pdf">PDF</a> or
-	<a href="doc-latest/user_guide.ps.gz">Postscript</a>.
+	<a href="doc-latest/user_guide.ps.gz">PostScript</a>.
 	</dl>
 	<p>
 
@@ -67,11 +67,11 @@ in a4 format.
 	<dt> Version <? echo $current_release ?>: <dd>
 	<a href="<? echo $library_man_release ?>">HTML</a>,
 	<a href="doc-release/library.pdf">PDF</a> or
-	<a href="doc-release/library.ps.gz">Postscript</a>.
+	<a href="doc-release/library.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $library_man_latest ?>">HTML</a>,
 	<a href="doc-latest/library.pdf">PDF</a> or
-	<a href="doc-latest/library.ps.gz">Postscript</a>.
+	<a href="doc-latest/library.ps.gz">PostScript</a>.
 	</dl>
 	<p>
 
@@ -84,11 +84,11 @@ in a4 format.
 	<dt> Version <? echo $current_release ?>: <dd>
 	<a href="<? echo $trans_guide_release ?>">HTML</a>,
 	<a href="doc-release/transition_guide.pdf">PDF</a> or
-	<a href="doc-release/transition_guide.ps.gz">Postscript</a>.
+	<a href="doc-release/transition_guide.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $trans_guide_latest ?>">HTML</a>,
 	<a href="doc-latest/transition_guide.pdf">PDF</a> or
-	<a href="doc-latest/transition_guide.ps.gz">Postscript</a>.
+	<a href="doc-latest/transition_guide.ps.gz">PostScript</a>.
 	</dl>
 	<p>
 
@@ -108,11 +108,11 @@ in a4 format.
 	<dt> Version <? echo $current_release ?>: <dd>
 	<a href="<? echo $faq_release ?>">HTML</a>,
 	<a href="doc-release/faq.pdf">PDF</a> or
-	<a href="doc-release/faq.ps.gz">Postscript</a>.
+	<a href="doc-release/faq.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
 	<a href="<? echo $faq_latest ?>">HTML</a>,
 	<a href="doc-latest/faq.pdf">PDF</a> or
-	<a href="doc-latest/faq.ps.gz">Postscript</a>.
+	<a href="doc-latest/faq.ps.gz">PostScript</a>.
 	</dl>
 	<p>
 </ul>
