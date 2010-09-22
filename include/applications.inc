@@ -16,4 +16,7 @@ specifications with a Tk GUI</A>
 	platform, a suite of tools writen in Mercury for developing business
 	applications using ontologies.  The platform has been used to deliver a
 	number of commercial projects.
+<LI> <A HREF="http://www.princexml.com">The Prince XML and HTML formatter.</A>
+	Prince takes HTML or XML and produces PDF formatted according to 
+	user-supplied CSS rules.
 </UL>
