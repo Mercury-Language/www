@@ -12,4 +12,8 @@ If you are using Mercury in your project, please contact us at
         specifications using Mercury</A>
 <LI> <A HREF="http://svrc.it.uq.edu.au/Possum/">Possum, an animator for Z
 specifications with a Tk GUI</A>
+<LI> The <A HREF="http://www.missioncriticalit.com/odase.html">ODASE</A>
+	platform, a suite of tools writen in Mercury for developing business
+	applications using ontologies.  The platform has been used to deliver a
+	number of commercial projects.
 </UL>
