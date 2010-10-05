@@ -1,3 +1,11 @@
+<h2>New in release 10.04.2 of the Mercury distribution</h2>
+
+<p>
+This release is a bug-fix release.  A number of problems that caused the
+compiler to abort have been fixed, some broken RTTI operations in the java
+grade have been fixed, and we have added a workaround for a problem with GCC
+version 4.4.
+
 <h2>New in release 10.04.1 of the Mercury distribution</h2>
 
 <p>

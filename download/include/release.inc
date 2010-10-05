@@ -60,7 +60,7 @@ function links_to_file ($filename, $onSunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
-Mercury 10.04.1 was released on August 30, 2010.
+Mercury 10.04.2 was released on October 5, 2010.
 
 <h3>Information</h3>
 
@@ -152,19 +152,19 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (25 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-10.04.1.tar.gz", "yes") ?>
+<? links_to_file("mercury-compiler-10.04.2.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-10.04.1.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-10.04.2.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (1 Mb)
 <dd>
-<? links_to_file("mercury-tests-10.04.1.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-10.04.2.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-There are no binary distributions for 10.04.1 currently available.
+There are no binary distributions for 10.04.2 currently available.
