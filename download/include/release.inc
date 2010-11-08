@@ -167,4 +167,7 @@ or porting it to a new system.
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-There are no binary distributions for 10.04.2 currently available.
+The <a href="http://code.google.com/p/winmercury/">winmercury</a> project
+creates binary distributions of Mercury optimized for use on the Windows platform.
+
+There are no other binary distributions for 10.04.2 currently available.
