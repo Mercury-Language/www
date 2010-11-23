@@ -21,6 +21,14 @@
 */
 
 $newsdb = array(
+"23 November 2010" => array("C# backend",
+"The Mercury compiler now has a C# backend,
+which was under development during the last few months.
+It works with Microsoft .NET and Mono, and is available in the
+current releases of the day.
+"
+),
+
 "5 October 2010" => array("Mercury 10.04.2 released",
 "Release information is available
 <a href=\"./download/release-10.04.html\">here</A>."

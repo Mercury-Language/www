@@ -65,6 +65,22 @@ released but are still immature, while others are under development.
 	or later.
 	</dd>
 <p>
+        <dt><a name="c#"><b>C#.</b></a></dt>
+	<dd>
+	This back-end compiles Mercury to C#.
+	<p>
+	The compiler support is complete,
+	it includes good support for interfacing with C#
+	(see the language reference manual for details),
+	and the standard library is fairly reasonable.
+	There is support for Mercury-level debugging, but there is
+	not yet support for Mercury-level profiling.
+	<p>
+	For a guide to installing and using the C# grade, refer to
+	README.CSharp and the User's Guide. You will need a Mercury
+	release of the day.
+	</dd>
+<p>
         <dt><a name="erlang"><b>Erlang.</b></a></dt>
 	<dd>
 	This back-end compiles Mercury to Erlang.
