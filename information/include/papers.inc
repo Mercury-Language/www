@@ -808,9 +808,24 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <ul>
 
 <li>
+<string>
+<a href="papers.html#google_2010_autopar">
+Automatic Parallelisation for Mercury
+</a>
+</strong>
+<br/>
+Paul Bone
+<em>
+A Tech Talk at Google Sydney and a seminar at The University of New South Wales
+</em>
+Sydney Australia,
+December 2010
+<p>
+
+<li>
 <strong>
 <a href="papers.html#linuxconf_2010_autopar">
-Automatic parallelisation in Mercury
+Automatic Parallelisation in Mercury
 </a>
 </strong>
 <br/>
@@ -3376,8 +3391,26 @@ available here (560K).
 
 <li>
 <strong>
+<a name="google_2010_autopar">
+Automatic Parallelisation for Mercury
+</a>
+</strong>
+<br/>
+Paul Bone
+<em>
+A Tech Talk at Google Sydney and a seminar at The University of New South Wales
+</em>
+Sydney Australia,
+December 2010
+<a href="papers/google_2010_autopar.pdf">
+Available here (1.1M).
+</a>
+<p>
+
+<li>
+<strong>
 <a name="linuxconf_2010_autopar">
-Automatic Parallelisation in Mercury.
+Automatic Parallelisation in Mercury
 </a>
 </strong>
 <br/>

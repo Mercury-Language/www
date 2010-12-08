@@ -21,6 +21,14 @@
 */
 
 $newsdb = array(
+"6th December 2010" => array("New Presentation",
+"
+The slides for a Google Tech Talk and a seminar at The University of New South
+Wales about &quot;Automatic Parallelisation for Mercury&quot; are now available
+from the
+<a href=\"information/papers.html#google_2010_autopar\">papers page</a>
+"),
+
 "23 November 2010" => array("C# backend",
 "The Mercury compiler now has a C# backend,
 which was under development during the last few months.
