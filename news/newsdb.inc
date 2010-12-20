@@ -21,6 +21,13 @@
 */
 
 $newsdb = array(
+"20th December 2010" => array("Cairo binding",
+"The latest development version of the Mercury extras distribution
+now contains a Mercury binding to the
+<a href=\"http://www.cairographics.org/\">Cairo 2D graphics library</a>.
+See the files in extras/graphics/mercury_cairo for details.
+"),
+
 "6th December 2010" => array("New Presentation",
 "
 The slides for a Google Tech Talk and a seminar at The University of New South
