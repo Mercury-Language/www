@@ -21,6 +21,10 @@
 */
 
 $newsdb = array(
+"23rd December 2010" => array("11.01 beta release available",
+"Beta releases of Mercury 11.01 are available <a href=\"download.html\">here</a>.
+"),
+
 "20th December 2010" => array("Cairo binding",
 "The latest development version of the Mercury extras distribution
 now contains a Mercury binding to the
