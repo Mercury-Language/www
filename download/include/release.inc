@@ -60,19 +60,19 @@ function links_to_file ($filename, $onSunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
-Mercury 10.04.2 was released on October 5, 2010.
+Mercury 11.01 was released on April 27, 2011.
 
 <h3>Information</h3>
 
 <ul>
-<li> <a href = "release-10.04.html">
-     Release notes for 10.04
+<li> <a href = "release-11.01.html">
+     Release notes for 11.01
      </a>
-<li> <a href = "release-10.04-contents.html">
-     Contents of release 10.04 distribution
+<li> <a href = "release-11.01-contents.html">
+     Contents of release 11.01 distribution
      </a>
-<li> <a href = "release-10.04-bugs.html">
-     Known problems with release 10.04
+<li> <a href = "release-11.01-bugs.html">
+     Known problems with release 11.01
      </a>
 <li> <a href = "limitations.html">
      Limitations of the current release.
@@ -87,7 +87,8 @@ The latest release is known to work on the following platforms:
 
 <ul>
     <li> x86 and x86-64 machines running Linux 
-    <li> x86 machines running Microsoft Windows XP
+    <li> x86 and x86-64 machines running Microsoft Windows XP 3, Windows 7,
+         and Windows Server 2008 R2.
     <li> Apple Intel machines (both x86 and x86-64) running Mac OS X 10.5 and above
 </ul>
 
@@ -152,22 +153,19 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (25 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-10.04.2.tar.gz", "yes") ?>
+<? links_to_file("mercury-compiler-11.01.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-10.04.2.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-11.01.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (1 Mb)
 <dd>
-<? links_to_file("mercury-tests-10.04.2.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-11.01.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-The <a href="http://code.google.com/p/winmercury/">winmercury</a> project
-creates binary distributions of Mercury optimized for use on the Windows platform.
-
-There are no other binary distributions for 10.04.2 currently available.
+There are no binary distributions for 11.01 currently available.
