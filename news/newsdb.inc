@@ -21,6 +21,22 @@
 */
 
 $newsdb = array(
+"14th June 2011" => array("Mercury featured on dotnetrocks.com podcast",
+
+"<a href=\"http://www.dotnetrocks.com\">dotnetrocks.com</a> recently
+interviewed Paul Bone about Mercury and some of its features including
+Declarative Debugging and Automatic Parallelism.
+The podcast episode can be found
+<a href=\"http://www.dotnetrocks.com/default.aspx?showNum=671\">here</a>."
+),
+
+"7th June 2011" => array("New presentation",
+
+"The slides for a presentation about the Mercury project that was given at
+the Linux Users of Victoria's June 2011 meeting are now available from the
+<a href=\"information/papers.html#luv_2011\">papers page</a>."
+),
+
 "27th April 2011" => array("New release",
 
 "We are pleased to announce the release of version 11.01 of the

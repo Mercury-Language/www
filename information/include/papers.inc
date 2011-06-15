@@ -808,6 +808,21 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <ul>
 
 <li>
+<strong>
+<a href="papers.html#luv_2011">
+The Mercury project
+</a>
+</strong>
+<br/>
+Zoltan Somogyi
+<em>
+A presentation for the <a href="http://luv.asn.au">Linux Users of Victoria</a>
+</em>
+Melbourne Australia.
+June 2011
+<p>
+
+<li>
 <string>
 <a href="papers.html#google_2010_autopar">
 Automatic Parallelisation for Mercury
@@ -3388,6 +3403,24 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="luv_2011">
+The Mercury project
+</a>
+</strong>
+<br/>
+Zoltan Somogyi
+<em>
+A presentation for the <a href="http://luv.asn.au">Linux Users of Victoria</a>
+</em>
+Melbourne Australia.
+June 2011
+<a href="papers/luv_2011.pdf">
+Available here (228K)
+</a>
+<p>
 
 <li>
 <strong>
