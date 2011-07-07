@@ -22,6 +22,39 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#overlap">
+Estimating the overlap between dependent computations
+for automatic parallelization.
+</a>
+</strong>
+<br>
+Paul Bone, Zoltan Somogyi and Peter Schachte.
+<br>
+<em>
+Proceedings of the 27th International Conference on
+Logic Programming (ILCP '11),
+</em>
+Lexington, Kentucky, July 2011.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#dep_and_parallel">
+Minimizing the overheads of dependent AND-parallelism.
+</a>
+</strong>
+<br>
+Peter Wang and Zoltan Somogyi.
+<br>
+<em>
+Proceedings of the 27th International Conference on
+Logic Programming (ILCP '11),
+</em>
+Lexington, Kentucky, July 2011.
+<p>
+
+<li>
+<strong>
 <a href="papers.html#bmellor-hons">
 Towards Software Transactional Memory for Real-World Programs
 </a>
@@ -1082,6 +1115,118 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="overlap">
+Estimating the overlap between dependent computations
+for automatic parallelization.
+</a>
+</strong>
+<br>
+Paul Bone, Zoltan Somogyi and Peter Schachte.
+<br>
+<em>
+Proceedings of the 27th International Conference on
+Logic Programming (ILCP '11),
+</em>
+Lexington, Kentucky, July 2011.
+Available here
+<a href = "papers/dep_par_conj_overlap.ps">
+as PostScript (436K).
+</a>
+and
+<a href = "papers/dep_par_conj_overlap.pdf">
+as PDF (206K).
+</a>
+<p>
+Researchers working on the automatic parallelization of programs
+have long known that too much parallelism
+can be even worse for performance than too little,
+because spawning a task to be run on another CPU incurs overheads.
+Autoparallelizing compilers have therefore
+long tried to use granularity analysis
+to ensure that they only spawn off computations
+whose cost will probably exceed the spawn-off cost by a comfortable margin.
+However, this is not enough to yield good results,
+because data dependencies may \emph{also} limit
+the usefulness of running computations in parallel.
+If one computation blocks almost immediately
+and can resume only after another has completed its work,
+then the cost of parallelization again exceeds the benefit.
+<p>
+We present a set of algorithms for recognizing places in a program
+where it is worthwhile to execute two or more computations in parallel
+that pay attention to the second of these issues as well as the first.
+% that pays attention to the effect of data dependencies while ensuring
+% that the benefit of parallelization outweighs the costs.
+Our system uses profiling information to compute
+the times at which a procedure call consumes the values of its input arguments
+and the times at which it produces the values of its output arguments.
+Given two calls that may be executed in parallel,
+our system uses the times of production and consumption
+of the variables they share
+to determine how much their executions would overlap
+if they were run in parallel,
+and therefore whether executing them in parallel is a good idea or not.
+<p>
+We have implemented this technique for Mercury
+in the form of a tool that uses profiling data
+to generate recommendations about what to parallelize,
+for the Mercury compiler to apply on the next compilation of the program.
+We present preliminary results that show that
+this technique can yield useful parallelization speedups,
+while requiring nothing more from the programmer
+<p>
+
+<li>
+<strong>
+<a name="dep_and_parallel">
+Minimizing the overheads of dependent AND-parallelism.
+</a>
+</strong>
+<br>
+Peter Wang and Zoltan Somogyi.
+<br>
+<em>
+Proceedings of the 27th International Conference on
+Logic Programming (ILCP '11),
+</em>
+Lexington, Kentucky, July 2011.
+Available here
+<a href = "papers/minimizing_overheads_short.ps">
+as PostScript (836K).
+</a>
+and
+<a href = "papers/minimizing_overheads_short.pdf">
+as PDF (447K).
+</a>
+A longer version, with more details,
+is available here
+<a href = "papers/minimizing_overheads_long.ps">
+as PostScript (898K).
+</a>
+and
+<a href = "papers/minimizing_overheads_long.pdf">
+as PDF (179K).
+</a>
+<p>
+Parallel implementations of programming languages
+need to control synchronization overheads.
+Synchronization is essential
+for ensuring the correctness of parallel code,
+yet it adds overheads that aren't present in sequential programs.
+This is an important problem for parallel logic programming systems,
+because almost every action in such programs requires accessing variables,
+and the traditional approach of adding synchronization code
+to all such accesses is so prohibitively expensive that
+a parallel version of the program may run more slowly on four processors
+than a sequential version would run on one processor.
+We present a program transformation for implementing
+dependent AND-parallelism in logic programming languages
+that uses mode information to add synchronization code
+only to the variable accesses that actually need it.
+<p>
 
 <li>
 <strong>
