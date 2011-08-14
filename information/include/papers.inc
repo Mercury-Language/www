@@ -22,6 +22,21 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#threadscope">
+Profiling parallel Mercury programs with ThreadScope.
+</a>
+</strong>
+<br>
+Paul Bone and Zoltan Somogyi
+<br>
+<em>
+21st Workshop on Logic-based methods in Programming Environments.
+</em>
+Lexington, Kentucky, July 2011.
+<p>
+
+<li>
+<strong>
 <a href="papers.html#overlap">
 Estimating the overlap between dependent computations
 for automatic parallelization.
@@ -31,8 +46,8 @@ for automatic parallelization.
 Paul Bone, Zoltan Somogyi and Peter Schachte.
 <br>
 <em>
-Proceedings of the 27th International Conference on
-Logic Programming (ILCP '11),
+Theory and Practice of Logic Programming, 27th Int'l. Conference on Logic
+Programming (ICLP'11) Special Issue, volume 11, issue 4-5.
 </em>
 Lexington, Kentucky, July 2011.
 <p>
@@ -47,8 +62,8 @@ Minimizing the overheads of dependent AND-parallelism.
 Peter Wang and Zoltan Somogyi.
 <br>
 <em>
-Proceedings of the 27th International Conference on
-Logic Programming (ILCP '11),
+Technical Communications of the 27th International Conference on Logic
+Programming (ICLP'11), LIPICS Vol. 11.
 </em>
 Lexington, Kentucky, July 2011.
 <p>
@@ -842,6 +857,52 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
+<a href="papers.html#threadscope_talk">
+Profiling parallel Mercury programs with ThreadScope.
+</a>
+</strong>
+<br/>
+Paul Bone and Zoltan Somogyi
+<em>
+21st Workshop on Logic-based methods in Programming Environments.
+</em>
+Lexington, Kentucky, July 2011.
+<a href="papers.html#threadscope">corresponding paper</a>
+<p>
+
+<li>
+<strong>
+<a href="papers.html#overlap_talk">
+Estimating the overlap between dependent computations
+for automatic parallelization.
+</a>
+</strong>
+<br/>
+Paul Bone, Zoltan Somogyi and Peter Schachte.
+<em>
+27th International. Conference on Logic Programming (ICLP'11)
+</em>
+Lexington, Kentucky, July 2011.
+<a href="papers.html#overlap">corresponding paper</a>
+<p>
+
+<li>
+<strong>
+<a href="papers.html#dep_and_parallel_talk">
+Minimizing the overheads of dependent AND-parallelism.
+</a>
+</strong>
+<br/>
+Peter Wang and Zoltan Somogyi.
+<em>
+27th International. Conference on Logic Programming (ICLP'11)
+</em>
+Lexington, Kentucky, July 2011.
+<a href="papers.html#dep_and_parallel">corresponding paper</a>
+<p>
+
+<li>
+<strong>
 <a href="papers.html#luv_2011">
 The Mercury project
 </a>
@@ -1118,6 +1179,48 @@ Tyson Dowd, 1998.
 
 <li>
 <strong>
+<a name="threadscope">
+Profiling parallel Mercury programs with ThreadScope.
+</a>
+</strong>
+<br>
+Paul Bone and Zoltan Somogyi
+<br>
+<em>
+21st Workshop on Logic-based methods in Programming Environments.
+</em>
+Lexington, Kentucky, July 2011.
+Available here
+<a href = "papers/threadscope.pdf">
+as PDF (429K).
+</a>
+<p>
+The behavior of parallel programs is even harder to understand than the
+behavior of sequential programs. Parallel programs may suffer from any of the
+performance problems afﬂicting sequential programs, as well as from several
+problems unique to parallel systems. Many of these problems are quite hard (or
+even practically impossible) to diagnose without help from specialized tools.
+We present a proposal for a tool for profiling the parallel execution of
+Mercury programs, a proposal whose implementation we have already started. This
+tool is an adaptation and extension of the ThreadScope profiler that was first
+built to help programmers visualize the execution of parallel Haskell programs.
+<p>
+<code>
+<pre>
+@inprocedings{bone-somogyi_2011_threadscope,
+    author = {Paul Bone and Zoltan Somogyi},
+    title = {Profiling parallel {M}ercury programs with {T}hread{S}cope},
+    booktitle = {21st Workshop on Logic-based methods in Programming Environments (WLPE 2011)},
+    year = {2011},
+    month = {July},
+    editor = {Peter Schneider-Kamp},
+    pages = {32--46},
+}
+</pre>
+</code>
+
+<li>
+<strong>
 <a name="overlap">
 Estimating the overlap between dependent computations
 for automatic parallelization.
@@ -1127,17 +1230,17 @@ for automatic parallelization.
 Paul Bone, Zoltan Somogyi and Peter Schachte.
 <br>
 <em>
-Proceedings of the 27th International Conference on
-Logic Programming (ILCP '11),
+Theory and Practice of Logic Programming, 27th Int'l. Conference on Logic
+Programming (ICLP'11) Special Issue, volume 11, issue 4-5.
 </em>
 Lexington, Kentucky, July 2011.
 Available here
 <a href = "papers/dep_par_conj_overlap.ps">
-as PostScript (436K).
+as PostScript (959K).
 </a>
 and
 <a href = "papers/dep_par_conj_overlap.pdf">
-as PDF (206K).
+as PDF (196K).
 </a>
 <p>
 Researchers working on the automatic parallelization of programs
@@ -1178,6 +1281,23 @@ We present preliminary results that show that
 this technique can yield useful parallelization speedups,
 while requiring nothing more from the programmer
 <p>
+<code>
+<pre>
+@article{bone-somogyi-schachte_2011_overlap,
+    author = {Paul Bone and Zoltan Somogyi and Peter Schachte},
+    title = {Estimating the overlap between dependent computations
+             for automatic parallelization},
+    journal = {Theory and Practice of Logic Programming, 27th Int’l.
+               Conference on Logic Programming (ICLP’11) Special Issue},
+    year = {2011},
+    month = {July},
+    publisher = {Cambridge University Press},
+    volume = {11},
+    number = {(4--5)},
+    pages = {575--587}
+}
+</pre>
+</code>
 
 <li>
 <strong>
@@ -1189,8 +1309,8 @@ Minimizing the overheads of dependent AND-parallelism.
 Peter Wang and Zoltan Somogyi.
 <br>
 <em>
-Proceedings of the 27th International Conference on
-Logic Programming (ILCP '11),
+Technical Communications of the 27th International Conference on Logic
+Programming (ICLP'11), LIPICS Vol. 11.
 </em>
 Lexington, Kentucky, July 2011.
 Available here
@@ -1227,6 +1347,22 @@ dependent AND-parallelism in logic programming languages
 that uses mode information to add synchronization code
 only to the variable accesses that actually need it.
 <p>
+<code>
+<pre>
+@inproceedings{wang-somogyi_2011_dep-par-conj,
+    author = {Peter Wang and Zoltan Somogyi},
+    title = {Minimizing the overheads of dependent {AND}-parallelism},
+    booktitle = {Technical Communications of the 27th Int’l. Conference on
+                 Logic Programming (ICLP’11)},
+    pages = {128-138},
+    volume = {11},
+    year = {2011},
+    month = {July},
+    publisher = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+    series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+}
+</pre>
+</code>
 
 <li>
 <strong>
@@ -3548,6 +3684,61 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="threadscope_talk">
+Profiling parallel Mercury programs with ThreadScope.
+</a>
+</strong>
+<br/>
+Paul Bone and Zoltan Somogyi
+<em>
+21st Workshop on Logic-based methods in Programming Environments.
+</em>
+Lexington, Kentucky, July 2011.
+<a href="papers/threadscope_talk.pdf">
+Available here (338K)
+</a>
+<a href="papers.html#threadscope">corresponding paper</a>
+<p>
+
+<li>
+<strong>
+<a name="overlap_talk">
+Estimating the overlap between dependent computations
+for automatic parallelization.
+</a>
+</strong>
+<br/>
+Paul Bone, Zoltan Somogyi and Peter Schachte.
+<em>
+27th International Conference on Logic Programming (ICLP'11)
+</em>
+Lexington, Kentucky, July 2011.
+<a href="papers/dep_par_conj_overlap_talk.pdf">
+Available here (272K)
+</a>
+<a href="papers.html#overlap">corresponding paper</a>
+<p>
+
+<li>
+<strong>
+<a name="dep_and_parallel_talk">
+Minimizing the overheads of dependent AND-parallelism.
+</a>
+</strong>
+<br/>
+Peter Wang and Zoltan Somogyi.
+<em>
+27th International Conference on Logic Programming (ICLP'11)
+</em>
+Lexington, Kentucky, July 2011.
+<a href="papers/minimizing_overheads_talk.pdf">
+Available here (106K)
+</a>
+<a href="papers.html#dep_and_parallel">corresponding paper</a>
+<p>
 
 <li>
 <strong>
