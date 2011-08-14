@@ -1197,7 +1197,7 @@ as PDF (429K).
 <p>
 The behavior of parallel programs is even harder to understand than the
 behavior of sequential programs. Parallel programs may suffer from any of the
-performance problems afﬂicting sequential programs, as well as from several
+performance problems affecting sequential programs, as well as from several
 problems unique to parallel systems. Many of these problems are quite hard (or
 even practically impossible) to diagnose without help from specialized tools.
 We present a proposal for a tool for profiling the parallel execution of
