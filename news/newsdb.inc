@@ -21,6 +21,15 @@
 */
 
 $newsdb = array(
+"15th August 2011" => array("Three new papers",
+"
+Three new papers about parallelism in Mercury have been added to the
+<a href=\"information/papers.html#threadscope\">papers page</a>.
+Associated with each paper is a presentation that was given at ICLP 2011.
+The presentations are also available on the
+<a href=\"information/papers.html#threadscope_talk\">papers page</a>."
+),
+
 "29th June 2011" => array("11.07 beta release available",
 "Beta releases of Mercury 11.07 are available <a href=\"download.html\">here</a>."
 ),
