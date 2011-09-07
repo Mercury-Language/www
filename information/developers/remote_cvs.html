@@ -28,19 +28,19 @@ You need:
 
 Anonymous Access:
 <ul>
-	<li> The CVS server is running on <b>cvs.mercury.cs.mu.oz.au</b>,
+	<li> The CVS server is running on <b>cvs.mercury.csse.unimelb.edu.au</b>,
 	and the
 	repository is in the directory <b>/home/mercury/mercury1/repository</b>
 	<li> The anonymous access account is called <i>guest</i> with a
 		password of <i>guest</i>
 	<li> To login (you need to do this just once)
 <pre>
-	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury/mercury1/repository login
+	cvs -d :pserver:guest@cvs.mercury.csse.unimelb.edu.au:/home/mercury/mercury1/repository login
 </pre>
 	<li> The password is <i>guest</i>
 	<li> To checkout a module 
 <pre>
-	cvs -d :pserver:guest@cvs.mercury.cs.mu.oz.au:/home/mercury/mercury1/repository checkout mercury
+	cvs -d :pserver:guest@cvs.mercury.csse.unimelb.edu.au:/home/mercury/mercury1/repository checkout mercury
 </pre>
 	<li> There is a list of modules later in this page.
 
@@ -91,20 +91,15 @@ Getting Write Access:
 	
 	<ol>
 		<li>
-			Create an account for the new user on
-			cvs.mercury.cs.mu.oz.au (a.k.a jupiter).
-			The password field in <tt>/etc/passwd</tt> should
-			contain only an asterisk (<tt>*</tt>)
-			to prevent the user logging in.
-			A good place for the user's home directory
-			is <tt>/home/jupiter/<i>username</i></tt>.
+			Create an account for the new user using LDAP,
+                        see new_user in the local CVS module.
 		</li>
 		<li> Create a file <tt>.ssh/authorized_keys</tt> in the
 			user's home directory and add the user's public key to
 			that file.  The key should be all on one line, and at
 			the start of the line you should add the string
 			<pre>
-	command="cvs server",no-port-forwarding
+                	command="cvs server",no-port-forwarding
 			</pre>
 			This prevents the user from doing anything with their
 			account except using the CVS server.
@@ -127,7 +122,7 @@ Then (once your account is set up):
 
 	<li> Set your CVSROOT environment variable to
 	<pre>
-	:ext:username@cvs.mercury.cs.mu.oz.au:/home/mercury/mercury1/repository
+	:ext:username@cvs.mercury.csse.unimelb.edu.au:/home/mercury/mercury1/repository
 	</pre>
 	  Make sure this environment variable is exported (in sh
 	  based shells, "export CVSROOT", in csh based shells, use
@@ -142,7 +137,7 @@ Then (once your account is set up):
 	to turn on X forwarding by adding the following to your
 	<tt>~/.ssh/config</tt> file:
 	<pre>
-	Host cvs.mercury.cs.mu.oz.au
+	Host cvs.mercury.csse.unimelb.edu.au
 	ForwardX11 yes
 	</pre>
 	If you are not running an X server and you are having problems
@@ -165,10 +160,6 @@ Then (once your account is set up):
 		<dl>
 	  	<dt>mercury	<dd> the mercury compiler, runtime, library,
 				  extras and documentation (big)
-	  	<dt>mercury-gcc	<dd> the mercury-gcc distribution;
-				  this contains part of the source for the
-				  <a href="http://www.mercury.cs.mu.oz.au/download/gcc-backend.html">native code
-				  back-end</a>
 	  	<dt>tests	<dd> test cases for the compiler (big)
 		<dt>w3		<dd> the www page (several Mb - lots of papers)
 		</dl>
@@ -201,7 +192,7 @@ NOTE:
 	  </ul>
 	  or
 	  <ul>
-	  	<li>on the <a href="http://www.mercury.cs.mu.oz.au/information/doc-latest/reviews.html">web</a>
+	  	<li>on the <a href="../doc-latest/reviews.html">web</a>
 	  </ul>
 	  Basically, we don't commit broken code into the repository,
 	  and we don't commit un-reviewed code.
@@ -219,10 +210,9 @@ NOTE:
 <p>
 <hr>
 <p>
-Comments? Mail <a href = "mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>,
-or see our <a href = "../../contact.html" >contact</a> page.<br>
+Comments? See our <a href = "../../contact.html" >contact</a> page.<br>
 
-Last update was $Date: 2007-07-25 06:59:31 $ by $Author: zs $@cs.mu.oz.au
+Last update was $Date: 2011-09-07 04:50:15 $ by $Author: pbone $@csse.unimelb.edu.au
 </body>
 </html>
 

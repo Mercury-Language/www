@@ -52,3 +52,11 @@ Each ROTD is given a version number
 <p>
 The <a href="download/rotd.html">current release of the day</a>
 is version <? echo $rotd_version; ?>.
+
+<h3>Anonymous CVS access</h3>
+<p>
+Anonymous access to our CVS repository is also available.                                                                  
+See the <a href="information/developers/remote_cvs.html">CVS access</a>
+page for details.
+</p>
+
