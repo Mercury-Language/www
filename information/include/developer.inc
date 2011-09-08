@@ -110,14 +110,6 @@ in a4 format.
 	<a href="doc-latest/bootstrapping.html">HTML</a>
 	<p>
 
-<li>	<strong>HOWTO add a new user.</strong> <br>
-	Information on what needs to be done when a new person joins the
-	Mercury project.  <p>
-
-	Available in
-	<a href="developers/add_new_user.html">HTML</a>
-	<p>
-
 <!---------
 %% Take this out of comments when the bytecode docs have settled down a bit.
 <li>	<strong>Bytecode</strong> <br>
