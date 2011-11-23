@@ -84,6 +84,7 @@ if($menu == "Back-ends") {
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#low_level_c">Low-level&nbsp;C</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/release-0.10.html#hlc">High-level&nbsp;C</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#java">Java</a><BR>
+  &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#csharp">C#</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/backends.html#erlang">Erlang</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/dotnet.html">Microsoft .NET</a><BR>
   &nbsp;&nbsp;<a href="<?echo $root?>/download/gcc-backend.html">Native code</a><BR>

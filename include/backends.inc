@@ -40,9 +40,10 @@ released but are still immature, while others are under development.
 	This back-end compiles Mercury code to fairly high-level C
 	code, more like the kind that a C programmer might write.
 	<p>
-	For details, see the
-        <a href="<?echo $root?>/download/release-0.10.html#hlc">
-	announcement of Mercury release 0.10</a>.
+	For more information on the high-level C back-end see the
+	<a href="<?echo $root?>/information/papers.html">papers</a>
+	section of the web site, in particular the paper titled
+	"Compiling Mercury to high-level C code".
 	</dd>
 </dl>
 <p>
@@ -65,7 +66,7 @@ released but are still immature, while others are under development.
 	or later.
 	</dd>
 <p>
-        <dt><a name="c#"><b>C#.</b></a></dt>
+        <dt><a name="csharp"><b>C#.</b></a></dt>
 	<dd>
 	This back-end compiles Mercury to C#.
 	<p>
@@ -77,8 +78,8 @@ released but are still immature, while others are under development.
 	not yet support for Mercury-level profiling.
 	<p>
 	For a guide to installing and using the C# grade, refer to
-	README.CSharp and the User's Guide. You will need a Mercury
-	release of the day.
+	README.CSharp and the User's Guide. You will need Mercury release 11.01
+	or later.
 	</dd>
 <p>
         <dt><a name="erlang"><b>Erlang.</b></a></dt>
