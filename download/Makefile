@@ -21,6 +21,7 @@ HTML= 	current-release-bugs.html	\
 	release-0.13.html		\
 	release-10.04.html		\
 	release-11.01.html		\
+	release-11.07.html		\
 	release-0.3-bugs.html		\
 	release-0.4-bugs.html		\
 	release-0.5-bugs.html		\
@@ -35,6 +36,7 @@ HTML= 	current-release-bugs.html	\
 	release-0.13-bugs.html		\
 	release-10.04-bugs.html		\
 	release-11.01-bugs.html		\
+	release-11.07-bugs.html		\
 	release-0.3-contents.html	\
 	release-0.4-contents.html	\
 	release-0.5-contents.html	\
@@ -48,6 +50,7 @@ HTML= 	current-release-bugs.html	\
 	release-0.13-contents.html	\
 	release-10.04-contents.html	\
 	release-11.01-contents.html 	\
+	release-11.07-contents.html 	\
 	rotd.html
 
 current-release-bugs.html: release-11.01-bugs.inc

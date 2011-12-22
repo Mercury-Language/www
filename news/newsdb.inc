@@ -21,6 +21,14 @@
 */
 
 $newsdb = array(
+"22nd December 2011" => array("New release",
+
+"We are pleased to announce the release of version 11.07 of the
+Mercury system.  The new release can be downloaded 
+<a href=\"download/release.html\">here</a>.  For a list of the changes since
+the last version see the <a href=\"download/release-11.07.html\">release notes</a>."
+),
+
 "15th August 2011" => array("Three new papers",
 "
 Three new papers about parallelism in Mercury have been added to the
