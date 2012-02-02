@@ -22,6 +22,21 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#loop_control">
+Controlling Loops in Parallel Mercury Code.
+</a>
+</strong>
+<br>
+Paul Bone, Zoltan Somogyi and Peter Schachte
+<br>
+<em>
+Declarative Aspects and Applications of Multicore Programming
+</em>
+Philadelphia, Pennsylvania, USA, January 2012.
+<p>
+
+<li>
+<strong>
 <a href="papers.html#threadscope">
 Profiling parallel Mercury programs with ThreadScope.
 </a>
@@ -857,6 +872,22 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
+<a href="papers.html#loop_control_talk">
+Controlling Loops in Parallel Mercury Code.
+</a>
+</strong>
+<br>
+Paul Bone, Zoltan Somogyi and Peter Schachte
+<br>
+<em>
+Declarative Aspects and Applications of Multicore Programming
+</em>
+Philadelphia, Pennsylvania, USA, January 2012.
+<a href="papers.html#loop_control">corresponding paper</a>
+<p>
+
+<li>
+<strong>
 <a href="papers.html#threadscope_talk">
 Profiling parallel Mercury programs with ThreadScope.
 </a>
@@ -1176,6 +1207,52 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="loop_control">
+Controlling Loops in Parallel Mercury Code.
+</a>
+</strong>
+<br>
+Paul Bone, Zoltan Somogyi and Peter Schachte
+<br>
+<em>
+Declarative Aspects and Applications of Multicore Programming
+</em>
+Philadelphia, Pennsylvania, USA, January 2012.
+Available here
+<a href = "papers/loop_control.pdf">
+as PDF (159K).
+</a>
+<p>
+Recently we built a system that uses profiling data
+to automatically parallelize Mercury programs by
+finding conjunctions with expensive conjuncts
+that can run in parallel with minimal synchronization delays.
+This worked very well in many cases, but in cases of tail recursion,
+we got much lower speedups than we expected,
+due to excessive memory usage.
+In this paper, we present a novel program transformation
+that eliminates this problem,
+and also allows recursive calls inside parallel conjunctions
+to take advantage of tail recursion optimization.
+Our benchmark results show that our new transformation
+greatly increases the speedups we can get from parallel Mercury programs;
+in one case, it changes no speedup into almost perfect speedup on four cores.
+<p>
+<code>
+<pre>
+@InProceedings{bone12:_contr_loops_paral_mercur_code,
+  author =       {Paul Bone and Zoltan Somogyi and Peter Schachte},
+  title =        {Controlling Loops in Parallel Mercury Code},
+  booktitle = {Declarative Aspects and Applications of Multicore Programming},
+  year =      2012,
+  address =   {Philadelphia, PA, USA},
+  month =     {Janurary}
+}
+</pre>
+</code>
 
 <li>
 <strong>
@@ -3684,6 +3761,24 @@ available here (560K).
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul>
+
+<li>
+<strong>
+<a name="loop_control_talk">
+Controlling Loops in Parallel Mercury Code.
+</a>
+</strong>
+<br/>
+Paul Bone, Zoltan Somogyi and Peter Schachte
+<em>
+Declarative Aspects and Applications of Multicore Programming
+</em>
+Philadelphia, Pennsylvania, USA, January 2012.
+<a href="papers/loop_control_talk.pdf">
+Available here (K)
+</a>
+<a href="papers.html#loop_control">corresponding paper</a>
+<p>
 
 <li>
 <strong>
