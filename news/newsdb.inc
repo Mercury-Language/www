@@ -21,6 +21,15 @@
 */
 
 $newsdb = array(
+"28th Janurary 2012" => array("New paper",
+"
+A new paper and presentation has been added to the
+<a href=\"information/papers.html#loop_control\">papers page</a>.
+This paper describes how parallel conjunctions with recursive calls
+can be handled more efficiently,
+especially with regard to memory usage."
+),
+
 "22nd December 2011" => array("New release",
 
 "We are pleased to announce the release of version 11.07 of the
