@@ -3775,7 +3775,7 @@ Declarative Aspects and Applications of Multicore Programming
 </em>
 Philadelphia, Pennsylvania, USA, January 2012.
 <a href="papers/loop_control_talk.pdf">
-Available here (K)
+Available here (168K)
 </a>
 <a href="papers.html#loop_control">corresponding paper</a>
 <p>
