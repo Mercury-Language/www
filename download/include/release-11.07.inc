@@ -1,3 +1,23 @@
+<h2>New in release 11.07.1 of the Mercury distribution</h2>
+
+<p>
+This is a bug-fix release.  It fixes a problem that was preventing the standard
+library from building in the csharp grade on Cygwin and also adds support for
+using GCC in C99 (or GNU99) mode with Mercury.  In addition, there are a number
+of minor changes to the standard library.
+
+<p>
+Changes to the Mercury standard library:
+
+<ul>
+<li>We have added the predicate map.keys_and_values/3.
+
+<li>We have added the predicates set.is_singleton/2, set_bbbtree.is_singleton/2,
+set_ctree234.is_singleton/2 and set_unordlist.is_singleton/2.
+
+<li>We have added the function list.foldl_corresponding/4.
+</ul>
+
 <h2>New in release 11.07 of the Mercury distribution</h2>
 
 <h3>HIGHLIGHTS</h3>

@@ -60,7 +60,7 @@ function links_to_file ($filename, $onSunsite)
 ?>
 <h2><a name="info">Current Release</a></h2>
 
-Mercury 11.07 was released on December 22, 2011.
+Mercury 11.07.1 was released on March 2, 2012.
 
 <h3>Information</h3>
 
@@ -181,19 +181,19 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (25 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-11.07.tar.gz", "yes") ?>
+<? links_to_file("mercury-compiler-11.07.1.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-11.07.tar.gz", "no") ?>
+<? links_to_file("mercury-extras-11.07.1.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (1 Mb)
 <dd>
-<? links_to_file("mercury-tests-11.07.tar.gz", "no") ?>
+<? links_to_file("mercury-tests-11.07.1.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distributions</a></h3>
 
-There are no binary distributions for 11.07 currently available.
+There are no binary distributions for 11.07.1 currently available.

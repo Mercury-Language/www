@@ -21,7 +21,12 @@
 */
 
 $newsdb = array(
-"28th Janurary 2012" => array("New paper",
+"2nd March 2012" => array("Mercury 11.07.1 released",
+"Release information is available
+<a href=\"./download/release-11.07.html\">here</A>."
+),
+
+"28th January 2012" => array("New paper",
 "
 A new paper and presentation have been added to the
 <a href=\"information/papers.html#loop_control\">papers page</a>.
