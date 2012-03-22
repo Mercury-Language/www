@@ -1249,7 +1249,7 @@ in one case, it changes no speedup into almost perfect speedup on four cores.
   booktitle = {Declarative Aspects and Applications of Multicore Programming},
   year =      2012,
   address =   {Philadelphia, PA, USA},
-  month =     {Janurary}
+  month =     {January}
 }
 </pre>
 </code>
