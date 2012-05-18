@@ -1,4 +1,4 @@
-<?
+<?php
 
 /* 
 ** This is the reports news database.

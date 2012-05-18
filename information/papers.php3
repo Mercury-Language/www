@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Information";
     $title="Papers and Presentations";
     $dir="information";

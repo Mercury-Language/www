@@ -7,7 +7,7 @@ or use Mercury to implement part of a component-based system.
 
 <h3>Latest MCORBA News</h3>
 
-<?
+<?php
     include "$root/include/mcorba_news.inc";
 ?>
 
@@ -21,7 +21,7 @@ see how IDL is transformed into Mercury.
 <P>
 <B>Download MCORBA:</B>
 <ul>
-<li> <A HREF="<? echo $root; ?>/download/files/mcorba/">
+<li> <A HREF="<?php echo $root; ?>/download/files/mcorba/">
 Mercury web site</A><br>
 <li> <A HREF="ftp://ftp.mercury.cs.mu.OZ.AU/pub/mercury/mcorba//">
 Mercury ftp site</A>

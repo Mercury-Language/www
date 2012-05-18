@@ -27,6 +27,6 @@ Format: <select name=format>
 Search:
 <input type="text" size="30" name="words" value="">
 <input type="submit" value="Search">
-<a href="http://htdig.sdsu.edu"><IMG SRC="<?echo $root?>/images/htdig.gif" align=bottom alt="ht://Dig" border=0></a>
+<a href="http://htdig.sdsu.edu"><IMG SRC="<?php echo $root?>/images/htdig.gif" align=bottom alt="ht://Dig" border=0></a>
 </form>
 <hr noshade size=4>

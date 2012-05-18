@@ -27,7 +27,7 @@ released but are still immature, while others are under development.
 	global register variables, computed gotos, and inline assembler.
 	<p>
 	For more information on the low-level C back-end, see the
-	<a href="<?echo $root?>/information/papers.html">papers</a>
+	<a href="<?php echo $root?>/information/papers.html">papers</a>
 	section of the web site, in particular the papers titled "The
 	execution algorithm of Mercury: an efficient purely declarative
 	logic programming language", "Code generation for Mercury",
@@ -41,7 +41,7 @@ released but are still immature, while others are under development.
 	code, more like the kind that a C programmer might write.
 	<p>
 	For more information on the high-level C back-end see the
-	<a href="<?echo $root?>/information/papers.html">papers</a>
+	<a href="<?php echo $root?>/information/papers.html">papers</a>
 	section of the web site, in particular the paper titled
 	"Compiling Mercury to high-level C code".
 	</dd>
@@ -103,7 +103,7 @@ released but are still immature, while others are under development.
 <p>
 <dl>
         <dt>
-        <a name="dotnet" href="<?echo $root?>/dotnet.html">
+        <a name="dotnet" href="<?php echo $root?>/dotnet.html">
 	<b>Microsoft's .NET</b></a>
 	</dt>
 	<dd>
@@ -112,7 +112,7 @@ released but are still immature, while others are under development.
 	</dd>
 <p>
         <dt>
-        <a name="gcc" href="<?echo $root?>/download/gcc-backend.html">
+        <a name="gcc" href="<?php echo $root?>/download/gcc-backend.html">
 	<b>Native code</b></a>
 	</dt>
 	<dd>

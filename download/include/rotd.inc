@@ -1,4 +1,4 @@
-<?
+<?php
 
 #
 # This is PHP3 code.  On Debian systems (e.g. saturn.cs.mu.oz.au),
@@ -26,7 +26,7 @@ function links_to_file ($filename)
 ?>
 <h2><a name="info">Release of the day</a></h2>
 
-The latest release of the day is version <b><? echo $rotd_version; ?></b>.
+The latest release of the day is version <b><?php echo $rotd_version; ?></b>.
 <p>
 Please treat ROTDs with caution -- although they are often very
 useful and reasonably stable, they are not widely tested, and
@@ -37,18 +37,18 @@ in feedback and bug reports on the ROTDs.  Please file bug reports in our
 <h3>Information</h3>
 
 <ul>
-<li> <a href = "<? echo $root; 
-?>/download/files/beta-releases/rotd/mercury-NEWS-<? echo $rotd_version; 
+<li> <a href = "<?php echo $root; 
+?>/download/files/beta-releases/rotd/mercury-NEWS-<?php echo $rotd_version; 
 ?>-unstable.txt">
-     Changes since version <? echo $current_release; ?>
+     Changes since version <?php echo $current_release; ?>
      </a>
-<li> <a href = "<? echo $root; 
-?>/download/files/beta-releases/rotd/mercury-INSTALL-<? echo $rotd_version; 
+<li> <a href = "<?php echo $root; 
+?>/download/files/beta-releases/rotd/mercury-INSTALL-<?php echo $rotd_version; 
 ?>-unstable.txt">
      Instructions for installing from the source distribution
      </a>
-<li> <a href = "<? echo $root; 
-?>/download/files/beta-releases/rotd/mercury-test-failures-<? echo $rotd_version; 
+<li> <a href = "<?php echo $root; 
+?>/download/files/beta-releases/rotd/mercury-test-failures-<?php echo $rotd_version; 
 ?>-unstable.txt">
      Failing test cases for the current ROTD
      </a>
@@ -190,16 +190,16 @@ or porting it to a new system.
 <dl>
 <dt> Compiler
 <dd> 
-<? links_to_file("mercury-compiler-$rotd_version-unstable.tar.gz") ?>
+<?php links_to_file("mercury-compiler-$rotd_version-unstable.tar.gz") ?>
 <p>
 
 <dt> Extras
 <dd>
-<? links_to_file("mercury-extras-$rotd_version-unstable.tar.gz") ?>
+<?php links_to_file("mercury-extras-$rotd_version-unstable.tar.gz") ?>
 <p>
 
 <dt> Tests
 <dd>
-<? links_to_file("mercury-tests-$rotd_version-unstable.tar.gz") ?>
+<?php links_to_file("mercury-tests-$rotd_version-unstable.tar.gz") ?>
 </dl>
 

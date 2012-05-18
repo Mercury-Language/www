@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Download";
     $title="Release 0.9.1 Notes";
     $dir="download";

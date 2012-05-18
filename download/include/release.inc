@@ -1,4 +1,4 @@
-<?
+<?php
 
 #
 # This is PHP3 code.  On Debian systems (e.g. venus.cs.mu.oz.au),
@@ -181,17 +181,17 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (25 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-11.07.1.tar.gz", "yes") ?>
+<?php links_to_file("mercury-compiler-11.07.1.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-11.07.1.tar.gz", "no") ?>
+<?php links_to_file("mercury-extras-11.07.1.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (1 Mb)
 <dd>
-<? links_to_file("mercury-tests-11.07.1.tar.gz", "no") ?>
+<?php links_to_file("mercury-tests-11.07.1.tar.gz", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distributions</a></h3>

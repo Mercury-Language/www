@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Search";
     $title="Search Mercury Web Site";
     $dir=".";

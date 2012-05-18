@@ -1,4 +1,4 @@
-<?
+<?php
 function newsitem($date, $item) {
 
 	list($title, $news) = $item;

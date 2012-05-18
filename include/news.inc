@@ -6,7 +6,7 @@ out, you can download our <A HREF="download/rotd.html">release of the day</A>.
 <P>
 
 <table>
-<? 
+<?php 
 
 include "$root/news/newsdb.inc";
 

@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Back-ends";
     $title="Back-ends";
     $dir=".";

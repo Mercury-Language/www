@@ -2,7 +2,7 @@
 
 <H3>Developer Documentation</H3>
 There is some developer documentation at the Mercury
-<a href="<? echo $root ?>/information/developer.html">developer information page</a>.
+<a href="<?php echo $root ?>/information/developer.html">developer information page</a>.
 
 <H3>Mercury Libraries and Programs</H3>
 If you've written some code using Mercury we'd love to find out about

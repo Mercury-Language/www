@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Back-ends";
     $title="Mercury front-end for GCC";
     $dir="download";

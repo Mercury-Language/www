@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Download";
     $submenu="Current Release";
     $title="Release 10.04 known problems";

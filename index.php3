@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $title="Introduction";
     $dir=".";
     $root=".";

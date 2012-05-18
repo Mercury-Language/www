@@ -1,4 +1,4 @@
-<?
+<?php
 	$installed_path="/home/mercury/mercury5/installed_w3";
 
 	$current_release="<RELEASE_VERSION>";

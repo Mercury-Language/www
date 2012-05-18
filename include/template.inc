@@ -1,21 +1,21 @@
-<?  include "$root/include/functions.inc" ?>
-<?  include "$root/include/globals.inc" ?>
+<?php include "$root/include/functions.inc" ?>
+<?php include "$root/include/globals.inc" ?>
 
-<TITLE>The Mercury Project: <?echo $title?></TITLE>
+<TITLE>The Mercury Project: <?php echo $title?></TITLE>
 <BODY bgcolor="#ABCDEF" text="#000000">
 
 <TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
 <TR>
     <TD>
     <CENTER><H1>The Mercury Project<br>
-    <? echo $title ?>
+    <?php echo $title ?>
     </H1></CENTER>
     </TD>
 
     <TD width="10%">
-    <? $size = GetImageSize("$root/images/merclogo_small.jpg"); ?>
-    <IMG SRC="<?echo $root?>/images/merclogo_small.jpg" border="2"
-        hspace="10" <? echo $size[3]; ?>
+    <?php $size = GetImageSize("$root/images/merclogo_small.jpg"); ?>
+    <IMG SRC="<?php echo $root?>/images/merclogo_small.jpg" border="2"
+        hspace="10" <?php echo $size[3]; ?>
 	ALT="[Mercury Logo]">
     </TD>
 </TR>
@@ -24,15 +24,15 @@
 <TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
 <TR>
     <TD valign="top" bgcolor="#fcf4d4" width="15%">
-    <? include "$root/include/menubar.inc" ?>
+    <?php include "$root/include/menubar.inc" ?>
     </TD>
     <TD valign="top">
-    <? include "$root/$dir/include/$include" ?>
+    <?php include "$root/$dir/include/$include" ?>
     </TD>
 </TR>
 </TABLE>
 
-<?
+<?php
 /*
  * This allows the university to track the popularity of our website via Google
  * Analytics.

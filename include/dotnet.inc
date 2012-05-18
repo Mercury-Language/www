@@ -25,13 +25,13 @@ This is still work in progress.
 developed. </em>
 <p>
 
-The <a href="<? echo $root ?>/download/rotd.html">release-of-the-day releases</a>
+The <a href="<?php echo $root ?>/download/rotd.html">release-of-the-day releases</a>
 of the Mercury compiler include support for generating code for .NET.
 They also include a port of most of the Mercury standard library and runtime
 to .NET.
 <p>
 
-The <a href="<? echo $root ?>/download/release.html">current release</a>
+The <a href="<?php echo $root ?>/download/release.html">current release</a>
 also includes some support for the .NET backend, but coverage
 of the Mercury standard library for .NET is much improved in the
 release-of-the-day releases, so if you want to use the .NET back-end,
@@ -60,7 +60,7 @@ Mercury language features:
 <li> etc.
 </ul>
 And if you're interested in checking it out, it's available for
-<a href="<? echo $root ?>/download.html">download</a> today.
+<a href="<?php echo $root ?>/download.html">download</a> today.
 <p>
 For more information, see the README.DotNet file in the
 Mercury source distribution.
@@ -72,10 +72,10 @@ We have written two general purpose articles, talking about Mercury and the
 
 <ul>
 	<li>
-	<a href="<? echo $root ?>/information/dotnet/mercury_and_dotnet.html">
+	<a href="<?php echo $root ?>/information/dotnet/mercury_and_dotnet.html">
 		Mercury and Microsoft's .NET</a>
 
 	<li>
-	<a href="<? echo $root ?>/information/dotnet/objectworld_flyer.html">
+	<a href="<?php echo $root ?>/information/dotnet/objectworld_flyer.html">
 	Mercury and .NET: flyer for ObjectWorld 2000</a>
 </ul>

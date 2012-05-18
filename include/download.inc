@@ -1,10 +1,10 @@
 <H2>How to get Mercury</H2>
-<? $next_beta_version="11.07.2-beta" ?>
+<?php $next_beta_version="11.07.2-beta" ?>
 
 The Mercury compiler is free software, and is distributed under the
 terms of the GNU General Public License.
 <p>
-There are <? echo($next_beta_version == "" ? "two" : "three"); ?> 
+There are <?php echo($next_beta_version == "" ? "two" : "three"); ?> 
 main versions of Mercury available at the moment.
 
 <H3> Current stable release </H3>
@@ -19,28 +19,28 @@ In February 2010 the Mercury project decided to name each stable release by usin
 For example 10.04 is for a release made in April 2010.
 <p>
 The <a href="download/release.html">current stable release</a>
-is version <? echo $current_release; ?>.
+is version <?php echo $current_release; ?>.
 
-<? if ($next_beta_version != "") { ?>
+<?php if ($next_beta_version != "") { ?>
 	<H3> Beta release </H3>
 
 	A beta version of the next release is also available.
-	The current beta release is version <? echo $next_beta_version; ?>. 
+	The current beta release is version <?php echo $next_beta_version; ?>. 
 	The source distribution for this beta release is available for download
 	from: 
 	<ul>
 	<li> 
 	<A
-	HREF="<?
+	HREF="<?php
 		echo "http://$www_domain/download/files/beta-releases/";
 		echo "$next_beta_version/index.html";
 	?>"> the Mercury web site</A> or
-	<li> <A HREF="<?
+	<li> <A HREF="<?php
 		echo "ftp://$ftp_domain/pub/mercury/beta-releases/";
 		echo "$next_beta_version";
 	?>">the Mercury ftp site</A>.
 	</ul>
-<? } ?>
+<?php } ?>
 
 <H3> Release of the day </H3>
 <p>
@@ -51,7 +51,7 @@ Each ROTD is given a version number
 "rotd-YYYY-MM-DD" according to the date on which it was built.  
 <p>
 The <a href="download/rotd.html">current release of the day</a>
-is version <? echo $rotd_version; ?>.
+is version <?php echo $rotd_version; ?>.
 
 <h3>Anonymous CVS access</h3>
 <p>

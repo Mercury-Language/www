@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Mailing Lists";
     $title="Mailing List Archives";
     $dir="mailing-lists";

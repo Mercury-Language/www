@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Contact";
     $title="People";
     $dir="contact";

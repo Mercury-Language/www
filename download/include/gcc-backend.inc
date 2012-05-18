@@ -65,10 +65,10 @@ of Mercury), as well as the Mercury standard library (about 50,000
 lines of Mercury), runtime system (about 30,000 lines of C), etc.
 You'll need version 0.10, version 0.10.1, version 0.10.2-beta-*,
 or (preferably) a release-of-the-day version dated 2002-09-11 or later.
-You can get this from the <a href="<?echo
+You can get this from the <a href="<?php echo
 $root?>/download.html">Download</a> section of the Mercury web site.
 Or you can use
-<a href="<?echo $root?>/information/developers/remote_cvs.html">CVS</a>.
+<a href="<?php echo $root?>/information/developers/remote_cvs.html">CVS</a>.
 It is in the "mercury" directory of the Mercury repository, so it can
 be checked out using "cvs checkout mercury".
 
@@ -101,7 +101,7 @@ Mercury ftp site</A>.
 For Mercury 0.10, 0.10.1, or 0.10.2-beta-*, get mercury-gcc-0.10.1.tar.gz.
 For release-of-the-day distributions, get mercury-gcc-rotd-*.tar.gz.
 Alternatively, you can also get this using
-<a href="<?echo $root?>/information/developers/remote_cvs.html">CVS</a>;
+<a href="<?php echo $root?>/information/developers/remote_cvs.html">CVS</a>;
 it is in the "mercury-gcc" directory of the Mercury repository, so it can
 be checked out using "cvs checkout mercury-gcc".
 </ul>

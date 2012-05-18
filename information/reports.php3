@@ -1,5 +1,5 @@
 <HTML>
-<?
+<?php
     $menu="Information";
     $title="Mercury Reports";
     $dir="information";

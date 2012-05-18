@@ -1,4 +1,4 @@
-<?
+<?php
 
 #
 # This is PHP3 code.  On Debian systems (e.g. venus.cs.mu.oz.au),
@@ -159,17 +159,17 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (25 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-11.01.tar.gz", "yes") ?>
+<?php links_to_file("mercury-compiler-11.01.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-11.01.tar.gz", "no") ?>
+<?php links_to_file("mercury-extras-11.01.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (1 Mb)
 <dd>
-<? links_to_file("mercury-tests-11.01.tar.gz", "no") ?>
+<?php links_to_file("mercury-tests-11.01.tar.gz", "no") ?>
 </dl>
 
 <h2>Release 10.04.2</h2>
@@ -266,17 +266,17 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (25 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-10.04.2.tar.gz", "yes") ?>
+<?php links_to_file("mercury-compiler-10.04.2.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-10.04.2.tar.gz", "no") ?>
+<?php links_to_file("mercury-extras-10.04.2.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (1 Mb)
 <dd>
-<? links_to_file("mercury-tests-10.04.2.tar.gz", "no") ?>
+<?php links_to_file("mercury-tests-10.04.2.tar.gz", "no") ?>
 </dl>
 
 <h2>Release 0.13.1</h2>
@@ -405,10 +405,10 @@ The main "mercury-compiler" source distribution is about 15 Mb.
 This includes the compiler, standard library,
 debugger, profilers, and other tools.
 (Note that this does <em>not</em> include all the sources needed to build
-the <a href="<?echo $root?>/download/gcc-backend.html">
+the <a href="<?php echo $root?>/download/gcc-backend.html">
 native-code back-end</a>; for that you also need the
 "mercury-gcc" and "gcc" distributions.
-See <a href="<?echo $root?>/download/gcc-backend.html">here</a>
+See <a href="<?php echo $root?>/download/gcc-backend.html">here</a>
 for details.)
 
 <p>
@@ -429,17 +429,17 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (15 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.13.1.tar.gz", "yes") ?>
+<?php links_to_file("mercury-compiler-0.13.1.tar.gz", "yes") ?>
 <p>
 
 <dt> Extras (750 kb)
 <dd>
-<? links_to_file("mercury-extras-0.13.1.tar.gz", "no") ?>
+<?php links_to_file("mercury-extras-0.13.1.tar.gz", "no") ?>
 <p>
 
 <dt> Tests (914 kb)
 <dd>
-<? links_to_file("mercury-tests-0.13.1.tar.gz", "no") ?>
+<?php links_to_file("mercury-tests-0.13.1.tar.gz", "no") ?>
 </dl>
 
 
@@ -478,7 +478,7 @@ The 0.11 release is known to work on the following platforms:
     <li> x86 machines running SuSE Linux 
     <li> x86 machines running Microsoft Windows 2000
          (this release also includes
-	 <a href="<?echo $root?>/dotnet.html">preliminary support for .NET</a>)
+	 <a href="<?php echo $root?>/dotnet.html">preliminary support for .NET</a>)
     <li> Sun SPARC machines running Solaris 2.x and SunOS 5.x
     <li> DEC Alpha machines running OSF/1 (Digital Unix)
     <li> DEC Alpha machines running Linux
@@ -579,10 +579,10 @@ The main "mercury-compiler" source distribution is about 10 Mb.
 This includes the compiler, standard library,
 debugger, profilers, and other tools.
 (Note that this does <em>not</em> include all the sources needed to build
-the <a href="<?echo $root?>/download/gcc-backend.html">
+the <a href="<?php echo $root?>/download/gcc-backend.html">
 native-code back-end</a>; for that you also need the
 "mercury-gcc" and "gcc" distributions.
-See <a href="<?echo $root?>/download/gcc-backend.html">here</a>
+See <a href="<?php echo $root?>/download/gcc-backend.html">here</a>
 for details.)
 
 <p>
@@ -603,7 +603,7 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (10 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.11.0.tar.gz", "0.11", "yes") ?>
+<?php links_to_file("mercury-compiler-0.11.0.tar.gz", "0.11", "yes") ?>
 <p>
 Sunsite also has many 
 <a href="http://sunsite.unc.edu/pub/Linux/MIRRORS.html">mirrors</a>.<br>
@@ -614,12 +614,12 @@ or its equivalent place on the mirrors.
 
 <dt> Extras (580 kb)
 <dd>
-<? links_to_file("mercury-extras-0.11.0.tar.gz", "0.11", "no") ?>
+<?php links_to_file("mercury-extras-0.11.0.tar.gz", "0.11", "no") ?>
 <p>
 
 <dt> Tests (381 kb)
 <dd>
-<? links_to_file("mercury-tests-0.11.0.tar.gz", "0.11", "no") ?>
+<?php links_to_file("mercury-tests-0.11.0.tar.gz", "0.11", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distribution</a></h3>
@@ -641,7 +641,7 @@ installed all the binary distributions.)
 	</em>
 	<p>
 	Cygwin version: compiler + Extras + Tests (about 29 Mb): <br>
-<? 
+<?php
 links_to_file("mercury-0.11.0.i686-pc-cygwin.tar.gz", 
 	"0.11", "no"); 
 ?> 
@@ -654,7 +654,7 @@ links_to_file("mercury-0.11.0.i686-pc-cygwin.tar.gz",
 	<strong> You need to invoke configure with "CC=gcc sh configure".</strong>
 	<p>
 	Mingw version: compiler only (about 25 Mb): <br>
-<? 
+<?php 
 links_to_file("mercury-compiler-0.11.0.i686-pc-mingw.zip",
 	"0.11", "no"); 
 ?> 
@@ -677,7 +677,7 @@ links_to_file("mercury-compiler-0.11.0.i686-pc-mingw.zip",
 
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 30 Mb): <br>
-<? 
+<?php
 links_to_file("mercury-0.11.0.i686-pc-linux-libc2.2-gnu-O5.tar.gz", "0.11",
 	"no"); 
 ?>
@@ -687,7 +687,7 @@ links_to_file("mercury-0.11.0.i686-pc-linux-libc2.2-gnu-O5.tar.gz", "0.11",
 	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
 	(For this platform, we're shipping 0.11.1-beta-2003-01-25
 	in place of 0.11.0.) <br>
-<? 
+<?php
 links_to_file("mercury-0.11.1-beta-2003-01-25.sparc-sun-solaris2.7.tar.gz", 
 	"0.11", "no"); 
 ?>
@@ -702,7 +702,7 @@ and (2) use GNU tar. </em>
 
     <dt>Apple Mac Power/PC machines running MacOS X
 	<dd> Compiler only (about 35 Mb): <br>
-<? 
+<?php 
 links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5.tar.gz", "0.11", 
 "no"); 
 ?>
@@ -716,22 +716,22 @@ links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5.tar.gz", "0.11",
 <dl>
 	<dt> Australia (primary site)
 	<dd>
-	<a href = "<?echo $aus_ftp?>">
-	<?echo $aus_ftp?></a>
+	<a href = "<?php echo $aus_ftp?>">
+	<?php echo $aus_ftp?></a>
 
-<? if ($Uppsala == "yes") { ?>
+<?php if ($Uppsala == "yes") { ?>
 	<dt> Sweden (automatically updated mirror)
 	<dd>
-	<a href = "<?echo $sweden_ftp?>">
-	<?echo $sweden_ftp?></a>
-<? } ?>
+	<a href = "<?php echo $sweden_ftp?>">
+	<?php echo $sweden_ftp?></a>
+<?php } ?>
 
-<? if ($Stonybrook == "yes") { ?>
+<?php if ($Stonybrook == "yes") { ?>
 	<dt> USA (Stonybrook; manually updated mirror)
 	<dd>
 	<a href = "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/">
 	ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/</a>
-<? } ?>
+<?php } ?>
 
 </dl>
 
@@ -739,8 +739,8 @@ links_to_file("mercury-0.11.0.powerpc-apple-darwin5.5.tar.gz", "0.11",
 <dl>
 	<dt> Australia (primary site)
 	<dd>
-	<a href = "<?echo $aus_http?>">
-	<?echo $aus_http?></a>
+	<a href = "<?php echo $aus_http?>">
+	<?php echo $aus_http?></a>
 
 	<dt> USA (SourceForge)
 	<dd> <a href = "http://sourceforge.net/projects/mercury/">
@@ -769,10 +769,10 @@ The main "mercury-compiler" source distribution is about 10 Mb.
 This includes the compiler, standard library,
 debugger, profiler, and other tools.
 (Note that this does <em>not</em> include all the sources needed to build
-the <a href="<?echo $root?>/download/gcc-backend.html">
+the <a href="<?php echo $root?>/download/gcc-backend.html">
 native-code back-end</a>; for that you also need the
 "mercury-gcc" and "gcc" distributions.
-See <a href="<?echo $root?>/download/gcc-backend.html">here</a>
+See <a href="<?php echo $root?>/download/gcc-backend.html">here</a>
 for details.)
 
 <p>
@@ -793,7 +793,7 @@ or porting it to a new system.
 <dl>
 <dt> Compiler (10 Mb)
 <dd> 
-<? links_to_file("mercury-compiler-0.10.tar.gz", "0.10", "yes") ?>
+<?php links_to_file("mercury-compiler-0.10.tar.gz", "0.10", "yes") ?>
 <p>
 Sunsite also has many 
 <a href="http://sunsite.unc.edu/pub/Linux/MIRRORS.html">mirrors</a>.<br>
@@ -804,12 +804,12 @@ or its equivalent place on the mirrors.
 
 <dt> Extras (580 kb)
 <dd>
-<? links_to_file("mercury-extras-0.10.tar.gz", "0.10", "no") ?>
+<?php links_to_file("mercury-extras-0.10.tar.gz", "0.10", "no") ?>
 <p>
 
 <dt> Tests (381 kb)
 <dd>
-<? links_to_file("mercury-tests-0.10.tar.gz", "0.10", "no") ?>
+<?php links_to_file("mercury-tests-0.10.tar.gz", "0.10", "no") ?>
 </dl>
 
 <h3><a name="binaries">Binary Distribution</a></h3>
@@ -823,7 +823,7 @@ installed all the binary distributions.)
 <dl>
     <dt>x86 machines running Microsoft Windows 95, 98, 98SE, ME, NT, or 2000.
 	<dd> Compiler + Extras + Tests (about 20 Mb): <br>
-<? links_to_file("mercury-0.10.i686-pc-windows-cygwin.tar.gz", "0.10", "no"); ?>
+<?php links_to_file("mercury-0.10.i686-pc-windows-cygwin.tar.gz", "0.10", "no"); ?>
 	<p>
 
     <dt>x86 machines running Linux (ELF executable format, libc 6.1)
@@ -835,12 +835,12 @@ installed all the binary distributions.)
 
 	     Ordinary package (*.tar.gz) <br>
 	     Compiler + Extras + Tests (about 30 Mb): <br>
-<? links_to_file("mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz", "0.10", "no"); ?>
+<?php links_to_file("mercury-0.10.i686-pc-linux-libc2.1-gnu-O5.tar.gz", "0.10", "no"); ?>
 	<p>
 
     <dt>Sun SPARC machines running Solaris 2.x and SunOS 5.6
 	<dd> Compiler + Extras + Tests (about 35 Mb): <br>
-<? links_to_file("mercury-0.10.sparc-sun-solaris2.7.tar.gz", "0.10", "no"); ?>
+<?php links_to_file("mercury-0.10.sparc-sun-solaris2.7.tar.gz", "0.10", "no"); ?>
 	<br>
 	<em> <strong>WARNING:</strong> 
 We've had reports that some users have had trouble untarring some of
@@ -852,7 +852,7 @@ and (2) use GNU tar. </em>
 
     <dt>DEC Alpha machines running OSF/1 or Digital Unix
 	<dd> Compiler + Extras + Tests (about 66 Mb): <br>
-<? links_to_file("mercury-0.10.alpha-dec-osf3.2.tar.gz", "0.10", "no"); ?>
+<?php links_to_file("mercury-0.10.alpha-dec-osf3.2.tar.gz", "0.10", "no"); ?>
 
 </dl>
 

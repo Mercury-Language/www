@@ -1,5 +1,5 @@
 <table>
-<? 
+<?php
 
 include "$root/news/mcorba_newsdb.inc";
 

@@ -1,9 +1,9 @@
-<h2><? echo $subtitle ?></h2>
+<h2><?php echo $subtitle ?></h2>
 
 This page contains documentation for 
-<a href=<? echo $root ?>/download/release.html>Mercury version <? echo $current_release ?></a>,
+<a href=<?php echo $root ?>/download/release.html>Mercury version <?php echo $current_release ?></a>,
 and for the latest
-<a href=<? echo $root ?>/download/rotd.html>development snapshot</a>.
+<a href=<?php echo $root ?>/download/rotd.html>development snapshot</a>.
 <p>
 
 The HTML versions are set up for browsing, however, if you'd prefer a
@@ -31,12 +31,12 @@ in a4 format.
 	programming.<p>
 
 	<dl compact>
-	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $ref_man_release ?>">HTML</a>,
+	<dt> Version <?php echo $current_release ?>: <dd>
+	<a href="<?php echo $ref_man_release ?>">HTML</a>,
 	<a href="doc-release/reference_manual.pdf">PDF</a> or
 	<a href="doc-release/reference_manual.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
-	<a href="<? echo $ref_man_latest ?>">HTML</a>,
+	<a href="<?php echo $ref_man_latest ?>">HTML</a>,
 	<a href="doc-latest/reference_manual.pdf">PDF</a> or
 	<a href="doc-latest/reference_manual.ps.gz">PostScript</a>.
 	</dl>
@@ -48,12 +48,12 @@ in a4 format.
 	and compilation options. <p>
 
 	<dl compact>
-	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $user_guide_release ?>">HTML</a>,
+	<dt> Version <?php echo $current_release ?>: <dd>
+	<a href="<?php echo $user_guide_release ?>">HTML</a>,
 	<a href="doc-release/user_guide.pdf">PDF</a> or
 	<a href="doc-release/user_guide.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
-	<a href="<? echo $user_guide_latest ?>">HTML</a>,
+	<a href="<?php echo $user_guide_latest ?>">HTML</a>,
 	<a href="doc-latest/user_guide.pdf">PDF</a> or
 	<a href="doc-latest/user_guide.ps.gz">PostScript</a>.
 	</dl>
@@ -64,12 +64,12 @@ in a4 format.
 	which comes with the Mercury distribution.<p>
 
 	<dl compact>
-	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $library_man_release ?>">HTML</a>,
+	<dt> Version <?php echo $current_release ?>: <dd>
+	<a href="<?php echo $library_man_release ?>">HTML</a>,
 	<a href="doc-release/library.pdf">PDF</a> or
 	<a href="doc-release/library.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
-	<a href="<? echo $library_man_latest ?>">HTML</a>,
+	<a href="<?php echo $library_man_latest ?>">HTML</a>,
 	<a href="doc-latest/library.pdf">PDF</a> or
 	<a href="doc-latest/library.ps.gz">PostScript</a>.
 	</dl>
@@ -81,12 +81,12 @@ in a4 format.
 	the languages and common programming styles.<p>
 
 	<dl compact>
-	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $trans_guide_release ?>">HTML</a>,
+	<dt> Version <?php echo $current_release ?>: <dd>
+	<a href="<?php echo $trans_guide_release ?>">HTML</a>,
 	<a href="doc-release/transition_guide.pdf">PDF</a> or
 	<a href="doc-release/transition_guide.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
-	<a href="<? echo $trans_guide_latest ?>">HTML</a>,
+	<a href="<?php echo $trans_guide_latest ?>">HTML</a>,
 	<a href="doc-latest/transition_guide.pdf">PDF</a> or
 	<a href="doc-latest/transition_guide.ps.gz">PostScript</a>.
 	</dl>
@@ -105,12 +105,12 @@ in a4 format.
 	unimplemented Mercury features and where to turn for help.<p>
 	
 	<dl compact>
-	<dt> Version <? echo $current_release ?>: <dd>
-	<a href="<? echo $faq_release ?>">HTML</a>,
+	<dt> Version <?php echo $current_release ?>: <dd>
+	<a href="<?php echo $faq_release ?>">HTML</a>,
 	<a href="doc-release/faq.pdf">PDF</a> or
 	<a href="doc-release/faq.ps.gz">PostScript</a>.
 	<dt> Snapshot: <dd>
-	<a href="<? echo $faq_latest ?>">HTML</a>,
+	<a href="<?php echo $faq_latest ?>">HTML</a>,
 	<a href="doc-latest/faq.pdf">PDF</a> or
 	<a href="doc-latest/faq.ps.gz">PostScript</a>.
 	</dl>
