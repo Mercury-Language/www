@@ -9,7 +9,7 @@
 # currently hardcoded all over the place, e.g. the .php3 file extensions.)
 
 ifndef PHP3
-	PHP3=/usr/lib/cgi-bin/php5 -q
+	PHP3=/usr/bin/php -q
 endif
 ifndef WWW_DOMAIN
 	WWW_DOMAIN="www.mercury.csse.unimelb.edu.au"
