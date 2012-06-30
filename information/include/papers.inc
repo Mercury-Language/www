@@ -182,8 +182,7 @@ Porto, Portugal, September 2007.
 <li>
 <strong>
 <a href = "papers.html#pbone-hons">
-Calculating likely Parallelism within Dependant Conjunctions
-for Logic Programs
+Calculating likely parallelism within dependant conjunctions for logic programs
 </a>
 </strong>
 <br>
@@ -197,7 +196,7 @@ Melbourne, 2008.
 <li>
 <strong>
 <a href="papers.html#packrat-padl08">
-DCGs + Memoing = Packrat Parsing; But is it worth it?
+DCGs + memoing = packrat parsing; but is it worth it?
 </a>
 </strong>
 <br>
@@ -302,7 +301,7 @@ Charleston, South Carolina, January 2006.
 <li>
 <strong>
 <a href = "papers.html#maclarty-masters">
-Practical Declarative Debugging of Mercury Programs
+Practical declarative debugging of Mercury programs
 </a>
 </strong>
 <br>
@@ -1329,7 +1328,7 @@ long tried to use granularity analysis
 to ensure that they only spawn off computations
 whose cost will probably exceed the spawn-off cost by a comfortable margin.
 However, this is not enough to yield good results,
-because data dependencies may \emph{also} limit
+because data dependencies may <em>also</em> limit
 the usefulness of running computations in parallel.
 If one computation blocks almost immediately
 and can resume only after another has completed its work,
@@ -1338,8 +1337,6 @@ then the cost of parallelization again exceeds the benefit.
 We present a set of algorithms for recognizing places in a program
 where it is worthwhile to execute two or more computations in parallel
 that pay attention to the second of these issues as well as the first.
-% that pays attention to the effect of data dependencies while ensuring
-% that the benefit of parallelization outweighs the costs.
 Our system uses profiling information to compute
 the times at which a procedure call consumes the values of its input arguments
 and the times at which it produces the values of its output arguments.
@@ -1689,8 +1686,7 @@ memory management.
 <li>
 <strong>
 <a name="pbone-hons">
-Calculating likely Parallelism within Dependant Conjunctions
-for Logic Programs
+Calculating likely parallelism within dependant conjunctions for logic programs
 </a>
 </strong>
 <br>
@@ -1735,7 +1731,7 @@ compiler select the best calls to inline.
 <li>
 <strong>
 <a name="packrat-padl08">
-DCGs + Memoing = Packrat Parsing; But is it worth it?
+DCGs + memoing = packrat parsing; but is it worth it?
 </a>
 </strong>
 <br>
@@ -2027,7 +2023,7 @@ to implement tabling in Mercury.
 <li>
 <strong>
 <a name="maclarty-masters">
-Practical Declarative Debugging of Mercury Programs
+Practical declarative debugging of Mercury programs
 </a>
 </strong>
 <br>
@@ -3927,7 +3923,7 @@ Available here (156K).
 <li>
 <strong>
 <a href="papers.html#packrat-padl08">
-DCGs + Memoing = Packrat Parsing; But is it worth it?
+DCGs + memoing = packrat parsing; but is it worth it?
 </a>
 </strong>
 <br>
