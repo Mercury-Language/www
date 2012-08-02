@@ -1,4 +1,4 @@
-<h2>Release 11.07.1 - Contents</h2>
+<h2>Release 11.07.2 - Contents</h2>
 
 The Mercury distribution is split into three parts.
 The "mercury-compiler" distribution contains:

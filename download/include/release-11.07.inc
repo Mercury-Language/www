@@ -1,3 +1,64 @@
+<h2>New in release 11.07.2 of the Mercury distribution</h2>
+
+<p>
+This is a bug-fix release: it fixes the following:
+
+<ul>
+<li>The name of the C# compiler in newer versions of Mono is now recognised.
+
+<li>The configure script now distinguishes between the MS C# compiler and the
+Chicken Scheme compiler.
+
+<li>Thread local storage now works on Mac OS X when using clang as the C
+compiler.
+
+<li>Various build issues on Solaris 10 have been resolved.
+
+<li>The --erlang option now sets all the relevant grade components correctly.
+
+<li>The binary input and output streams are now set to binary translation
+mode when using the MSVC CRT.
+
+<li>The standard library's lexer module now correctly tokenizes binary, octal
+and hexadecimal integer literals.
+
+<li>Some bugs in the UTF-8 routines used by the C grades have been fixed.
+Also, the performance of these routines has been improved.
+
+<li>The exit status is now correctly set when --warn-non-tail-recursion
+is being used.
+</ul>
+
+<p>
+Changes to the Mercury standard library:
+
+<ul>
+<li>We have added additional modes to map.foldr/4, map.foldr/6 and the
+list.foldl<N>_corresponding3 predicates.
+
+<li>The predicates parsing_utils.float_literal/3 and
+parsing_utils.float_literal_as_string/4 now accept an optional plus sign in
+the exponent.
+
+<li>The obsolete predicates string.remove_suffix_det/2 and string.index_det/2
+have been removed.
+
+<li>The predicate time.times/4 is now implemented for the csharp grade.
+
+<li>The version_hash_table module is now supported in the csharp and java
+grades.
+
+<li>The unsafe versions of the predicates in the array2d module are now more
+efficient.
+</ul>
+
+<p>
+Changes to the Mercury compiler:
+
+<ul>
+<li> The compiler now outputs #line directives in C# code it generates.
+</ul>
+
 <h2>New in release 11.07.1 of the Mercury distribution</h2>
 
 <p>

@@ -1,5 +1,5 @@
 <H2>How to get Mercury</H2>
-<?php $next_beta_version="11.07.2-beta" ?>
+<?php $next_beta_version="" ?>
 
 The Mercury compiler is free software, and is distributed under the
 terms of the GNU General Public License.
