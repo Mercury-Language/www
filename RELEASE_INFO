@@ -6,7 +6,7 @@ RELEASE_VERSION=11.07.2
 # for the next beta release is being built.
 # NOTE: you also need to update the value of next_beta_version in
 # include/download.inc when you modify this.
-NEXT_BETA_VERSION=
+NEXT_BETA_VERSION=12.08-beta
 
 # The CVS tag of the release branch.
 # This is used to check out the documentation sources.
