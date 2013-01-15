@@ -9,6 +9,7 @@ font-family: Georgia;
 color: #006fbc;
 font-size: 22px;
 margin: 20px 0px;
+margin-bottom: -5px;
 }
 
 h3{
@@ -18,7 +19,7 @@ font-size: 17px;
 margin-top: 30px;
 }
 
-p, li{
+p{
 font-family: arial;
 color: #333;
 font-size: 14px;
@@ -47,7 +48,7 @@ left: 20px;
 .headersearchbar{
 float: right;
 margin-right: 20px;
-margin-top: 40px;
+margin-top: 45px;
 }
 
 .searchbar{
@@ -78,7 +79,7 @@ list-style-type: none;
 ul.menu li {
 font-size: 16px;
 background-color: #f7f7f7;
-padding: 8px 0px 8px 10px;
+padding: 10px 0px 10px 10px;
 width: 140px;
 border-left: 4px solid #529ddb;
 line-height: 1em;
@@ -157,6 +158,13 @@ margin: 0px 220px;
 
 ul.nonindentlist{
 margin-left: -22px;
+}
+
+ul.nonindentlist li{
+font-family: arial;
+color: #333;
+font-size: 14px;
+line-height: 1.5em;
 }
 
 /*footer*/

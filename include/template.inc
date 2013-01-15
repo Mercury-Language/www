@@ -1,10 +1,10 @@
 <?php include "$root/include/functions.inc" ?>
 <?php include "$root/include/globals.inc" ?>
-
+<head>
 <TITLE>The Mercury Project: <?php echo $title?></TITLE>
-<link rel="stylesheet" type="text/css" href="css/common.css"/></head>
-
-
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="icon" type="image/ico" href="../favicon.ico"/>
+</head>
 <body>
 
 <div class="header">
@@ -20,7 +20,7 @@
 </td>
 </tr>
 <tr>
-<td align="left" style="font-size:75%">
+<td align="left" style="font-size:75%; opacity: 0;">
 <input type="checkbox"  name="sitesearch" value="mercurylang.org" checked /> only Mercury Website<br />
 </td>
 </tr>
