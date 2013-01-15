@@ -1,0 +1,177 @@
+body{
+padding: 0px;
+margin: 0px;
+font-family: arial, sans serif;
+}
+
+h2{
+font-family: Georgia;
+color: #006fbc;
+font-size: 22px;
+margin: 20px 0px;
+}
+
+h3{
+font-family: Georgia;
+color: #333;
+font-size: 17px;
+margin-top: 30px;
+}
+
+p, li{
+font-family: arial;
+color: #333;
+font-size: 14px;
+line-height: 1.5em;
+}
+
+.container, .headercontainer{
+max-width: 1340px;
+min-width: 700px;
+margin: auto;
+}
+
+/*header*/
+.header{
+background: url(../images/headerbackground.png) repeat-x 0px 0px;
+height: 111px;
+border-bottom: 1px solid #b3b3b3;
+}
+
+.logo{
+position: relative;
+top: 15px;
+left: 20px;
+}
+
+.headersearchbar{
+float: right;
+margin-right: 20px;
+margin-top: 40px;
+}
+
+.searchbar{
+}
+
+.searchbar .submit{
+background: #006fbc;
+border-radius: 5px;
+border: none;
+color: white;
+padding: 2px 5px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.searchbar .textbox{
+border: 1px solid #333;
+}
+
+/*menu*/
+ul.menu{
+float: left;
+margin-top: 0px;
+margin-left: -10px;
+list-style-type: none;
+}
+
+ul.menu li {
+font-size: 16px;
+background-color: #f7f7f7;
+padding: 8px 0px 8px 10px;
+width: 140px;
+border-left: 4px solid #529ddb;
+line-height: 1em;
+}
+
+ul.menu li:hover{
+background-color: #e6e6e6;
+}
+
+ul.menu a:link, ul.menu a:visited{
+color: #006fbc;
+text-decoration: none;
+}
+
+ul.submenu{
+list-style-type: none;
+margin-left: -24px;
+margin-top: 8px;
+margin-bottom: 20px;
+}
+
+ul.submenu li{
+font-size: 15px;
+background: none;
+color: #808080;
+border: none;
+font-family: georgia;
+padding: 0px;
+}
+
+ul.submenu li a:link, ul.submenu li a:visited{
+color: #666;
+} 
+
+ul.submenu li:hover{
+background: none;
+}
+
+ul.submenu a:hover{
+background: none;
+font-style: italic;
+}
+
+ul.submenu hr{
+color: white;
+margin: 6px 20px 6px 0px;
+}
+
+.current{
+font-weight: bold;
+background-image: url(../images/bluepointer.png);
+background-repeat: no-repeat;
+background-position: 130px 13px;
+}
+
+/*sidebar*/
+.sidebar{
+float: right;
+margin-right: 20px; 
+} 
+
+.sidebarbox{
+background-color: #f7f7f7;
+border-left: 4px solid #529ddb;
+padding: 8px 10px;
+width: 140px;
+margin-bottom: 25px;
+min-height: 200px;
+}
+
+/*content*/
+.content{
+border: 0px black solid;
+margin: 0px 220px;
+}
+
+ul.nonindentlist{
+margin-left: -22px;
+}
+
+/*footer*/
+.footer{
+clear: both;
+}
+
+.footer hr{
+color: #529ddb;
+margin: 30px 220px 0px 220px;
+}
+
+.footer p{
+color: #4d4d4d;
+font-size: 12px;
+margin-left: 220px;
+margin-top: 5px;
+}
