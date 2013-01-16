@@ -1,8 +1,8 @@
 <HTML>
 <?php
-    $menu="Related";
+    $menu="About";
     $title="Related Projects";
-    $dir="information";
+    $dir="about";
     $root="..";
     $include="related.inc";
     include "$root/include/template.inc"

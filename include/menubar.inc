@@ -3,15 +3,15 @@
 	<?php
 	if($menu == "About") { ?>
 	<ul class="submenu">
-	<li><a href="<?php echo $root?>/information/motivation.html">overview</a></li>
+	<li><a href="<?php echo $root?>/about/overview.html">overview</a></li>
 	<hr/>
-	<li><a href="<?php echo $root?>/information/features.html">features</a></li>
+	<li><a href="<?php echo $root?>/about/features.html">features</a></li>
 	<hr/>
-	<li><a href="<?php echo $root?>/information/benchmarks.html">benchmarks</a></li>
+	<li><a href="<?php echo $root?>/about/benchmarks.html">benchmarks</a></li>
 	<hr/>
-	<li><a href="<?php echo $root?>/backends.html">back ends</a></li>
+	<li><a href="<?php echo $root?>/about/backends.html">back ends</a></li>
 	<hr/>
-	<li><a href="<?php echo $root?>/information/related.html">related</a></li>
+	<li><a href="<?php echo $root?>/about/related.html">related</a></li>
 	</ul><?php
 	}
 	?>

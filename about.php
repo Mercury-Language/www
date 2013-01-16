@@ -1,10 +1,10 @@
 <HTML>
 <?php
-    $menu="Back-ends";
-    $title="Back-ends";
+    $menu="About";
+    $title="About";
     $dir=".";
     $root=".";
-    $include="backends.inc";
+    $include="about.inc";
     include "./include/template.inc"
 ?>
 </HTML>

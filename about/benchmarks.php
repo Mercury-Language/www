@@ -1,8 +1,8 @@
 <HTML>
 <?php
-    $menu="Information";
+    $menu="About";
     $title="Benchmarks";
-    $dir="information";
+    $dir="about";
     $root="..";
     $include="benchmarks.inc";
     include "$root/include/template.inc"

@@ -1,15 +1,16 @@
 <?php include "$root/include/functions.inc" ?>
-<?php include "$root/include/globals.inc" ?>
+<?php //include "$root/include/globals.inc"
+ ?>
 <head>
 <TITLE>The Mercury Project: <?php echo $title?></TITLE>
-<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
 <link rel="icon" type="image/ico" href="../favicon.ico"/>
 </head>
 <body>
 
 <div class="header">
 <div class="headercontainer">
-<a class="logo" href="home.html"><img src="images/mercurylogo.png"/></a>
+<a class="logo" href="home.html"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
 <div class="headersearchbar">
 <form class="searchbar" method="get" action="http://www.google.com/search">
 <table border="0" cellpadding="0">

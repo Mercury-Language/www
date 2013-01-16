@@ -1,8 +1,8 @@
 <HTML>
 <?php
-    $menu="Information";
+    $menu="About";
     $title="Mercury Reports";
-    $dir="information";
+    $dir="about";
     $root="..";
     $include="reports.inc";
     include "$root/include/template.inc"
