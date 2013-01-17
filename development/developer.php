@@ -1,8 +1,8 @@
 <HTML>
 <?php
-    $menu="Information";
+    $menu="Development";
     $title="Developer Information";
-    $dir="information";
+    $dir="development";
     $root="..";
     $include="developer.inc";
     include "$root/include/template.inc"
