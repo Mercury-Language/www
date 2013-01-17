@@ -24,10 +24,11 @@ function links_to_file ($filename)
 }
 
 ?>
-<h2><a name="info">Release of the day</a></h2>
-
-The latest release of the day is version <b><?php echo $rotd_version; ?></b>.
+<h2>Download<span class="submenutitle">/ release of the day (snapshot)</span></h2>
 <p>
+The latest release of the day is version <b><?php echo $rotd_version; ?></b>.
+<a href=""><button class="button">Download</button></a>
+</p><p>
 Please treat ROTDs with caution -- although they are often very
 useful and reasonably stable, they are not widely tested, and
 may have unfinished features and rough edges.  We are still interested
@@ -36,7 +37,7 @@ in feedback and bug reports on the ROTDs.  Please file bug reports in our
 
 <h3>Information</h3>
 
-<ul>
+<ul class="nonindentlist">
 <li> <a href = "<?php echo $root; 
 ?>/download/files/beta-releases/rotd/mercury-NEWS-<?php echo $rotd_version; 
 ?>-unstable.txt">
@@ -56,23 +57,21 @@ in feedback and bug reports on the ROTDs.  Please file bug reports in our
 
 <h3>Supported Platforms</h3>
 
-The latest release of the day is known to work on the following platforms:
-
 <p>
+The latest release of the day is known to work on the following platforms:
+</p>
 
-<ul>
+<ul class="nonindentlist">
     <li> x86 and x86-64 machines running Linux 
     <li> Apple Intel machines (both x86 and x86-64) running Mac OS X 10.6.
 </ul>
 
 <p>
-
 Mercury should also work on the following platforms, although this is not
 tested for every release of the day.
+</p>
 
-<p>
-
-<ul>
+<ul class="nonindentlist">
     <li> x86 machines running Microsoft Windows NT, 2000, XP, Vista, 7,
          or Server 2008 R2.
     <li> x86 machines running FreeBSD 3.0
@@ -93,9 +92,9 @@ tested for every release of the day.
 
 <h3>What do I need?</h3>
 
-<ul>
+<ul class="nonindentlist">
 <li> For Unix systems, you will need the following:<p>
-    <ol>
+    <ol class="indentlist">
     <li> <a href="http://gcc.gnu.org">GNU C (gcc)</a>
 	 <p>
 	 We recommend using GCC version 4.2 or later, although most
@@ -167,8 +166,7 @@ tested for every release of the day.
 
 </ul>
 
-<p>
-
+<!--
 <h3><a name="source">Source Distribution</a></h3>
 
 The main "mercury-compiler" source distribution includes the compiler, 
@@ -202,4 +200,4 @@ or porting it to a new system.
 <dd>
 <?php links_to_file("mercury-tests-$rotd_version-unstable.tar.gz") ?>
 </dl>
-
+-->

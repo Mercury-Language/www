@@ -2,7 +2,7 @@
 <?php
     $menu="Documentation";
     $title="Documentation";
-    $dir="information";
+    $dir="documentation";
     $root="..";
     $include="documentation.inc";
     include "$root/include/template.inc"

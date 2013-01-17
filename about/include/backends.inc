@@ -44,19 +44,19 @@ Mature
 	section of the web site, in particular the paper titled
 	"Compiling Mercury to high-level C code".
 	</p>
-</div>
 
 <div class="quote" style="max-width: 350px; float: left; margin: 20px 20px 20px 20px; border: 1px solid white;" align="left">
 <h2 style="font-size: 19px;color: #2e3192; font-style: italic;">
 “ Several of these back-ends are quite mature, other have been released but are still immature, while others are under development.
 </h2>
 </div>
+</div>
 
 <div style="clear: left;"></div>
 <p class="backendssubsec">
 Beta-release quality
 </p>
-<div style="float: left; max-width: 260px; margin-right: 50px;">
+<div style="float: left; max-width: 260px; margin-right: 50px; border: 0px solid black">
 	<h3>Java.</h3>
 	<p>
 	This back-end compiles Mercury to Java.
@@ -74,7 +74,7 @@ Beta-release quality
 	or later.
 	</p>
 </div>
-<div style="float: left; max-width: 260px; margin-right: 50px;">
+<div style="float: left; max-width: 260px; margin-right: 50px; border: 0px solid black">
 	<h3>C#.</h3>
 	<p>
 	This back-end compiles Mercury to C#.
@@ -92,8 +92,9 @@ Beta-release quality
 	README.CSharp and the User's Guide. You will need Mercury release 11.01
 	or later.
 	</p>
+	<div style="margin-bottom: 50px;"></div>
 </div>
-<div style="float: left; max-width: 260px">
+<div style="float: left; max-width: 260px; border: 0px solid black">
     <h3>Erlang.</h3>
 	<p>
 	This back-end compiles Mercury to Erlang.

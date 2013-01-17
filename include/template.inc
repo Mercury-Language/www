@@ -21,8 +21,8 @@
 </td>
 </tr>
 <tr>
-<td align="left" style="font-size:75%; opacity: 0;">
-<input type="checkbox"  name="sitesearch" value="mercurylang.org" checked /> only Mercury Website<br />
+<td>
+<input type="hidden"  name="sitesearch" value="mercurylang.org"/>
 </td>
 </tr>
 </table>

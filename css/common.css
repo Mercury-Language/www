@@ -4,6 +4,7 @@ margin: 0px;
 font-family: arial, sans serif;
 }
 
+
 h2{
 font-family: Georgia;
 color: #006fbc;
@@ -18,7 +19,13 @@ font-size: 17px;
 margin: 20px 0px;
 }
 
-p{
+h4{
+font-family: Arial;
+color: #333;
+font-size: 16px;
+}
+
+p, table{
 font-family: arial;
 color: #333;
 font-size: 14px;
@@ -162,6 +169,43 @@ min-height: 200px;
 }
 
 /*content*/
+table.releases{
+width: 350px;
+}
+
+table.releases td{
+vertical-align: top;
+line-height: 2.5em;
+}
+
+table.documentation{
+margin: 10px 0px 25px 0px;
+width: 400px;
+}
+
+table.documentation td{
+font-size: 14px;
+font-style: italic;
+color: #333;
+padding: 10px 0px;
+}
+
+.button{
+background: #006fbc;
+border-radius: 5px;
+border: none;
+color: white;
+width: 80px;
+padding: 4px 0px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.mailinglistname{
+font-weight: bold;
+font-style: italic;
+}
+
 .backendssubsec{
 font-style: italic;
 font-size: 16px;
@@ -189,7 +233,20 @@ margin-left: -22px;
 margin-bottom: 40px;
 }
 
-ul.nonindentlist li,ul.indentlist li{
+ul.nonindentlist2{
+margin-left: -17px;
+margin-bottom: 40px;
+}
+
+ul.nonindentlist2 h3{
+margin-bottom: 5px;
+}
+
+ul.nonindentlist2{
+list-style-image: url('../images/blackpointer.png');
+}
+
+ul.nonindentlist li,ul.indentlist li, ul.nonindentlist2 li{
 font-family: arial;
 color: #333;
 font-size: 14px;

@@ -1,24 +1,24 @@
 <!--
 WHEN UPDATING THIS FILE, REMEMBER TO UPDATE THE TABLE OF CONTENTS!
 -->
-
-<h2>Papers and Presentations</h2>
-
+<h2>Documentation<span class="submenutitle">/ papers and presentations </span></h2>
+<p>
 The Mercury team have written quite a few papers about the Mercury
 programming language, its implementation techniques, design, theoretical
 basis and other topics. In addition, we have written several papers
 on <a href = "papers.html#related">related</a> topics.
 Almost all are available here as PostScript
 files, compressed using gzip, or as PDF.
+</p>
 <p>
 Below the papers, the notes from a number of
 <a href="papers.html#presentations">presentations</a>
 given on Mercury, at a variety of levels, are also available.
-
+</p>
 <h2>Contents</h2>
 <h3><a href = "papers.html#mercury">Papers on Mercury</a></h3>
 
-<ul>
+<ul class="nonindentlist">
 
 <li>
 <strong>
@@ -778,7 +778,7 @@ Thomas Conway.
 
 <h3><a href = "papers.html#related">Related papers</a></h3>
 
-<ul>
+<ul class="nonindentlist">
 <li>
 <strong>
 <a href = "papers.html#mc_swese_2007">
@@ -867,7 +867,7 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
 
-<ul>
+<ul class="nonindentlist">
 
 <li>
 <strong>
@@ -947,7 +947,7 @@ June 2011
 <p>
 
 <li>
-<string>
+<strong>
 <a href="papers.html#google_2010_autopar">
 Automatic Parallelisation for Mercury
 </a>
@@ -1205,7 +1205,7 @@ Tyson Dowd, 1998.
 
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
-<ul>
+<ul class="nonindentlist">
 
 <li>
 <strong>
@@ -3557,9 +3557,9 @@ Some of these are documented in the version in the ILPS 95 proceedings.
 This paper covers a case study where Mercury was used as an implementation
 language.
 </a>
-<p>
+</p>
 
-<ul>
+<ul class="nonindentlist">
 <li>
 <strong>
 Ontology Driven Software Engineering for Real Life Applications
@@ -3588,14 +3588,15 @@ another insurance firm required also around three times the resources.
 </ul>
 
 <a name="mu_97_23">
+<p>
 This paper gives an introduction to automatic termination analysis.
 It surveys termination analysis of logic programs and provides an
 overview of the important concepts involved in automatic termination
 analysis.
 </a>
-<p>
+</p>
 
-<ul>
+<ul class="nonindentlist">
 <li>
 <strong>
 Termination analysis for logic programs
@@ -3618,9 +3619,9 @@ Available here (67K).
 This paper outlines the features that we believe to be important
 in a modern logic programming language:
 </a>
-<p>
+</p>
 
-<ul>
+<ul class="nonindentlist">
 <li>
 <strong>
 Logic programming for the real world
@@ -3639,14 +3640,14 @@ Available here (59K).
 <p>
 
 </ul>
-
+<p>
 <a name="iclp87">
 The mode system and the uniqueness system of Mercury
 are based on the following papers:
 </a>
 <p>
 
-<ul>
+<ul class="nonindentlist">
 
 <li>
 <strong>
@@ -3683,21 +3684,22 @@ Available here (114K).
 <p>
 
 </ul>
-
+<p>
 <a name="mu_96_45">
 The following paper describes the method used to express database
 transactions and updates that is used in the Mercury ODBC database
 interface.
 </a>
-
+</p>
+<p>
 The same kind of approach is also used in
 the Mercury interface to the Aditi deductive
 database system (see the "Aditi deductive database interface"
 section in Mercury Language Reference Manual listed under
 "Implementation dependent pragmas" in the "Pragmas" chapter).
 
-<p>
-<ul>
+</p>
+<ul class="nonindentlist">
 
 <li>
 <strong>
@@ -3718,14 +3720,14 @@ Available here (58K)
 with cover page.
 </a>
 </ul>
-
+<p>
 <a name="tr90-2">
 The following paper is also relevant to the Aditi interface mentioned above.
 It describes a source-to-source transformation implemented in the
 Mercury compiler.
 </a>
-
-<ul>
+</p>
+<ul class="nonindentlist">
 <li>
 <strong>
 Right-, left-, and multi-linear rule transformations that maintain
@@ -3756,7 +3758,7 @@ available here (560K).
 
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
-<ul>
+<ul class="nonindentlist">
 
 <li>
 <strong>
