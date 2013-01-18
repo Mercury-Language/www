@@ -2,19 +2,19 @@
 function newsitem($date, $item) {
 
 	list($title, $news) = $item;
-
-	echo "<tr>";
-	list($day, $month, $year) = split(" ",$date);
-
-	echo "<td valign=top><tt>[";
-	printf("%02d&nbsp;$month&nbsp;$year", $day);
-	echo "]</tt></td>";
-
-	echo "<td><strong>";
+	
+	echo "<li>";
+	echo "<h3>";
 	echo $title;
-	echo "</strong><br>\n";
+	echo "</h3>";
+	echo "<p>";
 	echo $news;
-	echo "</td></tr>";
+	echo "</p>";
+	list($day, $month, $year) = split(" ",$date);
+	echo "<span class='newsdate'>";
+	printf("%02d&nbsp;$month&nbsp;$year", $day);
+	echo "</span>";
+	echo "</li>";
 }
 
 function rssitem($date, $item) {

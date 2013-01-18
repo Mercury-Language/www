@@ -1,6 +1,5 @@
 <?php include "$root/include/functions.inc" ?>
-<?php //include "$root/include/globals.inc"
- ?>
+<?php include "$root/include/globals.inc.in" ?>
 <head>
 <TITLE>The Mercury Project: <?php echo $title?></TITLE>
 <link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
@@ -10,7 +9,7 @@
 
 <div class="header">
 <div class="headercontainer">
-<a class="logo" href="home.html"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
+<a class="logo" href="index.php"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
 <div class="headersearchbar">
 <form class="searchbar" method="get" action="http://www.google.com/search">
 <table border="0" cellpadding="0">
@@ -35,13 +34,14 @@
 <!--Menu-->
 <?php include "$root/include/menubar.inc" ?>
 
-<!--Sidebar-->
+<!--Sidebar
 <div class="sidebar">
 <div class="sidebarbox">
 </div>
 <div class="sidebarbox">
 </div>
 </div>
+-->
 
 <!--Content-->
 <div class="content">

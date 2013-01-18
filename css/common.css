@@ -34,11 +34,9 @@ margin: 25px 0px;
 }
 
 .container, .headercontainer{
-max-width: 1140px;
-min-width: 700px;
+max-width: 1260px;
+min-width: 620px;
 margin: auto;
-position: relative;
-right: 50px;
 border: 0px black solid;
 }
 
@@ -63,7 +61,7 @@ left: 40px;
 
 .headersearchbar{
 float: right;
-margin-right: 20px;
+margin-right: 50px;
 margin-top: 37px;
 }
 
@@ -237,6 +235,7 @@ margin-top: 30px;
 border: 0px black solid;
 margin-left: 220px;
 margin-right: 30px;
+max-width: 920px;
 }
 
 ul.nonindentlist{
@@ -255,6 +254,15 @@ margin-bottom: 5px;
 
 ul.nonindentlist2{
 list-style-image: url('../images/blackpointer.png');
+}
+
+#newslist p{
+margin: 0px;
+}
+
+.newsdate{
+color: #4d4d4d;
+FONT-STYLE: italic;
 }
 
 ul.nonindentlist li,ul.indentlist li, ul.nonindentlist2 li{
@@ -278,7 +286,8 @@ clear: both;
 
 .footer hr{
 color: #529ddb;
-margin: 30px 220px 0px 220px;
+max-width: 930px;
+margin: 30px 30px 0px 220px;
 }
 
 .footer p{

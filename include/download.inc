@@ -22,6 +22,14 @@ In February 2010 the Mercury project decided to name each stable release by usin
 For example 10.04 is for a release made in April 2010.
 </p>
 
+<?php if ($next_beta_version != "") { ?>
+	<H3> Beta release </H3>
+	<p>
+	The current beta release is version <?php echo $next_beta_version; ?>. 
+	<a href=""><button class="button">Download</button></a>
+	</p>
+<?php } ?>
+
 <h3> Release of the day </h3>
 <p>
 The current release of the day

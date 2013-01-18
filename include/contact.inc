@@ -75,6 +75,8 @@ To submit articles to one of these lists, use the address without the "-request"
 <li><a href="mailto:mercury-reviews@csse.unimelb.edu.au">mercury-reviews@csse.unimelb.edu.au</a></li>
 </ul>
 
+<h3>Search the Archieves</h3>
+
 <p>
 Please use the search bar below to search the archieves
 </p>
