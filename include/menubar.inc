@@ -80,4 +80,6 @@
 	}
 	?>
 <a href="<?php echo $root?>/contact.php"><li <?php if($menu == 'Contact'){ ?> class="current" <?php } ?> >Contact</li></a>
+<br/><br/>
+<a href="http://bugs.mercury.csse.unimelb.edu.au"><li style="font-family: georgia; line-height: 1.2em">Bug Tracker</li></a>
 </ul>

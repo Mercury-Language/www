@@ -1,7 +1,7 @@
 <?php
 	$installed_path="/home/mercury/mercury5/installed_w3";
 
-	$current_release="11.07.1";
+	$current_release="11.07.02";
 	$next_beta_version="12.08";
 
 	$release_doc_dir="$root/information/doc-release";

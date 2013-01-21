@@ -1,10 +1,10 @@
 <h2>Comparing Mercury with Haskell</h2>
-
+<p>
 Mercury has a lot in common with functional languages.
 Functional programmers who are familiar with languages
 such as ML and Haskell often ask how Mercury compares
 with those languages.
-
+</p>
 <p>
 
 This web page contains a comparison between the type systems of Mercury and
@@ -13,18 +13,18 @@ system is more similar to that of Haskell than that of ML, and Haskell 98 is
 probably the best documented / most well-known variant of Haskell.  Of course
 Hugs and ghc have a lot of extensions of Haskell 98, so in some sense this is
 not a "fair" comparison.
-
+</p>
 <p>
 
 As well as listing the differences in type systems, we also describe
 some of the differences in module systems, since there are some close
 interactions between the type systems and the module systems.
-
+</p>
 <p>
 
 There are many other areas in which Mercury and Haskell 98
 differ, including
-	<ul>
+</p><ul class="nonindentlist">
 	<li> syntax,
 	<li> the way in which the semantics is normally described
 	     (predicate calculus versus lambda calculus),
@@ -33,15 +33,17 @@ differ, including
 	<li> treatment of I/O,
 	<li> standard libraries,
 	<li> and of course support for logic programming,
-	</ul> but we don't yet have point-by-point description of all of those
+	</ul> 
+	<p>
+	but we don't yet have point-by-point description of all of those
 differences.
-
+</p>
 <p>
 
 The type systems of Mercury and Haskell 98 are similar in that they both have
 the following features:
-
-<ul>
+</p>
+<ul class="nonindentlist">
 	<li> discriminated union (d.u.) types, with support for named fields
 	<li> type synonyms
 	<li> higher-order function types (and lambda expressions)
@@ -58,10 +60,10 @@ the following features:
 	<li> type inference
 	<li> a similar set of basic types
 </ul>
-
+<p>
 They differ in the following ways:
-
-<ul>
+</p>
+<ul class="nonindentlist">
 	<li> Different syntax (obviously). <br>
 	  But in particular:
 	  	<ul>
@@ -218,8 +220,8 @@ They differ in the following ways:
 Some other differences are related to Mercury's mode system.
 Some things which in other languages are part of the type system
 are in Mercury handled by the mode system.  In particular,
-
-	<ul>
+</p>
+	<ul class="nonindentlist">
 	<li> Mercury's mode system provides support for subtypes.
 	  For example, you can declare that a function whose
 	  argument is a discriminated union type accepts only

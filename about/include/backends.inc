@@ -151,7 +151,7 @@ Dormant, not currently under development
 	used by Microsoft's .NET Common Language Runtime.
 	</p>
 	<p>
-	Click <a href="<?php echo $root?>/dotnet.html">here</a> for more
+	Click <a href="<?php echo $root?>/about/dotnet.html">here</a> for more
 	</p>
 </div>
 

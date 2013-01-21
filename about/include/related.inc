@@ -32,7 +32,7 @@ information to assist programmers to move Prolog programs to Mercury. Includes i
 differences in the languages and common programming styles. Click <a href="/doc-release/transition_guide.pdf">here</a> for PDF version
 </li>
 <li>
-<a href="/comparison_with_haskell.html">Haskell & Mercury Comparison</a>, a point-by-point comparison of some of the differences between Mercury and Haskell 98, in particular with
+<a href="<?php $root ?>/about/comparison_with_haskell.html">Haskell & Mercury Comparison</a>, a point-by-point comparison of some of the differences between Mercury and Haskell 98, in particular with
  regard to their type systems.
 </li>
 <li>

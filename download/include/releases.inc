@@ -74,7 +74,7 @@ The Mercury distribution has been released to the public several times. The rele
 current release: 
 </td>
 <td>
-<a href="">11.07.02</a>
+<a href="<?php $root ?>/download/release-<?php echo $current_release ?>.html"><?php echo $current_release?></a>
 <button class="button">Download</button>
 </td>
 </tr>
@@ -83,14 +83,14 @@ current release:
 old releases:
 </td>
 <td>
-<a href="">11.01</a><br/>
-<a href="">10.04.2</a><br/>
-<a href="">0.13.1</a><br/>
-<a href="">0.11</a><br/>
-<a href="">0.9.1</a><br/>
-<a href="">0.9</a><br/>
-<a href="">0.8.1</a><br/>
-<a href="">0.8</a><br/>
+<a href="old-release.php#11.01">11.01</a><br/>
+<a href="old-release.php#10.04.2">10.04.2</a><br/>
+<a href="old-release.php#0.13.1">0.13.1</a><br/>
+<a href="old-release.php#0.11">0.11</a><br/>
+<a href="old-release.php#0.9.1">0.9.1</a><br/>
+<a href="old-release.php#0.9">0.9</a><br/>
+<a href="old-release.php#0.8.1">0.8.1</a><br/>
+<a href="old-release.php#0.8">0.8</a><br/>
 </td> 
 </tr>
 </table>

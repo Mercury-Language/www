@@ -2,6 +2,8 @@ body{
 padding: 0px;
 margin: 0px;
 font-family: arial, sans serif;
+font-size: 14px;
+color: #333;
 }
 
 
@@ -40,6 +42,9 @@ margin: auto;
 border: 0px black solid;
 }
 
+.headercontainer{
+min-width: 650px;
+}
 
 a:link{
 color: #006fbc;
@@ -99,7 +104,7 @@ list-style-type: none;
 ul.menu li {
 font-size: 16px;
 background-color: #f7f7f7;
-padding: 10px 0px 10px 10px;
+padding: 10px 10px 10px 10px;
 width: 140px;
 border-left: 4px solid #529ddb;
 line-height: 1em;
@@ -151,7 +156,7 @@ margin: 6px 20px 6px 0px;
 font-weight: bold;
 background-image: url(../images/bluepointer.png);
 background-repeat: no-repeat;
-background-position: 130px 13px;
+background-position: 140px 13px;
 }
 
 
@@ -233,8 +238,8 @@ margin-top: 30px;
 
 .content{
 border: 0px black solid;
-margin-left: 220px;
-margin-right: 30px;
+margin-left: 230px;
+margin-right: 20px;
 max-width: 920px;
 }
 
@@ -258,6 +263,10 @@ list-style-image: url('../images/blackpointer.png');
 
 #newslist p{
 margin: 0px;
+}
+
+#newslist{
+/*background: url(../images/logobackground.png) no-repeat center 0*/
 }
 
 .newsdate{

@@ -1,9 +1,9 @@
 <HTML>
 <?php
     $title=".NET";
-    $menu="Back-ends";
-    $dir=".";
-    $root=".";
+    $menu="About";
+    $dir="about";
+    $root="..";
     $include="dotnet.inc";
     include "$root/include/template.inc"
 ?>

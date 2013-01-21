@@ -2,7 +2,7 @@
 <?php
     $menu="Documentation";
     $title="Comparing Mercury and Haskell";
-    $dir="information";
+    $dir="about";
     $root="..";
     $include="comparison_with_haskell.inc";
     include "$root/include/template.inc"
