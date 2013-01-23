@@ -1,5 +1,5 @@
 <h2></h2>
-<img src="../images/banner1.png"/>
+<div class="banner"></div>
 
 <p style="font-weight: bold; font-family: georgia; font-size: 19px; line-height:1.2em">
 Mercury is a new logic/functional programming language, which combines

@@ -42,7 +42,7 @@ copy of the entire document, links to PDF are provided.
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $ref_man_latest ?>"><button class="button">HTML</button></a>
-	<td><a href="doc-latest/reference_manual.pdf"><button class="button">PDF</button></a>.
+	<td><a href="doc-latest/reference_manual.pdf"><button class="button">PDF</button></a>
 	</tr>
 	</table>
 	</li>
