@@ -62,9 +62,6 @@
 	<?php
 	if($menu == "Development") { ?>
 	<ul class="submenu">
-	<li><a href="http://bugs.mercury.csse.unimelb.edu.au">
-	bugs database</a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/development/contributions.php">
 	<div <?php if($include=="contributions.inc"){ ?> class="submenucurrent" <?php } ?>>
 	contributing</div></a></li>
