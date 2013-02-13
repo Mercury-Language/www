@@ -1021,9 +1021,10 @@ and (2) use GNU tar. </em>
 "ftp://ftp.cs.sunysb.edu/pub/XSB/mercury/mercury-0.9.1.pc-windows-cygwin-b20.1.tar.gz">USA</a>
 
 </dl>
+-->
 
-<h3>Release 0.9</h3>
-
+<h3 id="0.9">Release 0.9</h3>
+<p>
 Mercury 0.9 was released on December 18, 1998.
 <p>
 The NEWS file, detailing differences since the release of 0.8.1,
@@ -1055,7 +1056,6 @@ at the following site(s):
      Mercury is available in the /pub/Linux/devel/lang/mercury directory, or
      its equivalent place on the mirrors.
 </dl>
--->
 
 <h3 id="0.8.1">Release 0.8.1</h3>
 <p>
