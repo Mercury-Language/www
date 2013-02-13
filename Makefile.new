@@ -8,7 +8,8 @@ COMMON_INCS :=			\
 	include/globals.inc 	\
 	include/menubar.inc	\
 	include/template.inc	\
-	include/functions.inc
+	include/functions.inc 	\
+	include/footer.inc
 
 NEWS_INCS :=			\
 	include/latest_news.inc	\
