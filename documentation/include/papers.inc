@@ -1252,6 +1252,7 @@ in one case, it changes no speedup into almost perfect speedup on four cores.
 }
 </pre>
 </code>
+</p>
 
 <li>
 <strong>
@@ -1294,6 +1295,7 @@ built to help programmers visualize the execution of parallel Haskell programs.
 }
 </pre>
 </code>
+</p>
 
 <li>
 <strong>
@@ -1372,6 +1374,7 @@ while requiring nothing more from the programmer
 }
 </pre>
 </code>
+</p>
 
 <li>
 <strong>
@@ -1437,6 +1440,7 @@ only to the variable accesses that actually need it.
 }
 </pre>
 </code>
+</p>
 
 <li>
 <strong>
@@ -1769,6 +1773,7 @@ but
 <li> memoing the recognizers of just one or two nonterminals,
 selected in accordance with Amdahl's law, can sometimes yield speedups.
 </ul>
+<p>
 We present experimental evidence to support these claims.
 <p>
 The benchmark data on which the performance evaluation section of this paper
