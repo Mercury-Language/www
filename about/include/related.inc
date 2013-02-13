@@ -3,9 +3,9 @@
 <h3>Projects using Mercury</h3>
 
 <UL class="nonindentlist">
-<LI>The <a HREF="http://g12.research.nicta.com.au/">G12 Constraint Programming Platform</a></li>
+<LI>The <a HREF="http://www.g12.csse.unimelb.edu.au/">G12 Constraint Programming Platform</a></li>
 <LI>The <a HREF="http://www.csse.monash.edu.au/~mbanda/hal/index.html">HAL Project</a></li>
-<LI>The  <a HREF="http://www.cs.mu.oz.au/aditi">Aditi Project</a></li>
+<LI>The Aditi Project</li>
 <LI> <A HREF="http://www.winikoff.net/pipe/index.html">Animating Z specifications using Mercury</A></li>
 <LI> <A HREF="http://svrc.it.uq.edu.au/Possum/">Possum</a>, an animator for Z
 specifications with a Tk GUI</li>
