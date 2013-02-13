@@ -19,7 +19,7 @@ optimization/time trade-offs.
 
 <div class="quote" style="line-height: 2.2em;max-width: 400px; min-width: 250px;float: right; margin: 0px 10px 20px 20px; border: 1px solid white;" align="left">
 <h2 style="font-size: 24px;color: #06437b; font-style: italic;">
-“ Mercury is free software,<br/> and is distributed under the terms of the GNU General Public License. 
+&ldquo;Mercury is free software,<br/> and is distributed under the terms of the GNU General Public License. 
 </h2>
 </div>
 

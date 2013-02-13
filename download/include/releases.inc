@@ -65,7 +65,7 @@ The Mercury distribution has been released to the public several times. The rele
 
 <div class="quote" style="max-width: 400px; min-width: 210px;float: right; margin: 50px 50px 40px 40px; border: 1px solid white;" align="left">
 <h2 style="font-size: 24px;color: #808080; font-style: italic;">
-“ In February 2010 the Mercury project decided to name each stable release by using the year and month of the release.</h2>
+&ldquo;In February 2010 the Mercury project decided to name each stable release by using the year and month of the release.</h2>
 </div>
 
 <table class="releases">
