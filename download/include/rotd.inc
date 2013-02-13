@@ -33,7 +33,7 @@ Please treat ROTDs with caution -- although they are often very
 useful and reasonably stable, they are not widely tested, and
 may have unfinished features and rough edges.  We are still interested
 in feedback and bug reports on the ROTDs.  Please file bug reports in our
-<a href="http://bugs.mercury.csse.unimelb.edu.au">bug database</a>.
+<a href="https://bugs.mercurylang.org">bug database</a>.
 
 <h3>Information</h3>
 
