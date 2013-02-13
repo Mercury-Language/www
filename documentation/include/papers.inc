@@ -1220,6 +1220,7 @@ Paul Bone, Zoltan Somogyi and Peter Schachte
 Declarative Aspects and Applications of Multicore Programming
 </em>
 Philadelphia, Pennsylvania, USA, January 2012.
+<br>
 Available here
 <a href = "papers/loop_control.pdf">
 as PDF (159K).
@@ -1267,6 +1268,7 @@ Paul Bone and Zoltan Somogyi
 21st Workshop on Logic-based methods in Programming Environments.
 </em>
 Lexington, Kentucky, July 2011.
+<br>
 Available here
 <a href = "papers/threadscope.pdf">
 as PDF (429K).
@@ -1312,6 +1314,7 @@ Theory and Practice of Logic Programming, 27th Int'l. Conference on Logic
 Programming (ICLP'11) Special Issue, volume 11, issue 4-5.
 </em>
 Lexington, Kentucky, July 2011.
+<br>
 Available here
 <a href = "papers/dep_par_conj_overlap.ps">
 as PostScript (959K).
@@ -1390,6 +1393,7 @@ Technical Communications of the 27th International Conference on Logic
 Programming (ICLP'11), LIPICS Vol. 11.
 </em>
 Lexington, Kentucky, July 2011.
+<br>
 Available here
 <a href = "papers/minimizing_overheads_short.ps">
 as PostScript (836K).
@@ -1457,6 +1461,7 @@ Honours report,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2009.
+<br>
 <a href = "papers/bmellor_hons.pdf">
 Available here (533K).
 </a>
@@ -1494,6 +1499,7 @@ Ph.D. thesis
 Department of Computer Science,
 Catholic University of Leuven (KUL),
 November 2009.
+<br>
 <a href = "papers/quan_thesis.pdf">
 Available here (919K).
 </a>
@@ -1562,6 +1568,7 @@ Proceedings of the Ninth International Colloquium on
 Implementation of Constraint and Logic Programming Systems (CICLOPS '09),
 </em>
 Pasadena, California, July 2009, pages 1-15.
+<br>
 <a href = "papers/ciclops09.pdf">
 Available here (200K).
 </a>
@@ -1598,6 +1605,7 @@ Proceedings of 11th International Symposium on
 Principles and Practice of Declarative Programming,
 </em>
 Coimbra, Portugal, September 2009, pages 161-169.
+<br>
 <a href = "papers/ppdp14-phan.pdf">
 Available here (215K).
 </a>
@@ -1633,6 +1641,7 @@ Quan Phan, Zoltan Somogyi and Gerda Janssens.
 Proceedings of the 2008 International Symposim on Memory Management (ISMM '08),
 </em>
 Tucson, Arizona, June 2008, pages 61-70.
+<br>
 <a href = "papers/ismm115-phan.pdf">
 Available here (148K).
 </a>
@@ -1667,6 +1676,7 @@ Quan Phan and Gerda Janssens.
 Proceedings of the 23rd International Conference on Logic Programming,
 </em>
 Porto, Portugal, September 2007, pages 317-332.
+<br>
 <a href = "papers/iclp2007.pdf">
 Available here (193K).
 </a>
@@ -1702,6 +1712,7 @@ Honours report,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2008.
+<br>
 <a href = "papers/pbone_hons.pdf">
 Available here (265K).
 </a>
@@ -1746,6 +1757,7 @@ on Practical Aspects of Declarative languages,
 </em>
 San Francisco, California, January 2008,
 Springer Verlag, &copy;.
+<br>
 Available in
 <a href = "papers/packrat.pdf">
 pdf (176k)
@@ -1796,6 +1808,7 @@ Honours report,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2007.
+<br>
 <a href = "papers/lmika_hons.pdf">
 Available here (220K).
 </a>
@@ -1826,6 +1839,7 @@ Proceedings of the Seventh International Colloquim
 on Implementation of Constraint and Logic Programming Systems,
 </em>
 Porto, Portugal, September 2007.
+<br>
 <a href = "papers/ciclops07.ps.gz">
 Available here (156k).
 </a>
@@ -1867,6 +1881,7 @@ Honours report,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2006.
+<br>
 <a href = "papers/wangp_hons.ps.gz">
 Available here (216K).
 </a>
@@ -1898,6 +1913,7 @@ on Practical Aspects of Declarative languages,
 </em>
 Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
+<br>
 Available in
 <a href = "papers/padl_solver.pdf">
 pdf (166k)
@@ -1938,6 +1954,7 @@ on Practical Aspects of Declarative languages,
 </em>
 Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
+<br>
 Available in
 <a href = "papers/padl_dd.pdf">
 pdf (201k)
@@ -2040,6 +2057,7 @@ Masters thesis,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 July 2005.
+<br>
 Available in <a href="papers/maclarty-masters.pdf">pdf</a> (1.9M)
 or <a href="papers/maclarty-masters.ps.gz">ps.gz</a> (1.2M) formats.
 <p>
@@ -2140,6 +2158,7 @@ Zoltan Somogyi and Konstantinos Sagonas,
 Colloquium on Implementation of Constraint and Logic Programming Systems,
 </em>
 Barcelona, Spain, October 2005.
+<br>
 Available in
 <a href = "papers/ciclops05.pdf">
 pdf (312k)
@@ -2189,6 +2208,7 @@ Sixth International Symposium on
 Automated and Analysis-driven Debugging.
 </em>
 Monterey, California, September 2005.
+<br>
 Available in
 <a href = "papers/dd3.pdf">
 pdf (204k)
@@ -2248,6 +2268,7 @@ Unpublished,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 2005.
+<br>
 Available in
 <a href = "papers/decl_debug.pdf">
 pdf (261k)
@@ -2306,6 +2327,7 @@ Department of Computer Science,
 Catholic University of Leuven,
 Belgium,
 May 2004.
+<br>
 <a href = "papers/CW2004_03_mazur.pdf">
 Available here (1.7M).
 </a>
@@ -2385,6 +2407,7 @@ Ph.D. thesis,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 December 2003.
+<br>
 <a href = "papers/dmo-thesis.ps.gz">
 Available here (602K).
 </a>
@@ -2480,6 +2503,7 @@ Zoltan Somogyi.
 Proceedings of the Fifth International Workshop on Automated Debugging,
 </em>
 Ghent, Belgium, September 2003.
+<br>
 <a href = "papers/aadebug03_paper.pdf">
 Available here (143K).
 </a>
@@ -2525,6 +2549,7 @@ Honours report,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 August 2002.
+<br>
 <a href = "papers/juliensf_hons.ps.gz">
 Available here (143K).
 </a>
@@ -2555,6 +2580,7 @@ Ph.D. thesis,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 July 2002.
+<br>
 <a href = "papers/conway-thesis.ps.gz">
 Available here (562K).
 </a>
@@ -2620,6 +2646,7 @@ Ph.D. thesis,
 Department of Computer Science and Software Engineering,
 The University of Melbourne,
 February 2002.
+<br>
 <a href = "papers/dgj-thesis-final.ps.gz">
 Available here (370K).
 </a>
@@ -2689,6 +2716,7 @@ Proceedings of the Fourth International Conference on
 Principles and Practice of Declarative Programming,
 </em>
 Pittsburgh, Pennsylvania, October 2002, pages 109-120.
+<br>
 <a href = "papers/p33-overton.ps.gz">
 Available here (188K).
 </a>
@@ -2728,6 +2756,7 @@ Proceedings of the Fourth International Conference on
 Principles and Practice of Declarative Programming,
 </em>
 Pittsburgh, Pennsylvania, October 2002, pages 121-132.
+<br>
 <a href = "papers/p81-somogyi.ps.gz">
 Available here (190K).
 </a>
@@ -2764,6 +2793,7 @@ Fergus Henderson
 Proceedings of the 2002 International Symposium on Memory Management,
 </em>
 Berlin, Germany, June 2002, pages 150-156.
+<br>
 <a href = "papers/high_level_gc.ps.gz">
 Available here (83K).
 </a>
@@ -2795,6 +2825,7 @@ Multi-Language Infrastructure and Interoperability,
 </em>
 Firenze, Italy, September 2001.  Preliminary Proceedings pages 70-85.
 To appear in Electronic Notes in Theoretical Computer Science 59.1.
+<br>
 <a href = "papers/mercury_to_clr.ps.gz">
 Available here (93K).
 </a>
@@ -2826,6 +2857,7 @@ Proceedings of the 2002 International Conference on Compiler Construction
 Grenoble, France, April 2002.
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href = "papers/hlc_cc.ps.gz">Available here (67K)</a>.
 <p>
 Many logic programming implementations compile to C,
@@ -2868,6 +2900,7 @@ Technical Report 2001/24,
 </em>
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, July 2001, 61 pages.
+<br>
 <a href = "papers/mu_01_24.ps.gz">
 Available here (207K).
 </a>
@@ -2915,6 +2948,7 @@ Springer Verlag,
 Pages 105-119
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href = "papers/iclp2001_ctgc.ps.gz">
 Available here (84K).
 </a>
@@ -2961,6 +2995,7 @@ Springer Verlag,
 Pages 399-416
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href="papers/bta_higher_order.ps.gz">Available here (106K)</a>.
 <p>
 In this paper we present a binding-time analysis for the logic
@@ -2989,6 +3024,7 @@ Springer Verlag,
 Pages 1255-1269
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href="papers/memory_reuse_analysis.ps.gz">Available here (93K)</a>.
 <p>
 In previous work Bruynooghe, Janssens and K&aring;gedal developed a
@@ -3018,6 +3054,7 @@ To appear in Lecture Notes in Computer Science,
 Springer Verlag,
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href="papers/tail_lopstr_lncs.ps.gz">Available here (84K)</a>.
 <p>
 We present two optimizations for making Mercury programs tail recursive.
@@ -3047,6 +3084,7 @@ Peter Ross and Zoltan Somogyi
 <br>
 <em>
 </em>
+<br>
 <a href="papers/update.ps.gz">Available here (57K)</a>.
 <p>
 Recursive predicates frequently generate some state
@@ -3069,6 +3107,7 @@ Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi
 <em>Technical Report 2000/17</em>,
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, April 2000, 10 pages.
+<br>
 <a href="papers/purity.ps.gz">Available here (52K)</a>.
 <p>
 The logic/functional language Mercury
@@ -3106,6 +3145,7 @@ Proceedings of the International Workshop on Implementation of
 Declarative Languages
 </em>,
 Paris, France, October 1999
+<br>
 <a href="papers/liveness.ps.gz">Available here (61K)</a>.
 <p>
 While Mercury allows destructive input/unique output modes which direct
@@ -3137,6 +3177,7 @@ Wim Vanhoof and Maurice Bruynooghe
 Proceedings of the Sixteenth International Conference on Logic Programming
 </em>,
 Las Cruces, New Mexico, November 1999, pages 500-514
+<br>
 <a href="papers/bta.ps.gz">Available here (76K)</a>.
 <p>
 In this paper, we describe a binding-time analysis (BTA) for a
@@ -3163,6 +3204,7 @@ Zoltan Somogyi and Fergus Henderson.
 Proceedings of the Tenth Workshop on Logic Programming Environments
 </em>,
 Las Cruces, New Mexico, November 1999, pages 35-49.
+<br>
 <a href="papers/debugger_wlpe99.ps.gz">Available here (66K)</a>.
 <p>
 
@@ -3194,6 +3236,7 @@ Pre-Proceedings of the Ninth International Workshop on Logic-based Program
 Synthesis and Transformation
 </em>,
 Venice, Italy, September 1999, pages 107-118.
+<br>
 <a href="papers/tail_lopstr.ps.gz">Available here (62K)</a>.
 <p>
 
@@ -3219,6 +3262,7 @@ Springer Verlag,
 Pages 224-243,
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href="papers/rtti_ppdp.ps.gz">Available here (75K)</a>.
 <p>
 
@@ -3257,6 +3301,7 @@ Simon Taylor.
 Honours report.
 </em>
 Department of Computer Science, University of Melbourne, November 1998.
+<br>
 <a href = "papers/stayl_hons.ps.gz">
 Available here (120K).
 </a>
@@ -3287,6 +3332,7 @@ Springer Verlag,
 Pages 211-227,
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
+<br>
 <a href="papers/mcorba_padl99.ps.gz">Available here (65K)</a>.
 <p>
 
@@ -3324,6 +3370,7 @@ Technical Report 98/13,
 </em>
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, September 1998, 22 pages.
+<br>
 <a href = "papers/mu_98_13.ps.gz">
 Available here (82K).
 </a>
@@ -3386,6 +3433,7 @@ Proceedings of the JICSLP '96 Workshop on Parallelism and
 Implementation Technology for (Constraint) Logic Programming Languages,
 </em>
 Bonn, Germany, September 1996, pages 207-218.
+<br>
 <a href = "papers/jicslpw.ps.gz">Available here (46K)</a>.
 <p>
 
@@ -3403,6 +3451,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 Journal of Logic Programming,
 </em>
 volume 29, number 1-3, October-December 1996, pages 17-64.
+<br>
 <a href = "papers/jlp.ps.gz">Available here (138K)</a>.
 <br>
 Elsevier owns the copyright of this paper;
@@ -3433,6 +3482,7 @@ Fergus Henderson, Zoltan Somogyi and Thomas Conway.
 Proceedings of the Australian Computer Science Conference,
 </em>
 Melbourne, Australia, January 1996, pages 337-346.
+<br>
 <a href = "papers/acsc96.ps.gz">Available here (78K)</a>.
 A longer version of the paper is
 <a href = "papers/detism.ps.gz">available here (76K)</a>.
@@ -3456,6 +3506,7 @@ Thomas Conway, Fergus Henderson, and Zoltan Somogyi.
 Proceedings of the 1995 International Symposium on Logic Programming,
 </em>
 Portland, Oregon, December 1995, pages 242-256.
+<br>
 <a href = "papers/code_gen_mit.ps.gz">Available here (68K)</a>.
 <p>
 
@@ -3481,6 +3532,7 @@ Proceedings of the ILPS '95 Postconference Workshop on
 Sequential Implementation Technologies for Logic Programming Languages.
 </em>
 Portland, Oregon, December 1995.
+<br>
 <a href = "papers/mercury_to_c.ps.gz">Available here (65K)</a>.
 <p>
 
@@ -3502,6 +3554,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 Proceedings of the Australian Computer Science Conference,
 </em>
 Glenelg, Australia, February 1995, pages 499-512.
+<br>
 <a href = "papers/acsc95.ps.gz">Available here (85K)</a>.
 <p>
 
@@ -3523,6 +3576,7 @@ Proceedings of the ILPS '94 Postconference Workshop on
 Implementation Techniques for Logic Programming Languages,
 </em>
 Syracuse, New York, November 1994.
+<br>
 <a href = "papers/ilps94w.ps.gz">Available here (96K)</a>.
 <p>
 
@@ -3543,6 +3597,7 @@ Thomas Conway.
 Honours report.
 </em>
 Department of Computer Science, University of Melbourne, November 1994.
+<br>
 <a href = "papers/conway_hons.ps.gz">Available here (188K)</a>.
 <p>
 
@@ -3578,6 +3633,7 @@ Nikolay Pelov
 Software Engineering (SWESE 2007)
 </em>
 Innsbruck, Austria, 2007.
+<br>
 <a href = "papers/mc_swese_2007.pdf">
 Available here (121K).
 </a>
@@ -3613,6 +3669,7 @@ Chris Speirs.
 Technical Report 97/23,
 </em>
 Department of Computer Science, University of Melbourne, October 1997.
+<br>
 <a href = "papers/mu_97_23.ps.gz">
 Available here (67K).
 </a>
@@ -3639,6 +3696,7 @@ Proceedings of the ILPS '95 Postconference Workshop on
 Visions for the Future of Logic Programming,
 </em>
 Portland, Oregon, December 1995.
+<br>
 <a href = "papers/vision.ps.gz">
 Available here (59K).
 </a>
@@ -3665,6 +3723,7 @@ Zoltan Somogyi.
 Proceedings of the Fourth International Conference on Logic Programming,
 </em>
 Melbourne, Australia, May 1987, pages 769-787.
+<br>
 <a href = "http://www.cs.mu.oz.au/~zs/papers/iclp87.ps.gz">
 Available here (40K).
 </a>
@@ -3683,6 +3742,7 @@ Fergus Henderson.
 Honours Report.
 </em>
 Department of Computer Science, University of Melbourne, November 1992.
+<br>
 <a href = "http://www.cs.mu.oz.au/~fjh/papers/hons_thesis.ps.gz">
 Available here (114K).
 </a>
@@ -3718,6 +3778,7 @@ Kotagiri Ramamohanarao and Zoltan Somogyi.
 Technical Report 96/45
 </em>
 Department of Computer Science, University of Melbourne, December 1996.
+<br>
 <a href = "papers/tr_96_45.ps.gz">
 Available here (58K)
 </a>
@@ -3745,6 +3806,7 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 Technical Report 90/2
 </em>
 Department of Computer Science, University of Melbourne, October 1997.
+<br>
 <a href = "papers/tr90-2.ps.gz">
 Available here (48K).
 </a>
