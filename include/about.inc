@@ -20,7 +20,7 @@ Due to the use of information obtained at compile time (such as type and mode in
 <p>
 Mercury is a purely declarative language, unlike Prolog, since it lacks "extra-logical" Prolog statements such as "cut" and imperative I/O. This enables advanced program optimization, but can make certain programming constructs (such as a switch over a number of options, with a default[dubious &ndash; discuss]) harder to express. (Note that while Mercury does allow impure functionality, this serves primarily as a way of calling foreign language code. All impure code must be explicitly marked.) Operations which would typically be impure (such as input/output) are expressed using pure constructs in Mercury using linear types, by threading a dummy "world" value through all relevant code.
 </p>
-<h3>What makes Mercury so Special?</h3>
+<h3>What makes Mercury special?</h3>
 <ul class="nonindentlist">
 <li>Mercury is purely declarative: predicates and functions in Mercury do not have non-logical side effects.</li>
 <li>Mercury is strongly typed language</li>
