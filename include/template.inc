@@ -9,7 +9,7 @@
 
 <div class="header">
 <div class="headercontainer">
-<a class="logo" href="<?php echo $root?>/index.php"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
+<a class="logo" href="<?php echo $root?>/index.html"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
 <div class="headersearchbar">
 <form class="searchbar" method="get" action="http://www.google.com/search">
 <table border="0" cellpadding="0">
