@@ -166,8 +166,6 @@ The main features of Mercury are:
 	Mercury is very efficient
 	</h3>
 	<p>
-	In comparison with existing logic
-	programming languages. 
 	Strong types, modes, and determinism
 	provide the compiler with the information it needs to generate
 	very efficient code.
