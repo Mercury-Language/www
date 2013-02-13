@@ -74,7 +74,7 @@ The Mercury distribution has been released to the public several times. The rele
 current release: 
 </td>
 <td>
-<a href="<?php $root ?>/download/release-<?php echo $current_release ?>.html"><?php echo $current_release?></a>
+<a href="release.html"><?php echo $current_release?></a>
 <button class="button">Download</button>
 </td>
 </tr>

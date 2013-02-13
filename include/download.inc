@@ -8,7 +8,7 @@ terms of the GNU General Public License.
 <H3> Stable Release </H3>
 
 <p>
-The current stable release is version <a href=" <?php $root ?>/download/release-<?php echo $current_release ?>.html"><?php echo $current_release; ?></a>.
+The current stable release is version <a href="download/release.html"><?php echo $current_release; ?></a>.
 <a href=""><button class="button">Download</button></a>
 </p>
 <p>
