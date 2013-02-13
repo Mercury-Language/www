@@ -138,10 +138,8 @@ Dormant, not currently under development
 <div style="float: left; max-width: 260px; margin-right: 50px;">
     <h3>Native code</h3>
 	<p>
-	This back-end compiles to assembler, using the GCC back-end.
-	</p>
-	<p>
-	Click <a href="<?php echo $root?>/download/gcc-backend.html">here</a> for more
+	We formerly had a back-end that compiled to assembler, using the GCC
+	back-end. It had not been maintained for many years, so has been removed.
 	</p>
 </div>
 <div style="float: left; max-width: 260px;">	
