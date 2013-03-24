@@ -21,6 +21,18 @@
 */
 
 $newsdb = array(
+"24th March 2013" => array("Mercury has left the University",
+"There are no more people working on the Mercury project who are also
+working at the University of Melbourne.
+As such it has become necessary to move the project outside the University
+so that we can continue to support it.
+There have already been a number of changes such as a new website address,
+new mailing lists and we're now using git and github.com for our VCS.
+Today the server at the University stopped working and we've re-located the
+website to the new server, but a number of links are broken including the
+all-important downloads section.
+We will fix this in the next few days. and post another update here."),
+
 "13th August 2012" => array("12.08 beta release available",
 "Beta releases of Mercury 12.08 are available <a href=\"download.html\">here</a>."
 ),
