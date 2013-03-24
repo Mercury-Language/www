@@ -12,7 +12,7 @@ ifndef PHP3
 	PHP3=/usr/bin/php -q
 endif
 ifndef WWW_DOMAIN
-	WWW_DOMAIN="www.mercury.csse.unimelb.edu.au"
+	WWW_DOMAIN="www.mercurylang.org"
 endif
 BETA_WEBDIR="$(INSTALL_WEBDIR)/download/files/beta-releases/rotd"
 ifndef BETA_FTPDIR
