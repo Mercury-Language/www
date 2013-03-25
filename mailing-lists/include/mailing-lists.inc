@@ -5,37 +5,34 @@
 There are five Mercury mailing lists:
 <ul>
 <li>
-<code>mercury-announce</code> is a very low-volume list for announcements
+<code>announce</code> is a very low-volume list for announcements
 about things directly related to Mercury, e.g. new versions
 of the Mercury implementation, tools for Mercury programmers
 (such as MCORBA), books about Mercury, etc.
 
 <li>
-The <code>mercury-users</code> list is intended for general discussion
+The <code>users</code> list is intended for general discussion
 about Mercury and related matters of interest to Mercury users.<br>
-It is <A HREF="mercury-users/list.html">archived</A> and searchable.
-
-<li> The <code>mercury-ads</code> list is intended for advertisments of things
-that are not directly related to Mercury but which may be of interest to
-Mercury users, e.g. job ads, conference announcements, calls for
-papers/participation, and the like.<br>
-It is <A HREF="mercury-ads/list.html">archived</A>.
+It is <A HREF="http://lists.mercurylang.org/pipermail/users/">
+archived</A> and searchable.
 
 <li>
-The <code>mercury-developers</code> list is intended for general discussion
+The <code>developers</code> list is intended for general discussion
 about the development of Mercury and the Mercury implementation and related
 matters of interest to the developers of Mercury.<br>
-It is <A HREF="mercury-developers/list.html">archived</A> and searchable.
+It is <A HREF="http://lists.mercurylang.org/pipermail/developers/">archived</A> and searchable.
 Note that in recent times, most the actual development discussion seems to be
-done on the mercury-reviews list, rather than mercury-developers.<br>
+done on the <code>reviews</code> list, rather than <code>developers</code> list.
+<br>
 
 <li>
-The <code>mercury-reviews</code> list is intended for use by the developers of
+The <code>reviews</code> list is intended for use by the developers of
 Mercury, for the purpose of reviewing changes to the Mercury implementation
 (including documentation, test suite, etc.) and the Mercury web site.  This
 list is specifically for posting diffs, reviews of diffs, and discussion of
 issues raised in such reviews.  It tends to be a fairly high-volume list.<br>
-It is <A HREF="mercury-reviews/list.html">archived</A> and searchable.
+It is <A HREF="http://lists.mercurylang.org/pipermail/reviews/">archived</A>
+and searchable.
 </ul>
 
 <h3>Search</h3>
@@ -52,7 +49,8 @@ It is <A HREF="mercury-reviews/list.html">archived</A> and searchable.
 mercury-users:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
-<input type="hidden" name="sitesearch" value="www.mercury.csse.unimelb.edu.au/mailing-lists/mercury-users"/>
+<input type="hidden" name="sitesearch"
+	value="lists.mercurylang.org/pipermail/users"/>
 </form>
 
 <li>
@@ -60,7 +58,8 @@ mercury-users:
 mercury-developers:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
-<input type="hidden" name="sitesearch" value="www.mercury.csse.unimelb.edu.au/mailing-lists/mercury-developers"/>
+<input type="hidden" name="sitesearch"
+	value="lists.mercurylang.org/pipermail/developers"/>
 </form>
 
 <li>
@@ -68,28 +67,27 @@ mercury-developers:
 mercury-reviews:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
-<input type="hidden" name="sitesearch" value="www.mercury.csse.unimelb.edu.au/mailing-lists/mercury-reviews"/>
+<input type="hidden" name="sitesearch"
+	 value="lists.mercurylang.org/pipermail/reviews"/>
 </form>
 </ul>
 
 <h3>Subscribing and unsubscribing</h3>
 
-These lists are managed using the "majordomo" mailing list software.
+These lists are managed using the "mailman" mailing list software.
 To subscribe or unsubscribe to any of these mailing lists,
 send email with "subscribe" or "unsubscribe" in the body of the mail
 to the corresponding "-request" address:
 
 <ul>
-<li> <a href = "mailto:mercury-announce-request@csse.unimelb.edu.au">
-mercury-announce-request@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-users-request@csse.unimelb.edu.au">
-mercury-users-request@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-ads-request@csse.unimelb.edu.au">
-mercury-ads-request@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-developers-request@csse.unimelb.edu.au">
-mercury-developers-request@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-reviews-request@csse.unimelb.edu.au">
-mercury-reviews-request@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:announce-request@lists.mercurylang.org">
+announce-request@lists.mercurylang.org</a>
+<li> <a href = "mailto:users-request@lists.mercurylang.org">
+users-request@lists.mercurylang.org</a>
+<li> <a href = "mailto:developers-request@lists.mercurylang.org">
+developers-request@lists.mercurylang.org</a>
+<li> <a href = "mailto:reviews-request@lists.mercurylang.org">
+reviews-request@lists.mercurylang.org</a>
 </ul>
 
 <h3>Posting articles</h3>
@@ -98,12 +96,14 @@ To submit articles to one of these lists, use the address
 without the "-request" part:
 
 <ul>
-<li> <a href = "mailto:mercury-users@csse.unimelb.edu.au">
-mercury-users@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-ads@csse.unimelb.edu.au">
-mercury-ads@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-developers@csse.unimelb.edu.au">
-mercury-developers@csse.unimelb.edu.au</a>
-<li> <a href = "mailto:mercury-reviews@csse.unimelb.edu.au">
-mercury-reviews@csse.unimelb.edu.au</a>
+<li> <a href = "mailto:users@lists.mercurylang.org">
+users@lists.mercurylang.org</a>
+<li> <a href = "mailto:developers@lists.mercurylang.org">
+developers@lists.mercurylang.org</a>
+<li> <a href = "mailto:reviews@lists.mercurylang.org">
+reviews@lists.mercurylang.org</a>
 </ul>
+
+For more information please see the
+<a href="http://lists.mercurylang.org">mailmain list page</a>.
+
