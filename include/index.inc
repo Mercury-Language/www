@@ -17,5 +17,5 @@ For older news items, see the
 
 <p>
 
-News is also available as an RSS feed at
-<a href="<?php echo $root; ?>/rss.xml">http://www.mercury.csse.unimelb.edu.au/rss.xml</a>.
+News is also available as an RSS feed
+<a href="<?php echo $root; ?>/rss.xml">here</a>.
