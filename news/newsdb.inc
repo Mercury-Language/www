@@ -21,6 +21,10 @@
 */
 
 $newsdb = array(
+"8th April 2013" => array("64-bit Windows support",
+"Generation of 64-bit code on Windows using the MinGW64 version of GCC
+is now supported."),
+
 "24th March 2013" => array("Mercury has left the University",
 "There are no more people working on the Mercury project who are also
 working at the University of Melbourne.
