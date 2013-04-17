@@ -97,6 +97,8 @@ The server generates, for each request,
 a web page containing the requested information,
 which will typically contain links that generate other requests.
 </p>
+
+<!--
 <h3>Demo</h3>
 <p>
 We have made some profiling data files available for you to explore.
@@ -151,6 +153,7 @@ The second profile was taken after this bottleneck was fixed.
 (The code of mlds_to_java.m has changed a bit in the meantime.)
 </li>
 </ul>
+-->
 
 <h3>Availability</h3>
 <p>
