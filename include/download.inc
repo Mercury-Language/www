@@ -1,20 +1,33 @@
 <H2>Download</H2>
-<?php $next_beta_version="12.08-beta" ?>
+<?php $next_beta_version="" ?>
 <p>
 The Mercury compiler is free software, and is distributed under the
 terms of the GNU General Public License.
 </p>
 
+<p>
+Source downloads are available from
+<a href="http://dl.mercurylang.org/index.html">our downloads page</a>.
+This page is temporary as we are in the process of reorganising the
+project's hosting,
+we hope to improve this in the future.
+</p>
+
 <H3> Stable Release </H3>
 
+<?php
+/*
 <p>
 The current stable release is version <a href="download/release.html"><?php echo $current_release; ?></a>.
 <a href=""><button class="button">Download</button></a>
 </p>
+*/
+?>
+
 <p>
 The most stable release will be a <em>numbered release</em>,
 such as 0.10.1, 0.13.0 or 10.04.
-These releases have been extensively tested, and often have 
+These releases have been extensively tested, and often have
 pre-compiled binary packages for easy installation.
 </p><p>
 The stable release naming scheme was 0.1 up to 0.13 for the first thirteen stable releases.
@@ -25,22 +38,43 @@ For example 10.04 is for a release made in April 2010.
 <?php if ($next_beta_version != "") { ?>
 	<H3> Beta release </H3>
 	<p>
+	A beta version of the next release is also available.
 	The current beta release is version <?php echo $next_beta_version; ?>. 
 	<a href=""><button class="button">Download</button></a>
 	</p>
 <?php } ?>
 
 <h3> Release of the day </h3>
+
+<?php
+/*
 <p>
 The current release of the day
 is version <a href="download/rotd.html"><?php echo $rotd_version; ?></a>.
 <a href=""><button class="button">Download</button></a>
 </p>
+*/
+?>
+
 <p>
 To cater for those who need access to the latest features of Mercury,
-we release a daily snapshot of the development system.
+we release a periodic snapshot of the development system.
 This is called a "release of the day (ROTD)".
 Each ROTD is given a version number
-"rotd-YYYY-MM-DD" according to the date on which it was built.  
+"rotd-YYYY-MM-DD" according to the date on which it was built.
+ROTDs are not necessarily daily.
+</p>
+<p>
+See
+<a href="http://dl.mercurylang.org/index.html">our downloads page</a>.
+</p>
+
+<h3>Anonymous git access</h3>
+
+<p>
+Anonymous access to our git repository is also available
+via github at
+<a href="https://github.com/Mercury-Language">
+https://github.com/Mercury-Language</a>.
 </p>
 

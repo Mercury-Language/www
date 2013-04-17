@@ -1,8 +1,8 @@
 <?php
-	$installed_path="/home/mercury/mercury5/installed_w3";
+	$installed_path="/srv/www/mercurylang";
 
-	$current_release="11.07.02";
-	$next_beta_version="12.08";
+	$current_release="11.07.2";
+	$next_beta_version="12.08-beta";
 
 	$release_doc_dir="$root/information/doc-release";
 	$latest_doc_dir="$root/information/doc-latest";
@@ -22,6 +22,6 @@
 	exec("cat $rotd_files_path/latest-unstable-version", $exec_output);
 	$rotd_version=$exec_output[0];
 	
- 	$ftp_domain="ftp.mercury.csse.unimelb.edu.au";
- 	$www_domain="<WWW_DOMAIN>";
+ 	$ftp_domain="ftp.mercurylang.org";
+ 	$www_domain="www.mercurylang.org";
 ?>
