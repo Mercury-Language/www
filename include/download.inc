@@ -27,8 +27,7 @@ The current stable release is version <a href="download/release.html"><?php echo
 <p>
 The most stable release will be a <em>numbered release</em>,
 such as 0.10.1, 0.13.0 or 10.04.
-These releases have been extensively tested, and often have
-pre-compiled binary packages for easy installation.
+These releases have been extensively tested.
 </p><p>
 The stable release naming scheme was 0.1 up to 0.13 for the first thirteen stable releases.
 In February 2010 the Mercury project decided to name each stable release by using the year and month of the release.
