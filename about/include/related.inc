@@ -27,15 +27,6 @@ If you are using Mercury in your project, please contact us at
 
 <ul class="nonindentlist">
 <li>
-<a href="/doc-release/mercury_trans_guide/index.html">Prolog to Mercury Transition Guide</a>, 
-information to assist programmers to move Prolog programs to Mercury. Includes information on 
-differences in the languages and common programming styles. Click <a href="/doc-release/transition_guide.pdf">here</a> for PDF version
-</li>
-<li>
-<a href="<?php $root ?>/about/comparison_with_haskell.html">Haskell & Mercury Comparison</a>, a point-by-point comparison of some of the differences between Mercury and Haskell 98, in particular with
- regard to their type systems.
-</li>
-<li>
 <a href = "http://www.scs.leeds.ac.uk/hill/GOEDEL/expgoedel.html">Goedel</a>
  is a logic programming language, with a strong type system,
 module system, and support for infinite precision numerical calculation
