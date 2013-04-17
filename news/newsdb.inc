@@ -21,6 +21,16 @@
 */
 
 $newsdb = array(
+"17th April 2013" => array(
+"Downloads and documentation are available again",
+"We have put both the documentation and some
+<a href=\"http://dl.mercurylang.org/index.html\">downloads</a>
+back online.
+However, until we setup a periodic build system these may be updated
+only intermittently.
+Also, the downloads available do not yet include historical versions of
+Mercury."),
+
 "8th April 2013" => array("64-bit Windows support",
 "Generation of 64-bit code on Windows using the MinGW64 version of GCC
 is now supported."),
