@@ -19,8 +19,7 @@ specifications with a Tk GUI</li>
 </UL>
 
 <p>
-If you are using Mercury in your project, please contact us at
-<a href="mailto:mercury@csse.unimelb.edu.au">mercury@csse.unimelb.edu.au</a>.
+If you are using Mercury in your project, please contact us!
 </p>
 <br/>
 <h3>Other Related Languages</h3>

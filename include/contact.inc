@@ -2,16 +2,13 @@
 
 <p>
 If you have any questions, comments, suggestions, bug reports, or issues you would
-like to discuss regarding Mercury, feel free to contact us at <a
-href="mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>.
+like to discuss regarding Mercury, feel free to contact us on one of the
+following mailing lists.
 </p>
 
 <p>
-Please send bug reports, enhancement requests and suggestions for improvement
-to <a href="mailto:mercury-bugs@cs.mu.oz.au">mercury-bugs@cs.mu.oz.au</a>.
-</p>
-
-<p>
+Bug reports may also be added to the
+<a href="https://bugs.mercurylang.org/">bug tracker</a>.
 If sending a bug report, please enclose as much information as possible,
 including, if possible source code (such as a small test case that exhibits the
 bug), any error messages encountered, operating system version, and

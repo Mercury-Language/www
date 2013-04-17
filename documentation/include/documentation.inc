@@ -16,7 +16,7 @@ copy of the entire document, links to PDF are provided.
 	<h3>Ralph Becket Mercury tutorial</h3>
 	An introduction to Mercury.
 	This is still under development. 
-	<a href="mailto:rafe@cs.mu.oz.au">Feedback</a> would be greatly appreciated.
+	Feedback would be greatly appreciated.
 	<table class="documentation">
 	<tr><td>
 	<a href="papers/book.pdf"><button class="button">PDF</button></a>

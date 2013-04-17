@@ -40,7 +40,7 @@ tar or zip file (e.g. mylibrary-0.4.zip or myprogram-1.2.1.tar.gz).
 If you can't do this, attach it in email in the next step.
 </li>
 <LI>
-Email <a href="mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>.
+Email <a href="mailto:reviews@lists.mercurylang.org">reviews@lists.mercurylang.org</a>.
 and let us know that it's available (or it is attached), what it is,
 and give us the URL.  We'll check it out and if all is well will add it
 to the archive.
@@ -60,8 +60,6 @@ changes to the Mercury system.  If you would like to contribute reasonably
 frequently it might be a good idea to subscribe, or at least browse the
 archives of this list, simply to get an idea of the kinds of standards
 required for integrating code into the main distribution.
-You can also email <a href="mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a>
-and discuss it with the Mercury team.
 </p>
 <p>
 There is an issue with copyright ownership in the Mercury system. 
@@ -84,8 +82,7 @@ If you have an employer who has some control over your copyright, we
 have some standard documents for doing this kind of thing.  It is almost
 always preferable to ask an employer to sign a form than to try to explain
 the concept (possibly confusing or scaring them in the process).  Please 
-email <a href="mailto:mercury@cs.mu.oz.au">mercury@cs.mu.oz.au</a> if
-you want to discuss contributing changes to the Mercury system.
+email us if you want to discuss contributing changes to the Mercury system.
 </p>
 
 

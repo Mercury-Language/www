@@ -28,5 +28,4 @@ Higher-order terms can have at most about 500 arguments.
 
 These limits can be lifted (with some effort), but would possibly incur
 performance penalties. Contact the Mercury team
-(<a href = "mailto:mercury@csse.unimelb.edu.au">mercury@csse.unimelb.edu.au</a>)
 if you find these limits are affecting your application.
