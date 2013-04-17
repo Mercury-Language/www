@@ -52,7 +52,7 @@ install: local_install
 clean: local_clean
 
 local_clean:
-	rm -f include/globals.inc
+	rm -f include/globals.inc rss.xml
 
 ROTD_PATTERNS = mercury-compiler-rotd-*-unstable.tar.gz \
 	mercury-extras-rotd-*-unstable.tar.gz 		\
