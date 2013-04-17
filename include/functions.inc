@@ -25,12 +25,12 @@ function rssitem($date, $item) {
 	$news = htmlspecialchars($news);
 
 	echo "<item>\n";
-	echo "<guid>http://www.mercury.csse.unimelb.edu.au/rss.xml#".
+	echo "<guid>http://mercurylang.org/rss.xml#".
 		md5($title.$news.$date)."</guid>\n";
 	echo "<title>$title</title>\n";
 	echo "<description>$news</description>\n";
 	echo "<pubDate>$day $month $year 00:00 +1000</pubDate>\n";
-	echo "<link>http://www.mercury.csse.unimelb.edu.au/</link>\n";
+	echo "<link>http://mercurylang.org/</link>\n";
 	echo "</item>\n";
 }
 

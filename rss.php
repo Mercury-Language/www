@@ -2,7 +2,7 @@
 <rss version="2.0">
 <channel>
   <title>The Mercury Project</title>
-  <link>http://www.mercury.csse.unimelb.edu.au/</link>
+  <link>http://mercurylang.org/</link>
   <description>News from the Mercury programming language project.</description>
 <?php
 
