@@ -90,3 +90,17 @@ via github at
 https://github.com/Mercury-Language</a>.
 </p>
 
+<p>
+Note that you need Mercury installed in order to build Mercury from git.
+In other words,
+you must bootstrap using one of the source distributions above.
+When building the latest revision from git,
+you should use the most recent ROTD source distribution;
+while older ROTDs may work, there is no guarantee that they will.
+Generally you should bootstrap using an ROTD that approximately matches the
+age of the git revision that you want to build.
+See
+<a href="https://github.com/Mercury-Language/mercury/blob/master/README.bootstrap">
+README.bootstrap</a> for more details.
+</p>
+
