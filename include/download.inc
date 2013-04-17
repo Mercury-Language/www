@@ -18,7 +18,7 @@ we hope to improve this in the future.
 <?php $next_beta_version="" ?>
 
 <p>
-There are <?php echo($next_beta_version == "" ? "two" : "three"); ?>
+There are <?php echo($next_beta_version == "" ? "two " : "three "); ?>
 main versions of Mercury available at the moment.
 <p/>
 
