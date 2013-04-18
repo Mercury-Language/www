@@ -26,9 +26,6 @@
 	<?php
 	if($menu == "Download") { ?>
 	<ul class="submenu">
-	<li><a href="<?php echo $root?>/download/license.html">
-	<div <?php if($include=="license.inc"){ ?> class="submenucurrent" <?php } ?>>
-	license</div></a></li>
 	<li><a href="<?php echo $root?>/download/releases.html">
 	<div <?php if($include=="releases.inc"){ ?> class="submenucurrent" <?php } ?>>
 	releases</div></a></li>
