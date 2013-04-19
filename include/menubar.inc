@@ -34,7 +34,7 @@
 	releases</div></a></li>
 	<li><a href="<?php echo $root?>/download/rotd.html">
 	<div <?php if($include=="rotd.inc"){ ?> class="submenucurrent" <?php } ?>>
-	release of the day(snapshot)</div></a></li>
+	release of the day (snapshot)</div></a></li>
 	</ul><?php
 	}
 	?>
