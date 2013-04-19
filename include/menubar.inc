@@ -6,19 +6,15 @@
 	<li><a href="<?php echo $root?>/about/overview.html">
 	<div <?php if($include=="overview.inc"){ ?> class="submenucurrent" <?php } ?>>
 	overview</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/about/features.html">
 	<div <?php if($include=="features.inc"){ ?> class="submenucurrent" <?php } ?>>
 	features</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/about/benchmarks.html">
 	<div <?php if($include=="benchmarks.inc"){ ?> class="submenucurrent" <?php } ?>>
 	benchmarks</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/about/backends.html">
 	<div <?php if($include=="backends.inc"){ ?> class="submenucurrent" <?php } ?>>
 	back ends</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/about/related.html">
 	<div <?php if($include=="related.inc"){ ?> class="submenucurrent" <?php } ?>>
 	related</div></a></li>
@@ -33,11 +29,9 @@
 	<li><a href="<?php echo $root?>/download/license.html">
 	<div <?php if($include=="license.inc"){ ?> class="submenucurrent" <?php } ?>>
 	license</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/download/releases.html">
 	<div <?php if($include=="releases.inc"){ ?> class="submenucurrent" <?php } ?>>
 	releases</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/download/rotd.html">
 	<div <?php if($include=="rotd.inc"){ ?> class="submenucurrent" <?php } ?>>
 	release of the day(snapshot)</div></a></li>
@@ -51,7 +45,6 @@
 	<li><a href="<?php echo $root?>/documentation/papers.html">
 	<div <?php if($include=="papers.inc"){ ?> class="submenucurrent" <?php } ?>>
 	papers</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/documentation/deep_demo.html">
 	<div <?php if($include=="deep_demo.inc"){ ?> class="submenucurrent" <?php } ?>>
 	deep profiler</div></a></li>
@@ -65,11 +58,9 @@
 	<li><a href="<?php echo $root?>/development/contributions.html">
 	<div <?php if($include=="contributions.inc"){ ?> class="submenucurrent" <?php } ?>>
 	contributing</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/development/people.html">
 	<div <?php if($include=="people.inc"){ ?> class="submenucurrent" <?php } ?>>
 	the team</div></a></li>
-	<hr/>
 	<li><a href="<?php echo $root?>/development/developer.html">
 	<div <?php if($include=="developer.inc"){ ?> class="submenucurrent" <?php } ?>>
 	developer documentation</div></a></li>

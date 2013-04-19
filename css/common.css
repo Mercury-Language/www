@@ -131,7 +131,7 @@ font-size: 16px;
 background: none;
 border: none;
 font-family: georgia;
-padding: 5px;
+padding: 7px;
 }
 
 ul.submenu li a:link, ul.submenu li a:visited{
@@ -145,11 +145,6 @@ background-color: #e6e6e6;
 ul.submenu a:hover{
 background: none;
 font-style: italic;
-}
-
-ul.submenu hr{
-color: white;
-margin: 6px 20px 6px 0px;
 }
 
 .current{
