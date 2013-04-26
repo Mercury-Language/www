@@ -1,4 +1,4 @@
-<H2>NEWS</H2>
+<H2>News</H2>
 <p>
 If you see a feature that has been added and that you would like to try
 out, you can download our <A HREF="download/rotd.html">release of the day</A>.
