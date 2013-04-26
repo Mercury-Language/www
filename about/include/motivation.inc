@@ -1,4 +1,4 @@
-<h2>About Mercury<span class="submenutitle">/ overview </span></h2>
+<h2>About Mercury<span class="submenutitle">/ motivation </span></h2>
 
 <p>
 Even though logic programming languages are theoretically superior to

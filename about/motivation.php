@@ -4,7 +4,7 @@
     $title="Overview and Motivation";
     $dir="about";
     $root="..";
-    $include="overview.inc";
+    $include="motivation.inc";
     include "$root/include/template.inc"
 ?>
 </HTML>
