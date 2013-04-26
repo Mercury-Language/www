@@ -6,9 +6,6 @@
 	<li><a href="<?php echo $root?>/about/overview.html">
 	<div <?php if($include=="overview.inc"){ ?> class="submenucurrent" <?php } ?>>
 	overview</div></a></li>
-	<li><a href="<?php echo $root?>/about/features.html">
-	<div <?php if($include=="features.inc"){ ?> class="submenucurrent" <?php } ?>>
-	features</div></a></li>
 	<li><a href="<?php echo $root?>/about/benchmarks.html">
 	<div <?php if($include=="benchmarks.inc"){ ?> class="submenucurrent" <?php } ?>>
 	benchmarks</div></a></li>
