@@ -2,9 +2,9 @@
 <div class="banner"></div>
 
 <p style="font-weight: bold; font-family: georgia; font-size: 19px; line-height:1.2em">
-Mercury is a new logic/functional programming language, which combines
+Mercury is a logic/functional programming language which combines
 the clarity and expressiveness of declarative programming with advanced
-static analysis and error detection features. 
+static analysis and error detection features.
 </p>
 <p>
 Its highly optimized
