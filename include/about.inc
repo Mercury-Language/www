@@ -31,7 +31,7 @@ The main features of Mercury are:
     </p>
     <p>
     Mercury handles dynamic data structures by providing several abstract
-    data types in the standard Mercury library that manage collections of
+    data types in the standard library that manage collections of
     items with different operations and tradeoffs.
     Programmers can also create their own abstract data types.
     </p>
@@ -186,5 +186,5 @@ register variables, the ability to take the addresses of labels, and
 the ability to use inline assembler. Using these extensions, it
 generates code that is significantly better than all previous Prolog
 systems known to us. However, the system does not need these
-extensions, it will work in their absence.
+extensions, and will work in their absence.
 </p>
