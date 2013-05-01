@@ -42,10 +42,11 @@ The main features of Mercury are:
     Mercury is a strongly typed language.
     </h3>
     <p>
-    Mercury's type system is based on many-sorted logic with parametric polymorphism, very
-    similar to the type systems of modern functional languages such
-    as ML and Haskell. Programmers must declare the types they need
-    using declarations such as
+    Mercury's type system is based on many-sorted logic with parametric
+    polymorphism,
+    very similar to the type systems of modern functional languages such
+    as ML and Haskell.
+    Programmers must declare the types they need using declarations such as
     </p>
     <pre>
     :- type list(T) --->    [] ; [T | list(T)].
