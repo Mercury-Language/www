@@ -113,3 +113,45 @@ Please use the search bar below to search the archives:
 </tr>
 </table>
 </form>
+
+<h3>Other communities and social networks</h3>
+
+<h4>IRC</h4>
+
+There is a Mercury IRC channel on the
+<a href="http://www.freenode.net">Freenode</a>
+IRC network.
+Connect to <code>irc.freenode.net</code> and join the <code>#mercury</code>
+channel.
+
+<h4>stackoverflow.com</h4>
+
+<a href="http://www.stackoverflow.com">stackoverflow.com</a>
+is a website for developers to ask and answer questions.
+Questions are organised using tage.
+The questions with the Mercury tag are
+<a href="http://stackoverflow.com/questions/tagged/mercury">here</a>.
+
+<h4>Rosetta Code</h4>
+
+A Mercury category has been established on
+<a href="http://rosettacode.org">Rosetta Code</a>,
+a website for sharing implementations of common problems in different
+languages.
+The Mercury category can be found
+<a href="http://rosettacode.org/wiki/Mercury">here</a>.
+
+<h4>Twitter</h4>
+
+The <a href="https://twitter.com/MercuryLang">@MercuryLang</a>
+twitter account will make announcements of news, releases and
+ROTD builds.
+
+<h4>Google+</h4>
+
+There is a
+<a href="https://plus.google.com/communities/108576397306370583348">
+Mercury community
+</a>
+on Google+.
+
