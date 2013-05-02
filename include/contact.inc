@@ -17,6 +17,13 @@ Also, you might want to check the current release to see if a newer release is
 available, or see the bug tracker to see if the bug has already been reported.
 </p>
 
+<p>
+If you wish to contact the core team about something not suitable for the
+mailing lists then e-mail
+<a href="mailto:mercury@mercurylang.org">mercury@mercurylang.org</a>
+User support questions are best handled on the mercury-users mailing list.
+</p>
+
 <h3>Mailing Lists</h3>
 
 <p>

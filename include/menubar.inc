@@ -21,7 +21,11 @@
 <a href="<?php echo $root?>/news.html"><li <?php if($menu == 'News'){ ?> class="current" <?php } ?> >News</li></a>
 <a href="<?php echo $root?>/download.html"><li <?php if($menu == 'Download'){ ?> class="current" <?php } ?> >Download</li></a>
 	<?php
-	if($menu == "Download") { ?>
+    // Temporarily disabled submenus by pbone until we fix the download
+    // links more perminently.
+    //if($menu == "Download") {
+    if (false) {
+    ?>
 	<ul class="submenu">
 	<li><a href="<?php echo $root?>/download/releases.html">
 	<div <?php if($include=="releases.inc"){ ?> class="submenucurrent" <?php } ?>>

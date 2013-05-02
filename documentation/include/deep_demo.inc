@@ -157,5 +157,6 @@ The second profile was taken after this bottleneck was fixed.
 
 <h3>Availability</h3>
 <p>
-The Mercury deep profiler is available in the Mercury releases of the day.
+The Mercury deep profiler has been available since Mercury version 10.04.
 </p>
+
