@@ -131,6 +131,15 @@ languages.
 The Mercury category can be found
 <a href="http://rosettacode.org/wiki/Mercury">here</a>.
 
+<h4>Adventures in Mercury</h4>
+
+The
+<a href="http://adventuresinmercury.blogspot.com.au/">
+Adventures in Mercury
+</a>
+blog by Chris King tackles various problems and explains how his elegant
+Mercury solutions are constructed.
+
 <h4>Twitter</h4>
 
 The <a href="https://twitter.com/MercuryLang">@MercuryLang</a>
