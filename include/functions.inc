@@ -2,19 +2,19 @@
 function newsitem($date, $item) {
 
 	list($title, $news) = $item;
-
-	echo "<tr>";
-	list($day, $month, $year) = split(" ",$date);
-
-	echo "<td valign=top><tt>[";
-	printf("%02d&nbsp;$month&nbsp;$year", $day);
-	echo "]</tt></td>";
-
-	echo "<td><strong>";
+	
+	echo "<li>";
+	echo "<h3>";
 	echo $title;
-	echo "</strong><br>\n";
+	echo "</h3>";
+	echo "<p>";
 	echo $news;
-	echo "</td></tr>";
+	echo "</p>";
+	list($day, $month, $year) = split(" ",$date);
+	echo "<span class='newsdate'>";
+	printf("%02d&nbsp;$month&nbsp;$year", $day);
+	echo "</span>";
+	echo "</li>";
 }
 
 function rssitem($date, $item) {
@@ -25,12 +25,12 @@ function rssitem($date, $item) {
 	$news = htmlspecialchars($news);
 
 	echo "<item>\n";
-	echo "<guid>http://www.mercury.csse.unimelb.edu.au/rss.xml#".
+	echo "<guid>http://mercurylang.org/rss.xml#".
 		md5($title.$news.$date)."</guid>\n";
 	echo "<title>$title</title>\n";
 	echo "<description>$news</description>\n";
 	echo "<pubDate>$day $month $year 00:00 +1000</pubDate>\n";
-	echo "<link>http://www.mercury.csse.unimelb.edu.au/</link>\n";
+	echo "<link>http://mercurylang.org/</link>\n";
 	echo "</item>\n";
 }
 

@@ -1,9 +1,5 @@
-<h2>How to get Mercury</h2>
-
-<p>
-The Mercury system is free software, and is distributed under the
-terms of the GNU General Public License.
-</p>
+<H2>Download</H2>
+<?php $next_beta_version="" ?>
 
 <p>
 Source downloads are available from
@@ -13,59 +9,68 @@ project's hosting,
 we hope to improve this in the future.
 </p>
 
-<h3>About Mercury's versions</h3>
-
-<?php $next_beta_version="" ?>
+<H3> License </H3>
 
 <p>
-There are <?php echo($next_beta_version == "" ? "two " : "three "); ?>
-main versions of Mercury available at the moment.
-<p/>
+The Mercury implementation is free software.
+It is Copyright (C) 1993-2013 The University of Melbourne.
+</p>
 
-<h4> Current stable release </h4>
+<p>
+The compiler and tools are distributed under the terms of the
+<a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License (GPL)</a>.
+See the file <a href="download/COPYING">COPYING</a> for copying permission.
+</p>
+
+<p>
+The Mercury libraries and runtime (the files in the library, trace,
+browser, ssdb, mdbcomp and runtime subdirectories) are distributed
+under the terms of the
+<a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License (LGPL)</a>.
+See the file <a href="download/COPYING.LIB">COPYING.LIB</a> for copying permissions for those files.
+</p>
+
+<H3> Stable Release </H3>
+
+<?php
+/*
+<p>
+The current stable release is version <a href="download/release.html"><?php echo $current_release; ?></a>.
+<a href=""><button class="button">Download</button></a>
+</p>
+*/
+?>
 
 <p>
 The most stable release will be a <em>numbered release</em>,
 such as 0.10.1, 0.13.0 or 10.04.
-These releases have been extensively tested, and often have
-pre-compiled binary packages for easy installation.
-</p>
-<p>
-The stable release naming scheme was 0.1 up to 0.13 for the first thirteen
-stable releases.
-In February 2010 the Mercury project decided to name each stable release by
-using the year and month of the release.
+These releases have been extensively tested.
+</p><p>
+The stable release naming scheme was 0.1 up to 0.13 for the first thirteen stable releases.
+In February 2010 the Mercury project decided to name each stable release by using the year and month of the release.
 For example 10.04 is for a release made in April 2010.
-</p>
-
-<p>
-The current stable release is version <?php echo $current_release; ?>.
-See
-<a href="http://dl.mercurylang.org/index.html">our downloads page</a>.
 </p>
 
 <?php if ($next_beta_version != "") { ?>
 	<H3> Beta release </H3>
-
+	<p>
 	A beta version of the next release is also available.
-	The current beta release is version <?php echo $next_beta_version; ?>.
-	The source distribution for this beta release is available for download
-	from:
-	<ul>
-	<li>
-	<A
-	HREF="<?php
-		echo "http://$www_domain/download/files/beta-releases/";
-		echo "$next_beta_version/index.html";
-	?>"> the Mercury web site</A> or
-	<li> <A HREF="<?php
-		echo "ftp://$ftp_domain/pub/mercury/beta-releases/";
-		echo "$next_beta_version";
-	?>">the Mercury ftp site</A>.
-	</ul>
+	The current beta release is version <?php echo $next_beta_version; ?>. 
+	<a href=""><button class="button">Download</button></a>
+	</p>
 <?php } ?>
 
-<h4> Release of the day </h4>
+<h3> Release of the day </h3>
+
+<?php
+/*
+<p>
+The current release of the day
+is version <a href="download/rotd.html"><?php echo $rotd_version; ?></a>.
+<a href=""><button class="button">Download</button></a>
+</p>
+*/
+?>
 
 <p>
 To cater for those who need access to the latest features of Mercury,
@@ -76,7 +81,6 @@ Each ROTD is given a version number
 ROTDs are not necessarily daily.
 </p>
 <p>
-The current release of the day is version <?php echo $rotd_version; ?>.
 See
 <a href="http://dl.mercurylang.org/index.html">our downloads page</a>.
 </p>

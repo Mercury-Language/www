@@ -1,36 +1,58 @@
 <?php include "$root/include/functions.inc" ?>
 <?php include "$root/include/globals.inc" ?>
-
+<head>
 <TITLE>The Mercury Project: <?php echo $title?></TITLE>
-<BODY bgcolor="#ABCDEF" text="#000000">
+<link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
+<link rel="icon" type="image/ico" href="../favicon.ico"/>
+</head>
+<body>
 
-<TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
-<TR>
-    <TD>
-    <CENTER><H1>The Mercury Project<br>
-    <?php echo $title ?>
-    </H1></CENTER>
-    </TD>
+<div class="header">
+<div class="headercontainer">
+<a class="logo" href="<?php echo $root?>/index.html"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
+<div class="headersearchbar">
+<form class="searchbar" method="get" action="http://www.google.com/search">
+<table border="0" cellpadding="0">
+<tr>
+<td>
+<input class="textbox" type="text"   name="q" size="25" maxlength="255" value="" />
+<input class="submit" type="submit" value="Search" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="hidden"  name="sitesearch" value="mercurylang.org"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</div>
 
-    <TD width="10%">
-    <?php $size = GetImageSize("$root/images/merclogo_small.jpg"); ?>
-    <IMG SRC="<?php echo $root?>/images/merclogo_small.jpg" border="2"
-        hspace="10" <?php echo $size[3]; ?>
-	ALT="[Mercury Logo]">
-    </TD>
-</TR>
-</TABLE>
+<div class="container">
+<!--Menu-->
+<?php include "$root/include/menubar.inc" ?>
 
-<TABLE border="0" cellpadding="5" cellspacing="0" width="100%">
-<TR>
-    <TD valign="top" bgcolor="#fcf4d4" width="15%">
-    <?php include "$root/include/menubar.inc" ?>
-    </TD>
-    <TD valign="top">
-    <?php include "$root/$dir/include/$include" ?>
-    </TD>
-</TR>
-</TABLE>
+<!--Sidebar
+<div class="sidebar">
+<div class="sidebarbox">
+</div>
+<div class="sidebarbox">
+</div>
+</div>
+-->
+
+<!--Content-->
+<div class="content">
+<?php include "$root/$dir/include/$include" ?>
+</div>
+
+<!--footer-->
+<?php include "$root/include/footer.inc" ?>
+
+</div>
+
 
 <?php
 /*
@@ -51,4 +73,4 @@
   })();
 </script>
 
-</BODY>
+</body>

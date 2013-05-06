@@ -1,0 +1,308 @@
+body{
+padding: 0px;
+margin: 0px;
+font-family: arial, sans serif;
+font-size: 14px;
+color: #333;
+}
+
+
+h2{
+font-family: Georgia;
+color: #006fbc;
+font-size: 22px;
+margin: 20px 0px;
+}
+
+h3{
+font-family: Georgia;
+color: #333;
+font-size: 17px;
+margin: 20px 0px;
+}
+
+h4{
+font-family: Arial;
+color: #333;
+font-size: 16px;
+}
+
+p, table{
+font-family: arial;
+color: #333;
+font-size: 14px;
+line-height: 1.5em;
+margin: 25px 0px;
+}
+
+.container, .headercontainer{
+max-width: 1260px;
+min-width: 620px;
+margin: auto;
+border: 0px black solid;
+}
+
+.headercontainer{
+min-width: 650px;
+}
+
+a:link{
+color: #006fbc;
+text-decoration:none;
+}
+
+/*header*/
+.header{
+background: url(../images/headerbackground.png) repeat-x 0px 0px;
+height: 111px;
+border-bottom: 1px solid #b3b3b3;
+}
+
+.logo{
+position: relative;
+top: 15px;
+left: 40px;
+}
+
+.headersearchbar{
+float: right;
+margin-right: 50px;
+margin-top: 37px;
+}
+
+.searchbar{
+}
+
+.searchbar .submit{
+background: #006fbc;
+border-radius: 5px;
+border: none;
+color: white;
+padding: 2px 5px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.searchbar .textbox{
+border: 1px solid #333;
+}
+
+/*menu*/
+.submenucurrent{
+font-style: italic;
+font-weight: bold;
+color: #666;
+}
+
+ul.menu{
+float: left;
+margin-top: 0px;
+margin-left: -10px;
+list-style-type: none;
+}
+
+ul.menu li {
+font-size: 16px;
+background-color: #f7f7f7;
+padding: 10px 10px 10px 10px;
+width: 140px;
+border-left: 4px solid #529ddb;
+line-height: 1em;
+}
+
+ul.menu li:hover{
+background-color: #e6e6e6;
+}
+
+ul.menu a:link, ul.menu a:visited{
+color: #006fbc;
+text-decoration: none;
+}
+
+ul.submenu{
+list-style-type: none;
+margin-left: -24px;
+margin-top: 8px;
+margin-bottom: 20px;
+}
+
+ul.submenu li{
+font-size: 16px;
+background: none;
+border: none;
+font-family: georgia;
+padding: 7px;
+}
+
+ul.submenu li a:link, ul.submenu li a:visited{
+color: #006fbc;
+} 
+
+ul.submenu li:hover{
+background-color: #e6e6e6;
+}
+
+ul.submenu a:hover{
+background: none;
+font-style: italic;
+}
+
+.current{
+font-weight: bold;
+background-image: url(../images/bluepointer.png);
+background-repeat: no-repeat;
+background-position: 140px 13px;
+}
+
+
+/*sidebar*/
+/*
+.sidebar{
+float: right;
+margin-right: 20px; 
+} 
+
+.sidebarbox{
+background-color: #f7f7f7;
+border-left: 4px solid #529ddb;
+padding: 8px 10px;
+width: 140px;
+margin-bottom: 25px;
+min-height: 200px;
+}
+*/
+
+/*content*/
+.developer h3{
+margin-bottom: -25px;
+}
+
+table.releases{
+width: 350px;
+}
+
+table.releases td{
+vertical-align: top;
+line-height: 2.5em;
+}
+
+table.documentation{
+margin: 10px 0px 25px 0px;
+width: 400px;
+}
+
+table.documentation td{
+font-size: 14px;
+font-style: italic;
+color: #333;
+padding: 10px 0px;
+}
+
+.button{
+background: #006fbc;
+border-radius: 5px;
+border: none;
+color: white;
+width: 80px;
+padding: 4px 0px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.mailinglistname{
+font-weight: bold;
+font-style: italic;
+}
+
+.backendssubsec{
+font-style: italic;
+font-size: 16px;
+margin-top: 30px;
+margin-bottom: 0px;
+}
+
+pre{
+margin-top: 40px;
+margin-bottom: 0px;
+}
+
+#featureslist h3{
+margin-bottom: -20px;
+margin-top: 30px;
+}
+
+.content{
+border: 0px black solid;
+margin-left: 230px;
+margin-right: 20px;
+max-width: 920px;
+}
+
+ul.nonindentlist{
+margin-left: -22px;
+margin-bottom: 40px;
+}
+
+ul.nonindentlist2{
+margin-left: -17px;
+margin-bottom: 40px;
+}
+
+ul.nonindentlist2 h3{
+margin-bottom: 5px;
+}
+
+ul.nonindentlist2{
+list-style-image: url('../images/blackpointer.png');
+}
+
+#newslist p{
+margin: 0px;
+}
+
+#newslist{
+/*background: url(../images/logobackground.png) no-repeat center 0*/
+}
+
+.newsdate{
+color: #4d4d4d;
+FONT-STYLE: italic;
+}
+
+ul.nonindentlist li,ul.indentlist li, ul.nonindentlist2 li{
+font-family: arial;
+color: #333;
+font-size: 14px;
+line-height: 1.5em;
+}
+
+.submenutitle{
+font-size: 17px;
+color: #4d4d4d;
+font-style: italic;
+margin-left: 7px;
+}
+
+.banner{
+max-width: 920px;
+height: 211px;
+background: url(../images/banner.jpg) no-repeat 0 0;
+}
+
+/*footer*/
+.footer{
+clear: both;
+}
+
+.footer hr{
+color: #529ddb;
+max-width: 930px;
+margin: 30px 20px 0px 230px;
+}
+
+.footer p{
+color: #4d4d4d;
+font-size: 12px;
+margin-left: 230px;
+margin-top: 5px;
+}

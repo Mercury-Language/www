@@ -34,7 +34,7 @@ then
     exit 1
 fi
 
-if [ ! -e "news.php3" ]
+if [ ! -e "news.php" ]
 then
     echo "** install_webpages: must be run from the top level of w3 module."
     exit 1

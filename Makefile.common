@@ -6,7 +6,7 @@
 
 # NOTE: Even though it says PHP3 all over the place we are actually now using
 # php version 5.  (The original version of this website used 3 and it's
-# currently hardcoded all over the place, e.g. the .php3 file extensions.)
+# currently hardcoded all over the place.)
 
 ifndef PHP3
 	PHP3=/usr/bin/php -q
@@ -26,8 +26,8 @@ vpath %.inc ./include
 vpath %.inc $(ROOT)/include
 vpath %.inc $(ROOT)/news
 
-$(HTML): %.html: %.php3 %.inc globals.inc menubar.inc template.inc functions.inc
-$(XML): %.xml: %.php3 functions.inc newsdb.inc
+$(HTML): %.html: %.php %.inc globals.inc menubar.inc template.inc functions.inc
+$(XML): %.xml: %.php functions.inc newsdb.inc
 
 #-----------------------------------------------------------------------------#
 
@@ -92,14 +92,14 @@ endif
 
 .PHONY: touch
 touch:
-	touch *.php3
+	touch *.php
 
 #-----------------------------------------------------------------------------#
 
-%.html: %.php3
+%.html: %.php
 	$(PHP3) $< > $@
 
-%.xml: %.php3
+%.xml: %.php
 	$(PHP3) $< > $@
 
 #-----------------------------------------------------------------------------#
