@@ -21,6 +21,12 @@
 */
 
 $newsdb = array(
+"6th May 2013" => array(
+"Website redesign",
+"We have updated the website.  Thanks to
+<a href=\"http://www.yeslogic.com\">YesLogic</a>
+for the new design!"),
+
 "2nd May 2013" => array(
 "13.05 beta release available",
 "It's been a busy time and we never got around to releasing Mercury 12.08.
