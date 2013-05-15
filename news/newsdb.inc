@@ -22,7 +22,7 @@
 
 $newsdb = array(
 "16th May 2013" => array(
-"13.05 available",
+"Mercury 13.05 released",
 "We are pleased to announce the release of version 13.05 of the Mercury system.
 The new release can be downloaded from the
 <a href=\"http://dl.mercurylang.org/index.html\>downloads page</a>.
