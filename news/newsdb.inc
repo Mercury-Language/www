@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
 ** This is the news database.
 **
 ** Add new items at the top in chronological order.
@@ -15,8 +15,8 @@
 ** You must test the entry before you commit.
 ** Simply run `make' at the top level w3 directory, and use a
 ** web browser (lynx is fine) to see that the news.html file formats
-** correctly.  
-** 
+** correctly.
+**
 ** ALSO the dates must be distinct.
 */
 
@@ -89,7 +89,7 @@ especially with regard to memory usage."
 "22nd December 2011" => array("New release",
 
 "We are pleased to announce the release of version 11.07 of the
-Mercury system.  The new release can be downloaded 
+Mercury system.  The new release can be downloaded
 <a href=\"download/release.html\">here</a>.  For a list of the changes since
 the last version see the <a href=\"download/release-11.07.html\">release notes</a>."
 ),
@@ -126,7 +126,7 @@ the Linux Users of Victoria's June 2011 meeting are now available from the
 "27th April 2011" => array("New release",
 
 "We are pleased to announce the release of version 11.01 of the
-Mercury system.  The new release can be downloaded 
+Mercury system.  The new release can be downloaded
 <a href=\"download/release.html\">here</a>.  For a list of the changes since
 the last version see the <a href=\"download/release-11.01.html\">release notes</a>."
 ),
@@ -170,16 +170,16 @@ current releases of the day.
 
 "19 July 2010" => array("New release",
 
-"We are pleased to announce the release of version 10.04 of the 
-Mercury system.  The new release can be downloaded 
+"We are pleased to announce the release of version 10.04 of the
+Mercury system.  The new release can be downloaded
 <a href=\"download/release.html\">here</a>.  For a list of the changes since
 the last version see the <a href=\"download/release-10.04.html\">release notes</a>."
 ),
 
 "23 March 2010" => array("New paper and new slides",
 "A new paper,
-Towards Software Transactional Memory for Real-World Programs, 
-has been added to our 
+Towards Software Transactional Memory for Real-World Programs,
+has been added to our
 <a href=\"information/papers.html\">papers page</a>.
 It describes recent work on Software Transactional Memory in Mercury.
 
@@ -200,7 +200,7 @@ The next planned release is 10.04 which is due for release in April 2010.
 "),
 
 "3 December 2009" => array("New papers",
-"We have several papers available from our 
+"We have several papers available from our
 <A HREF=\"information/papers.html\">papers page</A> that describe
 region-based memory management in Mercury.
 "),
@@ -220,14 +220,14 @@ It works well!  You will need a release of the day.
 "27 July 2009" => array("New Presentation",
 "
 The slides for a recent talk entitled &quot;Writing Business Rules Engines in
-Mercury&quot; are now available from the 
+Mercury&quot; are now available from the
 <A HREF=\"information/papers.html#fpu_rules_2009\">papers page</A>.
 "
 ),
 
 "9 February 2009" => array("RSS Feed",
 "You can now receive Mercury news items via an RSS feed by subscribing
-to the following URL: 
+to the following URL:
 <a href=\"$root/rss.xml\">http://www.mercury.csse.unimelb.edu.au/rss.xml</a>
 "
 ),
@@ -242,8 +242,8 @@ Both modules are available in the latest release of the day."
 ),
 
 "3 November 2008" => array("New paper",
-"We have a new paper available from our 
-<A HREF=\"information/papers.html\">papers page</A> that describes 
+"We have a new paper available from our
+<A HREF=\"information/papers.html\">papers page</A> that describes
 some recent work on automatically introducing parallelism in Mercury programs
 based on profiling data."
 ),
@@ -279,7 +279,7 @@ This feature was added by Mission Critical Australia."
 ),
 
 "1 November 2007" => array("Three new papers",
-"We have three new papers available from our 
+"We have three new papers available from our
 <A HREF=\"information/papers.html\">papers page</A>.
 One is on the handling of large predicates
 by Prolog and Mercury implementations,
@@ -322,15 +322,15 @@ to believe that Mercury offers full Unicode support, which is not the case."),
 
 "30 October 2006" => array("New paper",
 
-"We have a new paper available from our 
-<A HREF=\"information/papers.html\">papers page</A> that describes 
+"We have a new paper available from our
+<A HREF=\"information/papers.html\">papers page</A> that describes
 some recent work on parallelism support in Mercury."
 ),
 
 "14 September 2006" => array("New release",
 
-"We are pleased to announce the release of version 0.13 of the 
-Mercury system.  The new release can be downloaded 
+"We are pleased to announce the release of version 0.13 of the
+Mercury system.  The new release can be downloaded
 <a href=\"download/release.html\">here</a>.  For a list of the changes since
 version 0.12 see the <a href=\"download/release-0.13.html\">release notes</a>."
 ),
@@ -386,8 +386,8 @@ are now available from our
 
 "9 September 2005" => array("New release",
 
-"We are pleased to announce the release of version 0.12 of the 
-Mercury system.  The new release can be downloaded 
+"We are pleased to announce the release of version 0.12 of the
+Mercury system.  The new release can be downloaded
 <a href=\"download/release.html\">here</a>.  For a list of the changes since
 version 0.11 see the <a href=\"download/release-0.12.html\">release notes</a>."
 ),
@@ -415,7 +415,7 @@ includes support for this language feature."
 
 "10 April 2005" => array("Updated and expanded tutorial available",
 
-"A much improved tutorial is now available from the 
+"A much improved tutorial is now available from the
 <A HREF=\"$root/information/documentation.html\">documentation</A>
 section."
 ),
@@ -430,7 +430,7 @@ section."
 
 "We've added three new types of goal to the language.
 `promise_equivalent_solutions' goals allow the programmer
-to promise that all the solutions generated by a goal are 
+to promise that all the solutions generated by a goal are
 equivalent.  This makes working with multi- or non-deterministic code
 easier.  `promise_pure' and `promise_semipure' goals allow the programmer
 to make promises about the purity of arbitrary goals.
@@ -453,7 +453,7 @@ to XML Documents",
 
 "A new module `term_to_xml' has been added to the standard library.  This
 module contains predicates to write arbitrary Mercury terms to an output
-stream as XML.  Automatic generation of DTDs for Mercury types is also 
+stream as XML.  Automatic generation of DTDs for Mercury types is also
 supported.  Once a Mercury term is in XML it can be converted to many other
 formats such as HTML or XUL using an appropriate stylesheet."
 ),
@@ -509,8 +509,8 @@ current status of the .NET back-end."
 
 "12 November 2002" => array("New Paper,",
 
-"We have a new paper available from our 
-<A HREF=\"information/papers.html\">papers page</A> that describes 
+"We have a new paper available from our
+<A HREF=\"information/papers.html\">papers page</A> that describes
 the design and implementation of a new termination analyser for Mercury."
 ),
 
@@ -557,7 +557,7 @@ by Fergus Henderson."
 with `state variables'.  State variables are intended to make it easier
 to deal with sequences of values.  For example, where previously one
 would have to name each value in a sequence X0, X1, X2, ..., X, now it
-is possible to use a state variable !X, which will be translated into 
+is possible to use a state variable !X, which will be translated into
 ordinary, non-state variable Mercury, automatically naming the sequence
 values.  !X stands for two arguments, !.X and !:X, where !.X is
 interpreted as the \"current\" sequence value under consideration and !:X
@@ -589,7 +589,7 @@ is now available from our <A HREF=\"information/papers.html\">papers page</A>.
 
 "26 October 2001" => array("New paper",
 
-"We have a new paper available 
+"We have a new paper available
 from our <A HREF=\"information/papers.html\">papers page</A>,
 which outlines the design of the back end that generates high level C."
 ),
@@ -612,7 +612,7 @@ ICFP 2001 programming contest</A> entry."
 
 "01 August 2001" => array("New paper and demo",
 
-"We have a new paper available 
+"We have a new paper available
 from our <A HREF=\"information/papers.html\">papers page</A>,
 which describes the design and implementation of the Mercury deep profiler.
 This new profiler generates profiling information
@@ -625,7 +625,7 @@ is also available."
 
 "18 May 2001" => array("New paper",
 
-"We have a new paper available 
+"We have a new paper available
 from our <A HREF=\"information/papers.html\">papers page</A>,
 which describes the design and
 implementation of a compile time garbage collection and memory reuse
@@ -650,7 +650,7 @@ system in the Melbourne Mercury compiler."
 for the Mercury compiler that compiles directly to assembler,
 rather than than going via C.
 The new back-end is implemented by linking the Mercury compiler with the
-(relatively) language independent GNU Compiler Collection back-end. 
+(relatively) language independent GNU Compiler Collection back-end.
 In other words, there is now a Mercury front-end for GCC!"
 ),
 
@@ -696,7 +696,7 @@ suite, MCORBA, and even these web pages are available via CVS."
 "26 Jul 2000" => array("Mercury and Microsoft's .NET",
 
 "A page outlining the status of Mercury on Microsoft's new .NET
-framework is now available 
+framework is now available
 <A HREF=\"information/dotnet/mercury_and_dotnet.html\">here</A>."
 ),
 
@@ -740,8 +740,8 @@ with binary distributions.  Release information can be found
 a trace analysis system for Mercury, has just been added to
 the Mercury distribution (and will be available in Mercury 0.9.1).  Morphine
 allows dynamic tracing of Mercury programs, allowing scripts to be
-written which interact with the debugger and efficient collection of statistics 
-on running programs.  Many thanks to 
+written which interact with the debugger and efficient collection of statistics
+on running programs.  Many thanks to
 <a href=\"mailto:Erwan.Jahier@irisa.fr\">Erwan Jahier</a> for his hard work on
 Morphine."
 ),
@@ -823,7 +823,7 @@ The optimization is available in our latest
 for Linux in RPM (RedHat Package Manager) format.
 
 Note that the binary distributions that we provide for Linux work
-with libc 6.0 only.  Unfortunately they do NOT work with libc 6.1. 
+with libc 6.0 only.  Unfortunately they do NOT work with libc 6.1.
 This is due to incompatibilities between libc versions 6.0 and 6.1
 (i.e. glibc 2.0 and 2.1).
 "),
@@ -854,14 +854,14 @@ use a Prolog debugger for debugging Mercury code.
 "The Mercury debugger now includes support for interactive queries.
 See the \"Interactive query commands\" subsection of the \"Debugger commands\"
 section of the \"Debugging\" chapter of the
-<A HREF=\"$user_guide_latest\">Mercury User's Guide</A>.  
+<A HREF=\"$user_guide_latest\">Mercury User's Guide</A>.
 "),
 
 
 "5 Mar 1999" => array("Mercury Tutorial",
 "<a href=\"mailto:rafe@cs.mu.oz.au\">Ralph Becket</a>
 has kindly written a
-<A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.  
+<A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.
 This is still under development.  Feedback would be appreciated."
 ),
 
@@ -902,7 +902,7 @@ See the files in extras/dynamic_linking for details."
 "25 Nov 1998" => array("New paper: Optimization of Mercury programs.",
 
 "A paper describing the high-level optimization passes of the Mercury
-compiler is now available from 
+compiler is now available from
 <A HREF=\"information/papers.html\">the Mercury papers page</A>."
 ),
 
@@ -928,8 +928,8 @@ rest of the web site."
 
 "30 Sep 1998" => array("New paper: Type classes in Mercury.",
 
-"A new paper, describing our implementation of type classes in Mercury, 
-has been made available from 
+"A new paper, describing our implementation of type classes in Mercury,
+has been made available from
 <A HREF=\"information/papers.html\">the Mercury papers page</A>."
 ),
 
@@ -957,7 +957,7 @@ latest version.  Daily releases are available for
 "7 Sep 1998" => array("The Mercury Web Site overhauled.",
 
 "The new layout is easier for us to update with news (like this),
-and has full hypermail archives of the <em>mercury-developers</em> and 
+and has full hypermail archives of the <em>mercury-developers</em> and
 <em>mercury-users</em> mailing lists.
 Thanks to <a href=\"mailto:petdr@cs.mu.oz.au\">Peter Ross</a>
 for all his work on it."
@@ -982,7 +982,7 @@ recent versions of Vim and Elvis."
 For those of you that aren't theorists, this means you can declare
 polymorphic arguments that are outputs, and their type is also
 an output."
-), 
+),
 
 "15 May 1998" => array("Tabling.",
 
