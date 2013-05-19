@@ -21,6 +21,15 @@
 */
 
 $newsdb = array(
+"19th May 2013" => array(
+"Paul Bone's Ph.D. dissertation is now available",
+"Paul's Ph.D. dissertation,
+titled Automatic Parallelisation for Mercury,
+has been examined and is now available for
+download on the
+<a href=\"documentation/papers.html#pbone_phd_thesis\">
+Mercury papers page</a>."),
+
 "16th May 2013" => array(
 "Mercury 13.05 released",
 "We are pleased to announce the release of version 13.05 of the Mercury system.

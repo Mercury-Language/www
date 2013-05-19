@@ -22,6 +22,23 @@ given on Mercury, at a variety of levels, are also available.
 
 <li>
 <strong>
+<a href="papers.html#pbone_phd_thesis">
+Automatic Parallelisation for Mercury
+</a>
+</strong>
+<br>
+Paul Bone
+<br>
+<em>
+Ph.D. Thesis
+</em>
+Department of Computing and Information Systems,
+The University of Melbourne.
+December 2012
+<br>
+
+<li>
+<strong>
 <a href="papers.html#loop_control">
 Controlling Loops in Parallel Mercury Code.
 </a>
@@ -1206,6 +1223,95 @@ Tyson Dowd, 1998.
 <h2><a name="mercury">Papers on Mercury</a></h2>
 
 <ul class="nonindentlist">
+
+<li>
+<strong>
+<a name="pbone_phd_thesis">
+Automatic Parallelisation for Mercury
+</a>
+</strong>
+<br>
+Paul Bone
+<br>
+<em>
+Ph.D. Thesis
+</em>
+Department of Computing and Information Systems,
+The University of Melbourne,
+December 2012
+<br>
+Available here
+<a href = "papers/pbone_phd_thesis.pdf">
+as PDF (2.0M).
+</a>
+<p>
+Multicore computing is ubiquitous, so programmers need to write parallel
+programs to take advantage of the full power of modern computer systems.
+However, the most popular parallel programming methods are difficult and
+extremely error-prone. Most such errors are intermittent, which means they
+may be unnoticed until after a product has been shipped; they are also often
+very difficult to fix. This problem has been addressed by pure declarative
+languages that support explicit parallelism. However, this does nothing
+about another problem: it is often difficult for developers to find tasks
+that are worth parallelising. When they can be found, it is often too easy
+to create too much parallelism, such that the overheads of parallel
+execution overwhelm the benefits gained from the parallelism. Also, when
+parallel tasks depend on other parallel tasks, the dependencies may restrict
+the amount of parallelism available. This makes it even harder for
+programmers to estimate the benefit of parallel execution.
+</p>
+<p>
+In this dissertation we describe our profile feedback directed automatic
+parallelisation system, which aims at solving this problem. We implemented
+this system for Mercury, a pure declarative logic programming language. We
+use information gathered from a profile collected from a sequential
+execution of a program to inform the compiler about how that program can be
+parallelised. Ours is, as far as we know, the first automatic
+parallelisation system that can estimate the parallelism available among any
+number of parallel tasks with any number of (non-cyclic) dependencies. This
+novel estimation algorithm is supplemented by an efficient exploration of
+the program’s call graph, an analysis that calculates the cost of recursive
+calls (as this is not provided by the profiler), and an efficient search for
+the best parallelisation of N computations from among the 2<sup>N−1</sup>
+candidates.
+</p>
+<p>
+We found that in some cases where our system parallelised a loop, spawning
+off virtually all of its iterations, the resulting programs exhibited
+excessive memory usage and poor performance.  We therefore designed and
+implemented a novel program transformation that fixes this problem.  Our
+transformation allows programs to gain large improvements in performance and
+in several cases, almost perfect linear speedups. The transformation also
+allows recursive calls within the parallelised code to take advantage of
+tail recursion.
+</p>
+<p>
+Also presented in this dissertation are many changes that improve the
+performance of Mercury’s parallel runtime system, as well as a proposal and
+partial implementation of a visualisation tool that assists developers with
+parallelising their programs, and helps researchers develop automatic
+parallelisation tools and improve the performance of the runtime system.
+</p>
+<p>
+Overall, we have attacked and solved a number of issues that are critical to
+making automatic parallelism a realistic option for developers.
+</p>
+<p>
+<code>
+<pre>
+@PhdThesis{bone12:autoparallelism_thesis,
+  author =       {Paul Bone},
+  title =        {Automatic Parallelisation for Mercury},
+  school =       {Department of Computing and Information Systems,
+                  The University of Melbourne},
+  year =         {2012},
+  address =      {Australia},
+  month =        {Decemeber}
+}
+</pre>
+</code>
+</p>
+</li>
 
 <li>
 <strong>
