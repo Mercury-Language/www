@@ -99,19 +99,9 @@ Please use the search bar below to search the archives:
 </p>
 
 <form class="searchbar" method="get" action="http://www.google.com/search">
-<table border="0" cellpadding="0">
-<tr>
-<td>
-<input class="textbox" type="text"   name="q" size="25" maxlength="255" value="" />
-<input class="submit" type="submit" value="Search" />
-</td>
-</tr>
-<tr>
-<td>
-<input type="hidden"  name="sitesearch" value="mercurylang.org/mailing-lists"/>
-</td>
-</tr>
-</table>
+  <input class="textbox" type="text"  name="q" size="40" maxlength="255" value="" />
+  <input class="submit" type="submit" value="Search" />
+  <input type="hidden" name="sitesearch" value="lists.mercurylang.org/pipermail"/>
 </form>
 
 <h3>Other communities and social networks</h3>
