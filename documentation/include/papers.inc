@@ -3830,7 +3830,7 @@ Proceedings of the Fourth International Conference on Logic Programming,
 </em>
 Melbourne, Australia, May 1987, pages 769-787.
 <br>
-<a href = "http://www.cs.mu.oz.au/~zs/papers/iclp87.ps.gz">
+<a href = "papers/iclp87.ps.gz">
 Available here (40K).
 </a>
 <p>
@@ -3849,8 +3849,7 @@ Honours Report.
 </em>
 Department of Computer Science, University of Melbourne, November 1992.
 <br>
-<a href = "http://www.cs.mu.oz.au/~fjh/papers/hons_thesis.ps.gz">
-Available here (114K).
+<a href = "papers/fjh_hons.ps.gz">Available here (114K).
 </a>
 <p>
 
@@ -3920,9 +3919,7 @@ Note that this paper incorrectly claims that
 the context transformation can be applied to
 mixed-linear predicates containing pseudo-left-linear rules
 as well as other linear rules.
-It is corrected in David Kemp's thesis,
-<a href = "http://www.cs.mu.oz.au/~kemp/papers/thesis.ps.gz">
-available here (560K).
+It is corrected in David Kemp's thesis.
 </a>
 
 </ul>
