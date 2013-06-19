@@ -37,12 +37,12 @@ copy of the entire document, links to PDF are provided.
 	<tr>
 	<td>Current Release</td>
 	<td><a href="<?php echo $ref_man_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-release/reference_manual.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/reference_manual.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $ref_man_latest ?>"><button class="button">HTML</button></a>
-	<td><a href="doc-latest/reference_manual.pdf"><button class="button">PDF</button></a>
+	<td><a href="<?php echo $latest_doc_dir ?>/reference_manual.pdf"><button class="button">PDF</button></a>
 	</tr>
 	</table>
 	</li>
@@ -57,12 +57,12 @@ copy of the entire document, links to PDF are provided.
 	<tr>
 	<td>Current Release</td>
 	<td><a href="<?php echo $user_guide_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-release/user_guide.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/user_guide.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	<tr>
 	<td>Rotd (snapshot) </td>
 	<td><a href="<?php echo $user_guide_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-latest/user_guide.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/user_guide.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
@@ -76,12 +76,12 @@ copy of the entire document, links to PDF are provided.
 	<tr>
 	<td>Current Release <td>
 	<td><a href="<?php echo $library_man_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-release/library.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/library.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	<tr>
 	<td>Rotd (snapshot)<td>
 	<td><a href="<?php echo $library_man_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-latest/library.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/library.pdf"><button class="button">PDF</button></a></td>
 	<tr>
 	</table>
 	</li>
@@ -96,12 +96,12 @@ copy of the entire document, links to PDF are provided.
 	<tr>
 	<td>Current Release</td>
 	<td><a href="<?php echo $trans_guide_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-release/transition_guide.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/transition_guide.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $trans_guide_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-latest/transition_guide.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/transition_guide.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
@@ -127,7 +127,7 @@ copy of the entire document, links to PDF are provided.
 	<table class="documentation" style="width: 250px;">
 	<tr>
 	<td><a href="<?php echo $faq_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="doc-release/faq.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/faq.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
