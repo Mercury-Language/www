@@ -21,6 +21,12 @@
 */
 
 $newsdb = array(
+"24th June 2013" => array(
+"13.05.2 beta release available",
+"Beta versions of the upcoming 13.05.2 release are available on the
+<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>.
+"),
+
 "14th June 2013" => array(
 "Mercury 13.05.1 released", 
 "Release information is available
