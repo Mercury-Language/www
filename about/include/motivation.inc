@@ -44,7 +44,7 @@ for Prolog.
 
 <div class="quote" style="max-width: 450px; min-width: 250px;float: right; margin: 40px 10px 40px 60px; border: 1px solid white;" align="left">
 <h2 style="font-size: 24px;color: #9e005d; font-style: italic;">
-&ldquo;Mercury has strong type and mode systems that detect a large percentage of program errors at compile time. 
+&ldquo;Mercury has strong type and mode systems that detect a large percentage of program errors at compile time.&rdquo;
 </h2>
 </div>
 

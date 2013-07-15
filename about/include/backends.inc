@@ -47,7 +47,7 @@ Mature
 
 <div class="quote" style="max-width: 350px; float: left; margin: 20px 20px 20px 20px; border: 1px solid white;" align="left">
 <h2 style="font-size: 19px;color: #2e3192; font-style: italic;">
-&ldquo;Several of these back-ends are quite mature, other have been released but are still immature, while others are under development.
+&ldquo;Several of these back-ends are quite mature, other have been released but are still immature, while others are under development.&rdquo;
 </h2>
 </div>
 </div>
