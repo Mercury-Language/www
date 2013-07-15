@@ -118,7 +118,7 @@ channel.
 
 <a href="http://www.stackoverflow.com">stackoverflow.com</a>
 is a website for developers to ask and answer questions.
-Questions are organised using tage.
+Questions are organised using tags.
 The questions with the Mercury tag are
 <a href="http://stackoverflow.com/questions/tagged/mercury">here</a>.
 
