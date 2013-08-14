@@ -114,7 +114,7 @@ copy of the entire document, links to PDF are provided.
 	
 	<table class="documentation">
 	<tr>
-	<td><a href="comparison_with_haskell.html"><button class="button">HTML</button></a></td>
+	<td><a href="../about/comparison_with_haskell.html"><button class="button">HTML</button></a></td>
 	</tr>
 	</table>
 	</li>
