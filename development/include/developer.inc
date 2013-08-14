@@ -29,50 +29,50 @@ We hope to update or replace this information in the future.
 </li>
 
 <li>	
-<h3><a href="doc-latest/reviews.html">Reviews</a></h3>
+<h3><a href="developers/reviews.html">Reviews</a></h3>
 	<p>Outlines reviewing procedure. </p>
 </li>
 
 <li>	
-<h3><a href="doc-latest/coding_standards.html">Mercury Coding Standards</a> </h3>
+<h3><a href="developers/coding_standards.html">Mercury Coding Standards</a> </h3>
 	<p>Standard for Mercury code. </p>
 </li>
 
 <li>	
-<h3><a href="doc-latest/compiler_design.html">Compiler Design</a> </h3>
+<h3><a href="developers/compiler_design.html">Compiler Design</a> </h3>
 	<p>Details of the compiler design. </p>
 </li>
 
 <li>	
-<h3><a href="doc-latest/allocation.html">Allocation</a> </h3>
+<h3><a href="developers/allocation.html">Allocation</a> </h3>
 <p>	Details of the allocation scheme currently being implemented. </p>
 </li>
 
-<li>	<h3><a href="doc-latest/release_checklist.html">Release checklist</a> </h3>
+<li>	<h3><a href="developers/release_checklist.html">Release checklist</a> </h3>
 	<p>The release procedure. </p>
 
-<li>	<h3><a href="doc-latest/gc_and_c_code.html">Garbage collection and C code</a> </h3>
+<li>	<h3><a href="developers/gc_and_c_code.html">Garbage collection and C code</a> </h3>
 </li>	
 <br/><br/>
 <li>	
 <h3>
-<a href="doc-latest/glossary.html">Glossary</a> </h3>
+<a href="developers/glossary.html">Glossary</a> </h3>
 	<p>Terms used in the Mercury implementation.  </p>
 </li>
 
 <li>	
-<h3><a href="doc-latest/todo.html">To do list</a> </h3>
+<h3><a href="developers/todo.html">To do list</a> </h3>
 	<p>Things still to do in the Mercury project.  </p>
 
 </li>
 
 <li>
-<h3><a href="doc-latest/work_in_progress.html">Work in progress</a> </h3>
+<h3><a href="developers/work_in_progress.html">Work in progress</a> </h3>
 <p>Things currently being done on the Mercury project.  </p>
 </li>
 
 <li>	
-<h3><a href="doc-latest/bootstrapping.html">Bootstrapping</a> </h3>
+<h3><a href="developers/bootstrapping.html">Bootstrapping</a> </h3>
 	<p>What to do when a change requires bootstrapping. </p>
 </li>
 
