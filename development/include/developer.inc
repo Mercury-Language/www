@@ -15,14 +15,6 @@ We hope to update or replace this information in the future.
 	<p>
 	</li>
 
-<!--- Completely out of date.
-<li> 	
-<h3><a href="developers/remote_cvs.html">Remote CVS Access</a></h3>
-	<p>
-	How to access the CVS repository from your machine.</p>
-	</li>
--->
-
 <li> 	
 <h3><a href="developers/c_coding_standard.html">C Coding Standard For The Mercury Project</a></h3>
 	<p>The standard used for the C source in the Mercury compiler. </p>
