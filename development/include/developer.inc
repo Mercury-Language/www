@@ -5,6 +5,17 @@ These pages may contain out-of-date information.
 We hope to update or replace this information in the future.
 </p>
 
+<?php
+
+/*
+Note that this information is not stored in this repository.  It is stored
+in compiler/notes/*.html.  On the webserver we maintain a checkout of the
+main source repository as well as the www repository and configure apache to
+look in the main source repository to find these documents.
+*/
+
+?>
+
 <div class="developer">
 <ul class="nonindentlist">
 <li> 	
