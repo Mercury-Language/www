@@ -48,4 +48,8 @@ clean:
 touch:
 	touch $(PHPSRC)
 
+.PHONY: gitignore
+gitignore:
+	@printf "%s\n" $(HTML) $(XML) | LC_CTYPE=C sort > .gitignore
+
 #-----------------------------------------------------------------------------#
