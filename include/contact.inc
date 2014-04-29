@@ -126,20 +126,17 @@ channel.
 
 <h4>stackoverflow.com</h4>
 
-<a href="http://www.stackoverflow.com">stackoverflow.com</a>
+<a href="https://www.stackoverflow.com">stackoverflow.com</a>
 is a website for developers to ask and answer questions.
-Questions are organised using tags.
-The questions with the Mercury tag are
-<a href="http://stackoverflow.com/questions/tagged/mercury">here</a>.
+Questions are organised using tags, all Mercury related questions are tagged
+with <a href="https://stackoverflow.com/questions/tagged/mercury">[mercury]</a>.
 
 <h4>Rosetta Code</h4>
 
-A Mercury category has been established on
-<a href="http://rosettacode.org">Rosetta Code</a>,
+A <a href="http://rosettacode.org/wiki/Mercury">Mercury category</a>
+has been established on <a href="http://rosettacode.org">Rosetta Code</a>,
 a website for sharing implementations of common problems in different
 languages.
-The Mercury category can be found
-<a href="http://rosettacode.org/wiki/Mercury">here</a>.
 
 <h4>Adventures in Mercury</h4>
 
@@ -163,4 +160,8 @@ There is a
 Mercury community
 </a>
 on Google+.
+
+<h4>GitHub</h4>
+
+Find all <a href="https://github.com/trending?l=mercury">projects using Mercury</a> on <a href="https://github.com">GitHub</a>.
 
