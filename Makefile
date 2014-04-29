@@ -48,4 +48,9 @@ clean:
 touch:
 	touch $(PHPSRC)
 
+.PHONY: ignore
+ignore:
+	printf '%s\n' $(HTML)>.gitignore
+	printf '%s\n' $(XML)>>.gitignore
+
 #-----------------------------------------------------------------------------#
