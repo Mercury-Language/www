@@ -114,18 +114,23 @@ Please use the search bar below to search the archives:
     value="www.mercurylang.org/list-archives"/>
 </form>
 
+<br>
+
 <h3>Other communities and social networks</h3>
 
 <h4>IRC</h4>
 
+<p>
 There is a Mercury IRC channel on the
 <a href="http://www.freenode.net">Freenode</a>
 IRC network.
 Connect to <code>irc.freenode.net</code> and join the <code>#mercury</code>
 channel.
+</p>
 
 <h4>stackoverflow.com</h4>
 
+<p>
 <a href="https://www.stackoverflow.com">stackoverflow.com</a>
 is a website for developers to ask and answer questions.
 All Mercury-related questions are tagged with
@@ -134,36 +139,45 @@ All Mercury-related questions are tagged with
 
 <h4>Rosetta Code</h4>
 
+<p>
 A <a href="http://rosettacode.org/wiki/Mercury">Mercury category</a>
 has been established on <a href="http://rosettacode.org">Rosetta Code</a>,
 a website for sharing implementations of common problems in different
 languages.
+</p>
 
 <h4>Adventures in Mercury</h4>
 
+<p>
 The
 <a href="http://adventuresinmercury.blogspot.com.au/">
 Adventures in Mercury
 </a>
 blog by Chris King tackles various problems and explains how his elegant
 Mercury solutions are constructed.
+</p>
 
 <h4>Twitter</h4>
 
+<p>
 The <a href="https://twitter.com/MercuryLang">@MercuryLang</a>
 twitter account will make announcements of news, releases and
 ROTD builds.
+</p>
 
 <h4>Google+</h4>
 
+<p>
 There is a
 <a href="https://plus.google.com/communities/108576397306370583348">
 Mercury community
 </a>
 on Google+.
+</p>
 
 <h4>GitHub</h4>
 
+<p>
 Find all <a href="https://github.com/trending?l=mercury">projects using Mercury</a>
 on <a href="https://github.com">GitHub</a>.
-
+</p>
