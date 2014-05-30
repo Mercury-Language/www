@@ -148,7 +148,7 @@ We will fix this in the next few days. and post another update here."),
 "28th January 2012" => array("New paper",
 "
 A new paper and presentation have been added to the
-<a href=\"information/papers.html#loop_control\">papers page</a>.
+<a href=\"documentation/papers.html#loop_control\">papers page</a>.
 These describe how parallel conjunctions with recursive calls
 can be handled more efficiently,
 especially with regard to memory usage."
@@ -165,10 +165,10 @@ the last version see the <a href=\"download/release-11.07.html\">release notes</
 "15th August 2011" => array("Three new papers",
 "
 Three new papers about parallelism in Mercury have been added to the
-<a href=\"information/papers.html#threadscope\">papers page</a>.
+<a href=\"documentation/papers.html#threadscope\">papers page</a>.
 Associated with each paper is a presentation that was given at ICLP 2011.
 The presentations are also available on the
-<a href=\"information/papers.html#threadscope_talk\">papers page</a>."
+<a href=\"documentation/papers.html#threadscope_talk\">papers page</a>."
 ),
 
 "29th June 2011" => array("11.07 beta release available",
@@ -188,7 +188,7 @@ The podcast episode can be found
 
 "The slides for a presentation about the Mercury project that was given at
 the Linux Users of Victoria's June 2011 meeting are now available from the
-<a href=\"information/papers.html#luv_2011\">papers page</a>."
+<a href=\"documentation/papers.html#luv_2011\">papers page</a>."
 ),
 
 "27th April 2011" => array("New release",
@@ -215,7 +215,7 @@ See the files in extras/graphics/mercury_cairo for details.
 The slides for a Google Tech Talk and a seminar at The University of New South
 Wales about &quot;Automatic Parallelisation for Mercury&quot; are now available
 from the
-<a href=\"information/papers.html#google_2010_autopar\">papers page</a>
+<a href=\"documentation/papers.html#google_2010_autopar\">papers page</a>
 "),
 
 "23 November 2010" => array("C# backend",
@@ -248,12 +248,12 @@ the last version see the <a href=\"download/release-10.04.html\">release notes</
 "A new paper,
 Towards Software Transactional Memory for Real-World Programs,
 has been added to our
-<a href=\"information/papers.html\">papers page</a>.
+<a href=\"documentation/papers.html\">papers page</a>.
 It describes recent work on Software Transactional Memory in Mercury.
 
 <p>A set of slides from a talk given at LinuxConf in Wellington regarding
 automatic parallelisation are also available from the
-<a href=\"information/papers.html\">papers page</a>.
+<a href=\"documentation/papers.html\">papers page</a>.
 </p>
 "),
 
@@ -269,7 +269,7 @@ The next planned release is 10.04 which is due for release in April 2010.
 
 "3 December 2009" => array("New papers",
 "We have several papers available from our
-<A HREF=\"information/papers.html\">papers page</A> that describe
+<A HREF=\"documentation/papers.html\">papers page</A> that describe
 region-based memory management in Mercury.
 "),
 
@@ -289,7 +289,7 @@ It works well!  You will need a release of the day.
 "
 The slides for a recent talk entitled &quot;Writing Business Rules Engines in
 Mercury&quot; are now available from the
-<A HREF=\"information/papers.html#fpu_rules_2009\">papers page</A>.
+<A HREF=\"documentation/papers.html#fpu_rules_2009\">papers page</A>.
 "
 ),
 
@@ -311,7 +311,7 @@ Both modules are available in the latest release of the day."
 
 "3 November 2008" => array("New paper",
 "We have a new paper available from our
-<A HREF=\"information/papers.html\">papers page</A> that describes
+<A HREF=\"documentation/papers.html\">papers page</A> that describes
 some recent work on automatically introducing parallelism in Mercury programs
 based on profiling data."
 ),
@@ -348,7 +348,7 @@ This feature was added by Mission Critical Australia."
 
 "1 November 2007" => array("Three new papers",
 "We have three new papers available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 One is on the handling of large predicates
 by Prolog and Mercury implementations,
 one is on a software transactional memory system for Mercury,
@@ -359,13 +359,13 @@ and one is a comparison of packrat parsing and memoed DCG parsers."
 "The Mercury project now uses the Mantis bug tracking system
 to keep track of bug reports.  The Mercury bug database may
 be accessed via the
-<a href=\"http://bugs.mercury.csse.unimelb.edu.au\">Bug Database</a>
+<a href=\"https://www.mercurylang.org/bugs/\">Bug Database</a>
 link in the menu at the side of this page."),
 
 
 "14 August 2007" => array("New Paper and Talk",
 "A paper and a presentation have been added to the
-<A HREF=\"information/papers.html\">papers page</A> describing how
+<A HREF=\"documentation/papers.html\">papers page</A> describing how
 Mission Critical is using Mercury in the \"real world\"."),
 
 "6 August 2007" => array("Erlang backend",
@@ -391,7 +391,7 @@ to believe that Mercury offers full Unicode support, which is not the case."),
 "30 October 2006" => array("New paper",
 
 "We have a new paper available from our
-<A HREF=\"information/papers.html\">papers page</A> that describes
+<A HREF=\"documentation/papers.html\">papers page</A> that describes
 some recent work on parallelism support in Mercury."
 ),
 
@@ -425,7 +425,7 @@ includes support for this feature.
 \"Unclean!  Unclean!  or  Purity issues in declarative constraint logic
 programming\"
 has been added to the presentations section on our
-<A href=\"information/papers.html#g12_unclean\">papers page</A>."
+<A href=\"documentation/papers.html#g12_unclean\">papers page</A>."
 ),
 
 "25 January 2006" => array("Mercury 0.12.2 released",
@@ -443,7 +443,7 @@ in a practical declarative debugger\",
 and
 \"Tabling in Mercury: design and implementation\"
 are now available from our
-<A HREF=\"information/papers.html\">papers page</A>."
+<A HREF=\"documentation/papers.html\">papers page</A>."
 ),
 
 "21 November 2005" => array("Mercury 0.12.1 released",
@@ -468,7 +468,7 @@ debugger\"
 and
 \"The implementation of minimal model tabling in Mercury (extended abstract)\"
 are now available from our
-<A HREF=\"information/papers.html\">papers page</A>."
+<A HREF=\"documentation/papers.html\">papers page</A>."
 ),
 
 "11 May 2005" => array("Functional dependencies",
@@ -513,7 +513,7 @@ includes support for these new goal types."
 "A new PhD thesis on Mercury,
 <em>Compile-time garbage collection for the declarative language Mercury</em>
 by Nancy Mazur, is now available from our
-<A HREF=\"information/papers.html\">papers page</A>."
+<A HREF=\"documentation/papers.html\">papers page</A>."
 ),
 
 "09 December 2004" => array("New Standard Library to Convert Mercury Terms
@@ -548,14 +548,14 @@ are posted after the ICFP conference, later this year."
 Typed Logic Programming Languages</em>
 by David Overton,
 is now available from our
-<A HREF=\"information/papers.html\">papers page</A>."
+<A HREF=\"documentation/papers.html\">papers page</A>."
 ),
 
 "25 Sep 2003" => array("Accurate garbage collection",
 
 "The high-level C back-end now supports accurate garbage collection,
 as an alternative to using the Boehm (et al) conservative collector.
-There is a <A HREF=\"information/papers.html#high_level_gc\">paper</A>
+There is a <A HREF=\"documentation/papers.html#high_level_gc\">paper</A>
 that describes the new garbage collector.  For more details, see
 the files compiler/ml_elim_nested.m and runtime/mercury_accurate_gc.c
 in the latest Mercury source distribution."
@@ -578,7 +578,7 @@ current status of the .NET back-end."
 "12 November 2002" => array("New Paper,",
 
 "We have a new paper available from our
-<A HREF=\"information/papers.html\">papers page</A> that describes
+<A HREF=\"documentation/papers.html\">papers page</A> that describes
 the design and implementation of a new termination analyser for Mercury."
 ),
 
@@ -597,7 +597,7 @@ more accurate.  Parallel builds are not yet supported.  See the
 "17 August 2002" => array("Two PhD theses",
 
 "Two PhD theses on Mercury are now available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 They are:
 <em>Expressive type systems for logic programming languages</em>
 by David Jeffery, and
@@ -608,7 +608,7 @@ by Thomas Conway."
 "15 July 2002" => array("Three papers",
 
 "Three papers on Mercury are now available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 Two will be presented at PPDP '02 in October:
 <em>Constraint-Based Mode Analysis of Mercury</em>
 by David Overton, Zoltan Somogyi and Peter Stuckey, and
@@ -651,14 +651,14 @@ includes support for unification expressions."
 "4 November 2001" => array("New paper",
 
 "Our BABEL'01 paper, on compiling Mercury to the .NET Common Language Runtime,
-is now available from our <A HREF=\"information/papers.html\">papers page</A>.
+is now available from our <A HREF=\"documentation/papers.html\">papers page</A>.
 "
 ),
 
 "26 October 2001" => array("New paper",
 
 "We have a new paper available
-from our <A HREF=\"information/papers.html\">papers page</A>,
+from our <A HREF=\"documentation/papers.html\">papers page</A>,
 which outlines the design of the back end that generates high level C."
 ),
 
@@ -681,7 +681,7 @@ ICFP 2001 programming contest</A> entry."
 "01 August 2001" => array("New paper and demo",
 
 "We have a new paper available
-from our <A HREF=\"information/papers.html\">papers page</A>,
+from our <A HREF=\"documentation/papers.html\">papers page</A>,
 which describes the design and implementation of the Mercury deep profiler.
 This new profiler generates profiling information
 that is significantly more accurate and more detailed
@@ -694,7 +694,7 @@ is also available."
 "18 May 2001" => array("New paper",
 
 "We have a new paper available
-from our <A HREF=\"information/papers.html\">papers page</A>,
+from our <A HREF=\"documentation/papers.html\">papers page</A>,
 which describes the design and
 implementation of a compile time garbage collection and memory reuse
 system in the Melbourne Mercury compiler."
@@ -737,7 +737,7 @@ Both are available from the sidebar menu."
 "4 Oct 2000" => array("Two new papers",
 
 "Two new papers on Mercury are now available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 One describes a binding-time analysis for higher order code,
 while the other describes an analysis for detecting whether a memory
 cell is available for reuse."
@@ -771,7 +771,7 @@ framework is now available
 "11 Apr 2000" => array("Completed paper",
 
 "The full version of <EM>Making Mercury Programs Tail Recursive</EM> is
-now available from our <A HREF=\"information/papers.html\">papers page</A>.
+now available from our <A HREF=\"documentation/papers.html\">papers page</A>.
 The paper describes two optimizations, implemented in the Mercury
 compiler, which make predicates tail recursive."
 ),
@@ -779,7 +779,7 @@ compiler, which make predicates tail recursive."
 "5 Apr 2000" => array("More new papers",
 
 "Another two new papers on Mercury are now available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 One describes using purity declarations for building foreign language
 interfaces, while the other details the update transformation, an
 optimization that can help re-order state updates into better positions
@@ -789,7 +789,7 @@ for other optimizations."
 "21 Feb 2000" => array("New papers",
 
 "Two new papers on Mercury are now available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 One describes a binding-time analysis,
 while the other describes an analysis for detecting whether a memory
 cell is available for reuse."
@@ -833,7 +833,7 @@ Release information can be found
 
 "17 Nov 1999" => array("A paper on the Mercury debugger",
 "A new paper on Mercury is now available from our
-<A HREF=\"information/papers.html\">papers page</A>:
+<A HREF=\"documentation/papers.html\">papers page</A>:
 it describes the technology we use to implement the Mercury debugger.
 "),
 
@@ -862,7 +862,7 @@ errors by aborting execution rather than by throwing exceptions.
 "13 Aug 1999" => array("New papers",
 
 "Two new papers on Mercury are now available from our
-<A HREF=\"information/papers.html\">papers page</A>.
+<A HREF=\"documentation/papers.html\">papers page</A>.
 One describes how Mercury handles run time type information,
 while the other describes the optimizations we use
 to make Mercury programs tail recursive.
@@ -929,7 +929,7 @@ section of the \"Debugging\" chapter of the
 "5 Mar 1999" => array("Mercury Tutorial",
 "<a href=\"mailto:rafe@cs.mu.oz.au\">Ralph Becket</a>
 has kindly written a
-<A HREF=\"http://www.cs.mu.oz.au/research/mercury/tutorial/index.html\">Mercury Tutorial</A>.
+<A HREF=\"http://www.mercurylang.org/documentation/papers/book.pdf\">Mercury Tutorial</A>.
 This is still under development.  Feedback would be appreciated."
 ),
 
@@ -971,7 +971,7 @@ See the files in extras/dynamic_linking for details."
 
 "A paper describing the high-level optimization passes of the Mercury
 compiler is now available from
-<A HREF=\"information/papers.html\">the Mercury papers page</A>."
+<A HREF=\"documentation/papers.html\">the Mercury papers page</A>."
 ),
 
 "18 Nov 1998" => array("Mercury 0.8 released",
@@ -985,7 +985,7 @@ Release information can be found
 
 "We have made a paper describing the Mercury CORBA interface
 available from
-<A HREF=\"information/papers.html\">the Mercury papers page</A>."
+<A HREF=\"documentation/papers.html\">the Mercury papers page</A>."
 ),
 
 "16 Nov 1998" => array("Web site now searchable",
@@ -998,7 +998,7 @@ rest of the web site."
 
 "A new paper, describing our implementation of type classes in Mercury,
 has been made available from
-<A HREF=\"information/papers.html\">the Mercury papers page</A>."
+<A HREF=\"documentation/papers.html\">the Mercury papers page</A>."
 ),
 
 "21 Sep 1998" => array("MCORBA: CORBA for Mercury.",
