@@ -50,6 +50,6 @@ touch:
 
 .PHONY: gitignore
 gitignore:
-	@printf "%s\n" $(HTML) $(XML) | LC_CTYPE=C sort > .gitignore
+	@printf "%s\n" $(HTML) $(XML) | LC_COLLATE=C sort > .gitignore
 
 #-----------------------------------------------------------------------------#
