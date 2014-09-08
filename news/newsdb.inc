@@ -22,6 +22,12 @@
 
 $newsdb = array(
 
+"8th September 2014" => array(
+"Mercury 14.01.1 released",
+"Release Information is available
+<a href=\"http://dl.mercurylang.org/release/release-notes-14.01.1.txt\">here</a>."
+),
+
 "19th February 2014" => array(
 "Windows binary packages for Mercury 14.01 available",
 "Windows binary packages for Mercury 14.01 using either MinGW GCC or
