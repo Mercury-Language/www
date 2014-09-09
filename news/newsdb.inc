@@ -18,6 +18,9 @@
 ** correctly.
 **
 ** ALSO the dates must be distinct.
+**
+** If you're announcing (and releasing) a new version of Mercury please also
+** change the version number in documentation/include/documentation.inc.
 */
 
 $newsdb = array(
