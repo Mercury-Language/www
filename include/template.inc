@@ -2,8 +2,11 @@
 <?php include "$root/include/globals.inc" ?>
 <head>
 <TITLE>The Mercury Project: <?php echo $title?></TITLE>
+<link rel="alternate" type="application/rss+xml" title="Mercury News Feed" href="<?php echo $root?>/rss.xml"/>
 <link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
-<link rel="icon" type="image/ico" href="../favicon.ico"/>
+<link rel="icon" href="<?php echo $root?>/images/mercurylogo_110x110.png"/>
+<link rel="icon" type="image/x-icon" href="<?php echo $root?>/favicon.ico"/>
+<link rel="icon" type="image/png" href="<?php echo $root?>/images/mercurylogo_110x110.png"/>
 </head>
 <body>
 
