@@ -1,6 +1,6 @@
-<H2>Development<span class="submenutitle">/ contributing</span></H2>
+<h2>Development<span class="submenutitle">/ contributing</span></h2>
 
-<H3>Mercury Libraries and Programs</H3>
+<h3>Mercury Libraries and Programs</h3>
 <p>
 If you've written some code using Mercury we'd love to find out about
 it.  If you think it might be in any way useful to other people, you
@@ -14,8 +14,8 @@ Fame and fortune will surely follow.
 If you would like to contribute a library or program written using
 Mercury for others to download and use, here's how you can do it.
 </p>
-<UL class="indentlist">
-<LI>
+<ul class="indentlist">
+<li>
 Choose a license for your code that allows other people to
 download and use it (by default, copyright law says that nobody
 but the author can copy or distribute modified copies).
@@ -27,28 +27,28 @@ of the Mercury distribution.  The Artistic, BSD-like (without
 advertising clause) and plain old public domain (e.g. no copyright at
 all) are also pretty popular.
 </li>
-<LI>
+<li>
 Apply this license to your code (e.g. make sure your source
 files and README file clearly state your name/employer and where to find
 the licensing conditions and include a file with the conditions).  A
 contact email address is also a good thing to include here.
 </li>
-<LI>
+<li>
 Make your software available on an ftp or http site
 somewhere.  If possible try to include a version number in your
 tar or zip file (e.g. mylibrary-0.4.zip or myprogram-1.2.1.tar.gz).
 If you can't do this, attach it in email in the next step.
 </li>
-<LI>
+<li>
 Email <a href="mailto:reviews@lists.mercurylang.org">reviews@lists.mercurylang.org</a>.
 and let us know that it's available (or it is attached), what it is,
 and give us the URL.  We'll check it out and if all is well will add it
 to the archive.
 </li>
-</UL>
+</ul>
 
 
-<H3>Modifications to the Mercury System</H3>
+<h3>Modifications to the Mercury System</h3>
 <p>
 If you've modified something in the Mercury system and would like it to
 become part of the main distribution, we'd be very interested in your
