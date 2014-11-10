@@ -23,9 +23,8 @@ Something that meets the open source definition would be good
 (see <a href="http://www.opensource.org">www.opensource.org</a>).
 A pre-written license is always much easier to get right than rolling
 your own.  The LGPL and GPL licenses are pretty compatible with the rest
-of the Mercury distribution.  The Artistic, BSD-like (without
-advertising clause) and plain old public domain (e.g. no copyright at
-all) are also pretty popular.
+of the Mercury distribution.  The Artistic, and BSD-like (without
+advertising clause) licenses are also pretty popular.
 </li>
 <li>
 Apply this license to your code (e.g. make sure your source
@@ -62,27 +61,19 @@ archives of this list, simply to get an idea of the kinds of standards
 required for integrating code into the main distribution.
 </p>
 <p>
-There is an issue with copyright ownership in the Mercury system. 
-We'd like to retain the freedom to modify the license of the
-Mercury system in future releases (in particular, we may decide to
-dual-license the Mercury system so as to make it compatible with other
-open source licenses out there).  Doing this with hundreds of copyright
-holders is practically impossible, since you need the agreement of every
-single one of them to make changes.
+Rather than listing many authors in the header of each source file it is
+better to refer to all the authors as a group.
+Therefore in the header of each source file the copyright is assigned to
+"The Mercury Team" (since 2013), and list the authors individually on the
+<a href="people.html">authors page</a>.
 </p>
 <p>
-Under the current license you are free to make any modifications
-you like and distribute them.  However we ask that if you want your
-modifications to be merged back into the main line of development, you
-talk to us about this issue.  The easiest solution is to place your
-changes into the public domain (e.g. give up copyright ownership on
-them) and then we can merge them into the main compiler.  This is a nice
-simple mechanism for getting around the hundreds of authors problem.
-If you have an employer who has some control over your copyright, we
-have some standard documents for doing this kind of thing.  It is almost
-always preferable to ask an employer to sign a form than to try to explain
-the concept (possibly confusing or scaring them in the process).  Please 
-email us if you want to discuss contributing changes to the Mercury system.
+Note that if you contribute to Mercury as part of your occupation your
+employer may own the copyright on your work.
+In these cases you should talk with your employer about contributing to
+Mercury.
+We list organisations that have contributed to Mercury on the
+<a href="people.html">authors page</a>.
 </p>
 
 
