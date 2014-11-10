@@ -5,7 +5,7 @@
 If you've written some code using Mercury we'd love to find out about
 it.  If you think it might be in any way useful to other people, you
 might be interested in making your code available for download.
-That way others can learn from it, use it and improve on it. 
+That way others can learn from it, use it and improve on it.
 </p><p>
 We are happy to place it on the Mercury web and ftp sites for you.
 Fame and fortune will surely follow.
@@ -34,7 +34,7 @@ the licensing conditions and include a file with the conditions).  A
 contact email address is also a good thing to include here.
 </li>
 <li>
-Make your software available on an ftp or http site
+Make your software available online
 somewhere.  If possible try to include a version number in your
 tar or zip file (e.g. mylibrary-0.4.zip or myprogram-1.2.1.tar.gz).
 If you can't do this, attach it in email in the next step.
@@ -55,7 +55,7 @@ become part of the main distribution, we'd be very interested in your
 work.
 </p>
 <p>
-The mercury-developers mailing list is intended for discussing proposed 
+The developers mailing list is intended for discussing proposed
 changes to the Mercury system.  If you would like to contribute reasonably
 frequently it might be a good idea to subscribe, or at least browse the
 archives of this list, simply to get an idea of the kinds of standards
