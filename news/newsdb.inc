@@ -25,6 +25,15 @@
 
 $newsdb = array(
 
+"7th April 2015" => array(
+"New Presentations",
+"Paul Bone introduced Mercury in a presentation to the Melbourne Functional
+User Group.
+His slides are available on the
+<a href=\"documentation/papers.html#mfug_talk\">Papers page</a>.
+The slides from Paul's Ph.D. completion seminar have also been made
+available"),
+
 "8th September 2014" => array(
 "Mercury 14.01.1 released",
 "Release Information is available

@@ -35,7 +35,7 @@ Ph.D. Thesis
 Department of Computing and Information Systems,
 The University of Melbourne.
 December 2012
-<br>
+<p>
 
 <li>
 <strong>
@@ -885,6 +885,39 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <h3><a href = "papers.html#presentations">Presentations</a></h3>
 
 <ul class="nonindentlist">
+
+<li>
+<strong>
+<a href="papers.html#mfug_talk">
+The Mercury Programming Language
+</a>
+</strong>
+<br>
+Paul Bone, based on slides by Zoltan Somogyi
+<br>
+<em>
+<a href="http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/">
+Melbourne Functional User Group
+</a>
+</em>
+Melbourne, Australia, April 2015.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#pbone_completion">
+Automatic Parallelism for Mercury
+</a>
+</strong>
+<br/>
+Paul Bone
+<em>
+Ph.D. Completion Seminar
+</em>
+Department of Computing and Information Systems,
+The University of Melbourne.
+May 2012.
+<p>
 
 <li>
 <strong>
@@ -3932,6 +3965,51 @@ It is corrected in David Kemp's thesis.
 
 <li>
 <strong>
+<a name="mfug_talk">
+The Mercury Programming Language
+</a>
+</strong>
+<br>
+Paul Bone, based on slides by Zoltan Somogyi
+<br>
+<em>
+<a href="http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/">
+Melbourne Functional User Group
+</a>
+</em>
+Melbourne, Australia, April 2015.
+<br>
+<a href="papers/mfug_talk.pdf">
+Available here (115K)
+</a>
+The talk was performed as in two halves.
+The second half of the talk used slides from Paul's
+<a href="papers.html#pbone_completion">Ph.D. completion seminar</a>.
+<p>
+
+<li>
+<strong>
+<a name="pbone_completion">
+Automatic Parallelism for Mercury
+</a>
+</strong>
+<br/>
+Paul Bone
+<em>
+Ph.D. Completion Seminar
+</em>
+Department of Computing and Information Systems,
+The University of Melbourne.
+May 2012
+<a href="papers/pbone_completion.pdf">
+Available here (422K)
+</a>
+The corresponding thesis is available
+<a href="papers.html#pbone_phd_thesis">here</a>.
+<p>
+
+<li>
+<strong>
 <a name="loop_control_talk">
 Controlling Loops in Parallel Mercury Code.
 </a>
@@ -3945,7 +4023,8 @@ Philadelphia, Pennsylvania, USA, January 2012.
 <a href="papers/loop_control_talk.pdf">
 Available here (168K)
 </a>
-<a href="papers.html#loop_control">corresponding paper</a>
+The corresponding paper is available
+<a href="papers.html#loop_control">here</a>.
 <p>
 
 <li>
