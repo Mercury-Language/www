@@ -3,7 +3,8 @@
 People who are currently working on the Mercury project:
 </p>
 <ul class="nonindentlist">
-<li> Paul Bone, paul at mercurylang.org, PhD, (Mission Critical IT)</li>
+<li> Paul Bone, paul at mercurylang.org, PhD, (YesLogic)</li>
+<li> Mark Brown, (YesLogic)</li>
 <li> Julien Fischer, juliensf at mercurylang.org, (Opturion)</li>
 <li> Zoltan Somogyi, zs at mercurylang.org, PhD</li>
 <li> Peter Wang, (YesLogic)</li>
@@ -22,7 +23,6 @@ some of whom are still informally associated with the project:
 <li> Ondrej Bojar</li>
 <li> Renaud Bournonville</li>
 <li> Andrew Bromage, MSc student</li>
-<li> Mark Brown, research engineer</li>
 <li> Tibor Benyi, honours student</li>
 <li> James Bligh, directed studies student</li>
 <li> Levi Cameron, summer student</li>
