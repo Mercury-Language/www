@@ -8,7 +8,7 @@ following mailing lists.
 
 <p>
 Bug reports may also be added to the
-<a href="https://www.mercurylang.org/bugs/">bug tracker</a>.
+<a href="https://bugs.mercurylang.org/">bug tracker</a>.
 If sending a bug report, please enclose as much information as possible,
 including, if possible source code (such as a small test case that exhibits the
 bug), any error messages encountered, operating system version, and
@@ -28,12 +28,12 @@ User support questions are best handled on the mercury-users mailing list.
 
 <p>
 There are four Mercury
-<a href="https://www.mercurylang.org/lists/">mailing lists</a>:
+<a href="https://lists.mercurylang.org/">mailing lists</a>:
 </p>
 
 <ul class="nonindentlist">
 <li>
-<a href="https://www.mercurylang.org/lists/listinfo/announce">
+<a href="https://lists.mercurylang.org/listinfo/announce">
     <span class="mailinglistname">mercury-announce</span>
 </a>
 is a very low-volume list for announcements about things directly related to
@@ -43,19 +43,19 @@ programmers, books about Mercury, etc.
 
 <li>
 The
-<a href="https://www.mercurylang.org/lists/listinfo/users">
+<a href="https://lists.mercurylang.org/listinfo/users">
     <span class="mailinglistname">mercury-users</span>
 </a>
 list is intended for general discussion about Mercury and related matters of
 interest to Mercury users.
 <br/>
-It is <a href="http://www.mercurylang.org/list-archives/users/">archived</a>
+It is <a href="http://lists.mercurylang.org/archives/users/">archived</a>
 and searchable.
 </li>
 
 <li>
 The
-<a href="https://www.mercurylang.org/lists/listinfo/developers">
+<a href="https://lists.mercurylang.org/listinfo/developers">
     <span class="mailinglistname">mercury-developers</span>
 </a>
 list is intended for general discussion about the development of Mercury and
@@ -63,7 +63,7 @@ the Mercury implementation and related matters of interest to the developers of
 Mercury.
 <br/>
 It is
-<a href="http://www.mercurylang.org/list-archives/developers/">archived</a>
+<a href="http://lists.mercurylang.org/archives/developers/">archived</a>
 and searchable. Note that in recent times, most the actual development
 discussion seems to be done on the mercury-reviews list, rather than
 mercury-developers.
@@ -71,7 +71,7 @@ mercury-developers.
 
 <li>
 The
-<a href="https://www.mercurylang.org/lists/listinfo/reviews">
+<a href="https://lists.mercurylang.org/listinfo/reviews">
     <span class="mailinglistname">mercury-reviews</span>
 </a>
 list is intended for use by the developers of Mercury, for the purpose of
@@ -81,7 +81,7 @@ diffs, reviews of diffs, and discussion of issues raised in such reviews. It
 tends to be a fairly high-volume list.
 <br/>
 It is
-<a href="http://www.mercurylang.org/list-archives/reviews/">archived</a>
+<a href="http://lists.mercurylang.org/archives/reviews/">archived</a>
 and searchable.
 </li>
 </ul>
@@ -111,7 +111,7 @@ Please use the search bar below to search the archives:
   <input class="textbox" type="text"  name="q" size="40" maxlength="255" value="" />
   <input class="submit" type="submit" value="Search" />
   <input type="hidden" name="sitesearch"
-    value="www.mercurylang.org/list-archives"/>
+    value="lists.mercurylang.org/archives"/>
 </form>
 
 <br>

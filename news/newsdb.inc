@@ -377,7 +377,7 @@ and one is a comparison of packrat parsing and memoed DCG parsers."
 "The Mercury project now uses the Mantis bug tracking system
 to keep track of bug reports.  The Mercury bug database may
 be accessed via the
-<a href=\"https://www.mercurylang.org/bugs/\">Bug Database</a>
+<a href=\"https://bugs.mercurylang.org/\">Bug Database</a>
 link in the menu at the side of this page."),
 
 
