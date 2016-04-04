@@ -90,6 +90,15 @@ look in the main source repository to find these documents.
 -------->
 
 </ul>
+
+<h3>More documents</h3>
+<p>
+	These documents, plus more specific, incomplete and sometimes outdated
+	documents are kept in the <code>compiler/notes/</code> directory of the
+	source tree.
+	They are also available <a href="developers/index.html">online</a>.
+</p>
+
 <p>
 
 </div>
