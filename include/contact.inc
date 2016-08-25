@@ -84,6 +84,25 @@ It is
 <a href="http://lists.mercurylang.org/archives/reviews/">archived</a>
 and searchable.
 </li>
+
+<li>
+The
+<a href="https://lists.mercurylang.org/listinfo/ads">
+    <span class="mailingljistname">mercury-ads</span>
+</a>
+list is intended to post things of interest to Mercury developers,
+that aren't directly Mercury related.
+For example calls for papers for logic programming conferences.
+The list is moderated to avoid abuse,
+posts for conferences in the wider logical / declarative / functional
+community are encouraged.
+It tends to be a low-volume list.
+<br/>
+It is
+<a href="http://lists.mercurylang.org/archives/ads/">archived</a>
+and searchable.
+</li>
+
 </ul>
 
 <p>
@@ -99,6 +118,10 @@ To post to one of these lists, send an e-mail to one of the following addresses:
 <li><a href="mailto:users@lists.mercurylang.org">users@lists.mercurylang.org</a></li>
 <li><a href="mailto:developers@lists.mercurylang.org">developers@lists.mercurylang.org</a></li>
 <li><a href="mailto:reviews@lists.mercurylang.org">reviews@lists.mercurylang.org</a></li>
+<li><a href="mailto:ads@lists.mercurylang.org">ads@lists.mercurylang.org</a>,
+note that there will be some delay while your post is reviewed.
+</li>
+</ul>
 </ul>
 
 <h3>Search the Archives</h3>
