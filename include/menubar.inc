@@ -4,7 +4,7 @@
 	if($menu == "About") { ?>
 	<ul class="submenu">
 	<li><a href="<?php echo $root?>/about/motivation.html">
-	<div <?php if($include=="overview.inc"){ ?> class="submenucurrent" <?php } ?>>
+	<div <?php if($include=="motivation.inc"){ ?> class="submenucurrent" <?php } ?>>
 	motivation</div></a></li>
 	<li><a href="<?php echo $root?>/about/benchmarks.html">
 	<div <?php if($include=="benchmarks.inc"){ ?> class="submenucurrent" <?php } ?>>
