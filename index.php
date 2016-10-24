@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
+    $menu="Home";
     $title="Home";
     $dir=".";
     $root=".";

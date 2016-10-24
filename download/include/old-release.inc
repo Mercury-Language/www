@@ -26,11 +26,12 @@ function link_to ($directory, $filename, $description)
 	echo "&nbsp;&nbsp;&nbsp;\n";
 }
 
-function links_to_file ($filename, $release, $Sunsite)
+function links_to_file ($filename, $release)
 {
 	global $aus_ftp, $aus_http, $usa_sourceforge_http, $usa_sunsite_ftp,
 		$usa_sunysb_ftp, $sweden_ftp;
 	global $Uppsala, $Stonybrook;
+	$Sunsite = "no";
 
 	$aus_ftp_dir = $aus_ftp . "old-releases/" . $release . "/";
 	$aus_http_dir = $aus_http . "old-releases/" . $release . "/";

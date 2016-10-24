@@ -8,7 +8,6 @@ HTML= 	benchmarks.html 	\
 	deep_demo.html		\
 	developer.html 		\
 	documentation.html 	\
-	events.html		\
 	features.html 		\
 	motivation.html		\
 	papers.html		\

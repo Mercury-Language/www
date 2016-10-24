@@ -38,7 +38,7 @@ function links_to_file ($filename, $onSunsite)
 	global $aus_ftp, $aus_http, $usa_sourceforge_http, $usa_sunsite_ftp,
 		$usa_sunysb_ftp, $sweden_ftp;
 	global $Uppsala, $Stonybrook;
-	global $Sunsite, $SourceForge;
+	global $Sunsite, $Sourceforge;
 
 	link_to ($aus_ftp, $filename, "Australia (FTP)");
 	link_to ($aus_http, $filename, "Australia (HTTP)");

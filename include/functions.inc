@@ -10,7 +10,7 @@ function newsitem($date, $item) {
 	echo "<p>";
 	echo $news;
 	echo "</p>";
-	list($day, $month, $year) = split(" ",$date);
+	list($day, $month, $year) = explode(" ",$date);
 	echo "<span class='newsdate'>";
 	printf("%02d&nbsp;$month&nbsp;$year", $day);
 	echo "</span>";
@@ -20,7 +20,7 @@ function newsitem($date, $item) {
 function rssitem($date, $item) {
 
 	list($title, $news) = $item;
-	list($day, $month, $year) = split(" ",$date);
+	list($day, $month, $year) = explode(" ",$date);
 	$month = substr($month, 0, 3);
 	$news = htmlspecialchars($news);
 
@@ -39,7 +39,7 @@ function reportitem($date, $item) {
 
 	list($filename, $descr) = $item;
 	echo "<tr>";
-	list($day, $month, $year) = split(" ",$date);
+	list($day, $month, $year) = explode(" ",$date);
 
 	echo "<td valign=top><tt>[";
 	printf("%02d&nbsp;$month&nbsp;$year", $day);

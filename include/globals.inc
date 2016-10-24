@@ -1,8 +1,8 @@
 <?php
 	$installed_path="/srv/www/mercurylang";
 
-	$current_release="11.07.2";
-	$next_beta_version="12.08-beta";
+	$current_release="14.01.1";
+//	$next_beta_version="12.08-beta";
 
 	$release_doc_dir="$root/information/doc-release";
 	$latest_doc_dir="$root/information/doc-latest";
@@ -17,11 +17,14 @@
 	$faq_release="$release_doc_dir/mercury_faq/index.html";
 	$faq_latest="$latest_doc_dir/mercury_faq/index.html";
 
+/*
 	$rotd_basedir="download/files/beta-releases/rotd";
 	$rotd_files_path="$installed_path/$rotd_basedir";
 	exec("cat $rotd_files_path/latest-unstable-version", $exec_output);
 	$rotd_version=$exec_output[0];
-	
+*/
+	$rotd_version = "none";
+
  	$ftp_domain="ftp.mercurylang.org";
  	$www_domain="www.mercurylang.org";
 ?>

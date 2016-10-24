@@ -6,6 +6,9 @@
   <description>News from the Mercury programming language project.</description>
 <?php
 
+$root = "";
+
+include "include/globals.inc";
 include "include/functions.inc";
 include "news/newsdb.inc";
 
