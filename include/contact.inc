@@ -1,3 +1,6 @@
+<!--
+  vim: ft=html sts=2 sw=2 et
+-->
 <h2>Contact</h2>
 
 <p>
@@ -124,7 +127,7 @@ note that there will be some delay while your post is reviewed.
 </ul>
 </ul>
 
-<h3>Search the Archives</h3>
+<h4>Search the Archives</h4>
 
 <p>
 Please use the search bar below to search the archives:
@@ -141,6 +144,14 @@ Please use the search bar below to search the archives:
 
 <h3>Other communities and social networks</h3>
 
+<h4>Twitter</h4>
+
+<p>
+The <a href="https://twitter.com/MercuryLang">@MercuryLang</a>
+twitter account will make announcements of news, releases and
+other related things.
+</p>
+
 <h4>IRC</h4>
 
 <p>
@@ -149,6 +160,25 @@ There is a Mercury IRC channel on the
 IRC network.
 Connect to <code>irc.freenode.net</code> and join the <code>#mercury</code>
 channel.
+</p>
+
+<h4>Google+</h4>
+
+<p>
+There is a
+<a href="https://plus.google.com/communities/108576397306370583348">
+Mercury community
+</a>
+on Google+.
+</p>
+
+<h4>Reddit</h4>
+
+<p>
+There is a
+<a href="https://www.reddit.com/r/mercury/">
+Mercury subreddit</a>
+on the popular link-sharing site <a href="https://reddit.com">reddit</a>.
 </p>
 
 <h4>stackoverflow.com</h4>
@@ -178,24 +208,6 @@ Adventures in Mercury
 </a>
 blog by Chris King tackles various problems and explains how his elegant
 Mercury solutions are constructed.
-</p>
-
-<h4>Twitter</h4>
-
-<p>
-The <a href="https://twitter.com/MercuryLang">@MercuryLang</a>
-twitter account will make announcements of news, releases and
-ROTD builds.
-</p>
-
-<h4>Google+</h4>
-
-<p>
-There is a
-<a href="https://plus.google.com/communities/108576397306370583348">
-Mercury community
-</a>
-on Google+.
 </p>
 
 <h4>GitHub</h4>
