@@ -23,7 +23,7 @@ given on Mercury, at a variety of levels, are also available.
 <li>
 <strong>
 <a href="papers.html#pbone_phd_thesis">
-Automatic Parallelisation for Mercury
+Automatic parallelisation for Mercury.
 </a>
 </strong>
 <br>
@@ -34,13 +34,13 @@ Ph.D. Thesis
 </em>
 Department of Computing and Information Systems,
 The University of Melbourne.
-December 2012
+December 2012.
 <p>
 
 <li>
 <strong>
 <a href="papers.html#loop_control">
-Controlling Loops in Parallel Mercury Code.
+Controlling loops in parallel Mercury code.
 </a>
 </strong>
 <br>
@@ -103,7 +103,7 @@ Lexington, Kentucky, July 2011.
 <li>
 <strong>
 <a href="papers.html#bmellor-hons">
-Towards Software Transactional Memory for Real-World Programs
+Towards software transactional memory for real-world programs.
 </a>
 </strong>
 <br/>
@@ -120,14 +120,14 @@ October 2009.
 <li>
 <strong>
 <a href="papers.html#quan-phd">
-Region-based memory management for the logic programming language Mercury
+Region-based memory management for the logic programming language Mercury.
 </a>
 </strong>
 <br>
 Quan Phan.
 <br>
 <em>
-Ph.D. thesis
+Ph.D. thesis.
 </em>
 Department of Computer Science,
 Catholic University of Leuven (KUL),
@@ -137,7 +137,7 @@ November 2009.
 <li>
 <strong>
 <a href="papers.html#more-precise-rbmm">
-More precise region-based memory management for Mercury programs
+More precise region-based memory management for Mercury programs.
 </a>
 </strong>
 <br>
@@ -153,7 +153,7 @@ Pasadena, California, July 2009.
 <li>
 <strong>
 <a href="papers.html#path-sensitive-ppdp">
-Path-sensitive region analysis for Mercury programs
+Path-sensitive region analysis for Mercury programs.
 </a>
 </strong>
 <br>
@@ -169,7 +169,7 @@ Coimbra, Portugal, September 2009.
 <li>
 <strong>
 <a href="papers.html#runtime-support-ismm08">
-Runtime support for region-based memory management in Mercury
+Runtime support for region-based memory management in Mercury.
 </a>
 </strong>
 <br>
@@ -184,7 +184,7 @@ Tucson, Arizona, June 2008.
 <li>
 <strong>
 <a href="papers.html#static-region-analysis">
-Static region analysis for Mercury
+Static region analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -199,7 +199,8 @@ Porto, Portugal, September 2007.
 <li>
 <strong>
 <a href = "papers.html#pbone-hons">
-Calculating likely parallelism within dependant conjunctions for logic programs
+Calculating likely parallelism within dependant conjunctions
+for logic programs.
 </a>
 </strong>
 <br>
@@ -228,7 +229,7 @@ San Francisco, California, January 2008.
 <li>
 <strong>
 <a href = "papers.html#lmika-hons">
-Software transactional memory in Mercury
+Software transactional memory in Mercury.
 </a>
 </strong>
 <br>
@@ -242,7 +243,7 @@ Melbourne, 2007.
 <li>
 <strong>
 <a href="papers.html#exo-ciclops07">
-Dealing with large predicates: exo-compilation in the WAM and in Mercury
+Dealing with large predicates: exo-compilation in the WAM and in Mercury.
 </a>
 </strong>
 <br>
@@ -257,7 +258,7 @@ Porto, Portugal, September 2007.
 <li>
 <strong>
 <a href = "papers.html#wangp-hons">
-Parallel Mercury
+Parallel Mercury.
 </a>
 </strong>
 <br>
@@ -271,7 +272,7 @@ Melbourne, 2006.
 <li>
 <strong>
 <a href = "papers.html#padl06solver">
-Adding constraint solving to Mercury
+Adding constraint solving to Mercury.
 </a>
 </strong>
 <br>
@@ -288,7 +289,7 @@ Charleston, South Carolina, January 2006.
 <strong>
 <a href = "papers.html#padl06dd">
 Controlling search space materialization
-in a practical declarative debugger
+in a practical declarative debugger.
 </a>
 </strong>
 <br>
@@ -303,7 +304,7 @@ Charleston, South Carolina, January 2006.
 <li>
 <strong>
 <a href = "papers.html#padl06tabling">
-Tabling in Mercury: design and implementation
+Tabling in Mercury: design and implementation.
 </a>
 </strong>
 <br>
@@ -318,7 +319,7 @@ Charleston, South Carolina, January 2006.
 <li>
 <strong>
 <a href = "papers.html#maclarty-masters">
-Practical declarative debugging of Mercury programs
+Practical declarative debugging of Mercury programs.
 </a>
 </strong>
 <br>
@@ -332,7 +333,7 @@ University of Melbourne, July 2005.
 <li>
 <strong>
 <a href = "papers.html#ciclops05">
-The implementation of minimal model tabling in Mercury (extended abstract)
+The implementation of minimal model tabling in Mercury (extended abstract).
 </a>
 </strong>
 <br>
@@ -346,8 +347,8 @@ Barcelona, Spain, October 2005.
 <li>
 <strong>
 <a href = "papers.html#dd3">
-Divide-and-query and subterm dependency tracking in the Mercury declarative
-debugger
+Divide-and-query and subterm dependency tracking
+in the Mercury declarative debugger.
 </a>
 </strong>
 <br>
@@ -362,7 +363,7 @@ Monterey, California, September 2005.
 <li>
 <strong>
 <a href = "papers.html#decl_debug">
-Annotated event traces for declarative debugging
+Annotated event traces for declarative debugging.
 </a>
 </strong>
 <br>
@@ -376,7 +377,7 @@ Melbourne, 2005.
 <li>
 <strong>
 <a href = "papers.html#mazur-thesis">
-Compile-time garbage collection for the declarative language Mercury
+Compile-time garbage collection for the declarative language Mercury.
 </a>
 </strong>
 <br>
@@ -390,7 +391,7 @@ Catholic University of Leuven, Belgium, May 2004.
 <li>
 <strong>
 <a href = "papers.html#dmo-thesis">
-Precise and expressive mode systems for typed logic programming languages
+Precise and expressive mode systems for typed logic programming languages.
 </a>
 </strong>
 <br>
@@ -404,7 +405,7 @@ Melbourne, 2003.
 <li>
 <strong>
 <a href = "papers.html#aadebug03-paper">
-Idempotent I/O for safe time travel
+Idempotent I/O for safe time travel.
 </a>
 </strong>
 <br>
@@ -418,7 +419,7 @@ Ghent, Belgium, September 2003.
 <li>
 <strong>
 <a href = "papers.html#juliensf-hons">
-Termination analysis for Mercury using convex constraints
+Termination analysis for Mercury using convex constraints.
 </a>
 </strong>
 <br>
@@ -432,7 +433,7 @@ Melbourne, 2002.
 <li>
 <strong>
 <a href = "papers.html#conway-thesis">
-Towards parallel Mercury
+Towards parallel Mercury.
 </a>
 </strong>
 <br>
@@ -446,7 +447,7 @@ Melbourne, 2002.
 <li>
 <strong>
 <a href = "#dgj-thesis-final">
-Expressive type systems for logic programming languages
+Expressive type systems for logic programming languages.
 </a>
 </strong>
 <br>
@@ -461,7 +462,7 @@ Melbourne,
 <li>
 <strong>
 <a href = "#p33-overton">
-Constraint-based mode analysis of Mercury
+Constraint-based mode analysis of Mercury.
 </a>
 </strong>
 <br>
@@ -472,7 +473,7 @@ David Overton, Zoltan Somogyi and Peter Stuckey.
 <li>
 <strong>
 <a href = "papers.html#p81-somogyi">
-Using the heap to eliminate stack accesses
+Using the heap to eliminate stack accesses.
 </a>
 </strong>
 <br>
@@ -483,7 +484,7 @@ Zoltan Somogyi and Peter Stuckey.
 <li>
 <strong>
 <a href = "papers.html#high_level_gc">
-Accurate garbage collection in an uncooperative environment
+Accurate garbage collection in an uncooperative environment.
 </a>
 </strong>
 <br>
@@ -494,7 +495,7 @@ Fergus Henderson.
 <li>
 <strong>
 <a href = "papers.html#mercury_to_clr">
-Compiling Mercury to the .NET Common Language Runtime
+Compiling Mercury to the .NET Common Language Runtime.
 </a>
 </strong>
 <br>
@@ -505,7 +506,7 @@ Tyson Dowd, Fergus Henderson, and Peter Ross.
 <li>
 <strong>
 <a href = "papers.html#hlc_cc">
-Compiling Mercury to high-level C code
+Compiling Mercury to high-level C code.
 </a>
 </strong>
 <br>
@@ -517,7 +518,7 @@ Fergus Henderson and Zoltan Somogyi.
 <strong>
 <a href = "papers.html#mu_01_24">
 Deep profiling:
-engineering a profiler for a declarative programming language
+engineering a profiler for a declarative programming language.
 </a>
 </strong>
 <br>
@@ -529,7 +530,7 @@ Thomas C. Conway and Zoltan Somogyi.
 <strong>
 <a href = "papers.html#iclp2001_ctgc">
 Practical aspects for a working compile time garbage collection system
-for Mercury
+for Mercury.
 </a>
 </strong>
 <br>
@@ -541,7 +542,7 @@ Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe.
 <strong>
 <a href="papers.html#bta_higher_order">
 Binding-time analysis by constraint solving: a modular and
-higher-order approach for Mercury
+higher-order approach for Mercury.
 </a>
 </strong>
 <br>
@@ -552,7 +553,7 @@ Wim Vanhoof.
 <li>
 <strong>
 <a href="papers.html#memory_reuse_analysis">
-A module based analysis for memory reuse in Mercury
+A module based analysis for memory reuse in Mercury.
 </a>
 </strong>
 <br>
@@ -563,7 +564,7 @@ Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
 <li>
 <strong>
 <a href="papers.html#tail_lopstr_lncs">
-Making Mercury programs tail recursive
+Making Mercury programs tail recursive.
 </a>
 </strong>
 <br>
@@ -574,7 +575,7 @@ Peter Ross, David Overton and Zoltan Somogyi.
 <li>
 <strong>
 <a href="papers.html#update">
-State update transformation
+State update transformation.
 </a>
 </strong>
 <br>
@@ -584,7 +585,7 @@ Peter Ross and Zoltan Somogyi.
 <li>
 <strong>
 <a href="papers.html#purity">
-Using impurity to create declarative interfaces in Mercury
+Using impurity to create declarative interfaces in Mercury.
 </a>
 </strong>
 <br>
@@ -595,7 +596,7 @@ Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi.
 <li>
 <strong>
 <a href="papers.html#liveness">
-Towards memory reuse for Mercury
+Towards memory reuse for Mercury.
 </a>
 </strong>
 <br>
@@ -606,7 +607,7 @@ Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
 <li>
 <strong>
 <a href="papers/bta_higher_order.ps.gz">
-Binding-time analysis for Mercury
+Binding-time analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -617,7 +618,7 @@ Wim Vanhoof and Maurice Bruynooghe.
 <li>
 <strong>
 <a href="papers.html#debugger_wlpe99">
-The implementation technology of the Mercury debugger
+The implementation technology of the Mercury debugger.
 </a>
 </strong>
 <br>
@@ -628,7 +629,7 @@ Zoltan Somogyi and Fergus Henderson.
 <li>
 <strong>
 <a href="papers.html#tail_lopstr">
-Making Mercury programs tail recursive (extended abstract)
+Making Mercury programs tail recursive (extended abstract).
 </a>
 </strong>
 <br>
@@ -639,7 +640,7 @@ Peter Ross, David Overton and Zoltan Somogyi.
 <li>
 <strong>
 <a href="papers.html#rtti_ppdp">
-Run time type information in Mercury
+Run time type information in Mercury.
 </a>
 </strong>
 <br>
@@ -651,7 +652,7 @@ Tyson Dowd, Zoltan Somogyi, Fergus Henderson, Thomas Conway and David Jeffery.
 <li>
 <strong>
 <a href = "papers.html#stayl_hons">
-Optimization of Mercury programs
+Optimization of Mercury programs.
 </a>
 </strong>
 <br>
@@ -662,7 +663,7 @@ Simon Taylor.
 <li>
 <strong>
 <a href="papers.html#mcorba_padl99">
-MCORBA: A CORBA Binding for Mercury
+MCORBA: A CORBA Binding for Mercury.
 </a>
 </strong>
 <br>
@@ -673,7 +674,7 @@ David Jeffery, Tyson Dowd and Zoltan Somogyi.
 <li>
 <strong>
 <a href = "papers.html#mu_98_13">
-Type classes in Mercury
+Type classes in Mercury.
 </a>
 </strong>
 <br>
@@ -684,7 +685,7 @@ David Jeffery, Fergus Henderson and Zoltan Somogyi.
 <li>
 <strong>
 <a href = "papers.html#sas97">
-Termination analysis for Mercury
+Termination analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -695,7 +696,7 @@ Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 <li>
 <strong>
 <a href = "papers.html#jicslpw">
-Status of the Mercury system
+Status of the Mercury system.
 </a>
 </strong>
 <br>
@@ -708,7 +709,7 @@ Tyson Dowd, David Jeffery, Peter Ross, Peter Schachte and Simon Taylor.
 <strong>
 <a href = "papers.html#jlp">
 The execution algorithm of Mercury:
-an efficient purely declarative logic programming language
+an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -719,7 +720,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 <li>
 <strong>
 <a href = "papers.html#acsc96">
-Determinism analysis in the Mercury compiler
+Determinism analysis in the Mercury compiler.
 </a>
 </strong>
 <br>
@@ -731,7 +732,7 @@ Fergus Henderson, Zoltan Somogyi and Thomas Conway.
 <li>
 <strong>
 <a href = "papers.html#code_gen_mit">
-Code generation for Mercury
+Code generation for Mercury.
 </a>
 </strong>
 <br>
@@ -744,7 +745,7 @@ Thomas Conway, Fergus Henderson, and Zoltan Somogyi.
 <strong>
 <a href = "papers.html#mercury_to_c">
 Compiling logic programs to C
-using GNU C as a portable assembler
+using GNU C as a portable assembler.
 </a>
 </strong>
 <br>
@@ -756,7 +757,7 @@ Portland, Oregon.
 <li>
 <strong>
 <a href = "papers.html#acsc95">
-Mercury: an efficient purely declarative logic programming language
+Mercury: an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -768,7 +769,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 <strong>
 <a href = "papers.html#ilps94w">
 The implementation of Mercury:
-an efficient purely declarative logic programming language
+an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -783,7 +784,7 @@ Syracuse, New York.
 <li>
 <strong>
 <a href = "papers.html#conway_hons">
-Code generation for Mercury
+Code generation for Mercury.
 </a>
 </strong>
 <br>
@@ -799,12 +800,12 @@ Thomas Conway.
 <li>
 <strong>
 <a href = "papers.html#mc_swese_2007">
-Ontology Driven Software Engineering for Real Life Applications
+Ontology driven software engineering for real life applications.
 </a>
 </strong>
 <br>
 Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
-Nikolay Pelov
+Nikolay Pelov.
 <em>
 3rd International Workshop on Semantic Web Enabled
 Software Engineering (SWESE 2007)
@@ -815,18 +816,18 @@ Innsbruck, Austria, 2007.
 <li>
 <strong>
 <a href = "papers.html#mu_97_23">
-Termination analysis for logic programs
+Termination analysis for logic programs.
 </a>
 </strong>
 <br>
 Chris Speirs.
-<em>Tech Report 97/23</em>, Melbourne, 1997.
+<em>Technical Report 97/23</em>, Melbourne, 1997.
 <p>
 
 <li>
 <strong>
 <a href = "papers.html#vision">
-Logic programming for the real world
+Logic programming for the real world.
 </a>
 </strong>
 <br>
@@ -837,12 +838,28 @@ Zoltan Somogyi, Fergus Henderson, Thomas Conway and Richard O'Keefe.
 <li>
 <strong>
 <a href = "papers.html#iclp87">
-A system of precise modes for logic programs
+A system of precise modes for logic programs.
 </a>
 </strong>
 <br>
 Zoltan Somogyi.
 <em>ICLP'87</em>, Melbourne.
+<p>
+
+<li>
+<strong>
+<a href="papers.html#zs_phd_thesis">
+A parallel logic programming system based on strong and precise modes.
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<br>
+<em>
+Ph.D. Thesis.
+</em>
+Department of Computer Science,
+The University of Melbourne.
 <p>
 
 <li>
@@ -859,7 +876,7 @@ Fergus Henderson.
 <li>
 <strong>
 <a href = "papers.html#mu_96_45">
-Database transactions in a purely declarative logic programming language
+Database transactions in a purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -872,7 +889,7 @@ Kotagiri Ramamohanarao and Zoltan Somogyi.
 <strong>
 <a href = "papers.html#tr90-2">
 Right-, left-, and multi-linear rule transformations that maintain
-context information
+context information.
 </a>
 </strong>
 <br>
@@ -889,15 +906,15 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 <li>
 <strong>
 <a href="papers.html#mfug_talk">
-The Mercury Programming Language
+The Mercury Programming Language.
 </a>
 </strong>
 <br>
-Paul Bone, based on slides by Zoltan Somogyi
+Paul Bone, based on slides by Zoltan Somogyi.
 <br>
 <em>
 <a href="http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/">
-Melbourne Functional User Group
+Melbourne Functional User Group,
 </a>
 </em>
 Melbourne, Australia, April 2015.
@@ -906,13 +923,13 @@ Melbourne, Australia, April 2015.
 <li>
 <strong>
 <a href="papers.html#pbone_completion">
-Automatic Parallelism for Mercury
+Automatic parallelism for Mercury.
 </a>
 </strong>
 <br/>
-Paul Bone
+Paul Bone.
 <em>
-Ph.D. Completion Seminar
+Ph.D. Completion Seminar,
 </em>
 Department of Computing and Information Systems,
 The University of Melbourne.
@@ -926,7 +943,7 @@ Controlling Loops in Parallel Mercury Code.
 </a>
 </strong>
 <br>
-Paul Bone, Zoltan Somogyi and Peter Schachte
+Paul Bone, Zoltan Somogyi and Peter Schachte.
 <br>
 <em>
 Declarative Aspects and Applications of Multicore Programming
@@ -938,11 +955,11 @@ Philadelphia, Pennsylvania, USA, January 2012.
 <li>
 <strong>
 <a href="papers.html#threadscope_talk">
-Profiling parallel Mercury programs with ThreadScope.
+Profiling parallel Mercury programs with ThreadScope..
 </a>
 </strong>
 <br/>
-Paul Bone and Zoltan Somogyi
+Paul Bone and Zoltan Somogyi.
 <em>
 21st Workshop on Logic-based methods in Programming Environments.
 </em>
@@ -975,7 +992,7 @@ Minimizing the overheads of dependent AND-parallelism.
 <br/>
 Peter Wang and Zoltan Somogyi.
 <em>
-27th International. Conference on Logic Programming (ICLP'11)
+27th International. Conference on Logic Programming (ICLP'11),
 </em>
 Lexington, Kentucky, July 2011.
 <a href="papers.html#dep_and_parallel">corresponding paper</a>
@@ -984,46 +1001,47 @@ Lexington, Kentucky, July 2011.
 <li>
 <strong>
 <a href="papers.html#luv_2011">
-The Mercury project
+The Mercury project.
 </a>
 </strong>
 <br/>
-Zoltan Somogyi
+Zoltan Somogyi.
 <em>
 A presentation for the <a href="http://luv.asn.au">Linux Users of Victoria</a>
 </em>
 Melbourne Australia.
-June 2011
+June 2011.
 <p>
 
 <li>
 <strong>
 <a href="papers.html#google_2010_autopar">
-Automatic Parallelisation for Mercury
+Automatic parallelisation for Mercury.
 </a>
 </strong>
 <br/>
-Paul Bone
+Paul Bone.
 <em>
-A Tech Talk at Google Sydney and a seminar at The University of New South Wales
+A Tech Talk at Google Sydney
+and a seminar at The University of New South Wales,
 </em>
 Sydney Australia,
-December 2010
+December 2010.
 <p>
 
 <li>
 <strong>
 <a href="papers.html#linuxconf_2010_autopar">
-Automatic Parallelisation in Mercury
+Automatic parallelisation in Mercury.
 </a>
 </strong>
 <br/>
-Paul Bone
+Paul Bone.
 <em>
 Multicore Miniconference, Linuxconf Australia,
 </em>
 Wellington NZ, 
-January 2010
+January 2010.
 <p>
 
 <li>
@@ -1063,7 +1081,7 @@ Ontology driven software development with Mercury.
 </a>
 </strong>
 <br>
-Ian MacLarty, Peter Ross,
+Ian MacLarty, Peter Ross.
 <em>
 University of Melbourne,
 </em>
@@ -1073,8 +1091,7 @@ University of Melbourne,
 <li>
 <strong>
 <a href = "papers.html#g12_unclean">
-Unclean! Unclean! or Purity issues in declarative constraint logic
-Programming.
+Unclean! Unclean! or Purity issues in declarative constraint logic programming.
 </a>
 </strong>
 <br>
@@ -1085,8 +1102,8 @@ University of Melbourne, 28 March 2006.
 <li>
 <strong>
 <a href = "papers.html#aadebug05-talk">
-Divide-and-query and subterm dependency tracking in the Mercury declarative
-debugger.
+Divide-and-query and subterm dependency tracking
+in the Mercury declarative debugger.
 </a>
 </strong>
 <br>
@@ -1099,7 +1116,7 @@ Monterey, USA, September 2005.
 <li>
 <strong>
 <a href = "papers.html#aadebug03-talk">
-Idempotent I/O for safe time travel
+Idempotent I/O for safe time travel.
 </a>
 </strong>
 <br>
@@ -1112,7 +1129,7 @@ Ghent, Belgium, September 2003.
 <li>
 <strong>
 <a href = "papers.html#ppdp02mode-talk">
-Constraint-based mode analysis of Mercury
+Constraint-based mode analysis of Mercury.
 </a>
 </strong>
 <br>
@@ -1125,7 +1142,7 @@ Pittsburgh, Pennsylvania, October 2002.
 <li>
 <strong>
 <a href = "papers.html#ppdp02stack-talk">
-Using the heap to eliminate stack accesses
+Using the heap to eliminate stack accesses.
 </a>
 </strong>
 <br>
@@ -1138,7 +1155,7 @@ Pittsburgh, Pennsylvania, October 2002.
 <li>
 <strong>
 <a href="papers.html#sas_talk">
-Termination analysis for Mercury
+Termination analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -1149,7 +1166,7 @@ Talk presented at <em>SAS'97</em>, Paris.
 <li>
 <strong>
 <a href = "papers.html#unif">
-Unification in Mercury
+Unification in Mercury.
 </a>
 </strong>
 <br>
@@ -1163,7 +1180,7 @@ Louvain-la-Neuve, Belgium, 1996.
 <li>
 <strong>
 <a href="papers.html#jicslp_talk">
-The design and implementation of Mercury
+The design and implementation of Mercury.
 </a>
 </strong>
 <br>
@@ -1174,7 +1191,7 @@ Tutorial presented at <em>JICSLP'96</em>, Bonn, Germany.
 <li>
 <strong>
 <a href = "papers.html#jicslpw_talk">
-Status of the Mercury system
+Status of the Mercury system.
 </a>
 </strong>
 <br>
@@ -1191,7 +1208,7 @@ Bonn, Germany.
 <strong>
 <a href = "papers.html#acsc95_slides">
 Mercury:
-an efficient purely declarative logic programming language
+an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -1202,7 +1219,7 @@ Presented at <em>ACSC'95</em>, Adelaide, South Australia.
 <li>
 <strong>
 <a href = "papers.html#257_1999">
-Mercury lecture notes for 433-257 (expanded)
+Mercury lecture notes for 433-257 (expanded).
 </a>
 </strong>
 <br>
@@ -1212,7 +1229,7 @@ Zoltan Somogyi, 1999.
 <li>
 <strong>
 <a href = "papers.html#257">
-Mercury lecture notes for 433-257
+Mercury lecture notes for 433-257.
 </a>
 </strong>
 <br>
@@ -1222,7 +1239,7 @@ Zoltan Somogyi, 1997.
 <li>
 <strong>
 <a href = "papers.html#247">
-Mercury lecture notes for 433-247
+Mercury lecture notes for 433-247.
 </a>
 </strong>
 <br>
@@ -1232,7 +1249,7 @@ Zoltan Somogyi, 1995.
 <li>
 <strong>
 <a href = "papers.html#dgj-talk">
-Type classes for logic programming languages
+Type classes for logic programming languages.
 </a>
 </strong>
 <br>
@@ -1242,7 +1259,7 @@ David Jeffery, 1998.
 <li>
 <strong>
 <a href = "papers.html#rtti_talk_98">
-Runtime type information in Mercury
+Runtime type information in Mercury.
 </a>
 </strong>
 <br>
@@ -1260,18 +1277,18 @@ Tyson Dowd, 1998.
 <li>
 <strong>
 <a name="pbone_phd_thesis">
-Automatic Parallelisation for Mercury
+Automatic parallelisation for Mercury.
 </a>
 </strong>
 <br>
-Paul Bone
+Paul Bone.
 <br>
 <em>
-Ph.D. Thesis
+Ph.D. Thesis,
 </em>
 Department of Computing and Information Systems,
 The University of Melbourne,
-December 2012
+December 2012.
 <br>
 Available here
 <a href = "papers/pbone_phd_thesis.pdf">
@@ -1349,7 +1366,7 @@ making automatic parallelism a realistic option for developers.
 <li>
 <strong>
 <a name="loop_control">
-Controlling Loops in Parallel Mercury Code.
+Controlling loops in parallel Mercury code.
 </a>
 </strong>
 <br>
@@ -1401,7 +1418,7 @@ Profiling parallel Mercury programs with ThreadScope.
 </a>
 </strong>
 <br>
-Paul Bone and Zoltan Somogyi
+Paul Bone and Zoltan Somogyi.
 <br>
 <em>
 21st Workshop on Logic-based methods in Programming Environments.
@@ -1588,7 +1605,7 @@ only to the variable accesses that actually need it.
 <li>
 <strong>
 <a name="bmellor-hons">
-Towards Software Transactional Memory for Real-World Programs
+Towards software transactional memory for real-world programs.
 </a>
 </strong>
 <br/>
@@ -1626,7 +1643,7 @@ simpler STM implementation.
 <li>
 <strong>
 <a name="quan-phd">
-Region-based memory management for the logic programming language Mercury
+Region-based memory management for the logic programming language Mercury.
 </a>
 </strong>
 <br>
@@ -1696,7 +1713,7 @@ so that RBMM systems can obtain good memory reuse.
 <li>
 <strong>
 <a name="more-precise-rbmm">
-More precise region-based memory management for Mercury programs
+More precise region-based memory management for Mercury programs.
 </a>
 </strong>
 <br>
@@ -1733,7 +1750,7 @@ can reduce the memory footprint for several programs.
 <li>
 <strong>
 <a name="path-sensitive-ppdp">
-Path-sensitive region analysis for Mercury programs
+Path-sensitive region analysis for Mercury programs.
 </a>
 </strong>
 <br>
@@ -1770,7 +1787,7 @@ can reduce the memory footprint for several programs.
 <li>
 <strong>
 <a name="runtime-support-ismm08">
-Runtime support for region-based memory management in Mercury
+Runtime support for region-based memory management in Mercury.
 </a>
 </strong>
 <br>
@@ -1805,7 +1822,7 @@ and for some programs, RBMM achieves optimal memory consumption.
 <li>
 <strong>
 <a name="static-region-analysis">
-Static region analysis for Mercury
+Static region analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -1839,7 +1856,8 @@ memory management.
 <li>
 <strong>
 <a name="pbone-hons">
-Calculating likely parallelism within dependant conjunctions for logic programs
+Calculating likely parallelism within dependant conjunctions
+for logic programs.
 </a>
 </strong>
 <br>
@@ -1889,7 +1907,7 @@ DCGs + memoing = packrat parsing; but is it worth it?
 </a>
 </strong>
 <br>
-Ralph Becket and Zoltan Somogyi,
+Ralph Becket and Zoltan Somogyi.
 <em>
 Proceedings of the Tenth International Symposium
 on Practical Aspects of Declarative languages,
@@ -1935,11 +1953,11 @@ is based is
 <li>
 <strong>
 <a name="lmika-hons">
-Software transactional memory in Mercury
+Software transactional memory in Mercury.
 </a>
 </strong>
 <br>
-Leon Mika,
+Leon Mika.
 <br>
 <em>
 Honours report,
@@ -1968,11 +1986,11 @@ of a Software Transactional Memory system in Mercury.
 <li>
 <strong>
 <a name="exo-ciclops07">
-Dealing with large predicates: exo-compilation in the WAM and in Mercury
+Dealing with large predicates: exo-compilation in the WAM and in Mercury.
 </a>
 </strong>
 <br>
-Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi,
+Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi.
 <em>
 Proceedings of the Seventh International Colloquim
 on Implementation of Constraint and Logic Programming Systems,
@@ -2008,7 +2026,7 @@ to Mercury, whose implementation is based on very different principles.
 <li>
 <strong>
 <a name="wangp-hons">
-Parallel Mercury
+Parallel Mercury.
 </a>
 </strong>
 <br>
@@ -2040,12 +2058,12 @@ efficiently than in the existing Mercury implementation.
 <li>
 <strong>
 <a name = "padl06solver">
-Adding constraint solving to Mercury
+Adding constraint solving to Mercury.
 </a>
 </strong>
 <br>
 Ralph Becket, Maria Garcia de la Banda, Kim Marriott, Zoltan Somogyi,
-Peter J. Stuckey and Mark Wallace,
+Peter J. Stuckey and Mark Wallace.
 <em>
 Proceedings of the Eighth International Symposium
 on Practical Aspects of Declarative languages,
@@ -2082,11 +2100,11 @@ on the efficiency of non-CLP predicates and functions.
 <strong>
 <a name = "padl06dd">
 Controlling search space materialization
-in a practical declarative debugger
+in a practical declarative debugger.
 </a>
 </strong>
 <br>
-Ian MacLarty and Zoltan Somogyi,
+Ian MacLarty and Zoltan Somogyi.
 <em>
 Proceedings of the Eighth International Symposium
 on Practical Aspects of Declarative languages,
@@ -2136,11 +2154,11 @@ even when used on quite long running programs.
 <li>
 <strong>
 <a name = "padl06tabling">
-Tabling in Mercury: design and implementation
+Tabling in Mercury: design and implementation.
 </a>
 </strong>
 <br>
-Zoltan Somogyi and Konstantinos Sagonas,
+Zoltan Somogyi and Konstantinos Sagonas.
 <em>
 Proceedings of the Eighth International Symposium
 on Practical Aspects of Declarative languages,
@@ -2184,11 +2202,11 @@ to implement tabling in Mercury.
 <li>
 <strong>
 <a name="maclarty-masters">
-Practical declarative debugging of Mercury programs
+Practical declarative debugging of Mercury programs.
 </a>
 </strong>
 <br>
-Ian MacLarty
+Ian MacLarty.
 <br>
 <em>
 Masters thesis,
@@ -2288,11 +2306,11 @@ bugs found in real programs with the aid of the debugger.
 <li>
 <strong>
 <a name="ciclops05">
-The implementation of minimal model tabling in Mercury (extended abstract)
+The implementation of minimal model tabling in Mercury (extended abstract).
 </a>
 </strong>
 <br>
-Zoltan Somogyi and Konstantinos Sagonas,
+Zoltan Somogyi and Konstantinos Sagonas.
 <em>
 Colloquium on Implementation of Constraint and Logic Programming Systems,
 </em>
@@ -2335,12 +2353,12 @@ to implement minimal model tabling in Mercury.
 <li>
 <strong>
 <a name="dd3">
-Divide-and-query and subterm dependency tracking in the Mercury declarative
-debugger
+Divide-and-query and subterm dependency tracking
+in the Mercury declarative debugger.
 </a>
 </strong>
 <br>
-Ian MacLarty, Zoltan Somogyi and Mark Brown
+Ian MacLarty, Zoltan Somogyi and Mark Brown.
 <br>
 <em>
 Sixth International Symposium on
@@ -2453,11 +2471,11 @@ are all simple as well as efficient.
 <li>
 <strong>
 <a name="mazur-thesis">
-Compile-time garbage collection for the declarative language Mercury
+Compile-time garbage collection for the declarative language Mercury.
 </a>
 </strong>
 <br>
-Nancy Mazur
+Nancy Mazur.
 <br>
 <em>
 Ph.D. thesis,
@@ -2534,7 +2552,7 @@ that has ever been built for a programming language.
 <li>
 <strong>
 <a name="dmo-thesis">
-Precise and expressive mode systems for typed logic programming languages
+Precise and expressive mode systems for typed logic programming languages.
 </a>
 </strong>
 <br>
@@ -2573,15 +2591,12 @@ program at compile time.
 We therefore believe it is an essential component of any industrial strength
 logic programming system.
 </p>
-
 <p>
 Our aim is to develop a strong and prescriptive mode system that is both
 as precise and expressive as possible.
 We believe this requires a strongly typed and purely declarative
 language and so we focus on the language Mercury.
 </p>
-
-
 <p>
 The first contribution of our work is to give a detailed description
 of Mercury's existing mode system, which is based on abstract interpretation.
@@ -2590,13 +2605,11 @@ this is the first time it has been described in this level of detail.
 This is also the first time the relationship of the mode system to
 the formalism of abstract interpretation has been made clear.
 </p>
-
 <p>
 Following that, we look at ways of extending the mode system to provide further
 precision and expressiveness, and to overcome some of the limitations of the
 current system.
 </p>
-
 <p>
 The first of these extensions is to support a form of constrained parametric
 polymorphism for modes.
@@ -2604,7 +2617,6 @@ This is analogous to constrained parametric polymorphic type systems such as
 type classes, and adds a somewhat similar degree of expressiveness to the mode
 system.
 </p>
-
 <p>
 Next we look at a method for increasing the precision of the mode analysis by
 keeping track of aliases between variables.
@@ -2612,7 +2624,6 @@ The increased precision we gain from this allows an increase in expressiveness
 by allowing the use of partially instantiated data structures and more
 complex uniqueness annotations on modes.
 </p>
-
 <p>
 The final area we look at is an alternative approach to mode analysis using
 Boolean constraints.
@@ -2622,7 +2633,6 @@ more clearly separates the various tasks required for mode analysis.
 We believe that this constraint-based system provides a good platform for
 further extension of the Mercury mode system.
 </p>
-
 <p>
 The work we describe has all been
 implemented in the Melbourne Mercury compiler,
@@ -2633,7 +2643,7 @@ official compiler release.
 <li>
 <strong>
 <a name = "aadebug03-paper">
-Idempotent I/O for safe time travel
+Idempotent I/O for safe time travel.
 </a>
 </strong>
 <br>
@@ -2676,7 +2686,7 @@ computations that do significant amounts of I/O.
 <li>
 <strong>
 <a name="juliensf-hons">
-Termination analysis for Mercury using convex constraints
+Termination analysis for Mercury using convex constraints.
 </a>
 </strong>
 <br>
@@ -2707,7 +2717,7 @@ interface.
 <li>
 <strong>
 <a name="conway-thesis">
-Towards parallel Mercury
+Towards parallel Mercury.
 </a>
 </strong>
 <br>
@@ -2773,7 +2783,7 @@ the Melbourne Mercury compiler.
 <li>
 <strong>
 <a name="dgj-thesis-final">
-Expressive type systems for logic programming languages
+Expressive type systems for logic programming languages.
 </a>
 </strong>
 <br>
@@ -2844,11 +2854,11 @@ and to use existing CORBA components from within Mercury programs.
 <li>
 <strong>
 <a name="p33-overton">
-Constraint-based mode analysis of Mercury
+Constraint-based mode analysis of Mercury.
 </a>
 </strong>
 <br>
-David Overton, Zoltan Somogyi and Peter Stuckey
+David Overton, Zoltan Somogyi and Peter Stuckey.
 <br>
 <em>
 Proceedings of the Fourth International Conference on
@@ -2884,11 +2894,11 @@ system.
 <li>
 <strong>
 <a name="p81-somogyi">
-Using the heap to eliminate stack accesses
+Using the heap to eliminate stack accesses.
 </a>
 </strong>
 <br>
-Zoltan Somogyi and Peter Stuckey
+Zoltan Somogyi and Peter Stuckey.
 <br>
 <em>
 Proceedings of the Fourth International Conference on
@@ -2922,11 +2932,11 @@ would require the compiler to perform mutability analysis.
 <li>
 <strong>
 <a name="high_level_gc">
-Accurate garbage collection in an uncooperative environment
+Accurate garbage collection in an uncooperative environment.
 </a>
 </strong>
 <br>
-Fergus Henderson
+Fergus Henderson.
 <br>
 <em>
 Proceedings of the 2002 International Symposium on Memory Management,
@@ -2952,11 +2962,11 @@ applications.
 <li>
 <strong>
 <a name="mercury_to_clr">
-Compiling Mercury to the .NET Common Language Runtime
+Compiling Mercury to the .NET Common Language Runtime.
 </a>
 </strong>
 <br>
-Tyson Dowd, Fergus Henderson, and Peter Ross
+Tyson Dowd, Fergus Henderson, and Peter Ross.
 <br>
 <em>
 BABEL'01 First International Workshop on
@@ -2984,11 +2994,11 @@ regarding separate compilation, verifiability, tail calls, and efficiency.
 <li>
 <strong>
 <a name="hlc_cc">
-Compiling Mercury to high-level C code
+Compiling Mercury to high-level C code.
 </a>
 </strong>
 <br>
-Fergus Henderson and Zoltan Somogyi
+Fergus Henderson and Zoltan Somogyi.
 <br>
 <em>
 Proceedings of the 2002 International Conference on Compiler Construction
@@ -3028,11 +3038,11 @@ is based is
 <strong>
 <a name="mu_01_24">
 Deep profiling:
-engineering a profiler for a declarative programming language
+engineering a profiler for a declarative programming language.
 </a>
 </strong>
 <br>
-Thomas C. Conway and Zoltan Somogyi
+Thomas C. Conway and Zoltan Somogyi.
 <br>
 <em>
 Technical Report 2001/24,
@@ -3072,11 +3082,11 @@ including imperative, object-oriented, and functional languages.
 <strong>
 <a name="iclp2001_ctgc">
 Practical aspects for a working compile time garbage collection system
-for Mercury
+for Mercury.
 </a>
 </strong>
 <br>
-Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe
+Nancy Mazur, Peter Ross, Gerda Janssens and Maurice Bruynooghe.
 <br>
 <em>
 Proceedings of ICLP 2001 - Seventeenth International Conference on
@@ -3117,12 +3127,12 @@ in execution time.
 <li>
 <strong>
 <a name="bta_higher_order">
-Binding-time analysis by constraint solving: a modular and
-higher-order approach for Mercury
+Binding-time analysis by constraint solving:
+a modular and higher-order approach for Mercury.
 </a>
 </strong>
 <br>
-Wim Vanhoof
+Wim Vanhoof.
 <br>
 <em>
 Proceedings of the Seventh International Conference on Logic for
@@ -3148,11 +3158,11 @@ be performed on a modular basis.
 <li>
 <strong>
 <a name="memory_reuse_analysis">
-A module based analysis for memory reuse in Mercury
+A module based analysis for memory reuse in Mercury.
 </a>
 </strong>
 <br>
-Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
+Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
 <br>
 <em>
 Proceedings of the First International Conference on Computational Logic
@@ -3179,11 +3189,11 @@ results obtained with a first prototype of the module based analysis.
 <li>
 <strong>
 <a name="tail_lopstr_lncs">
-Making Mercury programs tail recursive
+Making Mercury programs tail recursive.
 </a>
 </strong>
 <br>
-Peter Ross, David Overton and Zoltan Somogyi
+Peter Ross, David Overton and Zoltan Somogyi.
 <br>
 <em>
 Proceedings of the Ninth International Workshop on Logic-based Program
@@ -3215,11 +3225,11 @@ is available as a <a href = "papers/tail_data.tar.gz">5 Kb tar file</a>.
 <li>
 <strong>
 <a name="update">
-State update transformation
+State update transformation.
 </a>
 </strong>
 <br>
-Peter Ross and Zoltan Somogyi
+Peter Ross and Zoltan Somogyi.
 <br>
 <em>
 </em>
@@ -3237,11 +3247,11 @@ and report on its implementation in the Mercury compiler.
 <li>
 <strong>
 <a name="purity">
-Using impurity to create declarative interfaces in Mercury
+Using impurity to create declarative interfaces in Mercury.
 </a>
 </strong>
 <br>
-Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi
+Tyson Dowd, Peter Schachte, Fergus Henderson and Zoltan Somogyi.
 <br>
 <em>Technical Report 2000/17</em>,
 Department of Computer Science, University of Melbourne,
@@ -3273,11 +3283,11 @@ declarative interfaces to libraries.
 <li>
 <strong>
 <a name="liveness">
-Towards memory reuse for Mercury
+Towards memory reuse for Mercury.
 </a>
 </strong>
 <br>
-Nancy Mazur, Gerda Janssens and Maurice Bruynooghe
+Nancy Mazur, Gerda Janssens and Maurice Bruynooghe.
 <br>
 <em>
 Proceedings of the International Workshop on Implementation of
@@ -3291,12 +3301,12 @@ While Mercury allows destructive input/unique output modes which direct
 the compiler to reuse memory, use of these modes can be cumbersome for
 the programmer.  In most situations, it would be nicer if the programmer
 didn't have to worry about the details of memory management.
-
+<p>
 The paper briefly reports on some experiments with a prototype analyser
 which aims at detecting memory available for reuse. The prototype is
 based on the live-structure analysis developed by us for logic programs
 extended with declarations.
-
+<p>
 Yet the major contribution of this paper consists of the development of
 the principles of a module based analysis which are essential for the
 analysis of large Mercury programs with code distributed over many
@@ -3306,11 +3316,11 @@ modules.
 <li>
 <strong>
 <a name="bta">
-Binding-time analysis for Mercury
+Binding-time analysis for Mercury.
 </a>
 </strong>
 <br>
-Wim Vanhoof and Maurice Bruynooghe
+Wim Vanhoof and Maurice Bruynooghe.
 <br>
 <em>
 Proceedings of the Sixteenth International Conference on Logic Programming
@@ -3333,7 +3343,7 @@ BTA dealing with partially static binding-times.
 <li>
 <strong>
 <a name="debugger_wlpe99">
-The implementation technology of the Mercury debugger
+The implementation technology of the Mercury debugger.
 </a>
 </strong>
 <br>
@@ -3346,7 +3356,6 @@ Las Cruces, New Mexico, November 1999, pages 35-49.
 <br>
 <a href="papers/debugger_wlpe99.ps.gz">Available here (66K)</a>.
 <p>
-
 Every programming language needs a debugger.
 Mercury now has three debuggers:
 a simple procedural debugger
@@ -3364,7 +3373,7 @@ with the debugging of large programs working with large data structures.
 <li>
 <strong>
 <a name="tail_lopstr">
-Making Mercury programs tail recursive (extended abstract)
+Making Mercury programs tail recursive (extended abstract).
 </a>
 </strong>
 <br>
@@ -3385,7 +3394,7 @@ This paper has been superceded by the LNCS version.
 <li>
 <strong>
 <a name="rtti_ppdp">
-Run time type information in Mercury
+Run time type information in Mercury.
 </a>
 </strong>
 <br>
@@ -3404,7 +3413,6 @@ Pages 224-243,
 <br>
 <a href="papers/rtti_ppdp.ps.gz">Available here (75K)</a>.
 <p>
-
 The logic/functional language Mercury
 uses a strong, mostly static type system
 based on polymorphic many-sorted logic.
@@ -3430,7 +3438,7 @@ is available as a <a href = "papers/rtti_data.tar.gz">70 Kb tar file</a>
 <li>
 <strong>
 <a name="stayl_hons">
-Optimization of Mercury programs
+Optimization of Mercury programs.
 </a>
 </strong>
 <br>
@@ -3445,7 +3453,6 @@ Department of Computer Science, University of Melbourne, November 1998.
 Available here (120K).
 </a>
 <p>
-
 This paper describes the implementation of several of the high-level
 optimization passes of the Mercury compiler, including deforestation,
 type specialization, constraint propagation and structure reuse.
@@ -3454,7 +3461,7 @@ type specialization, constraint propagation and structure reuse.
 <li>
 <strong>
 <a name="mcorba_padl99">
-MCORBA: A CORBA Binding for Mercury
+MCORBA: A CORBA Binding for Mercury.
 </a>
 </strong>
 <br>
@@ -3474,7 +3481,6 @@ Pages 211-227,
 <br>
 <a href="papers/mcorba_padl99.ps.gz">Available here (65K)</a>.
 <p>
-
 MCORBA is a binding to the CORBA distributed object framework
 for the purely declarative logic/functional language Mercury.
 The binding preserves the referential transparency of the language,
@@ -3498,7 +3504,7 @@ but whose representation is unknown.
 <li>
 <strong>
 <a name="mu_98_13">
-Type classes in Mercury
+Type classes in Mercury.
 </a>
 </strong>
 <br>
@@ -3514,7 +3520,6 @@ Melbourne, Australia, September 1998, 22 pages.
 Available here (82K).
 </a>
 <p>
-
 In this paper, we explain how we have extended Mercury's type system
 to include support for type classes.
 We give a formal semantics for this extension to our type system,
@@ -3528,7 +3533,7 @@ and describe how our implementation works.
 <li>
 <strong>
 <a name="sas97">
-Termination analysis for Mercury
+Termination analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -3545,7 +3550,6 @@ Department of Computer Science, University of Melbourne,
 Melbourne, Australia, July 1997, 25 pages.
 it is <a href = "papers/mu_97_09.ps.gz">available here (99K)</a>.
 <p>
-
 This paper presents the algorithms of the Mercury termination analyser,
 discusses how real-world aspects of the language
 such as modules, higher-order features, foreign language code,
@@ -3560,7 +3564,7 @@ as a <a href = "papers/termination_data.tar.gz">5.2 Mb tar file</a>.
 <li>
 <strong>
 <a name="jicslpw">
-Status of the Mercury system
+Status of the Mercury system.
 </a>
 </strong>
 <br>
@@ -3580,7 +3584,7 @@ Bonn, Germany, September 1996, pages 207-218.
 <strong>
 <a name="jlp">
 The execution algorithm of Mercury:
-an efficient purely declarative logic programming language
+an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -3596,7 +3600,6 @@ volume 29, number 1-3, October-December 1996, pages 17-64.
 Elsevier owns the copyright of this paper;
 it is made available here by their permission.
 <p>
-
 This paper contains a brief overview of the Mercury language, and a
 reasonably detailed overview of the implementation technology used in
 the Mercury compiler.  It describes the abstract machine that the
@@ -3611,7 +3614,7 @@ is available on our <a href = "./benchmarks.html">benchmarking page</a>.
 <li>
 <strong>
 <a name="acsc96">
-Determinism analysis in the Mercury compiler
+Determinism analysis in the Mercury compiler.
 </a>
 </strong>
 <br>
@@ -3626,7 +3629,6 @@ Melbourne, Australia, January 1996, pages 337-346.
 A longer version of the paper is
 <a href = "papers/detism.ps.gz">available here (76K)</a>.
 <p>
-
 This paper discusses Mercury's determinism system in detail, including
 the algorithms for switch detection, deep indexing, determinism
 inference, and determinism checking.
@@ -3635,7 +3637,7 @@ inference, and determinism checking.
 <li>
 <strong>
 <a name="code_gen_mit">
-Code generation for Mercury
+Code generation for Mercury.
 </a>
 </strong>
 <br>
@@ -3648,7 +3650,6 @@ Portland, Oregon, December 1995, pages 242-256.
 <br>
 <a href = "papers/code_gen_mit.ps.gz">Available here (68K)</a>.
 <p>
-
 This paper describes the structure of the Mercury compiler,
 its calling conventions,
 and the algorithms it uses in generating code.
@@ -3660,7 +3661,7 @@ and a novel way of handling nested disjunctions.
 <strong>
 <a name="mercury_to_c">
 Compiling logic programs to C
-using GNU C as a portable assembler
+using GNU C as a portable assembler.
 </a>
 </strong>
 <br>
@@ -3674,7 +3675,6 @@ Portland, Oregon, December 1995.
 <br>
 <a href = "papers/mercury_to_c.ps.gz">Available here (65K)</a>.
 <p>
-
 This paper discusses the merits of using C, and in particular GNU C,
 as an intermediate target language for the compilation of logic programs,
 and describes the approach we have taken in the implementation of Mercury.
@@ -3683,7 +3683,7 @@ and describes the approach we have taken in the implementation of Mercury.
 <li>
 <strong>
 <a name="acsc95">
-Mercury: an efficient purely declarative logic programming language
+Mercury: an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -3696,7 +3696,6 @@ Glenelg, Australia, February 1995, pages 499-512.
 <br>
 <a href = "papers/acsc95.ps.gz">Available here (85K)</a>.
 <p>
-
 An overview paper.
 <p>
 
@@ -3704,7 +3703,7 @@ An overview paper.
 <strong>
 <a name="ilps94w">
 The implementation of Mercury:
-an efficient purely declarative logic programming language
+an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -3718,7 +3717,6 @@ Syracuse, New York, November 1994.
 <br>
 <a href = "papers/ilps94w.ps.gz">Available here (96K)</a>.
 <p>
-
 The first paper on Mercury. It is superseded by the paper
 in the Journal of Logic Programming.
 <p>
@@ -3726,7 +3724,7 @@ in the Journal of Logic Programming.
 <li>
 <strong>
 <a name="conway_hons">
-Code generation for Mercury
+Code generation for Mercury.
 </a>
 </strong>
 <br>
@@ -3739,12 +3737,10 @@ Department of Computer Science, University of Melbourne, November 1994.
 <br>
 <a href = "papers/conway_hons.ps.gz">Available here (188K)</a>.
 <p>
-
 This is the first paper on the code generator.
 Warning: several aspects of the code generator have changed
 since this paper was written.
 Some of these are documented in the version in the ILPS 95 proceedings.
-
 </ul>
 
 <hr>
@@ -3761,11 +3757,11 @@ language.
 <ul class="nonindentlist">
 <li>
 <strong>
-Ontology Driven Software Engineering for Real Life Applications
+Ontology driven software engineering for real life applications.
 </strong>
 <br>
 Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
-Nikolay Pelov
+Nikolay Pelov.
 <br>
 <em>
 3rd International Workshop on Semantic Web Enabled
@@ -3799,7 +3795,7 @@ analysis.
 <ul class="nonindentlist">
 <li>
 <strong>
-Termination analysis for logic programs
+Termination analysis for logic programs.
 </strong>
 <br>
 Chris Speirs.
@@ -3843,17 +3839,17 @@ Available here (59K).
 
 </ul>
 <p>
-<a name="iclp87">
 The mode system and the uniqueness system of Mercury
 are based on the following papers:
-</a>
 <p>
 
 <ul class="nonindentlist">
 
 <li>
 <strong>
-A system of precise modes for logic programs
+<a name="iclp87">
+A system of precise modes for logic programs.
+</a>
 </strong>
 <br>
 Zoltan Somogyi.
@@ -3865,6 +3861,28 @@ Melbourne, Australia, May 1987, pages 769-787.
 <br>
 <a href = "papers/iclp87.ps.gz">
 Available here (40K).
+</a>
+<p>
+
+<li>
+<strong>
+<a name="zs_phd_thesis">
+A parallel logic programming system based on strong and precise modes.
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<br>
+<em>
+Ph.D. Thesis.
+</em>
+Department of Computer Science,
+The University of Melbourne.
+January 1989, 148 pages.
+<p>
+<br>
+<a href = "papers/zs_thesis.ps.gz">
+Available here (348K).
 </a>
 <p>
 
@@ -3906,7 +3924,7 @@ section in Mercury Language Reference Manual listed under
 
 <li>
 <strong>
-Database transactions in a purely declarative logic programming language
+Database transactions in a purely declarative logic programming language.
 </strong>
 <br>
 David B. Kemp, Thomas Conway, Evan Harris, Fergus Henderson,
@@ -3924,18 +3942,21 @@ Available here (58K)
 with cover page.
 </a>
 </ul>
+
 <p>
 <a name="tr90-2">
 The following paper is also relevant to the Aditi interface mentioned above.
 It describes a source-to-source transformation implemented in the
 Mercury compiler.
 </a>
+
 </p>
 <ul class="nonindentlist">
+
 <li>
 <strong>
 Right-, left-, and multi-linear rule transformations that maintain
-context information
+context information.
 </strong>
 <br>
 David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
@@ -3966,11 +3987,11 @@ It is corrected in David Kemp's thesis.
 <li>
 <strong>
 <a name="mfug_talk">
-The Mercury Programming Language
+The Mercury programming language.
 </a>
 </strong>
 <br>
-Paul Bone, based on slides by Zoltan Somogyi
+Paul Bone, based on slides by Zoltan Somogyi.
 <br>
 <em>
 <a href="http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/">
@@ -3990,11 +4011,11 @@ The second half of the talk used slides from Paul's
 <li>
 <strong>
 <a name="pbone_completion">
-Automatic Parallelism for Mercury
+Automatic parallelism for Mercury.
 </a>
 </strong>
 <br/>
-Paul Bone
+Paul Bone.
 <em>
 Ph.D. Completion Seminar
 </em>
@@ -4011,11 +4032,11 @@ The corresponding thesis is available
 <li>
 <strong>
 <a name="loop_control_talk">
-Controlling Loops in Parallel Mercury Code.
+Controlling loops in parallel Mercury code.
 </a>
 </strong>
 <br/>
-Paul Bone, Zoltan Somogyi and Peter Schachte
+Paul Bone, Zoltan Somogyi and Peter Schachte.
 <em>
 Declarative Aspects and Applications of Multicore Programming
 </em>
@@ -4034,7 +4055,7 @@ Profiling parallel Mercury programs with ThreadScope.
 </a>
 </strong>
 <br/>
-Paul Bone and Zoltan Somogyi
+Paul Bone and Zoltan Somogyi.
 <em>
 21st Workshop on Logic-based methods in Programming Environments.
 </em>
@@ -4085,11 +4106,11 @@ Available here (106K)
 <li>
 <strong>
 <a name="luv_2011">
-The Mercury project
+The Mercury project.
 </a>
 </strong>
 <br/>
-Zoltan Somogyi
+Zoltan Somogyi.
 <em>
 A presentation for the <a href="http://luv.asn.au">Linux Users of Victoria</a>
 </em>
@@ -4103,11 +4124,11 @@ Available here (228K)
 <li>
 <strong>
 <a name="google_2010_autopar">
-Automatic Parallelisation for Mercury
+Automatic parallelisation for Mercury.
 </a>
 </strong>
 <br/>
-Paul Bone
+Paul Bone.
 <em>
 A Tech Talk at Google Sydney and a seminar at The University of New South Wales
 </em>
@@ -4121,11 +4142,11 @@ Available here (1.1M).
 <li>
 <strong>
 <a name="linuxconf_2010_autopar">
-Automatic Parallelisation in Mercury
+Automatic parallelisation in Mercury.
 </a>
 </strong>
 <br/>
-Paul Bone
+Paul Bone.
 <em>
 Multicore Mini conference, Linuxconf Australia,
 </em>
@@ -4143,7 +4164,7 @@ Towards automatic parallelization of Mercury programs.
 </a>
 </strong>
 <br>
-Zoltan Somogyi
+Zoltan Somogyi.
 <em>
 Catholic University of Leuven,
 Belgium,
@@ -4157,11 +4178,11 @@ Available here (168K).
 <li>
 <strong>
 <a name = "fpu_rules_2009">
-Writing Business Rules Engines in Mercury.
+Writing business rules engines in Mercury.
 </a>
 </strong>
 <br>
-Ian MacLarty
+Ian MacLarty.
 <em>
 Functional Programming Union, University of Melbourne,
 </em>
@@ -4191,11 +4212,11 @@ Available here (140K).
 <li>
 <strong>
 <a name = "mc_owl_mercury_talk_14_08_2007">
-Ontology Driven Software Development with Mercury.
+Ontology driven software development with Mercury.
 </a>
 </strong>
 <br>
-Ian MacLarty, Peter Ross
+Ian MacLarty, Peter Ross.
 <em>
 University of Melbourne.
 </em>
@@ -4208,7 +4229,7 @@ Available here (370K).
 <li>
 <strong>
 <a name = "g12_unclean">
-Unclean! Unclean! or Purity Issues in Declarative Constraint Logic Programming.
+Unclean! Unclean! or purity issues in declarative constraint logic programming.
 </a>
 </strong>
 <br>
@@ -4244,7 +4265,7 @@ Available here (95K).
 <li>
 <strong>
 <a name = "aadebug03-talk">
-Idempotent I/O for safe time travel
+Idempotent I/O for safe time travel.
 </a>
 </strong>
 <br>
@@ -4262,7 +4283,7 @@ Available here (20K).
 <li>
 <strong>
 <a name = "ppdp02mode-talk">
-Constraint-based mode analysis of Mercury
+Constraint-based mode analysis of Mercury.
 </a>
 </strong>
 <br>
@@ -4280,7 +4301,7 @@ Available here (117K).
 <li>
 <strong>
 <a name = "ppdp02stack-talk">
-Using the heap to eliminate stack accesses
+Using the heap to eliminate stack accesses.
 </a>
 </strong>
 <br>
@@ -4298,7 +4319,7 @@ Available here (26K).
 <li>
 <strong>
 <a name="sas_talk">
-Termination analysis for Mercury
+Termination analysis for Mercury.
 </a>
 </strong>
 <br>
@@ -4316,7 +4337,7 @@ Available here (6K).
 <li>
 <strong>
 <a name="unif">
-Unification in Mercury
+Unification in Mercury.
 </a>
 </strong>
 <br>
@@ -4334,7 +4355,7 @@ Available here (12K).
 <li>
 <strong>
 <a name="jicslp_talk">
-The design and implementation of Mercury
+The design and implementation of Mercury.
 </a>
 </strong>
 <br>
@@ -4353,7 +4374,7 @@ Available here (18K).
 <li>
 <strong>
 <a name="jicslpw_talk">
-Status of the Mercury system
+Status of the Mercury system.
 </a>
 </strong>
 <br>
@@ -4374,7 +4395,7 @@ Available here (5K).
 <strong>
 <a name="acsc95_slides">
 Mercury:
-an efficient purely declarative logic programming language
+an efficient purely declarative logic programming language.
 </a>
 </strong>
 <br>
@@ -4394,7 +4415,7 @@ Available here (33K).
 <a name="257_1999">
 Lecture notes for the expanded Mercury segment of the subject
 433-257 Frontiers of Computer Science, given in 1999
-(whereas the segment in 1997 had four lectures, in 1999 it had six)
+(whereas the segment in 1997 had four lectures, in 1999 it had six).
 </a>
 </strong>
 <br>
@@ -4409,7 +4430,7 @@ Available here (40K).
 <strong>
 <a name="257">
 Lecture notes for the Mercury segment of the subject
-433-257 Frontiers of Computer Science, given in 1997
+433-257 Frontiers of Computer Science, given in 1997.
 </a>
 </strong>
 <br>
@@ -4424,7 +4445,7 @@ Available here (21K).
 <strong>
 <a name="247">
 Lecture notes for the Mercury segment of the subject
-433-247 Frontiers of Computer Science, given in 1995
+433-247 Frontiers of Computer Science, given in 1995.
 </a>
 </strong>
 <br>
@@ -4438,7 +4459,7 @@ Available here (21K).
 <li>
 <strong>
 <a name="dgj-talk">
-Type classes for logic programming languages, given in March 1998
+Type classes for logic programming languages, given in March 1998.
 </a>
 </strong>
 <br>
@@ -4452,7 +4473,7 @@ Available here (30K).
 <li>
 <strong>
 <a name="rtti_talk_98">
-Runtime type information in Mercury, given in March 1998
+Runtime type information in Mercury, given in March 1998.
 </a>
 </strong>
 <br>
