@@ -3879,7 +3879,6 @@ Ph.D. Thesis.
 Department of Computer Science,
 The University of Melbourne.
 January 1989, 148 pages.
-<p>
 <br>
 <a href = "papers/zs_thesis.ps.gz">
 Available here (348K).
