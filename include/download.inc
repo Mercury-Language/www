@@ -9,6 +9,11 @@ project's hosting,
 we hope to improve this in the future.
 </p>
 
+<p>
+Debian packages are also available, instructions for using them are
+<a href="http://dl.mercurylang.org/deb/">here</a>.
+</p>
+
 <H3> License </H3>
 
 <p>
