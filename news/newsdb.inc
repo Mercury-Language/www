@@ -25,6 +25,13 @@
 
 $newsdb = array(
 
+"13th June 2017" => array(
+"Unsigned Integers",
+"We have added a new builtin primitive type: uint.
+This type provides unsigned integers of the same size as Mercury's int type.
+The new type is available in the latest release of the day.
+"),
+
 "7th April 2015" => array(
 "New Presentations",
 "Paul Bone introduced Mercury in a presentation to the Melbourne Functional
