@@ -14,6 +14,27 @@ git clone https://github.com/Mercury-Language/mercury.git
 </code>
 </p>
 
+<h3>IDE and editor support</h3>
+
+<ul>
+<li>
+    Support for Vim is provided by the Mercury developers.
+    See the <code>vim</code> directory of any release package.
+</li>
+<li>
+    <a href="https://github.com/flycheck/flycheck-mercury">Flycheck library</a>
+    for Emacs
+</li>
+<li>
+    A <a href="http://kai.mercury.mind-era.com/">plugin</a> is available for
+    the Eclipse IDE.
+</li>
+<li>
+    A <a href="http://opcode.cc/projects_mercury_ide.en.html">plugin</a>
+    is available for the NetBeans IDE.
+</li>
+</ul>
+
 <h3>Mailing lists</h3>
 
 <p>
