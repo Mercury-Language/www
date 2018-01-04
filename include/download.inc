@@ -4,9 +4,6 @@
 <p>
 Source downloads are available from
 <a href="http://dl.mercurylang.org/index.html">our downloads page</a>.
-This page is temporary as we are in the process of reorganising the
-project's hosting,
-we hope to improve this in the future.
 </p>
 
 <p>
@@ -17,8 +14,9 @@ Debian packages are also available, instructions for using them are
 <H3> License </H3>
 
 <p>
-The Mercury implementation is free software.
-It is Copyright (C) 1993-2013 The University of Melbourne.
+The Mercury implementation is free software.<br>
+Copyright &copy; 1993&ndash;2012 The University of Melbourne.<br>
+Copyright &copy; 2013&ndash;2018 The Mercury team.
 </p>
 
 <p>
