@@ -23,15 +23,19 @@ git clone https://github.com/Mercury-Language/mercury.git
 </li>
 <li>
     <a href="https://github.com/flycheck/flycheck-mercury">Flycheck library</a>
-    for Emacs
+    for Emacs.
 </li>
 <li>
     A <a href="http://kai.mercury.mind-era.com/">plugin</a> is available for
-    the Eclipse IDE.
+    the <a href="https://www.eclipse.org/ide/">Eclipse</a> IDE.
 </li>
 <li>
     A <a href="http://opcode.cc/projects_mercury_ide.en.html">plugin</a>
-    is available for the NetBeans IDE.
+    is available for the <a href="https://netbeans.org">NetBeans</a> IDE.
+</li>
+<li>
+    Mercury <a href="https://atom.io/packages/language-mercury">package</a>
+    for the <a href="https://atom.io">Atom</a> text editor.
 </li>
 </ul>
 
