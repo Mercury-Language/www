@@ -25,6 +25,11 @@
 
 $newsdb = array(
 
+"9th January 2018" => array(
+"musl libc support",
+"Mercury now works with systems that use the <a href=\"https://www.musl-libc.org\">musl</a>
+C library."),
+
 "13th June 2017" => array(
 "Unsigned Integers",
 "We have added a new builtin primitive type: uint.
