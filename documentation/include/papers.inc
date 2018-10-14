@@ -905,6 +905,23 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
+<a href="papers.html#subword_talk">
+Packing sub-word-size arguments.
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<br>
+<em>
+YesLogic,
+</em>
+</a>
+</em>
+Melbourne, Australia, October 2018.
+<p>
+
+<li>
+<strong>
 <a href="papers.html#mfug_talk">
 The Mercury Programming Language.
 </a>
@@ -3982,6 +3999,27 @@ It is corrected in David Kemp's thesis.
 <h2><a name="presentations">Presentations on Mercury</a></h2>
 
 <ul class="nonindentlist">
+
+<li>
+<strong>
+<a href="subword_talk">
+Packing sub-word-size arguments.
+</a>
+</strong>
+<br>
+Zoltan Somogyi.
+<br>
+<em>
+YesLogic,
+</em>
+</a>
+</em>
+Melbourne, Australia, October 2018.
+<p>
+<br>
+<a href="papers/subword_talk_2018_10_12.pdf">
+Available here (264K).
+<p>
 
 <li>
 <strong>
