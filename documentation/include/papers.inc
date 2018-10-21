@@ -4002,7 +4002,7 @@ It is corrected in David Kemp's thesis.
 
 <li>
 <strong>
-<a href="subword_talk">
+<a name="subword_talk">
 Packing sub-word-size arguments.
 </a>
 </strong>
@@ -4015,7 +4015,6 @@ YesLogic,
 </a>
 </em>
 Melbourne, Australia, October 2018.
-<p>
 <br>
 <a href="papers/subword_talk_2018_10_12.pdf">
 Available here (264K).
