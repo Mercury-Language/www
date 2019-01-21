@@ -3,7 +3,6 @@
 People who are currently working on the Mercury project:
 </p>
 <ul class="nonindentlist">
-<li> Paul Bone, paul at mercurylang.org, PhD, (YesLogic)</li>
 <li> Mark Brown, (YesLogic)</li>
 <li> Julien Fischer, juliensf at mercurylang.org, (Opturion)</li>
 <li> Zoltan Somogyi, zs at mercurylang.org, PhD</li>
@@ -21,6 +20,7 @@ some of whom are still informally associated with the project:
 <li> Ralph Becket, research fellow</li>
 <li> Tibor Benyi</li>
 <li> Ondrej Bojar</li>
+<li> Paul Bone, PhD</li>
 <li> Renaud Bournonville</li>
 <li> Andrew Bromage, MSc student</li>
 <li> Tibor Benyi, honours student</li>
@@ -50,12 +50,12 @@ some of whom are still informally associated with the project:
 <li> David Jeffery, PhD student</li>
 research assistant (Verimag in Grenoble, France)</li>
 <li> Darko Jankovic, summer student</li>
-<li> Robert Jeschofnik, directed studies student</li>
 </ul>
 </div>
 
 <div style="float: left; width: 360px;margin-top: -10px;">
 <ul class="nonindentlist">
+<li> Robert Jeschofnik, directed studies student</li>
 <li> Charles Kemp, summer student</li>
 <li> Jane Langley, summer student</li>
 <li> Ian MacLarty, masters student</li>
