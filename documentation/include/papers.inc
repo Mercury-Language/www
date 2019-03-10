@@ -870,7 +870,7 @@ Strong modes can change the world!
 </strong>
 Fergus Henderson.
 <br>
-<em>Honours Report</em>, Melbourne, 1992.
+<em>Honours Report</em>, Melbourne, 1993.
 <p>
 
 <li>
@@ -3914,7 +3914,7 @@ Fergus Henderson.
 <em>
 Honours Report.
 </em>
-Department of Computer Science, University of Melbourne, November 1992.
+Department of Computer Science, University of Melbourne, November 1993.
 <br>
 <a href = "papers/fjh_hons.ps.gz">Available here (114K).
 </a>
