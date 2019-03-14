@@ -125,7 +125,6 @@ To post to one of these lists, send an e-mail to one of the following addresses:
 note that there will be some delay while your post is reviewed.
 </li>
 </ul>
-</ul>
 
 <h4>Search the Archives</h4>
 
