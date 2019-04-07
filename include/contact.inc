@@ -161,16 +161,6 @@ Connect to <code>irc.freenode.net</code> and join the <code>#mercury</code>
 channel.
 </p>
 
-<h4>Google+</h4>
-
-<p>
-There is a
-<a href="https://plus.google.com/communities/108576397306370583348">
-Mercury community
-</a>
-on Google+.
-</p>
-
 <h4>Reddit</h4>
 
 <p>
