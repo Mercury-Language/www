@@ -22,7 +22,7 @@ ga('send', 'pageview');
 <div class="headercontainer">
 <a class="logo" href="<?php echo $root?>/index.html"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
 <div class="headersearchbar">
-<form class="searchbar" method="get" action="http://www.google.com/search">
+<form class="searchbar" method="get" action="https://www.google.com/search">
 <table border="0" cellpadding="0">
 <tr>
 <td>

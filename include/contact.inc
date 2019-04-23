@@ -132,7 +132,7 @@ note that there will be some delay while your post is reviewed.
 Please use the search bar below to search the archives:
 </p>
 
-<form class="searchbar" method="get" action="http://www.google.com/search">
+<form class="searchbar" method="get" action="https://www.google.com/search">
   <input class="textbox" type="text"  name="q" size="40" maxlength="255" value="" />
   <input class="submit" type="submit" value="Search" />
   <input type="hidden" name="sitesearch"
