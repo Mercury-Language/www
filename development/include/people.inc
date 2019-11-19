@@ -47,8 +47,8 @@ some of whom are still informally associated with the project:
 <li> Robert Hutton, summer student</li>
 <li> Paul Incani, summer student</li>
 <li> Erwan Jahier, jahier at imag.fr,
-<li> David Jeffery, PhD student</li>
 research assistant (Verimag in Grenoble, France)</li>
+<li> David Jeffery, PhD student</li>
 <li> Darko Jankovic, summer student</li>
 </ul>
 </div>
@@ -105,4 +105,3 @@ The following organisations have contributed to Mercury.
 <li><a href="http://www.yeslogic.com">YesLogic<a></li>
 </ul>
 </div>
-
