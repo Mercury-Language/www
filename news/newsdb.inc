@@ -25,6 +25,12 @@
 
 $newsdb = array(
 
+"10th January 2020" => array(
+"20.01 beta release available",
+"Beta versions of the upcoming 20.01 release are available on the
+<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>.
+"),
+
 "9th January 2018" => array(
 "musl libc support",
 "Mercury now works with systems that use the <a href=\"https://www.musl-libc.org\">musl</a>
