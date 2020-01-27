@@ -25,10 +25,16 @@
 
 $newsdb = array(
 
+"28th January 2020" => array(
+"Mercury 20.01 released",
+"Release Information is available
+<a href=\"https://dl.mercurylang.org/release-20.01/release-notes-20.01.html\">here</a>.
+"),
+
 "10th January 2020" => array(
 "20.01 beta release available",
 "Beta versions of the upcoming 20.01 release are available on the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>.
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>.
 "),
 
 "9th January 2018" => array(
@@ -55,57 +61,57 @@ available"),
 "8th September 2014" => array(
 "Mercury 14.01.1 released",
 "Release Information is available
-<a href=\"http://dl.mercurylang.org/release/release-notes-14.01.1.txt\">here</a>."
+<a href=\"https://dl.mercurylang.org/release-14.01/release-notes-14.01.1.txt\">here</a>."
 ),
 
 "19th February 2014" => array(
 "Windows binary packages for Mercury 14.01 available",
 "Windows binary packages for Mercury 14.01 using either MinGW GCC or
 Visual Studio 2013 (32-bit only) are now available on the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>."
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>."
 ),
 
 "10th February 2014" => array(
 "Mercury 14.01 released",
 "Release information is available
-<a href=\"http://dl.mercurylang.org/release/release-notes-14.01.txt\">here</a>."
+<a href=\"https://dl.mercurylang.org/release-14.01/release-notes-14.01.txt\">here</a>."
 ),
 
 "3rd January 2014" => array(
 "14.01 beta release available",
 "Beta versions of the upcoming 14.01 release are available on the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>.
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>.
 "),
 
 "3rd December 2013" => array(
 "Mercury 13.05.2 released",
 "Release Information is available
-<a href=\"http://dl.mercurylang.org/release/release-notes-13.05.2.txt\">here</a>."
+<a href=\"https://dl.mercurylang.org/release/release-notes-13.05.2.txt\">here</a>."
 ),
 
 "19th August 2013" => array(
 "Windows binary package for 13.05.1 available",
 "A Windows binary package for Mercury 13.05.1 is now available on the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>."
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>."
 ),
 
 "24th June 2013" => array(
 "13.05.2 beta release available",
 "Beta versions of the upcoming 13.05.2 release are available on the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>.
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>.
 "),
 
 "14th June 2013" => array(
 "Mercury 13.05.1 released", 
 "Release information is available
-<a href=\"http://dl.mercurylang.org/release/release-notes-13.05.1.txt\">here</a>."
+<a href=\"https://dl.mercurylang.org/release/release-notes-13.05.1.txt\">here</a>."
 ),
 
 "28th May 2013" => array(
 "13.05.1 beta release available",
 "We're preparing a point release that will fix some problems in 13.05.
 The first beta version of this point release is available on the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>."),
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>."),
 
 "19th May 2013" => array(
 "Paul Bone's Ph.D. dissertation is now available",
@@ -120,9 +126,9 @@ Mercury papers page</a>."),
 "Mercury 13.05 released",
 "We are pleased to announce the release of version 13.05 of the Mercury system.
 The new release can be downloaded from the
-<a href=\"http://dl.mercurylang.org/index.html\">downloads page</a>.
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>.
 For a list of changes since the last version see the
-<a href=\"http://dl.mercurylang.org/release/release-notes-13.05.txt\">
+<a href=\"https://dl.mercurylang.org/release/release-notes-13.05.txt\">
 release notes</a>."),
 
 "6th May 2013" => array(
@@ -139,12 +145,12 @@ again with 13.05.
 This means the new release will have more features and fixes than if we'd
 released version 12.08 now.
 The beta releases of Mercury 13.05 are available
-<a href=\"http://dl.mercurylang.org/index.html\">here</a>."),
+<a href=\"https://dl.mercurylang.org/index.html\">here</a>."),
 
 "17th April 2013" => array(
 "Downloads and documentation are available again",
 "We have put both the documentation and some
-<a href=\"http://dl.mercurylang.org/index.html\">downloads</a>
+<a href=\"https://dl.mercurylang.org/index.html\">downloads</a>
 back online.
 However, until we setup a periodic build system these may be updated
 only intermittently.
