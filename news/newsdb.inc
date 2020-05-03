@@ -25,6 +25,12 @@
 
 $newsdb = array(
 
+"3rd May 2020" => array(
+"Mercury 20.01.2 release",
+"Release Information is available
+<a href=\"https://dl.mercurylang.org/release-20.01/release-notes-20.01.2.html\">here</a>.
+"),
+
 "1st March 2020" => array(
 "Mercury 20.01.1 released",
 "Release Information is available
@@ -764,7 +770,7 @@ system in the Melbourne Mercury compiler."
 
 "There's a <A HREF=\"download/gcc-backend.html\">new back-end</A>
 for the Mercury compiler that compiles directly to assembler,
-rather than than going via C.
+rather than going via C.
 The new back-end is implemented by linking the Mercury compiler with the
 (relatively) language independent GNU Compiler Collection back-end.
 In other words, there is now a Mercury front-end for GCC!"

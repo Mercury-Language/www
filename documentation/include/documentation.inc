@@ -1,7 +1,7 @@
 <h2>Documentation</h2>
 <p>
 This page contains documentation for Mercury version
-20.01.1,
+20.01.2,
 <?php /* <a href=<?php echo $root ?>/download/release.html>11.07.1</a>, */ ?>
 and for the latest
 <?php /* <a href=<?php echo $root ?>/download/rotd.html> */ ?>
