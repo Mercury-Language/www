@@ -15,10 +15,17 @@ copy of the entire document, links to PDF are provided.
 </p>
 
 <ul class="nonindentlist2">
-	<li> 
+	<li>
+	<h3>Mercury crash course</h3>
+	<a href="https://mercury-in.space/crash.html">
+	An introduction to Mercury through worked examples.
+    </a>
+	</li>
+
+	<li>
 	<h3>Ralph Becket Mercury tutorial</h3>
 	An introduction to Mercury.
-	This is still under development. 
+	This is still under development.
 	Feedback would be greatly appreciated.
 	<table class="documentation">
 	<tr><td>
@@ -27,12 +34,10 @@ copy of the entire document, links to PDF are provided.
 	</table>
 	</li>
 
-
-
-	<li> 
+	<li>
 	<h3>Mercury Language Reference Manual</h3>
 	Information on the Mercury programming language
-	itself, including syntax, types and modes, determinism, 
+	itself, including syntax, types and modes, determinism,
 	the module system, foreign language interface and higher-order
 	programming.
 
@@ -50,7 +55,7 @@ copy of the entire document, links to PDF are provided.
 	</table>
 	</li>
 
-	<li> 
+	<li>
 	<h3>Mercury User's Guide</strong></h3>
 	Information on the Mercury compiler, including
 	how to compile, using multiple modules, profiling, debugging,
@@ -69,7 +74,7 @@ copy of the entire document, links to PDF are provided.
 	</tr>
 	</table>
 	</li>
-	
+
 	<li>
 	<h3>Mercury Library Reference Manual</h3>
 	Descriptions of the interfaces to the library
@@ -88,8 +93,8 @@ copy of the entire document, links to PDF are provided.
 	<tr>
 	</table>
 	</li>
-	
-	<li> 
+
+	<li>
 	<h3>Prolog to Mercury Transition Guide</h3>
 	Information to assist programmers to move Prolog
 	programs to Mercury. Includes information on differences in
@@ -109,12 +114,12 @@ copy of the entire document, links to PDF are provided.
 	</table>
 	</li>
 
-	<li> 
+	<li>
 	<h3>Comparing Mercury and Haskell</h3>
 	A point-by-point comparison of some of the differences
 	between Mercury and Haskell 98, in particular with
 	regard to their type systems.
-	
+
 	<table class="documentation">
 	<tr>
 	<td><a href="../about/comparison_with_haskell.html"><button class="button">HTML</button></a></td>
@@ -122,11 +127,11 @@ copy of the entire document, links to PDF are provided.
 	</table>
 	</li>
 
-	<li> 
+	<li>
 	<h3>Frequently Asked Questions</h3>
 	Information on common programming errors, problems caused by
 	unimplemented Mercury features and where to turn for help.<p>
-	
+
 	<table class="documentation" style="width: 250px;">
 	<tr>
 	<td><a href="<?php echo $faq_release ?>"><button class="button">HTML</button></a></td>
