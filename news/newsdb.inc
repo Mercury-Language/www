@@ -26,7 +26,7 @@
 $newsdb = array(
 
 "30th June 2020" => array(
-"Mercury 20.06 release",
+"Mercury 20.06 released",
 "Release Information is available
 <a href=\"https://dl.mercurylang.org/release-20.06/release-notes-20.06.html\">here</a>.
 "),
@@ -38,7 +38,7 @@ $newsdb = array(
 "),
 
 "3rd May 2020" => array(
-"Mercury 20.01.2 release",
+"Mercury 20.01.2 released",
 "Release Information is available
 <a href=\"https://dl.mercurylang.org/release-20.01/release-notes-20.01.2.html\">here</a>.
 "),
