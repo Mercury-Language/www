@@ -25,6 +25,12 @@
 
 $newsdb = array(
 
+"30th June 2020" => array(
+"Mercury 20.06 release",
+"Release Information is available
+<a href=\"https://dl.mercurylang.org/release-20.06/release-notes-20.06.html\">here</a>.
+"),
+
 "2nd June 2020" => array(
 "20.06 beta release available",
 "Beta versions of the upcoming 20.06 release are available on the
