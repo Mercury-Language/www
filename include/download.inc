@@ -1,4 +1,4 @@
-<H2>Download</H2>
+<h2>Download</h2>
 <?php $next_beta_version="" ?>
 
 <p>
@@ -11,7 +11,7 @@ Debian packages are also available, instructions for using them are
 <a href="http://dl.mercurylang.org/deb/">here</a>.
 </p>
 
-<H3> License </H3>
+<h3>License</h3>
 
 <p>
 The Mercury implementation is free software.<br>
@@ -33,7 +33,7 @@ The Mercury libraries and runtime (the files in the <samp>library</samp>, <samp>
 See the file <a href="download/COPYING.LIB">COPYING.LIB</a> for copying permissions for those files.
 </p>
 
-<H3> Stable Release </H3>
+<h3>Stable Release</h3>
 
 <?php
 /*
@@ -55,7 +55,7 @@ For example 10.04 is for a release made in April 2010.
 </p>
 
 <?php if ($next_beta_version != "") { ?>
-	<H3> Beta release </H3>
+	<h3>Beta release</h3>
 	<p>
 	A beta version of the next release is also available.
 	The current beta release is version <?php echo $next_beta_version; ?>. 

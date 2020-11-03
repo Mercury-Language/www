@@ -11,7 +11,7 @@ function newsitem($date, $item) {
 	echo $news;
 	echo "</p>";
 	list($day, $month, $year) = explode(" ",$date);
-	echo "<span class='newsdate'>";
+	echo "<span class=\"newsdate\">";
 	printf("%02d&nbsp;$month&nbsp;$year", $day);
 	echo "</span>";
 	echo "</li>";

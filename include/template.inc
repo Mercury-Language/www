@@ -1,12 +1,12 @@
 <?php include "$root/include/functions.inc" ?>
 <?php include "$root/include/globals.inc" ?>
 <head>
-<TITLE>The Mercury Project: <?php echo $title?></TITLE>
+<title>The Mercury Project: <?php echo $title?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
 <link rel="icon" type="image/ico" href="../favicon.ico"/>
 
 <!-- Google Analytics -->
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src="//www.google-analytics.com/analytics.js"></script>
 <script>
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new
 Date;

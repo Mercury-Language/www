@@ -1,4 +1,5 @@
-<HTML>
+<!DOCTYPE html>
+<html>
 <?php
     $menu="News";
     $title="News";
@@ -7,4 +8,4 @@
     $include="news.inc";
     include "./include/template.inc"
 ?>
-</HTML>
+</html>
