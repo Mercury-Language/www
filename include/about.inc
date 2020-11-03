@@ -49,8 +49,8 @@ The main features of Mercury are:
     Programmers must declare the types they need using declarations such as
     </p>
     <pre>
-    :- type list(T) --->    [] ; [T | list(T)].
-    :- type maybe(T) --->    yes(T) ; no.
+    :- type list(T) ---&gt; [] ; [T | list(T)].
+    :- type maybe(T) ---&gt; yes(T) ; no.
     </pre>
     <p>
     They must also declare the type signatures of the predicates they
@@ -169,7 +169,7 @@ The main features of Mercury are:
     Strong types, modes, and determinism
     provide the compiler with the information it needs to generate
     very efficient code.
-    </p>
+    </p></li>
 </ul>
 
 <p>
