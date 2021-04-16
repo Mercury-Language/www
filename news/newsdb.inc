@@ -25,6 +25,14 @@
 
 $newsdb = array(
 
+"16th April 2021" => array(
+"Subtypes support",
+"The latest releases of the day now support subtypes.
+You can read about subtypes in the
+<a href=\"https://mercurylang.org/information/doc-latest/mercury_ref/Subtypes.html\"
+>reference manual</a>.
+"),
+
 "3rd November 2020" => array(
 "Mercury 20.06.1 released",
 "Release Information is available
