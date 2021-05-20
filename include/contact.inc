@@ -155,10 +155,10 @@ other related things.
 
 <p>
 There is a Mercury IRC channel on the
-<a href="http://www.freenode.net">Freenode</a>
+<a href="https://libera.chat">libera.chat</a>
 IRC network.
-Connect to <code>irc.freenode.net</code> and join the <code>#mercury</code>
-channel.
+Connect to <code>irc.libera.chat</code> port <code>6697</code> with TLS
+enabled and join the <code>#mercury</code> channel.
 </p>
 
 <h4>Reddit</h4>
