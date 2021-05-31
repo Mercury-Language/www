@@ -50,7 +50,7 @@ mercury-users:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
 <input type="hidden" name="sitesearch"
-	value="lists.mercurylang.org/pipermail/users"/>
+	value="lists.mercurylang.org/archives/users"/>
 </form>
 
 <li>
@@ -59,7 +59,7 @@ mercury-developers:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
 <input type="hidden" name="sitesearch"
-	value="lists.mercurylang.org/pipermail/developers"/>
+	value="lists.mercurylang.org/archives/developers"/>
 </form>
 
 <li>
@@ -68,7 +68,7 @@ mercury-reviews:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
 <input type="hidden" name="sitesearch"
-	 value="lists.mercurylang.org/pipermail/reviews"/>
+	 value="lists.mercurylang.org/archives/reviews"/>
 </form>
 </ul>
 
