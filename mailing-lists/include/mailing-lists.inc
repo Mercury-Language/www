@@ -45,7 +45,7 @@ and searchable.
 ?>
 <ul>
 <li>
-<form method="get" action="http://www.google.com/search">
+<form method="get" action="https://www.google.com/search">
 mercury-users:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
@@ -54,7 +54,7 @@ mercury-users:
 </form>
 
 <li>
-<form method="get" action="http://www.google.com/search">
+<form method="get" action="https://www.google.com/search">
 mercury-developers:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
@@ -63,7 +63,7 @@ mercury-developers:
 </form>
 
 <li>
-<form method="get" action="http://www.google.com/search">
+<form method="get" action="https://www.google.com/search">
 mercury-reviews:
 <input type="text" name="q" size="31" value="" />
 <input type="submit" value="Google Search" />
