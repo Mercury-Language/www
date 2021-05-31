@@ -13,14 +13,14 @@ of the Mercury implementation, tools for Mercury programmers
 <li>
 The <code>users</code> list is intended for general discussion
 about Mercury and related matters of interest to Mercury users.<br>
-It is <A HREF="http://lists.mercurylang.org/pipermail/users/">
+It is <A HREF="https://lists.mercurylang.org/archives/users/">
 archived</A> and searchable.
 
 <li>
 The <code>developers</code> list is intended for general discussion
 about the development of Mercury and the Mercury implementation and related
 matters of interest to the developers of Mercury.<br>
-It is <A HREF="http://lists.mercurylang.org/pipermail/developers/">archived</A> and searchable.
+It is <A HREF="https://lists.mercurylang.org/archives/developers/">archived</A> and searchable.
 Note that in recent times, most the actual development discussion seems to be
 done on the <code>reviews</code> list, rather than <code>developers</code> list.
 <br>
@@ -31,7 +31,7 @@ Mercury, for the purpose of reviewing changes to the Mercury implementation
 (including documentation, test suite, etc.) and the Mercury web site.  This
 list is specifically for posting diffs, reviews of diffs, and discussion of
 issues raised in such reviews.  It tends to be a fairly high-volume list.<br>
-It is <A HREF="http://lists.mercurylang.org/pipermail/reviews/">archived</A>
+It is <A HREF="https://lists.mercurylang.org/archives/reviews/">archived</A>
 and searchable.
 </ul>
 
