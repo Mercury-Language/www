@@ -49,14 +49,14 @@ copy of the entire document, links to PDF are provided.
 	</tr>
 	<tr>
 	<td>Rotd (snapshot)</td>
-	<td><a href="<?php echo $ref_man_latest ?>"><button class="button">HTML</button></a>
-	<td><a href="<?php echo $latest_doc_dir ?>/reference_manual.pdf"><button class="button">PDF</button></a>
+	<td><a href="<?php echo $ref_man_latest ?>"><button class="button">HTML</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/reference_manual.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
 
 	<li>
-	<h3>Mercury User's Guide</strong></h3>
+	<h3>Mercury User's Guide</h3>
 	Information on the Mercury compiler, including
 	how to compile, using multiple modules, profiling, debugging,
 	and compilation options.
@@ -82,15 +82,15 @@ copy of the entire document, links to PDF are provided.
 
 	<table class="documentation">
 	<tr>
-	<td>Current Release <td>
+	<td>Current Release</td>
 	<td><a href="<?php echo $library_man_release ?>"><button class="button">HTML</button></a></td>
 	<td><a href="<?php echo $release_doc_dir ?>/library.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	<tr>
-	<td>Rotd (snapshot)<td>
+	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $library_man_latest ?>"><button class="button">HTML</button></a></td>
 	<td><a href="<?php echo $latest_doc_dir ?>/library.pdf"><button class="button">PDF</button></a></td>
-	<tr>
+	</tr>
 	</table>
 	</li>
 
@@ -130,7 +130,7 @@ copy of the entire document, links to PDF are provided.
 	<li>
 	<h3>Frequently Asked Questions</h3>
 	Information on common programming errors, problems caused by
-	unimplemented Mercury features and where to turn for help.<p>
+	unimplemented Mercury features and where to turn for help.
 
 	<table class="documentation" style="width: 250px;">
 	<tr>
