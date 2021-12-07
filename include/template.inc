@@ -4,20 +4,9 @@
 <title>The Mercury Project: <?php echo $title?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
 <link rel="icon" type="image/ico" href="../favicon.ico"/>
-
-<!-- Google Analytics -->
-<script async src="//www.google-analytics.com/analytics.js"></script>
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new
-Date;
-ga('create', 'UA-39671467-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
-
 </head>
-<body>
 
+<body>
 <div class="header">
 <div class="headercontainer">
 <a class="logo" href="<?php echo $root?>/index.html"><img src="<?php echo $root?>/images/mercurylogo.png"/></a>
