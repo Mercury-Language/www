@@ -1,4 +1,5 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
 <?php
     $menu="Development";
     $title="Contributing to Mercury";
@@ -7,4 +8,4 @@
     $include="contributions.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

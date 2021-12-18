@@ -23,7 +23,7 @@ look in the main source repository to find these documents.
 	<p>
 	Tips and tricks for developers just starting to work with
 	the Mercury source code.
-	<p>
+	</p>
 	</li>
 
 <li> 	
@@ -53,6 +53,7 @@ look in the main source repository to find these documents.
 
 <li>	<h3><a href="developers/release_checklist.html">Release checklist</a> </h3>
 	<p>The release procedure. </p>
+</li>
 
 <li>	<h3><a href="developers/gc_and_c_code.html">Garbage collection and C code</a> </h3>
 </li>	
@@ -98,7 +99,5 @@ look in the main source repository to find these documents.
 	source tree.
 	They are also available <a href="developers/index.html">online</a>.
 </p>
-
-<p>
 
 </div>

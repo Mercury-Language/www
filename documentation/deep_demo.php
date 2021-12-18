@@ -1,4 +1,5 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
 <?php
     $menu="Documentation";
     $title="Deep profiler demo";
@@ -7,4 +8,4 @@
     $include="deep_demo.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

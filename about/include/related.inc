@@ -2,21 +2,21 @@
 
 <h3>Projects using Mercury</h3>
 
-<UL class="nonindentlist">
-<LI>The <a HREF="http://www.g12.csse.unimelb.edu.au/">G12 Constraint Programming Platform</a></li>
-<LI>The <a HREF="http://www.csse.monash.edu.au/~mbanda/hal/index.html">HAL Project</a></li>
-<LI>The Aditi Project</li>
-<LI> <A HREF="http://www.winikoff.net/pipe/index.html">Animating Z specifications using Mercury</A></li>
-<LI> <A HREF="http://svrc.it.uq.edu.au/Possum/">Possum</a>, an animator for Z
+<ul class="nonindentlist">
+<li>The <a href="http://www.g12.csse.unimelb.edu.au/">G12 Constraint Programming Platform</a></li>
+<li>The <a href="http://www.csse.monash.edu.au/~mbanda/hal/index.html">HAL Project</a></li>
+<li>The Aditi Project</li>
+<li> <a href="http://www.winikoff.net/pipe/index.html">Animating Z specifications using Mercury</a></li>
+<li> <a href="http://svrc.it.uq.edu.au/Possum/">Possum</a>, an animator for Z
 specifications with a Tk GUI</li>
-<LI> The <A HREF="http://www.missioncriticalit.com/odase.html">ODASE</A>
+<li> The <a href="http://www.missioncriticalit.com/odase.html">ODASE</a>
 	platform, a suite of tools writen in Mercury for developing business
 	applications using ontologies.  The platform has been used to deliver a
 	number of commercial projects.</li>
-<LI> The <A HREF="http://www.princexml.com">Prince XML and HTML formatter.</A>
+<li> The <a href="http://www.princexml.com">Prince XML and HTML formatter.</a>
 	Prince takes HTML or XML and produces PDF formatted according to 
 	user-supplied CSS rules.</li>
-</UL>
+</ul>
 
 <p>
 If you are using Mercury in your project, please contact us!
@@ -40,3 +40,4 @@ programming language. It uses uniqueness types which are similar to
 Mercury's unique modes, and allows programmers to build distributed
 systems.
 </li>
+</ul>

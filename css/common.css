@@ -1,45 +1,45 @@
 body{
-padding: 0px;
-margin: 0px;
+color: #333;
 font-family: arial, sans serif;
 font-size: 14px;
-color: #333;
+margin: 0;
+padding: 0;
 }
 
 
 h2{
-font-family: Georgia;
 color: #006fbc;
+font-family: Georgia;
 font-size: 22px;
-margin: 20px 0px;
+margin: 20px 0;
 }
 
 h3{
-font-family: Georgia;
 color: #333;
+font-family: Georgia;
 font-size: 17px;
-margin: 20px 0px;
+margin: 20px 0;
 }
 
 h4{
-font-family: Arial;
 color: #333;
+font-family: Arial;
 font-size: 16px;
 }
 
 p, table{
-font-family: arial;
 color: #333;
+font-family: arial;
 font-size: 14px;
 line-height: 1.5em;
-margin: 25px 0px;
+margin: 25px 0;
 }
 
 .container, .headercontainer{
+border: 0 black solid;
+margin: auto;
 max-width: 1260px;
 min-width: 620px;
-margin: auto;
-border: 0px black solid;
 }
 
 .headercontainer{
@@ -53,15 +53,15 @@ text-decoration:none;
 
 /*header*/
 .header{
-background: url(../images/headerbackground.png) repeat-x 0px 0px;
-height: 111px;
+background: url(../images/headerbackground.png) repeat-x 0 0;
 border-bottom: 1px solid #b3b3b3;
+height: 111px;
 }
 
 .logo{
+left: 40px;
 position: relative;
 top: 15px;
-left: 40px;
 }
 
 .headersearchbar{
@@ -70,17 +70,14 @@ margin-right: 50px;
 margin-top: 37px;
 }
 
-.searchbar{
-}
-
 .searchbar .submit{
 background: #006fbc;
-border-radius: 5px;
 border: none;
+border-radius: 5px;
 color: white;
-padding: 2px 5px;
-margin-left: 10px;
 cursor: pointer;
+margin-left: 10px;
+padding: 2px 5px;
 }
 
 .searchbar .textbox{
@@ -89,25 +86,25 @@ border: 1px solid #333;
 
 /*menu*/
 .submenucurrent{
+color: #666;
 font-style: italic;
 font-weight: bold;
-color: #666;
 }
 
 ul.menu{
 float: left;
-margin-top: 0px;
-margin-left: -10px;
 list-style-type: none;
+margin-left: -10px;
+margin-top: 0;
 }
 
 ul.menu li {
-font-size: 16px;
 background-color: #f7f7f7;
+border-left: 4px solid #529ddb;
+font-size: 16px;
+line-height: 1em;
 padding: 10px 10px 10px 10px;
 width: 140px;
-border-left: 4px solid #529ddb;
-line-height: 1em;
 }
 
 ul.menu li:hover{
@@ -121,16 +118,16 @@ text-decoration: none;
 
 ul.submenu{
 list-style-type: none;
+margin-bottom: 20px;
 margin-left: -24px;
 margin-top: 8px;
-margin-bottom: 20px;
 }
 
 ul.submenu li{
-font-size: 16px;
 background: none;
 border: none;
 font-family: georgia;
+font-size: 16px;
 padding: 7px;
 }
 
@@ -148,10 +145,10 @@ font-style: italic;
 }
 
 .current{
-font-weight: bold;
 background-image: url(../images/bluepointer.png);
-background-repeat: no-repeat;
 background-position: 140px 13px;
+background-repeat: no-repeat;
+font-weight: bold;
 }
 
 
@@ -182,48 +179,48 @@ width: 350px;
 }
 
 table.releases td{
-vertical-align: top;
 line-height: 2.5em;
+vertical-align: top;
 }
 
 table.documentation{
-margin: 10px 0px 25px 0px;
+margin: 10px 0 25px 0;
 width: 400px;
 }
 
 table.documentation td{
+color: #333;
 font-size: 14px;
 font-style: italic;
-color: #333;
-padding: 10px 0px;
+padding: 10px 0;
 }
 
 .button{
 background: #006fbc;
-border-radius: 5px;
 border: none;
+border-radius: 5px;
 color: white;
-width: 80px;
-padding: 4px 0px;
-margin-left: 10px;
 cursor: pointer;
+margin-left: 10px;
+padding: 4px 0;
+width: 80px;
 }
 
 .mailinglistname{
-font-weight: bold;
 font-style: italic;
+font-weight: bold;
 }
 
 .backendssubsec{
-font-style: italic;
 font-size: 16px;
+font-style: italic;
 margin-top: 30px;
-margin-bottom: 0px;
+margin-bottom: 0;
 }
 
 pre{
 margin-top: 40px;
-margin-bottom: 0px;
+margin-bottom: 0;
 }
 
 #featureslist h3{
@@ -232,7 +229,7 @@ margin-top: 30px;
 }
 
 .content{
-border: 0px black solid;
+border: 0 black solid;
 margin-left: 230px;
 margin-right: 20px;
 max-width: 920px;
@@ -257,36 +254,32 @@ list-style-image: url('../images/blackpointer.png');
 }
 
 #newslist p{
-margin: 0px;
-}
-
-#newslist{
-/*background: url(../images/logobackground.png) no-repeat center 0*/
+margin: 0;
 }
 
 .newsdate{
 color: #4d4d4d;
-FONT-STYLE: italic;
+font-style: italic;
 }
 
 ul.nonindentlist li,ul.indentlist li, ul.nonindentlist2 li{
-font-family: arial;
 color: #333;
+font-family: arial;
 font-size: 14px;
 line-height: 1.5em;
 }
 
 .submenutitle{
-font-size: 17px;
 color: #4d4d4d;
+font-size: 17px;
 font-style: italic;
 margin-left: 7px;
 }
 
 .banner{
-max-width: 920px;
-height: 211px;
 background: url(../images/banner.jpg) no-repeat 0 0;
+height: 211px;
+max-width: 920px;
 }
 
 /*footer*/
@@ -297,7 +290,7 @@ clear: both;
 .footer hr{
 color: #529ddb;
 max-width: 930px;
-margin: 30px 20px 0px 230px;
+margin: 30px 20px 0 230px;
 }
 
 .footer p{

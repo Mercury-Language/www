@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <?php
     $menu="Home";
     $title="Home";

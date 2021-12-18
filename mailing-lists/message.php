@@ -1,4 +1,4 @@
-<HTML>
+<html lang="en">
 <?php
     $menu="Mailing Lists";
     $title="%s";
@@ -7,4 +7,4 @@
     $include="message.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

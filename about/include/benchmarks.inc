@@ -80,7 +80,7 @@ it is heavily recursive and does lots of simple integer arithmetic.
 The benchmarks use the following test harness:
 </p>
 <ul class="nonindentlist">
-<li> <a href = "bench/harness.html">harness</a>
+<li> <a href = "bench/harness.html">harness</a></li>
 </ul>
 </div>
 

@@ -1,4 +1,4 @@
-<HTML>
+<html lang="en">
 <?php
     $menu="Mailing Lists";
     $title="Mailing List Archives";
@@ -7,4 +7,4 @@
     $include="mailing-lists.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

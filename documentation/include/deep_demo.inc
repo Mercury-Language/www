@@ -82,7 +82,7 @@ However, please note that
 deep profiling is not compatible with the old Mercury profiling grades,
 and it is not (yet) implemented for grades (such as hlc grades)
 that use the compiler's MLDS back end.
-</P>
+</p>
 <p>
 
 Programs compiled with deep profiling can generate large amounts of data,

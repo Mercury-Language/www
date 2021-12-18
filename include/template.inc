@@ -2,6 +2,7 @@
 <?php include "$root/include/globals.inc" ?>
 <head>
 <title>The Mercury Project: <?php echo $title?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
 <link rel="icon" type="image/ico" href="../favicon.ico"/>
 </head>

@@ -1,4 +1,5 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
 <?php
     $title=".NET";
     $menu="About";
@@ -7,4 +8,4 @@
     $include="dotnet.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

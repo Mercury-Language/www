@@ -1,4 +1,5 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
 <?php
     $menu="Development";
     $title="Developer Information";
@@ -7,4 +8,4 @@
     $include="developer.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

@@ -1,4 +1,5 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
 <?php
     $menu="Documentation";
     $title="Comparing Mercury and Haskell";
@@ -7,4 +8,4 @@
     $include="comparison_with_haskell.inc";
     include "$root/include/template.inc"
 ?>
-</HTML>
+</html>

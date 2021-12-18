@@ -25,14 +25,14 @@ interactions between the type systems and the module systems.
 There are many other areas in which Mercury and Haskell 98
 differ, including
 </p><ul class="nonindentlist">
-	<li> syntax,
+	<li> syntax,</li>
 	<li> the way in which the semantics is normally described
-	     (predicate calculus versus lambda calculus),
-	<li> operational semantics (laziness / order of evaluation),
-	<li> exception handling,
-	<li> treatment of I/O,
-	<li> standard libraries,
-	<li> and of course support for logic programming,
+	     (predicate calculus versus lambda calculus),</li>
+	<li> operational semantics (laziness / order of evaluation),</li>
+	<li> exception handling,</li>
+	<li> treatment of I/O,</li>
+	<li> standard libraries,</li>
+	<li> and of course support for logic programming,</li>
 	</ul> 
 	<p>
 	but we don't yet have point-by-point description of all of those
@@ -44,21 +44,22 @@ The type systems of Mercury and Haskell 98 are similar in that they both have
 the following features:
 </p>
 <ul class="nonindentlist">
-	<li> discriminated union (d.u.) types, with support for named fields
-	<li> type synonyms
-	<li> higher-order function types (and lambda expressions)
-	<li> tuple types
+	<li> discriminated union (d.u.) types, with support for named fields</li>
+	<li> type synonyms</li>
+	<li> higher-order function types (and lambda expressions)</li>
+	<li> tuple types</li>
 	<li> parametric polymorphism:
 		<ul>
-		<li> polymorphic d.u. types
-		<li> polymorphic type synonyms
-		<li> polymorphic functions
-		<li> polymorphic recursion
+		<li> polymorphic d.u. types </li>
+		<li> polymorphic type synonyms </li>
+		<li> polymorphic functions </li>
+		<li> polymorphic recursion </li>
 		</ul>
-	<li> type classes
-	<li> functional dependencies
-	<li> type inference
-	<li> a similar set of basic types
+        </li>
+	<li> type classes </li>
+	<li> functional dependencies </li>
+	<li> type inference </li>
+	<li> a similar set of basic types </li>
 </ul>
 <p>
 They differ in the following ways:
@@ -72,14 +73,15 @@ They differ in the following ways:
 		  from functions/variables (lowercase initial letter)
 		  whereas Mercury distinguishes variables
 		  (uppercase initial letter)
-		  from functions/constructors (lowercase initial letter).
+		  from functions/constructors (lowercase initial letter).</li>
 	  	<li> Haskell 98 permits nested function definitions,
 		  Mercury doesn't.  In Mercury you can use variables
 		  with higher-order type and initialize them with
 		  lambda expressions, of course, but variables
 		  are always monorphically typed and functions
-		  defined using lambda expressions can't be recursive.
+		  defined using lambda expressions can't be recursive.</li>
 		</ul>
+        </li>
 
 	<li> Haskell 98 has the infamous monomorphism restriction
 	  which means that variables are monomorphic
@@ -89,43 +91,43 @@ They differ in the following ways:
 	  but because of the lexical distinction between
 	  variables and functions, that doesn't seem to lead
 	  to the same confusion that the Haskell monomorphism
-	  restriction causes.
+	  restriction causes.</li>
 
 	<li> Mercury requires type declarations for all functions exported
 	  from a module, Haskell 98 doesn't, at least in theory
 	  (in practice, current Haskell implementations effectively
 	  require explicit type declarations [or worse] in the case of
-	  mutually recursive modules).
+	  mutually recursive modules).</li>
 
 	<li> For polymorphic recursion,
 	  Haskell 98 requires an explicit type declaration,
 	  whereas Mercury allows polymorphic recursion with
 	  type inference, using a user-tunable iteration limit
-	  to ensure termination of the type inference process.
+	  to ensure termination of the type inference process.</li>
 
 	<li> Haskell 98 allows type classes to define default implementations
-	  for methods, whereas Mercury doesn't.
+	  for methods, whereas Mercury doesn't.</li>
 
 	<li> Haskell 98 allows type class instances to leave some methods
 	  undefined, in which case calls to such methods will be
 	  run-time errors, whereas Mercury treats undefined methods as
 	  a compile time error and requires users to explicitly define
-	  methods to call <code>error</code> if that is what they want.
+	  methods to call <code>error</code> if that is what they want.</li>
 
-	<li> Haskell 98 supports constructor classes, Mercury doesn't.
+	<li> Haskell 98 supports constructor classes, Mercury doesn't.</li>
 
 	<li> Haskell 98's standard library makes extensive use of
-	  type classes, Mercury's doesn't (mainly for historical reasons).
+	  type classes, Mercury's doesn't (mainly for historical reasons).</li>
 
 	<li> Mercury allows multi-parameter type classes
 	  (however, there are some restrictions on the forms of
 	  instance declarations, so this may not be quite as
-	  useful as it might first appear).
+	  useful as it might first appear).</li>
 
 	<li> Mercury supports existentially typed functions,
 	  and existentially typed data types, whereas Haskell 98 doesn't
 	  (Hugs, ghc and other Haskell implementations support existentially
-	  typed data types, but not existentially typed functions).
+	  typed data types, but not existentially typed functions).</li>
 
 	<li> Mercury supports "ad-hoc" overloading (there can be more
 	  than one constructor, function or class method with the same
@@ -136,7 +138,7 @@ They differ in the following ways:
 	  this can lead to ambiguities that type checker can't resolve;
 	  if such ambiguities occur, you need to use explicit type
 	  declarations to resolve them, rather than relying on type
-	  inference.)
+	  inference.)</li>
 
 	<li> In Haskell 98, functions always take a single argument;
 	  multiple arguments are handled using currying or tuples.
@@ -145,7 +147,7 @@ They differ in the following ways:
 	  tuples or functions returning functions.
 	  (Haskell's approach leads to more elegant source code;
 	  Mercury's approach has a simpler and more predictable
-	  performance model.)
+	  performance model.)</li>
 
 	<li> The semantics of Haskell 98 say that each type has "bottom"
 	  as an extra element, to handle laziness.
@@ -156,7 +158,7 @@ They differ in the following ways:
 	  But, since that's a difference in the operational semantics,
 	  rather than in the type system, we won't go into the
 	  details here, except to note that the first approximation
-	  is not the full story.)
+	  is not the full story.)</li>
 
 	<li> Haskell 98 has two constructs for introducing
 	  discriminated union types, <code>data</code> and <code>newtype</code>,
@@ -165,28 +167,28 @@ They differ in the following ways:
 	  Mercury doesn't support lazy constructors,
 	  so the laziness distinction is not applicable,
 	  and in Mercury the representation effect of <code>newtype</code> is
-	  automatic for any type with one constructor and one argument.
+	  automatic for any type with one constructor and one argument.</li>
 
 	<li> Mercury supports nested modules, Haskell 98 doesn't.
 	  So in Mercury you can have abstract types whose definition
 	  is only visible in a sub-module, rather than in the
-	  whole of the (outermost) module that contains them.
+	  whole of the (outermost) module that contains them.</li>
 
 	<li> Mercury's module system allows instance declarations
 	  to be public (exported) or local (private), whereas
-	  in Haskell instance declarations are always exported.
+	  in Haskell instance declarations are always exported.</li>
 
 	<li> Mercury has predicates as well as functions
 	  (predicate types are distinct from functions returning bool).
 	  This includes supporting existentially typed predicates,
 	  predicates as type class methods, predicate lambda expressions,
-	  and higher-order predicate types.
+	  and higher-order predicate types.</li>
 
 	<li> Mercury supports optional dynamic typing, Haskell 98 doesn't.
 	  (Hugs/ghc do.  However, their approach of implementing this
 	  is a bit cumbersome, since the user has to explictly declare
 	  instances of <code>Typeable</code>, and its use of an unchecked
-	  cast would be problematic in the presence of untrusted code.)
+	  cast would be problematic in the presence of untrusted code.)</li>
 
 	<li> The treatment of equality, comparison, automatically derived
 	  classes, and RTTI differs considerably between the two
@@ -201,7 +203,7 @@ They differ in the following ways:
 	  effects in Mercury than defining <code>==</code> does in Haskell.
 	  Mercury's RTTI system allows constructing and deconstructing
 	  arbitrary types at runtime, and comparison and (de)serialization
-	  (compare, read, and write) are implemented using this.
+	  (compare, read, and write) are implemented using this.</li>
 
 	<li> Mercury's standard library provides a referentially
 	  transparent interface to mutable variables (the store
@@ -212,7 +214,7 @@ They differ in the following ways:
 	  using higher-order functions with explicit universal
 	  quantification, and monads, rather than existential types
 	  and unique modes.  Other Haskell implementations may do so
-	  too.)
+	  too.)</li>
 </ul>
 
 <p>
@@ -226,13 +228,13 @@ are in Mercury handled by the mode system.  In particular,
 	  For example, you can declare that a function whose
 	  argument is a discriminated union type accepts only
 	  a subset of the possible constructors for that type,
-	  and the mode system will enforce this.
+	  and the mode system will enforce this.</li>
 
 	<li> Mercury's mode system provides support for uniqueness,
 	  similar to linear types or unique types.  (However,
 	  currently there are some significant limitations with
 	  this, in particular unique modes can only be used
-	  at the top level of a term.)
+	  at the top level of a term.)</li>
 	  
 	</ul>
 
