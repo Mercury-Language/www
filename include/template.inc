@@ -1,8 +1,9 @@
 <?php include "$root/include/functions.inc" ?>
 <?php include "$root/include/globals.inc" ?>
 <head>
-<title>The Mercury Project: <?php echo $title?></title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mercury Project: <?php echo $title?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/common.css"/>
 <link rel="icon" type="image/ico" href="../favicon.ico"/>
 </head>
