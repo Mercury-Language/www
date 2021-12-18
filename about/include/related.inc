@@ -10,7 +10,7 @@
 <li> <a href="http://svrc.it.uq.edu.au/Possum/">Possum</a>, an animator for Z
 specifications with a Tk GUI</li>
 <li> The <a href="http://www.missioncriticalit.com/odase.html">ODASE</a>
-	platform, a suite of tools writen in Mercury for developing business
+	platform, a suite of tools written in Mercury for developing business
 	applications using ontologies.  The platform has been used to deliver a
 	number of commercial projects.</li>
 <li> The <a href="http://www.princexml.com">Prince XML and HTML formatter.</a>

@@ -78,7 +78,7 @@ They differ in the following ways:
 		  Mercury doesn't.  In Mercury you can use variables
 		  with higher-order type and initialize them with
 		  lambda expressions, of course, but variables
-		  are always monorphically typed and functions
+		  are always monomorphically typed and functions
 		  defined using lambda expressions can't be recursive.</li>
 		</ul>
         </li>
@@ -131,7 +131,7 @@ They differ in the following ways:
 
 	<li> Mercury supports "ad-hoc" overloading (there can be more
 	  than one constructor, function or class method with the same
-	  name, and the compiler will determine which one each occurence
+	  name, and the compiler will determine which one each occurrence
 	  of that name refers to based on the types),
 	  Haskell 98 doesn't.
 	  (Of course if you make significant use of ad-hoc overloading,
@@ -186,7 +186,7 @@ They differ in the following ways:
 
 	<li> Mercury supports optional dynamic typing, Haskell 98 doesn't.
 	  (Hugs/ghc do.  However, their approach of implementing this
-	  is a bit cumbersome, since the user has to explictly declare
+	  is a bit cumbersome, since the user has to explicitly declare
 	  instances of <code>Typeable</code>, and its use of an unchecked
 	  cast would be problematic in the presence of untrusted code.)</li>
 
