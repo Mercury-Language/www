@@ -16,7 +16,7 @@ Debian packages are also available, instructions for using them are
 <p>
 The Mercury implementation is free software.<br>
 Copyright &copy; 1993&ndash;2012 The University of Melbourne.<br>
-Copyright &copy; 2013&ndash;2020 The Mercury team.
+Copyright &copy; 2013&ndash;2021 The Mercury team.
 </p>
 
 <p>
@@ -27,9 +27,10 @@ See the file <a href="download/COPYING">COPYING</a> for copying permission.
 
 <p>
 The Mercury libraries and runtime (the files in the <samp>library</samp>, <samp>trace</samp>,
-<samp>browser</samp>, <samp>ssdb</samp>, <samp>mdbcomp</samp> and
-<samp>runtime</samp> subdirectories) are distributed under the terms of the
-<a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License (LGPL)</a>.
+<samp>browser</samp>, <samp>ssdb</samp>, <samp>mdbcomp</samp> ,
+<samp>runtime</samp> and <samp>java/runtime</samp> subdirectories) are distributed under the terms of the
+<a href="http://www.gnu.org/licenses/lgpl-2.0.html">GNU Library General Public License (LGPL)</a>
+with an exception for statically linking against those libraries.
 See the file <a href="download/COPYING.LIB">COPYING.LIB</a> for copying permissions for those files.
 </p>
 
