@@ -49,6 +49,6 @@ You can find them on the <a href="contact.html">Contact</a> page.
 <h3>Reporting bugs</h3>
 
 <p>
-Bugs may be reported on our bug tracker,
+Bugs may be reported on our <a href="https://bugs.mercurylang.org/">bug tracker</a>,
 or on the mercury-users mailing list.
 </p>
