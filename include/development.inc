@@ -50,5 +50,6 @@ You can find them on the <a href="contact.html">Contact</a> page.
 
 <p>
 Bugs may be reported on our <a href="https://bugs.mercurylang.org/">bug tracker</a>,
-or on the mercury-users mailing list.
+on our <a href="https://github.com/Mercury-Language/mercury/issues">GitHub issues</a>
+page or on the mercury-users mailing list.
 </p>

@@ -93,7 +93,7 @@ See
 
 <p>
 Anonymous access to our git repository is also available
-via github at
+via GitHub at
 <a href="https://github.com/Mercury-Language">
 https://github.com/Mercury-Language</a>.
 </p>
