@@ -22,7 +22,7 @@
 <a href="<?php echo $root?>/download.html"><li <?php if($menu == 'Download'){ ?> class="current" <?php } ?> >Download</li></a>
 	<?php
     // Temporarily disabled submenus by pbone until we fix the download
-    // links more perminently.
+    // links more permanently.
     //if($menu == "Download") {
     if (false) {
     ?>
