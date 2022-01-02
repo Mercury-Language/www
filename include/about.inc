@@ -9,7 +9,7 @@ mode, determinism and module systems.
 </p>
 
 <p>
-Some examples programs written in Mercury can be found
+Some example programs written in Mercury can be found
 <a href="https://github.com/Mercury-Language/mercury/tree/master/samples">here</a>.
 </p>
 
