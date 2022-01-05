@@ -10,17 +10,17 @@ development snapshot.
 </p>
 
 <p>
-The HTML versions are set up for browsing, however, if you'd prefer a
-copy of the entire document, links to PDF are provided.
+The HTML versions are set up for browsing, however, if you would prefer a copy
+of the entire document, links to PDF versions are provided.
 </p>
 
 <ul class="nonindentlist2">
-	<li>
-	<h3>Mercury crash course</h3>
-	<a href="https://mercury-in.space/crash.html">
+        <li>
+        <h3>Mercury crash course</h3>
+        <a href="https://mercury-in.space/crash.html">
 	An introduction to Mercury through worked examples.
-    </a>
-	</li>
+        </a>
+        </li>
 
 	<li>
 	<h3>Ralph Becket Mercury tutorial</h3>
@@ -33,6 +33,13 @@ copy of the entire document, links to PDF are provided.
 	</td></tr>
 	</table>
 	</li>
+
+        <li>
+        <h3>Mercury wiki tutorial</h3>
+        <a href="https://github.com/Mercury-Language/mercury/wiki/Tutorial">
+        Another introduction to Mercury.
+        </a>
+        </li>
 
 	<li>
 	<h3>Mercury Language Reference Manual</h3>
