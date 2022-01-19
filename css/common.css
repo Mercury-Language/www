@@ -215,7 +215,6 @@ font-weight: bold;
   display: flex;
   flex-wrap: wrap;
   column-gap: 5%;
-  justify-content: space-between;
 }
 
 .backend-item {
