@@ -8,7 +8,7 @@ and works on a wide variety of platforms.
 <div class="backend-item">
   <h3>Low level C backend.</h3>
   <p>
-  The backend that compiles Mercury code low-level C code
+  The back-end that compiles Mercury code low-level C code
   is our original back-end.
   It works by converting Mercury source code
   into code for an abstract machine specifically designed Mercury.
@@ -96,7 +96,7 @@ and works on a wide variety of platforms.
   There is support for Mercury-level debugging,
   but there is not yet support for Mercury-level profiling.
   A few backend-specific parts of the Mercury standard library
-  do not yet have implementations for this backend,
+  do not yet have implementations for this back-end,
   but this affects only a tiny minority
   of the standard library's functionality.
   </p>
