@@ -25,6 +25,12 @@
 
 $newsdb = array(
 
+"24th January 2022" => array(
+"22.01 beta release available",
+"Beta versions of the upcoming 22.01 release are available on the
+<a href=\"https://dl.mercurylang.org/index.html\">downloads page</a>.
+"),
+
 "16th April 2021" => array(
 "Subtypes support",
 "The latest releases of the day now support subtypes.
