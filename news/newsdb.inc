@@ -25,6 +25,12 @@
 
 $newsdb = array(
 
+"31st March 2022" => array(
+"Mercury 22.01 released",
+"Release Information is available
+<a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.html\">here</a>.
+"),
+
 "24th January 2022" => array(
 "22.01 beta release available",
 "Beta versions of the upcoming 22.01 release are available on the
