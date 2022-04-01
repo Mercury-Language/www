@@ -45,7 +45,7 @@ of the entire document, links to PDF versions are provided.
 	<h3>Mercury Language Reference Manual</h3>
 	Information on the Mercury programming language
 	itself, including syntax, types and modes, determinism,
-	the module system, foreign language interface and higher-order
+	the module system, foreign language interface, and higher-order
 	programming.
 
 	<table class="documentation">
@@ -85,7 +85,7 @@ of the entire document, links to PDF versions are provided.
 	<li>
 	<h3>Mercury Library Reference Manual</h3>
 	Descriptions of the interfaces to the library
-	which comes with the Mercury distribution.
+	which come with the Mercury distribution.
 
 	<table class="documentation">
 	<tr>
@@ -103,9 +103,9 @@ of the entire document, links to PDF versions are provided.
 
 	<li>
 	<h3>Prolog to Mercury Transition Guide</h3>
-	Information to assist programmers to move Prolog
-	programs to Mercury. Includes information on differences in
-	the languages and common programming styles.
+	Information to assist programmers in moving Prolog
+	programs to Mercury, differences in
+	the languages, and common programming styles.
 
 	<table class="documentation">
 	<tr>
