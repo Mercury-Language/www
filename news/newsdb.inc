@@ -28,7 +28,7 @@ $newsdb = array(
 "20th April 2022" => array(
 "Mercury 22.01.1 released",
 "Release Information is available
-<a href=\"https://dl.mercurylang.org/release-22.01.1/release-notes-22.01.1.html\">here</a>.
+<a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.1.html\">here</a>.
 "),
 
 "31st March 2022" => array(
