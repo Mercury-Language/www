@@ -8,7 +8,7 @@
 <li>The Aditi Project</li>
 <li>Animating Z specifications using Mercury</li>
 <li>Possum, an animator for Z specifications with a Tk GUI</li>
-<li>The ODASE platform, a suite of tools written in Mercury for developing
+<li>The <a href="https://www.odase.io">ODASE</a> platform, a suite of tools written in Mercury for developing
 business applications using ontologies.  The platform has been used to deliver
 a number of commercial projects.</li>
 <li> The <a href="http://www.princexml.com">Prince XML and HTML formatter.</a>
