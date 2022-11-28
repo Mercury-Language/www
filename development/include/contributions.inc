@@ -1,51 +1,24 @@
 <h2>Development<span class="submenutitle">/ contributing</span></h2>
 
 <h3>Mercury Libraries and Programs</h3>
-<p>
-If you've written some code using Mercury we'd love to find out about
-it.  If you think it might be in any way useful to other people, you
-might be interested in making your code available for download.
-That way others can learn from it, use it and improve on it.
-</p><p>
-We are happy to place it on the Mercury web and ftp sites for you.
-Fame and fortune will surely follow.
-</p>
-<p>
-If you would like to contribute a library or program written using
-Mercury for others to download and use, here's how you can do it.
-</p>
-<ul class="indentlist">
-<li>
-Choose a license for your code that allows other people to
-download and use it (by default, copyright law says that nobody
-but the author can copy or distribute modified copies).
-Something that meets the open source definition would be good
-(see <a href="http://www.opensource.org">www.opensource.org</a>).
-A pre-written license is always much easier to get right than rolling
-your own.  The LGPL and GPL licenses are pretty compatible with the rest
-of the Mercury distribution.  The Artistic, and BSD-like (without
-advertising clause) licenses are also pretty popular.
-</li>
-<li>
-Apply this license to your code (e.g. make sure your source
-files and README file clearly state your name/employer and where to find
-the licensing conditions and include a file with the conditions).  A
-contact email address is also a good thing to include here.
-</li>
-<li>
-Make your software available online
-somewhere.  If possible try to include a version number in your
-tar or zip file (e.g. mylibrary-0.4.zip or myprogram-1.2.1.tar.gz).
-If you can't do this, attach it in email in the next step.
-</li>
-<li>
-Email <a href="mailto:reviews@lists.mercurylang.org">reviews@lists.mercurylang.org</a>.
-and let us know that it's available (or it is attached), what it is,
-and give us the URL.  We'll check it out and if all is well will add it
-to the archive.
-</li>
-</ul>
 
+<p>Volker Wysk is maintaining
+<a href="https://volker-wysk.de/mercury/resources.html">
+a list of Mercury resources</a>.
+</p>
+
+<p>
+Previously, we accepted Mercury libraries in the "extras" repository.
+This was more useful when code hosting was harder to come by,
+and we could keep code up-to-date with language changes.
+</p>
+
+<p>
+These days, if you have some code to share,
+we suggest you use one of the free code hosting services.
+Feel free to tell everyone about it on the
+<a href="../contact.html">Mercury users mailing list</a>.
+</li>
 
 <h3>Modifications to the Mercury System</h3>
 <p>
