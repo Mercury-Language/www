@@ -18,7 +18,7 @@ These days, if you have some code to share,
 we suggest you use one of the free code hosting services.
 Feel free to tell everyone about it on the
 <a href="../contact.html">Mercury users mailing list</a>.
-</li>
+</p>
 
 <h3>Modifications to the Mercury System</h3>
 <p>
