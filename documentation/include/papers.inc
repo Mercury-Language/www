@@ -6,7 +6,7 @@ WHEN UPDATING THIS FILE, REMEMBER TO UPDATE THE TABLE OF CONTENTS!
 The Mercury team have written quite a few papers about the Mercury
 programming language, its implementation techniques, design, theoretical
 basis and other topics. In addition, we have written several papers
-on <a href = "papers.html#related">related</a> topics.
+on <a href="papers.html#related">related</a> topics.
 Almost all are available here as PostScript
 files, compressed using gzip, or as PDF.
 </p>
@@ -16,7 +16,7 @@ Below the papers, the notes from a number of
 given on Mercury, at a variety of levels, are also available.
 </p>
 <h2>Contents</h2>
-<h3><a href = "papers.html#mercury">Papers on Mercury</a></h3>
+<h3><a href="papers.html#mercury">Papers on Mercury</a></h3>
 
 <ul class="nonindentlist">
 
@@ -209,7 +209,7 @@ Porto, Portugal, September 2007.
 
 <li>
 <strong>
-<a href = "papers.html#pbone-hons">
+<a href="papers.html#pbone-hons">
 Calculating likely parallelism within dependent conjunctions
 for logic programs.
 </a>
@@ -241,7 +241,7 @@ San Francisco, California, January 2008.
 
 <li>
 <strong>
-<a href = "papers.html#lmika-hons">
+<a href="papers.html#lmika-hons">
 Software transactional memory in Mercury.
 </a>
 </strong>
@@ -263,7 +263,7 @@ Dealing with large predicates: exo-compilation in the WAM and in Mercury.
 <br>
 Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi,
 <em>
-Proceedings of the Seventh International Colloquim
+Proceedings of the Seventh International Colloquium
 on Implementation of Constraint and Logic Programming Systems,
 </em>
 Porto, Portugal, September 2007.
@@ -272,7 +272,7 @@ Porto, Portugal, September 2007.
 
 <li>
 <strong>
-<a href = "papers.html#wangp-hons">
+<a href="papers.html#wangp-hons">
 Parallel Mercury.
 </a>
 </strong>
@@ -287,7 +287,7 @@ Melbourne, 2006.
 
 <li>
 <strong>
-<a href = "papers.html#padl06solver">
+<a href="papers.html#padl06solver">
 Adding constraint solving to Mercury.
 </a>
 </strong>
@@ -304,7 +304,7 @@ Charleston, South Carolina, January 2006.
 
 <li>
 <strong>
-<a href = "papers.html#padl06dd">
+<a href="papers.html#padl06dd">
 Controlling search space materialization
 in a practical declarative debugger.
 </a>
@@ -321,7 +321,7 @@ Charleston, South Carolina, January 2006.
 
 <li>
 <strong>
-<a href = "papers.html#padl06tabling">
+<a href="papers.html#padl06tabling">
 Tabling in Mercury: design and implementation.
 </a>
 </strong>
@@ -337,7 +337,7 @@ Charleston, South Carolina, January 2006.
 
 <li>
 <strong>
-<a href = "papers.html#maclarty-masters">
+<a href="papers.html#maclarty-masters">
 Practical declarative debugging of Mercury programs.
 </a>
 </strong>
@@ -352,7 +352,7 @@ University of Melbourne, July 2005.
 
 <li>
 <strong>
-<a href = "papers.html#ciclops05">
+<a href="papers.html#ciclops05">
 The implementation of minimal model tabling in Mercury (extended abstract).
 </a>
 </strong>
@@ -367,7 +367,7 @@ Barcelona, Spain, October 2005.
 
 <li>
 <strong>
-<a href = "papers.html#dd3">
+<a href="papers.html#dd3">
 Divide-and-query and subterm dependency tracking
 in the Mercury declarative debugger.
 </a>
@@ -384,7 +384,7 @@ Monterey, California, September 2005.
 
 <li>
 <strong>
-<a href = "papers.html#decl_debug">
+<a href="papers.html#decl_debug">
 Annotated event traces for declarative debugging.
 </a>
 </strong>
@@ -399,7 +399,7 @@ Melbourne, 2005.
 
 <li>
 <strong>
-<a href = "papers.html#mazur-thesis">
+<a href="papers.html#mazur-thesis">
 Compile-time garbage collection for the declarative language Mercury.
 </a>
 </strong>
@@ -414,7 +414,7 @@ Catholic University of Leuven, Belgium, May 2004.
 
 <li>
 <strong>
-<a href = "papers.html#dmo-thesis">
+<a href="papers.html#dmo-thesis">
 Precise and expressive mode systems for typed logic programming languages.
 </a>
 </strong>
@@ -429,7 +429,7 @@ Melbourne, 2003.
 
 <li>
 <strong>
-<a href = "papers.html#aadebug03-paper">
+<a href="papers.html#aadebug03-paper">
 Idempotent I/O for safe time travel.
 </a>
 </strong>
@@ -444,7 +444,7 @@ Ghent, Belgium, September 2003.
 
 <li>
 <strong>
-<a href = "papers.html#juliensf-hons">
+<a href="papers.html#juliensf-hons">
 Termination analysis for Mercury using convex constraints.
 </a>
 </strong>
@@ -459,7 +459,7 @@ Melbourne, 2002.
 
 <li>
 <strong>
-<a href = "papers.html#conway-thesis">
+<a href="papers.html#conway-thesis">
 Towards parallel Mercury.
 </a>
 </strong>
@@ -474,7 +474,7 @@ Melbourne, 2002.
 
 <li>
 <strong>
-<a href = "#dgj-thesis-final">
+<a href="#dgj-thesis-final">
 Expressive type systems for logic programming languages.
 </a>
 </strong>
@@ -490,7 +490,7 @@ Melbourne,
 
 <li>
 <strong>
-<a href = "#p33-overton">
+<a href="#p33-overton">
 Constraint-based mode analysis of Mercury.
 </a>
 </strong>
@@ -502,7 +502,7 @@ David Overton, Zoltan Somogyi and Peter Stuckey.
 
 <li>
 <strong>
-<a href = "papers.html#p81-somogyi">
+<a href="papers.html#p81-somogyi">
 Using the heap to eliminate stack accesses.
 </a>
 </strong>
@@ -514,7 +514,7 @@ Zoltan Somogyi and Peter Stuckey.
 
 <li>
 <strong>
-<a href = "papers.html#high_level_gc">
+<a href="papers.html#high_level_gc">
 Accurate garbage collection in an uncooperative environment.
 </a>
 </strong>
@@ -526,7 +526,7 @@ Fergus Henderson.
 
 <li>
 <strong>
-<a href = "papers.html#mercury_to_clr">
+<a href="papers.html#mercury_to_clr">
 Compiling Mercury to the .NET Common Language Runtime.
 </a>
 </strong>
@@ -538,7 +538,7 @@ Tyson Dowd, Fergus Henderson, and Peter Ross.
 
 <li>
 <strong>
-<a href = "papers.html#hlc_cc">
+<a href="papers.html#hlc_cc">
 Compiling Mercury to high-level C code.
 </a>
 </strong>
@@ -550,7 +550,7 @@ Fergus Henderson and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href = "papers.html#mu_01_24">
+<a href="papers.html#mu_01_24">
 Deep profiling:
 engineering a profiler for a declarative programming language.
 </a>
@@ -563,7 +563,7 @@ Thomas C. Conway and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href = "papers.html#iclp2001_ctgc">
+<a href="papers.html#iclp2001_ctgc">
 Practical aspects for a working compile time garbage collection system
 for Mercury.
 </a>
@@ -697,7 +697,7 @@ Tyson Dowd, Zoltan Somogyi, Fergus Henderson, Thomas Conway and David Jeffery.
 
 <li>
 <strong>
-<a href = "papers.html#stayl_hons">
+<a href="papers.html#stayl_hons">
 Optimization of Mercury programs.
 </a>
 </strong>
@@ -721,7 +721,7 @@ David Jeffery, Tyson Dowd and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href = "papers.html#mu_98_13">
+<a href="papers.html#mu_98_13">
 Type classes in Mercury.
 </a>
 </strong>
@@ -733,7 +733,7 @@ David Jeffery, Fergus Henderson and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href = "papers.html#sas97">
+<a href="papers.html#sas97">
 Termination analysis for Mercury.
 </a>
 </strong>
@@ -745,7 +745,7 @@ Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 
 <li>
 <strong>
-<a href = "papers.html#jicslpw">
+<a href="papers.html#jicslpw">
 Status of the Mercury system.
 </a>
 </strong>
@@ -758,7 +758,7 @@ Tyson Dowd, David Jeffery, Peter Ross, Peter Schachte and Simon Taylor.
 
 <li>
 <strong>
-<a href = "papers.html#jlp">
+<a href="papers.html#jlp">
 The execution algorithm of Mercury:
 an efficient purely declarative logic programming language.
 </a>
@@ -771,7 +771,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 
 <li>
 <strong>
-<a href = "papers.html#acsc96">
+<a href="papers.html#acsc96">
 Determinism analysis in the Mercury compiler.
 </a>
 </strong>
@@ -784,7 +784,7 @@ Fergus Henderson, Zoltan Somogyi and Thomas Conway.
 
 <li>
 <strong>
-<a href = "papers.html#code_gen_mit">
+<a href="papers.html#code_gen_mit">
 Code generation for Mercury.
 </a>
 </strong>
@@ -797,7 +797,7 @@ Thomas Conway, Fergus Henderson, and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href = "papers.html#mercury_to_c">
+<a href="papers.html#mercury_to_c">
 Compiling logic programs to C
 using GNU C as a portable assembler.
 </a>
@@ -811,7 +811,7 @@ Portland, Oregon.
 
 <li>
 <strong>
-<a href = "papers.html#acsc95">
+<a href="papers.html#acsc95">
 Mercury: an efficient purely declarative logic programming language.
 </a>
 </strong>
@@ -823,7 +823,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 
 <li>
 <strong>
-<a href = "papers.html#ilps94w">
+<a href="papers.html#ilps94w">
 The implementation of Mercury:
 an efficient purely declarative logic programming language.
 </a>
@@ -840,7 +840,7 @@ Syracuse, New York.
 
 <li>
 <strong>
-<a href = "papers.html#conway_hons">
+<a href="papers.html#conway_hons">
 Code generation for Mercury.
 </a>
 </strong>
@@ -852,12 +852,12 @@ Thomas Conway.
 
 </ul>
 
-<h3><a href = "papers.html#related">Related papers</a></h3>
+<h3><a href="papers.html#related">Related papers</a></h3>
 
 <ul class="nonindentlist">
 <li>
 <strong>
-<a href = "papers.html#mc_swese_2007">
+<a href="papers.html#mc_swese_2007">
 Ontology driven software engineering for real life applications.
 </a>
 </strong>
@@ -874,7 +874,7 @@ Innsbruck, Austria, 2007.
 
 <li>
 <strong>
-<a href = "papers.html#mu_97_23">
+<a href="papers.html#mu_97_23">
 Termination analysis for logic programs.
 </a>
 </strong>
@@ -886,7 +886,7 @@ Chris Speirs.
 
 <li>
 <strong>
-<a href = "papers.html#vision">
+<a href="papers.html#vision">
 Logic programming for the real world.
 </a>
 </strong>
@@ -898,7 +898,7 @@ Zoltan Somogyi, Fergus Henderson, Thomas Conway and Richard O'Keefe.
 
 <li>
 <strong>
-<a href = "papers.html#iclp87">
+<a href="papers.html#iclp87">
 A system of precise modes for logic programs.
 </a>
 </strong>
@@ -927,7 +927,7 @@ The University of Melbourne.
 
 <li>
 <strong>
-<a href = "papers.html#fjh_hons_thesis">
+<a href="papers.html#fjh_hons_thesis">
 Strong modes can change the world!
 </a>
 </strong>
@@ -939,7 +939,7 @@ Fergus Henderson.
 
 <li>
 <strong>
-<a href = "papers.html#mu_96_45">
+<a href="papers.html#mu_96_45">
 Database transactions in a purely declarative logic programming language.
 </a>
 </strong>
@@ -952,7 +952,7 @@ Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 <li>
 <strong>
-<a href = "papers.html#tr90-2">
+<a href="papers.html#tr90-2">
 Right-, left-, and multi-linear rule transformations that maintain
 context information.
 </a>
@@ -965,7 +965,7 @@ David B. Kemp and Kotagiri Ramamohanarao and Zoltan Somogyi.
 
 </ul>
 
-<h3><a href = "papers.html#presentations">Presentations</a></h3>
+<h3><a href="papers.html#presentations">Presentations</a></h3>
 
 <ul class="nonindentlist">
 
@@ -1137,7 +1137,7 @@ January 2010.
 
 <li>
 <strong>
-<a href = "papers.html#leuven09">
+<a href="papers.html#leuven09">
 Towards automatic parallelization of Mercury programs.
 </a>
 </strong>
@@ -1153,7 +1153,7 @@ Belgium,
 
 <li>
 <strong>
-<a href = "papers.html#fpu_rules_2009">
+<a href="papers.html#fpu_rules_2009">
 Writing business rules engines in Mercury.
 </a>
 </strong>
@@ -1169,7 +1169,7 @@ University of Melbourne,
 
 <li>
 <strong>
-<a href = "papers.html#mc_owl_mercury_talk_14_08_2007">
+<a href="papers.html#mc_owl_mercury_talk_14_08_2007">
 Ontology driven software development with Mercury.
 </a>
 </strong>
@@ -1184,7 +1184,7 @@ University of Melbourne,
 
 <li>
 <strong>
-<a href = "papers.html#g12_unclean">
+<a href="papers.html#g12_unclean">
 Unclean! Unclean! or Purity issues in declarative constraint logic programming.
 </a>
 </strong>
@@ -1196,7 +1196,7 @@ University of Melbourne, 28 March 2006.
 
 <li>
 <strong>
-<a href = "papers.html#aadebug05-talk">
+<a href="papers.html#aadebug05-talk">
 Divide-and-query and subterm dependency tracking
 in the Mercury declarative debugger.
 </a>
@@ -1211,7 +1211,7 @@ Monterey, USA, September 2005.
 
 <li>
 <strong>
-<a href = "papers.html#aadebug03-talk">
+<a href="papers.html#aadebug03-talk">
 Idempotent I/O for safe time travel.
 </a>
 </strong>
@@ -1225,7 +1225,7 @@ Ghent, Belgium, September 2003.
 
 <li>
 <strong>
-<a href = "papers.html#ppdp02mode-talk">
+<a href="papers.html#ppdp02mode-talk">
 Constraint-based mode analysis of Mercury.
 </a>
 </strong>
@@ -1239,7 +1239,7 @@ Pittsburgh, Pennsylvania, October 2002.
 
 <li>
 <strong>
-<a href = "papers.html#ppdp02stack-talk">
+<a href="papers.html#ppdp02stack-talk">
 Using the heap to eliminate stack accesses.
 </a>
 </strong>
@@ -1265,7 +1265,7 @@ Talk presented at <em>SAS'97</em>, Paris.
 
 <li>
 <strong>
-<a href = "papers.html#unif">
+<a href="papers.html#unif">
 Unification in Mercury.
 </a>
 </strong>
@@ -1292,7 +1292,7 @@ Tutorial presented at <em>JICSLP'96</em>, Bonn, Germany.
 
 <li>
 <strong>
-<a href = "papers.html#jicslpw_talk">
+<a href="papers.html#jicslpw_talk">
 Status of the Mercury system.
 </a>
 </strong>
@@ -1309,7 +1309,7 @@ Bonn, Germany.
 
 <li>
 <strong>
-<a href = "papers.html#acsc95_slides">
+<a href="papers.html#acsc95_slides">
 Mercury:
 an efficient purely declarative logic programming language.
 </a>
@@ -1322,7 +1322,7 @@ Presented at <em>ACSC'95</em>, Adelaide, South Australia.
 
 <li>
 <strong>
-<a href = "papers.html#257_1999">
+<a href="papers.html#257_1999">
 Mercury lecture notes for 433-257 (expanded).
 </a>
 </strong>
@@ -1333,7 +1333,7 @@ Zoltan Somogyi, 1999.
 
 <li>
 <strong>
-<a href = "papers.html#257">
+<a href="papers.html#257">
 Mercury lecture notes for 433-257.
 </a>
 </strong>
@@ -1344,7 +1344,7 @@ Zoltan Somogyi, 1997.
 
 <li>
 <strong>
-<a href = "papers.html#247">
+<a href="papers.html#247">
 Mercury lecture notes for 433-247.
 </a>
 </strong>
@@ -1355,7 +1355,7 @@ Zoltan Somogyi, 1995.
 
 <li>
 <strong>
-<a href = "papers.html#dgj-talk">
+<a href="papers.html#dgj-talk">
 Type classes for logic programming languages.
 </a>
 </strong>
@@ -1366,7 +1366,7 @@ David Jeffery, 1998.
 
 <li>
 <strong>
-<a href = "papers.html#rtti_talk_98">
+<a href="papers.html#rtti_talk_98">
 Runtime type information in Mercury.
 </a>
 </strong>
@@ -1400,7 +1400,7 @@ The University of Melbourne,
 December 2012.
 <br>
 Available here
-<a href = "papers/pbone_phd_thesis.pdf">
+<a href="papers/pbone_phd_thesis.pdf">
 as PDF (2.0M).
 </a>
 <p>
@@ -1487,7 +1487,7 @@ Declarative Aspects and Applications of Multicore Programming
 Philadelphia, Pennsylvania, USA, January 2012.
 <br>
 Available here
-<a href = "papers/loop_control.pdf">
+<a href="papers/loop_control.pdf">
 as PDF (159K).
 </a>
 <p>
@@ -1536,7 +1536,7 @@ Paul Bone and Zoltan Somogyi.
 Lexington, Kentucky, July 2011.
 <br>
 Available here
-<a href = "papers/threadscope.pdf">
+<a href="papers/threadscope.pdf">
 as PDF (429K).
 </a>
 <p>
@@ -1583,11 +1583,11 @@ Programming (ICLP'11) Special Issue, volume 11, issue 4-5.
 Lexington, Kentucky, July 2011.
 <br>
 Available here
-<a href = "papers/dep_par_conj_overlap.ps">
+<a href="papers/dep_par_conj_overlap.ps">
 as PostScript (959K).
 </a>
 and
-<a href = "papers/dep_par_conj_overlap.pdf">
+<a href="papers/dep_par_conj_overlap.pdf">
 as PDF (196K).
 </a>
 <p>
@@ -1666,20 +1666,20 @@ Programming (ICLP'11), LIPICS Vol. 11.
 Lexington, Kentucky, July 2011.
 <br>
 Available here
-<a href = "papers/minimizing_overheads_short.ps">
+<a href="papers/minimizing_overheads_short.ps">
 as PostScript (836K).
 </a>
 and
-<a href = "papers/minimizing_overheads_short.pdf">
+<a href="papers/minimizing_overheads_short.pdf">
 as PDF (447K).
 </a>
 A longer version, with more details,
 is available here
-<a href = "papers/minimizing_overheads_long.ps">
+<a href="papers/minimizing_overheads_long.ps">
 as PostScript (898K).
 </a>
 and
-<a href = "papers/minimizing_overheads_long.pdf">
+<a href="papers/minimizing_overheads_long.pdf">
 as PDF (179K).
 </a>
 <p>
@@ -1734,7 +1734,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2009.
 <br>
-<a href = "papers/bmellor_hons.pdf">
+<a href="papers/bmellor_hons.pdf">
 Available here (533K).
 </a>
 <p>
@@ -1775,7 +1775,7 @@ Department of Computer Science,
 Catholic University of Leuven (KUL),
 November 2009.
 <br>
-<a href = "papers/quan_thesis.pdf">
+<a href="papers/quan_thesis.pdf">
 Available here (919K).
 </a>
 <p>
@@ -1849,7 +1849,7 @@ Implementation of Constraint and Logic Programming Systems (CICLOPS '09),
 </em>
 Pasadena, California, July 2009, pages 1-15.
 <br>
-<a href = "papers/ciclops09.pdf">
+<a href="papers/ciclops09.pdf">
 Available here (200K).
 </a>
 <p>
@@ -1887,7 +1887,7 @@ Principles and Practice of Declarative Programming,
 </em>
 Coimbra, Portugal, September 2009, pages 161-169.
 <br>
-<a href = "papers/ppdp14-phan.pdf">
+<a href="papers/ppdp14-phan.pdf">
 Available here (215K).
 </a>
 <p>
@@ -1924,7 +1924,7 @@ Proceedings of the 2008 International Symposim on Memory Management (ISMM '08),
 </em>
 Tucson, Arizona, June 2008, pages 61-70.
 <br>
-<a href = "papers/ismm115-phan.pdf">
+<a href="papers/ismm115-phan.pdf">
 Available here (148K).
 </a>
 <p>
@@ -1960,7 +1960,7 @@ Proceedings of the 23rd International Conference on Logic Programming,
 </em>
 Porto, Portugal, September 2007, pages 317-332.
 <br>
-<a href = "papers/iclp2007.pdf">
+<a href="papers/iclp2007.pdf">
 Available here (193K).
 </a>
 <p>
@@ -1998,7 +1998,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2008.
 <br>
-<a href = "papers/pbone_hons.pdf">
+<a href="papers/pbone_hons.pdf">
 Available here (265K).
 </a>
 <p>
@@ -2080,7 +2080,7 @@ We present experimental evidence to support these claims.
 <p>
 The benchmark data on which the performance evaluation section of this paper
 is based is
-<a href = "papers/packrat.package.tar.gz">available here (2.6M)</a>.
+<a href="papers/packrat.package.tar.gz">available here (2.6M)</a>.
 </p>
 </li>
 
@@ -2100,7 +2100,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2007.
 <br>
-<a href = "papers/lmika_hons.pdf">
+<a href="papers/lmika_hons.pdf">
 Available here (220K).
 </a>
 <p>
@@ -2127,12 +2127,12 @@ Dealing with large predicates: exo-compilation in the WAM and in Mercury.
 <br>
 Bart Demoen, Phuong-Lan Nguyen, Vitor Santos Costa and Zoltan Somogyi.
 <em>
-Proceedings of the Seventh International Colloquim
+Proceedings of the Seventh International Colloquium
 on Implementation of Constraint and Logic Programming Systems,
 </em>
 Porto, Portugal, September 2007.
 <br>
-<a href = "papers/ciclops07.ps.gz">
+<a href="papers/ciclops07.ps.gz">
 Available here (156k).
 </a>
 <p>
@@ -2176,7 +2176,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 October 2006.
 <br>
-<a href = "papers/wangp_hons.ps.gz">
+<a href="papers/wangp_hons.ps.gz">
 Available here (216K).
 </a>
 <p>
@@ -2210,11 +2210,11 @@ Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
 <br>
 Available in
-<a href = "papers/padl_solver.pdf">
+<a href="papers/padl_solver.pdf">
 pdf (166k)
 </a>
 or
-<a href = "papers/padl_solver.ps.gz">
+<a href="papers/padl_solver.ps.gz">
 ps.gz (139k)
 </a>
 formats.
@@ -2252,11 +2252,11 @@ Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
 <br>
 Available in
-<a href = "papers/padl_dd.pdf">
+<a href="papers/padl_dd.pdf">
 pdf (201k)
 </a>
 or
-<a href = "papers/padl_dd.ps.gz">
+<a href="papers/padl_dd.ps.gz">
 ps.gz (176k)
 </a>
 formats.
@@ -2306,11 +2306,11 @@ on Practical Aspects of Declarative languages,
 Charleston, South Carolina, January 2006,
 Springer Verlag, &copy;.
 Available in
-<a href = "papers/padl_tabling.pdf">
+<a href="papers/padl_tabling.pdf">
 pdf (153k)
 </a>
 or
-<a href = "papers/padl_tabling.ps.gz">
+<a href="papers/padl_tabling.ps.gz">
 ps.gz (93k)
 </a>
 formats.
@@ -2459,11 +2459,11 @@ Colloquium on Implementation of Constraint and Logic Programming Systems,
 Barcelona, Spain, October 2005.
 <br>
 Available in
-<a href = "papers/ciclops05.pdf">
+<a href="papers/ciclops05.pdf">
 pdf (312k)
 </a>
 or
-<a href = "papers/ciclops05.ps.gz">
+<a href="papers/ciclops05.ps.gz">
 ps.gz (90k)
 </a>
 formats.
@@ -2510,11 +2510,11 @@ Automated and Analysis-driven Debugging.
 Monterey, California, September 2005.
 <br>
 Available in
-<a href = "papers/dd3.pdf">
+<a href="papers/dd3.pdf">
 pdf (204k)
 </a>
 or
-<a href = "papers/dd3.ps.gz">
+<a href="papers/dd3.ps.gz">
 ps.gz (161k)
 </a>
 formats.
@@ -2572,11 +2572,11 @@ The University of Melbourne,
 2005.
 <br>
 Available in
-<a href = "papers/decl_debug.pdf">
+<a href="papers/decl_debug.pdf">
 pdf (261k)
 </a>
 or
-<a href = "papers/decl_debug.ps.gz">
+<a href="papers/decl_debug.ps.gz">
 ps.gz (94k)
 </a>
 formats.
@@ -2631,7 +2631,7 @@ Catholic University of Leuven,
 Belgium,
 May 2004.
 <br>
-<a href = "papers/CW2004_03_mazur.pdf">
+<a href="papers/CW2004_03_mazur.pdf">
 Available here (1.7M).
 </a>
 <p>
@@ -2715,7 +2715,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 December 2003.
 <br>
-<a href = "papers/dmo-thesis.ps.gz">
+<a href="papers/dmo-thesis.ps.gz">
 Available here (602K).
 </a>
 <p>
@@ -2803,7 +2803,7 @@ Proceedings of the Fifth International Workshop on Automated Debugging,
 </em>
 Ghent, Belgium, September 2003.
 <br>
-<a href = "papers/aadebug03_paper.pdf">
+<a href="papers/aadebug03_paper.pdf">
 Available here (143K).
 </a>
 <p>
@@ -2851,7 +2851,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 August 2002.
 <br>
-<a href = "papers/juliensf_hons.ps.gz">
+<a href="papers/juliensf_hons.ps.gz">
 Available here (143K).
 </a>
 <p>
@@ -2883,7 +2883,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 July 2002.
 <br>
-<a href = "papers/conway-thesis.ps.gz">
+<a href="papers/conway-thesis.ps.gz">
 Available here (562K).
 </a>
 <p>
@@ -2953,7 +2953,7 @@ Department of Computer Science and Software Engineering,
 The University of Melbourne,
 February 2002.
 <br>
-<a href = "papers/dgj-thesis-final.ps.gz">
+<a href="papers/dgj-thesis-final.ps.gz">
 Available here (370K).
 </a>
 <p>
@@ -3029,7 +3029,7 @@ Principles and Practice of Declarative Programming,
 </em>
 Pittsburgh, Pennsylvania, October 2002, pages 109-120.
 <br>
-<a href = "papers/p33-overton.ps.gz">
+<a href="papers/p33-overton.ps.gz">
 Available here (188K).
 </a>
 <p>
@@ -3070,7 +3070,7 @@ Principles and Practice of Declarative Programming,
 </em>
 Pittsburgh, Pennsylvania, October 2002, pages 121-132.
 <br>
-<a href = "papers/p81-somogyi.ps.gz">
+<a href="papers/p81-somogyi.ps.gz">
 Available here (190K).
 </a>
 <p>
@@ -3108,7 +3108,7 @@ Proceedings of the 2002 International Symposium on Memory Management,
 </em>
 Berlin, Germany, June 2002, pages 150-156.
 <br>
-<a href = "papers/high_level_gc.ps.gz">
+<a href="papers/high_level_gc.ps.gz">
 Available here (83K).
 </a>
 <p>
@@ -3141,7 +3141,7 @@ Multi-Language Infrastructure and Interoperability,
 Firenze, Italy, September 2001.  Preliminary Proceedings pages 70-85.
 To appear in Electronic Notes in Theoretical Computer Science 59.1.
 <br>
-<a href = "papers/mercury_to_clr.ps.gz">
+<a href="papers/mercury_to_clr.ps.gz">
 Available here (93K).
 </a>
 <p>
@@ -3174,7 +3174,7 @@ Grenoble, France, April 2002.
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <br>
-<a href = "papers/hlc_cc.ps.gz">Available here (67K)</a>.
+<a href="papers/hlc_cc.ps.gz">Available here (67K)</a>.
 <p>
 Many logic programming implementations compile to C,
 but they compile to very low-level C, and thus discard many
@@ -3201,7 +3201,7 @@ such as IL (the Microsoft .NET intermediate language).
 <p>
 The benchmark data on which the performance evaluation section of this paper
 is based is
-<a href = "papers/hlc_cc_perf.tar.gz">available here (9.7M)</a>.
+<a href="papers/hlc_cc_perf.tar.gz">available here (9.7M)</a>.
 </p>
 </li>
 
@@ -3221,7 +3221,7 @@ Technical Report 2001/24,
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, July 2001, 61 pages.
 <br>
-<a href = "papers/mu_01_24.ps.gz">
+<a href="papers/mu_01_24.ps.gz">
 Available here (207K).
 </a>
 <p>
@@ -3271,7 +3271,7 @@ Pages 105-119
 &copy;
 <a href="http://www.springer.de/comp/lncs/index.html">Springer-Verlag</a>.
 <br>
-<a href = "papers/iclp2001_ctgc.ps.gz">
+<a href="papers/iclp2001_ctgc.ps.gz">
 Available here (84K).
 </a>
 <p>
@@ -3397,7 +3397,7 @@ and can make a large class of programs tail recursive.
 </p>
 <p>
 The raw data on which the evaluation is based
-is available as a <a href = "papers/tail_data.tar.gz">5 Kb tar file</a>.
+is available as a <a href="papers/tail_data.tar.gz">5 Kb tar file</a>.
 </p>
 </li>
 
@@ -3620,7 +3620,7 @@ as well as measurements of the space costs of the system.
 </p>
 <p>
 The raw data on which the evaluation is based
-is available as a <a href = "papers/rtti_data.tar.gz">70 Kb tar file</a>
+is available as a <a href="papers/rtti_data.tar.gz">70 Kb tar file</a>
 </p>
 </li>
 
@@ -3638,7 +3638,7 @@ Honours report.
 </em>
 Department of Computer Science, University of Melbourne, November 1998.
 <br>
-<a href = "papers/stayl_hons.ps.gz">
+<a href="papers/stayl_hons.ps.gz">
 Available here (120K).
 </a>
 <p>
@@ -3707,7 +3707,7 @@ Technical Report 98/13,
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, September 1998, 22 pages.
 <br>
-<a href = "papers/mu_98_13.ps.gz">
+<a href="papers/mu_98_13.ps.gz">
 Available here (82K).
 </a>
 <p>
@@ -3735,12 +3735,12 @@ Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 Proceedings of the Fourth Static Analysis Symposium
 </em>,
 Paris, France, September 1997, pages 157-171.
-<a href = "papers/sas97.ps.gz">available here (75K)</a>.
+<a href="papers/sas97.ps.gz">available here (75K)</a>.
 A longer version of the paper appeared as
 Technical Report 97/9,
 Department of Computer Science, University of Melbourne,
 Melbourne, Australia, July 1997, 25 pages.
-it is <a href = "papers/mu_97_09.ps.gz">available here (99K)</a>.
+it is <a href="papers/mu_97_09.ps.gz">available here (99K)</a>.
 <p>
 This paper presents the algorithms of the Mercury termination analyser,
 discusses how real-world aspects of the language
@@ -3751,7 +3751,7 @@ both on a set of standard test programs and on the Mercury compiler itself.
 </p>
 <p>
 The raw data on which the evaluation is based is available
-as a <a href = "papers/termination_data.tar.gz">5.2 Mb tar file</a>.
+as a <a href="papers/termination_data.tar.gz">5.2 Mb tar file</a>.
 </p>
 </li>
 
@@ -3771,7 +3771,7 @@ Implementation Technology for (Constraint) Logic Programming Languages,
 </em>
 Bonn, Germany, September 1996, pages 207-218.
 <br>
-<a href = "papers/jicslpw.ps.gz">Available here (46K)</a>.
+<a href="papers/jicslpw.ps.gz">Available here (46K)</a>.
 <p>
 </li>
 
@@ -3790,7 +3790,7 @@ Journal of Logic Programming,
 </em>
 volume 29, number 1-3, October-December 1996, pages 17-64.
 <br>
-<a href = "papers/jlp.ps.gz">Available here (138K)</a>.
+<a href="papers/jlp.ps.gz">Available here (138K)</a>.
 <br>
 Elsevier owns the copyright of this paper;
 it is made available here by their permission.
@@ -3804,7 +3804,7 @@ the abstract machine instructions are implemented as C or GNU C code.)
 </p>
 <p>
 The raw data on which the evaluation is based
-is available on our <a href = "./benchmarks.html">benchmarking page</a>.
+is available on our <a href="./benchmarks.html">benchmarking page</a>.
 </p>
 </li>
 
@@ -3822,9 +3822,9 @@ Proceedings of the Australian Computer Science Conference,
 </em>
 Melbourne, Australia, January 1996, pages 337-346.
 <br>
-<a href = "papers/acsc96.ps.gz">Available here (78K)</a>.
+<a href="papers/acsc96.ps.gz">Available here (78K)</a>.
 A longer version of the paper is
-<a href = "papers/detism.ps.gz">available here (76K)</a>.
+<a href="papers/detism.ps.gz">available here (76K)</a>.
 <p>
 This paper discusses Mercury's determinism system in detail, including
 the algorithms for switch detection, deep indexing, determinism
@@ -3846,7 +3846,7 @@ Proceedings of the 1995 International Symposium on Logic Programming,
 </em>
 Portland, Oregon, December 1995, pages 242-256.
 <br>
-<a href = "papers/code_gen_mit.ps.gz">Available here (68K)</a>.
+<a href="papers/code_gen_mit.ps.gz">Available here (68K)</a>.
 <p>
 This paper describes the structure of the Mercury compiler,
 its calling conventions,
@@ -3872,7 +3872,7 @@ Sequential Implementation Technologies for Logic Programming Languages.
 </em>
 Portland, Oregon, December 1995.
 <br>
-<a href = "papers/mercury_to_c.ps.gz">Available here (65K)</a>.
+<a href="papers/mercury_to_c.ps.gz">Available here (65K)</a>.
 <p>
 This paper discusses the merits of using C, and in particular GNU C,
 as an intermediate target language for the compilation of logic programs,
@@ -3894,7 +3894,7 @@ Proceedings of the Australian Computer Science Conference,
 </em>
 Glenelg, Australia, February 1995, pages 499-512.
 <br>
-<a href = "papers/acsc95.ps.gz">Available here (85K)</a>.
+<a href="papers/acsc95.ps.gz">Available here (85K)</a>.
 <p>
 An overview paper.
 </p>
@@ -3916,7 +3916,7 @@ Implementation Techniques for Logic Programming Languages,
 </em>
 Syracuse, New York, November 1994.
 <br>
-<a href = "papers/ilps94w.ps.gz">Available here (96K)</a>.
+<a href="papers/ilps94w.ps.gz">Available here (96K)</a>.
 <p>
 The first paper on Mercury. It is superseded by the paper
 in the Journal of Logic Programming.
@@ -3937,7 +3937,7 @@ Honours report.
 </em>
 Department of Computer Science, University of Melbourne, November 1994.
 <br>
-<a href = "papers/conway_hons.ps.gz">Available here (188K)</a>.
+<a href="papers/conway_hons.ps.gz">Available here (188K)</a>.
 <p>
 This is the first paper on the code generator.
 Warning: several aspects of the code generator have changed
@@ -3973,7 +3973,7 @@ Software Engineering (SWESE 2007)
 </em>
 Innsbruck, Austria, 2007.
 <br>
-<a href = "papers/mc_swese_2007.pdf">
+<a href="papers/mc_swese_2007.pdf">
 Available here (121K).
 </a>
 <p>
@@ -4010,7 +4010,7 @@ Technical Report 97/23,
 </em>
 Department of Computer Science, University of Melbourne, October 1997.
 <br>
-<a href = "papers/mu_97_23.ps.gz">
+<a href="papers/mu_97_23.ps.gz">
 Available here (67K).
 </a>
 </li>
@@ -4038,7 +4038,7 @@ Visions for the Future of Logic Programming,
 </em>
 Portland, Oregon, December 1995.
 <br>
-<a href = "papers/vision.ps.gz">
+<a href="papers/vision.ps.gz">
 Available here (59K).
 </a>
 <p>
@@ -4066,7 +4066,7 @@ Proceedings of the Fourth International Conference on Logic Programming,
 </em>
 Melbourne, Australia, May 1987, pages 769-787.
 <br>
-<a href = "papers/iclp87.ps.gz">
+<a href="papers/iclp87.ps.gz">
 Available here (40K).
 </a>
 <p>
@@ -4088,7 +4088,7 @@ Department of Computer Science,
 The University of Melbourne.
 January 1989, 148 pages.
 <br>
-<a href = "papers/zs_thesis.ps.gz">
+<a href="papers/zs_thesis.ps.gz">
 Available here (348K).
 </a>
 <p>
@@ -4108,7 +4108,7 @@ Honours Report.
 </em>
 Department of Computer Science, University of Melbourne, November 1993.
 <br>
-<a href = "papers/fjh_hons.ps.gz">Available here (114K).
+<a href="papers/fjh_hons.ps.gz">Available here (114K).
 </a>
 <p>
 </li>
@@ -4122,11 +4122,8 @@ interface.
 </a>
 </p>
 <p>
-The same kind of approach is also used in
-the Mercury interface to the Aditi deductive
-database system (see the "Aditi deductive database interface"
-section in Mercury Language Reference Manual listed under
-"Implementation dependent pragmas" in the "Pragmas" chapter).
+The same kind of approach was also once used in the Mercury interface to the
+Aditi deductive database system, although both of these no longer exist.
 
 </p>
 <ul class="nonindentlist">
@@ -4144,10 +4141,10 @@ Technical Report 96/45
 </em>
 Department of Computer Science, University of Melbourne, December 1996.
 <br>
-<a href = "papers/tr_96_45.ps.gz">
+<a href="papers/tr_96_45.ps.gz">
 Available here (58K)
 </a>
-<a href = "papers/tr_96_45_cover.ps.gz">
+<a href="papers/tr_96_45_cover.ps.gz">
 with cover page.
 </a>
 </li>
@@ -4155,8 +4152,8 @@ with cover page.
 
 <p>
 <a name="tr90-2">
-The following paper is also relevant to the Aditi interface mentioned above.
-It describes a source-to-source transformation implemented in the
+The following paper was also relevant to the Aditi interface mentioned above.
+It describes a source-to-source transformation that was once implemented in the
 Mercury compiler.
 </a>
 
@@ -4176,7 +4173,7 @@ Technical Report 90/2
 </em>
 Department of Computer Science, University of Melbourne, October 1997.
 <br>
-<a href = "papers/tr90-2.ps.gz">
+<a href="papers/tr90-2.ps.gz">
 Available here (48K).
 </a>
 Note that this paper incorrectly claims that
@@ -4426,7 +4423,7 @@ Ian MacLarty.
 Functional Programming Union, University of Melbourne,
 </em>
 24 July 2009.
-<a href = "papers/fpu_rules_2009.pdf">
+<a href="papers/fpu_rules_2009.pdf">
 Available here (156K).
 </a>
 <p>
@@ -4445,7 +4442,7 @@ Proceedings of the Tenth International Symposium
 on Practical Aspects of Declarative languages,
 </em>
 San Francisco, California, January 2008.
-<a href = "papers/packrat_talk.pdf">
+<a href="papers/packrat_talk.pdf">
 Available here (140K).</a>
 <p>
 </li>
@@ -4462,7 +4459,7 @@ Ian MacLarty, Peter Ross.
 University of Melbourne.
 </em>
 14 August 2007.
-<a href = "papers/mc_owl_mercury_talk_14_08_2007.pdf">
+<a href="papers/mc_owl_mercury_talk_14_08_2007.pdf">
 Available here (370K).
 </a>
 <p>
@@ -4480,7 +4477,7 @@ Ralph Becket.
 University of Melbourne.
 </em>
 28 March 2006.
-<a href = "papers/g12_unclean.pdf.gz">
+<a href="papers/g12_unclean.pdf.gz">
 Available here (131K).
 </a>
 <p>
@@ -4500,7 +4497,7 @@ Talk presented at the Sixth International
 Symposium on Automated and Analysis Driven Debugging,
 </em>
 Monterey, USA, September 2005.
-<a href = "papers/aadebug05_talk.pdf">
+<a href="papers/aadebug05_talk.pdf">
 Available here (95K).
 </a>
 <p>
@@ -4519,7 +4516,7 @@ Invited talk presented at
 the Fifth International Workshop on Automated Debugging,
 </em>
 Ghent, Belgium, September 2003.
-<a href = "papers/aadebug03_talk.pdf">
+<a href="papers/aadebug03_talk.pdf">
 Available here (20K).
 </a>
 <p>
@@ -4538,7 +4535,7 @@ Talk presented at Fourth International Conference
 on Principles and Practice of Declarative Programming.
 </em>
 Pittsburgh, Pennsylvania, October 2002.
-<a href = "papers/ppdp02_mode.pdf">
+<a href="papers/ppdp02_mode.pdf">
 Available here (117K).
 </a>
 <p>
@@ -4557,7 +4554,7 @@ Talk presented at Fourth International Conference
 on Principles and Practice of Declarative Programming.
 </em>
 Pittsburgh, Pennsylvania, October 2002.
-<a href = "papers/ppdp02_stack.ps">
+<a href="papers/ppdp02_stack.ps">
 Available here (26K).
 </a>
 <p>
@@ -4576,7 +4573,7 @@ Chris Speirs, Zoltan Somogyi and Harald Sondergaard.
 Talk presented at the Fourth Static Analysis Symposium.
 </em>
 Paris, France, September 1997.
-<a href = "papers/sas_talk.ps.gz">
+<a href="papers/sas_talk.ps.gz">
 Available here (6K).
 </a>
 <p>
@@ -4595,7 +4592,7 @@ Zoltan Somogyi.
 Invited talk presented at the Eighth Benelux Workshop on Logic Programming.
 </em>
 Louvain-la-Neuve, Belgium, September 1996.
-<a href = "papers/unif.ps.gz">
+<a href="papers/unif.ps.gz">
 Available here (12K).
 </a>
 <p>
@@ -4615,7 +4612,7 @@ Tutorial presented at the Joint International
 Conference and Symposium on Logic Programming.
 </em>
 Bonn, Germany, September 1996.
-<a href = "papers/jicslp_talk.ps.gz">
+<a href="papers/jicslp_talk.ps.gz">
 Available here (18K).
 </a>
 <p>
@@ -4636,7 +4633,7 @@ Presented at the JICSLP '96 Workshop on Parallelism and
 Implementation Technology for (Constraint) Logic Programming Languages,
 </em>
 Bonn, Germany, September 1996.
-<a href = "papers/jicslpw_talk.ps.gz">
+<a href="papers/jicslpw_talk.ps.gz">
 Available here (5K).
 </a>
 <p>
@@ -4656,7 +4653,7 @@ Zoltan Somogyi, Fergus Henderson and Thomas Conway.
 Presented at the Eighteenth Australasian Computer Science Conference,
 </em>
 Adelaide, South Australia, February 1995.
-<a href = "papers/acsc95_slides.ps.gz">
+<a href="papers/acsc95_slides.ps.gz">
 Available here (33K).
 </a>
 <p>
@@ -4673,7 +4670,7 @@ Lecture notes for the expanded Mercury segment of the subject
 <br>
 Zoltan Somogyi.
 <br>
-<a href = "papers/257_1999.ps.gz">
+<a href="papers/257_1999.ps.gz">
 Available here (40K).
 </a>
 <p>
@@ -4689,7 +4686,7 @@ Lecture notes for the Mercury segment of the subject
 <br>
 Zoltan Somogyi.
 <br>
-<a href = "papers/257.ps.gz">
+<a href="papers/257.ps.gz">
 Available here (21K).
 </a>
 <p>
@@ -4705,7 +4702,7 @@ Lecture notes for the Mercury segment of the subject
 <br>
 Zoltan Somogyi.
 <br>
-<a href = "papers/247.ps.gz">
+<a href="papers/247.ps.gz">
 Available here (21K).
 </a>
 <p>
@@ -4720,7 +4717,7 @@ Type classes for logic programming languages, given in March 1998.
 <br>
 David Jeffery.
 <br>
-<a href = "papers/dgj-talk.ps.gz">
+<a href="papers/dgj-talk.ps.gz">
 Available here (30K).
 </a>
 <p>
@@ -4735,7 +4732,7 @@ Runtime type information in Mercury, given in March 1998.
 <br>
 Tyson Dowd.
 <br>
-<a href = "papers/rtti_talk_98.ps.gz">
+<a href="papers/rtti_talk_98.ps.gz">
 Available here (48K).
 </a>
 <p>
