@@ -40,6 +40,9 @@
 	<?php
 	if($menu == "Documentation") { ?>
 	<ul class="submenu">
+        <li><a href="<?php echo $root?>/documentation/learning.html">
+        <div <?php if($include=="learning.inc"){ ?> class="submenucurrent" <?php } ?>>
+        learning</div></a></li>
 	<li><a href="<?php echo $root?>/documentation/papers.html">
 	<div <?php if($include=="papers.inc"){ ?> class="submenucurrent" <?php } ?>>
 	papers</div></a></li>
