@@ -9,6 +9,7 @@
 # installed, i.e, earth, have the INSTALL_WEBDIR environment variable set
 # and be run from the top level directory of the w3 module.
 #
+# XXX This file seems to be obsolete; we haven't used CVS in over a decade.
 
 www_host=mercury
 
