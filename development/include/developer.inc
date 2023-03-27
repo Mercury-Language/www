@@ -71,8 +71,8 @@ look in the main source repository to find these documents.
 </li>
 
 <li>
-<h3><a href="developers/work_in_progress.html">Work in progress</a> </h3>
-<p>Things currently being done on the Mercury project.  </p>
+<h3><a href="developers/work_in_progress.html">Partially implemented features</a> </h3>
+<p>Features on which work has begun but has stopped short of completion.  </p>
 </li>
 
 <li>	
