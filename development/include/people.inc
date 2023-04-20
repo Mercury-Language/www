@@ -3,10 +3,10 @@
 People who are currently working on the Mercury project:
 </p>
 <ul class="nonindentlist">
-<li> Mark Brown, (YesLogic)</li>
+<li> Mark Brown (YesLogic)</li>
 <li> Julien Fischer, juliensf at mercurylang.org, (Opturion)</li>
-<li> Zoltan Somogyi, zs at mercurylang.org, PhD</li>
-<li> Peter Wang, (YesLogic)</li>
+<li> Zoltan Somogyi, zs at mercurylang.org (YesLogic) </li>
+<li> Peter Wang (YesLogic)</li>
 </ul>
 
 <p>
@@ -18,38 +18,36 @@ some of whom are still informally associated with the project:
 <ul class="nonindentlist">
 <li> Olivier Annet</li>
 <li> Ralph Becket, research fellow</li>
-<li> Tibor Benyi</li>
+<li> Tibor Benyi, honours student</li>
+<li> James Bligh, directed studies student</li>
 <li> Ondrej Bojar</li>
 <li> Paul Bone, PhD</li>
 <li> Renaud Bournonville</li>
 <li> Andrew Bromage, MSc student</li>
-<li> Tibor Benyi, honours student</li>
-<li> James Bligh, directed studies student</li>
 <li> Levi Cameron, summer student</li>
 <li> Ina Cheng, summer student</li>
 <li> Waye-Ian Chiew, summer student</li>
 <li> Thomas Conway, PhD student</li>
 <li> Michael Day, summer student (YesLogic)</li>
-<li> Tyson Dowd, PhD student</li>
 <li> Yoann Dubreuil</li>
+<li> Tyson Dowd, PhD student</li>
 <li> Andrew Ebert, summer student</li>
 <li> Richard Fothergill, summer student</li>
 <li> James Goddard</li>
 <li> Sebastian Godelet</li>
 <li> Matthias G&uuml;demann</li>
 <li> Julian Grady, summer student</li>
-<li> Fransiska Nathania Handoko</li>
+<li> Fransiska Nathania Handoko, summer student</li>
 <li> Warwick Harvey, research fellow (Monash University)</li>
 <li> Peter Hawkins</li>
 <li> Fergus Henderson, research fellow</li>
-<li> Fransiska Handoko, summer student</li>
 <li> Oliver Hutchinson, summer student</li>
 <li> Robert Hutton, summer student</li>
 <li> Paul Incani, summer student</li>
 <li> Erwan Jahier, jahier at imag.fr,
 research assistant (Verimag in Grenoble, France)</li>
-<li> David Jeffery, PhD student</li>
 <li> Darko Jankovic, summer student</li>
+<li> David Jeffery, PhD student</li>
 </ul>
 </div>
 
@@ -77,8 +75,8 @@ research assistant (Verimag in Grenoble, France)</li>
 <li> Peter Schachte, lecturer</li>
 <li> Ben Schmidt</li>
 <li> Dylan Shuttleworth</li>
-<li> Harald S&oslash;ndergaard, senior lecturer</li>
 <li> Steven Siew, honours student</li>
+<li> Harald S&oslash;ndergaard, senior lecturer</li>
 <li> Chris Speirs, summer student</li>
 <li> J&eacute;r&ouml;me Tannier</li>
 <li> Simon Taylor, research assistant</li>
