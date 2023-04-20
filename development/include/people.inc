@@ -98,8 +98,8 @@ The following organisations have contributed to Mercury.
 
 <ul class="nonindentlist">
 <li>Mission Critical IT</li>
-<li><a href="http://www.opturion.com">Opturion</a></li>
-<li><a href="http://www.unimelb.edu.au">The University of Melbourne</a></li>
-<li><a href="http://www.yeslogic.com">YesLogic</a></li>
+<li><a href="https://www.opturion.com">Opturion</a></li>
+<li><a href="https://www.unimelb.edu.au">The University of Melbourne</a></li>
+<li><a href="https://yeslogic.com">YesLogic</a></li>
 </ul>
 </div>
