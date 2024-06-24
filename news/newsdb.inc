@@ -1,29 +1,40 @@
 <?php
-
 /*
+** vim: ft=php ts=4 sw=4 expandtab
 ** This is the news database.
 **
 ** Add new items at the top in chronological order.
 **
-** Each item consists of
+** Each item should have the form
+**
 **	date =>
-**	array( title,
+**	array(
+**      title,
 **	    description
 **	),
+**
 ** Make sure you put a comma between each item, and an arrow
-** between the date and the news.  Quotation marks must be escaped.
+** between the date and the news. Quotation marks must be escaped.
+** The dates of different items must be distinct.
+**
 ** You must test the entry before you commit.
-** Simply run `make' at the top level w3 directory, and use a
-** web browser (lynx is fine) to see that the news.html file formats
-** correctly.
+** Simply run `make' at the top level w3 directory, and use a web browser
+** (lynx is fine) to see that the news.html file formats correctly.
 **
-** ALSO the dates must be distinct.
-**
-** If you're announcing (and releasing) a new version of Mercury please also
+** If you are announcing (and releasing) a new version of Mercury, please also
 ** change the version number in documentation/include/documentation.inc.
 */
 
 $newsdb = array(
+
+"24th June 2024" => array(
+"Color Diagnostics",
+"The Mercury compiler now uses color in diagnostic messages by default.
+For details, see the new \"Diagnostic output\" chapter of the
+<a href=\"https://mercurylang.org/information/doc-latest/mercury_user_guide/Diagnostic-output.html#Diagnostic-output\">Mercury Users' Guide</a>
+in the current
+<a href=\"download.html#rotd\">release of the day</a>.
+"),
 
 "17th September 2023" => array(
 "Mercury 22.01.8 released",

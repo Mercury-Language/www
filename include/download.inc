@@ -64,7 +64,7 @@ For example 10.04 is for a release made in April 2010.
 	</p>
 <?php } ?>
 
-<h3> Release of the day </h3>
+<h3 id="rotd"> Release of the day </h3>
 
 <?php
 /*
