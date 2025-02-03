@@ -16,7 +16,7 @@ Debian packages are also available, instructions for using them are
 <p>
 The Mercury implementation is free software.<br>
 Copyright &copy; 1993&ndash;2012 The University of Melbourne.<br>
-Copyright &copy; 2013&ndash;2024 The Mercury team.
+Copyright &copy; 2013&ndash;2025 The Mercury team.
 </p>
 
 <p>
