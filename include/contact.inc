@@ -4,9 +4,9 @@
 <h2>Contact</h2>
 
 <p>
-If you have any questions, comments, suggestions, bug reports, or issues you would
-like to discuss regarding Mercury, feel free to contact us on one of the
-following mailing lists.
+If you have any questions, comments, suggestions, bug reports, or issues
+you would like to discuss regarding Mercury, feel free to contact us
+on one of the mailing lists listed below.
 </p>
 
 <p>
@@ -16,13 +16,36 @@ If sending a bug report, please enclose as much information as possible,
 including, if possible source code (such as a small test case that exhibits the
 bug), any error messages encountered, operating system version, and
 configuration information, compiler flags used and Mercury compiler version.
-Also, you might want to check the current release to see if a newer release is
-available, or see the bug tracker to see if the bug has already been reported.
+Also, you might want to check to see if a newer release is available,
+  and look at the bug tracker to check whether the bug has already been reported.
 </p>
 
 <p>
-If you wish to contact the core team about something not suitable for the
-mailing lists then e-mail
+For more detailed information about how to write bug reports
+that help you as well helping us, see these links:
+<ul class="nonindentlist">
+<li>
+<a href="https://princetonuniversity.github.io/PUbootcamp/sessions/technical-questions/HowToAskQuestions2018Bootcamp.pdf">
+How to ask a technical question, Bootcamp 2018</a?
+<li>
+<a href="https://www.theodinproject.com/guides/community/how_to_ask">
+How to ask technical questions at the Odin project</a>
+<li>
+<a href="https://xyproblem.info">
+The XY problem</a>
+<li>
+<a href="https://www.timbuchalka.com/post/how-to-ask-a-technical-question-the-right-way">
+How to ask a technical question the right way</a>
+<li>
+<a href="https://www.webucator.com/article/how-to-ask-good-technical-questions">
+How to ask good technical questions</a>
+</ul>
+These links were current as of 2025 February 2.
+
+<p>
+If you wish to contact the core team about something
+that is not suitable for the mailing lists,
+then e-mail
 <a href="mailto:mercury@mercurylang.org">mercury@mercurylang.org</a>
 User support questions are best handled on the mercury-users mailing list.
 </p>
