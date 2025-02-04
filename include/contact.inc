@@ -26,7 +26,7 @@ that help you as well helping us, see these links:
 <ul class="nonindentlist">
 <li>
 <a href="https://princetonuniversity.github.io/PUbootcamp/sessions/technical-questions/HowToAskQuestions2018Bootcamp.pdf">
-How to ask a technical question, Bootcamp 2018</a?
+How to ask a technical question, Bootcamp 2018</a>
 <li>
 <a href="https://www.theodinproject.com/guides/community/how_to_ask">
 How to ask technical questions at the Odin project</a>
