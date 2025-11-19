@@ -857,6 +857,21 @@ Thomas Conway.
 <ul class="nonindentlist">
 <li>
 <strong>
+<a href="papers.html#ruleml_rr_2024">
+Ontologies and semantic rules in real life: A mission-critical product and pricing solution for the Belgian railways.
+</a>
+</strong>
+<br>
+Michel Vanden Bossche-Marquette, Léa Guizol, Rémi Le Brouster.
+<em>
+Companion Proceedings of the 8th International Joint Conference on Rules and Reasoning (RuleML+RR 2024)
+</em>
+Bucharest, Romania, September 2024.
+<p>
+</li>
+
+<li>
+<strong>
 <a href="papers.html#mc_swese_2007">
 Ontology driven software engineering for real life applications.
 </a>
@@ -1920,7 +1935,7 @@ Runtime support for region-based memory management in Mercury.
 Quan Phan, Zoltan Somogyi and Gerda Janssens.
 <br>
 <em>
-Proceedings of the 2008 International Symposim on Memory Management (ISMM '08),
+Proceedings of the 2008 International Symposium on Memory Management (ISMM '08),
 </em>
 Tucson, Arizona, June 2008, pages 61-70.
 <br>
@@ -3952,16 +3967,48 @@ Some of these are documented in the version in the ILPS 95 proceedings.
 <h2><a name="related">Related Papers</a></h2>
 
 <p>
-<a name="mc_swese_2007">
-This paper covers a case study where Mercury was used as an implementation
-language.
-</a>
+These papers cover cases where Mercury was used as an implementation language.
 </p>
 
 <ul class="nonindentlist">
 <li>
 <strong>
+<a name="ruleml_rr_2024">
+Ontologies and semantic rules in real life: A mission-critical product and pricing solution for the Belgian railways.
+</a>
+</strong>
+<br>
+Michel Vanden Bossche-Marquette, Léa Guizol, Rémi Le Brouster.
+<br>
+<em>
+Companion Proceedings of the 8th International Joint Conference on Rules and Reasoning (RuleML+RR 2024)
+</em>
+Bucharest, Romania, September 2024.
+<br>
+<a href="papers/ruleml_rr_2024.pdf">
+Available here (880K).
+</a>
+<p>
+This article presents the successful delivery of a digital solution for the
+Belgian Railways, from requirements specification to roll-out in the cloud.
+This was achieved using an ontology-centric software development and execution
+platform (ODASE) combining OWL-RDF ontologies and Semantic Rules based on SWRL
+with extensions.
+The semantic model allows for a complete description and execution of business
+requirements, and programming is only required for the technical scaffolding
+necessary for a fully working solution.
+This mission-critical application has been in production for more than a year
+and is successful on all fronts: correctness, transparency, changeability,
+time-to-market, cost effectiveness and performance.
+[The ODASE platform uses Mercury as its implementation language.]
+</p>
+</li>
+
+<li>
+<strong>
+<a name="mc_swese_2007">
 Ontology driven software engineering for real life applications.
+</a>
 </strong>
 <br>
 Michel Vanden Bossche, Peter Ross, Ian MacLarty, Bert Van Nuffelen,
