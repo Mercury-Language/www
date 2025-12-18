@@ -28,7 +28,7 @@
 $newsdb = array(
 
 "24th June 2024" => array(
-"Color Diagnostics",
+"Color diagnostics",
 "The Mercury compiler now uses color in diagnostic messages by default.
 For details, see the new \"Diagnostic output\" chapter of the
 <a href=\"https://mercurylang.org/information/doc-latest/mercury_user_guide/Diagnostic-output.html#Diagnostic-output\">Mercury Users' Guide</a>
@@ -38,55 +38,55 @@ in the current
 
 "17th September 2023" => array(
 "Mercury 22.01.8 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.8.html\">here</a>.
 "),
 
 "30th July 2023" => array(
 "Mercury 22.01.7 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.7.html\">here</a>.
 "),
 
 "10th May 2023" => array(
 "Mercury 22.01.6 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.6.html\">here</a>.
 "),
 
 "31st December 2022" => array(
 "Mercury 22.01.5 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.5.html\">here</a>.
 "),
 
 "13th November 2022" => array(
 "Mercury 22.01.4 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.4.html\">here</a>.
 "),
 
 "9th July 2022" => array(
 "Mercury 22.01.3 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.3.html\">here</a>.
 "),
 
 "19th June 2022" => array(
 "Mercury 22.01.2 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.2.html\">here</a>.
 "),
 
 "20th April 2022" => array(
 "Mercury 22.01.1 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.1.html\">here</a>.
 "),
 
 "31st March 2022" => array(
 "Mercury 22.01 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.html\">here</a>.
 "),
 
@@ -106,13 +106,13 @@ You can read about subtypes in the
 
 "3rd November 2020" => array(
 "Mercury 20.06.1 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-20.06/release-notes-20.06.1.html\">here</a>.
 "),
 
 "30th June 2020" => array(
 "Mercury 20.06 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-20.06/release-notes-20.06.html\">here</a>.
 "),
 
@@ -124,19 +124,19 @@ You can read about subtypes in the
 
 "3rd May 2020" => array(
 "Mercury 20.01.2 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-20.01/release-notes-20.01.2.html\">here</a>.
 "),
 
 "1st March 2020" => array(
 "Mercury 20.01.1 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-20.01/release-notes-20.01.1.html\">here</a>.
 "),
 
 "28th January 2020" => array(
 "Mercury 20.01 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-20.01/release-notes-20.01.html\">here</a>.
 "),
 
@@ -169,7 +169,7 @@ available"),
 
 "8th September 2014" => array(
 "Mercury 14.01.1 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release-14.01/release-notes-14.01.1.txt\">here</a>."
 ),
 
@@ -194,7 +194,7 @@ Visual Studio 2013 (32-bit only) are now available on the
 
 "3rd December 2013" => array(
 "Mercury 13.05.2 released",
-"Release Information is available
+"Release information is available
 <a href=\"https://dl.mercurylang.org/release/release-notes-13.05.2.txt\">here</a>."
 ),
 
