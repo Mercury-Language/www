@@ -3,13 +3,6 @@
 <p>This page contains links to resources for learning and understanding Mercury.</p>
 
 <ul class="nonindentlist2">
-        <li>
-        <h3>Mercury crash course</h3>
-        <a href="https://mercury-in.space/crash.html">
-	An introduction to Mercury through worked examples.
-        </a>
-        </li>
-
 	<li>
 	<h3>Ralph Becket Mercury tutorial</h3>
 	An introduction to Mercury.
