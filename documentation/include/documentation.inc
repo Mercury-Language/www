@@ -31,7 +31,7 @@ of the entire document, links to PDF versions are provided.
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $ref_man_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $latest_doc_dir ?>/reference_manual.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/mercury_reference_manual.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
@@ -51,7 +51,7 @@ of the entire document, links to PDF versions are provided.
 	<tr>
 	<td>Rotd (snapshot) </td>
 	<td><a href="<?php echo $user_guide_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $latest_doc_dir ?>/user_guide.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/mercury_user_guide.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
@@ -70,7 +70,7 @@ of the entire document, links to PDF versions are provided.
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $library_man_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $latest_doc_dir ?>/library.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/mercury_library.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
@@ -90,7 +90,7 @@ of the entire document, links to PDF versions are provided.
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $trans_guide_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $latest_doc_dir ?>/transition_guide.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/mercury_transition_guide.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
@@ -116,7 +116,7 @@ of the entire document, links to PDF versions are provided.
 	<table class="documentation" style="width: 250px;">
 	<tr>
 	<td><a href="<?php echo $faq_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $release_doc_dir ?>/faq.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/mercury_faq.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
