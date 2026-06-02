@@ -116,7 +116,7 @@ of the entire document, links to PDF versions are provided.
 	<table class="documentation" style="width: 250px;">
 	<tr>
 	<td><a href="<?php echo $faq_release ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $release_doc_dir ?>/mercury_faq.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $release_doc_dir ?>/faq.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
