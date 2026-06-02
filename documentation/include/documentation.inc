@@ -70,7 +70,7 @@ of the entire document, links to PDF versions are provided.
 	<tr>
 	<td>Rotd (snapshot)</td>
 	<td><a href="<?php echo $library_man_latest ?>"><button class="button">HTML</button></a></td>
-	<td><a href="<?php echo $latest_doc_dir ?>/mercury_library.pdf"><button class="button">PDF</button></a></td>
+	<td><a href="<?php echo $latest_doc_dir ?>/mercury_library_manual.pdf"><button class="button">PDF</button></a></td>
 	</tr>
 	</table>
 	</li>
