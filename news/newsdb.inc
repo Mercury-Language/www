@@ -27,6 +27,12 @@
 
 $newsdb = array(
 
+"30th August 2026" => array(
+"Mercury 22.01.9 released",
+"Release information is available
+<a href=\"https://dl.mercurylang.org/release-22.01/release-notes-22.01.9.html\">here</a>.
+"),
+
 "24th June 2024" => array(
 "Color diagnostics",
 "The Mercury compiler now uses color in diagnostic messages by default.
